@@ -536,6 +536,9 @@ a:focus {
         border-color: $primary-color;
     }
 }
+.productbox-6 .product-action .product-btn:hover{
+    background-color: $primary-color;
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }

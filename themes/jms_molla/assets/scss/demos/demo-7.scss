@@ -153,3 +153,19 @@ $secondary-color: #fcb941;
 		}
 	}
 }
+
+.pb-categorytab .nav.nav-tabs .nav-item{
+	+ .nav-item{
+		margin-left: 3.1rem;
+	}
+	.nav-link{
+		font-size: 1.4rem;
+		letter-spacing: .1em;
+		&.active{
+			color: #333;
+			&::before{
+				background-color: #333;
+			}
+		}
+	}
+}

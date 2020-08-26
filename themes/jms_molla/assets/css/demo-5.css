@@ -574,6 +574,9 @@ a:focus {
   .productbox-4 .product-action .product-btn:hover {
     border-color: #cc6666; }
 
+.productbox-6 .product-action .product-btn:hover {
+  background-color: #cc6666; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc6666; }
 

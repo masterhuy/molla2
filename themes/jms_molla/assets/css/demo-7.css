@@ -574,6 +574,9 @@ a:focus {
   .productbox-4 .product-action .product-btn:hover {
     border-color: #cc6666; }
 
+.productbox-6 .product-action .product-btn:hover {
+  background-color: #cc6666; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc6666; }
 
@@ -1265,5 +1268,16 @@ a:focus {
   font-size: 1.6rem;
   letter-spacing: .1em;
   color: #333; }
+
+.pb-categorytab .nav.nav-tabs .nav-item + .nav-item {
+  margin-left: 3.1rem; }
+
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link {
+  font-size: 1.4rem;
+  letter-spacing: .1em; }
+  .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
+    color: #333; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active::before {
+      background-color: #333; }
 
 /*# sourceMappingURL=demo-7.css.map */

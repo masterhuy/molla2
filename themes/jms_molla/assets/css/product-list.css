@@ -713,6 +713,9 @@
 	height: 100%;
 	position: relative;
 }
+.more-rows .item .js-product-miniature{
+	height: auto;
+}
 .products-list .js-product-miniature {
     display: -webkit-box;
     display: -ms-flexbox;

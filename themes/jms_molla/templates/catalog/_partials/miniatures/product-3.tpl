@@ -27,9 +27,8 @@
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
 				<img class="img-responsive product-img1{if $gdzSetting.carousel_lazyload} owl-lazy{/if}"
-            	{if $gdzSetting.carousel_lazyload}data-src="{$product.cover.bySize.home_default.url}"{else}
+            		data-src="{$product.cover.bySize.home_default.url}"
 				    src = "{$product.cover.bySize.home_default.url}"
-            	{/if}
 				    alt = "{$product.cover.legend}"
 					title="{$product.name|escape:'html':'UTF-8'}"
 				    data-full-size-image-url = "{$product.cover.large.url}"

@@ -130,6 +130,14 @@ function footerCollapse() {
     }
 }
 jQuery(document).ready(function(){
+    
+
+    if (!$(body).hasClass("page-category")) {
+        $(".owl-carousel .product-description").remove();
+    }
+
+
+
     $('.gdz-megamenu').jmsMegaMenu({
         event: 'hover',
         duration: 100

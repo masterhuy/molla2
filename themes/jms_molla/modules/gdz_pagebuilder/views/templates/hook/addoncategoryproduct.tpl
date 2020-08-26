@@ -24,6 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="pb-categoryproduct">
+{$rows}
 	{if $showcategoryname}
 		<div class="pb-categoryproduct-name">
 			<h3>{$category.name|escape:'htmlall':'UTF-8'}</h3>
