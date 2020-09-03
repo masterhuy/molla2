@@ -27,7 +27,7 @@
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
 				<img class="img-responsive product-img1{if $gdzSetting.carousel_lazyload} owl-lazy{/if}"
-            		data-src="{$product.cover.bySize.home_default.url}"
+            	    data-src="{$product.cover.bySize.home_default.url}"
 				    src = "{$product.cover.bySize.home_default.url}"
 				    alt = "{$product.cover.legend}"
 					title="{$product.name|escape:'html':'UTF-8'}"
@@ -77,13 +77,15 @@
                 {/if}
             {/if}
         </div>
+		{if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
+			<div class="specific_prices">
+				<div class="countdown-box">
+					<div class="countdown">{$product.specific_prices.to}</div>
+				</div>
+			</div>
+		{/if}
 	</div>
 	<div class="product-info">
-        {if $gdzSetting.productbox_category}
-			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
-				{$product.category_name|escape:'html':'UTF-8'}
-			</a>
-	    {/if}
 		{block name='product_name'}
         	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
         {/block}
@@ -93,11 +95,11 @@
 					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">
-							{if $product.has_discount}{l s='Now' d='Shop.Theme.Actions'}{/if} {$product.price}
+							{$product.price}
 						</span>
 						{if $product.has_discount}
 							{hook h='displayProductPriceBlock' product=$product type="old_price"}
-							<span class="old price">{l s='Was' d='Shop.Theme.Actions'} {$product.regular_price}</span>
+							{$product.regular_price}</span>
 						{/if}
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
@@ -105,6 +107,9 @@
     			{/if}
     		{/block}
         {/if}
+		{block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
         {if $product.main_variants && $gdzSetting.productbox_variant}
             {block name='product_variants'}
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}

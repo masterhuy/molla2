@@ -577,6 +577,13 @@ a:focus {
 .productbox-6 .product-action .product-btn:hover {
   background-color: #3399ff; }
 
+.productbox-7 .product-buttons .btn-icon {
+  border-color: #3399ff;
+  background-color: #3399ff; }
+
+.productbox-7 .product-action .product-btn {
+  background-color: #3399ff; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #3399ff; }
 
@@ -622,6 +629,9 @@ a:focus {
 
 .header-6 .header-middle #cart_block > a:hover .cart_block_total {
   color: #3399ff; }
+
+.header-7 .header-middle .search-box .button-search:hover {
+  background-color: #3399ff; }
 
 .header-top a:hover, .header-top a:focus {
   color: #3399ff; }

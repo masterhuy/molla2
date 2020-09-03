@@ -1,6 +1,62 @@
 jQuery(function ($) {
     "use strict";
 
+    //owl carousel custom
+    var lazyload_ins = false;
+    if(gdzSetting.carousel_lazyload)
+    var lazyload_ins = true;
+    $.each( $(".instagram_carousel"), function( key, value ) {
+        $(this).owlCarousel({
+              loop:false,
+              margin:0,
+              nav:false,
+              dots:false,
+              autoplay:false,
+              lazyLoad:lazyload_ins,
+              responsive:{
+                0:{
+                    items: 1
+                },
+                360:{
+                    items: 2
+                },
+                600:{
+                    items: 3
+                },
+                992:{
+                    items: 4
+                },
+                1200:{
+                    items: 5
+                },
+                1500:{
+                    items: 6
+                }
+            }
+        });
+    });
+
+    var lazyload_img = false;
+    if(gdzSetting.carousel_lazyload)
+    var lazyload_img = true;
+    $.each( $(".image-carousel"), function( key, value ) {
+        $(this).owlCarousel({
+            center: true,
+              loop:true,
+              margin: 0,
+              nav: true,
+              dots:false,
+              autoplay:false,
+              lazyLoad:lazyload_img,
+              responsive:{
+                0:{
+                    items: 1
+                }
+            }
+        });
+    });
+
+
     // Scroll Top Button - Show
     var $scrollTop = $('#scroll-top');
 
@@ -130,14 +186,6 @@ function footerCollapse() {
     }
 }
 jQuery(document).ready(function(){
-    
-
-    if (!$(body).hasClass("page-category")) {
-        $(".owl-carousel .product-description").remove();
-    }
-
-
-
     $('.gdz-megamenu').jmsMegaMenu({
         event: 'hover',
         duration: 100

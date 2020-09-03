@@ -79,6 +79,11 @@
         </div>
 	</div>
 	<div class="product-info">
+		{if $gdzSetting.productbox_category}
+			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
+				{$product.category_name|escape:'html':'UTF-8'}
+			</a>
+	    {/if}
 		{block name='product_name'}
         	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
         {/block}
@@ -88,11 +93,11 @@
 					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">
-							{$product.price}
+							{if $product.has_discount}{l s='Now' d='Shop.Theme.Actions'}{/if} {$product.price}
 						</span>
 						{if $product.has_discount}
 							{hook h='displayProductPriceBlock' product=$product type="old_price"}
-							{$product.regular_price}</span>
+							<span class="old price">{l s='Was' d='Shop.Theme.Actions'} {$product.regular_price}</span>
 						{/if}
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
@@ -100,9 +105,6 @@
     			{/if}
     		{/block}
         {/if}
-		{block name='product_reviews'}
-            {hook h='displayProductListReviews' product=$product}
-        {/block}
         {if $product.main_variants && $gdzSetting.productbox_variant}
             {block name='product_variants'}
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}

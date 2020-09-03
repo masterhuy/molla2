@@ -88,26 +88,6 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
-.pb-testimonial-box {
-  text-align: center;
-}
-.pb-testimonial-box .pb-testimonial-img {
-    margin:20px 0px;
-}
-.pb-testimonial-box .pb-testimonial-img img {
-    border-radius: 50%;
-    width:120px;
-    height:120px;
-    margin: 0 auto;
-}
-.pb-testimonial-box .pb-testimonial-position {
-    font-size: 85%;
-    opacity: 0.8;
-}
-
-.pb-testimonial-box .pb-testimonial-comment {
-    padding:1.5em 15%;
-}
 
 .pb-banner {
     position: relative;

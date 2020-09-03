@@ -6,6 +6,30 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Subscribers and loyal customers: a combination that makes consumers and retailers happy</title>
+    <link>https://www.prestashop.com/en/blog/subscription-loyalty-retailers</link>
+    <description>We have already discussed the issue of the strong digitisation trend in our country in several blog articles.</description>
+     <pubDate>Fri, 28 Aug 2020 14:39:42 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/subscription-loyalty-retailers</guid>
+  </item>
+  <item>
+    <title>Seven best practices in after-sales management</title>
+    <link>https://www.prestashop.com/en/blog/best-practices-after-sales</link>
+    <description>How do you manage your customers once they made a purchase? Here are the 7 things to do to improve the shopping experience and optimise retention.</description>
+     <pubDate>Fri, 28 Aug 2020 14:36:01 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/best-practices-after-sales</guid>
+  </item>
+  <item>
+    <title>E-Commerce Data driven strategy: how to increase sales by analyzing data</title>
+    <link>https://www.prestashop.com/en/blog/strategy-analysing-data</link>
+    <description>Do you want to improve the performance of your e-commerce? Discover how to set up a data driven optimization strategy</description>
+     <pubDate>Fri, 28 Aug 2020 14:31:27 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/strategy-analysing-data</guid>
+  </item>
+  <item>
     <title>E-commerce: The KPIs you should monitor</title>
     <link>https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</link>
     <description>Data is the most valuable source of information to help you maximise your e-commerce conversions.</description>
@@ -60,31 +84,6 @@
      <pubDate>Tue, 21 Jul 2020 14:22:13 +0200</pubDate>
  <dc:creator>luca mastroianni</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/importance-customer-journey</guid>
-  </item>
-  <item>
-    <title>How to quickly create your first online store</title>
-    <link>https://www.prestashop.com/en/blog/quickly-create-first-online-store</link>
-    <description>Do you want to start selling online, as quickly as possible?
-There are many great options available, so you can choose one that best fits your needs.</description>
-     <pubDate>Thu, 02 Jul 2020 15:56:57 +0200</pubDate>
- <dc:creator>Arina Drucioc EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/quickly-create-first-online-store</guid>
-  </item>
-  <item>
-    <title>Preparing for the summer sales: the 8 essential modules</title>
-    <link>https://www.prestashop.com/en/blog/essential-modules-sales</link>
-    <description>Summer is already upon us, and as you know, with the nice weather comes the </description>
-     <pubDate>Fri, 26 Jun 2020 16:31:21 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/essential-modules-sales</guid>
-  </item>
-  <item>
-    <title>PrestaShop (e)Commerce Week: an international week of online conferences</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</link>
-    <description>As a privileged partner of the digital transition of businesses, PrestaShop is pleased to hold the </description>
-     <pubDate>Wed, 10 Jun 2020 18:23:21 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</guid>
   </item>
   </channel>
 </rss>

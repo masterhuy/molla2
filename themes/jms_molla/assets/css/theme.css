@@ -181,9 +181,6 @@ header .row .col-auto {
 .header-sticky.sticky .container {
   height:100%;
 }
-.header-sticky.sticky .container .row {
-  height:100%;
-}
 .header-sticky.sticky{
   -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;

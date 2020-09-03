@@ -1,139 +1,131 @@
 /* Header 8 */
 .header-8 {
-	.header-top {
-		font-weight: 400;
-		font-size: 1.4rem;
-		color: lighten($primary-color, 31%);
-		background-color: $primary-color;
-		margin-bottom: 0;
-
-		.container:after,
-		.container-fluid:after {
-			display: none;
-		}
-
-		.header-dropdown > a:hover,
-		.header-dropdown > a:focus,
-		.top-menu > li > a:hover,
-		.top-menu > li > a:focus {
-			color: #fff;
-		}
-	}
-
-	.header-menu {
-		margin-top: 0;
-
-		ul a:not(:focus):not(:hover) {
-			color: #666;
-		}
-	}
-
-	.header-dropdown {
-		padding-top: .75rem;
-		padding-bottom: .75rem;
-
-		& + .header-dropdown {
-			margin-left: 2rem;
-		}
-	}
-
-	.top-menu,
-	.header-dropdown > a, 
-	.header-dropdown > span {
-		text-transform: capitalize;
-	}
-	
-	.header-dropdown > a, 
-	.header-dropdown > span {
-		padding-right: 2rem;
-	}
-
-	.header-dropdown > a::after, 
-	.header-dropdown > span::after {
-		font-size: 1rem;
-		margin-top: -.5rem;
-	}
-
-	.top-menu li + li {
-		margin-left: 2.1rem;
-	}
-
+	background-color: #fff;
 	.header-middle {
 		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-	.main-nav {
-		margin-left: 0;
-		margin-right: 3rem;
-	}
-
-	.menu > li > a {
-	    padding-top: 3.45rem;
-	    padding-bottom: 3.45rem;
-	}
-
-	.header-search {
-		.form-control {
-			background-color: #f4f4f4;
-
-			&::placeholder {
-				font-style: italic;
-			}
+		.header-left{
+			min-width: 157px;
 		}
-
-		.header-search-wrapper {
-			border-color: #f4f4f4;
-		}
-	}
-
-	.cart-dropdown .dropdown-menu, 
-	.compare-dropdown .dropdown-menu,
-	.menu ul, .menu .megamenu {
-		margin-top: 0;
-	}
-}
-
-@include mq('lg') {
-	.header-8 {
-		.header-top {
-			.top-menu a:hover,
-			.top-menu a:focus {
-				color: #fff;
-			}
-		}
-	}
-}
-
-@include mq('lg', 'max') {
-	.header-8 {
-		.top-menu ul a:not(:hover):not(:focus) {
+		.header-right > .row > div > a{
 			color: #666;
+			display: flex;
+			align-items: center;
 		}
-
-		.top-menu:not(.top-link-menu) ul {
-			margin-top: 0;
+		.cart-icon{
+			font-size: 3.2rem;
+			span{
+				display: none;
+			}
 		}
-
-		.top-menu:not(.top-link-menu) > li {
-			padding-right: 2rem;
+		#wishlist_block{
+			a{
+				font-size: 2.8rem;
+				span{
+					display: none;
+				}
+			}
 		}
-		
-		.top-menu:not(.top-link-menu) > li::after {
+	}
+	#gdz_ajax_search{
+		margin-right: .4rem;
+		.btn-search{
+			z-index: 1001;
+		}
+		#search-form-dropdown{
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 3rem;
+			right: -.4rem;
+			margin: 0;
+			padding: 0;
+			box-shadow: none;
+			background: #fff;
+			min-width: 268px;
+			.search-box{
+				border: none;
+			}
+			.button-search{
+				display: none;
+			}
+			input{
+				border: 1px solid #ebebeb;
+				border-radius: 20px;
+				height: 40px;
+				background-color: transparent;
+				text-transform: initial;
+				font-weight: 400;
+				padding: 0 2.3rem;
+			}
+		}
+	}
+	#cart_block{
+		margin-left: .9rem;
+		.icon-shopping-cart{
+			padding-bottom: .2rem;
+		}
+		.ajax_cart_quantity{
+			left: 2rem;
+			top: 1.1rem;
+			background-color: #222;
+			min-width: 1.7rem;
+			height: 1.7rem;
 			font-size: 1rem;
-			margin-top: -.5rem;
+		}
+		.cart_block_total{
+			display: inline-block;
+			font-size: 1.3rem;
+			font-weight: 600;
+			color: #222;
+			margin-left: 1.3rem;
+		}
+	}
+	#hor-menu{
+		width: 100%;
+		.level0{
+			width: auto;
+			margin-left: auto;
+			margin-right: 9rem;
+		}
+		.gdz-megamenu .nav.level0 > li{
+			margin-right: .4rem;
+			&.open > a{
+				color: #222;
+			}
+			> a{
+				line-height: 6.1rem;
+				text-transform: uppercase;
+				letter-spacing: .01em;
+				padding: 0 2.8rem 0 1.2rem;
+				font-weight: 500;
+				&::before{
+					top: auto;
+					bottom: 1.5rem; 
+					background-color: #222;
+				}
+				.caret{
+					right: -.9rem;
+				}
+			}
 		}
 	}
 }
-
-@include mq('xl') {
-	.header-8 {
-		.header-search .header-search-wrapper {
-			display: flex;
-		}
-
-		.main-nav {
-			margin-right: 26rem;
-		}
-	}
+.btn-search {
+	position: relative;
+	display: block;
+	font-size: 2.4rem;
+	line-height: 1;
+	min-width: 2.5rem;
+	padding: .3rem .2rem;
+	font-weight: 400;
+	color: #333;
+	text-align: center;
+	z-index: 11;
+}
+.cart-icon{
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-decoration: none !important;
+	line-height: 1;
+	color: #333;
 }

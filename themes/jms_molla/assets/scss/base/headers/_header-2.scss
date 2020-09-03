@@ -1,12 +1,4 @@
 /* Header 2 */
-
-a {
-	font-family: 'Poppins';
-}
-p{
-	margin-bottom: 0;
-}
-
 .header-2 {
 	background-color: #fff;
 
@@ -77,6 +69,9 @@ p{
 				&:hover #login{
 					display: block;
 				}
+				.icon-user{
+					padding-bottom: .3rem;
+				}
 			}
 			#login{
 				top: calc(100% - 1px);
@@ -142,7 +137,6 @@ p{
 			}
 		}
 	}
-
 	.cart-dropdown,
 	.compare-dropdown {
 		.dropdown-menu {
@@ -210,13 +204,15 @@ p{
 			margin-left: .2rem;
 		}
 	}
-	#hor-menu .gdz-megamenu .nav.level0 > li > a{
-		line-height: 10rem;
-		text-transform: uppercase;
-		letter-spacing: .01em;
-		padding: 0 2.8rem 0 1.2rem;
-		&::before{
-			display: none;
+	#hor-menu .gdz-megamenu .nav.level0 > li{
+		> a{
+			line-height: 10rem;
+			text-transform: uppercase;
+			letter-spacing: .01em;
+			padding: 0 2.8rem 0 1.2rem;
+			&::before{
+				display: none;
+			}
 		}
 	}
 }

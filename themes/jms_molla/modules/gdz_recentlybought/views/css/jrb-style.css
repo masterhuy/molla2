@@ -96,12 +96,7 @@ body.toplevel_page_woo-notification {
     padding-right: 25px;
 }
 
-#woorebought-popup.img_right {
-    /*padding: 0;*/
-}
-
 #woorebought-popup #popup-close {
-    background: rgba(0, 0, 0, 0) url("../img/icon/close.png") repeat scroll 0 0 / cover;
     cursor: pointer;
     height: 16px;
     position: absolute;
