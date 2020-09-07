@@ -584,6 +584,27 @@ a:focus {
 .productbox-7 .product-action .product-btn {
   background-color: #eea287; }
 
+.productbox-8 .product-buttons .addToWishlist.btn-icon {
+  color: #eea287; }
+  .productbox-8 .product-buttons .addToWishlist.btn-icon:hover {
+    background-color: #eea287;
+    border-color: #eea287; }
+    .productbox-8 .product-buttons .addToWishlist.btn-icon:hover span {
+      background-color: #eea287; }
+
+.productbox-8 .product-title a:hover {
+  -webkit-box-shadow: 0 1px 0 #eea287;
+  box-shadow: 0 1px 0 #eea287; }
+
+.productbox-8 .product-action .btn-icon {
+  color: #eea287; }
+  .productbox-8 .product-action .btn-icon:hover span {
+    -webkit-box-shadow: 0 1px 0 #eea287;
+    box-shadow: 0 1px 0 #eea287; }
+
+.productbox-8 .product-flags .product-flag.new {
+  background-color: #eea287; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #eea287; }
 
@@ -1405,6 +1426,17 @@ a:focus {
 
 .instagram_carousel .instagram-feed {
   margin-bottom: 0; }
+
+.instagram_carousel .owl-stage::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.instagram_carousel .owl-nav.disabled, .instagram_carousel .owl-dots.disabled {
+  display: none; }
 
 @media (max-width: 991px) {
   .gdz-slider-wrapper img {

@@ -265,9 +265,22 @@ $primary-color: #eea287;
 }
 
 .instagram_carousel{
-	.instagram-feed{
+    .instagram-feed{
         margin-bottom: 0;
     }
+    .owl-stage::after {
+	    content: ".";
+	    display: block;
+	    clear: both;
+	    visibility: hidden;
+	    line-height: 0;
+	    height: 0;
+	}
+	.owl-nav, .owl-dots{
+		&.disabled{
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 991px){

@@ -200,6 +200,10 @@ img {
             }
         }
     }
+    .owl-item{
+        display: flex;
+        align-items: stretch;
+    }
     .owl-nav{
         button{
             width: 42px;
@@ -255,6 +259,13 @@ img {
                 display: flex;
             }
         }
+    }
+}
+.productbox-no-shadow{
+    .owl-carousel.customs .owl-stage-outer{
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 .gdz-row.no-padding{
@@ -371,7 +382,6 @@ img {
         margin-top: 6.1rem;
     }
 }
-
 
 
 .spinner {

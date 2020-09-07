@@ -584,6 +584,27 @@ a:focus {
 .productbox-7 .product-action .product-btn {
   background-color: #fcb941; }
 
+.productbox-8 .product-buttons .addToWishlist.btn-icon {
+  color: #fcb941; }
+  .productbox-8 .product-buttons .addToWishlist.btn-icon:hover {
+    background-color: #fcb941;
+    border-color: #fcb941; }
+    .productbox-8 .product-buttons .addToWishlist.btn-icon:hover span {
+      background-color: #fcb941; }
+
+.productbox-8 .product-title a:hover {
+  -webkit-box-shadow: 0 1px 0 #fcb941;
+  box-shadow: 0 1px 0 #fcb941; }
+
+.productbox-8 .product-action .btn-icon {
+  color: #fcb941; }
+  .productbox-8 .product-action .btn-icon:hover span {
+    -webkit-box-shadow: 0 1px 0 #fcb941;
+    box-shadow: 0 1px 0 #fcb941; }
+
+.productbox-8 .product-flags .product-flag.new {
+  background-color: #fcb941; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #fcb941; }
 

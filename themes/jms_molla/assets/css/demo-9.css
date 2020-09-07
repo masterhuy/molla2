@@ -584,6 +584,27 @@ a:focus {
 .productbox-7 .product-action .product-btn {
   background-color: #1cc0a0; }
 
+.productbox-8 .product-buttons .addToWishlist.btn-icon {
+  color: #1cc0a0; }
+  .productbox-8 .product-buttons .addToWishlist.btn-icon:hover {
+    background-color: #1cc0a0;
+    border-color: #1cc0a0; }
+    .productbox-8 .product-buttons .addToWishlist.btn-icon:hover span {
+      background-color: #1cc0a0; }
+
+.productbox-8 .product-title a:hover {
+  -webkit-box-shadow: 0 1px 0 #1cc0a0;
+  box-shadow: 0 1px 0 #1cc0a0; }
+
+.productbox-8 .product-action .btn-icon {
+  color: #1cc0a0; }
+  .productbox-8 .product-action .btn-icon:hover span {
+    -webkit-box-shadow: 0 1px 0 #1cc0a0;
+    box-shadow: 0 1px 0 #1cc0a0; }
+
+.productbox-8 .product-flags .product-flag.new {
+  background-color: #1cc0a0; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #1cc0a0; }
 
@@ -1341,5 +1362,67 @@ a:focus {
     background-color: #333; }
   .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
     color: #333; }
+
+.producttab-banner .owl-carousel .owl-nav button {
+  font-size: 2.4rem;
+  color: #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3);
+  box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3); }
+  .producttab-banner .owl-carousel .owl-nav button.owl-prev {
+    left: 3rem; }
+  .producttab-banner .owl-carousel .owl-nav button.owl-next {
+    right: 3rem; }
+  .producttab-banner .owl-carousel .owl-nav button.disabled {
+    opacity: .7;
+    cursor: default; }
+
+.cta-desc {
+  font-weight: 300;
+  letter-spacing: 0; }
+  .cta-desc span {
+    color: #333; }
+
+.email_subscription input.form-control {
+  border: .1rem solid #dadada;
+  border-right: 0; }
+
+.email_subscription #newsletter-btn {
+  min-width: 7rem;
+  padding: 1rem;
+  background-color: #1cc0a0;
+  color: #fff; }
+  .email_subscription #newsletter-btn:hover {
+    background-color: #23aa90; }
+  .email_subscription #newsletter-btn i {
+    margin-left: 0; }
+  .email_subscription #newsletter-btn span {
+    display: none; }
+
+.instagram_carousel .instagram-feed {
+  margin-bottom: 0; }
+
+.instagram_carousel .owl-stage::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.instagram_carousel .owl-nav.disabled, .instagram_carousel .owl-dots.disabled {
+  display: none; }
 
 /*# sourceMappingURL=demo-9.css.map */

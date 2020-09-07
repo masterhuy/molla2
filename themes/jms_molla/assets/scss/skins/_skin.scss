@@ -548,6 +548,30 @@ a:focus {
         background-color: $primary-color;
     }
 }
+.productbox-8{
+    .product-buttons .addToWishlist.btn-icon{
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+            border-color: $primary-color;
+            span{
+                background-color: $primary-color;
+            }
+        }
+    }
+    .product-title a:hover{
+        box-shadow: 0 1px 0 $primary-color;
+    }
+    .product-action .btn-icon{
+        color: $primary-color;
+        &:hover span{
+            box-shadow: 0 1px 0 $primary-color;
+        }
+    }
+    .product-flags .product-flag.new{
+        background-color: $primary-color;
+    }
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }

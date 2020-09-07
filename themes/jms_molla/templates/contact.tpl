@@ -23,24 +23,26 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
- {extends file='layouts/layout-full-width.tpl'}
- {block name='content'}
-     <section id="main">
-         {block name='page_content_container'}
-             <section id="content" class="page-content">
-                 {block name='page_header_container'}{/block}
-                 {if $gdzSetting.contact_page_layout == 'layout-1'}
-                     {include file='_partials/contacts/layout-1.tpl'}
-                 {elseif $gdzSetting.contact_page_layout == 'layout-2'}
-                     {include file='_partials/contacts/layout-2.tpl'}
-                 {elseif $gdzSetting.contact_page_layout == 'layout-3'}
+{extends file='layouts/layout-full-width.tpl'}
+{block name='content'}
+    <section id="main">
+        {block name='page_content_container'}
+            <section id="content" class="page-content">
+                {block name='page_header_container'}{/block}
+                {if $gdzSetting.contact_page_layout == 'layout-1'}
+                    {include file='_partials/contacts/layout-1.tpl'}
+                {elseif $gdzSetting.contact_page_layout == 'layout-2'}
+                    {include file='_partials/contacts/layout-2.tpl'}
+                {elseif $gdzSetting.contact_page_layout == 'layout-3'}
                      {include file='_partials/contacts/layout-3.tpl'}
-                 {elseif $gdzSetting.contact_page_layout == 'layout-4'}
+                {elseif $gdzSetting.contact_page_layout == 'layout-4'}
                      {include file='_partials/contacts/layout-4.tpl'}
-                 {/if}
-             </section>
-         {/block}
-         {block name='page_footer_container'}
-         {/block}
-     </section>
- {/block}
+                {/if}
+            </section>
+        {/block}
+        {block name='page_footer_container'}{/block}
+    </section>
+{/block}
+
+
+

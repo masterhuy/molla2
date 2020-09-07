@@ -36,6 +36,7 @@ jQuery(function ($) {
         });
     });
 
+    //slider demo 9
     var lazyload_img = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_img = true;
@@ -55,6 +56,23 @@ jQuery(function ($) {
             }
         });
     });
+
+    // Productbox 8 hover
+    $('.productbox-8').hover(function () {
+        var $this = $(this),
+            animDiff = ( $this.outerHeight() - ( $this.find('.product-info').outerHeight() + $this.find('.product-preview').outerHeight()) ),
+            animDistance = ( $this.find('.product-footer').outerHeight() - animDiff );
+
+        $this.find('.product-footer').css({ 'visibility': 'visible', 'transform': 'translateY(0)' });
+        $this.find('.product-info').css('transform', 'translateY('+ -animDistance +'px)');
+
+    }, function () {
+        var $this = $(this);
+
+        $this.find('.product-footer').css({ 'visibility': 'hidden', 'transform': 'translateY(100%)' });
+        $this.find('.product-info').css('transform', 'translateY(0)');
+    });
+    
 
 
     // Scroll Top Button - Show

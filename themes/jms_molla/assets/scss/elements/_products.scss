@@ -843,8 +843,6 @@
 .productbox-3{
 	&:hover{
 		box-shadow: none;
-		top: auto;
-		bottom: 0;
 		.product-action{
 			bottom: 0;
 		}
@@ -913,8 +911,6 @@
 /* Product box 4 */
 .productbox-4{
 	&:hover{
-		top: auto;
-		bottom: 0;
 		.product-action{
 			bottom: 0;
 		}
@@ -1006,8 +1002,6 @@
 /* Product box 5 */
 .productbox-5{
 	&:hover{
-		top: auto;
-		bottom: 0;
 		.product-action{
 			bottom: 0;
 		}
@@ -1120,8 +1114,6 @@
 /* Product box 6 */
 .productbox-6{
 	&:hover{
-		top: auto;
-		bottom: 0;
 		.product-action{
 			bottom: 0;
 		}
@@ -1251,8 +1243,7 @@
 /* Product box 7 */
 .productbox-7{
 	&:hover{
-		top: auto;
-		bottom: 0;
+		box-shadow: none;
 		.product-action{
 			bottom: 0;
 		}
@@ -1388,7 +1379,198 @@
 }
 
 /* Product box 8 */
-
+.productbox-8{
+	&:hover{
+		box-shadow: none;
+		.wrapp-buttons{
+			transform: translateX(0);
+		}
+		.product-action{
+			transform: none;
+		}
+		.product-preview .product-image::before{
+			opacity: .2;
+		}
+	}
+	overflow: hidden;
+	.product-preview{
+		overflow: hidden;
+		.product-image{
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				opacity: 0;
+				background-color: #999;
+				transition: all .3s;
+				z-index: 1;
+			}
+		}
+		.product-buttons .addToWishlist{
+			border-color: #fff;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	.product-buttons .btn-icon{
+		color: #fff;
+		span{
+			background-color: #222;
+		}
+		&:hover{
+	        border-color: #222;
+	        background-color: #222;
+	    }
+	}
+	.product-list-reviews{
+		justify-content: center;
+	}
+	.product-flags{
+		.product-flag{
+			font-weight: 400;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			letter-spacing: -.01em;
+			padding: .5rem .9rem;
+			width: auto;
+			height: auto;
+			border-radius: 0;
+			text-transform: uppercase;
+		}
+		.on-sale{
+			background-color: #ef837b;
+		}
+	}
+	.wrapp-buttons{
+		right: 2rem;
+		transform: translateX(-15px);
+	}
+	.category-name{
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: #ccc;
+		margin-bottom: .9rem;
+		letter-spacing: 0;
+		display: inline-block;
+		&:hover{
+			color: #777;
+			box-shadow: 0 1px 0 #bcbcbc;
+		}
+	}
+	.product-title{
+		font-weight: 400;
+		letter-spacing: 0;
+		font-size: 1.5rem;
+		line-height: 1.3;
+		margin-bottom: 1rem;
+	}
+	.content_price{
+		span.price{
+			font-size: 1.6rem;
+			font-weight: 500;
+			margin-bottom: .3rem;
+			&.new{
+				&.has-discount{
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.variant-links{
+		margin-top: 1.7rem;
+		width: 100%;
+	}
+	.product-info{
+		text-align: center;
+		padding-bottom: 0;
+		padding-top: 1.7rem;
+		background-color: #fff;
+		z-index: 2;
+	}
+	.ajax-add-to-cart:hover{
+		background-color: transparent;
+	}
+	.product-footer{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		transform: translateY(100%);
+		visibility: hidden;
+		transition: all .35s ease;
+		padding: 0;
+	}
+	.product-action{
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		padding: 0;
+		background-color: #fff;
+		display: flex;
+		margin-top: 2.1rem;
+		border-top: .1rem solid #ebebeb;
+		.btn-icon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			text-transform: uppercase;
+			font-size: 1.3rem;
+			font-weight: 400;
+			letter-spacing: -.01em;
+			position: relative;
+			padding-top: 1.4rem;
+			padding-bottom: 1.4rem;
+			line-height: 1;
+			&:not(:last-child)::after{
+				content: "";
+				width: .1rem;
+				height: 2rem;
+				background-color: #e5e5e5;
+				position: absolute;
+				right: -.1rem;
+			}
+			&::before{
+				font-size: 1.8rem;
+				margin-right: .9rem;
+			}
+		}
+		.product-btn{
+			border: 0;
+			color: #fff;
+			span{
+				font-size: 1.3rem;
+				font-weight: 400;
+				letter-spacing: -.01em;
+				transition: all .35s ease;
+			}
+			&:hover{
+				
+			}
+		}
+	}
+	.specific_prices{
+		position: absolute;
+		bottom: 2rem;
+		left: 0;
+		right: 0;
+		.countdown{
+			text-align: center;
+		}
+	}
+	#review{
+		margin-top: -.2rem;
+		margin-bottom: -.8rem;
+	}
+}
 
 /* Product box 9 */
 
@@ -1584,11 +1766,9 @@
 
 @include mq('480px') {
 	.just-action-icons-sm {
-		.product-cart{
-			.btn-icon{
-				span{
-					display: none;
-				}
+		.btn-icon{
+			span{
+				display: none;
 			}
 		}
 	}
