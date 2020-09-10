@@ -51,6 +51,7 @@
                 {block name='notifications'}
                     {include file='_partials/notifications.tpl'}
                 {/block}
+
                 {if $page.page_name != 'index' && $page.page_name != 'module-gdz_pagebuilder-page' && $page.page_name != 'module-gdz_pagebuilder-preview'}
                     <div class="container">
                 {/if}
@@ -90,18 +91,14 @@
                 {if $page.page_name != 'index' && $page.page_name != 'module-gdz_pagebuilder-page' && $page.page_name != 'module-gdz_pagebuilder-preview'}
                 </div>
                 {/if}
-
-
     		</div>
-        {block name="footer"}
-            {include file="_partials/footer.tpl"}
-        {/block}
-        <button id="scroll-top" title="Back to Top" class="show">
-            <i class="icon-arrow-up"></i>
-        </button>
+            {block name="footer"}
+                {include file="_partials/footer.tpl"}
+            {/block}
+            <button id="scroll-top" title="Back to Top" class="show">
+                <i class="icon-arrow-up"></i>
+            </button>
         </div>
-
-
 
         {block name='javascript_bottom'}
             {include file="_partials/javascript.tpl" javascript=$javascript.bottom}

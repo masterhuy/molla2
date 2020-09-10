@@ -45,6 +45,12 @@
             {include file='_partials/footers/footer-7.tpl'}
         {elseif $footer_layout == 8}
             {include file='_partials/footers/footer-8.tpl'}
+        {elseif $footer_layout == 9}
+            {include file='_partials/footers/footer-9.tpl'}
+        {elseif $footer_layout == 10}
+            {include file='_partials/footers/footer-10.tpl'}
+        {elseif $footer_layout == 11}
+            {include file='_partials/footers/footer-11.tpl'}
         {/if}
     </footer>
 {/block}

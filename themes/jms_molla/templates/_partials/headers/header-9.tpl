@@ -59,7 +59,6 @@
                             {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch.tpl'}
                         {/widget_block}
                     {/if}
-                    
                 </div>
                 <div class="layout-column header-center">
                     {include file='_partials/headers/logo.tpl'}

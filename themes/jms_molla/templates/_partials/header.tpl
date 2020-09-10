@@ -48,6 +48,12 @@
         {include file='_partials/headers/header-9.tpl'}    
     {elseif $header_layout == 10}
         {include file='_partials/headers/header-10.tpl'}
+    {elseif $header_layout == 11}
+        {include file='_partials/headers/header-11.tpl'}
+    {elseif $header_layout == 12}
+        {include file='_partials/headers/header-12.tpl'}
+    {elseif $header_layout == 13}
+        {include file='_partials/headers/header-13.tpl'}
     {/if}
 </div>
 <div id="mobile-header" class="header-mobile-{$gdzSetting.header_mobile_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">

@@ -98,6 +98,21 @@ class gdzFooterForm
                                     'id_option' => 8,
                                     'name' => $this->module->l('Layout 8', 'FooterForm'),
                                     'img' => 'footers/8.jpg'
+                                ),
+                                array(
+                                    'id_option' => 9,
+                                    'name' => $this->module->l('Layout 9', 'FooterForm'),
+                                    'img' => 'footers/9.jpg'
+                                ),
+                                array(
+                                    'id_option' => 10,
+                                    'name' => $this->module->l('Layout 10', 'FooterForm'),
+                                    'img' => 'footers/10.jpg'
+                                ),
+                                array(
+                                    'id_option' => 11,
+                                    'name' => $this->module->l('Layout 11', 'FooterForm'),
+                                    'img' => 'footers/11.jpg'
                                 )
                             ),
                             'id' => 'id_option',

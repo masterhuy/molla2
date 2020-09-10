@@ -605,6 +605,18 @@ a:focus {
 .productbox-8 .product-flags .product-flag.new {
   background-color: #445f84; }
 
+.productbox-9 .quick-view:hover {
+  background-color: #445f84; }
+
+.productbox-9 .product-action .ajax-add-to-cart {
+  color: #445f84; }
+  .productbox-9 .product-action .ajax-add-to-cart:hover {
+    -webkit-box-shadow: 0 0.1rem 0 0 #445f84;
+    box-shadow: 0 0.1rem 0 0 #445f84; }
+
+.productbox-9 .content_price .price.new {
+  color: #445f84; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #445f84; }
 
@@ -652,6 +664,9 @@ a:focus {
   color: #445f84; }
 
 .header-7 .header-middle .search-box .button-search:hover {
+  background-color: #445f84; }
+
+.header-11 #cart_block .ajax_cart_quantity {
   background-color: #445f84; }
 
 .header-top a:hover, .header-top a:focus {
@@ -1228,6 +1243,9 @@ a:focus {
   right: 2.5rem;
   left: auto; }
 
+.banner-group .banner-2.pb-banner > a::after {
+  background-color: rgba(255, 255, 255, 0.3); }
+
 .banner-group .banner-2 .pb-banner-text {
   left: 2.5rem; }
   .banner-group .banner-2 .pb-banner-text .pb-banner-subtitle {
@@ -1427,6 +1445,64 @@ a:focus {
 
 .font-weight-medium {
   font-weight: 500; }
+
+.pb-blog .blog-item:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.pb-blog .entry-body {
+  padding: 0; }
+
+.pb-blog .post-meta {
+  margin-top: 1.2rem; }
+
+.pb-blog .post-title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: .9rem; }
+
+.pb-blog .post-intro {
+  margin-bottom: .6rem; }
+  .pb-blog .post-intro p {
+    margin-bottom: 0; }
+
+.pb-blog .post-readmore {
+  text-transform: uppercase;
+  color: #445f84; }
+
+.newsletter .pb-heading {
+  font-weight: 600;
+  letter-spacing: -.01em; }
+
+.newsletter .pb-text-content {
+  letter-spacing: 0; }
+  .newsletter .pb-text-content p {
+    margin-bottom: 0; }
+
+.newsletter .email_subscription .newsletter-input-group {
+  background-color: #f4f4f4;
+  border-radius: 3rem; }
+
+.newsletter .email_subscription .form-control {
+  background-color: transparent;
+  font-style: italic;
+  color: #333; }
+  .newsletter .email_subscription .form-control::-webkit-input-placeholder {
+    color: #777; }
+  .newsletter .email_subscription .form-control:-ms-input-placeholder {
+    color: #777; }
+  .newsletter .email_subscription .form-control::-ms-input-placeholder {
+    color: #777; }
+  .newsletter .email_subscription .form-control::placeholder {
+    color: #777; }
+
+.newsletter .email_subscription #newsletter-btn {
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 0;
+  min-width: 160px; }
 
 @media screen and (min-width: 576px) {
   .cta .input-group {

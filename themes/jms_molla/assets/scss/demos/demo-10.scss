@@ -55,6 +55,9 @@ $secondary-color: #55739d;
 		}
 	}
 	.banner-2{
+		&.pb-banner > a::after{
+			background-color: rgba(255, 255, 255, 0.3);
+		}
 		.pb-banner-text{
 			left: 2.5rem;
 			.pb-banner-subtitle{
@@ -300,6 +303,69 @@ $secondary-color: #55739d;
 .font-weight-medium {
 	font-weight: 500;
 }
+
+.pb-blog{
+	.blog-item:hover{
+		box-shadow: none;
+	}
+	.entry-body{
+		padding: 0;
+	}
+	.post-meta{
+		margin-top: 1.2rem;
+	}
+	.post-title{
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 1.25;
+		margin-bottom: .9rem;
+	}
+	.post-intro{
+		margin-bottom: .6rem;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.post-readmore{
+		text-transform: uppercase;
+		color: $primary-color;
+	}
+}
+
+.newsletter{
+	.pb-heading{
+		font-weight: 600;
+		letter-spacing: -.01em;
+	}
+	.pb-text-content{
+		letter-spacing: 0;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.email_subscription{
+		.newsletter-input-group{
+			background-color: #f4f4f4;
+			border-radius: 3rem;
+		}
+		.form-control{
+			background-color: transparent;
+			font-style: italic;
+			color: #333;
+			&::placeholder{
+				color: #777;
+			}
+		}
+		#newsletter-btn{
+			border-radius: 3rem;
+			text-transform: uppercase;
+			font-weight: 400;
+			padding-left: 0;
+			min-width: 160px;
+		}
+	}
+}
+
 
 @include mq('sm') {
 	.cta {
