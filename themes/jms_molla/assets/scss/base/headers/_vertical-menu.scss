@@ -409,7 +409,8 @@
 	}
 	.caret::after {
 	    content: '\f112';
-	    right: 30px;
+	    right: 2.4rem;
+	    font-size: 1.2rem;
 	}
 	.gdz-megamenu{
 		.dropdown-menu{
@@ -419,17 +420,6 @@
 		}
 		li{
 			padding: 0;
-			&.mega > a::after{
-				font-family: 'molla';
-				content: '\f112';
-				position: absolute;
-				right: 30px;
-				top: 50%;
-				display: block;
-				font-size: 1rem;
-				line-height: 1;
-				margin-top: -.5rem;
-			}
 			a{
 				display: block;
 				padding: 13px 30px;

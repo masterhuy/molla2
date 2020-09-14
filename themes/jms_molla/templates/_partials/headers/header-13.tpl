@@ -81,12 +81,11 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="layout-column col-auto">
-                    <div class="vermenu d-flex align-items-center">
-                        <a href="#" class="vermenu-btn align-items-center">
+                    <div class="vermenu d-flex align-items-center show">
+                        <a href="#" class="vermenu-btn align-items-center" data-toggle="dropdown" aria-expanded="true">
                             {$gdzSetting.vermenu_button_text nofilter}
-                            <i class="icon-angle-down"></i>
                         </a>
-                        <div class="menu-dropdown navbar{if $gdzSetting.vermenu_class} {$gdzSetting.vermenu_class}{/if}">
+                        <div class="dropdown-menu show menu-dropdown navbar{if $gdzSetting.vermenu_class} {$gdzSetting.vermenu_class}{/if}">
                             {widget name="gdz_megamenu" hook='VerMenu'}
                         </div>
                     </div>

@@ -189,17 +189,21 @@ img {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
-.owl-carousel{
-    &.brand-carousel{
-        .owl-nav button{
-            &.owl-prev {
-                left: 20px;
-            }
-            &.owl-next {
-                right: 20px;
+.container-fluid{
+    .owl-carousel{
+        &.brand-carousel{
+            .owl-nav button{
+                &.owl-prev {
+                    left: 20px;
+                }
+                &.owl-next {
+                    right: 20px;
+                }
             }
         }
     }
+}
+.owl-carousel{
     .owl-item{
         display: flex;
         align-items: stretch;
@@ -286,6 +290,7 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 48px;
+    width: 100%;
 }
 .fraction-slider .text-primary{
     letter-spacing: -.025em;

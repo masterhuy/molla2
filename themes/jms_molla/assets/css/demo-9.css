@@ -617,6 +617,16 @@ a:focus {
 .productbox-9 .content_price .price.new {
   color: #1cc0a0; }
 
+.productbox-10 .product-buttons .btn-icon {
+  border-color: #1cc0a0;
+  color: #1cc0a0; }
+
+.productbox-10 .product-action .product-cart > button {
+  color: #1cc0a0;
+  border: 0.1rem solid #1cc0a0; }
+  .productbox-10 .product-action .product-cart > button:hover {
+    background-color: #1cc0a0; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #1cc0a0; }
 
@@ -667,6 +677,17 @@ a:focus {
   background-color: #1cc0a0; }
 
 .header-11 #cart_block .ajax_cart_quantity {
+  background-color: #1cc0a0; }
+
+.header-13 .header-middle #search-form .search-box {
+  border-color: #1cc0a0; }
+
+.header-13 .header-middle #search-form .button-search {
+  background-color: #1cc0a0; }
+  .header-13 .header-middle #search-form .button-search:hover {
+    color: #23aa90; }
+
+.header-13 .header-bottom .vermenu-btn {
   background-color: #1cc0a0; }
 
 .header-top a:hover, .header-top a:focus {

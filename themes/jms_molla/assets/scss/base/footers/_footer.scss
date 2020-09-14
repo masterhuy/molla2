@@ -1,6 +1,6 @@
 /* Footer */
 #footer{
-	&.footer-1, &.footer-5, &.footer-7, &.footer-8{
+	&.footer-1, &.footer-5, &.footer-7, &.footer-8, &.footer-13{
 		.html-1{
 			display: block;
 			.widget-about-info{
@@ -283,7 +283,7 @@
 			padding-bottom: 2rem;
 		}
 	}
-	&.footer-11{
+	&.footer-11, &.footer-12{
 		.social-label{
 			display: none;
 		}
@@ -291,6 +291,23 @@
 			width: auto;
 			height: auto;
 			border: none;
+		}
+	}
+	&.footer-13{
+		.footer-main{
+			padding-top: 4.3rem;
+			.container{
+				&::before{
+					content: '';
+					display: block;
+					height: 1px;
+					position: absolute;
+					top: -4.5rem;
+					left: 10px;
+					right: 10px;
+					background-color: #ebebeb;
+				}
+			}
 		}
 	}
 }

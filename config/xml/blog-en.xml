@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Getting your email marketing ready for the end-of-year sales</title>
+    <link>https://www.prestashop.com/en/blog/email-marketing-holiday</link>
+    <description>Learn how to make the most out of sales events like Black Friday and Cyber Monday by preparing your email marketing beforehand. </description>
+     <pubDate>Wed, 09 Sep 2020 15:17:14 +0200</pubDate>
+ <dc:creator>Aaron Wiseman</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/email-marketing-holiday</guid>
+  </item>
+  <item>
+    <title>Vulnerability identified on a few PrestaShop modules and themes</title>
+    <link>https://www.prestashop.com/en/blog/vulnerability-september-2020</link>
+    <description>An attack against a few PrestaShop stores was reported to us.</description>
+     <pubDate>Wed, 09 Sep 2020 15:16:51 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/vulnerability-september-2020</guid>
+  </item>
+  <item>
     <title>Subscribers and loyal customers: a combination that makes consumers and retailers happy</title>
     <link>https://www.prestashop.com/en/blog/subscription-loyalty-retailers</link>
     <description>We have already discussed the issue of the strong digitisation trend in our country in several blog articles.</description>
@@ -68,22 +84,6 @@
      <pubDate>Tue, 21 Jul 2020 14:37:39 +0200</pubDate>
  <dc:creator>luca mastroianni</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/omnichannel-ecommerce-retail</guid>
-  </item>
-  <item>
-    <title>Influencer Marketing, what it is and why it can be extremely useful to you</title>
-    <link>https://www.prestashop.com/en/blog/influencer-marketing-ecommerce</link>
-    <description>There are people with hundreds of thousands of followers, those who have less than ten thousa</description>
-     <pubDate>Tue, 21 Jul 2020 14:34:43 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/influencer-marketing-ecommerce</guid>
-  </item>
-  <item>
-    <title>The importance of giving the utmost attention to the consumer journey of your e-commerce</title>
-    <link>https://www.prestashop.com/en/blog/importance-customer-journey</link>
-    <description>When managing an e-commerce it is essential to know the process that the consumer goes throug</description>
-     <pubDate>Tue, 21 Jul 2020 14:22:13 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/importance-customer-journey</guid>
   </item>
   </channel>
 </rss>
