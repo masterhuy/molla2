@@ -55,6 +55,8 @@
             {include file='_partials/footers/footer-12.tpl'}
         {elseif $footer_layout == 13}
             {include file='_partials/footers/footer-13.tpl'}
+        {elseif $footer_layout == 14}
+            {include file='_partials/footers/footer-14.tpl'}
         {/if}
     </footer>
 {/block}

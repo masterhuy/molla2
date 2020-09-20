@@ -89,7 +89,7 @@
 	    {/if}
         <div class="title-price align-items-center">
     		{block name='product_name'}
-                <h3 class="product-title text-left" itemprop="name">
+                <h3 class="product-title" itemprop="name">
                     <a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:40:'...'}</a>
                 </h3>
             {/block}
@@ -120,6 +120,13 @@
             {block name='product_variants'}
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
+        {/if}
+        {if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
+            <div class="specific_prices">
+                <div class="countdown-box">
+                    <div class="countdown">{$product.specific_prices.to}</div>
+                </div>
+            </div>
         {/if}
         <div class="product-short-desc">
     		{$product.description_short|truncate:300:'...' nofilter}

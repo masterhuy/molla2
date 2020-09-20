@@ -10,9 +10,9 @@
 *  @Website: http://www.prestawork.com
 */
 
-include_once(_PS_MODULE_DIR_.'gdz_blog/class/gdzblogHelper.php');
+include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzblogHelper.php');
 include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzComment.php');
-class GdzblogPostModuleFrontController extends ModuleFrontController
+class gdz_blogPostModuleFrontController extends ModuleFrontController
 {
     public $ssl = true;
     public $display_column_left = false;

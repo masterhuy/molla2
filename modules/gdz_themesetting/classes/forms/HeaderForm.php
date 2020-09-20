@@ -135,6 +135,11 @@ class gdzHeaderForm
                                     'id_option' => 13,
                                     'name' => $this->module->l('Layout 13', 'HeaderForm'),
                                     'img' => 'headers/13.jpg'
+                                ),
+                                array(
+                                    'id_option' => 14,
+                                    'name' => $this->module->l('Layout 14', 'HeaderForm'),
+                                    'img' => 'headers/14.jpg'
                                 )
                             ),
                             'id' => 'id_option',

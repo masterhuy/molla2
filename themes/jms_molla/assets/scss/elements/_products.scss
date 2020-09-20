@@ -751,6 +751,35 @@
 .col-grid .product-miniature{
 	margin-bottom: 2rem;
 }
+/* Productbox flex */
+.productbox-flex{
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+	&:hover{
+		box-shadow: none;
+	}
+	.product-preview{
+		flex: 0 0 70px;
+		max-width: 70px;
+		border: .1rem solid #f1f1f1;
+	}
+	.product-info{
+		flex: 1 1 auto;
+		padding: 1rem 0 0 2rem;
+	}
+	.product-title{
+		font-size: 1.4rem;
+		color: #666;
+	}
+	.content_price .price{
+		font-size: 1.4rem;
+		&.new.has-discount {
+		    color: #ef837b;
+		}
+	}
+}
+
 /* Product box 1 */
 .productbox-1 {
 	text-align:center;
@@ -1696,6 +1725,9 @@
 				color: #ef837b;
 			}
 		}
+	}
+	.specific_prices{
+		display: none;
 	}
 	.product-action{
 		padding: 0;

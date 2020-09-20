@@ -47,6 +47,9 @@ a:focus {
   .header-4 .header-search-extended .btn:focus {
     color: #c96; }
 
+.header-5 .search-form i:hover {
+  color: #c96; }
+
 .btn-video {
   color: #c96; }
   .btn-video:hover, .btn-video:focus {
@@ -557,6 +560,9 @@ a:focus {
 .btn-expandable span {
   background-color: #c96; }
 
+.productbox-flex .content_price .price.new {
+  color: #c96; }
+
 .productbox-2 .product-action .product-cart > button:hover {
   color: #c96; }
   .productbox-2 .product-action .product-cart > button:hover span {
@@ -689,6 +695,22 @@ a:focus {
 
 .header-13 .header-bottom .vermenu-btn {
   background-color: #c96; }
+
+.header-14 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #c96; }
+
+.header-14 .search-box {
+  border-color: #c96; }
+  .header-14 .search-box .button-search {
+    background-color: #c96; }
+    .header-14 .search-box .button-search:hover {
+      background-color: #c96; }
+
+.header-14 .vermenu .vermenu-btn {
+  background-color: #c96; }
+
+.header-14 .sticky-wrapper .text i {
+  color: #c96; }
 
 .header-top a:hover, .header-top a:focus {
   color: #c96; }
@@ -1223,11 +1245,26 @@ a:focus {
   .pb-video-open-modal:hover {
     background-color: #c96; }
 
-.header-5 .search-form i:hover {
+.login-layout-5 .nav.nav-tabs .nav-item .nav-link.active {
+  border-bottom-color: #c96; }
+
+.login-layout-5 a:hover {
   color: #c96; }
+
+.login-layout-5 #login-form .show-pass button {
+  border: .1rem solid #ebebeb;
+  border-left: 0; }
+
+.login-layout-5 #login-form .form-footer .btn {
+  border-color: #c96; }
+  .login-layout-5 #login-form .form-footer .btn:hover {
+    background-color: #c96; }
 
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #c96; }
+
+#footer.footer-14 .email_subscription #newsletter-btn:hover {
+  background-color: #c96; }
 
 /* Fonts */
 /* font-family: 'Poppins', sans-serif; */

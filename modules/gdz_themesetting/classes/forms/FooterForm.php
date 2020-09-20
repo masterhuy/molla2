@@ -123,6 +123,11 @@ class gdzFooterForm
                                     'id_option' => 13,
                                     'name' => $this->module->l('Layout 13', 'FooterForm'),
                                     'img' => 'footers/13.jpg'
+                                ),
+                                array(
+                                    'id_option' => 14,
+                                    'name' => $this->module->l('Layout 14', 'FooterForm'),
+                                    'img' => 'footers/14.jpg'
                                 )
                             ),
                             'id' => 'id_option',

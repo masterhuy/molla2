@@ -71,6 +71,11 @@ a:focus {
         }
     }
 }
+.header-5 .search-form i{
+    &:hover{
+        color: $primary-color;
+    }
+}
 
 .btn-video {
     color: $primary-color;
@@ -516,6 +521,9 @@ a:focus {
         background-color: $primary-color;
     }
 }
+.productbox-flex .content_price .price.new {
+    color: $primary-color;
+}
 .productbox-2{
     .product-action .product-cart > button:hover {
         color: $primary-color;
@@ -705,6 +713,26 @@ a:focus {
     }
     .header-bottom .vermenu-btn{
         background-color: $primary-color;
+    }
+}
+.header-14{
+    #hor-menu .gdz-megamenu .nav.level0 > li.open > a{
+        color: $primary-color;
+    }
+    .search-box{
+        border-color: $primary-color;
+        .button-search{
+            background-color: $primary-color;
+            &:hover{
+                background-color: $secondary-color;
+            }
+        }
+    }
+    .vermenu .vermenu-btn{
+        background-color: $primary-color;
+    }
+    .sticky-wrapper .text i{
+        color: $primary-color;
     }
 }
 .header-top {
@@ -1865,12 +1893,39 @@ a:focus {
         background-color: $primary-color;
     }
 }
-.header-5 .search-form i{
-    &:hover{
+
+//login form
+.login-layout-5{
+    .nav.nav-tabs .nav-item .nav-link.active {
+        border-bottom-color: $primary-color;
+    }
+    a:hover{
         color: $primary-color;
+    }
+    #login-form{
+        .show-pass button{
+            border: .1rem solid #ebebeb;
+            border-left: 0;
+        }
+        .form-footer .btn{
+            border-color: $primary-color;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
     }
 }
 
-#footer.footer-1 .html-1 .widget-about-info a {
-    color: $primary-color;
+
+#footer{
+    &.footer-1 .html-1 .widget-about-info a {
+        color: $primary-color;
+    }
+    &.footer-14{
+        .email_subscription{
+            #newsletter-btn:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
 }

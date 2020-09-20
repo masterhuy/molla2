@@ -64,19 +64,19 @@ class gdz_blog extends Module
       			$res &= Configuration::updateValue('GBW_SB_SHOW_CATEGORYMENU', 1);
       			$res &= Configuration::updateValue('GBW_SB_SHOW_ARCHIVES', 1);
 
-            $tab_parent_id = (int)Tab::getIdFromClassName('PRESTAWORK');
+            $tab_parent_id = (int)Tab::getIdFromClassName('GODZILLA');
             if($tab_parent_id <= 0) {
                 $tab = new Tab();
                 $tab->id_parent = 0;
                 $tab->active = 1;
-                $tab->class_name = "PRESTAWORK";
+                $tab->class_name = "GODZILLA";
                 $tab->name = array();
                 foreach (Language::getLanguages(true) as $lang) {
-                    $tab->name[$lang['id_lang']] = 'PRESTAWORK';
+                    $tab->name[$lang['id_lang']] = 'GODZILLA';
                 }
                 if(!$tab->add()) return false;
             }
-            if(((int)Tab::getIdFromClassName('PRESTAWORK') > 0) && ((int)Tab::getIdFromClassName('AdminGdzblogDashboard') <= 0)) {
+            if(((int)Tab::getIdFromClassName('GODZILLA') > 0) && ((int)Tab::getIdFromClassName('AdminGdzblogDashboard') <= 0)) {
                 $tab = new Tab();
                 $tab->active = 1;
                 $tab->class_name = "AdminGdzblogDashboard";
@@ -86,7 +86,7 @@ class gdz_blog extends Module
                 foreach (Language::getLanguages(true) as $lang) {
                     $tab->name[$lang['id_lang']] = 'Godzilla Blog';
                 }
-                $tab->id_parent = (int)Tab::getIdFromClassName('PRESTAWORK');
+                $tab->id_parent = (int)Tab::getIdFromClassName('GODZILLA');
                 $tab->module = $this->name;
                 if(!$tab->add()) return false;
                 $tab_parent_id = (int)Tab::getIdFromClassName('AdminGdzblogDashboard');

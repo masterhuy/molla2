@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>What is an ecommerce payment gateway?</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-payment-gateway</link>
+    <description>If you want your website to accept payments, you need a payment gateway.</description>
+     <pubDate>Mon, 14 Sep 2020 18:03:57 +0200</pubDate>
+ <dc:creator>Arina Drucioc EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-payment-gateway</guid>
+  </item>
+  <item>
+    <title>Extend and develop your customer relationship after purchase</title>
+    <link>https://www.prestashop.com/en/blog/customer-relationship-after-purchase</link>
+    <description>Thank your customer for purchasing your products with a personalized note to surprise them. This way you develop a true, long lasting and loyal customer relationship. </description>
+     <pubDate>Thu, 10 Sep 2020 18:44:17 +0200</pubDate>
+ <dc:creator>Romain De Vera EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-relationship-after-purchase</guid>
+  </item>
+  <item>
     <title>Getting your email marketing ready for the end-of-year sales</title>
     <link>https://www.prestashop.com/en/blog/email-marketing-holiday</link>
     <description>Learn how to make the most out of sales events like Black Friday and Cyber Monday by preparing your email marketing beforehand. </description>
@@ -68,22 +84,6 @@
      <pubDate>Fri, 31 Jul 2020 15:50:12 +0200</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/modules-back-to-school</guid>
-  </item>
-  <item>
-    <title>Crisis logistics: the importance of ensuring business continuity</title>
-    <link>https://www.prestashop.com/en/blog/crisis-logistics-continuity</link>
-    <description>We have already told you about the impact of the coronavirus on the world of e-commerce and t</description>
-     <pubDate>Mon, 27 Jul 2020 15:33:59 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/crisis-logistics-continuity</guid>
-  </item>
-  <item>
-    <title>Omnichannel strategies: the common future of retail and e-commerce</title>
-    <link>https://www.prestashop.com/en/blog/omnichannel-ecommerce-retail</link>
-    <description>In the world of commerce there is often a tendency to talk about the dichotomy between e-comm</description>
-     <pubDate>Tue, 21 Jul 2020 14:37:39 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/omnichannel-ecommerce-retail</guid>
   </item>
   </channel>
 </rss>

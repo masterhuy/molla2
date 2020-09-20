@@ -27,12 +27,7 @@
 {block name='page_title'}
   {l s='Log in to your account' d='Shop.Theme.CustomerAccount'}
 {/block}
-{if $gdzSetting.login_page_layout == 'layout-1'}
-    {include file='customer/_partials/login/layout-1.tpl'}
-{elseif $gdzSetting.login_page_layout == 'layout-2'}
-    {include file='customer/_partials/login/layout-2.tpl'}
-{elseif $gdzSetting.login_page_layout == 'layout-3'}
-    {include file='customer/_partials/login/layout-3.tpl'}
-{elseif $gdzSetting.login_page_layout == 'layout-4'}
-    {include file='customer/_partials/login/layout-4.tpl'}
-{/if}
+
+{assign var='pagelayout' value="customer/_partials/login/`$gdzSetting.login_page_layout`.tpl"}
+
+{include file=$pagelayout}

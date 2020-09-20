@@ -582,6 +582,11 @@ class gdzPagesForm
                                     'name' => $this->module->l('Layout 4', 'PagesForm'),
                                     'img' => 'contact/layout-4.jpg'
                                 ),
+                                array(
+                                    'id_option' => 'layout-5',
+                                    'name' => $this->module->l('Layout 5', 'PagesForm'),
+                                    'img' => 'contact/layout-5.jpg'
+                                ),
                             ),
                             'id' => 'id_option',
                             'name' => 'name',
@@ -719,9 +724,14 @@ class gdzPagesForm
                                 ),
                                 array(
                                     'id_option' => 'layout-4',
-                                    'name' => $this->module->l('Layout 3', 'PagesForm'),
+                                    'name' => $this->module->l('Layout 4', 'PagesForm'),
                                     'img' => 'login/layout-4.jpg'
                                 ),
+                                array(
+                                    'id_option' => 'layout-5',
+                                    'name' => $this->module->l('Layout 5', 'PagesForm'),
+                                    'img' => 'login/layout-5.jpg'
+                                )
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

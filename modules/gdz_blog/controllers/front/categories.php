@@ -11,7 +11,7 @@
 */
 
 include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzblogHelper.php');
-class GdzblogCategoriesModuleFrontController extends ModuleFrontController
+class gdz_blogCategoriesModuleFrontController extends ModuleFrontController
 {
     public $ssl = true;
     public $display_column_left = false;
