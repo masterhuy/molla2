@@ -30,7 +30,12 @@ select.form-control:not([size]):not([multiple]) {
 .form-control-white {
     border-color: #fff;
 }
-
+.form-control-label {
+    color: #666;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 0 0 1.1rem;
+}
 .form-control:focus {
     color: #777;
     background-color: #fff;
@@ -94,20 +99,15 @@ small.form-text {
     margin: 0 0 0 .45rem;
 }
 
-.required {
-    color: #e02b27;
-    font-size: 1.2rem;
-
-    +.form-footer {
-        margin-top: 0.8rem;
-    }
-}
 
 .form-footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding-top: .6rem;
+}
+.form-control-comment {
+    font-size: 1rem;
 }
 
 .select-custom {

@@ -67,9 +67,6 @@
 	position: relative;
 	top: 1px;
 }
-.form-control-comment {
-    font-size: .8rem;
-}
 #customer-form .custom-checkbox {
     display: -webkit-box;
     display: -moz-box;
@@ -77,25 +74,18 @@
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: baseline;
 }
 .custom-checkbox input[type=checkbox] {
-    /*margin-right: 3px;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    cursor: pointer;
-    position: relative;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.09);
-    text-align: center;*/
+	margin-right: 1rem;
 }
 .custom-checkbox label {
     text-align: left;
     display: inline;
 }
 #customer-form .custom-checkbox em {
-    font-size: .8rem;
-    opacity: .8;
+	font-size: 1.2rem;
+	opacity: .8;
 }
 .pasword-form input{
 	width:calc(100% - 100px);

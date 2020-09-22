@@ -1,4 +1,130 @@
 /* Category */
+#product_list{
+	.col-product{
+		padding: 0 10px;
+	}
+}
+.grid-3{
+	.products{
+		.col-product{
+			flex: 0 0 33.333333%;
+			max-width: 33.333333%;
+		}
+	}
+}
+#category{
+	.sidebar-column{
+		margin-top: -1rem;
+	}
+	.breadcrumb-wrapper{
+		margin-bottom: 2rem;
+	}
+	.breadcrumb-nav{
+		margin-bottom: 0;
+	}
+}
+#products-top{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	.page-pagination{
+		display: none;
+	}
+	.pagination{
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	.inlude_sort_by {
+		margin-right: 15px;
+	}
+	.select-title{
+		position:relative;
+		&::after{
+			font-family: "molla";
+			content: '\f110';
+			position: absolute;
+			display: inline-block;
+			right: .9rem;
+			top: 50%;
+			font-size: 1rem;
+			transform: translateY(-51%);
+			color: #333;
+			z-index: -1;
+		}
+	}
+	.sort-by {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		.label-sort-by{
+			font-weight: 400;
+			color: #333;
+			font-size: 1.2rem;
+			letter-spacing: -.01em;
+			margin-right: 1.6rem;
+		}
+	}
+	.view-mode{
+		.switch-view{
+			&:not(:first-child){
+				margin-left: 1.5rem;
+			}
+			&.active svg{
+				fill: #333;
+			}
+			svg{
+				fill: #dadada;
+				transition: fill 0.35s;
+			}
+		}
+	}
+	.block-pagination{
+		display: block;
+	}
+}
+.pagination{
+	font-weight: 400;
+	.block-pagination {
+		color: #ccc;
+		display: none;
+		span{
+			color: #333;
+		}
+	}
+	.page-pagination{
+		margin: auto;
+		ul{
+			li{
+				margin-left: .4rem;
+				&.current a{
+					background-color: transparent;
+					border-color: #ebebeb;
+				}
+				a{
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					min-width: 3rem;
+					height: 4rem;
+					font-weight: 400;
+					font-size: 1.4rem;
+					padding: 0 .3rem;
+					line-height: 1;
+					color: #706f6c;
+					border-radius: .3rem;
+					background-color: transparent;
+					border: .1rem solid transparent;
+					&:hover{
+						background-color: transparent;
+						border-color: #ebebeb;
+					}
+				}
+			}
+		}
+	}
+}
+
 .toolbox {
 	display: flex;
 	align-items: center;
@@ -374,7 +500,6 @@
 }
 
 .filter-price-text {
-	margin-bottom: 2rem;
 	letter-spacing: -.01em;
 }
 

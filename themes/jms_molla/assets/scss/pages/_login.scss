@@ -26,7 +26,7 @@
 		text-align: center;
 		.nav-item{
 			width: 50%;
-			margin: 0 0 -.2rem;
+			margin: 0 0 -.1rem;
 			.nav-link{
 				text-transform: capitalize;
 				font-weight: 400;
@@ -77,14 +77,21 @@
 		.form-control-label{
 			flex: 0 0 100%;
 			max-width: 100%;
-			color: #666;
-			font-weight: 300;
-			font-size: 1.4rem;
-			margin: 0 0 1.1rem;
 		}
 		.col-md-8{
 			flex: 0 0 100%;
 			max-width: 100%;
 		}
 	}
+}
+.show-pass button{
+    border: .1rem solid #ebebeb;
+    border-left: 0;
+}
+.register-form{
+	max-width: 575px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	padding: 3.7rem 6rem 6.4rem;
 }

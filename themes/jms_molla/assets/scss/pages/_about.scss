@@ -1,4 +1,21 @@
 /* About us */
+.cms-id-4, .cms-id-7{
+	#wrapper > .container{
+		max-width: 100%;
+		width: 100%;
+	}
+	#footer{
+		border-top: 0;
+	}
+}
+.page-cms-4, .page-cms-7{
+	padding-bottom: 0;
+}
+.page-cms-7{
+	.bg-image{
+		margin-top: 8rem;
+	}
+}
 .about-images {
 	position: relative;
 	text-align: right;
@@ -43,7 +60,12 @@
 		}
 	}
 }
-
+.testimonial{
+	p{
+		font-size: 1.4rem;
+		color: #777;
+	}
+}
 .about-testimonials {
 	blockquote {
 		color: $body-text;

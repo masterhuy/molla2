@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Marketplaces: what are the main difficulties encountered by retailers, and what are the solutions?</title>
+    <link>https://www.prestashop.com/en/blog/marketfire-marketplaces-retailers</link>
+    <description>During the release of the Marketfire e-commerce solution module on the PrestaShop Addons Ma</description>
+     <pubDate>Tue, 15 Sep 2020 17:49:48 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/marketfire-marketplaces-retailers</guid>
+  </item>
+  <item>
     <title>What is an ecommerce payment gateway?</title>
     <link>https://www.prestashop.com/en/blog/ecommerce-payment-gateway</link>
     <description>If you want your website to accept payments, you need a payment gateway.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 17 Aug 2020 17:50:45 +0200</pubDate>
  <dc:creator>luca mastroianni</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/important-stages-business</guid>
-  </item>
-  <item>
-    <title>Five essential modules to prepare for the back-to-school season</title>
-    <link>https://www.prestashop.com/en/blog/modules-back-to-school</link>
-    <description>While summer, sales, and holidays will remain topical for a few more weeks, the September 2020 back-to-school season is </description>
-     <pubDate>Fri, 31 Jul 2020 15:50:12 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/modules-back-to-school</guid>
   </item>
   </channel>
 </rss>

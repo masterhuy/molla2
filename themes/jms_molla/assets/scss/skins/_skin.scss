@@ -612,7 +612,9 @@ a:focus {
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }
-
+.owl_carousel .owl-nav button:hover::before{
+    color: $primary-color;
+}
 .product-buttons{
     .btn-icon{
         &:hover {
@@ -1903,10 +1905,6 @@ a:focus {
         color: $primary-color;
     }
     #login-form{
-        .show-pass button{
-            border: .1rem solid #ebebeb;
-            border-left: 0;
-        }
         .form-footer .btn{
             border-color: $primary-color;
             &:hover{
@@ -1915,7 +1913,26 @@ a:focus {
         }
     }
 }
+//facet search
+.faceted-slider{
+    .ranger{
+        color: $primary-color;
+    }
+}
 
+//pagination
+.pagination .page-pagination ul li{
+    &.current a{
+        color: $primary-color;
+    }
+    a:hover{
+        color: $primary-color;
+    }
+}
+
+#search_filters .btn-default.js-search-filters-clear-all{
+    color: $primary-color;
+}
 
 #footer{
     &.footer-1 .html-1 .widget-about-info a {

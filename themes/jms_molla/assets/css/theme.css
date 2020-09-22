@@ -281,15 +281,7 @@ header .row .col-auto {
     box-shadow: 5px 10px 16px rgba(51,51,51,0.05),-5px 10px 16px rgba(51,51,51,0.05);
 }
 #content-wrapper .page-title {
-    color: #333;
-    text-align: left;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: none;
-    border-bottom: solid 1px #e3e3e3;
-    margin-bottom: 0.8em;
-    padding-bottom: 0.5em;
+
 }
 .text-small {
     font-size:0.8rem;

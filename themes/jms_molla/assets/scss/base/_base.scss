@@ -245,7 +245,32 @@ img {
         }
     }
 }
-.owl-carousel{
+.owl_carousel{
+    position: relative;
+    button.owl-dot{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+    }
+    .owl-nav button{
+        &.owl-prev, &.owl-next{
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0 !important;
+            font: inherit;
+        }
+    }
+    .owl-stage-outer {
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.owl-carousel, .owl_carousel{
     .owl-item{
         display: flex;
         align-items: stretch;
@@ -434,6 +459,12 @@ img {
     }
 }
 
+.icon-close{
+    content: '\f191';
+    font: normal normal 1.3rem/1 'molla';
+    text-align: center;
+    color: #333;
+}
 
 .spinner {
   width: 50px;

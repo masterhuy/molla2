@@ -64,184 +64,184 @@
 /*--------------------- END of TABLE OF CONTENTS  ---------- */
 
 /* Main CSS File */
-@import 'mixins/clearfix';
-@import 'mixins/breakpoints';
-@import 'mixins/lazy';
-@import 'mixins/buttons';
+@import 'mixins/clearfix.scss';
+@import 'mixins/breakpoints.scss';
+@import 'mixins/lazy.scss';
+@import 'mixins/buttons.scss';
 
-@import 'config/fonts';
-@import 'config/variables';
+@import 'config/fonts.scss';
+@import 'config/variables.scss';
 
 
 /*--------------------- 1.General Styles ---------- */
-@import 'base/base';
-@import 'base/type';
-@import 'base/layout';
+@import 'base/base.scss';
+@import 'base/type.scss';
+@import 'base/layout.scss';
 /*--------------------- 2.Headers -------------------- */
-@import 'base/headers/header';
-@import 'base/headers/header-2';
-@import 'base/headers/header-3';
-@import 'base/headers/header-4';
-@import 'base/headers/header-5';
-@import 'base/headers/header-6';
-@import 'base/headers/header-7';
-@import 'base/headers/header-8';
-@import 'base/headers/header-9';
-@import 'base/headers/header-10';
-@import 'base/headers/header-11';
-@import 'base/headers/header-12';
-@import 'base/headers/header-13';
-@import 'base/headers/header-14';
+@import 'base/headers/header.scss';
+@import 'base/headers/header-2.scss';
+@import 'base/headers/header-3.scss';
+@import 'base/headers/header-4.scss';
+@import 'base/headers/header-5.scss';
+@import 'base/headers/header-6.scss';
+@import 'base/headers/header-7.scss';
+@import 'base/headers/header-8.scss';
+@import 'base/headers/header-9.scss';
+@import 'base/headers/header-10.scss';
+@import 'base/headers/header-11.scss';
+@import 'base/headers/header-12.scss';
+@import 'base/headers/header-13.scss';
+@import 'base/headers/header-14.scss';
 
 /*--------------------- 2.1.Menu -------------------- */
-@import 'base/headers/menu';
+@import 'base/headers/menu.scss';
 
 /*--------------------- 2.2.Vertical Menu -------------------- */
-@import 'base/headers/vertical-menu';
+@import 'base/headers/vertical-menu.scss';
 
 /*--------------------- 2.3.Sticky Header -------------------- */
-@import 'base/headers/sticky-header';
+@import 'base/headers/sticky-header.scss';
 
 /*--------------------- 2.4.Mobiel Menu -------------------- */
-@import 'base/headers/mobile-menu';
-@import 'base/headers/mobile-menu-light';
+@import 'base/headers/mobile-menu.scss';
+@import 'base/headers/mobile-menu-light.scss';
 
 
 /*--------------------- 3.Footer -------------------- */
-@import 'base/footers/footer';
-@import 'base/footers/footer-dark';
+@import 'base/footers/footer.scss';
+@import 'base/footers/footer-dark.scss';
 
 
 /*--------------------- 4.Elements -------------------- */
 /*--------------------- 4.1.Page Header -------------------- */
-@import 'elements/page-header';
+@import 'elements/page-header.scss';
 
 /*--------------------- 4.2.BreadCrumbs -------------------- */
-@import 'elements/breadcrumb';
+@import 'elements/breadcrumb.scss';
 
 /*--------------------- 4.3.Titles -------------------- */
-@import 'elements/titles';
+@import 'elements/titles.scss';
 
 /*--------------------- 4.4.Icon boxes -------------------- */
-@import 'elements/icon-boxes';
+@import 'elements/icon-boxes.scss';
 
 /*--------------------- 4.5.Cards -------------------- */
-@import 'elements/cards';
+@import 'elements/cards.scss';
 
 /*--------------------- 4.6.Tabs -------------------- */
-@import 'elements/tabs';
+@import 'elements/tabs.scss';
 
 /*--------------------- 4.7.Buttons -------------------- */
-@import 'elements/buttons';
+@import 'elements/buttons.scss';
 
 /*--------------------- 4.8.Products -------------------- */
-@import 'elements/products';
+@import 'elements/products.scss';
 
 /*--------------------- 4.9.Banners -------------------- */
-@import 'elements/banners';
+@import 'elements/banners.scss';
 
 /*--------------------- 4.10.Banners Video -------------------- */
-@import 'elements/banners-video';
+@import 'elements/banners-video.scss';
 
 /*--------------------- 4.11.Banners Category -------------------- */
-@import 'elements/banners-category';
+@import 'elements/banners-category.scss';
 
 /*--------------------- 4.12.Social Icons -------------------- */
-@import 'elements/social-icons';
+@import 'elements/social-icons.scss';
 
 /*--------------------- 4.13.Testimonials -------------------- */
-@import 'elements/testimonials';
+@import 'elements/testimonials.scss';
 
 /*--------------------- 4.14.Forms -------------------- */
-@import 'elements/forms';
+@import 'elements/forms.scss';
 
 /*--------------------- 4.15.Call to Actions -------------------- */
-@import 'elements/cta';
+@import 'elements/cta.scss';
 
 /*--------------------- 4.16.Tables -------------------- */
-@import 'elements/tables';
+@import 'elements/tables.scss';
 
 /*--------------------- 4.17. Counters -------------------- */
-@import 'elements/counters';
+@import 'elements/counters.scss';
 
 /*--------------------- 4.18.Pagination -------------------- */
-@import 'elements/pagination';
+@import 'elements/pagination.scss';
 
 /*--------------------- 4.19.Modals -------------------- */
-@import 'elements/modals';
+@import 'elements/modals.scss';
 
 /*--------------------- 4.20.Alerts -------------------- */
-@import 'elements/alerts';
+@import 'elements/alerts.scss';
 
 /*--------------------- 4.21.Instagram Feeds -------------------- */
-@import 'elements/instagram-feed';
+@import 'elements/instagram-feed.scss';
 
 /*--------------------- 4.21.Elements list -------------------- */
-@import 'elements/list';
+@import 'elements/list.scss';
 
 
 /*--------------------- 5.Pages -------------------- */
 /*--------------------- 5.1.Home -------------------- */
-@import 'pages/home';
+@import 'pages/home.scss';
 
 /*--------------------- 5.2.Category -------------------- */
-@import 'pages/category';
+@import 'pages/category.scss';
 
 /*--------------------- 5.3.Product Pages -------------------- */
-@import 'pages/product';
+@import 'pages/product.scss';
 
 /*--------------------- 5.4.Blog -------------------- */
-@import 'pages/blog';
+@import 'pages/blog.scss';
 
 /*--------------------- 5.5.Single/Blog Post -------------------- */
-@import 'pages/single';
+@import 'pages/single.scss';
 
 /*--------------------- 5.6.Portfolio -------------------- */
-@import 'pages/portfolio';
+@import 'pages/portfolio.scss';
 
 /*--------------------- 5.7.About -------------------- */
-@import 'pages/about';
+@import 'pages/about.scss';
 
 /*--------------------- 5.8.About 2 -------------------- */
-@import 'pages/about-2';
+@import 'pages/about-2.scss';
 
 /*--------------------- 5.9.Contact -------------------- */
-@import 'pages/contact';
+@import 'pages/contact.scss';
 
 /*--------------------- 5.10.Contact 2 -------------------- */
-@import 'pages/contact-2';
+@import 'pages/contact-2.scss';
 
 /*--------------------- 5.11.Login -------------------- */
-@import 'pages/login';
+@import 'pages/login.scss';
 
 /*--------------------- 5.12.Category Banner Page -------------------- */
-@import 'pages/category-banner-page';
+@import 'pages/category-banner-page.scss';
 
 /*--------------------- 5.13.Checkout -------------------- */
-@import 'pages/checkout';
+@import 'pages/checkout.scss';
 
 /*--------------------- 5.14.Wishlist -------------------- */
-@import 'pages/wishlist';
+@import 'pages/wishlist.scss';
 
 /*--------------------- 5.15.Cart -------------------- */
-@import 'pages/cart';
+@import 'pages/cart.scss';
 
 /*--------------------- 5.16.Dashboard -------------------- */
-@import 'pages/dashboard';
+@import 'pages/dashboard.scss';
 
 /*--------------------- 5.17.404 -------------------- */
-@import 'pages/404';
+@import 'pages/404.scss';
 
 /*--------------------- 5.18.Coming Soon -------------------- */
-@import 'pages/coming-soon';
+@import 'pages/coming-soon.scss';
 
 
 /*--------------------- 6.Spacing + Helpers -------------------- */
-@import 'config/helpers';
-@import 'config/spacing';
+@import 'config/helpers.scss';
+@import 'config/spacing.scss';
 
 /*--------------------- 7.Font Icons -------------------- */
-@import 'elements/font-icons';
+@import 'elements/font-icons.scss';
 
-@import 'plugins/magnific-popup/magnific-popup';
+@import 'plugins/magnific-popup/magnific-popup.scss';
 

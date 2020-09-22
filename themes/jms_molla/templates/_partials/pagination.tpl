@@ -22,45 +22,47 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<nav class="pagination col-lg-12 col-sm-12 col-xs-12 col-md-12">
-  <div class="col-md-6 col-sm-6 col-xs-6 left-pagination">
-    {block name='pagination_summary'}
-    <span>
-      {l s='Showing' d='Shop.Theme.Catalog'}
-      {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}</span>
-      {l s='results' d='Shop.Theme.Catalog'}
-    {/block}
-  </div>
-
-  <div class="col-md-6 col-sm-6 col-xs-6 right-pagination">
-    {block name='pagination_page_list'}
-     {if $pagination.should_be_displayed}
-        <ul class="page-list clearfix text-sm-center">
-          {foreach from=$pagination.pages item="page"}
-
-            <li {if $page.current} class="current" {/if}>
-              {if $page.type === 'spacer'}
-                <span class="spacer">&hellip;</span>
-              {else}
-                <a
-                  rel="{if $page.type === 'previous'}prev{elseif $page.type === 'next'}next{else}nofollow{/if}"
-                  href="{$page.url}"
-                  class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
-                >
-                  {if $page.type === 'previous'}
-                    <i class="ptw-icon {$gdzSetting.left_icon}"></i>
-                  {elseif $page.type === 'next'}
-                    <i class="ptw-icon {$gdzSetting.right_icon}"></i>
-                  {else}
-                    {$page.page}
-                  {/if}
-                </a>
-              {/if}
-            </li>
-          {/foreach}
-        </ul>
-      {/if}
-    {/block}
-  </div>
-
+<nav class="pagination">
+    <div class="block-pagination">
+        {block name='pagination_summary'}
+            {l s='Showing' d='Shop.Theme.Catalog'}
+            <span>
+                {l s='%to%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
+                {l s='of' d='Shop.Theme.Catalog'}
+                {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
+            </span>
+            {l s='Products' d='Shop.Theme.Catalog'}
+        {/block}
+    </div>
+    <div class="page-pagination">
+        {block name='pagination_page_list'}
+            {if $pagination.should_be_displayed}
+                <ul class="page-list clearfix text-sm-center">
+                    {foreach from=$pagination.pages item="page"}
+                        <li {if $page.current} class="current" {/if}>
+                            {if $page.type === 'spacer'}
+                                <span class="spacer">&hellip;</span>
+                            {else}
+                                <a
+                                    rel="{if $page.type === 'previous'}prev{elseif $page.type === 'next'}next{else}nofollow{/if}"
+                                    href="{$page.url}"
+                                    class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
+                                >
+                                    {if $page.type === 'previous'}
+                                        <i class="icon-long-arrow-left"></i>
+                                        <span>{l s='Prev' d='Shop.Theme.Catalog'}</span>
+                                    {elseif $page.type === 'next'}
+                                        <span>{l s='Next' d='Shop.Theme.Catalog'}</span>
+                                        <i class="icon-long-arrow-right"></i>
+                                    {else}
+                                        {$page.page}
+                                    {/if}
+                                </a>
+                            {/if}
+                        </li>
+                    {/foreach}
+                </ul>
+            {/if}
+        {/block}
+    </div>
 </nav>
