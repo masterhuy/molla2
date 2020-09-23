@@ -211,8 +211,34 @@ $(document).on('click', '.switch-view', function (e) {
         $('#product_list').addClass('products-grid');
     } else {
         $('#product_list').removeClass('products-grid');
+        $('#product_list').removeClass('grid-2');
+        $('#product_list').removeClass('grid-3');
+        $('#product_list').removeClass('grid-4');
+        $('#product_list').removeClass('grid-5');
+        $('#product_list').removeClass('grid-6');
         $('#product_list').addClass('products-list');
     }
+});
+$(document).on('click', '.view-grid-2', function (e) {
+    $('#product_list').addClass('grid-2');
+    $('#product_list').removeClass('grid-3');
+    $('#product_list').removeClass('grid-4');
+    $('#product_list').removeClass('grid-5');
+    $('#product_list').removeClass('grid-6');
+});
+$(document).on('click', '.view-grid-3', function (e) {
+    $('#product_list').addClass('grid-3');
+    $('#product_list').removeClass('grid-2');
+    $('#product_list').removeClass('grid-4');
+    $('#product_list').removeClass('grid-5');
+    $('#product_list').removeClass('grid-6');
+});
+$(document).on('click', '.view-grid-4', function (e) {
+    $('#product_list').addClass('grid-4');
+    $('#product_list').removeClass('grid-2');
+    $('#product_list').removeClass('grid-3');
+    $('#product_list').removeClass('grid-5');
+    $('#product_list').removeClass('grid-6');
 });
 
 $(document).on('click', '.dropdown-menu', function (e) {

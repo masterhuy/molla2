@@ -10778,82 +10778,49 @@ small.form-text {
 /*--------------------- 4.18.Pagination -------------------- */
 /* Pagination */
 .pagination {
-  border-radius: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 2rem; }
-
-.page-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-width: 3rem;
-  height: 4rem;
   font-weight: 400;
-  font-size: 1.4rem;
-  padding: 0 .3rem;
-  line-height: 1;
-  color: #706f6c;
-  border-radius: .3rem;
-  background-color: transparent;
-  border: .1rem solid transparent; }
-  .page-link i {
-    font-size: 1.5rem; }
-  .page-link.page-link-prev {
-    margin-right: 1.7rem; }
-    .page-link.page-link-prev i {
-      margin-left: 0;
-      margin-right: 1rem; }
-  .page-link.page-link-next {
-    margin-left: 1.8rem; }
-    .page-link.page-link-next i {
-      margin-left: 1rem;
-      margin-right: 0; }
-  .page-link.page-link-prev, .page-link.page-link-next {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    min-width: 70px; }
-  .page-link:hover, .page-link:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #a6c76c;
-    border-color: #ebebeb;
-    text-decoration: none;
-    background-color: transparent;
-    outline: none !important; }
-
-.page-item-total {
-  color: #cccccc;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-left: 1.2rem; }
-
-.page-item + .page-item {
-  margin-left: .4rem; }
-
-.page-item:first-child .page-link {
-  border-top-left-radius: .3rem;
-  border-bottom-left-radius: .3rem; }
-
-.page-item:last-child .page-link {
-  border-top-right-radius: .3rem;
-  border-bottom-right-radius: .3rem; }
-
-.page-item.active .page-link {
-  color: #a6c76c;
-  background-color: transparent;
-  border-color: #ebebeb; }
-
-.page-item.disabled .page-link {
-  border-color: transparent;
-  color: #eaeaea; }
+  margin-top: 3.8rem; }
+  .pagination .block-pagination {
+    color: #ccc;
+    display: none; }
+    .pagination .block-pagination span {
+      color: #333; }
+  .pagination .page-pagination {
+    margin: auto; }
+    .pagination .page-pagination ul {
+      margin-bottom: 0; }
+      .pagination .page-pagination ul li {
+        margin-left: .4rem; }
+        .pagination .page-pagination ul li.current a {
+          background-color: transparent;
+          border-color: #ebebeb; }
+        .pagination .page-pagination ul li a {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          min-width: 3rem;
+          height: 4rem;
+          font-weight: 400;
+          font-size: 1.4rem;
+          padding: 0 .3rem;
+          line-height: 1;
+          color: #706f6c;
+          border-radius: .3rem;
+          background-color: transparent;
+          border: .1rem solid transparent; }
+          .pagination .page-pagination ul li a.next, .pagination .page-pagination ul li a.prev {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            min-width: 70px; }
+          .pagination .page-pagination ul li a:hover {
+            background-color: transparent;
+            border-color: #ebebeb; }
 
 /*--------------------- 4.19.Modals -------------------- */
 /* Modals */
@@ -11954,11 +11921,23 @@ button:focus {
 #product_list .col-product {
   padding: 0 10px; }
 
+.grid-2 .products .col-product {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
 .grid-3 .products .col-product {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%; }
+
+.grid-4 .products .col-product {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
 
 #category .sidebar-column {
   margin-top: -1rem; }
@@ -11968,6 +11947,9 @@ button:focus {
 
 #category .breadcrumb-nav {
   margin-bottom: 0; }
+
+#category #footer {
+  margin-top: 7rem; }
 
 #products-top {
   margin: 0;
@@ -12023,44 +12005,6 @@ button:focus {
     transition: fill 0.35s; }
   #products-top .block-pagination {
     display: block; }
-
-.pagination {
-  font-weight: 400; }
-  .pagination .block-pagination {
-    color: #ccc;
-    display: none; }
-    .pagination .block-pagination span {
-      color: #333; }
-  .pagination .page-pagination {
-    margin: auto; }
-    .pagination .page-pagination ul li {
-      margin-left: .4rem; }
-      .pagination .page-pagination ul li.current a {
-        background-color: transparent;
-        border-color: #ebebeb; }
-      .pagination .page-pagination ul li a {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        min-width: 3rem;
-        height: 4rem;
-        font-weight: 400;
-        font-size: 1.4rem;
-        padding: 0 .3rem;
-        line-height: 1;
-        color: #706f6c;
-        border-radius: .3rem;
-        background-color: transparent;
-        border: .1rem solid transparent; }
-        .pagination .page-pagination ul li a:hover {
-          background-color: transparent;
-          border-color: #ebebeb; }
 
 .toolbox {
   display: -webkit-box;

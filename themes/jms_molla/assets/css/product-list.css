@@ -430,62 +430,55 @@
     flex-wrap: wrap;
 }
 
-.products-grid.grid-2 .js-product-miniature:nth-child(2n),
-.products-grid.grid-3 .js-product-miniature:nth-child(3n),
-.products-grid.grid-4 .js-product-miniature:nth-child(4n),
-.products-grid.grid-5 .js-product-miniature:nth-child(5n),
-.products-grid.grid-6 .js-product-miniature:nth-child(6n) {
-    margin-right: 0 !important;
-}
-.products-grid.grid-1-2-1-2 .js-product-miniature:nth-child(3n+1) {
+.products-grid.grid-1-2-1-2 .col-product:nth-child(3n+1) {
 	width:100%;
 	padding:0px 25%;
 	margin-right: 0 !important;
 }
-.products-grid.grid-1-2-1-2 .js-product-miniature:nth-child(3n+2),
-.products-grid.grid-1-2-1-2 .js-product-miniature:nth-child(3n+3) {
-	width: calc((100% - 30px)/2);
+.products-grid.grid-1-2-1-2 .col-product:nth-child(3n+2),
+.products-grid.grid-1-2-1-2 .col-product:nth-child(3n+3) {
+	width: calc((100% - 0px)/2);
 }
-.products-grid.grid-1-2-1-2 .js-product-miniature:nth-child(3n+3) {
+.products-grid.grid-1-2-1-2 .col-product:nth-child(3n+3) {
 	margin-right: 0 !important;
 }
 
-.products-grid.grid-1-3-1-3 .js-product-miniature:nth-child(4n+1) {
+.products-grid.grid-1-3-1-3 .col-product:nth-child(4n+1) {
 	width:100%;
 	padding:0px 25%;
 	margin-right: 0 !important;
 }
-.products-grid.grid-1-3-1-3 .js-product-miniature:nth-child(4n+2),
-.products-grid.grid-1-3-1-3 .js-product-miniature:nth-child(4n+3),
-.products-grid.grid-1-3-1-3 .js-product-miniature:nth-child(4n+4) {
-	width: calc((100% - 60px)/3);
+.products-grid.grid-1-3-1-3 .col-product:nth-child(4n+2),
+.products-grid.grid-1-3-1-3 .col-product:nth-child(4n+3),
+.products-grid.grid-1-3-1-3 .col-product:nth-child(4n+4) {
+	width: calc((100% - 0px)/3);
 }
-.products-grid.grid-1-3-1-3 .js-product-miniature:nth-child(4n+4) {
+.products-grid.grid-1-3-1-3 .col-product:nth-child(4n+4) {
 	margin-right: 0 !important;
 }
-.products-grid.grid-2-1-2-1 .js-product-miniature:nth-child(3n+3) {
+.products-grid.grid-2-1-2-1 .col-product:nth-child(3n+3) {
 	width:100%;
 	padding:0px 25%;
 	margin-right: 0 !important;
 }
-.products-grid.grid-2-1-2-1 .js-product-miniature:nth-child(3n+1),
-.products-grid.grid-2-1-2-1 .js-product-miniature:nth-child(3n+2) {
-	width: calc((100% - 30px)/2);
+.products-grid.grid-2-1-2-1 .col-product:nth-child(3n+1),
+.products-grid.grid-2-1-2-1 .col-product:nth-child(3n+2) {
+	width: calc((100% - 0px)/2);
 }
-.products-grid.grid-2-1-2-1 .js-product-miniature:nth-child(3n+2) {
+.products-grid.grid-2-1-2-1 .col-product:nth-child(3n+2) {
 	margin-right: 0 !important;
 }
-.products-grid.grid-3-1-3-1 .js-product-miniature:nth-child(4n+4) {
+.products-grid.grid-3-1-3-1 .col-product:nth-child(4n+4) {
 	width:100%;
 	padding:0px 25%;
 	margin-right: 0 !important;
 }
-.products-grid.grid-3-1-3-1 .js-product-miniature:nth-child(4n+1),
-.products-grid.grid-3-1-3-1 .js-product-miniature:nth-child(4n+2),
-.products-grid.grid-3-1-3-1 .js-product-miniature:nth-child(4n+3) {
-	width: calc((100% - 60px)/3);
+.products-grid.grid-3-1-3-1 .col-product:nth-child(4n+1),
+.products-grid.grid-3-1-3-1 .col-product:nth-child(4n+2),
+.products-grid.grid-3-1-3-1 .col-product:nth-child(4n+3) {
+	width: calc((100% - 0px)/3);
 }
-.products-grid.grid-3-1-3-1 .js-product-miniature:nth-child(4n+3) {
+.products-grid.grid-3-1-3-1 .col-product:nth-child(4n+3) {
 	margin-right: 0 !important;
 }
 
@@ -499,13 +492,6 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 30px;
-}
-.pagination {
-    margin: 20px 0 0;
-    padding-top: 20px;
-	padding-right:0px;
-    border-top: 1px solid #ebebeb;
 }
 .pagination ul {
 	list-style: none;
@@ -748,29 +734,6 @@
 }
 .more-rows .item .js-product-miniature{
 	height: auto;
-}
-.products-list .js-product-miniature {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 28px;
-		width:100%;
-}
-.products-list .product-preview {
-    width: 31.5%;
-}
-.products-list .product-info {
-		width: 68.5%;
-    border-top: 0 none;
-    padding: 0 30px;
-    text-align: left;
-    margin-top: -3px;
-}
-.products-list .product-short-desc {
-	display:block;
 }
 .variant-links{
 	display: flex;

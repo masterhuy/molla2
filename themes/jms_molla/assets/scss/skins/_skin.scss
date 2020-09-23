@@ -1930,6 +1930,14 @@ a:focus {
     }
 }
 
+//product list
+.products-list .product-miniature .product-action .quick-view:hover{
+    color: $primary-color;
+    span{
+        box-shadow: 0 1px 0 0 $primary-color;
+    }
+}
+
 #search_filters .btn-default.js-search-filters-clear-all{
     color: $primary-color;
 }

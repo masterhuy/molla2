@@ -46,7 +46,7 @@
 								<rect x="6" y="6" width="10" height="4"></rect>
 							</svg>
 						</a>
-						<a class="switch-view view-grid {if $gdzSetting.shop_list == 'grid'}active{/if}" href="#">
+						<a class="switch-view view-grid view-grid-2" href="#">
 							<svg width="10" height="10">
 								<rect x="0" y="0" width="4" height="4"></rect>
 								<rect x="6" y="0" width="4" height="4"></rect>
@@ -54,7 +54,7 @@
 								<rect x="6" y="6" width="4" height="4"></rect>
 							</svg>
 						</a>
-						<a class="switch-view view-grid-3" href="#">
+						<a class="switch-view view-grid view-grid-3 {if $gdzSetting.shop_list == 'grid'}active{/if}" href="#">
 							<svg width="16" height="10">
 								<rect x="0" y="0" width="4" height="4"></rect>
 								<rect x="6" y="0" width="4" height="4"></rect>
@@ -64,7 +64,7 @@
 								<rect x="12" y="6" width="4" height="4"></rect>
 							</svg>
 						</a>
-						<a class="switch-view view-gird-4" href="#">
+						<a class="switch-view view-grid view-grid-4" href="#">
 							<svg width="22" height="10">
 								<rect x="0" y="0" width="4" height="4"></rect>
 								<rect x="6" y="0" width="4" height="4"></rect>

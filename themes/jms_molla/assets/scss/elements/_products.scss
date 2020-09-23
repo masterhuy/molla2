@@ -30,6 +30,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
+	position: relative;
 }
 
 .product-image-hover {
@@ -779,6 +780,18 @@
 		}
 	}
 }
+.product-miniature{
+	.product-info{
+		.addToWishlist{
+			display: none;
+		}
+	}
+	.product-action{
+		.quick-view{
+			display: none;
+		}
+	}
+}
 
 /* Product box 1 */
 .productbox-1 {
@@ -786,6 +799,11 @@
 	.content_price {
 		margin-bottom:0.5rem;
 		margin-top: -1px;
+	}
+	.product-action{
+		.content_price{
+			display: none;
+		}
 	}
 }
 
@@ -865,6 +883,9 @@
 			margin: 0;
 			margin-right: .5rem;
 		}
+	}
+	.product-actions{
+		display: none;
 	}
 }
 
