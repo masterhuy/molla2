@@ -24,39 +24,15 @@
  *}
 {if isset($smarty.get.header_layout) && $smarty.get.header_layout !=''}
     {assign var='header_layout' value=$smarty.get.header_layout}
+    {assign var='header_layout_link' value="_partials/headers/header-`$smarty.get.header_layout`.tpl"}
 {else}
     {assign var='header_layout' value=$gdzSetting.header_layout}
+    {assign var='header_layout_link' value="_partials/headers/header-`$gdzSetting.header_layout`.tpl"}
 {/if}
+
+
 <div id="desktop-header" class="header-{$header_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">
-    {if $header_layout == 1}
-        {include file='_partials/headers/header-1.tpl'}
-    {elseif $header_layout == 2}
-        {include file='_partials/headers/header-2.tpl'}
-    {elseif $header_layout == 3}
-        {include file='_partials/headers/header-3.tpl'}
-    {elseif $header_layout == 4}
-        {include file='_partials/headers/header-4.tpl'}
-    {elseif $header_layout == 5}
-        {include file='_partials/headers/header-5.tpl'}
-    {elseif $header_layout == 6}
-        {include file='_partials/headers/header-6.tpl'}
-    {elseif $header_layout == 7}
-        {include file='_partials/headers/header-7.tpl'}
-    {elseif $header_layout == 8}
-        {include file='_partials/headers/header-8.tpl'}
-    {elseif $header_layout == 9}
-        {include file='_partials/headers/header-9.tpl'}    
-    {elseif $header_layout == 10}
-        {include file='_partials/headers/header-10.tpl'}
-    {elseif $header_layout == 11}
-        {include file='_partials/headers/header-11.tpl'}
-    {elseif $header_layout == 12}
-        {include file='_partials/headers/header-12.tpl'}
-    {elseif $header_layout == 13}
-        {include file='_partials/headers/header-13.tpl'}
-    {elseif $header_layout == 14}
-        {include file='_partials/headers/header-14.tpl'}
-    {/if}
+    {include file=$header_layout_link}
 </div>
 <div id="mobile-header" class="header-mobile-{$gdzSetting.header_mobile_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">
     {if $gdzSetting.header_mobile_layout == 1}

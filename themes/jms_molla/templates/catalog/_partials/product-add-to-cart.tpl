@@ -26,12 +26,11 @@
     {if !$configuration.is_catalog}
         {block name='product_quantity'}
             <div class="product-quantity">
-                <div class="customs">
-                    <div class="title">
+                <div class="qty">
+                    <span class="control-label">
                         {l s='Quantity' d='Shop.Theme.Actions'}:
-                    </div>
-                    <div class="qty">
-                      <input
+                    </span>
+                    <input
                         type="text"
                         name="qty"
                         id="quantity_wanted"
@@ -39,8 +38,7 @@
                         class="input-group"
                         min="{$product.minimal_quantity}"
                         aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
-                      />
-                    </div>
+                    />
                 </div>
       		    <div class="add">
                     <button
@@ -52,13 +50,21 @@
                         {if !$product.add_to_cart_url}disabled{/if}
                     >
                         {if $product.quantity >= 1}
-                        <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+                            <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>
                         {else}
-                        <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+                            <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
                         {/if}
                     </button>
                     {if $gdzSetting.productbox_wishlist}
-                        <a href="#" class="addToWishlist btn btn-default" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a>
+                        <a 
+                            href="#" 
+                            class="addToWishlist" 
+                            onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" 
+                            data-id-product="{$product.id_product|escape:'html'}" 
+                            title="{l s='Add to Wishlist'}"
+                        >
+                            <span>Add to Wishlist</span>
+                        </a>
                     {/if}
                 </div>
                 {hook h='displayProductActions' product=$product}

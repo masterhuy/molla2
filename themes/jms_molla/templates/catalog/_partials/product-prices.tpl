@@ -24,21 +24,19 @@
  *}
 {if $product.show_price}
     <div class="product-prices content_price">
-      {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
-          <div class="product-reference">
-              <label class="label">{l s='Reference' d='Shop.Theme.Catalog'} </label>
-              <span itemprop="sku">{$product.reference_to_display}</span>
-          </div>
-      {/if}
+        {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
+            <div class="product-reference">
+                <label class="label">{l s='Reference' d='Shop.Theme.Catalog'} </label>
+                <span itemprop="sku">{$product.reference_to_display}</span>
+            </div>
+        {/if}
+        <div itemprop="price" content="{$product.price_amount}" class="price new">{$product.price}</div>
         {block name='product_discount'}
             {if $product.has_discount}
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
                 <div class="price old">{$product.regular_price}</div>
             {/if}
         {/block}
-
-	    <div itemprop="price" content="{$product.price_amount}" class="price new">{$product.price}</div>
-
         {block name='product_price'}
             <div
                 class="product-price h5 {if $product.has_discount}has-discount{/if}"
@@ -55,19 +53,16 @@
                 {/block}
             </div>
         {/block}
-
         {block name='product_without_taxes'}
             {if $priceDisplay == 2}
                 <p class="product-without-taxes">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</p>
             {/if}
         {/block}
-
         {block name='product_pack_price'}
             {if $displayPackPrice}
                 <p class="product-pack-price"><span>{l s='Instead of %price%' d='Shop.Theme.Catalog' sprintf=['%price%' => $noPackPrice]}</span></p>
             {/if}
         {/block}
-
         {block name='product_ecotax'}
             {if $product.ecotax.amount > 0}
                 <p class="price-ecotax">{l s='Including %amount% for ecotax' d='Shop.Theme.Catalog' sprintf=['%amount%' => $product.ecotax.value]}
@@ -77,9 +72,7 @@
                 </p>
             {/if}
         {/block}
-
         {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
-
         {block name='product_availability'}
             {if $product.show_availability && $product.availability_message}
             <span id="product-availability">
@@ -93,5 +86,5 @@
             </span>
             {/if}
         {/block}
-  </div>
+    </div>
 {/if}

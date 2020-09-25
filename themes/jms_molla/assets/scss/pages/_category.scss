@@ -32,15 +32,21 @@
 			.product-action{
 				display: none;
 			}
+			.specific_prices{
+				display: none;
+			}
 		}
 		.product-info{
 			flex: 0 0 50%;
 			max-width: 50%;
-			padding: 16px 10px 0 10px;
+			padding: 1rem;
 			text-align: left;
 			transition: none;
 			#review{
 				display: none;
+			}
+			.category-name{
+				display: inline-block;
 			}
 			.content_price{
 				display: none;
@@ -52,22 +58,34 @@
 				top: 2.8rem;
 			}
 			.variant-links{
+				display: flex;
+				position: static;
 				margin-top: 3.7rem;
 				justify-content: flex-start;
 			}
+		}
+		.product-footer{
+			display: none;
 		}
 		.product-actions{
 			flex: 0 0 25%;
 			max-width: 25%;
 			padding-right: 10px;
 			padding-left: 10px;
+			padding-top: 3.3rem;
 			position: static;
 			opacity: 1;
 			visibility: visible;
 			transform: none;
 			transition: none;
+			display: block;
 			.content_price{
 				display: block;
+				margin-bottom: -.1rem;
+			}
+			#review{
+				display: block;
+				margin-bottom: 1.9rem;
 			}
 			.quick-view {
 			    display: flex;
@@ -85,6 +103,14 @@
 					margin-left: .5rem;
 				}
 			}
+			.product-btn{
+				line-height: 1;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+		}
+		.product-list-reviews{
+			justify-content: flex-start;
 		}
 		.product-short-desc{
 			display: block;
@@ -92,12 +118,39 @@
 			line-height: 1.45;
 		}
 	}
-	.productbox-1{
-
+	.productbox-8{
+		.product-info{
+			transform: none !important;
+		}
+		#review{
+			margin-top: .4rem;
+			margin-bottom: 0;
+		}
 	}
-	.productbox-2{
+	.productbox-9{
+		.product-preview{
+			.quick-view{
+				display: none;
+			}
+		}
 		.product-actions{
-			display: block;
+			.content_price, #review{
+				display: block;
+			}
+			.quick-view{
+				transform: none;
+				&:hover{
+					background-color: transparent;
+				}
+				&::before{
+					display: block;
+				}
+			}
+		}
+		.ajax-add-to-cart{
+			i{
+				display: none;
+			}
 		}
 	}
 }
@@ -205,6 +258,9 @@
 		.switch-view{
 			&:not(:first-child){
 				margin-left: 1.5rem;
+			}
+			&:hover svg{
+				fill: #333;
 			}
 			&.active svg{
 				fill: #333;

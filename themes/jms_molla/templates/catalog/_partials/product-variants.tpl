@@ -25,7 +25,7 @@
  <div class="product-variants">
     {foreach from=$groups key=id_attribute_group item=group}
         <div class="clearfix product-variants-item {$group.name|lower|replace:' ':''}">
-            <span class="control-label {if $group.group_type == 'select'}hidden{/if}">{$group.name}:</span>
+            <span class="control-label">{$group.name}:</span>
             {if $group.group_type == 'select'}
                 <div class="select-option">
                     <select

@@ -178,64 +178,6 @@ $secondary-color: #fcb941;
 	margin-top: 0;
 }
 
-.countdown-section{
-	position: relative;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: $primary-color;
-	color: #fff;
-	border-radius: .3rem;
-	min-width: 5.15rem;
-	line-height: 1;
-	padding-top: 2.1rem;
-	padding-bottom: 2.1rem;
-	height: 5.9rem;
-	background-color: rgba(204,102,102,0.85);
-	.countdown-amount {
-	    display: inline-block;
-		color: #fff;
-		font-weight: 500;
-		font-size: 1.8rem;
-		line-height: 1;
-		letter-spacing: -.03em;
-		margin-bottom: .4rem;
-		padding-right: 0;
-	}
-	.countdown-period {
-		text-align: center;
-	    display: block;
-	    font-size: 1rem;
-	    font-weight: 400;
-	    color: #fff;
-	    text-transform: lowercase;
-	    width: 100%;
-	    padding-left: .2rem;
-	    padding-right: .2rem;
-	    white-space: nowrap;
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	}
-	&:not(:last-child){
-		margin-right: 1.6rem;
-		&::after{
-			color: #333333;
-			content: ':';
-			display: inline-block;
-			font-weight: 400;
-			font-size: 2rem;
-			line-height: 1;
-			position: absolute;
-			left: 100%;
-			margin-left: .6rem;
-			margin-top: -.1rem;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-	}
-}
-
 .btn-more{
 	min-width: 170px;
 	&:hover{

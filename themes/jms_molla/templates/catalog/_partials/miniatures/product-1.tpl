@@ -119,6 +119,9 @@
     			{/if}
     		{/block}
         {/if}
+		{block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
 		{if $gdzSetting.productbox_quickview}
 			<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
 				<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>

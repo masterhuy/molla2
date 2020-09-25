@@ -1931,12 +1931,62 @@ a:focus {
 }
 
 //product list
-.products-list .product-miniature .product-action .quick-view:hover{
-    color: $primary-color;
-    span{
-        box-shadow: 0 1px 0 0 $primary-color;
+.products-list .product-miniature{
+    .product-action, .product-actions{
+        .quick-view:hover{
+            color: $primary-color;
+            span{
+                box-shadow: 0 1px 0 0 $primary-color;
+            }
+        }
+        .price.new{
+            color: $primary-color;
+        }
+        .product-btn{
+            border-color: $primary-color;
+        }
+    }
+    &.productbox-8{
+       .ajax-add-to-cart:hover{
+            background-color: $primary-color;
+       } 
     }
 }
+//product details
+.product-images .thumb-container{
+    > .thumb{
+        &.selected{
+            border-color: $primary-color;
+        }
+    }
+}
+.product-prices.content_price{
+    .price.new{
+        color: $primary-color;
+    }
+}
+.product-add-to-cart{
+    .add-to-cart{
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+    .addToWishlist{
+        &:hover{
+            color: $secondary-color;
+            span{
+                box-shadow: 0 1px 0 0 $secondary-color;
+            }
+        }
+        &::before{
+            color: $primary-color;
+        }
+    }
+}
+.block-social ul li a:hover{
+    border-color: $primary-color;
+    color: $primary-color;
+}
+
 
 #search_filters .btn-default.js-search-filters-clear-all{
     color: $primary-color;

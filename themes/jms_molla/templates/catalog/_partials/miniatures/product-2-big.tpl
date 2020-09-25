@@ -44,6 +44,13 @@
 				{/if}
 		  	</a>
 		{/block}
+        {block name='product_flags'}
+			<ul class="product-flags">
+				{foreach from=$product.flags item=flag}
+					<li class="product-flag {$flag.type}">{$flag.label}</li>
+				{/foreach}
+			</ul>
+		{/block}
         <div class="wrapp-buttons">
 			<div class="product-buttons">
 				{if $gdzSetting.productbox_wishlist}            
@@ -75,6 +82,9 @@
         </div>
 	</div>
 	<div class="product-info">
+        {if $gdzSetting.productbox_wishlist}            
+			<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
+		{/if}
         {if $gdzSetting.productbox_category}
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
 				{$product.category_name|escape:'html':'UTF-8'}
@@ -109,15 +119,52 @@
         {block name='product_reviews'}
             {hook h='displayProductListReviews' product=$product}
         {/block}
+        <div class="product-short-desc">
+    		{$product.description_short|truncate:300:'...' nofilter}
+    	</div>
         {if $product.main_variants && $gdzSetting.productbox_variant}
             {block name='product_variants'}
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
-        <div class="product-short-desc">
-    		{$product.description_short|truncate:300:'...' nofilter}
-    	</div>
 	</div>
+    <div class="product-actions">
+        {if $gdzSetting.productbox_price}
+            {block name='product_price_and_shipping'}
+                {if $product.show_price}
+                    <div class="content_price">
+						{hook h='displayProductPriceBlock' product=$product type="before_price"}
+						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
+						{if $product.has_discount}
+							{hook h='displayProductPriceBlock' product=$product type="old_price"}
+							<span class="old price">{$product.regular_price}</span>
+						{/if}
+						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+						{hook h='displayProductPriceBlock' product=$product type='weight'}
+					</div>
+                {/if}
+            {/block}
+        {/if}
+        {block name='product_reviews'}
+            {hook h='displayProductListReviews' product=$product}
+        {/block}
+        {if $gdzSetting.productbox_quickview}
+			<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
+				<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
+			</a>
+		{/if}
+		{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
+			{if $product.quantity >= 1}
+				<a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+					<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+				</a>
+			{else}
+				<a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+					<span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
+				</a>
+			{/if}
+		{/if}
+    </div>
 </div>
 {/block}
 

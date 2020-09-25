@@ -27,7 +27,7 @@
         <div class="js-qv-mask mask">
             <div id="gal1" class="product-images js-qv-product-images slick-thumbs">
                 {foreach from=$product.images item=image}
-                    <div class="thumb-container" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
+                    <div class="thumb-container {if $image.id_image == $product.cover.id_image} selected {/if}" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
                         <img
                             class="thumb js-thumb {if $image.id_image == $product.cover.id_image} selected {/if}"
                             data-image-medium-src="{$image.bySize.medium_default.url}"
@@ -37,7 +37,7 @@
                             title="{$image.legend}"
                             width="100"
                             itemprop="image"
-                        >
+                        />
                     </div>
                 {/foreach}
             </div>

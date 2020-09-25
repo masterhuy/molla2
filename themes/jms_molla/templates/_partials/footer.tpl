@@ -24,39 +24,13 @@
  *}
 {if isset($smarty.get.footer_layout) && $smarty.get.footer_layout !=''}
     {assign var='footer_layout' value=$smarty.get.footer_layout}
+    {assign var='footer_layout_link' value="_partials/footers/footer-`$smarty.get.footer_layout`.tpl"}
 {else}
     {assign var='footer_layout' value=$gdzSetting.footer_layout}
+    {assign var='footer_layout_link' value="_partials/footers/footer-`$gdzSetting.footer_layout`.tpl"}
 {/if}
 {block name="footer"}
     <footer id="footer" class="footer-{$footer_layout} {if $gdzSetting.footer_class} {$gdzSetting.footer_class}{/if}">
-        {if $footer_layout == 1}
-            {include file='_partials/footers/footer-1.tpl'}
-        {elseif $footer_layout == 2}
-            {include file='_partials/footers/footer-2.tpl'}
-        {elseif $footer_layout == 3}
-            {include file='_partials/footers/footer-3.tpl'}
-        {elseif $footer_layout == 4}
-            {include file='_partials/footers/footer-4.tpl'}
-        {elseif $footer_layout == 5}
-            {include file='_partials/footers/footer-5.tpl'}
-        {elseif $footer_layout == 6}
-            {include file='_partials/footers/footer-6.tpl'}
-        {elseif $footer_layout == 7}
-            {include file='_partials/footers/footer-7.tpl'}
-        {elseif $footer_layout == 8}
-            {include file='_partials/footers/footer-8.tpl'}
-        {elseif $footer_layout == 9}
-            {include file='_partials/footers/footer-9.tpl'}
-        {elseif $footer_layout == 10}
-            {include file='_partials/footers/footer-10.tpl'}
-        {elseif $footer_layout == 11}
-            {include file='_partials/footers/footer-11.tpl'}
-        {elseif $footer_layout == 12}
-            {include file='_partials/footers/footer-12.tpl'}
-        {elseif $footer_layout == 13}
-            {include file='_partials/footers/footer-13.tpl'}
-        {elseif $footer_layout == 14}
-            {include file='_partials/footers/footer-14.tpl'}
-        {/if}
+        {include file=$footer_layout_link}
     </footer>
 {/block}

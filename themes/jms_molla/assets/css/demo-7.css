@@ -636,6 +636,9 @@ a:focus {
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc6666; }
 
+.owl_carousel .owl-nav button:hover::before {
+  color: #cc6666; }
+
 .product-buttons .btn-icon:hover {
   border-color: #cc6666;
   background-color: #cc6666; }
@@ -1251,14 +1254,60 @@ a:focus {
 .login-layout-5 a:hover {
   color: #cc6666; }
 
-.login-layout-5 #login-form .show-pass button {
-  border: .1rem solid #ebebeb;
-  border-left: 0; }
-
 .login-layout-5 #login-form .form-footer .btn {
   border-color: #cc6666; }
   .login-layout-5 #login-form .form-footer .btn:hover {
     background-color: #cc6666; }
+
+.faceted-slider .ranger {
+  color: #cc6666; }
+
+.pagination .page-pagination ul li.current a {
+  color: #cc6666; }
+
+.pagination .page-pagination ul li a:hover {
+  color: #cc6666; }
+
+.products-list .product-miniature .product-action .quick-view:hover, .products-list .product-miniature .product-actions .quick-view:hover {
+  color: #cc6666; }
+  .products-list .product-miniature .product-action .quick-view:hover span, .products-list .product-miniature .product-actions .quick-view:hover span {
+    -webkit-box-shadow: 0 1px 0 0 #cc6666;
+    box-shadow: 0 1px 0 0 #cc6666; }
+
+.products-list .product-miniature .product-action .price.new, .products-list .product-miniature .product-actions .price.new {
+  color: #cc6666; }
+
+.products-list .product-miniature .product-action .product-btn, .products-list .product-miniature .product-actions .product-btn {
+  border-color: #cc6666; }
+
+.products-list .product-miniature.productbox-8 .ajax-add-to-cart:hover {
+  background-color: #cc6666; }
+
+.product-images .thumb-container > .thumb.selected {
+  border-color: #cc6666; }
+
+.product-prices.content_price .price.new {
+  color: #cc6666; }
+
+.product-add-to-cart .add-to-cart {
+  color: #cc6666;
+  border-color: #cc6666; }
+
+.product-add-to-cart .addToWishlist:hover {
+  color: #fcb941; }
+  .product-add-to-cart .addToWishlist:hover span {
+    -webkit-box-shadow: 0 1px 0 0 #fcb941;
+    box-shadow: 0 1px 0 0 #fcb941; }
+
+.product-add-to-cart .addToWishlist::before {
+  color: #cc6666; }
+
+.block-social ul li a:hover {
+  border-color: #cc6666;
+  color: #cc6666; }
+
+#search_filters .btn-default.js-search-filters-clear-all {
+  color: #cc6666; }
 
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #cc6666; }
@@ -1391,71 +1440,6 @@ a:focus {
 
 .owl-dots {
   margin-top: 0; }
-
-.countdown-section {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #cc6666;
-  color: #fff;
-  border-radius: .3rem;
-  min-width: 5.15rem;
-  line-height: 1;
-  padding-top: 2.1rem;
-  padding-bottom: 2.1rem;
-  height: 5.9rem;
-  background-color: rgba(204, 102, 102, 0.85); }
-  .countdown-section .countdown-amount {
-    display: inline-block;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 1;
-    letter-spacing: -.03em;
-    margin-bottom: .4rem;
-    padding-right: 0; }
-  .countdown-section .countdown-period {
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    text-transform: lowercase;
-    width: 100%;
-    padding-left: .2rem;
-    padding-right: .2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis; }
-  .countdown-section:not(:last-child) {
-    margin-right: 1.6rem; }
-    .countdown-section:not(:last-child)::after {
-      color: #333333;
-      content: ':';
-      display: inline-block;
-      font-weight: 400;
-      font-size: 2rem;
-      line-height: 1;
-      position: absolute;
-      left: 100%;
-      margin-left: .6rem;
-      margin-top: -.1rem;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
 
 .btn-more {
   min-width: 170px; }
