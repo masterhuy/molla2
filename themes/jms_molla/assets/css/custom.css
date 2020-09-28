@@ -7827,16 +7827,12 @@ footer .row, header .row {
 
 .product-cat {
   color: #777;
-  font-weight: 300;
-  font-size: 1.3rem;
   line-height: 1.2;
   letter-spacing: -.01em;
   margin-bottom: .3rem; }
 
 .product-cat a {
   color: inherit; }
-  .product-cat a:hover, .product-cat a:focus {
-    color: #666; }
 
 .product-price {
   display: -webkit-box;
@@ -12636,6 +12632,19 @@ button:focus {
     justify-content: flex-end; } }
 
 /*--------------------- 5.3.Product Pages -------------------- */
+.accordion .panel-title {
+  margin-bottom: 0; }
+
+.accordion .panel-body {
+  padding-top: 2rem; }
+
+.product-description .product-desc-content {
+  margin-bottom: 2rem; }
+
+.product-description p {
+  color: #777;
+  margin-bottom: 0; }
+
 .product-images .thumb-container {
   position: relative; }
   .product-images .thumb-container.selected::after, .product-images .thumb-container:hover::after {
@@ -12653,13 +12662,19 @@ button:focus {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.4); }
 
+#product .product-name {
+  text-transform: initial; }
+
 .product-name {
   font-weight: 400;
   font-size: 2.4rem;
   letter-spacing: -.025em;
-  margin-bottom: 1.2rem;
+  margin-bottom: .7rem;
   margin-top: -.5rem;
   padding-right: 1rem; }
+
+.rating {
+  margin-bottom: .4rem; }
 
 .product-prices.content_price {
   display: -webkit-box;
@@ -12677,6 +12692,71 @@ button:focus {
     font-size: 2.4rem;
     margin-bottom: 0;
     margin-right: .5rem; }
+
+.product-information .specific_prices {
+  margin-bottom: 3rem; }
+  .product-information .specific_prices .countdown-section {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    min-width: 5.15rem;
+    line-height: 1;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: rgba(204, 102, 102, 0.85); }
+    .product-information .specific_prices .countdown-section .countdown-amount {
+      display: inline-block;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1;
+      letter-spacing: -.03em;
+      margin-bottom: .4rem;
+      padding-right: 0; }
+    .product-information .specific_prices .countdown-section .countdown-period {
+      text-align: center;
+      display: block;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #fff;
+      text-transform: lowercase;
+      width: 100%;
+      padding-left: .2rem;
+      padding-right: .2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+    .product-information .specific_prices .countdown-section:not(:last-child) {
+      margin-right: 1.6rem; }
+      .product-information .specific_prices .countdown-section:not(:last-child)::after {
+        color: #333333;
+        content: ':';
+        display: inline-block;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1;
+        position: absolute;
+        left: 100%;
+        margin-left: .6rem;
+        margin-top: -.1rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
 
 .product-variants .select-option {
   position: relative; }
@@ -12723,7 +12803,12 @@ button:focus {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease; }
+  .product-add-to-cart .add-to-cart:hover {
+    color: #fff; }
   .product-add-to-cart .add-to-cart::before {
     content: '\e812';
     font-family: "molla";
@@ -13152,10 +13237,14 @@ button:focus {
       margin-left: 1.6rem; }
 
 .product-details-footer {
+  margin-top: 3rem;
   color: #777;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-weight: 400;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -13225,12 +13314,6 @@ button:focus {
   .product-desc-content ul li {
     position: relative;
     padding-left: 1.3rem; }
-    .product-desc-content ul li:before {
-      content: '•';
-      position: absolute;
-      display: block;
-      top: 0;
-      left: .2rem; }
 
 .product-desc-content a {
   color: #333;

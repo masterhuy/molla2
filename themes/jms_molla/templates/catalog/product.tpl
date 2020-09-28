@@ -23,11 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $gdzSetting.product_page_layout == 'right-sidebar'}
-  {assign var='layout' value='layouts/layout-right-column.tpl'}
+    {assign var='layout' value='layouts/layout-right-column.tpl'}
 {elseif $gdzSetting.product_page_layout == 'left-sidebar'}
-  {assign var='layout' value='layouts/layout-left-column.tpl'}
+    {assign var='layout' value='layouts/layout-left-column.tpl'}
 {elseif $gdzSetting.product_page_layout == 'no-sidebar'}
-  {assign var='layout' value='layouts/layout-full-width.tpl'}
+    {assign var='layout' value='layouts/layout-full-width.tpl'}
 {/if}
 {extends file=$layout}
 {block name='head_seo' prepend}
@@ -55,14 +55,14 @@
     <section id="main" itemscope itemtype="https://schema.org/Product">
         <meta itemprop="url" content="{$product.url}">
         {if $gdzSetting.product_content_layout == '3-columns'}
-          {include file='catalog/product-content-3columns.tpl'}
+            {include file='catalog/product-content-3columns.tpl'}
         {else}
-          {include file='catalog/product-content.tpl'}
+            {include file='catalog/product-content.tpl'}
         {/if}
         {if $gdzSetting.product_page_moreinfos_type == 'accordion'}
-        {include file='catalog/more-infos-accordion.tpl'}
+            {include file='catalog/more-infos-accordion.tpl'}
         {else}
-        {include file='catalog/more-infos-tab.tpl'}
+            {include file='catalog/more-infos-tab.tpl'}
         {/if}
 
         {block name='product_accessories'}
@@ -84,8 +84,8 @@
             {/if}
         {/block}
 
-        {block name='product_footer'}
-            {hook h='displayFooterProduct' product=$product category=$category}
+        {block name='hook_footer_before'}
+            {hook h='displayFooterBefore' product=$product category=$category}
         {/block}
 
         {block name='product_images_modal'}

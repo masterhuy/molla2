@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PSD2: EU mandatory strong authentication by the end of 2020: be ready!</title>
+    <link>https://www.prestashop.com/en/blog/psd2-strong-authentication</link>
+    <description> </description>
+     <pubDate>Fri, 25 Sep 2020 16:25:49 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-strong-authentication</guid>
+  </item>
+  <item>
     <title>Marketplaces: what are the main difficulties encountered by retailers, and what are the solutions?</title>
     <link>https://www.prestashop.com/en/blog/marketfire-marketplaces-retailers</link>
     <description>During the release of the Marketfire e-commerce solution module on the PrestaShop Addons Ma</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 17 Aug 2020 17:56:28 +0200</pubDate>
  <dc:creator>luca mastroianni</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</guid>
-  </item>
-  <item>
-    <title>Important stages of a business: why do you have to climb to win?</title>
-    <link>https://www.prestashop.com/en/blog/important-stages-business</link>
-    <description>All businesses have a life cycle. There is the initial phase, where it&#039;s just an idea, a stroke of genius in the mind of an entrepreneur, merely imagination.</description>
-     <pubDate>Mon, 17 Aug 2020 17:50:45 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/important-stages-business</guid>
   </item>
   </channel>
 </rss>

@@ -352,6 +352,7 @@
 
 .product-comment-list-item .grade-stars .star-content {
   margin: 0 0 10px;
+  left: 10px;
 }
 
 .product-comment-list-item .comment-infos {
@@ -474,7 +475,9 @@
   left: 0;
   height: 28px;
 }
-
+.product-list-reviews.empty .grade-stars.small-stars * {
+	display: none;
+}
 .grade-stars .star-content {
   position: absolute;
   left: 0;

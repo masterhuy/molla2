@@ -1969,6 +1969,9 @@ a:focus {
     .add-to-cart{
         color: $primary-color;
         border-color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
     }
     .addToWishlist{
         &:hover{
@@ -1985,6 +1988,18 @@ a:focus {
 .block-social ul li a:hover{
     border-color: $primary-color;
     color: $primary-color;
+}
+.product-cat a:hover{
+    color: $primary-color;
+    box-shadow: 0 1px 0 $primary-color;
+}
+#more_info_block{
+    .panel-heading a{
+        color: $primary-color;
+    }
+    .nav-tabs li a.active{
+        border-bottom-color: $primary-color;
+    }
 }
 
 

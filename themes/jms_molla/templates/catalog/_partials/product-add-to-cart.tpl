@@ -28,7 +28,7 @@
             <div class="product-quantity">
                 <div class="qty">
                     <span class="control-label">
-                        {l s='Quantity' d='Shop.Theme.Actions'}:
+                        {l s='Qty' d='Shop.Theme.Actions'}:
                     </span>
                     <input
                         type="text"

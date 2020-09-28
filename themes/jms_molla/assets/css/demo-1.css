@@ -1292,6 +1292,8 @@ a:focus {
 .product-add-to-cart .add-to-cart {
   color: #a6c76c;
   border-color: #a6c76c; }
+  .product-add-to-cart .add-to-cart:hover {
+    background-color: #a6c76c; }
 
 .product-add-to-cart .addToWishlist:hover {
   color: #92b25a; }
@@ -1305,6 +1307,17 @@ a:focus {
 .block-social ul li a:hover {
   border-color: #a6c76c;
   color: #a6c76c; }
+
+.product-cat a:hover {
+  color: #a6c76c;
+  -webkit-box-shadow: 0 1px 0 #a6c76c;
+  box-shadow: 0 1px 0 #a6c76c; }
+
+#more_info_block .panel-heading a {
+  color: #a6c76c; }
+
+#more_info_block .nav-tabs li a.active {
+  border-bottom-color: #a6c76c; }
 
 #search_filters .btn-default.js-search-filters-clear-all {
   color: #a6c76c; }

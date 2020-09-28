@@ -191,10 +191,10 @@
 }
 .product-information .product-desc {
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 16px;
     line-height: 1.9;
     padding-bottom: 0;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 .product-variants .control-label{
     margin-bottom: 10px;
@@ -264,7 +264,7 @@
 .product-variants .product-variants-item {
     position: relative;
     align-items: center;
-    margin-bottom:30px;
+    margin-bottom: 15px;
 }
 .product-variants-item ul {
   display: inline-block;
@@ -273,10 +273,13 @@
 .product-variants-item .select-option {
     display: inline-block;
 }
+.product-information .control-label{
+    font-weight: 400;
+    min-width: 63px;
+}
 .product-variants-item .control-label {
     margin-bottom: 0;
-    display:inline-block;
-    margin-right: 11px;
+    display: inline-block;
 }
 .product-variants-item .attribute-name {
 		font-size: 0px;
@@ -360,7 +363,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
 .product-quantity .add{
     display: flex;
@@ -423,8 +426,7 @@
     display: inline-block;
 }
 .block-social {
-		width:100%;
-		display:block;
+	display:block;
 }
 #product #block-reassurance {
 		display:none;
@@ -491,63 +493,68 @@
     margin-bottom: 1.5rem;
 		width:100%;
 }
-
 #more_info_block .panel-heading a {
-    font-size: 20px;
+    font-size: 1.6rem;
     position: relative;
     display: block;
-    color: #000;
-    letter-spacing: 0.3px;
+    letter-spacing: -.01em;
     padding: 14px 0;
+    font-weight: 400;
+}
+#more_info_block .panel-heading a.collapsed{
+    color: #333;
 }
 #more_info_block .panel-heading a::after {
-    content: "\f107";
-    font-family: FontAwesome;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     margin-left: 12px;
+    content: '\e802';
+    font-family: "molla";
 }
 #more_info_block .panel-heading a.collapsed::after {
-    content: "\f105";
+    content: '\f110';
 }
 #more_info_block .panel.panel-default:not(:last-child) {
     border-bottom: 1px solid #e5e5e5;
 }
 #more_info_block li {
     float: none;
-    display: inline-block;
     margin-right: 0;
 }
 #more_info_block .nav.nav-tabs {
-    text-align: left;
-		border-bottom:2px solid #dedede;
-		display:inline-block;
-		width:100%;
+	display: flex;
+	width: 100%;
+    border-bottom: none;
 }
 #more_info_block.tab-center .nav.nav-tabs {
-		text-align: center;
+	justify-content: center;
 }
 #more_info_block.tab-right .nav.nav-tabs {
-		text-align: right;
+	justify-content: flex-end;
+}
+#more_info_block.tab-left .nav.nav-tabs {
+    justify-content: flex-start;
 }
 #more_info_block .nav-tabs .nav-item {
-		margin-bottom:-2px;
+    margin: 0 10px;
 }
 #more_info_block li a {
-    padding: 0 20px;
-    color: #858585;
-    position: relative;
-    letter-spacing: 0.7px;
-    border: 2px solid transparent;
-    line-height: 40px;
+    color: #333333;
+    font-size: 1.6rem;
+    padding: .55rem 3rem;
+    border-bottom-width: .2rem;
+    text-transform: capitalize;
+    letter-spacing: -.01em;
+    font-weight: 400;
+    line-height: 1.5;
 }
 #more_info_block li a.active {
-    border: 2px solid #dedede;
-    border-bottom-color: #fff;
-    border-radius: 0;
-    color: #141414;
+    border: none;
+    border-bottom: .2rem solid;
 }
-
+#more_info_block #review{
+    height: auto;
+}
 #more_info_block .label {
     padding: 0;
     color: #555;
@@ -558,32 +565,28 @@
     padding-top: 35px;
 }
 #product-details .product-features h3 {
-		font-size:120%;
-		font-weight: 700;
+	font-size:120%;
+	font-weight: 700;
 }
 #product-details > div {
     line-height: 25px;
 }
 
-.product-description p,
-.product-description ul {
-    font-size: 15px;
-    line-height: 23px;
-}
 .product-description ul li {
     padding-left: 16px;
     position: relative;
 }
-.product-description ul li::before{
+.product-description ul li::before {
     display: inline-block;
     content: '';
-    margin-bottom: 2px;
-    margin-right: 10px;
-    margin-left: -16px;
     border-radius: 50%;
-    width: 4px;
-    height: 4px;
-    background-color: #141414;
+    width: 3px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .product-features {
     padding-top: 15px;

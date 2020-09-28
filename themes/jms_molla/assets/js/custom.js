@@ -6,6 +6,10 @@ jQuery(function ($) {
         $('.card.card-box .collapse').not(e.target).collapse('hide');
     });
 
+    $('.panel-default').on('show.bs.collapse', function (e) {
+        $('.panel-default .collapse').not(e.target).collapse('hide');
+    });
+
     //owl carousel testimonials photo
     var lazyload_testi = false;
     if(gdzSetting.carousel_lazyload)
@@ -22,6 +26,35 @@ jQuery(function ($) {
                 0:{
                     items: 1
                 }
+            }
+        });
+    });
+
+    //owl carousel same category
+    var lazyload_sc = false;
+    if(gdzSetting.carousel_lazyload)
+    var lazyload_sc = true;
+    $.each( $(".customs-carousel-product"), function( key, value ) {
+        $(this).owlCarousel({
+              loop:false,
+              margin:0,
+              nav:true,
+              dots:true,
+              autoplay:false,
+              lazyLoad:lazyload_sc,
+              responsive:{
+                0:{
+                    items: 1
+                },
+                576:{
+                    items: 2
+                },
+                768:{
+                    items: 3
+                },
+                1200:{
+                    items: 4
+                },
             }
         });
     });
