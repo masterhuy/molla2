@@ -25,6 +25,13 @@ meta:
     layout-right-column:
       name: Two Columns, small right column
       description: Two columns with a small right column
+assets:
+  js:
+    all:
+     - id: stickyjs
+       path: assets/js/sticky-sidebar.js
+       priority: 2
+       position: bottom
 
 global_settings:
   configuration:

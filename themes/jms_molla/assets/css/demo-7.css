@@ -1286,6 +1286,9 @@ a:focus {
 .product-images .thumb-container > .thumb.selected {
   border-color: #cc6666; }
 
+.product-cover .zoom-icon:hover {
+  background-color: #cc6666; }
+
 .product-prices.content_price .price.new {
   color: #cc6666; }
 
@@ -1294,6 +1297,9 @@ a:focus {
   border-color: #cc6666; }
   .product-add-to-cart .add-to-cart:hover {
     background-color: #cc6666; }
+
+.product-add-to-cart .btn-touchspin:hover {
+  color: #cc6666; }
 
 .product-add-to-cart .addToWishlist:hover {
   color: #fcb941; }
@@ -1316,7 +1322,8 @@ a:focus {
 #more_info_block .panel-heading a {
   color: #cc6666; }
 
-#more_info_block .nav-tabs li a.active {
+#more_info_block .nav-tabs li a.active, #more_info_block .nav-tabs li a:hover {
+  color: #cc6666;
   border-bottom-color: #cc6666; }
 
 #search_filters .btn-default.js-search-filters-clear-all {

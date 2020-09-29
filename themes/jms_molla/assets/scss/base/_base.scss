@@ -458,7 +458,9 @@ img {
         margin-top: 6.1rem;
     }
 }
-
+.owl-dots.disabled{
+    display: none;
+}
 .icon-close{
     content: '\f191';
     font: normal normal 1.3rem/1 'molla';

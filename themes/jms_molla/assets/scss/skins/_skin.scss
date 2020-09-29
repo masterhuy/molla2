@@ -1960,6 +1960,11 @@ a:focus {
         }
     }
 }
+.product-cover .zoom-icon{
+    &:hover{
+        background-color: $primary-color;
+    }
+}
 .product-prices.content_price{
     .price.new{
         color: $primary-color;
@@ -1971,6 +1976,11 @@ a:focus {
         border-color: $primary-color;
         &:hover{
             background-color: $primary-color;
+        }
+    }
+    .btn-touchspin{
+        &:hover{
+            color: $primary-color;
         }
     }
     .addToWishlist{
@@ -1997,8 +2007,11 @@ a:focus {
     .panel-heading a{
         color: $primary-color;
     }
-    .nav-tabs li a.active{
-        border-bottom-color: $primary-color;
+    .nav-tabs li a{
+        &.active, &:hover{
+            color: $primary-color;
+            border-bottom-color: $primary-color;
+        }
     }
 }
 

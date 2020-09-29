@@ -25,9 +25,9 @@
 <div class="images-container thumbs-gallery grid">
     {block name='product_images'}
         <div class="js-qv-mask mask">
-            <div id="gal1" class="product-images js-qv-product-images">
+            <div id="gal1" class="product-images js-qv-product-images row">
                 {foreach from=$product.images item=image}
-                    <li class="thumb-container" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
+                    <li class="thumb-container {if $image.id_image == $product.cover.id_image} selected {/if} col-6" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
                         <img
                             class="thumb js-thumb {if $image.id_image == $product.cover.id_image} selected {/if}"
                             data-image-medium-src="{$image.bySize.medium_default.url}"
@@ -38,10 +38,10 @@
                             width="100"
                             itemprop="image"
                         >
+                    </li>
                 {/foreach}
-            </ul>
+            </div>
         </div>
     {/block}
-
 </div>
 {hook h='displayAfterProductThumbs'}

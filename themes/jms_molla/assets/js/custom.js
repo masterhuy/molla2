@@ -16,13 +16,13 @@ jQuery(function ($) {
     var lazyload_testi = true;
     $.each( $(".owl-testimonials-photo"), function( key, value ) {
         $(this).owlCarousel({
-              loop:false,
-              margin:0,
-              nav:true,
-              dots:true,
-              autoplay:false,
-              lazyLoad:lazyload_testi,
-              responsive:{
+            loop:false,
+            margin:0,
+            nav:true,
+            dots:true,
+            autoplay:false,
+            lazyLoad:lazyload_testi,
+            responsive:{
                 0:{
                     items: 1
                 }
@@ -36,13 +36,13 @@ jQuery(function ($) {
     var lazyload_sc = true;
     $.each( $(".customs-carousel-product"), function( key, value ) {
         $(this).owlCarousel({
-              loop:false,
-              margin:0,
-              nav:true,
-              dots:true,
-              autoplay:false,
-              lazyLoad:lazyload_sc,
-              responsive:{
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            lazyLoad: lazyload_sc,
+            responsive:{
                 0:{
                     items: 1
                 },
@@ -65,13 +65,13 @@ jQuery(function ($) {
     var lazyload_ins = true;
     $.each( $(".instagram_carousel"), function( key, value ) {
         $(this).owlCarousel({
-              loop:false,
-              margin:0,
-              nav:false,
-              dots:false,
-              autoplay:false,
-              lazyLoad:lazyload_ins,
-              responsive:{
+            loop:false,
+            margin:0,
+            nav:false,
+            dots:false,
+            autoplay:false,
+            lazyLoad:lazyload_ins,
+            responsive:{
                 0:{
                     items: 1
                 },
@@ -101,13 +101,13 @@ jQuery(function ($) {
     $.each( $(".image-carousel"), function( key, value ) {
         $(this).owlCarousel({
             center: true,
-              loop:true,
-              margin: 0,
-              nav: true,
-              dots:false,
-              autoplay:false,
-              lazyLoad:lazyload_img,
-              responsive:{
+            loop:true,
+            margin: 0,
+            nav: true,
+            dots:false,
+            autoplay:false,
+            lazyLoad:lazyload_img,
+            responsive:{
                 0:{
                     items: 1
                 }
@@ -303,18 +303,106 @@ function footerCollapse() {
     }
 }
 
+function stickyBar(){
+    var blockAddtocart = $('#product .pb-right-column .product-actions form').clone();
+    $('#sticky-bar .col-right .content').append(blockAddtocart);
+    $('#sticky-bar .bootstrap-touchspin-up').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        var currentVal = parseInt($('#sticky-bar #quantity_wanted').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('#sticky-bar #quantity_wanted').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('#sticky-bar #quantity_wanted').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $("#sticky-bar .bootstrap-touchspin-down").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        var currentVal = parseInt($('#sticky-bar #quantity_wanted').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('#sticky-bar #quantity_wanted').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('#sticky-bar #quantity_wanted').val(0);
+        }
+    });
+}
+
+function imageThumbCarousel(){
+    var lazyload_pm = false;
+    if(gdzSetting.carousel_lazyload)
+    var lazyload_pm = true;
+    if($(".productModal-carousel").length) {
+		var productModalCarousel = $(".productModal-carousel");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;
+		    productModalCarousel.owlCarousel({
+                rtl: rtl,
+                margin: 0,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                nav: true,
+                dots: false,
+                autoplay: false,
+                loop: false,
+                lazyLoad:lazyload_pm,
+                responsive:{
+                    0: {
+                        items:1
+                    }
+                }
+		});
+	}
+}
+
+function calcOwnControlProductModal(){
+	var bodyWidth = $("body").innerWidth();
+	var thumbWidth = $('#product-modal .thumb').innerWidth();
+    var space = -((bodyWidth - thumbWidth)/2 - 30);
+
+	$("#product-modal .owl-nav .owl-prev").css("left", space);
+	$("#product-modal .owl-nav .owl-next").css("right", space);
+}
+
+function stickyRightColumn(){
+    if($('.product-layout-3columns .pb-left-column').length){
+        var rightColumn = new StickySidebar('.product-layout-3columns .pb-right-column', {
+            containerSelector: '.product-layout-3columns',
+            innerWrapperSelector: '.product-layout-3columns .pb-right-column .row',
+            topSpacing: 100,
+            bottomSpacing: 20
+        });
+    }
+}
 
 jQuery(document).ready(function(){
     $('.gdz-megamenu').jmsMegaMenu({
         event: 'hover',
         duration: 100
     });
+    prestashop.on('updatedProduct', function (e) {
+        imageThumbCarousel();
+        calcOwnControlProductModal();
+    });
+    stickyRightColumn();
+    imageThumbCarousel();
+    calcOwnControlProductModal();
     changeShopGrid();
     footerCollapse();
+    stickyBar();
 });
+
 jQuery(window).resize(function () {
     changeShopGrid();
     footerCollapse();
+    calcOwnControlProductModal();
 });
 
 $(document).on('click', '#footer-main.collapsed .block-title', function (e) {

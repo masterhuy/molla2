@@ -66,7 +66,7 @@
                     {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
                 {/block}
             {/if}
-            <div class="product-action">
+            <div class="product-actions">
                 {block name='product_buy'}
                     <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
                         <input type="hidden" name="token" value="{$static_token}">
@@ -128,6 +128,30 @@
                 {/block}
             </div>
             {hook h='displayReassurance'}
+        </div>
+    </div>
+</div>
+
+<div id="sticky-bar">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto col-left">
+                <div class="d-flex align-items-center">
+                    {block name='product_cover'}
+                        <div class="product-cover">
+                            <img class="zoom_01 js-qv-product-cover" src="{$product.cover.bySize.small_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
+                        </div>
+                    {/block}
+                    <h4 class="product-title">{$product.name}</h4>
+                </div>
+            </div>
+            <div class="col-auto col-right">
+                <div class="d-flex align-items-center content">
+                    {block name='product_prices'}
+                        {include file='catalog/_partials/product-prices.tpl'}
+                    {/block}
+                </div>
+            </div>
         </div>
     </div>
 </div>
