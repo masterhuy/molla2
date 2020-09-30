@@ -38,7 +38,7 @@
 								</div>
 							{elseif $post.image && ($show_media == '1')}
 								<div class="post-thumb">
-									<a href="#">
+									<a href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
 										<img src="{$image_url nofilter}thumb_{$post.image nofilter}" alt="{$post.title nofilter}" class="img-responsive" />
 									</a>
 								</div>

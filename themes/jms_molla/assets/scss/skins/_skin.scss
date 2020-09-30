@@ -2016,6 +2016,13 @@ a:focus {
 }
 
 
+//post blog
+.post-category a{
+    &:hover{
+        box-shadow: 0 1px 0 $primary-color;
+    }
+}
+
 #search_filters .btn-default.js-search-filters-clear-all{
     color: $primary-color;
 }

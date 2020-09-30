@@ -30,6 +30,35 @@ jQuery(function ($) {
         });
     });
 
+    //owl carousel featured product
+    var lazyload_fp = false;
+    if(gdzSetting.carousel_lazyload)
+    var lazyload_fp = true;
+    $.each( $(".featured-product-carousel"), function( key, value ) {
+        $(this).owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            lazyLoad: lazyload_fp,
+            responsive:{
+                0:{
+                    items: 1
+                },
+                576:{
+                    items: 2
+                },
+                768:{
+                    items: 3
+                },
+                1200:{
+                    items: 4
+                },
+            }
+        });
+    });
+
     //owl carousel same category
     var lazyload_sc = false;
     if(gdzSetting.carousel_lazyload)
@@ -376,8 +405,9 @@ function stickyRightColumn(){
         var rightColumn = new StickySidebar('.product-layout-3columns .pb-right-column', {
             containerSelector: '.product-layout-3columns',
             innerWrapperSelector: '.product-layout-3columns .pb-right-column .row',
+            resizeSensor: true,
             topSpacing: 100,
-            bottomSpacing: 20
+            bottomSpacing: 100
         });
     }
 }

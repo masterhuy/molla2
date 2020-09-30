@@ -1326,6 +1326,10 @@ a:focus {
   color: #cc6666;
   border-bottom-color: #cc6666; }
 
+.post-category a:hover {
+  -webkit-box-shadow: 0 1px 0 #cc6666;
+  box-shadow: 0 1px 0 #cc6666; }
+
 #search_filters .btn-default.js-search-filters-clear-all {
   color: #cc6666; }
 

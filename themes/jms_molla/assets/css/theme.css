@@ -36,7 +36,6 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
     border-radius: 0px;
     width: 100%;
     border: 1px solid #ebebeb;
-    padding: 0 15px;
 }
 ul {
   padding: 0px;

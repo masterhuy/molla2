@@ -185,7 +185,14 @@
     margin-top: 20px;
     border: 0;
 }
-
+.product-layout-3columns .pb-right-column{
+    will-change: min-height;
+}
+.product-layout-3columns .pb-right-column .row{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
 .product-images {
     margin-bottom: 0;
     padding:0px;
