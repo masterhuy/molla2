@@ -2,9 +2,9 @@
 <module>
     <name>gdz_blog</name>
     <displayName><![CDATA[Godzilla Blog]]></displayName>
-    <version><![CDATA[2.5.5]]></version>
+    <version><![CDATA[4.0.0]]></version>
     <description><![CDATA[Advanced Blog Module For Prestashop.]]></description>
-    <author><![CDATA[Joommasters]]></author>
+    <author><![CDATA[Prestawork]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>
     <need_instance>0</need_instance>

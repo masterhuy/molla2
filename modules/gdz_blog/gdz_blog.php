@@ -28,6 +28,8 @@ class gdz_blog extends Module
         parent::__construct();
         $this->displayName = $this->l('Godzilla Blog');
         $this->description = $this->l('Advanced Blog Module For Prestashop.');
+        $this->gens = array();
+        $this->menu = '';
     }
 
     public function install()
@@ -376,7 +378,7 @@ class gdz_blog extends Module
                 'category_id' => $category['category_id'],
                 'slug' => $category['alias']
             );
-            $_link = JmsBlog::getPageLink('gdz_blog-category', $params);
+            $_link = gdz_blog::getPageLink('gdz_blog-category', $params);
             $this->menu .= '<a href="'.$_link.'">';
             $this->menu .=  $category['title'];
             if ($category['level'] == 0 && isset($this->child[$category['category_id']])) {
@@ -437,12 +439,12 @@ class gdz_blog extends Module
     {
         $widget_setting = $this->getConfigFieldsValues();
         $category_menu = $this->genCategoryMenu();
-        $archives = gdzBlogHelper::getArchives();
-        $popularpost = gdzBlogHelper::getPopularPost();
-        $latestpost = gdzBlogHelper::getLatestPost();
-        $latestcomment = gdzBlogHelper::getLatestComment();
+        $archives = gdz_blogHelper::getArchives();
+        $popularpost = gdz_blogHelper::getPopularPost();
+        $latestpost = gdz_blogHelper::getLatestPost();
+        $latestcomment = gdz_blogHelper::getLatestComment();
         for ($i = 0; $i < count($latestcomment); $i++) {
-            $latestcomment[$i]['comment'] = gdzBlogHelper::genIntrotext($latestcomment[$i]['comment'], $widget_setting['GBW_SB_COMMENT_LIMIT']);
+            $latestcomment[$i]['comment'] = gdz_blogHelper::genIntrotext($latestcomment[$i]['comment'], $widget_setting['GBW_SB_COMMENT_LIMIT']);
         }
         $this->smarty->assign(
             array(

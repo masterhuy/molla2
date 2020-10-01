@@ -98,15 +98,24 @@
 		color: #666;
 	}
 }
+#comments{
+	margin-top: 3rem;
+	border-top: .1rem solid #ebebeb;
+	padding-top: 44px;
+}
 .comment-heading{
+	h5{
+		margin-bottom: 0;
+	}
 	a{
 		font-weight: 600;
 		font-size: 1.8rem;
 		letter-spacing: -.025em;
-		margin-bottom: 4.5rem;
+		color: #333;
 	}
 }
 #commentForm{
+	margin-top: 1rem;
 	background-color: #fafafa;
 	padding: 4rem 3rem 5rem;
 	.heading{
@@ -127,17 +136,17 @@
 }
 #post-comments{
 	.post-comment{
+		padding-bottom: 41px;
+		padding-top: 45px;
 		&:not(:last-child){
 			border-bottom: .1rem solid #ebebeb;
-			padding-bottom: 10px;
-			margin-bottom: 10px;
 		}
 	}
 	.post-comment-info{
 		display: flex;
 	}
 	.post-comment-content {
-		margin-top: 1rem;
+		margin-top: .9rem;
 		margin-bottom: 0;
 	}
 	.info{
@@ -155,5 +164,47 @@
 		height: 50px;
 		border-radius: 50%;
 		margin-right: 3rem;
+	}
+}
+#module-gdz_blog-post{
+	#footer{
+		margin-top: 2rem;
+	}
+}
+.blog-widget{
+	margin-bottom: 4.6rem;
+	.item-post{
+		&:not(:last-child){
+			margin-bottom: 2rem;
+		}
+		.post-created{
+			display: block;
+			color: #cccccc;
+			font-weight: 300;
+			font-size: 1.4rem;
+			line-height: 1.25;
+			letter-spacing: -.01em;
+			margin-bottom: .5rem;
+		}
+		.post-title{
+			font-weight: 400;
+			font-size: 1.4rem;
+			line-height: 1.4;
+			letter-spacing: 0;
+			margin-bottom: 0;
+			display: block;
+		}
+	}
+}
+.widget-categories li a span{
+	&::before{
+		font-family: 'molla';
+		content: '\f110';
+		display: block;
+		font-size: 1rem;
+		line-height: 1;
+	}
+	i{
+		display: none;
 	}
 }

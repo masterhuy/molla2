@@ -96,7 +96,90 @@
 		{if $gdz_blog_setting.GDZBLOG_COMMENT_ENABLE}	
 			<div id="comments">
 		{if $gdz_blog_setting.GDZBLOG_FACEBOOK_COMMENT == 0}
-			{include file="{$module_dir}comment_default.tpl"}		
+			{if $msg == 1}<div class="success">{l s='Your comment submited' mod='gdz_blog'} ! {if $gdz_blog_setting.GDZBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' mod='gdz_blog'}.{/if}</div>{/if}
+			{if $cerrors|@count gt 0}
+				<ul>
+				{foreach from=$cerrors item=cerror}
+					<li class="error">{$cerror nofilter}</li>
+				{/foreach}	
+				</ul>
+			{/if}
+			<div id="accordion" class="panel-group">
+				<div class="panel panel-default">
+					<div class="comment-heading clearfix">
+						<h5><a data-toggle="collapse" data-parent="#accordion" href="#post-comments">{$comments|@count nofilter} {l s='Comments' mod='gdz_blog'}</a></h5>
+					</div>		
+					<div id="post-comments" class="panel-collapse collapse show">
+					{if $comments}
+						{foreach from=$comments item=comment key = k}
+							<div class="post-comment clearfix">
+								<div class="post-comment-info">
+									<img class="attachment-widget img-responsive" src="{$image_baseurl nofilter}user.png" />
+									<div class="info">
+										<h6>{$comment.customer_name nofilter}</h6>
+										<span class="customer_site">{$comment.customer_site nofilter}</span>
+										<span class="time_add">{$comment.time_add nofilter}</span>
+										<p class="post-comment-content">{$comment.comment nofilter}</p>
+									</div>
+								</div>
+							</div>
+						{/foreach}	
+					{/if}
+					</div>
+				</div>
+			</div>
+			{if $gdz_blog_setting.GDZBLOG_ALLOW_GUEST_COMMENT || (!$gdz_blog_setting.GDZBLOG_ALLOW_GUEST_COMMENT && $logged)}	
+			<div class="commentForm">
+				<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=gdz_blog&controller=post&post_id={$post.post_id nofilter}&action=submitComment">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="heading">{l s='Leave A Reply' mod='gdz_blog'}</h4>
+							<p class="h-info">{l s='Your email address will not be published. Required fields are marked' mod='gdz_blog'} *</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea id="comment" class="form-control" placeholder="Comment *" name="comment" rows="4" required></textarea>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input id="customer_name" placeholder="Name *" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
+							</div>	
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input id="comment_title" placeholder="Email *" class="form-control" name="email" type="text" value="{$customer.email}" required />
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<input id="customer_site" class="form-control" placeholder="Website" name="customer_site" type="text" value=""/>
+					</div>
+					<div id="new_comment_form_footer">
+						<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id nofilter}" />
+						<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
+						<button id="submitComment" class="btn btn-outline-primary-2 text-uppercase" name="submitComment" type="submit">
+							{l s='Post Comment' mod='gdz_blog'}
+							<i class="icon-long-arrow-right"></i>
+						</button>
+					</div>
+				</form>
+				<script>
+				$("#commentForm").validate({
+				rules: {		
+					customer_name: "required",		
+					email: {
+					required: true,
+					email: true
+					}
+				}
+				});
+				</script>
+			</div>
+			{/if}
+			{if !$gdz_blog_setting.GDZBLOG_ALLOW_GUEST_COMMENT && !$logged}
+				{l s='Please Login to comment' mod='gdz_blog'}
+			{/if}		
 		{else}
 			{include file="{$module_dir}comment_facebook.tpl"}		
 		{/if}

@@ -1330,6 +1330,9 @@ a:focus {
   -webkit-box-shadow: 0 1px 0 #cc6666;
   box-shadow: 0 1px 0 #cc6666; }
 
+.blog-widget ul li a:hover {
+  color: #cc6666; }
+
 #search_filters .btn-default.js-search-filters-clear-all {
   color: #cc6666; }
 

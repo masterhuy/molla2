@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>How to improve customer experience: Top 10 trends and techniques</title>
+    <link>https://www.prestashop.com/en/blog/customer-experience-trends</link>
+    <description>The COVID-19 pandemic has upended the retail industry, forcing the closure of physical stores and causing uncertainty for the future of the in-store experience.</description>
+     <pubDate>Wed, 30 Sep 2020 17:42:59 +0200</pubDate>
+ <dc:creator>Neha Sharma</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-experience-trends</guid>
+  </item>
+  <item>
+    <title>The importance of translation in the internationalization of your ecommerce</title>
+    <link>https://www.prestashop.com/en/blog/translation-internationalization-ecommerce</link>
+    <description>International expansion is an especially important factor for the growth of sales from your online store.</description>
+     <pubDate>Mon, 28 Sep 2020 16:33:53 +0200</pubDate>
+ <dc:creator>Sara Lázaro EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/translation-internationalization-ecommerce</guid>
+  </item>
+  <item>
     <title>PSD2: EU mandatory strong authentication by the end of 2020: be ready!</title>
     <link>https://www.prestashop.com/en/blog/psd2-strong-authentication</link>
     <description> </description>
@@ -68,22 +84,6 @@
      <pubDate>Fri, 28 Aug 2020 14:36:01 +0200</pubDate>
  <dc:creator>luca mastroianni</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/best-practices-after-sales</guid>
-  </item>
-  <item>
-    <title>E-Commerce Data driven strategy: how to increase sales by analyzing data</title>
-    <link>https://www.prestashop.com/en/blog/strategy-analysing-data</link>
-    <description>Do you want to improve the performance of your e-commerce? Discover how to set up a data driven optimization strategy</description>
-     <pubDate>Fri, 28 Aug 2020 14:31:27 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/strategy-analysing-data</guid>
-  </item>
-  <item>
-    <title>E-commerce: The KPIs you should monitor</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</link>
-    <description>Data is the most valuable source of information to help you maximise your e-commerce conversions.</description>
-     <pubDate>Mon, 17 Aug 2020 17:56:28 +0200</pubDate>
- <dc:creator>luca mastroianni</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</guid>
   </item>
   </channel>
 </rss>
