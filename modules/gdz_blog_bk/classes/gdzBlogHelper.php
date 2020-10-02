@@ -162,6 +162,7 @@ class gdz_blogHelper
     }
     public static function getCategory($category_id = 0)
     {
+        if((int)$category_id == 0) return;
         $context = Context::getContext();
         $id_lang = $context->language->id;
         $_query = 'SELECT hss.`category_id` as category_id, hssl.`title`, hssl.`alias` FROM '._DB_PREFIX_.'gdz_blog_categories hss LEFT JOIN '._DB_PREFIX_.'gdz_blog_categories_lang hssl ON (hss.category_id = hssl.category_id) WHERE hss.active = 1 AND hssl.id_lang = '.(int)$id_lang.' AND hss.`category_id` = '.$category_id.' ORDER BY hss.ordering';

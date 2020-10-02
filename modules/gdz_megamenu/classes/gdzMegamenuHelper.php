@@ -9,7 +9,8 @@
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: https://www.prestawork.com
 */
-
+include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzblogHelper.php');
 class gdzMegamenuHelper
 {
     public $treearr = array();
@@ -356,37 +357,30 @@ class gdzMegamenuHelper
                   $item['content'] = $item['html_content'];
                   break;
               case 'gdz_blog-latest':
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                  $_link = GdzBlog::getPageLink('gdz_blog-latest', array());
+                  $_link = gdz_blog::getPageLink('gdz_blog-latest', array());
                   $item['link'] = $_link;
                   break;
               case 'gdz_blog-categories':
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                  $_link = GdzBlog::getPageLink('gdz_blog-categories', array());
+                  $_link = gdz_blog::getPageLink('gdz_blog-categories', array());
                   $item['link'] = $_link;
                   break;
               case 'gdz_blog-singlepost':
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
-                  $_post = GdzBlogHelper::getPostByID($item['value']);
-                  $_category = GdzBlogHelper::getCategory($_post['category_id']);
-                  $_link = GdzBlog::getPageLink('gdz_blog-post', array('post_id' => $item['value'], 'category_slug' => $_category['alias'], 'slug' => $_post['alias']));
+                  $_post = gdz_blogHelper::getPostByID($item['value']);
+                  $_category = gdz_blogHelper::getCategory($_post['category_id']);
+                  $_link = gdz_blog::getPageLink('gdz_blog-post', array('post_id' => $item['value'], 'category_slug' => $_category['alias'], 'slug' => $_post['alias']));
                   $item['link'] = $_link;
                   break;
               case 'gdz_blog-category':
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
-                  $_category = GdzBlogHelper::getCategory($item['value']);
-                  $_link = GdzBlog::getPageLink('gdz_blog-category', array('category_id' => $item['value'], 'slug' => $_category['alias']));
+                  $_category = gdz_blogHelper::getCategory($item['value']);
+                  $_link = gdz_blog::getPageLink('gdz_blog-category', array('category_id' => $item['value'], 'slug' => $_category['alias']));
                   $item['link'] = $_link;
                   break;
               case 'gdz_blog-tag':
-                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                  $_link = GdzBlog::getPageLink('gdz_blog-tag', array('tag' => $item['value']));
+                  $_link = gdz_blog::getPageLink('gdz_blog-tag', array('tag' => $item['value']));
                   $item['link'] = $_link;
                   break;
               case 'gdz_blog-archive':
-                  $_link = GdzBlog::getPageLink('gdz_blog-archive', array('archive' => $item['value']));
+                  $_link = gdz_blog::getPageLink('gdz_blog-archive', array('archive' => $item['value']));
                   $item['link'] = $_link;
                   break;
               case 'godzilla-page':

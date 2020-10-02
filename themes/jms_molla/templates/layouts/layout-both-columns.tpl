@@ -67,7 +67,7 @@
                             {/if}
                         </div>
                     {/block}
-
+                    
                     {block name="content_wrapper"}
                         <div id="content-wrapper" class="col-sm-12 col-md-6">
                             {block name="content"}

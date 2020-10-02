@@ -28,6 +28,8 @@ class gdz_blog extends Module
         parent::__construct();
         $this->displayName = $this->l('Godzilla Blog');
         $this->description = $this->l('Advanced Blog Module For Prestashop.');
+        $this->gens = array();
+        $this->menu = '';
     }
 
     public function install()
@@ -64,19 +66,19 @@ class gdz_blog extends Module
       			$res &= Configuration::updateValue('GBW_SB_SHOW_CATEGORYMENU', 1);
       			$res &= Configuration::updateValue('GBW_SB_SHOW_ARCHIVES', 1);
 
-            $tab_parent_id = (int)Tab::getIdFromClassName('PRESTAWORK');
+            $tab_parent_id = (int)Tab::getIdFromClassName('GODZILLA');
             if($tab_parent_id <= 0) {
                 $tab = new Tab();
                 $tab->id_parent = 0;
                 $tab->active = 1;
-                $tab->class_name = "PRESTAWORK";
+                $tab->class_name = "GODZILLA";
                 $tab->name = array();
                 foreach (Language::getLanguages(true) as $lang) {
-                    $tab->name[$lang['id_lang']] = 'PRESTAWORK';
+                    $tab->name[$lang['id_lang']] = 'GODZILLA';
                 }
                 if(!$tab->add()) return false;
             }
-            if(((int)Tab::getIdFromClassName('PRESTAWORK') > 0) && ((int)Tab::getIdFromClassName('AdminGdzblogDashboard') <= 0)) {
+            if(((int)Tab::getIdFromClassName('GODZILLA') > 0) && ((int)Tab::getIdFromClassName('AdminGdzblogDashboard') <= 0)) {
                 $tab = new Tab();
                 $tab->active = 1;
                 $tab->class_name = "AdminGdzblogDashboard";
@@ -86,7 +88,7 @@ class gdz_blog extends Module
                 foreach (Language::getLanguages(true) as $lang) {
                     $tab->name[$lang['id_lang']] = 'Godzilla Blog';
                 }
-                $tab->id_parent = (int)Tab::getIdFromClassName('PRESTAWORK');
+                $tab->id_parent = (int)Tab::getIdFromClassName('GODZILLA');
                 $tab->module = $this->name;
                 if(!$tab->add()) return false;
                 $tab_parent_id = (int)Tab::getIdFromClassName('AdminGdzblogDashboard');
@@ -376,15 +378,15 @@ class gdz_blog extends Module
                 'category_id' => $category['category_id'],
                 'slug' => $category['alias']
             );
-            $_link = JmsBlog::getPageLink('gdz_blog-category', $params);
+            $_link = gdz_blog::getPageLink('gdz_blog-category', $params);
             $this->menu .= '<a href="'.$_link.'">';
             $this->menu .=  $category['title'];
-            if ($category['level'] == 0 && isset($this->child[$category['category_id']])) {
-                $this->menu .= '<span class="navbar-toggler"><i class="fa fa-plus"></i></span>';
-            }
             $this->menu .= '</a>';
+            if ($category['level'] == 0 && isset($this->child[$category['category_id']])) {
+                $this->menu .= '<span data-toggle="collapse" data-target="#child" class="navbar-toggler collapsed"></span>';
+            }
             if (isset($this->child[$category['category_id']])) {
-                $this->menu .='<ul>';
+                $this->menu .='<ul id="child" class="collapse">';
                 $this->genSubs($this->child[$category['category_id']]);
                 $this->menu .='</ul>';
             }
@@ -437,12 +439,12 @@ class gdz_blog extends Module
     {
         $widget_setting = $this->getConfigFieldsValues();
         $category_menu = $this->genCategoryMenu();
-        $archives = gdzBlogHelper::getArchives();
-        $popularpost = gdzBlogHelper::getPopularPost();
-        $latestpost = gdzBlogHelper::getLatestPost();
-        $latestcomment = gdzBlogHelper::getLatestComment();
+        $archives = gdz_blogHelper::getArchives();
+        $popularpost = gdz_blogHelper::getPopularPost();
+        $latestpost = gdz_blogHelper::getLatestPost();
+        $latestcomment = gdz_blogHelper::getLatestComment();
         for ($i = 0; $i < count($latestcomment); $i++) {
-            $latestcomment[$i]['comment'] = gdzBlogHelper::genIntrotext($latestcomment[$i]['comment'], $widget_setting['GBW_SB_COMMENT_LIMIT']);
+            $latestcomment[$i]['comment'] = gdz_blogHelper::genIntrotext($latestcomment[$i]['comment'], $widget_setting['GBW_SB_COMMENT_LIMIT']);
         }
         $this->smarty->assign(
             array(

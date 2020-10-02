@@ -22,11 +22,54 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-{if $sidebar == 'left'} 
-	{assign var="layout" value="layouts/layout-left-column.tpl"}
-{elseif $sidebar == 'right'}
-	{assign var="layout" value="layouts/layout-right-column.tpl"}
-{elseif $sidebar == 'no'}	
-	{assign var="layout" value="layouts/layout-full-width.tpl"}
+{if isset($smarty.get.page_layout) && $smarty.get.page_layout !=''}
+    {assign var='page_layout' value=$smarty.get.page_layout}
 {/if}
-{include file="module:gdz_blog/views/templates/front/$categories_layout"}
+{if $page_layout == 'no'}
+	{assign var="layout" value="layouts/layout-full-width.tpl"}
+{elseif $page_layout == 'right'}
+	{assign var="layout" value="layouts/layout-right-column.tpl"}
+{else}
+	{assign var="layout" value="layouts/layout-left-column.tpl"}
+{/if}
+{extends file=$layout}
+{block name='content'}
+    <section id="main">
+        {block name='page_content_container'}
+            <section id="content" class="page-content">
+				{block name="page_content"}
+					{capture name=path}{l s='Categories' d='Modules.gdz_blog'}{/capture}
+					{if isset($categories) AND $categories}
+						<div class="cat-post-list more-columns row">
+							{foreach from=$categories item=category}
+								{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
+								<div class="item col-12 col-sm-6 col-md-6 col-lg-6">
+									<div class="category-post">
+										{if $category.image && $gdz_blog_setting.GDZBLOG_SHOW_MEDIA}
+											<div class="post-thumb">
+												<a href="{gdz_blog::getPageLink('gdz_blog-category', $catparams)}">
+													<img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" />
+												</a>
+											</div>
+										{/if}
+										<div class="category-info">
+											<h4>
+												<a class="category-title" href="{gdz_blog::getPageLink('gdz_blog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>
+											<div class="cat-intro">{$category.introtext|truncate:120:'...' nofilter}</div>
+										</div>
+										<a class="read-more" href="{gdz_blog::getPageLink('gdz_blog-category', $catparams)}">
+											{l s='Read more' d='Modules.gdz_blog'}
+										</a>
+									</div>
+								</div>
+							{/foreach}
+						</div>
+					{else}
+						{l s='Sorry, dont have any category in this section' d='Modules.gdz_blog'}
+					{/if}
+				{/block}
+            </section>
+        {/block}
+        {block name='page_footer_container'}{/block}
+    </section>
+{/block}

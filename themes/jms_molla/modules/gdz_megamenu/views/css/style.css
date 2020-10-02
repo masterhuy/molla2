@@ -35,7 +35,12 @@
 .gdz-megamenu .nav > li.open {
     background: none;
 }
-
+.gdz-megamenu .nav > .menu-item .mega-nav li.mega > a::before{
+    font-family: 'molla';
+    content: '\f112';
+    position: absolute;
+    right: 0;
+}
 .gdz-megamenu .dropdown-menu {
     background: #fff;
     border-radius: 0;
