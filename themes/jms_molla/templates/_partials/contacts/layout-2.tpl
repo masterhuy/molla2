@@ -22,31 +22,23 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
- {block name='page_header_container'}{/block}
- {block name='page_content'}
-<div class="contact-layout-2" id="contact-wrapper">
-    <div class="row contact-row">
-          <div class="col-md-5">
-              <div id="contact-info">
-                <div class="contact-box">
-                  {widget name="ps_contactinfo" hook='displayRightColumn'}
+{block name='page_header_container'}{/block}
+{block name='page_content'}
+    <div class="contact-layout-2" id="contact-wrapper">
+        <div class="container">
+            <div class="row contact-row">
+                <div class="col-md-5">
+                    <div id="contact-info">
+                        {widget name="ps_contactinfo" hook='displayRightColumn'}
+                    </div>
+                    <div class="contact-map contact-row" id="contact-map">
+                        <iframe width="100%" height="300" style="border:0" src="{$gdzSetting.contact_page_map_src}" allowfullscreen=""></iframe>
+                    </div>
                 </div>
-              </div>
-              <div class="contact-map contact-row" id="contact-map">
-                <div class="contact-box">
-                    <iframe width="100%" height="300" style="border:0"
-                      src="{$gdzSetting.contact_page_map_src}"
-                      allowfullscreen="">
-                    </iframe>
+                <div class="col-md-7" id="contact-form">
+                    {widget name="contactform"}
                 </div>
-              </div>
-          </div>
-          <div class="col-md-7" id="contact-form">
-              <div class="contact-box">
-                {widget name="contactform"}
-              </div>
-          </div>
+            </div>
+        </div>
     </div>
-</div>
 {/block}

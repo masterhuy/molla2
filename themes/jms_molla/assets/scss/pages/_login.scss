@@ -1,14 +1,20 @@
 /* Login */
 #authentication{
+	.breadcrumb-wrapper{
+		margin-bottom: 0;
+	}
 	.breadcrumb-nav{
 		margin-bottom: 0;
 	}
-	#wrapper{
+	&.has-background-image #wrapper{
 		padding: 12rem 0;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-image: url("../images/backgrounds/login-bg.jpg");
+	}
+	#wrapper{
+		padding: 7rem 0;
 	}
 	.page-content{
 		padding-bottom: 0;
@@ -78,7 +84,7 @@
 			flex: 0 0 100%;
 			max-width: 100%;
 		}
-		.col-md-8{
+		.col-md-10{
 			flex: 0 0 100%;
 			max-width: 100%;
 		}

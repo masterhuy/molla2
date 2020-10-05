@@ -22,7 +22,6 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 {extends file='layouts/layout-full-width.tpl'}
 {block name='content'}
     <section id="main">
@@ -34,9 +33,11 @@
                 {elseif $gdzSetting.contact_page_layout == 'layout-2'}
                     {include file='_partials/contacts/layout-2.tpl'}
                 {elseif $gdzSetting.contact_page_layout == 'layout-3'}
-                     {include file='_partials/contacts/layout-3.tpl'}
+                    {include file='_partials/contacts/layout-3.tpl'}
                 {elseif $gdzSetting.contact_page_layout == 'layout-4'}
-                     {include file='_partials/contacts/layout-4.tpl'}
+                    {include file='_partials/contacts/layout-4.tpl'}
+                {elseif $gdzSetting.contact_page_layout == 'layout-5'}
+                    {include file='_partials/contacts/layout-5.tpl'}
                 {/if}
             </section>
         {/block}

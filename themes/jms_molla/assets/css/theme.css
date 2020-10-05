@@ -935,32 +935,8 @@ header .row .col-auto {
     display:block;
 }
 
-/***** PAGE NOT FOUND *****/
-.page-not-found {
-	text-align: center;
-	padding: 5rem 0 12.5rem;
-}
-.page-not-found .small-text {
-	margin-bottom: 3.125rem;
-}
-.page-not-found #search_widget {
-	max-width: 40%;
-}
-.page-not-found p.text-1 {
-	font-size: 10rem;
-	margin-bottom: 1.5rem;
-	color: #000;
-	line-height: 1;
-}
-.page-not-found p.text-2 {
-	font-size: 1.875rem;
-	margin-bottom: 2.1rem;
-	color: #000;
-	letter-spacing: 0.03125rem;
-}
-.page-not-found p.text-3 {
-	margin-bottom: 5.4375rem;
-}
+
+
 /***** Authentication *****/
 #login-wrapper .login-row {
 		margin-top:2rem;
@@ -990,15 +966,6 @@ header .row .col-auto {
     background:none;
     padding: 0px;
 }
-.input-group-btn .btn .buttonText {
-    line-height: 1;
-    display: inline-block;
-    vertical-align: sub;
-    text-transform: capitalize;
-    font-size:0.75rem;
-    padding:0px 5px;
-}
-
 .links > div {
   padding: 1rem;
   border: 1px solid #ebebeb;

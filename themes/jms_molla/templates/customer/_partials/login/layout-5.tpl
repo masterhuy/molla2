@@ -24,8 +24,7 @@
  *}
 {block name='page_content'}
     {block name='login_form_container'}
-        <div class="login-layout-5" id="login-wrapper">
-
+        <div class="login-layout-5 bg-img" id="login-wrapper">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#tab-login">
@@ -38,7 +37,6 @@
                     </a>
                 </li>
             </ul>
-
             <div class="tab-content">
                 <div class="tab-pane active" id="tab-login">
                     <div class="login-box login-form">

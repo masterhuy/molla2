@@ -1,5 +1,21 @@
 /* 404 - Error */
-.error-content {
+#pagenotfound{
+	.breadcrumb{
+		display: none;
+	}
+	.breadcrumb-nav,
+	.breadcrumb-wrapper{
+		margin-bottom: 0;
+		border: none;
+	}
+	.breadcrumb-nav{
+		border-top: .1rem solid #ebebeb;
+	}
+	#footer{
+		border-top: none;
+	}
+}
+.page-not-found {
 	color: #777;
 	font-weight: 400;
 	font-size: 1.8rem;
@@ -11,9 +27,13 @@
 	background-repeat: no-repeat;
 	min-height: 480px;
 	background-color: #fdfdfd;
+	background-image: url(../images/backgrounds/error-bg.jpg);
 
 	p {
 		margin-bottom: 2.5rem;
+		font-size: 1.4rem;
+		font-weight: 300;
+		letter-spacing: 0;
 	}
 }
 
@@ -23,12 +43,12 @@
 }
 
 @include mq('md') {
-	.error-content {
+	.page-not-found {
 		padding-top: 12.5rem;
 		min-height: 540px;
 	}
 
-	.error-content {
+	.page-not-found {
 		min-height: 620px;
 	}
 }

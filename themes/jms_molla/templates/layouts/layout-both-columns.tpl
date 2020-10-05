@@ -52,10 +52,10 @@
                     {include file='_partials/notifications.tpl'}
                 {/block}
 
-                {if $page.page_name != 'index' && $page.page_name != 'module-gdz_pagebuilder-page' && $page.page_name != 'module-gdz_pagebuilder-preview'}
+                {if $page.page_name != 'index' && $page.page_name != 'pagenotfound' && $page.page_name != 'module-gdz_pagebuilder-page' && $page.page_name != 'module-gdz_pagebuilder-preview'}
                     <div class="container">
                 {/if}
-                {if $page.page_name != 'contact' && $page.page_name != 'password'  && $page.page_name != 'cart' && $page.page_name != 'module-jmspagebuilder-preview'}
+                {if $page.page_name != 'module-jmspagebuilder-preview'}
                 <div class="row">
                 {/if}
                     {block name="left_column"}

@@ -1,6 +1,34 @@
 jQuery(function ($) {
     "use strict";
 
+    //add login bg img
+    if($('#login-wrapper').hasClass('bg-img')){
+        $('body').addClass('has-background-image');
+    }
+
+    // Count
+    var $countItem = $('.count');
+	if ( $.fn.countTo ) {
+        if ($.fn.waypoint) {
+            $countItem.waypoint( function () {
+                $(this.element).countTo();
+            }, {
+                offset: '90%',
+                triggerOnce: true 
+            });
+        } else {
+            $countItem.countTo();
+        }    
+    } else { 
+        // fallback
+        // Get the data-to value and add it to element
+        $countItem.each(function () {
+            var $this = $(this),
+                countValue = $this.data('to');
+            $this.text(countValue);
+        });
+    }
+
     //collapse
     $('.card.card-box').on('show.bs.collapse', function (e) {
         $('.card.card-box .collapse').not(e.target).collapse('hide');

@@ -25,11 +25,9 @@
 <section id="content" class="page-content page-not-found">
     <div class="row">
         <div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-            <p class="text-1">{l s='404' d='Shop.Theme.Global'}</p>
-            <p class="text-2">{l s='Oops! This page Could Not Be Found!' d='Shop.Theme.Global'}</p>
-            <p class="text-3">{l s='Sorry bit the page you are looking for does not exist, have been removed or name changed' d='Shop.Theme.Global'}</p>
-            
-            <a class="btn-default back-to-home" href="{$urls.base_url}">{l s='Back to homepage' d='Shop.Theme.Global'}</a>
+            <h1 class="error-title">{l s='Error 404' d='Shop.Theme.Global'}</h1>
+            <p>{l s="We are sorry, the page you've requested is not available." d='Shop.Theme.Global'}</p>
+            <a class="btn btn-outline-primary-2 btn-minwidth-lg" href="{$urls.base_url}">{l s='Back to homepage' d='Shop.Theme.Global'}</a>
         
             {block name='hook_not_found'}
                 {hook h='displayNotFound'}
