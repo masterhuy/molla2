@@ -20,6 +20,12 @@
 		padding-bottom: 0;
 	}
 }
+.login-layout-2,
+.login-layout-3{
+	.login-form{
+		margin-bottom: 5rem;
+	}
+}
 .login-layout-5{
 	max-width: 575px;
 	margin-left: auto;
@@ -89,6 +95,15 @@
 			max-width: 100%;
 		}
 	}
+}
+#login-form{
+	.authentication-links {
+		margin-left: 2rem;
+	}
+}
+.forgot-password a,
+.no-account a{
+	color: #333;
 }
 .show-pass button{
     border: .1rem solid #ebebeb;

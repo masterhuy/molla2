@@ -25,12 +25,10 @@
 <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="modal fade quickview-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog container" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="ptw-icon {$gdzSetting.close_icon}"></i>
-                </button>
-            </div>
             <div class="modal-body" id="main">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="mfp-close"></i>
+                </button>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 left">
                         {block name='product_cover_thumbnails'}
@@ -46,19 +44,15 @@
                         {block name='product_prices'}
                             {include file='catalog/_partials/product-prices.tpl'}
                         {/block}
-
                         <div class="product-information">
                             {block name='product_description_short'}
                                 <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
                             {/block}
-
                             {if $product.is_customizable && count($product.customizations.fields)}
                                 {block name='product_customization'}
                                     {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
                                 {/block}
                             {/if}
-
-
                             <div class="product-actions">
                                 {block name='product_buy'}
                                     <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">

@@ -6,7 +6,7 @@ jQuery(function ($) {
         $('body').addClass('has-background-image');
     }
 
-    // Count
+    // Count to
     var $countItem = $('.count');
 	if ( $.fn.countTo ) {
         if ($.fn.waypoint) {
@@ -271,7 +271,7 @@ jQuery(function ($) {
     });
 
     //product image zoom
-    $('.product-image-zoom').elevateZoom({
+    $('.product-detail .product-image-zoom').elevateZoom({
         zoomType: "inner",
         cursor: "crosshair",
         zoomWindowFadeIn: 500,
@@ -290,6 +290,10 @@ $(document).mouseup(function(e){
     {
         container.closest('.search-overlay').removeClass('open');
     }
+});
+
+$(document).on('click', '.addToWishlist', function (e) {
+    e.preventDefault();
 });
 
 $(document).on('click', '.switch-view', function (e) {
@@ -440,12 +444,28 @@ function stickyRightColumn(){
     }
 }
 
+function slickImage(){
+    // slick carousel
+    $('.quickview-modal .product-images').slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        verticalSwiping: true,
+        infinite: false,
+    });
+}
+
 jQuery(document).ready(function(){
     $('.gdz-megamenu').jmsMegaMenu({
         event: 'hover',
         duration: 100
     });
+    prestashop.on('clickQuickView', function (e) {
+		setTimeout(function(){ slickImage(); }, 2000);
+	});
     prestashop.on('updatedProduct', function (e) {
+        slickImage();
         imageThumbCarousel();
         calcOwnControlProductModal();
     });

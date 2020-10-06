@@ -1,7 +1,7 @@
 jQuery(function ($) {
     var c_lazyload = false;
     if(gdzSetting.carousel_lazyload)
-      var c_lazyload = true;
+    var c_lazyload = true;
     $.each( $('.owl-carousel'), function( key, value ) {
         carousel = $(this);
         carousel.owlCarousel({
