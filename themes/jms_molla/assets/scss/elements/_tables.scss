@@ -29,4 +29,7 @@
 	td {
 		vertical-align: middle;
 	}
+	tbody + tbody{
+		border: none;
+	}
 }

@@ -1,5 +1,11 @@
 /*  Index.html - Home page */
 .quickview-modal{
+	.modal-dialog{
+		margin: 0 auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
 	.close{
 		top: 1rem;
 		right: 1rem;
@@ -36,14 +42,13 @@
 		.row{
 			width: 100%;
 		}
+		.thumb-container{
+			margin-bottom: 1rem;
+		}
 		.slick-list{
-			overflow: hidden;
+			// overflow: hidden;
 		}
 	}
-	// .js-qv-mask{
-	// 	width: 100px;
-	// 	min-width: 100px;
-	// }
 }
 
 .intro-section {

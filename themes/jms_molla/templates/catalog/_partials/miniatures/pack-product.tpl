@@ -25,7 +25,7 @@
 
 <tbody>
     <tr>
-        <td class="d-flex" scope="row">
+        <td class="d-flex align-items-center" scope="row">
             <img
                 src = "{$product.cover.small.url}"
                 alt = "{$product.cover.legend}"
@@ -36,12 +36,12 @@
             </div>
         </td>
         <td>
-            <div class="pack-product-price">
+            <div class="pack-product-price text-center">
                 {$product.price}
             </div>
         </td>
         <td>
-            <div class="pack-product-quantity">
+            <div class="pack-product-quantity text-center">
                 <span>x {$product.pack_quantity}</span>
             </div>
         </td>

@@ -560,6 +560,9 @@ a:focus {
 .btn-expandable span {
   background-color: #a6c76c; }
 
+.products-list .product-miniature .product-actions .product-btn {
+  color: #a6c76c; }
+
 .productbox-flex .content_price .price.new {
   color: #a6c76c; }
 

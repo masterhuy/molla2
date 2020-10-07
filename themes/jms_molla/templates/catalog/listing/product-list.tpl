@@ -29,6 +29,23 @@
 {elseif $gdzSetting.shop_layout == 'no-sidebar'}
     {assign var='layout' value='layouts/layout-full-width.tpl'}
 {/if}
+{if isset($smarty.get.shop_layout) && $smarty.get.shop_layout == 'right-sidebar'}
+    {assign var='layout' value='layouts/layout-right-column.tpl'}
+{elseif isset($smarty.get.shop_layout) && $smarty.get.shop_layout == 'left-sidebar'}
+    {assign var='layout' value='layouts/layout-left-column.tpl'}
+{elseif isset($smarty.get.shop_layout) && $smarty.get.shop_layout == 'no-sidebar'}
+    {assign var='layout' value='layouts/layout-full-width.tpl'}
+{/if}
+{if isset($smarty.get.shop_list) && $smarty.get.shop_list != ''}
+    {assign var='shop_list' value=$smarty.get.shop_list}
+{else}
+    {assign var='shop_list' value=$gdzSetting.shop_list}
+{/if}
+{if isset($smarty.get.shop_grid_column) && $smarty.get.shop_grid_column != ''}
+    {assign var='shop_grid_column' value=$smarty.get.shop_grid_column}
+{else}
+    {assign var='shop_grid_column' value=$gdzSetting.shop_grid_column}
+{/if}
 {extends file=$layout}
 {block name='content'}
     <section id="main">
@@ -49,8 +66,8 @@
                         </div>
                     {/block}
                 {/if}
-                <div id="product_list" class="product_list {if $gdzSetting.shop_list == 'grid'}products-grid grid-{$gdzSetting.shop_grid_column}{else}products-list{/if}">
-                    {if $gdzSetting.shop_grid_column == '1-2-1-2' || $gdzSetting.shop_grid_column == '1-3-1-3' || $gdzSetting.shop_grid_column == '2-1-2-1' || $gdzSetting.shop_grid_column == '3-1-3-1'}
+                <div id="product_list" class="product_list {if $shop_list == 'grid'}products-grid grid-{$shop_grid_column}{else}products-list{/if}">
+                    {if $gdzSetting.shop_grid_column == '1-2-1-2' || $shop_grid_column == '1-3-1-3' || $shop_grid_column == '2-1-2-1' || $shop_grid_column == '3-1-3-1'}
                         {block name='product_list'}
                             {include file='catalog/_partials/products-big.tpl' listing=$listing}
                         {/block}

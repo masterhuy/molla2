@@ -75,25 +75,23 @@
                         {block name='product_pack'}
                             {if $packItems}
                                 <section class="product-pack">
-                                    <h3 class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</h3>
+                                    <h6>{l s='This pack contains' d='Shop.Theme.Catalog'}</h6>
                                     <article>
-                                        <div class="card">
-                                            <div class="pack-product-container">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Products</th>
-                                                            <th>Price</th>
-                                                            <th>Quantity</th>
-                                                        </tr>
-                                                    </thead>
-                                                    {foreach from=$packItems item="product_pack"}
-                                                        {block name='product_miniature'}
-                                                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
-                                                        {/block}
-                                                    {/foreach}
-                                                </table>
-                                            </div>
+                                        <div class="pack-product-container">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Products</th>
+                                                        <th>Price</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                {foreach from=$packItems item="product_pack"}
+                                                    {block name='product_miniature'}
+                                                        {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
+                                                    {/block}
+                                                {/foreach}
+                                            </table>
                                         </div>
                                     </article>
                                 </section>

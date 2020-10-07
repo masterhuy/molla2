@@ -24,12 +24,18 @@
  *}
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row align-items-center">
-		<div class="col-4 col-md-6 col-sm-5 text-left">
+		<div class="col-4 sidebar-toggler">
+			<a href="#">
+				<i class="icon-bars"></i>
+				{l s='Filters' d='Shop.Theme.Catalog'}
+			</a>
+		</div>
+		<div class="col-4 col-md-6 col-sm-5 col-pagination text-left">
 			{block name='pagination'}
 				{include file='_partials/pagination.tpl' pagination=$listing.pagination}
 			{/block}
 		</div>
-		<div class="col-8 col-md-6 col-sm-7 text-right">
+		<div class="col-8 col-md-6 col-sm-7 col-sort text-right">
 			<div class="sort-by">
 				{if $gdzSetting.shop_sortby == 1}
 					{block name='sort_by'}

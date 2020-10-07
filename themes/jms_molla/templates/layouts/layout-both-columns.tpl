@@ -22,6 +22,11 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if isset($smarty.get.shop_width) && $smarty.get.shop_width != ''}
+    {assign var='shop_width' value=$smarty.get.shop_width}
+{else}
+    {assign var='shop_width' value=$gdzSetting.shop_width}
+{/if}
 <!doctype html>
 <html lang="{$language.iso_code}">
     <head>
@@ -51,9 +56,8 @@
                 {block name='notifications'}
                     {include file='_partials/notifications.tpl'}
                 {/block}
-
                 {if $page.page_name != 'index' && $page.page_name != 'pagenotfound' && $page.page_name != 'module-gdz_pagebuilder-page' && $page.page_name != 'module-gdz_pagebuilder-preview'}
-                    <div class="container">
+                    <div class="container{if $shop_width != 1}-fluid{/if}">
                 {/if}
                 {if $page.page_name != 'module-jmspagebuilder-preview'}
                 <div class="row">
