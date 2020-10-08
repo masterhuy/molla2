@@ -1,10 +1,10 @@
-{* <style>
+<style>
 	.jms-popup-wrap {
 		width : {$video_width}px;
 		height :{$video_height}px;
 		margin: -{$video_height/2}px 0 0 -{$video_width/2}px;
 	}
-</style> *}
+</style>
 
 {if $product_videos}
 <div class="jms-videos" id="gdz_productvideo">

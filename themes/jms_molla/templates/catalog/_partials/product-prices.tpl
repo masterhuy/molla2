@@ -72,7 +72,6 @@
                 </p>
             {/if}
         {/block}
-        {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
         {block name='product_availability'}
             {if $product.show_availability && $product.availability_message}
             <span id="product-availability">
@@ -86,5 +85,7 @@
             </span>
             {/if}
         {/block}
+        {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
     </div>
 {/if}
+

@@ -147,7 +147,7 @@
     margin-left: auto;
 }
 .vertical-thumbs .thumb-container {
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 }
 .horizonal-thumbs .thumb-container {
 	margin: 0 0.625rem;
@@ -595,7 +595,7 @@
 }
 #more_info_block .tab-content {
     border: .1rem solid #dadada;
-    margin-top: -.2rem;
+    margin-top: -.1rem;
     border-radius: .3rem;
     padding: 2.7rem 3rem;
 }

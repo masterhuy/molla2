@@ -87,6 +87,7 @@
         {block name='hook_footer_before'}
             {hook h='displayFooterBefore' product=$product category=$category}
         {/block}
+        
 
         {block name='product_images_modal'}
             {include file='catalog/_partials/product-images-modal.tpl'}

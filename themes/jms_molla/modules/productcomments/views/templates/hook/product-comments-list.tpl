@@ -28,7 +28,7 @@
     var productCommentAbuseReportErrorMessage = '{l s='Sorry, your abuse report cannot be sent.' d='Modules.Productcomments.Shop' js=1}';
 </script>
 <div id="product-comments">
-    <span>{l s='Reviews' d='Modules.Productcomments.Shop'} ({$nb_comments})</span>
+    <h3>{l s='Reviews' d='Modules.Productcomments.Shop'} ({$nb_comments})</h3>
     {if $post_allowed && $nb_comments != 0}
         <div class="row">
             <div class="col-md-8 col-sm-12" id="product-comments-list-header">

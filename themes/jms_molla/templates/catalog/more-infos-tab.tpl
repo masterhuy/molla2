@@ -92,7 +92,7 @@
                 </div>
             {/if}
             {foreach from=$product.extraContent item=extra key=extraKey}
-                <div class="tab-panel {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" aria-labelledby="extra-{$extraKey}-tab">
+                <div class="tab-pane {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" aria-labelledby="extra-{$extraKey}-tab">
                     {$extra.content nofilter}
                 </div>
             {/foreach}

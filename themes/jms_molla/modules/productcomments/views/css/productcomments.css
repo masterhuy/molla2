@@ -339,7 +339,7 @@
 }
 
 .product-comment-list-item {
-  padding: 26px 0;
+  padding: 17px 0;
   margin: 0;
   background-color: #FFFFFF;
   text-align: left;
@@ -352,36 +352,52 @@
 
 .product-comment-list-item .grade-stars .star-content {
   margin: 0 0 10px;
-  left: 10px;
+  left: 0;
 }
-
+.product-comment-list-item .comment-date{
+  margin-top: 3rem;
+}
 .product-comment-list-item .comment-infos {
   margin-bottom: 20px;
 }
 
 .product-comment-list-item .comment-infos .grade-stars {
   margin-bottom: 20px;
+  position: relative;
 }
-
+.product-comment-list-item .comment-author {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+  margin-bottom: 1.4rem;
+}
+.product-comment-list-item .comment-date{
+  margin-top: 4.2rem;
+}
 .product-comment-list-item .comment-content h4 {
-  height: 22px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  line-height: 22px;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+  margin-bottom: .8rem;
 }
 
 .product-comment-list-item .comment-content p {
-  
+  margin-bottom: 7px;
 }
 .product-comment-list-item .comment-buttons a:not(:last-child){
-  margin-right: 5px;
+  margin-right: 19px;
 }
 .product-comment-list-item .comment-content .comment-buttons a {
   cursor: pointer;
+  line-height: 18px;
 }
 .product-comment-list-item .comment-content .comment-buttons a i{
-  color: #000;
+  font-size: 1.4rem;
+  margin-right: .3rem;
 }
 
 /*
@@ -565,4 +581,16 @@
 
 #product-comments-list-pagination ul li.active span {
   cursor: not-allowed;
+}
+
+#product-comments >h3{
+  font-size: 1.6rem;
+  letter-spacing: -.01em;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: .6rem;
+}
+.comment-buttons a{
+  color: #777;
+  font-size: 1.2rem;
 }

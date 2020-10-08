@@ -2034,6 +2034,13 @@ a:focus {
     color: $primary-color;
 }
 
+.product-comment-list-item .comment-content .comment-buttons a{
+    &:hover{
+        color: $primary-color;
+        box-shadow: 0 1px 0 $primary-color;
+    }
+}
+
 #search_filters .btn-default.js-search-filters-clear-all{
     color: $primary-color;
 }

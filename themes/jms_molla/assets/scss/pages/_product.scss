@@ -153,6 +153,7 @@
 .product-prices.content_price {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	.old.price{
 		font-size: 1.8rem;
 		margin-bottom: 0;
@@ -163,6 +164,11 @@
 		font-size: 2.4rem;
 		margin-bottom: 0;
 		margin-right: .5rem;
+	}
+	#gdz_productvideo{
+		margin-top: 2rem;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 .product-information{
@@ -801,6 +807,16 @@
 	.social-icon {
 		margin-bottom: 0;
 	}
+	#gdz_productvideo {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 2rem;
+	}
+}
+
+.icon-video{
+	font-size: 3rem;
+	color: #666;
 }
 
 @include mq('lg') {
@@ -1279,12 +1295,18 @@
 			max-width: 60px;
 		}
 	}
-	.product-prices.content_price .price{
-		&.new{
-			font-size: 1.6rem;
+	.product-prices.content_price{
+		> *{
+			display: none;
 		}
-		&.old{
-			font-size: 1.4rem;
+		.price{
+			display: inline-block;
+			&.new{
+				font-size: 1.6rem;
+			}
+			&.old{
+				font-size: 1.4rem;
+			}
 		}
 	}
 	#product-availability{

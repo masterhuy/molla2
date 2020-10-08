@@ -8712,6 +8712,9 @@ footer .row, header .row {
   padding: 1.6rem 0 0 0; }
 
 .productbox-3 .product-action {
+  position: absolute;
+  right: 0;
+  left: 0;
   top: auto;
   bottom: -4rem;
   opacity: 1;
@@ -8720,7 +8723,10 @@ footer .row, header .row {
   -ms-transform: none;
   transform: none;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease; }
   .productbox-3 .product-action .product-btn {
     border: 0;
     padding-top: 1.2rem;
@@ -10986,6 +10992,8 @@ small.form-text {
     padding-bottom: 1.4rem; }
   .table td {
     vertical-align: middle; }
+  .table tbody + tbody {
+    border: none; }
 
 /*--------------------- 4.17. Counters -------------------- */
 /* Counters */
@@ -13007,7 +13015,9 @@ button:focus {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .product-prices.content_price .old.price {
     font-size: 1.8rem;
     margin-bottom: 0;
@@ -13017,6 +13027,12 @@ button:focus {
     font-size: 2.4rem;
     margin-bottom: 0;
     margin-right: .5rem; }
+  .product-prices.content_price #gdz_productvideo {
+    margin-top: 2rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
 
 .product-information .specific_prices {
   margin-bottom: 3rem; }
@@ -13583,6 +13599,16 @@ button:focus {
     margin-left: auto; }
   .product-details-footer .social-icon {
     margin-bottom: 0; }
+  .product-details-footer #gdz_productvideo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 2rem; }
+
+.icon-video {
+  font-size: 3rem;
+  color: #666; }
 
 @media screen and (min-width: 992px) {
   .container-fluid .product-details-top .col-lg-7 {
@@ -13911,10 +13937,14 @@ button:focus {
     margin-right: 2rem; }
     #sticky-bar .product-cover img {
       max-width: 60px; }
-  #sticky-bar .product-prices.content_price .price.new {
-    font-size: 1.6rem; }
-  #sticky-bar .product-prices.content_price .price.old {
-    font-size: 1.4rem; }
+  #sticky-bar .product-prices.content_price > * {
+    display: none; }
+  #sticky-bar .product-prices.content_price .price {
+    display: inline-block; }
+    #sticky-bar .product-prices.content_price .price.new {
+      font-size: 1.6rem; }
+    #sticky-bar .product-prices.content_price .price.old {
+      font-size: 1.4rem; }
   #sticky-bar #product-availability {
     display: none; }
   #sticky-bar #quantity_wanted {

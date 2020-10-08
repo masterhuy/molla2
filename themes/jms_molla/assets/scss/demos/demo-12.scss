@@ -157,3 +157,15 @@ $secondary-color: #c96;
 		margin-bottom: 0;
 	}
 }
+
+.productbox-3{
+	&:hover{
+		.wrapp-buttons{
+			top: 2rem;
+		}
+	}
+	.wrapp-buttons{
+		right: 2rem;
+		top: 3.5rem;
+	}
+}

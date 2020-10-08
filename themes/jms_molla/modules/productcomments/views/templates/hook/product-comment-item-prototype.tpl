@@ -24,32 +24,34 @@
  *}
 
 <div class="product-comment-list-item row" data-product-comment-id="@COMMENT_ID@" data-product-id="@PRODUCT_ID@">
-    <div class="col-12 col-sm-2 col-md-2 col-lg-2 comment-infos">
+    <div class="col-auto comment-infos">
+        <div class="comment-author">
+            {l s='By %1$s' sprintf=['@CUSTOMER_NAME@'] d='Modules.Productcomments.Shop'}
+        </div>
         <div class="grade-stars"></div>
         <div class="comment-date">
             @COMMENT_DATE@
         </div>
-        <div class="comment-author">
-            {l s='By %1$s' sprintf=['@CUSTOMER_NAME@'] d='Modules.Productcomments.Shop'}
-        </div>
     </div>
 
-    <div class="col-12 col-sm-10 col-md-10 col-lg-10 comment-content">
+    <div class="col comment-content">
         <h4>@COMMENT_TITLE@</h4>
         <p>@COMMENT_COMMENT@</p>
         <div class="comment-buttons btn-group">
             {if $usefulness_enabled}
                 <a class="useful-review">
-                    <i class="lnr lnr-thumbs-up"></i>
-                    <span class="useful-review-value">@COMMENT_USEFUL_ADVICES@</span>
+                    <i class="icon-thumbs-up"></i>
+                    {l s='Helpful' d='Modules.Productcomments.Shop'}
+                    <span class="useful-review-value">(@COMMENT_USEFUL_ADVICES@)</span>
                 </a>
                 <a class="not-useful-review">
-                    <i class="lnr lnr-thumbs-down"></i>
-                    <span class="not-useful-review-value">@COMMENT_NOT_USEFUL_ADVICES@</span>
+                    <i class="icon-thumbs-down"></i>
+                    {l s='Unhelpful' d='Modules.Productcomments.Shop'}
+                    <span class="not-useful-review-value">(@COMMENT_NOT_USEFUL_ADVICES@)</span>
                 </a>
             {/if}
             <a class="report-abuse" title="{l s='Report abuse' d='Modules.Productcomments.Shop'}">
-                <i class="lnr lnr-flag"></i>
+                <i class="fa fa-flag"></i>
             </a>
         </div>
     </div>
