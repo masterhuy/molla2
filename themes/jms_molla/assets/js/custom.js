@@ -6,6 +6,25 @@ jQuery(function ($) {
         $('body').addClass('has-background-image');
     }
 
+    // Scroll To button
+    var $scrollTo = $('.scroll-to');
+    // If button scroll elements exists
+    if ( $scrollTo.length ) {
+        // Scroll to - Animate scroll
+        $scrollTo.on('click', function(e) {
+            var target = $(this).attr('href'),
+                $target = $(target);
+            if ($target.length) {
+                // Add offset for sticky menu
+                var scrolloffset = ( $(window).width() >= 992 ) ? ($target.offset().top - 52) : $target.offset().top
+                $('html, body').animate({
+                    'scrollTop': scrolloffset
+                }, 600);
+                e.preventDefault();
+            }
+        });
+    }
+
     // Count to
     var $countItem = $('.count');
 	if ( $.fn.countTo ) {

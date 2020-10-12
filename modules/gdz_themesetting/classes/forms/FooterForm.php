@@ -128,6 +128,36 @@ class gdzFooterForm
                                     'id_option' => 14,
                                     'name' => $this->module->l('Layout 14', 'FooterForm'),
                                     'img' => 'footers/14.jpg'
+                                ),
+                                array(
+                                    'id_option' => 15,
+                                    'name' => $this->module->l('Layout 15', 'FooterForm'),
+                                    'img' => 'footers/15.jpg'
+                                ),
+                                array(
+                                    'id_option' => 16,
+                                    'name' => $this->module->l('Layout 16', 'FooterForm'),
+                                    'img' => 'footers/16.jpg'
+                                ),
+                                array(
+                                    'id_option' => 17,
+                                    'name' => $this->module->l('Layout 17', 'FooterForm'),
+                                    'img' => 'footers/17.jpg'
+                                ),
+                                array(
+                                    'id_option' => 18,
+                                    'name' => $this->module->l('Layout 18', 'FooterForm'),
+                                    'img' => 'footers/18.jpg'
+                                ),
+                                array(
+                                    'id_option' => 19,
+                                    'name' => $this->module->l('Layout 19', 'FooterForm'),
+                                    'img' => 'footers/19.jpg'
+                                ),
+                                array(
+                                    'id_option' => 20,
+                                    'name' => $this->module->l('Layout 20', 'FooterForm'),
+                                    'img' => 'footers/20.jpg'
                                 )
                             ),
                             'id' => 'id_option',
