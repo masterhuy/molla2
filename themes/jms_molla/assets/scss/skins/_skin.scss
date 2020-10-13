@@ -615,8 +615,10 @@ a:focus {
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }
-.owl_carousel .owl-nav button:hover::before{
-    color: $primary-color;
+.owl_carousel, .owl-carousel{
+    .owl-nav button:hover::before{
+        color: $primary-color;
+    }
 }
 .product-buttons{
     .btn-icon{

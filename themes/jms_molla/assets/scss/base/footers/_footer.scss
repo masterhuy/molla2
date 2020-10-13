@@ -156,7 +156,7 @@
 			padding-right: 3rem;
 		}
 	}
-	&.footer-6{
+	&.footer-6, &.footer-16{
 		background-color: #222;
 		font-size: 1.3rem;
 		font-weight: 400;
@@ -351,6 +351,12 @@
 			.cms-page-link{
 				display: none;
 			}
+		}
+	}
+	&.footer-16{
+		#footer-main .block .block-title{
+			text-transform: capitalize;
+			letter-spacing: -.025em;
 		}
 	}
 }

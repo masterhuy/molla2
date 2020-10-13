@@ -35,13 +35,14 @@
 				height: .1rem;
 				background-color: #ebebeb;
 			}
-		}
-		.row{
-			margin: 0;
-			.layout-column{
-				padding: 0;
+			> .row{
+				margin: 0;
+				.layout-column{
+					padding: 0;
+				}
 			}
 		}
+		
 		.header-center{
 			justify-content: center;
 		}

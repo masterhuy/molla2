@@ -30,7 +30,7 @@
                 <div class="productModal-carousel">
                     {foreach from=$product.images item=image}
                         <div class="item">
-                            <img data-image-large-src="{$image.large.url}" class="thumb js-modal-thumb" src="{$image.large.url}" alt="{$image.legend}" title="{$image.legend}" width="{$image.large.width}" itemprop="image">
+                            <img class="thumb js-modal-thumb" src="{$image.large.url}" alt="{$image.legend}" title="{$image.legend}" width="{$image.large.width}" itemprop="image">
                         </div>
                     {/foreach}
                 </div>

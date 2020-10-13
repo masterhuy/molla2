@@ -2582,9 +2582,9 @@ footer .row, header .row {
 
 .header-6 .header-middle {
   margin-bottom: .1rem; }
-  .header-6 .header-middle .row {
+  .header-6 .header-middle .container > .row {
     margin: 0; }
-    .header-6 .header-middle .row .layout-column {
+    .header-6 .header-middle .container > .row .layout-column {
       padding: 0; }
   .header-6 .header-middle .header-center {
     -webkit-box-pack: center;
@@ -5134,9 +5134,9 @@ footer .row, header .row {
     bottom: 0;
     height: .1rem;
     background-color: #ebebeb; }
-  .header-16 .header-middle .row {
+  .header-16 .header-middle > .container > .row {
     margin: 0; }
-    .header-16 .header-middle .row .layout-column {
+    .header-16 .header-middle > .container > .row .layout-column {
       padding: 0; }
   .header-16 .header-middle .header-center {
     -webkit-box-pack: center;
@@ -6460,48 +6460,48 @@ footer .row, header .row {
     padding-top: 4.8rem; }
   #footer.footer-5 .html-1 p {
     padding-right: 3rem; }
-  #footer.footer-6 {
+  #footer.footer-6, #footer.footer-16 {
     background-color: #222;
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 0; }
-    #footer.footer-6 .block-content ul li:not(:last-child) {
+    #footer.footer-6 .block-content ul li:not(:last-child), #footer.footer-16 .block-content ul li:not(:last-child) {
       margin-bottom: .6rem; }
-    #footer.footer-6 .social-links li {
+    #footer.footer-6 .social-links li, #footer.footer-16 .social-links li {
       margin-left: 0;
       margin-right: .6rem; }
-      #footer.footer-6 .social-links li a {
+      #footer.footer-6 .social-links li a, #footer.footer-16 .social-links li a {
         color: #777;
         border: none;
         font-size: 1.6rem; }
-        #footer.footer-6 .social-links li a:hover {
+        #footer.footer-6 .social-links li a:hover, #footer.footer-16 .social-links li a:hover {
           color: #222;
           background-color: #fff; }
-    #footer.footer-6 #footer-main {
+    #footer.footer-6 #footer-main, #footer.footer-16 #footer-main {
       padding: 6rem 0 1.7rem; }
-      #footer.footer-6 #footer-main .widget {
+      #footer.footer-6 #footer-main .widget, #footer.footer-16 #footer-main .widget {
         margin-bottom: 1.8rem; }
-        #footer.footer-6 #footer-main .widget p {
+        #footer.footer-6 #footer-main .widget p, #footer.footer-16 #footer-main .widget p {
           max-width: 250px;
           font-size: 1.3rem;
           font-weight: 400;
           line-height: 2em; }
-      #footer.footer-6 #footer-main .block .block-title {
+      #footer.footer-6 #footer-main .block .block-title, #footer.footer-16 #footer-main .block .block-title {
         text-transform: uppercase;
         font-size: 1.5rem;
         letter-spacing: .05em;
         color: #fff;
         margin-bottom: 2.1rem; }
-      #footer.footer-6 #footer-main .social-label {
+      #footer.footer-6 #footer-main .social-label, #footer.footer-16 #footer-main .social-label {
         display: none; }
-    #footer.footer-6 #footer-copyright {
+    #footer.footer-6 #footer-copyright, #footer.footer-16 #footer-copyright {
       text-align: center; }
-      #footer.footer-6 #footer-copyright .container {
+      #footer.footer-6 #footer-copyright .container, #footer.footer-16 #footer-copyright .container {
         padding-top: 5rem;
         padding-bottom: 3.3rem; }
-        #footer.footer-6 #footer-copyright .container::before {
+        #footer.footer-6 #footer-copyright .container::before, #footer.footer-16 #footer-copyright .container::before {
           background-color: #444; }
-      #footer.footer-6 #footer-copyright .logo-footer {
+      #footer.footer-6 #footer-copyright .logo-footer, #footer.footer-16 #footer-copyright .logo-footer {
         margin-top: 2.5rem;
         margin-bottom: 1.6rem;
         display: -webkit-box;
@@ -6510,9 +6510,9 @@ footer .row, header .row {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; }
-      #footer.footer-6 #footer-copyright .cms-page-link {
+      #footer.footer-6 #footer-copyright .cms-page-link, #footer.footer-16 #footer-copyright .cms-page-link {
         display: none; }
-      #footer.footer-6 #footer-copyright p {
+      #footer.footer-6 #footer-copyright p, #footer.footer-16 #footer-copyright p {
         font-size: 1.3rem; }
   #footer.footer-7, #footer.footer-14, #footer.footer-15 {
     background-color: #333; }
@@ -6604,6 +6604,9 @@ footer .row, header .row {
       background-color: #ebebeb; }
     #footer.footer-14 #footer-copyright .cms-page-link, #footer.footer-15 #footer-copyright .cms-page-link {
       display: none; }
+  #footer.footer-16 #footer-main .block .block-title {
+    text-transform: capitalize;
+    letter-spacing: -.025em; }
 
 #footer {
   width: 100%;

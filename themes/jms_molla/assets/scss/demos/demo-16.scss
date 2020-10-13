@@ -26,6 +26,9 @@ $primary-color: #c96;
 	letter-spacing: -.01em;
 	line-height: 1.75;
 }
+.owl-carousel .owl-nav [class*="owl-"] {
+	top: 40%;
+}
 .gdz-slider-wrapper{
 	.gdz-slide-content{
 		width: 100%;
@@ -139,9 +142,14 @@ $primary-color: #c96;
 			top: 2rem;
 		}
 	}
-	.product-title{
+	.product-info .category-name{
 		font-weight: 400;
-		margin-bottom: -.2rem;
+		text-transform: uppercase;
+		color: #777;
+	}
+	.product-title{
+		margin-bottom: .9rem;
+		font-weight: 300;
 	}
 	.wrapp-buttons{
 		right: 2rem;
@@ -160,11 +168,94 @@ $primary-color: #c96;
 	}
 	.product-info{
 		background-color: transparent;
-		.category-name{
-			display: none;
-		}
 	}
 	.content_price span.price{
-		display: inline-block;
+		&.new{
+			color: $primary-color;
+			&.has-discount{
+				color: #ef837b;
+			}
+		}
 	}
+}
+
+.video-banner-title {
+	font-weight: 200;
+	margin-bottom: 3rem;
+
+	strong {
+		font-weight: 600;
+	}
+}
+
+.video-banner-title > span {
+	font-weight: 400;
+	font-size: 1.6rem;
+	letter-spacing: -.03em;
+	margin-bottom: 1.8rem;
+}
+
+.pb-blog{
+	text-align: left;
+	.blog-item:hover{
+		box-shadow: none;
+	}
+	.entry-body{
+		padding: 0;
+	}
+	.post-title{
+		font-size: 1.6rem;
+		margin-bottom: -.2rem;
+	}
+	.post-meta{
+		margin-bottom: -.5rem;
+	}
+}
+.post-readmore{
+	font-weight: 300;
+	color: #777;
+	&:hover span{
+		box-shadow: none;
+	}
+}
+.btn-more{
+	text-transform: uppercase;
+	border-color: $primary-color;
+}
+
+.cta-newsletter{
+	.gdz-icon-box i{
+		color: #333;
+		line-height: 1;
+	}
+	.email_subscription{
+		.form-control{
+			background-color: #fafafa;
+			border: .1rem solid #fafafa;
+			&:focus{
+				border-color: $primary-color;
+			}
+		}
+		#newsletter-btn{
+			padding-left: 0;
+			background-color: #333;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 400;
+			min-width: 160px;
+			&:hover{
+				border-color: $primary-color;
+				background-color: $primary-color;
+			}
+		}
+	}
+	.title-desc{
+		letter-spacing: -.01em;
+	}
+	p{
+		letter-spacing: 0;
+	}
+}
+.instagram-feed{
+	margin-bottom: 0;
 }

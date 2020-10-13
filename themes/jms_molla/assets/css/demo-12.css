@@ -639,7 +639,7 @@ a:focus {
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #c96; }
 
-.owl_carousel .owl-nav button:hover::before {
+.owl_carousel .owl-nav button:hover::before, .owl-carousel .owl-nav button:hover::before {
   color: #c96; }
 
 .product-buttons .btn-icon:hover {
