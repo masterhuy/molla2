@@ -718,6 +718,11 @@ a:focus {
 .header-14 .sticky-wrapper .text i {
   color: #a6c76c; }
 
+.header-16 .header-middle .wishlist a:hover span,
+.header-16 .header-middle #cart_block > a:hover .cart_block_total, .header-17 .header-middle .wishlist a:hover span,
+.header-17 .header-middle #cart_block > a:hover .cart_block_total {
+  color: #a6c76c; }
+
 .header-top a:hover, .header-top a:focus {
   color: #a6c76c; }
 

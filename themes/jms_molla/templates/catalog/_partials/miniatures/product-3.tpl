@@ -88,7 +88,7 @@
 			</a>
 	    {/if}
 		{block name='product_name'}
-        	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
+        	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>
         {/block}
         {if $gdzSetting.productbox_price}
     		{block name='product_price_and_shipping'}

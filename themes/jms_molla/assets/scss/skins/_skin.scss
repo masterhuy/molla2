@@ -742,6 +742,14 @@ a:focus {
         color: $primary-color;
     }
 }
+.header-16, .header-17{
+    .header-middle{
+        .wishlist a:hover span,
+        #cart_block > a:hover .cart_block_total{
+            color: $primary-color;
+        }
+    }
+}
 .header-top {
     a {
         &:hover,
