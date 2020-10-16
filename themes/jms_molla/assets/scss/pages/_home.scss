@@ -806,6 +806,9 @@ button:focus {
 .email_subscription{
 	max-width: 574px;
 	margin: auto;
+	.widget-title, .widget-desc{
+		display: none;
+	}
 	.form-control{
 		padding: 1.25rem 2rem;
 		height: 46px;

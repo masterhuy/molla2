@@ -115,7 +115,11 @@ $secondary-color: #e1a02a;
 		}
 	}
 }
-
+.productbox-flex{
+	.category-name{
+		display: none;
+	}
+}
 .pb-banner.banner-content-stretch{
 	.pb-banner-text {
 		top: 10rem;

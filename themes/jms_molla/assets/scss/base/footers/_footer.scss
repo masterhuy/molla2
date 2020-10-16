@@ -37,7 +37,7 @@
 			display: none;
 		}
 	}
-	&.footer-2, &.footer-3, &.footer-10{
+	&.footer-2, &.footer-3, &.footer-10, &.footer-18{
 		background-color: #333;
 		#footer-main{
 			padding: 6rem 0 3.7rem;
@@ -359,8 +359,24 @@
 			letter-spacing: -.025em;
 		}
 	}
+	&.footer-18{
+		.widget{
+			margin-bottom: 3.3rem;
+		}
+		#footer-main{
+			.layout-column{
+				flex: 0 0 25%;
+				max-width: 25%;
+				&.block{
+					padding-left: 6rem;
+				}
+			}
+			.social-icon{
+				border-color: #666;
+			}
+		}
+	}
 }
-
 #footer {
 	width: 100%;
 	font-weight: 300;

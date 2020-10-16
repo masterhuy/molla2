@@ -1358,6 +1358,9 @@ a:focus {
 #footer.footer-14 .email_subscription #newsletter-btn:hover {
   background-color: #a6c76c; }
 
+#footer.footer-18 #footer-main .social-icon:hover {
+  border-color: #a6c76c; }
+
 /* Fonts */
 /* font-family: 'Poppins', sans-serif; */
 .h1-countdown .container > .row {

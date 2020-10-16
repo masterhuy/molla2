@@ -1,0 +1,148 @@
+/* Header 18 */
+.header-18 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index:1040;
+	background-color: transparent;
+	margin-top: 1.4rem;
+	.sticky{
+		background-color: #333;
+		#hor-menu .gdz-megamenu .nav.level0 > li > a{
+			line-height: 6.2rem;
+		}
+	}
+	.header-middle {
+		border-bottom: none;
+		margin-bottom: .1rem;
+	}
+	.col-logo{
+		display: flex;
+		justify-content: center;
+	}
+	.col-right{
+		justify-content: flex-end;
+	}
+	.gdz-megamenu{
+		.nav{
+			 > .menu-item.sub-home{
+			 	position: relative;
+			 	> .dropdown-menu{
+			 		left: 0;
+			 		transform: none;
+			 	}
+			 }
+			> li{
+				&:nth-child(n+5){
+					display: none;
+				}
+				> a{
+					color: #fff;
+					font-size: 1.4rem;
+					font-weight: 400;
+					padding-right: 3.8rem;
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+		}
+		.caret{
+			margin-left: .3rem;
+			&::after{
+				right: 2.3rem;
+			}
+		}
+		.dropdown-menu{
+			top: calc(100% + .5rem);
+		}
+	}
+	#hor-menu .gdz-megamenu .nav.level0 > li{
+		&.open > a{
+			color: #fff;
+		}
+		> a::before{
+			top: auto;
+			bottom: 0;
+			background-color: #fff;
+		}
+	}
+	#hor-menu .nav > li{
+		&.sub-home > a{
+			padding-left: 0;
+		}
+		> a{
+			text-transform: uppercase;
+		}
+	}
+	#search-form{
+		min-width: 260px;
+		padding-top: .2rem;
+		.gdz-search-input{
+			padding: 0 1rem;
+			letter-spacing: 0;
+			height: 45px;
+			color: #fff;
+			&::placeholder{
+				color: #fff;
+			}
+		}
+	}
+	.search-box{
+		border: none;
+		border-bottom: 1px solid #fff;
+	}
+	.search-form{
+		.button-search{
+			height: 45px;
+			padding: .2rem .3rem .1rem;
+		}
+		i{
+			color: #fff;
+			font-size: 2.2rem;
+		}
+	}
+	.search-result-content{
+		right: 0;
+		top: calc(100% + 5px);
+	}
+	#cart_block{
+		margin-left: 1rem;
+		.icon-shopping-cart{
+			padding-bottom: .2rem;
+		}
+		.ajax_cart_quantity{
+			min-width: 1.7rem;
+			height: 1.7rem;
+			font-size: 1rem;
+			top: .9rem;
+			right: -.5rem;
+		}
+	}
+	#wishlist_block{
+		a{
+			font-size: 2.8rem;
+			color: #fff;
+			position: relative;
+			top: .1rem;
+			left: .2rem;
+			span{
+				display: none;
+			}
+		}
+	}
+	.cart-icon{
+		font-size: 3.2rem;
+		color: #fff;
+		margin-right: .5rem;
+		span{
+			display: none;
+		}
+	}
+	.sticky-header.fixed {
+		background-color: #333;
+	}
+}
+
+

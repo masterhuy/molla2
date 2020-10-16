@@ -2066,4 +2066,7 @@ a:focus {
             }
         }
     }
+    &.footer-18 #footer-main .social-icon:hover {
+        border-color: $primary-color;
+    }
 }

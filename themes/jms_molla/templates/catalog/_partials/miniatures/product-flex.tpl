@@ -45,6 +45,9 @@
 		{/block}
 	</div>
 	<div class="product-info">
+		<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
+			{$product.category_name|escape:'html':'UTF-8'}
+		</a>
 		{block name='product_name'}
         	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
         {/block}

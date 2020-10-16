@@ -83,21 +83,24 @@
 	}
 	.header-middle {
 		margin-bottom: .1rem;
-		.container::after{
-			content: '';
-			position: absolute;
-			left: 1rem;
-			right: 1rem;
-			bottom: 0;
-			height: .1rem;
-			background-color: #ebebeb;
-		}
-		.row{
-			margin: 0;
-			.layout-column{
-				padding: 0;
+		.container{
+			&::after{
+				content: '';
+				position: absolute;
+				left: 1rem;
+				right: 1rem;
+				bottom: 0;
+				height: .1rem;
+				background-color: #ebebeb;
+			}
+			> .row{
+				margin: 0;
+				.layout-column{
+					padding: 0;
+				}
 			}
 		}
+		
 		.header-center{
 			justify-content: center;
 		}

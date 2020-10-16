@@ -762,6 +762,16 @@
 		flex: 1 1 auto;
 		padding: 1rem 0 0 2rem;
 	}
+	.category-name{
+		color: #cccccc;
+		font-weight: 400;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		margin-bottom: .2rem;
+		&:hover{
+			color: #666;
+		}
+	}
 	.product-title{
 		font-size: 1.4rem;
 		color: #666;
