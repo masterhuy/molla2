@@ -637,6 +637,16 @@ a:focus {
   .productbox-10 .product-action .product-cart > button:hover {
     background-color: #fcb941; }
 
+.productbox-11 .product-buttons .btn-icon {
+  border-color: #fcb941;
+  background-color: #fcb941; }
+
+.productbox-11 .product-action .product-btn:hover {
+  color: #fcb941; }
+
+.productbox-11 .content_price span.price.new {
+  color: #fcb941; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #fcb941; }
 

@@ -612,6 +612,22 @@ a:focus {
         }
     }
 }
+.productbox-11{
+    .product-buttons .btn-icon{
+        border-color: $primary-color;
+        background-color: $primary-color;
+    }
+    .product-action .product-btn{
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    .content_price span.price{
+        &.new{
+            color: $primary-color;
+        }
+    }
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }

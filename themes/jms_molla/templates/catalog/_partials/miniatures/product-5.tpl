@@ -107,7 +107,7 @@
 						</span>
 						{if $product.has_discount}
 							{hook h='displayProductPriceBlock' product=$product type="old_price"}
-							{$product.regular_price}</span>
+							<span>{$product.regular_price}</span>
 						{/if}
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}

@@ -1900,7 +1900,129 @@
 }
 
 /* Product box 11 */
-
+.productbox-11{
+	padding: .9rem;
+	transition: box-shadow .35s ease;
+	&:hover{
+		.product-action{
+			bottom: 0;
+		}
+		.wrapp-buttons{
+			right: 1rem;
+			transform: translateX(0);
+		}
+	}
+	&.customs .category-name{
+		display: block;
+	}
+	.product-buttons .btn-icon{
+		color: #333;
+		span{
+			color: #333;
+		}
+	}
+	.product-list-reviews{
+		justify-content: center;
+	}
+	.product-flags{
+		top: 1.1rem;
+		left: 1.1rem;
+		.product-flag{
+			font-weight: 400;
+			font-size: 1.3rem;
+			line-height: 1.6rem;
+			letter-spacing: -.01em;
+			padding: .5rem .9rem;
+			width: auto;
+			height: auto;
+			border-radius: 0;
+		}
+		.on-sale{
+			background-color: #ef837b;
+		}
+	}
+	.wrapp-buttons{
+		right: 1rem;
+		transform: translateX(-15px);
+	}
+	.category-name{
+		display: none;
+		color: #ccc;
+		margin-bottom: .2rem;
+		&:hover{
+			color: #666;
+		}
+	}
+	.product-preview{
+		overflow: hidden;
+	}
+	.product-title{
+		font-size: 1.4rem;
+		font-weight: 400;
+		letter-spacing: -.01em;
+		margin-bottom: -.4rem;
+		line-height: 1.4;
+	}
+	.content_price{
+		span.price{
+			font-size: 1.4rem;
+			margin-bottom: .3rem;
+			&.new{
+				&.has-discount{
+					font-weight: 400;
+					color: #ef837b;
+				}
+			}
+		}
+	}
+	.variant-links{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	.product-info{
+		padding: 1.7rem 1rem .7rem;
+	}
+	.product-action{
+		position: absolute;
+		top: auto;
+		bottom: -4rem;
+		left: 0;
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		padding: 0;
+		transition: all .35s ease;
+		.product-btn{
+			border: 0;
+			padding-top: 1.2rem;
+			padding-bottom: 1rem;
+			background-color: rgba(252,184,66,0.95);
+			&:hover{
+				background-color: #fff;
+			}
+			span{
+				font-size: 1.3rem;
+				font-weight: 400;
+				letter-spacing: -.01em;
+			}
+		}
+	}
+	.specific_prices{
+		position: absolute;
+		bottom: 2rem;
+		left: 0;
+		right: 0;
+		.countdown{
+			text-align: center;
+		}
+	}
+	#review{
+		margin-top: 1.5rem;
+	}
+}
 
 /* Product List */
 .product.product-list {
