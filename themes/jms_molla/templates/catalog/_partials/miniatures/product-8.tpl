@@ -53,8 +53,8 @@
 		<div class="wrapp-buttons">
 			<div class="product-buttons">
 				{if $gdzSetting.productbox_wishlist}            
-					<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
-						<span>{l s='Add to Whislist' d='Shop.Theme.Actions'}</span>
+					<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
+						<span>{l s='Add to Wishlist' d='Shop.Theme.Actions'}</span>
 					</a>
 				{/if}
 			</div>
@@ -62,7 +62,7 @@
 	</div>
 	<div class="product-info">
 		{if $gdzSetting.productbox_wishlist}            
-			<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
+			<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
 		{/if}
 		{if $gdzSetting.productbox_category}
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">

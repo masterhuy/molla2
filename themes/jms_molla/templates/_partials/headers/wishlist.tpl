@@ -25,6 +25,6 @@
 <div id="wishlist_block"class="wishlist col-auto">
     <a href="index.php?fc=module&module=gdz_wishlist&controller=mywishlist">
         <i class="icon-heart-o"></i>
-        <span>{l s='Wishlist' d='Shop.Theme.Actions'}</span>
+        <span class="text">{l s='Wishlist' d='Shop.Theme.Actions'}</span>
     </a>
 </div>

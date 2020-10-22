@@ -52,7 +52,7 @@
         <li><a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="quick-view"><i class="ptw-icon icon-search-5_medium"></i></a></li>
       {/if}
       {if $gdzSetting.productbox_wishlist}
-        <li><a href="#" class="addToWishlist product-btn" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a></li>
+        <li><a href="#" class="addToWishlist product-btn" title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a></li>
       {/if}
     </ul>
 	</div>

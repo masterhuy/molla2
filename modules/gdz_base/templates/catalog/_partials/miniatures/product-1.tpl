@@ -62,7 +62,7 @@
               {/if}
           {/if}
           {if $gdzSetting.productbox_wishlist}            
-            <a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a>
+            <a href="#" class="addToWishlist btn-icon" title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a>
           {/if}
         </div>
       </div>

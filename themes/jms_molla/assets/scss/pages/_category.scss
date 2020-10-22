@@ -1,4 +1,9 @@
 /* Category */
+#product_list{
+	.productbox-12{
+		margin-bottom: 2rem;
+	}
+}
 .products-list{
 	.product-miniature{
 		display: flex;
@@ -151,6 +156,15 @@
 			i{
 				display: none;
 			}
+		}
+	}
+	.productbox-12{
+		border: none;
+		&:hover .product-info .product-footer{
+			display: none;
+		}
+		.product-preview{
+			margin: 0;
 		}
 	}
 }

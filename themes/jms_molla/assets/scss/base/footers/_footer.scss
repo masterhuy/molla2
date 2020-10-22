@@ -6,7 +6,7 @@
 }
 #footer{
 	border-top: .1rem solid #dee2e6;
-	&.footer-1, &.footer-5, &.footer-7, &.footer-8, &.footer-13, &.footer-14, &.footer-15{
+	&.footer-1, &.footer-5, &.footer-7, &.footer-8, &.footer-13, &.footer-14, &.footer-15, &.footer-20{
 		.html-1{
 			display: block;
 			.widget-about-info{
@@ -390,6 +390,26 @@
 				&.block{
 					padding-left: 6rem;
 				}
+			}
+		}
+	}
+	&.footer-20{
+		.footer-main{
+			padding-top: 3.5rem;
+			.container{
+				&::before{
+					content: '';
+					display: block;
+					height: 1px;
+					position: absolute;
+					top: -35px;
+					left: 10px;
+					right: 10px;
+					background-color: #ebebeb;
+				}
+			}
+			.html-1{
+				padding-right: 7rem;
 			}
 		}
 	}

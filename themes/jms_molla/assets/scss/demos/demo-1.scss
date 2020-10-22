@@ -340,3 +340,23 @@ $secondary-color: #92b25a;
 		display: none;
 	}
 }
+.pb-categorytab, .pb-producttab {
+	.nav.nav-tabs .nav-item .nav-link{
+		&.active{
+			color: #333;
+		}
+		&::before{
+			background-color: #333;
+		}
+	}
+}
+.pb-service-box .pb-service-content .pb-service-description p {
+	color: #777;
+}
+.h1-newsletter{
+	.email_subscription{
+		.form-control{
+			border: none;
+		}
+	}
+}

@@ -39,7 +39,7 @@
     font-family: 'molla';
     content: '\f112';
     position: absolute;
-    right: 0;
+    right: 2rem;
 }
 .gdz-megamenu .dropdown-menu {
     background: #fff;

@@ -76,6 +76,8 @@ footer .row, header .row{
 		}
 		.header-right .row{
 			padding-top: 1px;
+			margin-left: 0;
+			margin-right: 0;
 			> div{
 				padding-right: 0;
 				padding-top: 18px;
@@ -980,6 +982,7 @@ footer .row, header .row{
 		span{
 			font-size: 1.1rem;
 			color: #777;
+			transition: color 0.3s ease;
 		}
 	}
 
@@ -993,6 +996,7 @@ footer .row, header .row{
 		span{
 			font-size: 1.1rem;
 			color: #777;
+			transition: color 0.3s ease;
 		}
 	}
 	#cart_block{
@@ -1008,6 +1012,7 @@ footer .row, header .row{
 			span{
 				font-size: 1.1rem;
 				color: #777;
+				transition: color 0.3s ease;
 			}
 			.cart_block_total{
 				display: none;
@@ -1168,6 +1173,10 @@ footer .row, header .row{
 	    transform: scale(1, 1);
 	}
 	> a{
+		padding-right: 3.5rem;
+		.caret::after{
+			right: 2.3rem;
+		}
 	    &:hover::before{
 	        transform-origin: left center;
 	        transform: scale(1, 1);

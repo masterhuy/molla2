@@ -1,4 +1,30 @@
 /* Modals */
+#blockcart-modal{
+	&.modal{
+		&.fade .modal-dialog{
+			transform: translate(0, 0);
+		}
+		&.show .modal-dialog{
+			transform: translate(0, 20%);
+		}
+	}
+	.modal-title{
+		font-weight: 400;
+		font-size: 1.4rem;
+		letter-spacing: 0;
+	}
+	.product-name{
+		font-size: 1.6rem;
+	}
+	.cart-content{
+		p{
+			margin-bottom: 1rem;
+		}
+		button{
+			margin-right: .5rem;
+		}
+	}
+}
 .modal-backdrop {
 	background-color: #333;
 
