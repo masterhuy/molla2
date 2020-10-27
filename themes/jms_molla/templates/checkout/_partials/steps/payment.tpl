@@ -107,7 +107,7 @@
                         value = "1"
                         class = "ps-shown-by-js"
                 >
-                <span><i class="fa fa-check rtl-no-flip checkbox-checked"></i></span>
+                <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
               </span>
             </div>
             <div class="condition-label">
@@ -127,7 +127,7 @@
 
   <div id="payment-confirmation">
     <div class="ps-shown-by-js">
-      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn btn-primary center-block btn-fullwidth">
+      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn btn-primary center-block">
         {l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}
       </button>
       {if $show_final_summary}

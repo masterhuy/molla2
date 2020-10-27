@@ -40,8 +40,7 @@
   </div>
   <div class="clearfix"></div>
   <div class="addresses-footer">
-    <a href="{$urls.pages.address}" data-link-action="add-address" class="btn-default">
-      <i class="ptw-icon {$gdzSetting.more_icon}"></i>
+    <a href="{$urls.pages.address}" data-link-action="add-address" class="btn btn-primary">
       <span>{l s='Create new address' d='Shop.Theme.Actions'}</span>
     </a>
   </div>

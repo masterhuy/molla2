@@ -43,22 +43,21 @@
           <div class="address">{$address.formatted nofilter}</div>
         </label>
       </header>
-      <hr>
       <footer class="address-footer">
         {if $interactive}
           <a
-            class="edit-address text-muted"
+            class="edit-address color-dark"
             data-link-action="edit-address"
             href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
           >
             <i class="fa fa-edit edit"></i>{l s='Edit' d='Shop.Theme.Actions'}
           </a>
           <a
-            class="delete-address text-muted"
+            class="delete-address color-dark"
             data-link-action="delete-address"
             href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
           >
-            <i class="ptw-icon icon-delete-2 delete"></i>{l s='Delete' d='Shop.Theme.Actions'}
+            <i class="icon-close"></i>{l s='Delete' d='Shop.Theme.Actions'}
           </a>
         {/if}
       </footer>

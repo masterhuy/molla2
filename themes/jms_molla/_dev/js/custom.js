@@ -75,7 +75,7 @@ jQuery(function ($) {
           });
     });
     //product image zoom
-    $('.product-image-zoom').elevateZoom({
+    $('.product-detail .product-image-zoom').elevateZoom({
         zoomType: "inner",
         cursor: "crosshair",
         zoomWindowFadeIn: 500,

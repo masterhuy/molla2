@@ -1274,3 +1274,43 @@ footer .row, header .row{
 .search-form i{
 	transition: all 0.3s;
 }
+#mobile-header{
+	#mobile-menu-toggle {
+		font-size: 2.8rem;
+	}
+	.user-info > a,
+	#wishlist_block > a,
+	#cart_block > a{
+		font-size: 1.1rem;
+		color: #777;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		i{
+			color: #333;
+			line-height: 1;
+		}
+	}
+	.user-info > a{
+		i{
+			font-size: 3rem;
+		}
+	}
+	#wishlist_block > a{
+		i{
+			font-size: 2.8rem;
+		}
+	}
+	#cart_block{
+		> a i{
+			font-size: 3.2rem;
+		}
+		.cart_block_total{
+			display: none;
+		}
+	}
+}
+
+.header-mobile-1 {
+
+}

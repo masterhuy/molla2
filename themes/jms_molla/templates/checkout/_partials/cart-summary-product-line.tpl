@@ -38,9 +38,9 @@
             <span class="value">{$value}</span>
         </div>
     {/foreach}
-    <span class="pull-right">
-      {$product.price} <span class="product-quantity text-small">x {$product.quantity}</span>
-    </span>
+    <div class="product-line-info">
+      {$product.price} x {$product.quantity}
+    </div>
     <br/>
   </div>
 {/block}

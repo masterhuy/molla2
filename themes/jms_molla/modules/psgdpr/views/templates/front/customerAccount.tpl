@@ -13,8 +13,8 @@
 * International Registered Trademark & Property of PrestaShop SA
 *}
 
-<a id="identity-link" href="{$link->getModuleLink('psgdpr', 'gdpr')}">
+<a id="identity-link" class="color-dark" href="{$link->getModuleLink('psgdpr', 'gdpr')}">
     <span class="link-item">
-        <i class="ptw-icon {$gdzSetting.customersignin_icon}"></i> {l s='GDPR - Personal data' mod='psgdpr'}
+        <i class="icon-user"></i> {l s='GDPR - Personal data' mod='psgdpr'}
     </span>
 </a>

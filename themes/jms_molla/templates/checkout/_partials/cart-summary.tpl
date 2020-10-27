@@ -23,43 +23,37 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section id="js-checkout-summary" class="card js-cart" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
-  <div class="card-block cart-summary">
-    {block name='hook_checkout_summary_top'}
-      {hook h='displayCheckoutSummaryTop'}
-    {/block}
-
-    {block name='cart_summary_products'}
-      <div class="cart-summary-products">
-
-        <div>{$cart.summary_string}
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" class="text-small pull-right">
-            {l s='show details' d='Shop.Theme.Actions'}
-            <i class="fa fa-angle-down"></i>
-          </a>
-        </div>
-
-        {block name='cart_summary_product_list'}
-          <div class="collapse" id="cart-summary-product-list">
-            <ul class="media-list">
-              {foreach from=$cart.products item=product}
-                <li class="media">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
-              {/foreach}
-            </ul>
-          </div>
+    <div class="card-block cart-summary">
+        {block name='hook_checkout_summary_top'}
+            {hook h='displayCheckoutSummaryTop'}
         {/block}
-      </div>
+        {block name='cart_summary_products'}
+            <div class="cart-summary-products">
+                <div>{$cart.summary_string}
+                    <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list" class="show-details pull-right">
+                        {l s='Show details' d='Shop.Theme.Actions'}
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </div>
+                {block name='cart_summary_product_list'}
+                    <div class="collapse" id="cart-summary-product-list">
+                        <ul class="media-list">
+                            {foreach from=$cart.products item=product}
+                                <li class="media">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
+                            {/foreach}
+                        </ul>
+                    </div>
+                {/block}
+            </div>
+        {/block}
+        {block name='cart_summary_subtotals'}
+            {include file='checkout/_partials/cart-summary-subtotals.tpl' cart=$cart}
+        {/block}
+        {block name='cart_summary_totals'}
+            {include file='checkout/_partials/cart-summary-totals.tpl' cart=$cart}
+        {/block}
+    </div>
+    {block name='cart_summary_voucher'}
+        {include file='checkout/_partials/cart-voucher.tpl'}
     {/block}
-
-  {block name='cart_summary_subtotals'}
-    {include file='checkout/_partials/cart-summary-subtotals.tpl' cart=$cart}
-  {/block}
-  {block name='cart_summary_totals'}
-    {include file='checkout/_partials/cart-summary-totals.tpl' cart=$cart}
-  {/block}
-  </div>
-
-  {block name='cart_summary_voucher'}
-    {include file='checkout/_partials/cart-voucher.tpl'}
-  {/block}
-
 </section>

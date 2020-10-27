@@ -18,13 +18,17 @@
 	list-style: none;
 }
 .cart-items li {
-	border-bottom:1px solid #e1e1e1;
-	padding:1rem 0;
+	border-bottom:1px solid #ebebeb;
+	padding: 3rem 0;
 }
 
 .cart-items li.cart-item-title {
-	border-top:1px solid #e1e1e1;
-	font-weight: bold;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	color: #999;
+	padding-bottom: 1.4rem;
+	padding-top: 1.4rem;
 }
 .card.cart-summary .btn-checkout {
 	padding: 16px 15px;
@@ -55,10 +59,6 @@
 .product-price .value {
 	font-size: 20px;
 	color: #000;
-}
-.cart-line-product-actions {
-	text-align: center;
-	margin-right: 20px;
 }
 body#checkout #cart-summary-product-list .media-left {
     max-width: 60px;
@@ -149,6 +149,7 @@ body#checkout #cart-summary-product-list .media-left img {
 .product-image.media-middle {
 	display: flex;
 	align-items: center;
+	max-width: 60px;
 }
 
 .js-cart-line-product-quantity.form-control {
@@ -172,15 +173,6 @@ body#checkout #cart-summary-product-list .media-left img {
 	padding: 0 10px;
 	display: none;
 }
-#promo-code .btn-primary {
-	background: transparent;
-	border-radius: 0;
-	font-size: 16px;
-	padding: 0px 16px;
-	margin-top: -2px;
-	border: 1px solid #e6e6e6;
-	line-height: 40px;
-}
 .alert.alert-danger.js-error i {
 	position: relative;
 	top: 6px;
@@ -188,19 +180,6 @@ body#checkout #cart-summary-product-list .media-left img {
 .alert.alert-danger.js-error span {
 	font-size: 14px;
 }
-.block-promo {
-	font-size: 16px;
-	padding: 0;
-	letter-spacing: 0.1px;
-	line-height: 50px;
-}
-#promo-code button {
-	padding: 16px 15px;
-	width: 100%;
-	letter-spacing: 0.4px;
-	font-size: 17px;
-}
-
 .cart-summary-line {
 	padding: 9px 0;
 	border-bottom: 1px solid #ebebeb;
@@ -238,26 +217,29 @@ body#checkout #cart-summary-product-list .media-left img {
 	display:block;
 	padding:30px 0;
 }
-.cart-grid-right .right-box .cart-summary {
-	padding: 1.5rem;
+.cart-grid-right .right-box{
 	width: 100%;
-	border-radius: 0;
+	border: .1rem dashed #d7d7d7;
+	background-color: #f9f9f9;
+	padding: 2.5rem 3rem 3rem;
+	border-radius: .3rem;
 }
 .cart-summary-totals .cart-summary-line {
 	border-bottom:0px;
 }
-.cart-grid-right .right-box {
-	border: 2px solid #303030;
-}
-
 .cart-grid-right #block-reassurance {
-	padding: 1.5rem;
 	clear: both;
-}
-
-.cart-detailed-totals {
-	margin-bottom:30px;
+	margin-top: 2rem;
 }
 .cart-detailed-actions .btn {
 	width:100%;
+}
+.collapse-button {
+	font-size: 14px;
+	color: #666;
+}
+.promo-input {
+	height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
 }

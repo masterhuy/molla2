@@ -24,7 +24,7 @@
 *}
 
 <!-- MODULE WishList -->
-<a class="lnk_wishlist col-lg-4 col-md-6 col-sm-6 col-xs-12" href="{$link->getModuleLink('gdz_wishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">
+<a class="lnk_wishlist color-dark" href="{$link->getModuleLink('gdz_wishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">
   <span class="link-item">
 		<i class="icon icon-heart"></i>
 		{l s='My wishlists' d='Shop.Theme'}

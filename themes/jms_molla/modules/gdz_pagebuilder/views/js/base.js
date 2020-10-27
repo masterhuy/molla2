@@ -17,10 +17,10 @@ jQuery(function ($) {
                 0:{
                     items:carousel.data("xs")
                 },
-                576:{
+                768:{
                     items:carousel.data("sm")
                 },
-                992:{
+                1200:{
                     items:carousel.data("md")
                 }
             }

@@ -23,11 +23,14 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <a id="mobile-menu-toggle" class="open-button hidden-lg">
-		<i class="ptw-icon {$gdzSetting.menu_icon}"></i>
+	<i class="icon-bars"></i>
 </a>
 <div class="mobile-menu-wrap hidden-lg">
-    <button id="mobile-menu-close" class="close-button"><h3>{l s='Menu' d='Shop.Theme'}</h3> <i class="ptw-icon {$gdzSetting.close_icon}"></i></button>
+    <button id="mobile-menu-close" class="close-button">
+        <h3>{l s='Menu' d='Shop.Theme'}</h3> 
+        <i class="icon-close"></i>
+    </button>
     <nav id="off-canvas-menu">
-      {widget name="gdz_megamenu" hook='MobiMenu'}
+        {widget name="gdz_megamenu" hook='MobiMenu'}
     </nav>
 </div>

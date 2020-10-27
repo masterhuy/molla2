@@ -30,6 +30,9 @@ a:focus {
 .text-secondary {
   color: #fcb941 !important; }
 
+.color-dark:hover {
+  color: #cc6666; }
+
 /* Elements */
 .alert-primary {
   background-color: #cc6666; }
@@ -1338,22 +1341,22 @@ a:focus {
 .product-prices.content_price .price.new {
   color: #cc6666; }
 
-.product-add-to-cart .add-to-cart {
+.product-add-to-cart .add-to-cart, .cart-overview .add-to-cart {
   color: #cc6666;
   border-color: #cc6666; }
-  .product-add-to-cart .add-to-cart:hover {
+  .product-add-to-cart .add-to-cart:hover, .cart-overview .add-to-cart:hover {
     background-color: #cc6666; }
 
-.product-add-to-cart .btn-touchspin:hover {
+.product-add-to-cart .btn-touchspin:hover, .cart-overview .btn-touchspin:hover {
   color: #cc6666; }
 
-.product-add-to-cart .addToWishlist:hover {
+.product-add-to-cart .addToWishlist:hover, .cart-overview .addToWishlist:hover {
   color: #fcb941; }
-  .product-add-to-cart .addToWishlist:hover span {
+  .product-add-to-cart .addToWishlist:hover span, .cart-overview .addToWishlist:hover span {
     -webkit-box-shadow: 0 1px 0 0 #fcb941;
     box-shadow: 0 1px 0 0 #fcb941; }
 
-.product-add-to-cart .addToWishlist::before {
+.product-add-to-cart .addToWishlist::before, .cart-overview .addToWishlist::before {
   color: #cc6666; }
 
 .block-social ul li a:hover {
@@ -1388,6 +1391,9 @@ a:focus {
   box-shadow: 0 1px 0 #cc6666; }
 
 #search_filters .btn-default.js-search-filters-clear-all {
+  color: #cc6666; }
+
+.cart-grid .total .product-price {
   color: #cc6666; }
 
 #footer.footer-1 .html-1 .widget-about-info a {

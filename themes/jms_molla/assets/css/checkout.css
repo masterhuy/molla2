@@ -2,6 +2,16 @@
 #checkout section#content {
 	/*background:#ffffff;*/
 }
+.color-dark {
+	color: #333;
+}
+.show-details{
+	color: #333;
+}
+#js-checkout-summary {
+	border-top: 0;
+	background: transparent;
+}
 .return-to-store {
 	line-height: 30px;
 }
@@ -178,8 +188,8 @@ body#checkout section.checkout-step .step-title {
 	cursor: pointer;
 	margin: 0;
 	padding: 1rem;
-	color: #000;
-	font-size:1.2rem;
+	font-weight: 400;
+	font-size:1.6rem;
 }
 body#checkout section.checkout-step h2 {
 	font-size:1.1rem;
@@ -242,9 +252,8 @@ body#checkout section.checkout-step.-reachable.-complete .content {
   margin-right: 5px;
 }
 body#checkout section.checkout-step.-current .content .address {
-	font-size: 14px;
-	font-weight: 400;
 	padding: 0 20px;
+	letter-spacing: 0;
 }
 body#checkout section.checkout-step.-current .content .address-alias.h4 {
 	font-size: 14px;
@@ -307,4 +316,15 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 }
 #order-items table tr td:last-child {
     text-align: right;
+}
+.h6.carrier-name {
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+#payment-confirmation ~ .modal .modal-content{
+	padding: 2rem;
+}
+.payment-options .alert{
+	margin-bottom: 2rem;
 }

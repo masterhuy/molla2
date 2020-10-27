@@ -12,9 +12,6 @@ $secondary-color: #92b25a;
 
 
 .h1-countdown{
-	.container > .row{
-		margin: 0;
-	}
 	.pb-countdown{
 		margin-bottom: 4rem;
 		.countdown-section{
@@ -110,6 +107,9 @@ $secondary-color: #92b25a;
 		padding-top: 2rem;
 		padding-right: 2rem;
 		padding-left: 0;
+		img{
+			width: 100%;
+		}
 	}
 	.col-banner{
 		.pb-banner-text{
@@ -357,6 +357,68 @@ $secondary-color: #92b25a;
 	.email_subscription{
 		.form-control{
 			border: none;
+		}
+	}
+}
+@include mq('lg') { 
+	.h1-banner{
+		.col-lg-3 {
+		    -ms-flex: 0 0 26.05%;
+		    flex: 0 0 26.05%;
+		    max-width: 26.05%;
+		}
+
+		.col-lg-4 {
+		    -ms-flex: 0 0 32.77%;
+		    flex: 0 0 32.77%;
+		    max-width: 32.77%;
+		}
+
+		.col-lg-5 {
+		    -ms-flex: 0 0 41.18%;
+		    flex: 0 0 41.18%;
+		    max-width: 41.18%;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.h1-countdown{
+		.container > .row {
+			margin: 0;
+		}
+		.pb-countdown .countdown-section{
+			min-width: 70px;
+			padding-top: 2.1rem;
+			padding-bottom: 2.1rem;
+		}
+		.deal-content{
+			flex: 0 0 35.61%;
+			max-width: 35.61%;
+		}
+		.deal-image{
+			flex: 0 0 38.78%;
+			max-width: 38.78%;
+		}
+		.col-banner{
+			flex: 0 0 25.61%;
+			max-width: 25.61%;
+			padding: 0;
+			max-width: 277px;
+			margin-left: auto;
+		}
+	}
+	.h1-banner{
+		.col-lg-5{
+			flex: 0 0 41.18%;
+			max-width: 41.18%;
+		}
+		.col-lg-3{
+			flex: 0 0 26.05%;
+			max-width: 26.05%;
+		}
+		.col-lg-4{
+			flex: 0 0 32.77%;
+			max-width: 32.77%;
 		}
 	}
 }

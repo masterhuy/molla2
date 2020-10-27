@@ -24,7 +24,7 @@
  *}
 <div class="product-line-grid row">
     <!--  product left content: image-->
-    <div class="product-line-grid-left col-12 col-sm-6 col-md-6">
+    <div class="product-line-grid-left col col-12 col-sm-6 col-md-6">
         <div class="row align-items-center small-gutters">
             <div class="col-auto">
                 {if $product.cover.bySize.cart_default.url}
@@ -36,7 +36,7 @@
             <!--  product left body: description -->
             <div class="col-auto">
                 <div class="product-line-info">
-                    <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+                    <a class="product-title" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
                 </div>
 
                 <div class="product-line-info product-price h5 {if $product.has_discount}has-discount{/if}">
@@ -54,12 +54,6 @@
                             {/if}
                         </div>
                     {/if}
-                    <div class="current-price">
-                        <span class="price">{$product.price}</span>
-                        {if $product.unit_price_full}
-                            <div class="unit-price-cart">{$product.unit_price_full}</div>
-                        {/if}
-                    </div>
                 </div>
 
                 {foreach from=$product.attributes key="attribute" item="value"}
@@ -113,17 +107,14 @@
         </div>
     </div>
     <!--  product left body: description -->
-    <div class="product-line-grid-right col-12 col-sm-6 col-md-6 product-line-actions">
+    <div class="product-line-grid-right col col-12 col-sm-6 col-md-6 product-line-actions">
         <div class="row align-items-center justify-content-end">
             <div class="col col-auto col-md price">
                 <span class="product-price">
-                <strong>
-                    {if isset($product.is_gift) && $product.is_gift}
-                    <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
-                    {else}
-                    {$product.total}
+                    <span class="price">{$product.price}</span>
+                    {if $product.unit_price_full}
+                        <div class="unit-price-cart">{$product.unit_price_full}</div>
                     {/if}
-                </strong>
                 </span>
             </div>
             <div class="col col-auto col-md qty">
@@ -143,6 +134,15 @@
                 />
                 {/if}
             </div>
+            <div class="col col-auto col-md total">
+                <span class="product-price">
+                    {if isset($product.is_gift) && $product.is_gift}
+                        <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
+                    {else}
+                        {$product.total}
+                    {/if}
+                </span>
+            </div>
             <div class="col col-auto col-md cart-line-product-actions">
                 <a
                     class                       = "remove-from-cart"
@@ -157,11 +157,9 @@
                     <i class="icon-close"></i>
                 {/if}
                 </a>
-
                 {block name='hook_cart_extra_product_actions'}
                 {hook h='displayCartExtraProductActions' product=$product}
                 {/block}
-
             </div>
         </div>
     </div>

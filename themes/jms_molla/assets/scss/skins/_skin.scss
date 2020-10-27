@@ -41,7 +41,11 @@ a:focus {
 .text-secondary {
     color: $secondary-color !important;
 }
-
+.color-dark{
+    &:hover{
+        color: $primary-color;
+    }
+}
 /* Elements */
 .alert-primary {
     background-color: $primary-color;
@@ -2038,7 +2042,7 @@ a:focus {
         color: $primary-color;
     }
 }
-.product-add-to-cart{
+.product-add-to-cart, .cart-overview{
     .add-to-cart{
         color: $primary-color;
         border-color: $primary-color;
@@ -2107,6 +2111,11 @@ a:focus {
 }
 
 #search_filters .btn-default.js-search-filters-clear-all{
+    color: $primary-color;
+}
+
+//cart
+.cart-grid .total .product-price{
     color: $primary-color;
 }
 

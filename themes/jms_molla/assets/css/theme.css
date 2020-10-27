@@ -982,7 +982,7 @@ header .row .col-auto {
   display: flex;
 }
 .address-footer a {
-  margin:10px;
+  margin-right: 20px;
 }
 .order-actions .btn-default {
   margin: 5px 10px;
@@ -991,6 +991,7 @@ header .row .col-auto {
 .show-pass button {
   padding:0px 10px;
 }
+
 @media (min-width:768px) {
   .order-actions .btn-default {
     display:inline-block;

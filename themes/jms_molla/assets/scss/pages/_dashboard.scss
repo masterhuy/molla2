@@ -1,4 +1,16 @@
 /* Dashboard */
+#notifications{
+	ul{
+	  	margin-bottom: 0;
+	}
+}
+.psgdprgetdatabtn17{
+	float: none;
+}
+#exportDataToCsv {
+	margin-right: 0;
+	margin-left: 0;
+}
 .dashboard {
 	@include mq('lg') {
 		.col-lg-3 {

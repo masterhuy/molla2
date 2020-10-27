@@ -32,7 +32,7 @@
   <div class="">
     <div class="links row">
       <div class="col">
-          <a id="identity-link" href="{$urls.pages.identity}">
+          <a class="color-dark" id="identity-link" href="{$urls.pages.identity}">
             <span class="link-item">
               <i class="fa fa-user-o"></i>
               {l s='Information' d='Shop.Theme.Customeraccount'}
@@ -41,7 +41,7 @@
       </div>
       {if $customer.addresses|count}
       <div class="col">
-          <a id="addresses-link" href="{$urls.pages.addresses}">
+          <a class="color-dark" id="addresses-link" href="{$urls.pages.addresses}">
             <span class="link-item">
               <i class="fa fa-address-card"></i>
               {l s='Addresses' d='Shop.Theme.Customeraccount'}
@@ -50,7 +50,7 @@
       </div>
       {else}
       <div class="col">
-          <a id="address-link" href="{$urls.pages.address}">
+          <a class="color-dark" id="address-link" href="{$urls.pages.address}">
             <span class="link-item">
               <i class="fa fa-address-card"></i>
               {l s='Add first address' d='Shop.Theme.Customeraccount'}
@@ -61,9 +61,9 @@
 
       {if !$configuration.is_catalog}
       <div class="col">
-          <a id="history-link" href="{$urls.pages.history}">
+          <a class="color-dark" id="history-link" href="{$urls.pages.history}">
             <span class="link-item">
-              <i class="fa fa-calendar-alt"></i>
+              <i class="icon-calendar"></i>
               {l s='Order history and details' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -72,7 +72,7 @@
 
       {if !$configuration.is_catalog}
       <div class="col">
-          <a id="order-slips-link" href="{$urls.pages.order_slip}">
+          <a class="color-dark" id="order-slips-link" href="{$urls.pages.order_slip}">
             <span class="link-item">
               <i class="fa fa-list-alt"></i>
               {l s='Credit slips' d='Shop.Theme.Customeraccount'}
@@ -83,7 +83,7 @@
 
       {if $configuration.voucher_enabled && !$configuration.is_catalog}
       <div class="col">
-          <a id="discounts-link" href="{$urls.pages.discount}">
+          <a class="color-dark" id="discounts-link" href="{$urls.pages.discount}">
             <span class="link-item">
               <i class="fa fa-tags"></i>
               {l s='Vouchers' d='Shop.Theme.Customeraccount'}
@@ -94,7 +94,7 @@
 
       {if $configuration.return_enabled && !$configuration.is_catalog}
       <div class="col">
-          <a id="returns-link" href="{$urls.pages.order_follow}">
+          <a class="color-dark" id="returns-link" href="{$urls.pages.order_follow}">
             <span class="link-item">
               <i class="fa fa-box-open"></i>
               {l s='Merchandise returns' d='Shop.Theme.Customeraccount'}

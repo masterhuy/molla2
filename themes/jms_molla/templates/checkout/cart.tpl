@@ -29,7 +29,7 @@
 		<div class="cart-grid">
 			<div class="row first">
 				<!-- Left Block: cart product informations & shpping -->
-				<div class="cart-grid-body col-12 col-lg-8">
+				<div class="cart-grid-body col-12 col-lg-9">
 					<div class="cart-box">
 						<!-- cart products detailed -->
 						<div class="cart cart-container">
@@ -38,7 +38,7 @@
 							{/block}
 						</div>
 						{block name='continue_shopping'}
-							<a class="btn-default btn-border-bottom continue-shopping pull-right mb-3" href="{$urls.pages.index}">
+							<a class="btn btn-outline-dark-2" href="{$urls.pages.index}">
 								{l s='Continue shopping' d='Shop.Theme.Actions'}
 							</a>
 						{/block}
@@ -49,7 +49,7 @@
 					</div>
 				</div>
 				<!-- Right Block: cart subtotal & cart total -->
-				<div class="cart-grid-right pull-right col-12 col-lg-4">
+				<div class="cart-grid-right col-12 col-lg-3">
 					<div class="right-box">
 						{block name='cart_summary'}
 						<div class="card cart-summary">
