@@ -27,10 +27,15 @@
 </a>
 <div class="mobile-menu-wrap hidden-lg">
     <button id="mobile-menu-close" class="close-button">
-        <h3>{l s='Menu' d='Shop.Theme'}</h3> 
         <i class="icon-close"></i>
     </button>
+    {hook h='displayTopColumn'}
+    <h3 class="text-menu">{l s='Menu' d='Shop.Theme'}</h3>
     <nav id="off-canvas-menu">
         {widget name="gdz_megamenu" hook='MobiMenu'}
     </nav>
+    <div class="social-block">
+        {include file='_partials/socials.tpl'}
+    </div>
 </div>
+<div class="mobile-menu-overlay"></div>

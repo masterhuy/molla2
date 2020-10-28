@@ -506,8 +506,16 @@ function slickImage(){
 }
 
 jQuery(document).ready(function(){
-    $('.gdz-megamenu').jmsMegaMenu({
+    $('#hor-menu .gdz-megamenu').jmsMegaMenu({
         event: 'hover',
+        duration: 100
+    });
+    $('.vermenu .gdz-megamenu').jmsMegaMenu({
+        event: 'hover',
+        duration: 100
+    });
+    $('#off-canvas-menu .gdz-megamenu').jmsMegaMenu({
+        event: 'click',
         duration: 100
     });
     prestashop.on('clickQuickView', function (e) {
@@ -565,4 +573,31 @@ $(document).on('click', '.main-site #search_filters_wrapper', function (e) {
 $(document).on('click', '.main-site', function (e) {
     $('.sidebar-toggler > a').removeClass('active');
     $('body').removeClass('sidebar-filter-active');
+});
+
+
+jQuery(function ($) {
+    "use strict";
+    $("#off-canvas-menu .mega .caret").click(function (e) {
+        e.preventDefault();
+        var _parent = $(this).parent();
+        var _dropdown = _parent.next('.dropdown-menu');
+        var _grandparent = _parent.parent();
+        if(_grandparent.hasClass('open')) {
+            _grandparent.removeClass('open');
+            _dropdown.slideDown("normal");
+           
+        } else {
+            _grandparent.addClass('open');
+            _dropdown.slideUp("normal");
+        }
+    })
+    $(".mega .caret").mouseover(function (e) {
+        e.preventDefault();
+        return false;
+    })
+    $("#off-canvas-menu li a").mouseover(function (e) {
+        e.preventDefault();
+        return false;
+    })
 });

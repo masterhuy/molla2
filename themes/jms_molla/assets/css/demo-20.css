@@ -1396,6 +1396,15 @@ a:focus {
 .cart-grid .total .product-price {
   color: #1cc0a0; }
 
+#off-canvas-menu .nav > li > a:hover {
+  color: #1cc0a0; }
+
+#off-canvas-menu .nav > li .dropdown-menu ul li a:hover {
+  color: #1cc0a0; }
+
+#mobile-header .social-block .social-icon:hover i {
+  color: #1cc0a0; }
+
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #1cc0a0; }
 

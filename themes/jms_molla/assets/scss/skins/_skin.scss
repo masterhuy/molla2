@@ -2119,6 +2119,23 @@ a:focus {
     color: $primary-color;
 }
 
+// off canvas menu
+#off-canvas-menu .nav > li{
+    > a{
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    .dropdown-menu ul li a:hover{
+        color: $primary-color;
+    }
+}
+
+//mobile header
+#mobile-header .social-block .social-icon:hover i{
+    color: $primary-color;
+}
+
 #footer{
     &.footer-1 .html-1 .widget-about-info a {
         color: $primary-color;

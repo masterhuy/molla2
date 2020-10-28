@@ -28,7 +28,7 @@
 		{if $logged}
 			{$customerName}
 		{else}
-			{l s='Login' d='Shop.Theme.Actions'}
+			<span class="text">{l s='Login' d='Shop.Theme.Actions'}</span>
 		{/if}
 	</a>
 	{if $logged}

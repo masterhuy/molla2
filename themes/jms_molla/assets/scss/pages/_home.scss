@@ -826,7 +826,7 @@ button:focus {
 	padding-left: 1rem;
 	padding-right: 0;
 	border: none;
-	line-height: 1;
+	line-height: 1.5;
 	&:hover{
 		color: #fff;
 	}
@@ -935,6 +935,8 @@ button:focus {
 		}
 	}
 }
+
+
 
 @media screen and (max-width: 991px) {
 	.newsletter-img {

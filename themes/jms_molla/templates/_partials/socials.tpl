@@ -24,7 +24,7 @@
  *}
 
 {block name='footer-social'}
-<span class="social-label">Social Media</span>
+<span class="social-label">{l s='Social Media' d='Shop.Theme'}</span>
 <ul id="social-links" class="social-links">
     {if isset($gdzSetting.social_facebook) && $gdzSetting.social_facebook != ''}
         <li class="facebook">

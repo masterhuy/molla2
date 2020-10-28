@@ -2,10 +2,8 @@
     <div class="layout-column wrapper block">
         <h3 class="h3 block-title">
             {$linkBlock.title}
-            <i class="ptw-icon {$gdzSetting.more_icon} closing"></i>
-            <i class="ptw-icon {$gdzSetting.less_icon} opening"></i>
         </h3>
-        <div class="block-content">
+        <div class="block-content d-block">
             <ul>
                 {foreach $linkBlock.links as $link}
                     <li>

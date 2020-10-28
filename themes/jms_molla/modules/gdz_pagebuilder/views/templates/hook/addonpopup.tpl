@@ -49,7 +49,7 @@
 				<input type="hidden" name="loadtime" id="loadtime" value="{$loadtime|escape:'htmlall':'UTF-8'}" />
 			</div>
 			<div class="col-xl-2-5col col-lg-5">
-				<img src="{$urls.theme_assets}images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
+				<img class="w-100" src="{$urls.theme_assets}images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
 			</div>
 		</div>
 		<a class="mfp-close popup-close"></a>

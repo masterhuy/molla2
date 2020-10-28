@@ -46,7 +46,7 @@
                         {$gdzSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                <div class="layout-column col text-right">
+                <div class="layout-column col text-lg-right">
                     {include file='_partials/socials.tpl'}
                 </div>
             </div>

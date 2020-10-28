@@ -304,9 +304,10 @@
     float: right;
     height: 15px;
     width: 17px;
-	position: absolute;
+	 position: absolute;
     right: 5px;
     top: 5px;
+    z-index: 9;
 }
 .gdz-popup-overlay {
 	display: block;
@@ -515,9 +516,4 @@
   position: absolute;
   bottom: 20px;
 }
-@media (max-width:991px) {
-    #wrapper .container .row {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-}
+

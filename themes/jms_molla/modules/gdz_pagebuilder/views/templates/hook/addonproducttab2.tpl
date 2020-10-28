@@ -66,7 +66,7 @@
 			{else}
 				<div class="producttab-products products row">
 					{foreach from=$producttabs.featured_products item=product}
-						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
 							{include file="catalog/_partials/miniatures/product_200x300.tpl" product=$product}
 						</div>
 					{/foreach}
@@ -90,7 +90,7 @@
 			{else}
 				<div class="producttab-products products row">
 					{foreach from=$producttabs.new_products item=product}
-						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
 							{include file="catalog/_partials/miniatures/product_200x300.tpl" product=$product}
 						</div>
 					{/foreach}
@@ -114,7 +114,7 @@
 			{else}
 				<div class="producttab-products products row">
 					{foreach from=$producttabs.topseller_products item=product}
-						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
 							{include file="catalog/_partials/miniatures/product_200x300.tpl" product=$product}
 						</div>
 					{/foreach}
@@ -138,7 +138,7 @@
 			{else}
 				<div class="producttab-products products row">
 					{foreach from=$producttabs.special_products item=product}
-						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+						<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
 							{include file="catalog/_partials/miniatures/product_200x300.tpl" product=$product}
 						</div>
 					{/foreach}
@@ -162,7 +162,7 @@
 			 {else}
 					 <div class="producttab-products products row">
 							 {foreach from=$producttabs.onsale_products item=product}
-								 <div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+								 <div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
 									 {include file="catalog/_partials/miniatures/product_200x300.tpl" product=$product}
 								 </div>
 							 {/foreach}

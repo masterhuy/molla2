@@ -89,15 +89,15 @@ a:hover {
   /*max-width:100%;*/
 }
 /***** Header *****/
-#mobile-header {
+#desktop-header {
     display: none;
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   #desktop-header {
-      display: none;
+      display: block;
   }
   #mobile-header {
-      display: block;
+      display: none;
   }
 }
 header p {
@@ -815,7 +815,7 @@ header .row .col-auto {
 	font-size: 20px;
 	border: 0 none;
 	margin-top: 0;
-	padding: 10px 20px;
+	padding: 14px 17px;
 	text-align: left;
 	width: 100%;
 	position: relative;
@@ -833,20 +833,17 @@ header .row .col-auto {
 
 .mobile-menu-wrap {
     background: #fff none repeat scroll 0 0;
-    left: -300px;
+    left: -280px;
     overflow-y: auto;
     position: fixed;
     top: 0;
-    transition: left 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
-    width: 270px;
+    width: 280px;
     height: 100%;
+    transition: all 0.4s;
     z-index: 999999;
 }
 /* Shown menu */
 .show-menu .mobile-menu-wrap {
-	transition: left 0.4s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	box-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
 	left: 0;
 	top:0;
@@ -856,14 +853,13 @@ header .row .col-auto {
 	visibility: visible;
 }
 #off-canvas-menu {
-  margin-top:20px;
+  margin-top:10px;
 }
 #off-canvas-menu .nav > li {
     float: left;
     width: 100%;
     margin-top: 0;
     text-align:left;
-    border-bottom:1px solid #f2f2f2;
     padding:0px;
 }
 #off-canvas-menu .nav > li > a {
@@ -875,10 +871,6 @@ header .row .col-auto {
     color: #555;
     display:block;
     padding:0px 20px;
-}
-#off-canvas-menu .nav > li:hover,
-#off-canvas-menu .nav > li.open {
-  background:#eee;
 }
 #off-canvas-menu .open > .dropdown-menu {
     background: #fff none repeat scroll 0 0;
@@ -899,14 +891,7 @@ header .row .col-auto {
     font-size: 13px;
     color: #555;
 }
-#off-canvas-menu .mega .caret {
-    font-family: FontAwesome;
-    font-style:normal;
-    float:right;
-}
-#off-canvas-menu .mega .caret:before {
-  content:"\f105"
-}
+
 
 .owl-carousel .owl-item img {
     /*width: 100%;*/
