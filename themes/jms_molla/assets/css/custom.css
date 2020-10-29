@@ -1012,8 +1012,6 @@ footer .row, header .row {
     line-height: 1; }
     .top-menu i.icon-heart-o {
       margin-top: -.2rem; }
-  .top-menu span {
-    margin-left: .3rem; }
 
 .header-dropdown {
   position: relative; }
@@ -1629,7 +1627,8 @@ footer .row, header .row {
   background-color: #ccc;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  opacity: 0; }
 
 .header-intro-clearance .header-bottom .container::after {
   position: absolute;
@@ -1641,7 +1640,8 @@ footer .row, header .row {
   background-color: #ccc;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  opacity: 0; }
 
 .header-intro-clearance .header-middle .header-right p {
   font-size: 1.1rem; }
@@ -1915,9 +1915,9 @@ footer .row, header .row {
   transform: scale(1, 1); }
 
 #hor-menu .gdz-megamenu .nav.level0 > li > a {
-  padding-right: 3.5rem; }
+  padding-right: 2.5rem; }
   #hor-menu .gdz-megamenu .nav.level0 > li > a .caret::after {
-    right: 2.3rem; }
+    right: 1.3rem; }
   #hor-menu .gdz-megamenu .nav.level0 > li > a:hover::before {
     -webkit-transform-origin: left center;
     -ms-transform-origin: left center;
@@ -2154,6 +2154,14 @@ footer .row, header .row {
   #cart_block .dropdown-menu {
     right: -.1rem; } }
 
+@media (min-width: 1200px) {
+  .header-intro-clearance .header-bottom .container::before, .header-intro-clearance .header-bottom .container::after {
+    opacity: 1; }
+  #hor-menu .gdz-megamenu .nav.level0 > li > a {
+    padding-right: 3.5rem; }
+    #hor-menu .gdz-megamenu .nav.level0 > li > a .caret::after {
+      right: 2.3rem; } }
+
 /* Header 2 */
 .header-2 {
   background-color: #fff; }
@@ -2300,7 +2308,7 @@ footer .row, header .row {
     line-height: 10rem;
     text-transform: uppercase;
     letter-spacing: .01em;
-    padding: 0 2.8rem 0 1.2rem; }
+    padding: 0 3.3rem 0 1.2rem; }
     .header-2 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
       display: none; }
 
@@ -5647,7 +5655,7 @@ footer .row, header .row {
   justify-content: center; }
 
 .vermenu {
-  width: 275px;
+  width: 220px;
   position: relative; }
   .vermenu:hover .navbar {
     opacity: 1;
@@ -5716,6 +5724,10 @@ footer .row, header .row {
     z-index: 1000;
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); }
+
+@media (min-width: 1200px) {
+  .vermenu {
+    width: 275px; } }
 
 /*--------------------- 2.3.Sticky Header -------------------- */
 /* Sticky Header */
@@ -11339,19 +11351,24 @@ small.form-text {
   -ms-transform: translate(0, 20%);
   transform: translate(0, 20%); }
 
+#blockcart-modal .modal-dialog {
+  padding: 0 1rem; }
+
 #blockcart-modal .modal-title {
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0; }
 
 #blockcart-modal .product-name {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-top: 1.5rem; }
 
 #blockcart-modal .cart-content p {
   margin-bottom: 1rem; }
 
-#blockcart-modal .cart-content button {
-  margin-right: .5rem; }
+#blockcart-modal .cart-content .btn {
+  margin-right: .5rem;
+  margin-bottom: 1rem; }
 
 .modal-backdrop {
   background-color: #333; }
@@ -11384,6 +11401,12 @@ small.form-text {
 @media screen and (min-width: 768px) {
   .modal-dialog {
     max-width: 575px; } }
+
+@media (min-width: 768px) {
+  #blockcart-modal .product-name {
+    margin--top: 0; }
+  #blockcart-modal .cart-content .btn {
+    margin-bottom: 0; } }
 
 /*--------------------- 4.20.Alerts -------------------- */
 /* Alerts */
@@ -11657,6 +11680,9 @@ small.form-text {
   color: #333;
   position: static;
   display: block; }
+
+.quickview-modal .col-lg-6.right {
+  margin-top: 2rem; }
 
 .quickview-modal .modal-content {
   background-color: transparent; }
@@ -12452,6 +12478,10 @@ button:focus {
     border: none;
     margin-top: 1rem; } }
 
+@media (min-width: 768px) {
+  .quickview-modal .col-lg-6.right {
+    margin-top: 0; } }
+
 @media screen and (min-width: 992px) {
   .banners-sm .banner-link-anim {
     padding-left: 0;
@@ -12459,6 +12489,11 @@ button:focus {
   .banners-sm .row {
     margin-left: 0;
     margin-right: 0; } }
+
+@media (max-width: 767px) {
+  div.h1-slider .gdz-slide-content .btn, div.h2-slider .gdz-slide-content .btn {
+    padding: 2vw 4vw;
+    min-width: auto; } }
 
 /*--------------------- 5.2.Category -------------------- */
 /* Category */

@@ -17,6 +17,9 @@ jQuery(function ($) {
                 0:{
                     items:carousel.data("xs")
                 },
+                576:{
+                    items:2
+                },
                 768:{
                     items:carousel.data("sm")
                 },

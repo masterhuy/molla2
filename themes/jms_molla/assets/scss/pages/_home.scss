@@ -17,6 +17,9 @@
 		position: static;
 		display: block;
 	}
+	.col-lg-6.right{
+		margin-top: 2rem;
+	}
 	.modal-content{
 		background-color: transparent;
 		&::before{
@@ -981,6 +984,14 @@ button:focus {
 	}
 }
 
+@media (min-width: 768px){
+	.quickview-modal{
+		.col-lg-6.right{
+			margin-top: 0;
+		}
+	}
+}
+
 @media screen and (min-width: 992px) {
 	.banners-sm {
 		.banner-link-anim {
@@ -996,3 +1007,13 @@ button:focus {
 
 
 
+@media (max-width: 767px){
+	div{
+		&.h1-slider, &.h2-slider{
+			.gdz-slide-content .btn{
+				padding: 2vw 4vw;
+				min-width: auto;
+			}
+		}
+	}
+}

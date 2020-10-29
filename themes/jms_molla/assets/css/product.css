@@ -402,6 +402,7 @@
 }
 .product-quantity .add{
     display: flex;
+    flex-wrap: wrap;
 }
 .product-price.h5.has-discount {
     display: none;
