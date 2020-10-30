@@ -55,6 +55,7 @@
 		.social-links li{
 			margin-left: 0;
 			margin-right: .6rem;
+			margin-bottom: 1rem;
 			a{
 				&:hover i{
 					color: #fff;
@@ -72,6 +73,15 @@
 				padding-bottom: 2.9rem;
 				&::before{
 					background-color: #525455;
+				}
+			}
+			.col-copyright{
+				margin-bottom: 1rem;
+			}
+			.col-payments{
+				img{
+					margin-left: auto;
+					margin-right: auto;
 				}
 			}
 			.cms-page-link{
@@ -582,7 +592,6 @@
 }
 
 .footer-copyright {
-	margin-bottom: 1rem;
 	text-align: center;
 }
 

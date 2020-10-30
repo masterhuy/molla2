@@ -1955,7 +1955,8 @@ footer .row, header .row {
 .gdz-megamenu .nav > .menu-item.sub-home {
   position: static; }
   .gdz-megamenu .nav > .menu-item.sub-home > .dropdown-menu {
-    padding: 0; }
+    padding: 0;
+    max-width: calc(100% - 20px); }
   .gdz-megamenu .nav > .menu-item.sub-home .mega-nav li {
     padding: 0; }
   .gdz-megamenu .nav > .menu-item.sub-home .view-all-demos {
@@ -6139,7 +6140,8 @@ footer .row, header .row {
       display: none; }
     #footer.footer-2 .social-links li, #footer.footer-3 .social-links li, #footer.footer-10 .social-links li, #footer.footer-18 .social-links li, #footer.footer-19 .social-links li {
       margin-left: 0;
-      margin-right: .6rem; }
+      margin-right: .6rem;
+      margin-bottom: 1rem; }
       #footer.footer-2 .social-links li a:hover i, #footer.footer-3 .social-links li a:hover i, #footer.footer-10 .social-links li a:hover i, #footer.footer-18 .social-links li a:hover i, #footer.footer-19 .social-links li a:hover i {
         color: #fff; }
       #footer.footer-2 .social-links li a i, #footer.footer-3 .social-links li a i, #footer.footer-10 .social-links li a i, #footer.footer-18 .social-links li a i, #footer.footer-19 .social-links li a i {
@@ -6153,6 +6155,11 @@ footer .row, header .row {
       padding-bottom: 2.9rem; }
       #footer.footer-2 #footer-copyright .container::before, #footer.footer-3 #footer-copyright .container::before, #footer.footer-10 #footer-copyright .container::before, #footer.footer-18 #footer-copyright .container::before, #footer.footer-19 #footer-copyright .container::before {
         background-color: #525455; }
+    #footer.footer-2 #footer-copyright .col-copyright, #footer.footer-3 #footer-copyright .col-copyright, #footer.footer-10 #footer-copyright .col-copyright, #footer.footer-18 #footer-copyright .col-copyright, #footer.footer-19 #footer-copyright .col-copyright {
+      margin-bottom: 1rem; }
+    #footer.footer-2 #footer-copyright .col-payments img, #footer.footer-3 #footer-copyright .col-payments img, #footer.footer-10 #footer-copyright .col-payments img, #footer.footer-18 #footer-copyright .col-payments img, #footer.footer-19 #footer-copyright .col-payments img {
+      margin-left: auto;
+      margin-right: auto; }
     #footer.footer-2 #footer-copyright .cms-page-link, #footer.footer-3 #footer-copyright .cms-page-link, #footer.footer-10 #footer-copyright .cms-page-link, #footer.footer-18 #footer-copyright .cms-page-link, #footer.footer-19 #footer-copyright .cms-page-link {
       display: none; }
   #footer.footer-3, #footer.footer-4 {
@@ -6526,7 +6533,6 @@ footer .row, header .row {
     background-color: #ebebeb; }
 
 .footer-copyright {
-  margin-bottom: 1rem;
   text-align: center; }
 
 .footer-payments {
@@ -11701,7 +11707,7 @@ small.form-text {
   display: none; }
 
 .quickview-modal .block-social {
-  margin-top: 3rem; }
+  margin-top: 2rem; }
 
 .quickview-modal .images-container {
   display: -webkit-box;

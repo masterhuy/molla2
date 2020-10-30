@@ -333,6 +333,11 @@ $secondary-color: #bf913d;
 		letter-spacing: -.01em;
 	}
 }
+.cta{
+	.btn-round{
+		border: none;
+	}
+}
 .cta-border-image {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -469,7 +474,13 @@ $secondary-color: #bf913d;
 		}
 	}
 }
-
+.btn-shopmore{
+	border-color: #d7d7d7;
+	&:hover{
+		color: $primary-color;
+		background-color: #fff;
+	}
+}
 .intro-section {
 	@include mq('xl') {
 		.col-lg-4 {

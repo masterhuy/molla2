@@ -166,6 +166,7 @@ $secondary-color: #c96;
 	}
 	.pb-banner-text{
 		display: block;
+		width: 90%;
 		top: 50%;
 		left: 50%;
 		bottom: auto;
@@ -223,6 +224,9 @@ $secondary-color: #c96;
 		letter-spacing: -.01em;
 		font-weight: 600;
 	}
+	.pb-button{
+		text-align: left;
+	}
 	.btn-outline-white{
 		font-size: 1.4rem !important;
 		padding-top: 1.2rem;
@@ -230,8 +234,29 @@ $secondary-color: #c96;
 	}
 }
 
+@media (min-width: 576px) and (max-width: 991px){
+	.h2-banner-type-1{
+		display: flex;
+		.addon-box{
+			&:first-child, &:nth-child(3){
+				width: calc(50% - 10px);
+			}
+			&:nth-child(2){
+				width: 20px;
+			}
+		}
+	}
+}
 @media (min-width: 768px){
 	.fraction-slider .prev, .fraction-slider .next{
 		display: flex;
+	}
+	.h2-banner-type-2 .pb-banner-text{
+		width: auto;
+	}
+	.block-signup{
+		.pb-button-right{
+			text-align: right;
+		}
 	}
 }

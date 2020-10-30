@@ -1556,6 +1556,7 @@ a:focus {
 
 .h2-banner-type-2 .pb-banner-text {
   display: block;
+  width: 90%;
   top: 50%;
   left: 50%;
   bottom: auto;
@@ -1610,15 +1611,32 @@ a:focus {
   letter-spacing: -.01em;
   font-weight: 600; }
 
+.block-signup .pb-button {
+  text-align: left; }
+
 .block-signup .btn-outline-white {
   font-size: 1.4rem !important;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem; }
 
+@media (min-width: 576px) and (max-width: 991px) {
+  .h2-banner-type-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .h2-banner-type-1 .addon-box:first-child, .h2-banner-type-1 .addon-box:nth-child(3) {
+      width: calc(50% - 10px); }
+    .h2-banner-type-1 .addon-box:nth-child(2) {
+      width: 20px; } }
+
 @media (min-width: 768px) {
   .fraction-slider .prev, .fraction-slider .next {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .h2-banner-type-2 .pb-banner-text {
+    width: auto; }
+  .block-signup .pb-button-right {
+    text-align: right; } }
 
 /*# sourceMappingURL=demo-2.css.map */

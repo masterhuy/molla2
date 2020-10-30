@@ -25,7 +25,7 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="layout-column col-sm-6 col-lg-3">
+            <div class="layout-column block col-sm-6 col-lg-3">
                 <div class="logo-footer">
                     {include file='_partials/footers/logo.tpl'}
                 </div>
@@ -48,12 +48,12 @@
         <div class="container">
             <div class="row align-items-center no-margin">
                 {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
-                    <div class="layout-column">
+                    <div class="col-12 col-lg-6 col-copyright">
                         {$gdzSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                <div class="layout-column">
-                    <img src="{$gdzSetting.footer_payment_image}" class="img-fluid ml-auto" alt="{l s='Payments' d='Shop.jmstheme'}"/>
+                <div class="col-12 col-lg-6 col-payments">
+                    <img src="{$gdzSetting.footer_payment_image}" class="img-fluid" alt="{l s='Payments' d='Shop.jmstheme'}"/>
                 </div>
             </div>
         </div>
