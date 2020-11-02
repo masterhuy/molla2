@@ -147,6 +147,9 @@
 		}
 		.html-2{
 			margin-bottom: 1.1rem;
+			p{
+				padding-right: 1.5rem;
+			}
 		}
 		#footer-main{
 			padding-bottom: 4.9rem;
@@ -686,7 +689,15 @@
 		}
 	}
 }
-
+@media (min-width: 992px){
+	#footer{
+		&.footer-2, &.footer-3, &.footer-10, &.footer-18, &.footer-19{
+			#footer-copyright .col-payments img{
+				margin-right: 0;
+			}
+		}
+	}
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	.footer {
 		.widget-about {

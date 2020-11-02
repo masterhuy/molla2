@@ -25,6 +25,9 @@
 <div class="email_subscription block">
 	<h2 class="widget-title">{l s='Sign up for email & get 25% off' d='Modules.Emailsubscription.Shop'}</h2>
 	<p class="widget-desc">{l s='Subcribe to get information about products and coupons' d='Modules.Emailsubscription.Shop'}</p>
+
+
+	
 	<div class="block-content">
 	  	{if $msg}
 	    	<div class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</div>

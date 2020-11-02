@@ -1938,11 +1938,6 @@ a:focus {
         }
     }
 }
-#hor-menu .gdz-megamenu .nav.level0 > li{
-    > a::before{
-        background-color: $primary-color;
-    }
-}
 .pb-categorytab, .pb-producttab {
     .nav.nav-tabs{
         .nav-item .nav-link{

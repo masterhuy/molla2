@@ -657,6 +657,8 @@ header .row .col-auto {
   .row-col-4 .layout-column.wrapper {
       width:25%!important;
   }
+}
+@media (min-width: 576px){
   #footer-main .layout-column {
       width:auto;
       -ms-flex-preferred-size: 0;
@@ -665,7 +667,7 @@ header .row .col-auto {
       flex-grow: 1;
   }
 }
-@media (max-width:570px) {
+@media (max-width:575px) {
   #footer-copyright .layout-column,
   #footer-top .layout-column {
     width:100%!important;

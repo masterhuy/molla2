@@ -1234,6 +1234,13 @@ a:focus {
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
   background-color: #3399ff; }
 
+  .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+    color: #3399ff; }
+    .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
+
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
   background-color: #3399ff; }
 

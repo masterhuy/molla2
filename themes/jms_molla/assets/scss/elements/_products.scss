@@ -27,6 +27,9 @@
 
 /* Product box 2 */
 .productbox-2{
+	&:hover .product-action{
+		top: calc(100% - 4rem);
+	}
 	.product-preview{
 		overflow: hidden;
 	}
@@ -46,8 +49,12 @@
 		color: #ef837b;
 	}
 	.product-action{
+		position: absolute;
 		padding: 0;
-		bottom: 0;
+		top: 100%;
+		left: 0;
+		right: 0;
+		transition: all .35s ease;
 		.product-cart{
 			display: flex;
 			background-color: #333;

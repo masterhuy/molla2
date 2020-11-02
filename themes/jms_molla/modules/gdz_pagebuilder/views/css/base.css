@@ -226,20 +226,13 @@
     -ms-flex-align: center;
     align-items: center;
 }
-.addon-tab .nav.nav-tabs {
+.addon-tab .nav-tabs {
     display: inline-block;
     width: 100%;
     margin-bottom: 1rem;
-}
-.addon-tab .tab-right {
-    text-align: right;
-}
-.addon-tab .tab-left {
-    text-align: left;
-}
-.addon-tab .tab-center {
     text-align: center;
 }
+
 /* Block Popup */
 .gdz-popup {
   background: #fff;
@@ -311,8 +304,8 @@
 }
 .gdz-popup-overlay {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.2);
-	background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+	background-color: rgba(51, 51, 51, 0.55);
+  background-image: none;
 	height: 100%;
     left: 0;
     opacity: 1;
@@ -517,3 +510,14 @@
   bottom: 20px;
 }
 
+@media (min-width: 992px){
+  .addon-tab .tab-right {
+    text-align: right;
+  }
+  .addon-tab .tab-left {
+      text-align: left;
+  }
+  .addon-tab .tab-center {
+      text-align: center;
+  }
+}

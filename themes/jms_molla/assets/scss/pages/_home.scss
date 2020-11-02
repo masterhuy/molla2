@@ -1009,7 +1009,9 @@ button:focus {
 
 @media (max-width: 767px){
 	div{
-		&.h1-slider, &.h2-slider{
+		&.h1-slider,
+		&.h2-slider,
+		.intro-section{
 			.gdz-slide-content .btn{
 				padding: 2vw 4vw;
 				min-width: auto;

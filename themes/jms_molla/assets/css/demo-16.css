@@ -1280,9 +1280,6 @@ a:focus {
     -ms-transform: scale(1, 1);
     transform: scale(1, 1); }
 
-#hor-menu .gdz-megamenu .nav.level0 > li > a::before {
-  background-color: #c96; }
-
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
   background-color: #c96; }
 

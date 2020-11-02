@@ -10,7 +10,20 @@ $secondary-color: #bf913d;
 @import '../config/fonts';
 @import '../config/variables';
 
-
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .owl-dots{
 	margin-top: 2.2rem;
 	button{
@@ -111,9 +124,6 @@ $secondary-color: #bf913d;
 		margin-right: 0;
 	}
 	.h3-hotdeal{
-		padding: 0;
-		margin-left: auto;
-		max-width: calc((100% - 20px)/2);
 		.owl-carousel.customs .owl-stage-outer{
 			margin: 0;
 			padding: 0;
@@ -125,8 +135,6 @@ $secondary-color: #bf913d;
 		letter-spacing: -.01em;
 	}
 	.deal{
-		margin-right: auto;
-		max-width: calc((100% - 20px)/2);
 		.pb-heading{
 			font-weight: 500;
 			line-height: 1.1;
@@ -164,7 +172,7 @@ $secondary-color: #bf913d;
 	}
 }
 .h3-box-bg{
-	max-width: 1168px;
+	max-width: calc(100% - 20px);
 	margin-left: auto;
 	margin-right: auto;
 	> .container{
@@ -187,14 +195,27 @@ $secondary-color: #bf913d;
 	}
 	.socials{
 		&::before{
+			display: none;
 			content: "";
 			width: .1rem;
-			display: block;
 			height: 75%;
 			position: absolute;
 			right: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			background-color: #ebebeb;
+		}
+	}
+	.newsletter{
+		&::before{
+			content: '';
+			height: .1rem;
+			display: block;
+			width: 80%;
+			position: absolute;
+			left: 10%;
+			top: 0;
+			bottom: auto;
 			background-color: #ebebeb;
 		}
 	}
@@ -437,6 +458,7 @@ $secondary-color: #bf913d;
 		color: #666;
 		border: 0;
 		right: .6rem;
+		display: none;
 		&:hover{
 			background-color: transparent;
 			color: $primary-color;
@@ -446,6 +468,7 @@ $secondary-color: #bf913d;
 		color: #666;
 		border: 0;
 		left: .6rem;
+		display: none;
 		&:hover{
 			background-color: transparent;
 			color: $primary-color;
@@ -497,15 +520,43 @@ $secondary-color: #bf913d;
 	}
 }
 
-
+@media (min-width: 768px){
+	.fraction-slider{
+		.prev, .next{
+			display: flex;
+		}
+	}
+}
 @media (min-width: 992px){
 	.cta-border .cta-heading {
 		flex: 0 0 26.5%;
 		max-width: 26.5%;
 	}
+	.h3-deals{
+		.deal {
+			margin-right: auto;
+			max-width: calc((100% - 20px)/2);
+		}
+		.h3-hotdeal {
+		    padding: 0;
+		    margin-left: auto;
+		    max-width: calc((100% - 20px)/2);
+		}
+	}
+	.h3-box-bg{
+		.socials::before{
+			display: block;
+		}
+		.newsletter::before{
+			display: none;
+		}
+	}
 }
 @media (min-width: 1200px){
 	.h3-deals .btn-more {
 		min-width: 270px;
+	}
+	.h3-box-bg {
+		max-width: 1168px;
 	}
 }

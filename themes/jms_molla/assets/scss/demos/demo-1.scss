@@ -388,6 +388,17 @@ $secondary-color: #92b25a;
 	.h1-countdown .deal-content{
 		margin: 0
 	}
+	.h1-newsletter .email_subscription{
+		.form-control{
+			width: auto;
+		}
+		#newsletter-btn{
+			height: 46px;
+		}
+		.newsletter-input-group{
+			display: flex;
+		}
+	}
 }
 @media (min-width: 1200px) {
 	.h1-countdown{

@@ -251,7 +251,9 @@
 .star-content div.star-hover {
   cursor: pointer;
 }
-
+.product-list-reviews .comments-nb{
+  display: none;
+}
 .product-list-reviews .grade-stars {
   position: relative;
   height: 20px;
@@ -593,4 +595,10 @@
 .comment-buttons a{
   color: #777;
   font-size: 1.2rem;
+}
+
+@media (min-width: 768px){
+  .product-list-reviews .comments-nb{
+    display: block;
+  }
 }
