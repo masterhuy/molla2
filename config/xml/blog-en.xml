@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Why fast shipments are important for e-commerce customer satisfaction</title>
+    <link>https://www.prestashop.com/en/blog/fast-shipments-e-commerce</link>
+    <description>Today customers and consumers hold a huge buying power and all of the entrepreneurs’ actions for their own business are dedicated and revolve around the customer.</description>
+     <pubDate>Mon, 02 Nov 2020 12:16:49 +0100</pubDate>
+ <dc:creator>Francesca Biglio</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/fast-shipments-e-commerce</guid>
+  </item>
+  <item>
     <title>A list of PrestaShop modules to consider for a successful Black Friday and Holiday season</title>
     <link>https://www.prestashop.com/en/blog/modules-black-friday-2020</link>
     <description>In addition to holiday sales, the Black Friday phenomenon, about a month before Christmas, continues to grow each year.</description>
@@ -76,14 +84,6 @@
      <pubDate>Tue, 15 Sep 2020 17:49:48 +0200</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/marketfire-marketplaces-retailers</guid>
-  </item>
-  <item>
-    <title>What is an ecommerce payment gateway?</title>
-    <link>https://www.prestashop.com/en/blog/ecommerce-payment-gateway</link>
-    <description>If you want your website to accept payments, you need a payment gateway.</description>
-     <pubDate>Mon, 14 Sep 2020 18:03:57 +0200</pubDate>
- <dc:creator>Arina Drucioc EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-payment-gateway</guid>
   </item>
   </channel>
 </rss>

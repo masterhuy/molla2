@@ -1,7 +1,7 @@
 /* Skin structure */
-@import '../config/variables';
-@import '../mixins/buttons';
-@import '../mixins/breakpoints';
+@import '../config/variables.scss';
+@import '../mixins/buttons.scss';
+@import '../mixins/breakpoints.scss';
 
 $link-color: $primary-color !default;
 
@@ -1924,17 +1924,32 @@ a:focus {
 #gdz_ajax_search.show .btn-search{
     color: $primary-color;
 }
-.gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {
+.gdz-megamenu .nav > li.open > a, 
+.gdz-megamenu .nav > li > a:hover {
     color: $primary-color;
+}
+.gdz-megamenu .nav > li.open > a::before{
+    background-color: $primary-color;
 }
 .gdz-megamenu .nav > .menu-item .mega-nav li > a:hover{
     color: $primary-color;
 }
-.page-index #hor-menu .gdz-megamenu .nav.level0 > li{
-    &.sub-home > a{
-        color: $primary-color;
-        &::before{
-            transform: scale(1, 1);
+.page-index{
+    &.demo_5{
+        #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a{
+            color: #fff;
+            &::before{
+                background-color: #fff;
+            }
+        }
+    }
+    #hor-menu .gdz-megamenu .nav.level0 > li{
+        &.sub-home > a{
+            color: $primary-color;
+            &::before{
+                background-color: $primary-color;
+                transform: scale(1, 1);
+            }
         }
     }
 }

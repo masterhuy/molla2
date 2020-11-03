@@ -284,7 +284,7 @@ $column_settings = array(
 						'xs_col'  =>  array(
 								'type'  =>  'select',
 								'title' =>   $this->module->l('Mobile Layout', 'settings'),
-								'options' => array('col-xs-1' => 'col-1', 'col-2' => 'col-2', 'col-3' => 'col-3', 'col-4' => 'col-4', 'col-5' => 'col-5', 'col-6' => 'col-6', 'col-7' => 'col-7', 'col-8' => 'col-8', 'col-9' => 'col-9', 'col-10' => 'col-10', 'col-11' => 'col-11', 'col-12' => 'col-12'),
+								'options' => array('col-1' => 'col-1', 'col-2' => 'col-2', 'col-3' => 'col-3', 'col-4' => 'col-4', 'col-5' => 'col-5', 'col-6' => 'col-6', 'col-7' => 'col-7', 'col-8' => 'col-8', 'col-9' => 'col-9', 'col-10' => 'col-10', 'col-11' => 'col-11', 'col-12' => 'col-12'),
                 'default' => 'col-12',
 								'desc'  =>   $this->module->l('Set the class of this column for extra small devices', 'settings'),
 						),

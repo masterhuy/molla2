@@ -471,6 +471,9 @@
 }
 
 #footer-copyright{
+	.col-copyright{
+		margin-bottom: 1rem;
+	}
 	p{
 		margin-bottom: 0;
 	}
@@ -695,6 +698,11 @@
 			#footer-copyright .col-payments img{
 				margin-right: 0;
 			}
+		}
+	}
+	#footer-copyright{
+		.col-copyright{
+			margin-bottom: 0;
 		}
 	}
 }

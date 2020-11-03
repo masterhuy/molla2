@@ -2,13 +2,13 @@
 $primary-color: #cc6666;
 $secondary-color: #c15454;
 
-@import '../skins/skin';
-@import '../mixins/clearfix';
-@import '../mixins/breakpoints';
-@import '../mixins/lazy';
-@import '../mixins/buttons';
-@import '../config/fonts';
-@import '../config/variables';
+@import '../skins/skin.scss';
+@import '../mixins/clearfix.scss';
+@import '../mixins/breakpoints.scss';
+@import '../mixins/lazy.scss';
+@import '../mixins/buttons.scss';
+@import '../config/fonts.scss';
+@import '../config/variables.scss';
 
 
 @font-face {
@@ -19,7 +19,20 @@ $secondary-color: #c15454;
     font-style: normal;
 }
 
-
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .owl-dots{
 	margin-top: .9rem;
 }
@@ -63,6 +76,11 @@ $secondary-color: #c15454;
 			background-color: #fff;
 		}
 	}
+	.fraction-slider{
+		.prev, .next, .fs-pager-wrapper{
+			display: none;
+		}
+	}
 }
 
 .h5-brand{
@@ -71,6 +89,7 @@ $secondary-color: #c15454;
 		height: 10rem;
 		border: .1rem solid #ebebeb;
 		border-left-width: 0;
+		width: 100%;
 		img{
 			margin: auto;
 		}
@@ -271,10 +290,10 @@ $secondary-color: #c15454;
 
 .banner-set-image{
 	.pb-banner-text{
-		bottom: 8rem;
+		bottom: 4rem;
 		top: auto;
 		text-align: left;
-		left: 5rem;
+		left: 4rem;
 		right: auto;
 		display: block;
 		.pb-banner-title{
@@ -378,12 +397,25 @@ $secondary-color: #c15454;
 		&::before{
 			content: "";
 			width: .1rem;
-			display: block;
+			display: none;
 			height: 75%;
 			position: absolute;
 			right: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			background-color: #ebebeb;
+		}
+	}
+	.newsletter{
+		&::before{
+			content: '';
+			height: .1rem;
+			display: block;
+			width: 80%;
+			position: absolute;
+			left: 10%;
+			top: 0;
+			bottom: auto;
 			background-color: #ebebeb;
 		}
 	}
@@ -481,7 +513,9 @@ $secondary-color: #c15454;
 		letter-spacing: -.01em;
 	}
 }
-
+.pb-social-circle .pb-social-box{
+	margin: 0 .2rem;
+}
 @include mq('sm') {
 	.feed-col {
 		flex: 0 0 33.33%;
@@ -501,3 +535,30 @@ $secondary-color: #c15454;
 }
 
 
+@media (min-width: 768px){
+	.fraction-slider{
+		.fs-pager-wrapper{
+			display: block;
+		}
+		.prev, .next {
+			display: flex;
+		}
+	}
+	.banner-set-image .pb-banner-text {
+		bottom: 8rem;
+		left: 5rem;
+	}
+	.pb-social-circle .pb-social-box {
+		margin: 0 .3rem;
+	}
+}
+@media (min-width: 992px){
+	.h5-box-bg{
+		.socials::before{
+			display: block;
+		}
+		.newsletter::before{
+			display: none;
+		}
+	}
+}

@@ -1267,15 +1267,25 @@ a:focus {
 #gdz_ajax_search.show .btn-search {
   color: #a6c76c; }
 
-.gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {
+.gdz-megamenu .nav > li.open > a,
+.gdz-megamenu .nav > li > a:hover {
   color: #a6c76c; }
+
+.gdz-megamenu .nav > li.open > a::before {
+  background-color: #a6c76c; }
 
 .gdz-megamenu .nav > .menu-item .mega-nav li > a:hover {
   color: #a6c76c; }
 
+.page-index.demo_5 #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+  color: #fff; }
+  .page-index.demo_5 #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+    background-color: #fff; }
+
 .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
   color: #a6c76c; }
   .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+    background-color: #a6c76c;
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     transform: scale(1, 1); }
@@ -1734,9 +1744,7 @@ a:focus {
     flex: 0 0 41.18%;
     max-width: 41.18%; } }
 
-@media (min-width: 768px) {
-  .h1-countdown .deal-content {
-    margin: 0; }
+@media (min-width: 576px) {
   .h1-newsletter .email_subscription .form-control {
     width: auto; }
   .h1-newsletter .email_subscription #newsletter-btn {
@@ -1745,6 +1753,10 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+@media (min-width: 768px) {
+  .h1-countdown .deal-content {
+    margin: 0; } }
 
 @media (min-width: 1200px) {
   .h1-countdown .container > .row {

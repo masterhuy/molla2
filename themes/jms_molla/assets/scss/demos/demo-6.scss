@@ -1,16 +1,26 @@
 /* Demo 6 Homepage 6 */
 $primary-color: #c96;
 
-@import '../skins/skin';
-@import '../mixins/clearfix';
-@import '../mixins/breakpoints';
-@import '../mixins/lazy';
-@import '../mixins/buttons';
+@import '../skins/skin.scss';
+@import '../mixins/clearfix.scss';
+@import '../mixins/breakpoints.scss';
+@import '../mixins/lazy.scss';
+@import '../mixins/buttons.scss';
+@import '../config/fonts.scss';
+@import '../config/variables.scss';
 
-@import '../config/fonts';
-@import '../config/variables';
 
-
+.page-index #hor-menu .gdz-megamenu .nav.level0 > li{
+	> a{
+		padding-right: 3.4rem;
+		.caret{
+			right: -.9rem;
+		}
+	}
+	&.sub-home > a {
+		color: #fff;
+	}
+}
 .pb-heading.title {
 	font-weight: 600;
 	letter-spacing: -.025em;

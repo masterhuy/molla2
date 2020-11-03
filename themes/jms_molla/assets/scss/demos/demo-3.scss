@@ -2,13 +2,13 @@
 $primary-color: #fcb941;
 $secondary-color: #bf913d;
 
-@import '../skins/skin';
-@import '../mixins/clearfix';
-@import '../mixins/breakpoints';
-@import '../mixins/lazy';
-@import '../mixins/buttons';
-@import '../config/fonts';
-@import '../config/variables';
+@import '../skins/skin.scss';
+@import '../mixins/clearfix.scss';
+@import '../mixins/breakpoints.scss';
+@import '../mixins/lazy.scss';
+@import '../mixins/buttons.scss';
+@import '../config/fonts.scss';
+@import '../config/variables.scss';
 
 #mobile-header{
 	background-color: #333;

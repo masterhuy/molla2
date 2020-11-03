@@ -158,7 +158,7 @@
 			> a{
 				color: #666;
 				flex-direction: row;
-				.text-cart{
+				.text{
 					display: none;
 				}
 				.ajax_cart_quantity{
@@ -182,6 +182,8 @@
 		}
 		.header-right .row{
 			padding-top: 1px;
+			margin-left: 0;
+			margin-right: 0;
 			> div{
 				padding-right: 0;
 				padding-top: 25px;

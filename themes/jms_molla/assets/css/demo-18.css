@@ -1267,15 +1267,25 @@ a:focus {
 #gdz_ajax_search.show .btn-search {
   color: #c96; }
 
-.gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {
+.gdz-megamenu .nav > li.open > a,
+.gdz-megamenu .nav > li > a:hover {
   color: #c96; }
+
+.gdz-megamenu .nav > li.open > a::before {
+  background-color: #c96; }
 
 .gdz-megamenu .nav > .menu-item .mega-nav li > a:hover {
   color: #c96; }
 
+.page-index.demo_5 #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+  color: #fff; }
+  .page-index.demo_5 #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+    background-color: #fff; }
+
 .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
   color: #c96; }
   .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+    background-color: #c96;
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     transform: scale(1, 1); }

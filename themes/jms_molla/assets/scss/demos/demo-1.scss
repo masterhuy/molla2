@@ -2,13 +2,13 @@
 $primary-color: #a6c76c;
 $secondary-color: #92b25a;
 
-@import '../skins/skin';
-@import '../mixins/clearfix';
-@import '../mixins/breakpoints';
-@import '../mixins/lazy';
-@import '../mixins/buttons';
-@import '../config/fonts';
-@import '../config/variables';
+@import '../skins/skin.scss';
+@import '../mixins/clearfix.scss';
+@import '../mixins/breakpoints.scss';
+@import '../mixins/lazy.scss';
+@import '../mixins/buttons.scss';
+@import '../config/fonts.scss';
+@import '../config/variables.scss';
 
 .h1-slider{
 	.fs-pager-wrapper a{
@@ -382,12 +382,6 @@ $secondary-color: #92b25a;
 	}
 }
 @media (min-width: 576px){
-	
-}
-@media (min-width: 768px){
-	.h1-countdown .deal-content{
-		margin: 0
-	}
 	.h1-newsletter .email_subscription{
 		.form-control{
 			width: auto;
@@ -398,6 +392,11 @@ $secondary-color: #92b25a;
 		.newsletter-input-group{
 			display: flex;
 		}
+	}
+}
+@media (min-width: 768px){
+	.h1-countdown .deal-content{
+		margin: 0
 	}
 }
 @media (min-width: 1200px) {
