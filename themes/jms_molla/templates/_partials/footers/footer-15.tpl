@@ -53,11 +53,11 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
-                    <div class="layout-column col-auto">
+                    <div class="col-12 col-lg-6 col-copyright">
                         {$gdzSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                <div class="layout-column col text-right">
+                <div class="col-12 col-lg-6 col-payments">
                     {include file='_partials/socials.tpl'}
                 </div>
             </div>

@@ -414,6 +414,7 @@ img {
 .pb-testimonial{
     .pb-testimonial-box {
         text-align: center;
+        width: 100%;
         .pb-testimonial-img{
             margin-bottom: 2.5rem;
             img{
@@ -442,7 +443,7 @@ img {
             font-weight: 500;
             color: #333333;
             letter-spacing: -.01em;
-            margin-bottom: .1rem;
+            margin-bottom: -.1rem;
             line-height: 1;
             font-size: 1.6rem;
             text-transform: uppercase;

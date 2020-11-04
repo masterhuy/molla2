@@ -460,6 +460,9 @@
 		margin-bottom: 1.9rem;
 	}
 	.block-content{
+		&.collapse{
+			display: block;
+		}
 		ul{
 			li{
 				&:not(:last-child){

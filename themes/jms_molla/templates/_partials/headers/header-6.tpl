@@ -61,10 +61,10 @@
                     {/if}
                     
                 </div>
-                <div class="layout-column header-center">
+                <div class="layout-column col header-center">
                     {include file='_partials/headers/logo.tpl'}
                 </div>
-                <div class="layout-column col-auto header-right">
+                <div class="layout-column header-right">
                     <div class="row">
                         {if ($gdzSetting.wishlist == 1)}
                             {include file='_partials/headers/wishlist2.tpl'}

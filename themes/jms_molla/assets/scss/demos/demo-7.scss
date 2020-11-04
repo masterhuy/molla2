@@ -154,6 +154,18 @@ $secondary-color: #fcb941;
 		}
 	}
 }
+.h7-categorytab{
+	.owl-carousel .owl-nav button{
+		display: none;
+		top: 32.4%;
+		&.owl-prev{
+			left: 18px;
+		}
+		&.owl-next{
+			right: 18px;
+		}
+	}
+}
 
 .pb-categorytab .nav.nav-tabs .nav-item{
 	+ .nav-item{
@@ -254,5 +266,15 @@ $secondary-color: #fcb941;
 	border-left-width: 0;
 	img{
 		margin: auto;
+	}
+}
+.pb-testimonial .owl-dots {
+	margin-top: 3.6rem;
+}
+
+
+@media (min-width: 1367px){
+	.h7-categorytab .owl-carousel .owl-nav button {
+		display: block;
 	}
 }

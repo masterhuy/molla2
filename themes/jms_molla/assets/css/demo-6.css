@@ -1428,6 +1428,9 @@ a:focus {
 .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
   color: #fff; }
 
+.banner-overlay-dark .pb-banner > a::after {
+  background-color: rgba(51, 51, 51, 0.25); }
+
 .pb-heading.title {
   font-weight: 600;
   letter-spacing: -.025em;
@@ -1456,6 +1459,9 @@ a:focus {
   .slider-text-center .btn:hover {
     color: #c96;
     background-color: #fff; }
+
+.slider-text-center .fraction-slider .prev, .slider-text-center .fraction-slider .next {
+  display: none; }
 
 .pb-banner .pb-banner-text {
   display: block;
@@ -1518,9 +1524,6 @@ a:focus {
     height: .2rem;
     background-color: #333; }
 
-.deal .container {
-  max-width: 484px; }
-
 .deal .deal-subtitle {
   color: #c96;
   font-weight: 400;
@@ -1549,7 +1552,7 @@ a:focus {
     display: -ms-flexbox;
     display: flex; }
   .deal .pb-countdown .countdown-section {
-    min-width: 80px;
+    min-width: 50px;
     position: relative;
     font-size: 1.2rem;
     line-height: 1;
@@ -1679,10 +1682,6 @@ a:focus {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #fafafa; }
-  .block-newsletter .newsletter .addon-box {
-    min-width: 375px;
-    margin-left: auto;
-    margin-right: auto; }
   .block-newsletter .newsletter .pb-heading {
     font-weight: 600;
     letter-spacing: .05em;
@@ -1757,5 +1756,33 @@ a:focus {
     .pb-blog .post-readmore:hover span {
       -webkit-box-shadow: none;
       box-shadow: none; }
+
+@media (min-width: 768px) {
+  .deal .container {
+    max-width: 484px; }
+  .deal .pb-countdown .countdown-section {
+    min-width: 80px; }
+  .fraction-slider .prev, .fraction-slider .next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .fraction-slider .prev {
+    left: 4rem; }
+  .fraction-slider .next {
+    right: 4rem; }
+  .block-newsletter .email_subscription {
+    max-width: 300px; } }
+
+@media (min-width: 992px) {
+  .fraction-slider .prev {
+    left: 10rem; }
+  .fraction-slider .next {
+    right: 10rem; }
+  .block-newsletter .newsletter .addon-box {
+    min-width: 375px;
+    margin-left: auto;
+    margin-right: auto; }
+  .block-newsletter .email_subscription {
+    max-width: initial; } }
 
 /*# sourceMappingURL=demo-6.css.map */

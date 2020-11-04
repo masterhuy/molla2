@@ -42,11 +42,11 @@
         <div class="container">
             <div class="row align-items-center">
                 {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
-                    <div class="col-12 col-md-12 col-lg-7">
+                    <div class="col-12 col-lg-7">
                         {$gdzSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                <div class="col-12 col-md-12 col-lg-5 text-lg-right">
+                <div class="col-12 col-lg-5 text-lg-right">
                     {include file='_partials/socials.tpl'}
                 </div>
             </div>

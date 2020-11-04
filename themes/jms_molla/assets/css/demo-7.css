@@ -1528,6 +1528,14 @@ a:focus {
 .pb-service-box .pb-service-content .pb-service-description p {
   margin-bottom: 0; }
 
+.h7-categorytab .owl-carousel .owl-nav button {
+  display: none;
+  top: 32.4%; }
+  .h7-categorytab .owl-carousel .owl-nav button.owl-prev {
+    left: 18px; }
+  .h7-categorytab .owl-carousel .owl-nav button.owl-next {
+    right: 18px; }
+
 .pb-categorytab .nav.nav-tabs .nav-item + .nav-item {
   margin-left: 3.1rem; }
 
@@ -1616,5 +1624,12 @@ a:focus {
   border-left-width: 0; }
   .brand-item a img {
     margin: auto; }
+
+.pb-testimonial .owl-dots {
+  margin-top: 3.6rem; }
+
+@media (min-width: 1367px) {
+  .h7-categorytab .owl-carousel .owl-nav button {
+    display: block; } }
 
 /*# sourceMappingURL=demo-7.css.map */
