@@ -49,10 +49,14 @@
 		&.open > a{
 			color: #fff;
 		}
-		> a::before{
-			top: auto;
-			bottom: 0;
-			background-color: #fff;
+		> a{
+			padding-right: 3.3rem;
+			line-height: 62.5px;
+			&::before{
+				top: auto;
+				bottom: .8rem;
+				background-color: #fff;
+			}
 		}
 	}
 	#hor-menu .nav > li > a{
@@ -126,42 +130,4 @@
 	}
 }
 
-@include mq('xl') {
-	.header-5 {
-		.container-fluid {
-			padding-left: 3rem;
-			padding-right: 3rem;
-		}
-	}
-}
 
-@include mq('xxl') {
-	.header-5 {
-		.container-fluid {
-			padding-left: 6rem;
-			padding-right: 6rem;
-
-			.megamenu-container {
-				position: relative;
-
-				.megamenu {
-					right: auto;
-					width: 1170px;
-				}
-			}
-		}
-	}
-}
-
-@include mq('sm', 'max') {
-	.header-5 .cart-dropdown, 
-	.header-5 .compare-dropdown {
-		padding-left: 1.4rem;
-	}
-}
-
-@media screen and (max-width: 1149px) {
-	.header-5 .header-search-extended {
-		display: none;
-	}
-}

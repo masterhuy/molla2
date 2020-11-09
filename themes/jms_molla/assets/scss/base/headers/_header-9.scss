@@ -67,12 +67,15 @@
 	#hor-menu{
 		.nav > li > a{
 			padding-top: 0;
-			letter-spacing: .05em;
+			letter-spacing: .01em;
 			text-transform: uppercase;
 		}
 		.gdz-megamenu .nav.level0 > li{
 			> a{
 				line-height: 52px;
+				.caret{
+					right: -7px;
+				}
 				&::before{
 					height: .2rem;
 					bottom: 0;
@@ -111,9 +114,6 @@
 			font-size: 2.6rem;
 			color: #666;
 			margin-left: -.3rem;
-			&:hover{
-				color: $primary-color;
-			}
 		}
 		#search-form{
 			max-width: 570px;
@@ -165,7 +165,7 @@
 			> a{
 				color: #666;
 				flex-direction: row;
-				.text-cart{
+				.text{
 					display: none;
 				}
 				.ajax_cart_quantity{
@@ -189,6 +189,8 @@
 		}
 		.header-right .row{
 			padding-top: 1px;
+			margin-left: 0;
+			margin-right: 0;
 			> div{
 				padding-right: 0;
 				padding-top: 25px;
@@ -244,5 +246,14 @@
 				}
 			}
 		}
+		.wishlist{
+			padding-left: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.header-9 #hor-menu .gdz-megamenu .nav.level0 > li > a{
+		padding-right: 3.6rem;
 	}
 }

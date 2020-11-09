@@ -560,6 +560,7 @@
 		color: #ccc;
 		margin-bottom: .4rem;
 		letter-spacing: 0;
+		display: none;
 		&:hover{
 			color: #666;
 		}
@@ -784,7 +785,7 @@
 		padding: 0;
 		z-index: 9;
 	}
-	.product-action{
+	div.product-action{
 		position: static;
 		opacity: 1;
 		visibility: visible;
@@ -822,7 +823,6 @@
 		}
 		.product-btn{
 			border: 0;
-			color: #fff;
 			span{
 				font-size: 1.3rem;
 				font-weight: 400;
@@ -937,6 +937,10 @@
 .productbox-10{
 	border-radius: .4rem;
 	overflow: hidden;
+	&:hover .product-action{
+		opacity: 1;
+		visibility: visible;
+	}
 	.product-preview{
 		overflow: hidden;
 	}
@@ -981,6 +985,8 @@
 		display: none;
 	}
 	.product-action{
+		opacity: 0;
+		visibility: hidden;
 		padding: 0;
 		bottom: 0;
 		transform: none;

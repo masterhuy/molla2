@@ -39,20 +39,24 @@
                 <div class="layout-column col header-right justify-content-end">
                     <ul class="top-menu d-flex align-items-center mb-0">
                         <li>
-                            <a href="tel:0123 456 789"><i class="icon-phone"></i>Call: +0123 456 789</a>
+                            <a href="tel:0123 456 789">
+                                <i class="icon-phone"></i>
+                                {l s='Call: +0123 456 789' d='Shop.Theme.Global'}
+                            </a>
                         </li>
                         {if ($gdzSetting.wishlist == 1)}
                         <li>
                             <a href="index.php?fc=module&module=gdz_wishlist&controller=mywishlist">
-                                <i class="icon-heart-o"></i>My Wishlist
+                                <i class="icon-heart-o"></i>
+                                {l s='My Wishlist' d='Shop.Theme.Global'}
                             </a>
                         </li>
                         {/if}
                         <li>
-                            <a href="index.php?id_cms=4&controller=cms">About Us</a>
+                            <a href="index.php?id_cms=4&controller=cms">{l s='About Us' d='Shop.Theme.Global'}</a>
                         </li>
                         <li>
-                            <a href="index.php?controller=contact">Contact Us</a>
+                            <a href="index.php?controller=contact">{l s='Contact Us' d='Shop.Theme.Global'}</a>
                         </li>
                         {if ($gdzSetting.customersignin == 1)}
                         <li>

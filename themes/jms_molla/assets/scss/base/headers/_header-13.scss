@@ -45,9 +45,6 @@
 		.search-form i{
 			font-size: 2.2rem;
 			color: #333;
-			&:hover{
-				color: $primary-color;
-			}
 		}
 		#search-form{
 			max-width: 570px;
@@ -76,6 +73,8 @@
 		}
 		.header-right .row{
 			padding-top: 1px;
+			margin-left: 0;
+			margin-right: 0;
 			> div{
 				padding-right: 0;
 				padding-top: 20px;
@@ -92,6 +91,10 @@
 	#hor-menu .gdz-megamenu .nav.level0 > li > a{
 		color: #fff;
 		padding-top: 0;
+		&::before{
+			bottom: 0;
+			top: auto;
+		}
 	}
 	.header-bottom{
 		background-color: #333;

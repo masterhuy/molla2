@@ -52,17 +52,17 @@
     <div id="header-middle" class="header-middle">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="layout-column col-2 col-left">
+                <div class="layout-column col-xl-2 col-lg-3 col-left">
                     {include file='_partials/headers/logo.tpl'}
                 </div>
-                <div class="layout-column col-8 col-center">
+                <div class="layout-column col-xl-8 col-lg-6 col-center">
                     {if $gdzSetting.search}
                         {widget_block name="gdz_ajaxsearch"}
                             {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch.tpl'}
                         {/widget_block}
                     {/if}
                 </div>
-                <div class="layout-column col-2 col-right">
+                <div class="layout-column col-xl-2 col-lg-3 col-right">
                     <div class="row">
                         <div class="account">
                             <a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}">
@@ -86,7 +86,7 @@
     <div class="sticky-wrapper header-bottom {if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="layout-column col-2">
+                <div class="layout-column col-xl-2 col-lg-3">
                     <div class="vermenu d-flex align-items-center {if $page.page_name == 'index'}show{/if}">
                         <a href="#" class="vermenu-btn align-items-center" data-toggle="dropdown">
                             {$gdzSetting.vermenu_button_text nofilter}
@@ -96,12 +96,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="layout-column position-static col-8">
+                <div class="layout-column position-static col-xl-8 col-lg-6">
                     <div id="hor-menu" class="{if $gdzSetting.hormenu_class} {$gdzSetting.hormenu_class}{/if} {if $gdzSetting.hormenu_align} align-{$gdzSetting.hormenu_align}{/if}">
                         {widget name="gdz_megamenu" hook='HorMenu'}
                     </div>
                 </div>
-                <div class="layout-column col-2 col-right">
+                <div class="layout-column col-xl-2 col-lg-3 col-right">
                     {$gdzSetting.header_html nofilter}
                 </div>
             </div>

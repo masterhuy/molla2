@@ -10,10 +10,31 @@ $secondary-color: #c96;
 @import '../config/fonts.scss';
 @import '../config/variables.scss';
 
+
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .title {
 	font-weight: 600;
 	font-size: 2rem;
 	letter-spacing: -.025em;
+}
+.page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+	color: #fff;
+	&::before{
+		background-color: #fff;
+	}
 }
 .h12-slider{
 	.gdz-slider-wrapper{
@@ -46,6 +67,9 @@ $secondary-color: #c96;
 	}
 }
 .banner-text-hidden{
+	.layout-column{
+		margin-bottom: 2rem;
+	}
 	&.show-title{
 		.pb-banner-text .pb-banner-title{
 			visibility: visible;

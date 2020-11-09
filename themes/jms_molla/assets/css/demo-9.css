@@ -711,6 +711,9 @@ a:focus {
 .header-11 #cart_block .ajax_cart_quantity {
   background-color: #1cc0a0; }
 
+.header-13 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #1cc0a0; }
+
 .header-13 .header-middle #search-form .search-box {
   border-color: #1cc0a0; }
 
@@ -1425,6 +1428,9 @@ a:focus {
   font-weight: 600;
   letter-spacing: -.01em; }
 
+input[type="text"] {
+  border-color: #dadada; }
+
 .image-carousel .owl-stage::after {
   content: ".";
   display: block;
@@ -1573,9 +1579,6 @@ a:focus {
     .pb-service-box .pb-service-content .pb-service-description p {
       margin-bottom: 0; }
 
-.trending-now .producttab {
-  margin-top: -2.7rem; }
-
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
   color: #ccc;
   font-size: 1.4rem;
@@ -1589,14 +1592,13 @@ a:focus {
     color: #333; }
 
 .producttab-banner .owl-carousel .owl-nav button {
+  top: 35%;
   font-size: 2.4rem;
   color: #333;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1607,9 +1609,9 @@ a:focus {
   -webkit-box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3);
   box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3); }
   .producttab-banner .owl-carousel .owl-nav button.owl-prev {
-    left: 3rem; }
+    left: 4rem; }
   .producttab-banner .owl-carousel .owl-nav button.owl-next {
-    right: 3rem; }
+    right: 4rem; }
   .producttab-banner .owl-carousel .owl-nav button.disabled {
     opacity: .7;
     cursor: default; }
@@ -1621,7 +1623,6 @@ a:focus {
     color: #333; }
 
 .email_subscription input.form-control {
-  border: .1rem solid #dadada;
   border-right: 0; }
 
 .email_subscription #newsletter-btn {
@@ -1649,5 +1650,17 @@ a:focus {
 
 .instagram_carousel .owl-nav.disabled, .instagram_carousel .owl-dots.disabled {
   display: none; }
+
+@media (min-width: 768px) {
+  .producttab-banner .addon-tab .nav-tabs.tab-right {
+    text-align: right; } }
+
+@media (min-width: 992px) {
+  .trending-now .producttab {
+    margin-top: -2.7rem; }
+  .producttab-banner .owl-carousel .owl-nav button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /*# sourceMappingURL=demo-9.css.map */

@@ -47,7 +47,11 @@ $secondary-color: #55739d;
 }
 
 .banner-group{
+	.pb-banner > a > img{
+		width: 100%;
+	}
 	.banner-1{
+		margin-bottom: 2rem;
 		.pb-banner-text{
 			right: 2.5rem;
 			left: auto;
@@ -78,6 +82,7 @@ $secondary-color: #55739d;
 		}
 	}
 	.banner-3{
+		display: none;
 		.pb-banner-text{
 			left: 7rem;
 		}
@@ -179,6 +184,9 @@ $secondary-color: #55739d;
 	.owl-dots{
 		margin-top: 2.2rem;
 	}
+	.categorytab-products .owl-item:not(:first-child) .product-miniature {
+		border-left: .1rem solid #eeeeee;
+	}
 }
 
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link{
@@ -186,6 +194,9 @@ $secondary-color: #55739d;
 }
 
 .banner-category{
+	.layout-column{
+		margin-bottom: 2rem;
+	}
 	.pb-banner{
 		&:hover{
 			.pb-banner-text{
@@ -351,6 +362,7 @@ $secondary-color: #55739d;
 			background-color: transparent;
 			font-style: italic;
 			color: #333;
+			border-color: transparent;
 			&::placeholder{
 				color: #777;
 			}
@@ -383,6 +395,14 @@ $secondary-color: #55739d;
 	.cta-horizontal {
 		padding-left: 5rem;
 		padding-right: 5rem;
+	}
+	.banner-group{
+		.banner-1{
+			margin-bottom: 0;
+		}
+		.banner-3{
+			display: block;
+		}
 	}
 }
 

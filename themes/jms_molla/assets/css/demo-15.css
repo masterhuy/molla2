@@ -711,6 +711,9 @@ a:focus {
 .header-11 #cart_block .ajax_cart_quantity {
   background-color: #c96; }
 
+.header-13 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #c96; }
+
 .header-13 .header-middle #search-form .search-box {
   border-color: #c96; }
 
@@ -1420,6 +1423,22 @@ a:focus {
 
 /* Fonts */
 /* font-family: 'Poppins', sans-serif; */
+.page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+  color: #fff; }
+  .page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before {
+    background-color: #fff; }
+
+#mobile-header {
+  background-color: #333; }
+  #mobile-header #mobile-menu-toggle {
+    color: #fff; }
+  #mobile-header .mobile-menu-light {
+    background-color: transparent; }
+  #mobile-header .user-info > a i,
+  #mobile-header #wishlist_block > a i,
+  #mobile-header #cart_block > a i {
+    color: #fff; }
+
 .title {
   font-weight: 600;
   font-size: 2.6rem;

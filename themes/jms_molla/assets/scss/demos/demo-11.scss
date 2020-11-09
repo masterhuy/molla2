@@ -11,6 +11,12 @@ $secondary-color: #c96;
 @import '../config/variables.scss';
 
 
+.page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+	color: #222;
+	&::before{
+		background-color: #222;
+	}
+}
 .gdz-slider-wrapper{
 	.text-2{
 		letter-spacing: -.025em;

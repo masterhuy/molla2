@@ -90,7 +90,7 @@ $secondary-color: #e1a02a;
 		}
 	}
 	.fs-pager-wrapper{
-		display: inline-block;
+		display: none;
 		width: auto;
 		right: auto;
 		left: 12.4rem;
@@ -153,6 +153,7 @@ $secondary-color: #e1a02a;
 	}
 }
 .pb-banner{
+	margin-bottom: 2rem;
 	&.text-right{
 		.pb-banner-text{
 			text-align: right;
@@ -171,7 +172,7 @@ $secondary-color: #e1a02a;
 		}
 	}
 	.pb-banner-text{
-		left: 5rem;
+		left: 2rem;
 		text-align: left;
 		right: auto;
 		top: 50%;
@@ -180,7 +181,7 @@ $secondary-color: #e1a02a;
 		display: block;
 		padding-bottom: .3rem;
 		.pb-banner-subtitle{
-			display: block;
+			display: none;
 			color: #fff;
 			letter-spacing: -.01em;
 			margin-bottom: .6rem;
@@ -259,14 +260,6 @@ $secondary-color: #e1a02a;
 	}
 }
 
-.h14-trending{
-	flex: 0 0 82.222222%;
-	max-width: 82.222222%;
-	margin: auto;
-	.pb-categorytab{
-		margin-top: -3.3rem;
-	}
-}
 
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link{
 	color: #666;
@@ -274,6 +267,9 @@ $secondary-color: #e1a02a;
 	font-size: 1.6rem;
 	text-transform: capitalize;
 	padding-bottom: 1.5rem;
+	&:hover{
+		color: $primary-color;
+	}
 	&.active{
 		color: #666;
 	}
@@ -304,14 +300,10 @@ $secondary-color: #e1a02a;
 }
 
 .h14-special-offer{
-	margin-top: -138px;
 	.specific_prices{
 		display: block;
 		margin-top: 2.4rem;
 		margin-bottom: 1.5rem;
-	}
-	.product-miniature{
-		border-bottom: .1rem solid #ebebeb;
 	}
 }
 .cat-banner-list {
@@ -393,7 +385,7 @@ $secondary-color: #e1a02a;
 	.countdown{
 		width: calc(100% - 20px);
 		margin: auto;
-		padding: .1rem 0 .1rem;
+		padding: .3rem 0 .6rem;
 		border-radius: .2rem;
 		background-color: $primary-color;
 		color: #fff;
@@ -403,17 +395,25 @@ $secondary-color: #e1a02a;
 			flex-direction: column;
 			min-width: 25%;
 			position: relative;
-			&:not(:last-child)::before{
-				content: ":";
-				position: absolute;
-				right: -.2rem;
-				top: .1rem;
+			background-color: transparent;
+			margin-right: 0;
+			padding: 0;
+			&:not(:last-child){
+				&::before{
+					content: ":";
+					position: absolute;
+					right: -.2rem;
+					top: .1rem;
+				}
+				&::after{
+					display: none;
+				}
 			}
 			.countdown-amount{
 				font-weight: 400;
 				font-size: 1.6rem;
 				letter-spacing: -.01em;
-				margin-bottom: -1rem;
+				margin-bottom: 0;
 				padding-right: 0;
 			}	
 			.countdown-period{
@@ -490,13 +490,13 @@ $secondary-color: #e1a02a;
 }
 .h14-servicebox{
 	display: flex;
+	flex-wrap: wrap;
 	.addon-box{
-		flex: 0 0 25%;
-		max-width: 25%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 	.pb-service-box{
-		padding: 4.75rem 0;
-		justify-content: center;
+		padding: 1.5rem 0;
 		background-color: #fafafa;
 		.pb-service-icon{
 			padding-bottom: .8rem;
@@ -521,10 +521,11 @@ $secondary-color: #e1a02a;
 	.pb-heading{
 		letter-spacing: -.025em;
 		font-weight: 600;
+		margin-bottom: 1rem;
 	}
 	.pb-text-content p{
 		letter-spacing: 0;
-		margin-bottom: 0;
+		margin-bottom: 1.5rem;
 	}
 	.email_subscription{
 		max-width: 670px;
@@ -555,8 +556,57 @@ $secondary-color: #e1a02a;
 	}
 }
 
-
+@media (min-width: 768px){
+	.pb-banner{
+		margin-bottom: 0;
+	}
+	.h14-trending .pb-categorytab {
+		margin-top: -3.3rem;
+	}
+	.addon-tab .nav-tabs.tab-right{
+		text-align: right;
+	}
+	.h14-servicebox .addon-box {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+@media (min-width: 992px){
+	.h14-trending{
+		flex: 0 0 82.222222%;
+		max-width: 82.222222%;
+		margin: auto;
+	}
+	.h14-servicebox .addon-box {
+		flex: 0 0 25%;
+		max-width: 25%;
+		.pb-service-box{
+			padding: 4.75rem 0;
+			justify-content: center;
+		}
+	}
+	.h14-newsletter{
+		.pb-heading{
+			margin-bottom: 0;
+		}
+		.pb-text-content p{
+			margin-bottom: 0;
+		}
+	}
+}
 @media (min-width: 1200px){
+	.pb-banner{
+		.pb-banner-text{
+			left: 5rem;
+			.pb-banner-subtitle{
+				display: block;
+			}
+		}
+	}
+	.gdz-slider-wrapper .fs-pager-wrapper{
+		display: inline-block;
+		bottom: 1rem;
+	}
 	.col-lg-2-custom{
 		flex: 0 0 14%;
 		max-width: 14%;
@@ -575,5 +625,27 @@ $secondary-color: #e1a02a;
 	.col-lg-6-custom{
 		flex: 0 0 55.333333%;
 		max-width: 55.333333%;
+	}
+	.h14-special-offer .product-miniature {
+		border-bottom: .1rem solid #ebebeb;
+	}
+}
+@media (min-width: 1900px){
+	.gdz-slider-wrapper .fs-pager-wrapper{
+		bottom: 5.6rem;
+	}
+	.h14-special-offer {
+		margin-top: -138px;
+	}
+	.h14-brand{
+		margin-top: -100px;
+	}
+	.h14-clothing{
+		.col-lg-2-custom{
+			margin-top: -135px;
+		}
+		.col-lg-6-custom{
+			margin-top: -155px;
+		}
 	}
 }

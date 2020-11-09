@@ -16,7 +16,9 @@ $secondary-color: #23aa90;
 	font-weight: 600;
 	letter-spacing: -.01em;
 }
-
+input[type="text"]{
+	border-color: #dadada;
+}
 .image-carousel{
 	.owl-stage::after {
 		content: ".";
@@ -187,9 +189,6 @@ $secondary-color: #23aa90;
 	}
 }
 
-.trending-now .producttab{
-	margin-top: -2.7rem;
-}
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link{
 	color: #ccc;
 	font-size: 1.4rem;
@@ -203,27 +202,27 @@ $secondary-color: #23aa90;
 	}
 	&.active{
 		color: #333;
-
 	}
 }
 
 .producttab-banner{
 	.owl-carousel .owl-nav button{
+		top: 35%;
 		font-size: 2.4rem;
 		color: #333;
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 		background-color: #fff;
 		box-shadow: 0 5px 20px rgba(34,34,34,0.3);
 		&.owl-prev{
-			left: 3rem;
+			left: 4rem;
 		}
 		&.owl-next{
-			right: 3rem;
+			right: 4rem;
 		}
 		&.disabled{
 			opacity: .7;
@@ -242,7 +241,6 @@ $secondary-color: #23aa90;
 
 .email_subscription{
 	input.form-control{
-		border: .1rem solid #dadada;
 		border-right: 0;
 	}
 	#newsletter-btn{
@@ -278,5 +276,18 @@ $secondary-color: #23aa90;
 		&.disabled{
 			display: none;
 		}
+	}
+}
+@media (min-width: 768px){
+	.producttab-banner .addon-tab .nav-tabs.tab-right{
+		text-align: right;
+	}
+}
+@media (min-width: 992px){
+	.trending-now .producttab {
+		margin-top: -2.7rem;
+	}
+	.producttab-banner .owl-carousel .owl-nav button{
+		display: flex;
 	}
 }

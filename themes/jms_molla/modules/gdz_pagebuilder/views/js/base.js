@@ -23,7 +23,7 @@ jQuery(function ($) {
                 768:{
                     items:carousel.data("sm")
                 },
-                1200:{
+                992:{
                     items:carousel.data("md")
                 }
             }

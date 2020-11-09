@@ -149,12 +149,9 @@ jQuery(function ($) {
             lazyLoad:lazyload_ins,
             responsive:{
                 0:{
-                    items: 1
-                },
-                360:{
                     items: 2
                 },
-                600:{
+                768:{
                     items: 3
                 },
                 992:{
@@ -169,6 +166,7 @@ jQuery(function ($) {
             }
         });
     });
+
     var lazyload_ins2 = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_ins2 = true;
@@ -204,7 +202,7 @@ jQuery(function ($) {
     var lazyload_img = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_img = true;
-    $.each( $(".image-carousel"), function( key, value ) {
+    $.each( $(".h9-slider .image-carousel"), function( key, value ) {
         $(this).owlCarousel({
             center: true,
             loop:true,
@@ -270,9 +268,9 @@ jQuery(function ($) {
     var win = $(window),
         header = $('.header-sticky');
     if(header.length > 0) {
-        var offset = (header.offset().top);
+        //var offset = (header.offset().top);
         win.scroll(function() {
-            if (offset < win.scrollTop()) {
+            if (400 < win.scrollTop()) {
                 header.addClass("sticky");
             } else {
                 header.removeClass("sticky");

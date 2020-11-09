@@ -11,6 +11,26 @@ $secondary-color: #bf8040;
 @import '../config/variables.scss';
 
 
+.page-index #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a {
+	color: #fff;
+	&::before{
+		background-color: #fff;
+	}
+}
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .title {
 	font-weight: 600;
 	font-size: 2.6rem;

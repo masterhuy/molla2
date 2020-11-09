@@ -36,7 +36,7 @@
 {else}
 	<div class="filter-products products row">
 		{foreach from = $products_slides item = product}
-			<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-{12/$cols_xs}">
+			<div class="col-lg-{12/$cols_md} col-md-{12/$cols_sm} col-{12/$cols_xs}">
 					{include file="catalog/_partials/miniatures/product-flex.tpl" product=$product}
 			</div>
 		{/foreach}

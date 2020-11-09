@@ -127,6 +127,7 @@
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
+        
         {if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
             <div class="specific_prices">
                 <div class="countdown-box">

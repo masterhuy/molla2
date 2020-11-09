@@ -736,6 +736,9 @@ a:focus {
     background-color: $primary-color;
 }
 .header-13{
+    #hor-menu .gdz-megamenu .nav.level0 > li.open > a{
+        color: $primary-color;
+    }
     .header-middle #search-form{
         .search-box {
             border-color: $primary-color;

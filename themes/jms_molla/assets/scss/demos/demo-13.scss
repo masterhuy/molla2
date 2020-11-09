@@ -39,7 +39,7 @@ $secondary-color: #278bf0;
 			font-weight: 600;
 			right: 0;
 			line-height: 1;
-			top: -2rem !important;
+			top: -1em !important;
 			letter-spacing: -.025em;
 		}
 	}
@@ -70,12 +70,23 @@ $secondary-color: #278bf0;
 			height: 4.2rem;
 			color: #777;
 			border: none;
+			display: none;
 			&::before{
 				font-size: 2.6rem;
 			}
 			&:hover{
 				background-color: transparent;
 				color: $primary-color;
+			}
+		}
+	}
+	.fs-pager-wrapper{
+		display: none;
+		bottom: 1rem;
+		a{
+			&:hover, &.active{
+				background-color: #ccc;
+				border-color: #ccc;
 			}
 		}
 	}
@@ -139,6 +150,9 @@ $secondary-color: #278bf0;
 	background-color: rgba(51, 51, 51, 0.25);
 }
 .h13-banner{
+	.layout-column{
+		margin-bottom: 2rem;
+	}
 	.pb-banner{
 		&.banner-overlay-light{
 			> a::after{
@@ -183,7 +197,7 @@ $secondary-color: #278bf0;
 		.pb-banner-title{
 			color: #fff;
 			font-weight: 600;
-			font-size: 2.4rem;
+			font-size: 1.4rem;
 			letter-spacing: -.025em;
 			margin-bottom: 0;
 			line-height: 1.25;
@@ -191,7 +205,7 @@ $secondary-color: #278bf0;
 		.pb-banner-desc{
 			color: #fff;
 			font-weight: 300;
-			font-size: 2.4rem;
+			font-size: 1.4rem;
 			letter-spacing: -.025em;
 			margin-bottom: 0;
 			line-height: 1.25;
@@ -257,11 +271,6 @@ $secondary-color: #278bf0;
 		margin-top: 0;
 	}
 }
-.h13-producttab{
-	.pb-producttab{
-		margin-top: -41px;
-	}
-}
 .pb-producttab .nav.nav-tabs{
 	border-bottom: .1rem solid #ebebeb;
 	.nav-item{
@@ -303,6 +312,7 @@ $secondary-color: #278bf0;
 		max-width: 100%;
 		.form-control{
 			border-radius: .2rem 0 0 .2rem;
+			border-right: 0;
 			&::placeholder {
 				color: #777;
 			}
@@ -359,7 +369,7 @@ $secondary-color: #278bf0;
 	}
 }
 .pb-service-box{
-	margin-left: -.8rem;
+	margin-left: -1.5rem;
 	.pb-service-content{
 		.pb-service-title{
 			font-weight: 400;
@@ -371,7 +381,32 @@ $secondary-color: #278bf0;
 	}
 }
 
-
+@media (min-width: 768px){
+	.h13-banner{
+		.layout-column{
+			margin-bottom: 0;
+		}
+		.pb-banner-text{
+			.pb-banner-title{
+				font-size: 2.4rem;
+			}
+			.pb-banner-desc{
+				font-size: 2.4rem;
+			}
+			.pb-banner-button{
+				margin-top: .5rem;
+			}
+		}
+	}
+	.h13-producttab .pb-producttab {
+		margin-top: -41px;
+	}
+	.addon-tab .nav-tabs{
+		&.tab-right{
+			text-align: right;
+		}
+	}
+}
 @media (min-width: 1200px){
 	.h13-newsletter{
 		.col-lg-5{
@@ -382,5 +417,26 @@ $secondary-color: #278bf0;
 			flex: 0 0 60%;
 			max-width: 60%;
 		}
+	}
+	.fraction-slider{
+		.prev, .next{
+			display: flex;
+		}
+	}
+	.gdz-slider-wrapper .fs-pager-wrapper{
+		display: block;
+	}
+	.h13-banner .pb-banner-text .pb-banner-button {
+		margin-top: 4.4rem;
+	}
+}
+@media (min-width: 1900px){
+	.gdz-slider-wrapper .fs-pager-wrapper{
+		width: auto;
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		margin-left: -188px;
+		bottom: 3.6rem;
 	}
 }

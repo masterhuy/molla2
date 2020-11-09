@@ -711,6 +711,9 @@ a:focus {
 .header-11 #cart_block .ajax_cart_quantity {
   background-color: #445f84; }
 
+.header-13 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #445f84; }
+
 .header-13 .header-middle #search-form .search-box {
   border-color: #445f84; }
 
@@ -1449,9 +1452,14 @@ a:focus {
     margin-right: 0;
     margin-left: 2.1rem; }
 
-.banner-group .banner-1 .pb-banner-text {
-  right: 2.5rem;
-  left: auto; }
+.banner-group .pb-banner > a > img {
+  width: 100%; }
+
+.banner-group .banner-1 {
+  margin-bottom: 2rem; }
+  .banner-group .banner-1 .pb-banner-text {
+    right: 2.5rem;
+    left: auto; }
 
 .banner-group .banner-2.pb-banner > a::after {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -1470,8 +1478,10 @@ a:focus {
     .banner-group .banner-2 .pb-banner-text .btn:hover {
       color: #fff; }
 
-.banner-group .banner-3 .pb-banner-text {
-  left: 7rem; }
+.banner-group .banner-3 {
+  display: none; }
+  .banner-group .banner-3 .pb-banner-text {
+    left: 7rem; }
 
 .banner-group .banner-4 .pb-banner-text {
   top: auto;
@@ -1554,8 +1564,14 @@ a:focus {
 .new-arrival .owl-dots {
   margin-top: 2.2rem; }
 
+.new-arrival .categorytab-products .owl-item:not(:first-child) .product-miniature {
+  border-left: .1rem solid #eeeeee; }
+
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
   font-size: 1.4rem; }
+
+.banner-category .layout-column {
+  margin-bottom: 2rem; }
 
 .banner-category .pb-banner:hover .pb-banner-text {
   padding-bottom: 4.5rem;
@@ -1697,7 +1713,8 @@ a:focus {
 .newsletter .email_subscription .form-control {
   background-color: transparent;
   font-style: italic;
-  color: #333; }
+  color: #333;
+  border-color: transparent; }
   .newsletter .email_subscription .form-control::-webkit-input-placeholder {
     color: #777; }
   .newsletter .email_subscription .form-control:-ms-input-placeholder {
@@ -1723,7 +1740,11 @@ a:focus {
 @media screen and (min-width: 768px) {
   .cta-horizontal {
     padding-left: 5rem;
-    padding-right: 5rem; } }
+    padding-right: 5rem; }
+  .banner-group .banner-1 {
+    margin-bottom: 0; }
+  .banner-group .banner-3 {
+    display: block; } }
 
 @media screen and (min-width: 992px) {
   .cta-horizontal {
