@@ -746,6 +746,9 @@ a:focus {
 .header-17 .header-middle #cart_block > a:hover .cart_block_total {
   color: #1cc0a0; }
 
+.header-18 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #1cc0a0; }
+
 .header-20 .header-middle #search-form .button-search {
   background-color: #1cc0a0; }
 
@@ -1656,8 +1659,8 @@ a:focus {
 .btn-more {
   text-transform: uppercase;
   border-color: #ebebeb; }
-  .btn-more i {
-    margin-right: 1.5rem; }
+  .btn-more i:last-child {
+    margin-left: 1.5rem; }
 
 .instagram-feed {
   margin-bottom: 0; }

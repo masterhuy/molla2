@@ -292,8 +292,8 @@ $secondary-color: #19b395;
 .btn-more{
 	text-transform: uppercase;
 	border-color: #ebebeb;
-	i{
-		margin-right: 1.5rem;
+	i:last-child{
+		margin-left: 1.5rem;
 	}
 }
 .instagram-feed{

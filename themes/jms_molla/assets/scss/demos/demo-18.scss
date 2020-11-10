@@ -11,7 +11,20 @@ $secondary-color: #bf8040;
 @import '../config/variables.scss';
 
 
-
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .title {
 	font-weight: 600;
 	font-size: 2.2rem;
@@ -63,19 +76,23 @@ $secondary-color: #bf8040;
 	margin-top: 1rem;
 	margin-bottom: 0;
 }
+.fs-pager-wrapper{
+	bottom: 5.4rem;
+	display: none;
+	a.active {
+		background-color: $primary-color;
+		border-color: $primary-color;
+	}
+}
 .gdz-slider-wrapper{
 	.intro-content{
 		display: inline-flex;
 		flex-direction: column;
 		margin: 0 auto;
 		border: .1rem solid #fff;
-		padding: 6rem 2rem;
 		width: 740px;
 		max-width: 85%;
-		border: .1rem solid #fff;
-		padding: 6rem 2rem;
-		width: 740px;
-		max-width: 85%;
+		padding: 3rem 2rem;
 		border-top-width: 0;
 		border-bottom-width: 0;
 		transform: none;
@@ -177,7 +194,7 @@ $secondary-color: #bf8040;
 
 .intro-title {
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: 2rem;
 	line-height: 1;
 	letter-spacing: .01em;
 	margin-top: 1rem;
@@ -265,6 +282,8 @@ $secondary-color: #bf8040;
 	}
 }
 .widget-banner{
+	max-width: 277px;
+	margin: 0 auto;
 	.pb-banner-text{
 		top: 50%;
 		left: 3rem;
@@ -537,7 +556,7 @@ $secondary-color: #bf8040;
 	}
 
 	.intro-title {
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 
 	.intro-text {
@@ -551,7 +570,7 @@ $secondary-color: #bf8040;
 	}
 
 	.intro-title {
-		font-size: 7rem;
+		font-size: 4rem;
 	}
 
 }
@@ -568,7 +587,7 @@ $secondary-color: #bf8040;
 	}
 
 	.intro-title {
-		font-size: 8.6rem;
+		font-size: 5rem;
 	}
 
 	.intro-text {
@@ -577,6 +596,12 @@ $secondary-color: #bf8040;
 }
 
 @include mq('xl') {
+	.fs-pager-wrapper {
+		display: block;
+	}
+	.gdz-slider-wrapper .intro-content{
+		padding: 6rem 2rem;
+	}
 	.intro-slider-container,
 	.intro-slide {
 		min-height: 0;

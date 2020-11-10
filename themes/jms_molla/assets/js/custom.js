@@ -180,12 +180,9 @@ jQuery(function ($) {
             lazyLoad:lazyload_ins2,
             responsive:{
                 0:{
-                    items: 1
-                },
-                360:{
                     items: 2
                 },
-                600:{
+                768:{
                     items: 3
                 },
                 992:{

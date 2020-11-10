@@ -91,20 +91,7 @@ $secondary-color: #bf8040;
 	}
 }
 
-.col-banner-right{
-	.banner{
-		margin-left: 5rem;
-	}
-}
-
-.col-banner-left{
-	.banner{
-		margin-right: 5rem;
-	}
-}
-
 .video-banner{
-	height: 100vh;
 	max-height: 900px;
 	display: flex;
 	align-items: center;
@@ -121,6 +108,7 @@ $secondary-color: #bf8040;
 }
 
 .shop-social{
+	margin-bottom: 5rem;
 	&::before{
 		content: '';
 		width: .1rem;
@@ -685,3 +673,26 @@ blockquote {
 		display: inline-block;
 	}
 }
+
+@media (min-width: 992px){
+	.shop-social{
+		margin-bottom: 0;
+	}
+	.col-banner-right{
+		.banner{
+			margin-left: 5rem;
+		}
+	}
+
+	.col-banner-left{
+		.banner{
+			margin-right: 5rem;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.video-banner{
+		height: 100%;
+	}
+}
+

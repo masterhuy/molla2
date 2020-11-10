@@ -85,8 +85,7 @@ $primary-color: #c96;
 		}
 	}
 	&.banner-main{
-		margin-left: 3rem;
-		margin-right: 3rem;
+		margin-top: 2rem;
 		overflow: visible;
 		&.content-right{
 			.pb-banner-text{
@@ -96,14 +95,17 @@ $primary-color: #c96;
 		}
 		.pb-banner-text{
 			text-align: left;
-			padding: 6rem 8rem;
-			width: calc(100% - 65px);
+			padding: 0;
+			width: 100%;
 			background: #fff;
 			bottom: -170px;
 			top: auto;
 			left: 0;
 			margin: 0;
+			margin-top: 2rem;
 			display: block;
+			position: static;
+			padding: 0;
 			.pb-banner-title{
 				font-weight: 600;
 				font-size: 3rem;
@@ -258,4 +260,28 @@ $primary-color: #c96;
 }
 .instagram-feed{
 	margin-bottom: 0;
+}
+.banner-overlay-dark .pb-banner > a:hover::after {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@media (min-width: 768px){
+	.pb-banner.banner-main {
+		margin-top: 0;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+}
+@media (min-width: 992px){
+	.pb-banner.banner-main .pb-banner-text{
+		position: absolute;
+		padding: 6rem 8rem;
+		width: calc(100% - 65px);
+		margin-top: 0;
+	}
+	.banner-overlay-dark .pb-banner > a:hover::after {
+		opacity: 1;
+		visibility: visible;
+	}
 }

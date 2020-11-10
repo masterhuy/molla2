@@ -57,7 +57,7 @@
                         {$gdzSetting.footer_copyright_content nofilter}
                     </div>
                 {/if}
-                <div class="col-12 col-lg-6 col-payments">
+                <div class="col-12 col-lg-6 col-payments text-lg-right">
                     {include file='_partials/socials.tpl'}
                 </div>
             </div>

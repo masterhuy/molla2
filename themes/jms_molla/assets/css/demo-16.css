@@ -746,6 +746,9 @@ a:focus {
 .header-17 .header-middle #cart_block > a:hover .cart_block_total {
   color: #c96; }
 
+.header-18 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #c96; }
+
 .header-20 .header-middle #search-form .button-search {
   background-color: #c96; }
 
@@ -1488,22 +1491,24 @@ a:focus {
     color: #333; }
 
 .pb-banner.banner-main {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-top: 2rem;
   overflow: visible; }
   .pb-banner.banner-main.content-right .pb-banner-text {
     right: 0;
     left: auto; }
   .pb-banner.banner-main .pb-banner-text {
     text-align: left;
-    padding: 6rem 8rem;
-    width: calc(100% - 65px);
+    padding: 0;
+    width: 100%;
     background: #fff;
     bottom: -170px;
     top: auto;
     left: 0;
     margin: 0;
-    display: block; }
+    margin-top: 2rem;
+    display: block;
+    position: static;
+    padding: 0; }
     .pb-banner.banner-main .pb-banner-text .pb-banner-title {
       font-weight: 600;
       font-size: 3rem;
@@ -1621,5 +1626,25 @@ a:focus {
 
 .instagram-feed {
   margin-bottom: 0; }
+
+.banner-overlay-dark .pb-banner > a:hover::after {
+  opacity: 0;
+  visibility: hidden; }
+
+@media (min-width: 768px) {
+  .pb-banner.banner-main {
+    margin-top: 0;
+    margin-left: 3rem;
+    margin-right: 3rem; } }
+
+@media (min-width: 992px) {
+  .pb-banner.banner-main .pb-banner-text {
+    position: absolute;
+    padding: 6rem 8rem;
+    width: calc(100% - 65px);
+    margin-top: 0; }
+  .banner-overlay-dark .pb-banner > a:hover::after {
+    opacity: 1;
+    visibility: visible; } }
 
 /*# sourceMappingURL=demo-16.css.map */

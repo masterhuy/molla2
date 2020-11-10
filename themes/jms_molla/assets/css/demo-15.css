@@ -746,6 +746,9 @@ a:focus {
 .header-17 .header-middle #cart_block > a:hover .cart_block_total {
   color: #c96; }
 
+.header-18 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #c96; }
+
 .header-20 .header-middle #search-form .button-search {
   background-color: #c96; }
 
@@ -1500,14 +1503,7 @@ a:focus {
   .col-3-products .pb-text-content {
     letter-spacing: 0; }
 
-.col-banner-right .banner {
-  margin-left: 5rem; }
-
-.col-banner-left .banner {
-  margin-right: 5rem; }
-
 .video-banner {
-  height: 100vh;
   max-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1523,28 +1519,27 @@ a:focus {
   .video-banner p {
     max-width: 100%; }
 
-.shop-social::before {
-  content: '';
-  width: .1rem;
-  display: block;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #ebebeb; }
-
-.shop-social .pb-heading {
-  margin-bottom: 2.8rem; }
-
-.shop-social .pb-text-content {
-  line-height: 1.625;
-  letter-spacing: 0; }
-
-.shop-social .pb-social {
-  margin-top: 3.5rem; }
+.shop-social {
+  margin-bottom: 5rem; }
+  .shop-social::before {
+    content: '';
+    width: .1rem;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #ebebeb; }
+  .shop-social .pb-heading {
+    margin-bottom: 2.8rem; }
+  .shop-social .pb-text-content {
+    line-height: 1.625;
+    letter-spacing: 0; }
+  .shop-social .pb-social {
+    margin-top: 3.5rem; }
 
 .testimonial .addon-box {
   max-width: 580px;
@@ -1930,5 +1925,17 @@ blockquote cite {
       display: none; }
   .productbox-3 .content_price span.price {
     display: inline-block; }
+
+@media (min-width: 992px) {
+  .shop-social {
+    margin-bottom: 0; }
+  .col-banner-right .banner {
+    margin-left: 5rem; }
+  .col-banner-left .banner {
+    margin-right: 5rem; } }
+
+@media (min-width: 1200px) {
+  .video-banner {
+    height: 100%; } }
 
 /*# sourceMappingURL=demo-15.css.map */

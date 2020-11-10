@@ -16,11 +16,12 @@
 	#hor-menu{
 		.nav > li > a{
 			padding-top: 0;
-			letter-spacing: .05em;
+			letter-spacing: .01em;
 			text-transform: uppercase;
 		}
 		.gdz-megamenu .nav.level0 > li > a{
-			line-height: 52px;
+			line-height: 51px;
+			padding-right: 3.6rem;
 		}
 	}
 	.header-middle {
@@ -53,9 +54,6 @@
 			font-size: 2.6rem;
 			color: #666;
 			margin-left: -.3rem;
-			&:hover{
-				color: $primary-color;
-			}
 		}
 		#search-form{
 			max-width: 570px;
@@ -107,7 +105,7 @@
 			> a{
 				color: #333;
 				flex-direction: row;
-				.text-cart{
+				.text{
 					display: none;
 				}
 				.ajax_cart_quantity{
@@ -136,7 +134,7 @@
 			> div{
 				padding-right: 0;
 				padding-top: 25px;
-				padding-bottom: 23.5px;
+				padding-bottom: 25.5px;
 			}
 		}
 		.menu > li > a {
@@ -180,16 +178,16 @@
 		}
 	}
 	#hor-menu .gdz-megamenu .nav.level0 > li{
-		&.open > a::before{
-			bottom: 1rem;
-			top: auto;
-		}
 		> a::before{
-			bottom: 1rem;
+			bottom: 0;
 			top: auto;
+			height: .2rem;
 		}
 	}
 	.header-intro-clearance{
+		.wishlist{
+			padding-left: 0;
+		}
 		.user-info{
 			> a{
 				padding-right: 0;
