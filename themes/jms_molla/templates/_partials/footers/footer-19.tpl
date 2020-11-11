@@ -25,7 +25,7 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="layout-column block col-sm-6 col-lg-3">
+            <div class="layout-column col-sm-6 col-lg-3">
                 <div class="logo-footer">
                     {include file='_partials/footers/logo.tpl'}
                 </div>

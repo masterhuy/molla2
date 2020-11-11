@@ -725,6 +725,9 @@ a:focus {
 .header-13 .header-bottom .vermenu-btn {
   background-color: #c96; }
 
+.header-14 .header-middle .col-right a:hover .text {
+  color: #c96 !important; }
+
 .header-14 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
   color: #c96; }
 
@@ -1936,6 +1939,6 @@ blockquote cite {
 
 @media (min-width: 1200px) {
   .video-banner {
-    height: 100%; } }
+    height: 100vh; } }
 
 /*# sourceMappingURL=demo-15.css.map */

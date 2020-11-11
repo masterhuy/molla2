@@ -2004,6 +2004,9 @@ footer .row, header .row {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+#mobile-header .header-top .header-left .text-h1 {
+  display: none; }
+
 #mobile-header #header-mobile-top {
   padding: 1.5rem 0; }
 
@@ -4771,8 +4774,6 @@ footer .row, header .row {
   .header-19 .header-middle .search-form i {
     font-size: 2rem;
     color: #333; }
-    .header-19 .header-middle .search-form i:hover {
-      color: #a6c76c; }
   .header-19 .header-middle #search-form {
     max-width: 576px;
     width: 100%;
@@ -4813,6 +4814,10 @@ footer .row, header .row {
   .header-19 .header-bottom {
     background-color: #fff;
     border-bottom: .1rem solid #ebebeb; }
+    .header-19 .header-bottom.sticky {
+      max-width: 1290px;
+      margin-left: auto;
+      margin-right: auto; }
     .header-19 .header-bottom .container::before {
       display: none; }
     .header-19 .header-bottom .vermenu-btn i {
@@ -4885,6 +4890,8 @@ footer .row, header .row {
       padding-bottom: .7rem; }
       .header-20 .header-top .col-right .row > div.currency-info, .header-20 .header-top .col-right .row > div.languages-info {
         font-weight: 300; }
+      .header-20 .header-top .col-right .row > div.user-info > a {
+        padding-right: 0; }
     .header-20 .header-top .col-right .header-menu {
       left: auto;
       right: 0; }
@@ -4897,13 +4904,11 @@ footer .row, header .row {
   .header-20 .header-middle .search-form i {
     font-size: 2.2rem;
     color: #333; }
-    .header-20 .header-middle .search-form i:hover {
-      color: #a6c76c; }
   .header-20 .header-middle #search-form {
-    max-width: 832px;
+    max-width: 500px;
     width: 100%;
     margin-left: auto;
-    margin-right: 6.9rem; }
+    margin-right: auto; }
     .header-20 .header-middle #search-form .search-box {
       background: #fff;
       border-radius: .2rem;
@@ -4945,10 +4950,13 @@ footer .row, header .row {
       color: #fff;
       padding-top: 0;
       line-height: 52px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-right: 0; }
       .header-20 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
         top: auto;
         bottom: 0; }
+      .header-20 #hor-menu .gdz-megamenu .nav.level0 > li > a .caret {
+        right: -3rem; }
   .header-20 .header-bottom .container {
     background-color: #333;
     width: 1400px;
@@ -4957,7 +4965,7 @@ footer .row, header .row {
     .header-20 .header-bottom .container::before {
       display: none; }
   .header-20 .header-bottom .vermenu {
-    width: 264px; }
+    width: auto; }
     .header-20 .header-bottom .vermenu:hover .vermenu-btn::after, .header-20 .header-bottom .vermenu.show .vermenu-btn::after {
       content: '\f191'; }
     .header-20 .header-bottom .vermenu.show .vermenu-btn::before {
@@ -4972,7 +4980,7 @@ footer .row, header .row {
       letter-spacing: -.01em;
       padding: 1.55rem 5rem 1.55rem 2rem;
       position: relative;
-      min-width: 264px;
+      min-width: 200px;
       text-transform: uppercase;
       font-size: 1.4rem;
       padding-left: 5.6rem;
@@ -5012,8 +5020,17 @@ footer .row, header .row {
       transition: .35s all; }
   .header-20 .sticky-wrapper .container {
     position: relative; }
+    .header-20 .sticky-wrapper .container::after {
+      content: '';
+      position: absolute;
+      top: 1.8rem;
+      bottom: 1.8rem;
+      width: .1rem;
+      background-color: #ccc;
+      right: 20.1%;
+      display: none; }
   .header-20 .sticky-wrapper .text {
-    margin-right: 4rem;
+    margin-right: 1rem;
     margin-left: 1.7rem; }
     .header-20 .sticky-wrapper .text p {
       color: #fff;
@@ -5039,6 +5056,23 @@ footer .row, header .row {
     text-transform: capitalize; }
     .header-20 .header-middle .user-info > a::after {
       display: none; }
+
+@media (min-width: 1200px) {
+  .header-20 #hor-menu .gdz-megamenu .nav.level0 > li > a {
+    padding-right: 3.5rem; }
+    .header-20 #hor-menu .gdz-megamenu .nav.level0 > li > a .caret {
+      right: -.5rem; } }
+
+@media (min-width: 1367px) {
+  .header-20 .header-middle #search-form {
+    max-width: 832px;
+    margin-right: 6.9rem; }
+  .header-20 .sticky-wrapper .container::after {
+    display: block; }
+  .header-20 .sticky-wrapper .text {
+    margin-right: 4rem; }
+  .header-20 .header-bottom .vermenu .vermenu-btn {
+    min-width: 264px; } }
 
 /*--------------------- 2.1.Menu -------------------- */
 .main-nav {
@@ -6389,26 +6423,12 @@ footer .row, header .row {
     padding-bottom: 2.9rem; }
   #footer.footer-18 .widget {
     margin-bottom: 3.3rem; }
-  #footer.footer-18 #footer-main .layout-column {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%; }
-    #footer.footer-18 #footer-main .layout-column.block {
-      padding-left: 6rem; }
   #footer.footer-18 #footer-main .social-icon {
     border-color: #666; }
   #footer.footer-19 #footer-main {
     padding-top: 4.3rem; }
   #footer.footer-19 .widget {
     margin-bottom: 3.3rem; }
-  #footer.footer-19 #footer-main .layout-column {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%; }
-    #footer.footer-19 #footer-main .layout-column.block {
-      padding-left: 6rem; }
   #footer.footer-20 .footer-main {
     padding-top: 3.5rem; }
     #footer.footer-20 .footer-main .container::before {
@@ -6420,7 +6440,7 @@ footer .row, header .row {
       left: 10px;
       right: 10px;
       background-color: #ebebeb; }
-    #footer.footer-20 .footer-main .html-1 {
+    #footer.footer-20 .footer-main .html-1 p {
       padding-right: 7rem; }
 
 #footer {
@@ -6648,6 +6668,15 @@ footer .row, header .row {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .footer .widget-about .social-icon:not(:last-child) {
     margin-right: .4rem; } }
+
+@media (min-width: 1200px) {
+  #footer.footer-19 #footer-main .layout-column, #footer.footer-18 #footer-main .layout-column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+    #footer.footer-19 #footer-main .layout-column.block, #footer.footer-18 #footer-main .layout-column.block {
+      padding-left: 6rem; } }
 
 /* Footer Dark */
 .footer-dark {
@@ -9078,6 +9107,8 @@ footer .row, header .row {
     font-size: 1.4rem; }
   .productbox-12 .product-list-reviews.empty .grade-stars.small-stars span {
     display: inline-block; }
+  .productbox-12.product-miniature .product-action {
+    position: static; }
 
 .product-miniature .product-action {
   position: absolute;

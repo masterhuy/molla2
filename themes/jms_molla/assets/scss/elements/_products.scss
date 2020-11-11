@@ -1272,6 +1272,9 @@
 	.product-list-reviews.empty .grade-stars.small-stars span{
 		display: inline-block;
 	}
+	&.product-miniature .product-action{
+		position: static;
+	}
 }
 
 .product-miniature .product-action{

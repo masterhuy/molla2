@@ -725,6 +725,9 @@ a:focus {
 .header-13 .header-bottom .vermenu-btn {
   background-color: #fcb941; }
 
+.header-14 .header-middle .col-right a:hover .text {
+  color: #fcb941 !important; }
+
 .header-14 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
   color: #fcb941; }
 

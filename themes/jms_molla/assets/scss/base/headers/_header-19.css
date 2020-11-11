@@ -1,0 +1,130 @@
+/* Header 19 */
+.header-19 {
+  background-color: #333; }
+  .header-19 .header-top {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 0; }
+    .header-19 .header-top .container::before {
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: -2px;
+      left: 10px;
+      right: 10px;
+      background-color: #444; }
+    .header-19 .header-top .text-h1 {
+      display: none; }
+    .header-19 .header-top .col-left {
+      letter-spacing: -.01em; }
+      .header-19 .header-top .col-left i {
+        font-size: 1.6rem;
+        margin-right: .8rem; }
+    .header-19 .header-top .col-right .row > div {
+      margin-left: 4rem;
+      padding-top: 8.5px;
+      padding-bottom: 6.5px; }
+    .header-19 .header-top .col-right .header-menu {
+      left: auto;
+      right: 0; }
+    .header-19 .header-top .col-right .header-dropdown > a {
+      letter-spacing: 0; }
+  .header-19 .header-middle .container > .row {
+    margin: 0; }
+    .header-19 .header-middle .container > .row .layout-column {
+      padding: 0; }
+  .header-19 .header-middle img.logo {
+    padding-bottom: 3px; }
+  .header-19 .header-middle .search-form i {
+    font-size: 2rem;
+    color: #333; }
+  .header-19 .header-middle #search-form {
+    max-width: 576px;
+    width: 100%;
+    margin-left: 0; }
+    .header-19 .header-middle #search-form .search-box {
+      background: #fff;
+      border-radius: 3px;
+      border-color: #ebebeb; }
+    .header-19 .header-middle #search-form .input-group {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+    .header-19 .header-middle #search-form .gdz-search-input {
+      height: 38px;
+      padding: 1.2rem 2.4rem 1.1rem 0; }
+    .header-19 .header-middle #search-form .button-search {
+      height: 38px;
+      padding-right: 1.6rem;
+      padding-left: 1.7rem; }
+  .header-19 .header-middle .wishlist > a,
+  .header-19 .header-middle .account > a,
+  .header-19 .header-middle #cart_block > a {
+    color: #fff; }
+  .header-19 .header-middle .header-right .row {
+    padding-top: 1px;
+    margin-left: 0;
+    margin-right: 0; }
+    .header-19 .header-middle .header-right .row > div {
+      padding-right: 0;
+      padding-top: 20px;
+      padding-bottom: 20.5px;
+      padding-left: 3.4rem; }
+  .header-19 .header-middle .menu > li > a {
+    letter-spacing: .01em; }
+  .header-19 .header-middle .menu.sf-arrows > li > .sf-with-ul {
+    padding-right: 1.5rem; }
+  .header-19 .header-bottom {
+    background-color: #fff;
+    border-bottom: .1rem solid #ebebeb; }
+    .header-19 .header-bottom.sticky {
+      max-width: 1290px;
+      margin-left: auto;
+      margin-right: auto; }
+    .header-19 .header-bottom .container::before {
+      display: none; }
+    .header-19 .header-bottom .vermenu-btn i {
+      font-size: 1rem;
+      position: absolute;
+      right: 1.5rem; }
+    .header-19 .header-bottom .vermenu .menu-dropdown {
+      border: .1rem solid #ebebeb; }
+  .header-19 .sticky-wrapper .container {
+    position: relative; }
+  .header-19 .sticky-wrapper .text p {
+    padding-top: .1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: -.01em; }
+  .header-19 .sticky-wrapper .text i {
+    color: #333;
+    font-size: 1.6rem;
+    letter-spacing: -.01em;
+    margin-right: 1.5rem; }
+  .header-19 .sticky-wrapper .text .highlight {
+    color: #333; }
+  .header-19 #hor-menu .gdz-megamenu .nav.level0 > li.open > a::before {
+    bottom: 0;
+    top: auto; }
+  .header-19 #hor-menu .gdz-megamenu .nav.level0 > li > a {
+    text-transform: uppercase;
+    line-height: 51px; }
+    .header-19 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
+      bottom: 0;
+      top: auto; }
+  .header-19 .header-intro-clearance #cart_block > a i,
+  .header-19 .header-intro-clearance .account > a i,
+  .header-19 .header-intro-clearance #wishlist_block > a i {
+    margin-bottom: .5rem; }
+  .header-19 .header-intro-clearance .user-info > a {
+    padding-right: 0; }
+    .header-19 .header-intro-clearance .user-info > a::after {
+      display: none; }
+  .header-19 .header-intro-clearance #cart_block > a .ajax_cart_quantity {
+    color: #333; }
+
+/*# sourceMappingURL=_header-19.css.map */

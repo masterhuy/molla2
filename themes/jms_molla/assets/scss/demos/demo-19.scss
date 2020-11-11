@@ -10,7 +10,20 @@ $secondary-color: #eca62d;
 @import '../config/fonts.scss';
 @import '../config/variables.scss';
 
-
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .main-site{
 	width: 100%;
 	max-width: 1290px;
@@ -131,6 +144,11 @@ body {
 		}
 	}
 }
+.pb-button{
+	&.pb-button-right, .pb-button-left{
+		text-align: center;
+	}
+}
 .pb-banner{
 	&.big-btn{
 		.pb-banner-text{
@@ -234,6 +252,30 @@ body {
 .banner-overlay-dark .pb-banner > a::after {
 	background-color: rgba(51, 51, 51, 0.25);
 }
+.games-soon{
+	.pb-image-carousel{
+		.image-item > a{
+			&:hover::after{
+				opacity: 1;
+				visibility: visible;
+			}
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background-color: rgba(51,51,51,0.25);
+				z-index: 1;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.4s ease;
+			}
+		}
+	}
+}
 .pb-service-box{
 	.pb-service-icon{
 		min-width: 5.4rem;
@@ -246,7 +288,7 @@ body {
 .icon-box-side{
 	.row > .layout-column:not(:last-child)::before{
 		content: '';
-		display: block;
+		display: none;
 		width: .1rem;
 		height: 3.7rem;
 		background-color: #e9e9e9;
@@ -262,7 +304,7 @@ body {
 			margin-left: 1.5rem;
 		}
 		.nav-link{
-			font-size: 2.4rem;
+			font-size: 2rem;
 			padding: .8rem .9rem;
 			color: #ccc;
 			font-weight: 600;
@@ -335,7 +377,8 @@ body {
 .h19-newsletter{
 	.container{
 		max-width: 1170px;
-		padding: 3.7rem 7rem;
+		width: 100%;
+		padding: 3.7rem 1rem;
 		background-image: url('../images/demos/demo-19/bg-2.jpg');
 		background-size: cover;
 		background-position: center center;
@@ -349,11 +392,13 @@ body {
 		font-size: 1.6rem;
 		letter-spacing: -.01em;
 		text-transform: uppercase;
+		margin-bottom: 1rem;
 	}
 	.pb-text-content p{
 		letter-spacing: 0;
 		line-height: 1.4;
 		margin-bottom: 0;
+		margin-bottom: 1rem;
 	}
 	.email_subscription{
 		max-width: 550px;
@@ -407,7 +452,31 @@ body {
 		margin-top: 1rem;
 	}
 }
-
+@media (min-width: 768px){
+	.pb-producttab .nav.nav-tabs .nav-item .nav-link{
+		font-size: 2.2rem;
+	}
+}
+@media (min-width: 992px){
+	.pb-button{
+		&.pb-button-right{
+			text-align: right;
+		}
+		&.pb-button-left{
+			text-align: left;
+		}
+	}
+	.pb-producttab .nav.nav-tabs .nav-item .nav-link{
+		font-size: 2.4rem;
+	}
+	.h19-newsletter .container{
+		padding-left: 7rem;
+		padding-right: 7rem;
+		.pb-heading, .pb-text-content p{
+			margin-bottom: 0;
+		}
+	}
+}
 @include mq('xl') {
 	body {
 		background-image: url('../images/demos/demo-19/bg-1.jpg');
@@ -415,6 +484,10 @@ body {
 		background-position: center top;
 		background-repeat: no-repeat;
 	}
+	.icon-box-side .row > .layout-column:not(:last-child)::before {
+		display: block;
+	}
+	
 }
 .games-soon {
 	@include mq('lg') {

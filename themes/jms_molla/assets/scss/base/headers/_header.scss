@@ -1271,6 +1271,13 @@ footer .row, header .row{
 	transition: all 0.3s;
 }
 #mobile-header{
+	.header-top{
+		.header-left{
+			.text-h1{
+				display: none;
+			}
+		}
+	}
 	#header-mobile-top{
 		padding: 1.5rem 0;
 	}

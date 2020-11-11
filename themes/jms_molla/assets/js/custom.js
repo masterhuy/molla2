@@ -509,6 +509,10 @@ jQuery(document).ready(function(){
         event: 'hover',
         duration: 100
     });
+    $('.pb-menu .gdz-megamenu').jmsMegaMenu({
+        event: 'hover',
+        duration: 100
+    });
     $('#off-canvas-menu .gdz-megamenu').jmsMegaMenu({
         event: 'click',
         duration: 100

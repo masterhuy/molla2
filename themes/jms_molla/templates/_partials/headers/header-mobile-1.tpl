@@ -22,7 +22,31 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div id="header-mobile-top" class="header-mobile-top mobile-menu-light{if $gdzSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_mobile_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
+<div class="header-top">
+    <div class="container">
+        <div class="row no-margin">
+            <div class="header-left">
+                {$gdzSetting.topbar_content nofilter}
+            </div>
+            <div class="header-right">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#link">Links</button>
+                <div id="link" class="collapse">
+                    {widget_block name="ps_currencyselector"}
+                        {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
+                    {/widget_block}
+                    {widget_block name="ps_languageselector"}
+                        {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}
+                    {/widget_block}
+                    {widget_block name="ps_customersignin"}
+                        {include 'module:ps_customersignin/ps_customersignin.tpl'}
+                    {/widget_block}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="header-mobile-top" class="header-mobile-top mobile-menu-light{if $gdzSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_mobile_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
     <div class="container">
         <div class="row align-items-center no-margin">
             <div class="layout-column col-auto header-left">

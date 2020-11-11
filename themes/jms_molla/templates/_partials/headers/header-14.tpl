@@ -67,7 +67,7 @@
                         <div class="account">
                             <a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}">
                                 <i class="icon-user"></i>
-                                <span>{l s='Account' d='Shop.Theme.Actions'}</span>
+                                <span class="text">{l s='Account' d='Shop.Theme.Actions'}</span>
                             </a>
                         </div>
                         {if ($gdzSetting.wishlist == 1)}

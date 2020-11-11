@@ -755,6 +755,9 @@ a:focus {
     }
 }
 .header-14{
+    .header-middle .col-right a:hover .text{
+        color: $primary-color !important;
+    }
     #hor-menu .gdz-megamenu .nav.level0 > li.open > a{
         color: $primary-color;
     }
@@ -773,6 +776,7 @@ a:focus {
     .sticky-wrapper .text i{
         color: $primary-color;
     }
+
 }
 .header-16, .header-17{
     .header-middle{

@@ -388,13 +388,6 @@
 			margin-bottom: 3.3rem;
 		}
 		#footer-main{
-			.layout-column{
-				flex: 0 0 25%;
-				max-width: 25%;
-				&.block{
-					padding-left: 6rem;
-				}
-			}
 			.social-icon{
 				border-color: #666;
 			}
@@ -406,15 +399,6 @@
 		}
 		.widget{
 			margin-bottom: 3.3rem;
-		}
-		#footer-main{
-			.layout-column{
-				flex: 0 0 25%;
-				max-width: 25%;
-				&.block{
-					padding-left: 6rem;
-				}
-			}
 		}
 	}
 	&.footer-20{
@@ -432,7 +416,7 @@
 					background-color: #ebebeb;
 				}
 			}
-			.html-1{
+			.html-1 p{
 				padding-right: 7rem;
 			}
 		}
@@ -725,6 +709,19 @@
 		.widget-about {
 			.social-icon:not(:last-child) {
 				margin-right: .4rem;
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	#footer{
+		&.footer-19, &.footer-18{
+			#footer-main .layout-column {
+				flex: 0 0 25%;
+				max-width: 25%;
+				&.block{
+					padding-left: 6rem;
+				}
 			}
 		}
 	}

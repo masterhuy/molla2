@@ -55,9 +55,6 @@
 		.search-form i{
 			font-size: 2rem;
 			color: #333;
-			&:hover{
-				color: $primary-color;
-			}
 		}
 		#search-form{
 			max-width: 576px;
@@ -107,6 +104,11 @@
 	.header-bottom{
 		background-color: #fff;
 		border-bottom: .1rem solid #ebebeb;
+		&.sticky{
+			max-width: 1290px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		.container::before{
 			display: none;
 		}
