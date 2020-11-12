@@ -1093,6 +1093,15 @@ footer .row, header .row{
 		animation-duration: 0.25s;
 		animation-name: fadeIn;
 		animation-timing-function: ease;
+		&.shoppingcart-sidebar{
+			position: fixed;
+			top: 0;
+			right: -300px;
+			z-index: 1000;
+			&.show{
+				right: 0;
+			}
+		}
 		&.show{
 			display: block;
 		}
@@ -1272,9 +1281,57 @@ footer .row, header .row{
 }
 #mobile-header{
 	.header-top{
+		padding: .5rem 0;
+		background-color: #f8f8f8;
 		.header-left{
+			.icon-phone{
+				margin-right: .5rem;
+			}
 			.text-h1{
 				display: none;
+			}
+		}
+		.header-right{
+			position: relative;
+			.btn-link{
+				color: #666;
+				font-weight: 300;
+				padding-right: 2rem;
+				position: relative;
+				border: none;
+				&::after{
+					font-family: "molla";
+					content: '\f110';
+					position: absolute;
+					right: 0;
+					top: 50%;
+					display: inline-block;
+					font-size: 1.2rem;
+					line-height: 1;
+					margin-top: -.7rem;
+				}
+				&:hover, &:focus{
+					border: none;
+				}
+			}
+			#link{
+				min-width: 141px;
+				padding: .6rem 0;
+				.header-dropdown{
+					+ .header-dropdown{
+						margin-left: 0;
+					}
+					a{
+						color: #666;
+					}
+					> a{
+						text-transform: capitalize;
+						padding: .3rem 1.5rem;
+					}
+					.header-menu{
+						right: 100%;
+					}
+				}
 			}
 		}
 	}
@@ -1290,7 +1347,7 @@ footer .row, header .row{
 		color: #333;
 		cursor: pointer;
 	}
-	.user-info > a,
+	// .user-info > a,
 	#wishlist_block > a,
 	#cart_block > a{
 		font-size: 1.1rem;
@@ -1372,6 +1429,7 @@ footer .row, header .row{
 		text-transform: uppercase;
 		margin-top: 2.3rem;
 		margin-bottom: 0;
+		text-align: left;
 	}
 	.social-block{
 		margin-top: 2.5rem;
@@ -1391,6 +1449,52 @@ footer .row, header .row{
 				color: #999;
 				transition: .4s all;
 			}
+		}
+	}
+	.mobile-menu-light{
+		padding: 0;
+		#gdz_ajax_search{
+			padding-top: .5rem;
+		}
+		.user-info{
+			> a{
+				color: #333;
+			}
+		}
+		.search-form.dropdown-menu{
+			margin-top: 0;
+		}
+		.gdz-search-input{
+			border: none;
+			background-color: transparent;
+		}
+		.user-info{
+			.text{
+				display: none;
+			}
+		}
+		#cart_block{
+			.text{
+				display: none;
+			}
+		}
+	}
+	&.header-mobile-1{
+		.mobile-menu-light #cart_block .text{
+			display: block;
+		}
+	}
+	&.header-mobile-2{
+		img.logo{
+			margin: 0 auto;
+		}
+	}
+	&.header-mobile-3{
+		img.logo{
+			margin: 0 auto;
+		}
+		.user-info, #cart_block{
+			margin: 0 auto;
 		}
 	}
 }

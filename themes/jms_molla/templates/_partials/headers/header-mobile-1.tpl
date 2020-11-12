@@ -29,8 +29,8 @@
                 {$gdzSetting.topbar_content nofilter}
             </div>
             <div class="header-right">
-                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#link">Links</button>
-                <div id="link" class="collapse">
+                <button type="button" class="btn btn-link" data-toggle="dropdown">Links</button>
+                <div id="link" class="dropdown-menu">
                     {widget_block name="ps_currencyselector"}
                         {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
                     {/widget_block}
@@ -57,11 +57,6 @@
             </div>
             <div class="layout-column col-auto header-right">
                 <div class="row">
-                    {if ($gdzSetting.customersignin == 1)}
-                        {widget_block name="ps_customersignin"}
-                            {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-                        {/widget_block}
-                    {/if}
                     {if ($gdzSetting.wishlist == 1)}
                         {include file='_partials/headers/wishlist.tpl'}
                     {/if}

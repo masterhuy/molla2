@@ -193,6 +193,8 @@
 .facet ul {
     padding: .2rem 0 2.9rem;
     margin-bottom: 0;
+    max-height: 250px;
+    overflow-y: auto;
 }
 .facet ul li {
     list-style: none;

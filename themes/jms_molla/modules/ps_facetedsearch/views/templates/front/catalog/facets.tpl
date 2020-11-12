@@ -28,14 +28,25 @@
             {if $activeFilters|count}
                 {block name='facets_title'}
                     <div class="facet filter-by">
-                        <p class="facet-title hidden-sm-down">{l s='Filters' d='Shop.Theme.Actions'}:</p>
-                        <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
+                        <p class="facet-title">{l s='Filters' d='Shop.Theme.Actions'}:</p>
+                        <div id="_desktop_search_filters_clear_all" class="clear-all-wrapper">
                             <button data-search-url="{$clear_all_link}" class="btn-default js-search-filters-clear-all">
                                 {l s='Clean all' d='Shop.Theme.Actions'}
                             </button>
                         </div>
                     </div>
                 {/block}
+                <ul>
+                    {foreach from=$activeFilters item="filter"}
+                        {block name='active_filters_item'}
+                            <li class="filter-block">
+                                {l s='%1$s: ' d='Shop.Theme.Catalog' sprintf=[$filter.facetLabel]}
+                                {$filter.label}
+                                <a class="js-search-link icon-close" href="{$filter.nextEncodedFacetsURL}"></a>
+                            </li>
+                        {/block}
+                    {/foreach}
+                </ul>
             {/if}
         {/block}
         {foreach from=$displayedFacets item="facet"}

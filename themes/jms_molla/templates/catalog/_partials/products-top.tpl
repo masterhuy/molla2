@@ -30,12 +30,12 @@
 				{l s='Filters' d='Shop.Theme.Catalog'}
 			</a>
 		</div>
-		<div class="col-4 col-md-6 col-sm-5 col-pagination text-left">
+		<div class="col-12 col-sm-12 col-md-6  col-lg-4 col-pagination text-left">
 			{block name='pagination'}
 				{include file='_partials/pagination.tpl' pagination=$listing.pagination}
 			{/block}
 		</div>
-		<div class="col-8 col-md-6 col-sm-7 col-sort text-right">
+		<div class="col-12 col-sm-12 col-md-6 col-lg-8 col-sort text-right">
 			<div class="sort-by">
 				{if $gdzSetting.shop_sortby == 1}
 					{block name='sort_by'}

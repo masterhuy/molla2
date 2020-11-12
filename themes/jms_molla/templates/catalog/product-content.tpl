@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="row product-detail default">
-    <div class="pb-left-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="pb-left-column col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-2 mb-md-0">
         <div class="pd-left-content">
             {block name='page_content_container'}
                 <section class="page-content" id="content">
