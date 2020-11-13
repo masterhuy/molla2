@@ -267,7 +267,7 @@ jQuery(function ($) {
     if(header.length > 0) {
         //var offset = (header.offset().top);
         win.scroll(function() {
-            if (400 < win.scrollTop()) {
+            if (450 < win.scrollTop()) {
                 header.addClass("sticky");
             } else {
                 header.removeClass("sticky");
@@ -555,7 +555,7 @@ $(document).on('click', '#footer-main.collapsed .block-title', function (e) {
 });
 
 //filter sidebar
-$(document).on('click', '.sidebar-toggler > a', function (e) {
+$(document).on('click', '.sidebar-toggler > .js-open-filter', function (e) {
     e.preventDefault();
     e.stopPropagation();
     $(this).addClass('active');

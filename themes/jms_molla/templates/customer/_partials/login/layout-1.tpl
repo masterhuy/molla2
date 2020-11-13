@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="row login-row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2 mb-md-0">
                     <div class="login-box login-form">
                         <h3>{l s='Login' d='Shop.Theme.CustomerAccount'}</h3>
                         {render file='customer/_partials/login-form.tpl' ui=$login_form}

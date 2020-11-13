@@ -12,14 +12,15 @@
     z-index: -1;
 }
 .jms-popup-box .mfp-close{
-    top: -25px;
-    right: -25px;
+    top: -15px;
+    right: -15px;
     width: 30px;
     height: 30px;
     background: rgba(255,255,255,0.25);
     border-radius: 50%;
 }
 .jms-popup-wrap {
+    width: calc(100% - 20px);
     border-radius: 0;
     color: #9a9a9a;
     display: block;
@@ -30,6 +31,7 @@
     pointer-events: auto;
     position: absolute;
     top: 0;
+    transform: translate(-50%, -50%);
     z-index: 15000001;	
 }
 .jms-popup-wrap .jms-popup-content {
@@ -80,3 +82,13 @@
 }
 .pop_up_edit .cancel, .cancel_edit{display:none;}
 .pop_up_edit .cancel_edit {display:block;}
+
+@media (min-width: 768px){
+    .jms-popup-wrap{
+        width: auto;
+        transform: none;
+    }
+    .jms-popup-box .mfp-close {
+        top: -25px;
+        right: -25px;    }
+}

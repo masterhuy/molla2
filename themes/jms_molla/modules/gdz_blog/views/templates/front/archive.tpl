@@ -25,14 +25,14 @@
 {extends file='page.tpl'}
 {block name="page_content"}
 	{capture name=path}{l s='Archive' mod='gdz_blog'}-{$month nofilter}{/capture}
-	<div class="col-12">
+
 		<h4 class="title-blog">{l s='Archive' mod='gdz_blog'} : {$month nofilter}</h4>
 		{if isset($posts) AND $posts}
 			<div class="post-list row">
 				{foreach from=$posts item=post}
 					{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 					{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
-					<article class="blog-post col-4">
+					<article class="blog-post col-12 col-sm-6 col-md-4">
 						{if $post.link_video && $gdz_blog_setting.GDZBLOG_SHOW_MEDIA}
 							<div class="post-thumb">
 								{$post.link_video nofilter}
@@ -66,5 +66,5 @@
 		{else}
 			{l s='Sorry, dont have any post in this category' mod='gdz_blog'}
 		{/if}
-	</div>
+
 {/block}

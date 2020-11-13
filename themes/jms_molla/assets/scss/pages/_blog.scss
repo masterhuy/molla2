@@ -115,7 +115,7 @@
 #commentForm{
 	margin-top: 1rem;
 	background-color: #fafafa;
-	padding: 4rem 3rem 5rem;
+	padding: 4rem 1rem 5rem;
 	.heading{
 		font-weight: 600;
 		font-size: 1.8rem;
@@ -237,9 +237,6 @@
 	.post-intro p{
 		margin-bottom: 1rem;
 	}
-	.entry-body{
-		padding-left: 1.5rem;
-	}
 }
 .blog-list-title, 
 .category-title,
@@ -296,6 +293,11 @@
 	}
 }
 
+@include mq('sm'){
+	.cat-post-list .entry-body {
+		padding-left: 1.5rem;
+	}
+}
 
 @include mq('md') {
 	.cat-post-list {
@@ -312,5 +314,9 @@
 			flex: 0 0 55%;
 			max-width: 55%;
 		}
+	}
+	#commentForm{
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 }

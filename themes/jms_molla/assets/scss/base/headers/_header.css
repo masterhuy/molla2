@@ -943,6 +943,9 @@ footer .row, header .row {
 #cart_block:hover .dropdown-menu {
   display: block; }
 
+#cart_block .remove-from-cart {
+  margin-left: 1rem; }
+
 #cart_block > a .ajax_cart_quantity {
   min-width: 1.6rem;
   height: 1.6rem;

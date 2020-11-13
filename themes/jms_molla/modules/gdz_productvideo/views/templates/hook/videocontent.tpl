@@ -42,9 +42,11 @@
 {/if}
 
 <style>
-	.jms-popup-wrap {
-		width : {$video_width}px;
-		height :{$video_height}px;
-		margin: -{$video_height/2}px 0 0 -{$video_width/2}px;
+	@media (min-width: 768px){
+		.jms-popup-wrap {
+			width : {$video_width}px;
+			height :{$video_height}px;
+			margin: -{$video_height/2}px 0 0 -{$video_width/2}px;
+		}
 	}
 </style>

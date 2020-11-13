@@ -27,7 +27,7 @@
     <div class="contact-layout-2" id="contact-wrapper">
         <div class="container">
             <div class="row contact-row">
-                <div class="col-md-5">
+                <div class="col-md-5 mb-2 mb-md-0">
                     <div id="contact-info">
                         {widget name="ps_contactinfo" hook='displayRightColumn'}
                     </div>

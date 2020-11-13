@@ -27,7 +27,7 @@
     <div class="contact-layout-3" id="contact-wrapper">
         <div class="container">
             <div class="row contact-row">
-                <div class="col-md-5">
+                <div class="col-md-5 mb-2 mb-md-0">
                     <div class="contact-map" id="contact-map">
                         <img width="100%" src="{$gdzSetting.contact_page_image}" />   
                     </div>

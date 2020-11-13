@@ -47,7 +47,7 @@
 							<div class="item col-12">
 								<div class="blog-post">
 									<div class="row align-items-center">
-										<div class="col-5">
+										<div class="col-12 col-sm-5 mb-2 mb-sm-0">
 											<div class="post-thumb">
 												{if $post.link_video && $gdz_blog_setting.GDZBLOG_SHOW_MEDIA}
 													{$post.link_video}
@@ -58,7 +58,7 @@
 												{/if}
 											</div>
 										</div>
-										<div class="col-7">
+										<div class="col-12 col-sm-7">
 											<div class="entry-body">
 												<ul class="post-meta">
 													<li class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</li>

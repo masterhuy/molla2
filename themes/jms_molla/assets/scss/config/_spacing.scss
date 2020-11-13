@@ -17,6 +17,32 @@
     }
 }
 
+@include mq('sm') {
+	@for $i from 0 through 15 {
+	    .mt-sm-#{$i} {
+	        margin-top: #{$i}rem !important;
+	    }
+	}
+
+	@for $i from 0 through 15 {
+	    .mb-sm-#{$i} {
+	        margin-bottom: #{$i}rem !important;
+	    }
+	}
+
+	@for $i from 0 through 15 {
+	    .pt-sm-#{$i} {
+	        padding-top: #{$i}rem !important;
+	    }
+	}
+
+	@for $i from 0 through 15 {
+	    .pb-sm-#{$i} {
+	        padding-bottom: #{$i}rem !important;
+	    }
+	}
+}
+
 @include mq('md') {
 	@for $i from 0 through 15 {
 	    .mt-md-#{$i} {

@@ -25,7 +25,7 @@
 {block name='page_content'}
     {block name='login_form_container'}
         <div class="login-layout-2 row" id="login-wrapper">
-            <div class="col-md-6 login-image" id="login-image">
+            <div class="col-md-6 login-image mb-2 mb-md-0" id="login-image">
                 <div class="login-box">
                     <img width="100%" src="{$gdzSetting.login_page_image}" />
                 </div>

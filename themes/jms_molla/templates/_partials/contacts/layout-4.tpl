@@ -24,7 +24,7 @@
  *}
 {block name='page_header_container'}{/block}
 {block name='page_content'}
-    <div class="contact-layout-1" id="contact-wrapper">
+    <div class="contact-layout-1 mb-8" id="contact-wrapper">
         <div class="container">
             <div class="contact-map" id="contact-map">
                 <div class="contact-box">

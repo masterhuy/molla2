@@ -25,7 +25,7 @@
 {extends file='page.tpl'}
 {block name="page_content"}
 	{capture name=path}{$tag nofilter}{/capture}
-	<div class="col-12">
+
 		<h4 class="title-blog">{l s='Tag' mod='gdz_blog'} : {$tag nofilter}</h4>
 		{if isset($posts) AND $posts}
 			<div class="post-list row">
@@ -66,5 +66,5 @@
 		{else}
 			{l s='Sorry, dont have any post in this category' mod='gdz_blog'}
 		{/if}
-	</div>
+
 {/block}

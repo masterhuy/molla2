@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Three tips for upgrading your return process instantly </title>
+    <link>https://www.prestashop.com/en/blog/tips-upgrading-returns</link>
+    <description>How to improve your return process management without additional costs?</description>
+     <pubDate>Thu, 12 Nov 2020 18:04:26 +0100</pubDate>
+ <dc:creator>Marek Duda</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-upgrading-returns</guid>
+  </item>
+  <item>
     <title>PrestaShop is committed to supporting commerce</title>
     <link>https://www.prestashop.com/en/blog/prestashop-supporting-commerce</link>
     <description>Dear members of the PrestaShop ecosystem,</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 30 Sep 2020 17:42:59 +0200</pubDate>
  <dc:creator>Neha Sharma</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-experience-trends</guid>
-  </item>
-  <item>
-    <title>The importance of translation in the internationalization of your ecommerce</title>
-    <link>https://www.prestashop.com/en/blog/translation-internationalization-ecommerce</link>
-    <description>International expansion is an especially important factor for the growth of sales from your online store.</description>
-     <pubDate>Mon, 28 Sep 2020 16:33:53 +0200</pubDate>
- <dc:creator>Sara Lázaro EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/translation-internationalization-ecommerce</guid>
   </item>
   </channel>
 </rss>

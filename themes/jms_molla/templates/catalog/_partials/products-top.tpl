@@ -25,12 +25,12 @@
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row align-items-center">
 		<div class="col-4 sidebar-toggler">
-			<a href="#">
+			<a href="#" class="js-open-filter">
 				<i class="icon-bars"></i>
 				{l s='Filters' d='Shop.Theme.Catalog'}
 			</a>
 		</div>
-		<div class="col-12 col-sm-12 col-md-6  col-lg-4 col-pagination text-left">
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-pagination text-left">
 			{block name='pagination'}
 				{include file='_partials/pagination.tpl' pagination=$listing.pagination}
 			{/block}
