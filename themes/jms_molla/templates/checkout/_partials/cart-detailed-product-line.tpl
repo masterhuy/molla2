@@ -24,7 +24,7 @@
  *}
 <div class="product-line-grid row">
     <!--  product left content: image-->
-    <div class="product-line-grid-left col col-12 col-sm-6 col-md-6">
+    <div class="product-line-grid-left col col-12 col-sm-6 col-md-6 mb-2 mb-sm-0">
         <div class="row align-items-center small-gutters">
             <div class="col-auto">
                 {if $product.cover.bySize.cart_default.url}
@@ -109,7 +109,7 @@
     <!--  product left body: description -->
     <div class="product-line-grid-right col col-12 col-sm-6 col-md-6 product-line-actions">
         <div class="row align-items-center justify-content-end">
-            <div class="col col-auto col-md price">
+            <div class="col-12 col-auto col-md price">
                 <span class="product-price">
                     <span class="price">{$product.price}</span>
                     {if $product.unit_price_full}
@@ -117,7 +117,7 @@
                     {/if}
                 </span>
             </div>
-            <div class="col col-auto col-md qty">
+            <div class="col-12 col-auto col-md qty">
                 {if isset($product.is_gift) && $product.is_gift}
                 <span class="gift-quantity">{$product.quantity}</span>
                 {else}
@@ -134,7 +134,7 @@
                 />
                 {/if}
             </div>
-            <div class="col col-auto col-md total">
+            <div class="col-12 col-auto col-md total">
                 <span class="product-price">
                     {if isset($product.is_gift) && $product.is_gift}
                         <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
@@ -143,7 +143,7 @@
                     {/if}
                 </span>
             </div>
-            <div class="col col-auto col-md cart-line-product-actions">
+            <div class="col-12 col-auto col-md cart-line-product-actions">
                 <a
                     class                       = "remove-from-cart"
                     rel                         = "nofollow"

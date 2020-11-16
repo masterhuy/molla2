@@ -122,16 +122,15 @@
                             <textarea name="comment_content"></textarea>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <p class="required"><sup>*</sup> {l s='Required fields' d='Modules.Productcomments.Shop'}</p>
                         </div>
                         <div class="col-md-6 col-sm-6 post-comment-buttons">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="{l s='Cancel' d='Modules.Productcomments.Shop'}">
+                            <button type="button" class="btn btn-outline-gray" data-dismiss="modal" aria-label="{l s='Cancel' d='Modules.Productcomments.Shop'}">
                                 {l s='Cancel' d='Modules.Productcomments.Shop'}
                             </button>
-                            <button type="submit" class="btn btn-default btn-comment">
+                            <button type="submit" class="btn btn-outline-gray btn-comment">
                                 {l s='Send' d='Modules.Productcomments.Shop'}
                             </button>
                         </div>

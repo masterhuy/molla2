@@ -29,7 +29,7 @@
 		<div class="cart-grid">
 			<div class="row first">
 				<!-- Left Block: cart product informations & shpping -->
-				<div class="cart-grid-body col-12 col-lg-9">
+				<div class="cart-grid-body col-12 col-lg-9 mb-2 mb-lg-0">
 					<div class="cart-box">
 						<!-- cart products detailed -->
 						<div class="cart cart-container">

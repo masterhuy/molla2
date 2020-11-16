@@ -29,7 +29,7 @@
     <div class="form-group row align-items-center {if !empty($field.errors)}has-error{/if}">
         <label class="col-md-12 form-control-label{if $field.required} required{/if}">
             {if $field.type !== 'checkbox'}
-                {$field.label}*
+                {$field.label}{if $field.required}*{/if}
             {/if}
         </label>
         <div class="col-md-10{if ($field.type === 'radio-buttons')} form-control-valign{/if}">

@@ -50,7 +50,7 @@
 	<div class="wlp_bought">
 		<ul class="clearfix wlp_bought_list row">
 		{foreach from=$products item=product name=i}
-			<li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="clearfix col-3 address {if $smarty.foreach.i.index % 2}alternate_{/if}item">
+			<li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="clearfix col-6 col-md-4 col-lg-3 address {if $smarty.foreach.i.index % 2}alternate_{/if}item">
 				<div class="wishlist-box">
 				<a href="javascript:;" class="wishlist-box-delete" onclick="WishlistProductManage('wlp_bought', 'delete', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Delete' d='Shop.Theme'}"><i class="fa fa-trash-o"></i></a>
 				<div class="clearfix">

@@ -184,6 +184,9 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+.product-comment-modal .post-comment-buttons .btn{
+  min-width: auto;
+}
 
 .product-comment-modal .post-comment-buttons .btn-comment {
   margin-left: 15px;

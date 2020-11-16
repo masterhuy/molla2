@@ -36,9 +36,11 @@
     {/capture}
 
 	<div class="wishlist-header">
-    <h3>{l s='My wishlists' d='Shop.Theme'}</h3>
-    <a class="wishlist-add float-right" href="javascript:;" onclick="javascript:toggleAddForm();"><i class="fa fa-plus"></i>Add New WishList</a>
-  </div>
+		<h4 class="mb-0">{l s='My wishlists' d='Shop.Theme'}</h4>
+		<a class="wishlist-add float-right" href="javascript:;" onclick="javascript:toggleAddForm();">
+			<i class="fa fa-plus"></i>{l s='Add New WishList' d='Shop.Theme'}
+		</a>
+  	</div>
 
 	{include file='_partials/form-errors.tpl' errors=$errors}
 	{if $id_customer|intval neq 0}
@@ -52,7 +54,7 @@
       <button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default btn-primary" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Save' d='Shop.Theme'}</button>
 		</form>
 		{if $wishlists}
-		<div id="block-history" class="block-center">
+		<div id="block-history" class="block-center table-responsive">
 			<table class="std table">
 				<thead>
 					<tr>

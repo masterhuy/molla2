@@ -76,6 +76,11 @@
                         rows="3"
                     >{if $contact.message}{$contact.message}{/if}</textarea>
                 </div>
+                {if isset($id_module)}
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        {hook h='displayGDPRConsent' id_module=$id_module}
+                    </div>
+                {/if}
             </section>
             <footer class="form-footer text-sm-right">
                 <style>
