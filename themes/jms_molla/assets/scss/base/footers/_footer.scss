@@ -480,6 +480,9 @@
 		margin-left: .2rem;
 		margin-right: 1.5rem;
 		position: relative;
+		~ .cms-page-link{
+			margin-right: 0;
+		}
 		&:first-child::after{
 			content: '';
 			display: inline-block;

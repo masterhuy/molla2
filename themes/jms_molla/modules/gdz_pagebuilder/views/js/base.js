@@ -2,10 +2,13 @@ jQuery(function ($) {
     var c_lazyload = false;
     if(gdzSetting.carousel_lazyload)
     var c_lazyload = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $('.owl-carousel'), function( key, value ) {
         carousel = $(this);
         carousel.owlCarousel({
             loop:false,
+            rtl:rtl,
             margin:carousel.data("margin"),
             nav:carousel.data("nav"),
             dots:carousel.data("dots"),

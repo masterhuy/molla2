@@ -569,6 +569,10 @@ a:focus {
 .productbox-flex .content_price .price.new {
   color: #a6c76c; }
 
+.productbox-2 .wrapp-buttons .addToWishlist {
+  border-color: #a6c76c;
+  background-color: #a6c76c; }
+
 .productbox-2 .product-action .product-cart > button:hover {
   color: #a6c76c; }
   .productbox-2 .product-action .product-cart > button:hover span {
@@ -1480,7 +1484,8 @@ a:focus {
       font-weight: 600;
       font-size: 2rem;
       letter-spacing: -.05em;
-      margin-bottom: .4rem; }
+      margin-bottom: .4rem;
+      padding-right: 0; }
     .h1-countdown .pb-countdown .countdown-section .countdown-period {
       text-align: center;
       display: block;

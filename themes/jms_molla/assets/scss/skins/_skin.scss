@@ -532,6 +532,10 @@ a:focus {
     color: $primary-color;
 }
 .productbox-2{
+    .wrapp-buttons .addToWishlist{
+        border-color: $primary-color;
+        background-color: $primary-color;
+    }
     .product-action .product-cart > button:hover {
         color: $primary-color;
         span{

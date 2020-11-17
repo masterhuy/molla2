@@ -45,7 +45,7 @@
 {block name='footer-copyright'}
     <div id="footer-copyright" class="footer-copyright{if $gdzSetting.footer_copyright_class} {$gdzSetting.footer_copyright_class}{/if}">
         <div class="container">
-            <div class="row align-items-center no-margin">
+            <div class="row align-items-center">
                 {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
                     <div class="col-12 col-lg-6 col-copyright">
                         {$gdzSetting.footer_copyright_content nofilter}

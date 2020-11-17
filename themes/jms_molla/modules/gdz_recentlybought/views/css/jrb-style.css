@@ -29,6 +29,11 @@ body.toplevel_page_woo-notification {
     z-index: 9999;
 }
 
+#woorebought-popup.bottom_left {
+    left: auto !important;
+    right: 10px !important;
+}
+
 #woorebought-popup.bottom_right {
     left: auto !important;
     right: 10px !important;

@@ -61,9 +61,12 @@ jQuery(function ($) {
     var lazyload_testi = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_testi = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".owl-testimonials-photo"), function( key, value ) {
         $(this).owlCarousel({
             loop:false,
+            rtl:rtl,
             margin:0,
             nav:true,
             dots:true,
@@ -81,9 +84,12 @@ jQuery(function ($) {
     var lazyload_fp = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_fp = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".featured-product-carousel"), function( key, value ) {
         $(this).owlCarousel({
             loop: false,
+            rtl:rtl,
             margin: 0,
             nav: false,
             dots: false,
@@ -110,9 +116,12 @@ jQuery(function ($) {
     var lazyload_sc = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_sc = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".customs-carousel-product"), function( key, value ) {
         $(this).owlCarousel({
             loop: false,
+            rtl:rtl,
             margin: 0,
             nav: true,
             dots: false,
@@ -139,9 +148,12 @@ jQuery(function ($) {
     var lazyload_ins = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_ins = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".instagram_carousel"), function( key, value ) {
         $(this).owlCarousel({
             loop:false,
+            rtl:rtl,
             margin:0,
             nav:false,
             dots:false,
@@ -170,9 +182,12 @@ jQuery(function ($) {
     var lazyload_ins2 = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_ins2 = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".instagram_carousel_2"), function( key, value ) {
         $(this).owlCarousel({
             loop:false,
+            rtl:rtl,
             margin:20,
             nav:false,
             dots:false,
@@ -199,9 +214,12 @@ jQuery(function ($) {
     var lazyload_img = false;
     if(gdzSetting.carousel_lazyload)
     var lazyload_img = true;
+    var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
     $.each( $(".h9-slider .image-carousel"), function( key, value ) {
         $(this).owlCarousel({
             center: true,
+            rtl:rtl,
             loop:true,
             margin: 0,
             nav: true,
@@ -487,11 +505,11 @@ function slickImage(){
 
 jQuery(document).ready(function(){
     $('#hor-menu .gdz-megamenu').jmsMegaMenu({
-        event: 'click',
+        event: 'hover',
         duration: 100
     });
     $('.vermenu .gdz-megamenu').jmsMegaMenu({
-        event: 'click',
+        event: 'hover',
         duration: 100
     });
     $('.pb-menu .gdz-megamenu').jmsMegaMenu({

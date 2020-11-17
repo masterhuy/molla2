@@ -1271,15 +1271,13 @@ footer .row, header .row {
     font-size: 1.3rem;
     line-height: 1.3;
     color: #666;
-    text-align: left;
     margin-bottom: .4rem; }
     .cart-dropdown .product-title a {
       color: inherit; }
   .cart-dropdown .product-cart-details {
     font-weight: 400;
     max-width: 150px;
-    font-size: 1.3rem;
-    text-align: left; }
+    font-size: 1.3rem; }
 
 .dropdown-cart-total {
   padding: 1rem 0 .5rem;
@@ -2130,6 +2128,7 @@ footer .row, header .row {
   margin-top: .8rem; }
 
 #mobile-header #search_widget button i {
+  margin-right: 0;
   margin-left: 0; }
 
 #mobile-header .text-menu {
@@ -6559,6 +6558,8 @@ footer .row, header .row {
   margin-left: .2rem;
   margin-right: 1.5rem;
   position: relative; }
+  #footer-copyright .cms-page-link ~ .cms-page-link {
+    margin-right: 0; }
   #footer-copyright .cms-page-link:first-child::after {
     content: '';
     display: inline-block;
@@ -7300,6 +7301,9 @@ footer .row, header .row {
     height: initial;
     opacity: 1;
     visibility: visible; }
+
+.addon-tab .tab-content .tab-pane.active {
+  padding: 0; }
 
 .tab-pane.active {
   padding: 1.4rem 2.2rem; }

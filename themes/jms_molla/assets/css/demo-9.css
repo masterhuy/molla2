@@ -569,6 +569,10 @@ a:focus {
 .productbox-flex .content_price .price.new {
   color: #1cc0a0; }
 
+.productbox-2 .wrapp-buttons .addToWishlist {
+  border-color: #1cc0a0;
+  background-color: #1cc0a0; }
+
 .productbox-2 .product-action .product-cart > button:hover {
   color: #1cc0a0; }
   .productbox-2 .product-action .product-cart > button:hover span {
