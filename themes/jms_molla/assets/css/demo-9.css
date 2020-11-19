@@ -1632,19 +1632,20 @@ input[type="text"] {
   .cta-desc span {
     color: #333; }
 
-.email_subscription input.form-control {
+.gdz-row .email_subscription input.form-control {
   border-right: 0; }
 
-.email_subscription #newsletter-btn {
+.gdz-row .email_subscription #newsletter-btn {
   min-width: 7rem;
   padding: 1rem;
   background-color: #1cc0a0;
   color: #fff; }
-  .email_subscription #newsletter-btn:hover {
+  .gdz-row .email_subscription #newsletter-btn:hover {
     background-color: #23aa90; }
-  .email_subscription #newsletter-btn i {
-    margin-left: 0; }
-  .email_subscription #newsletter-btn span {
+  .gdz-row .email_subscription #newsletter-btn i {
+    margin-left: 0;
+    margin-right: 0; }
+  .gdz-row .email_subscription #newsletter-btn span {
     display: none; }
 
 .instagram_carousel .instagram-feed {

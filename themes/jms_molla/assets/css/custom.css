@@ -6395,7 +6395,8 @@ footer .row, header .row {
       #footer.footer-6 #footer-copyright .cms-page-link, #footer.footer-16 #footer-copyright .cms-page-link {
         display: none; }
       #footer.footer-6 #footer-copyright p, #footer.footer-16 #footer-copyright p {
-        font-size: 1.3rem; }
+        font-size: 1.3rem;
+        text-align: center; }
   #footer.footer-7, #footer.footer-14, #footer.footer-15 {
     background-color: #333; }
     #footer.footer-7 #footer-main .block .block-title, #footer.footer-14 #footer-main .block .block-title, #footer.footer-15 #footer-main .block .block-title {

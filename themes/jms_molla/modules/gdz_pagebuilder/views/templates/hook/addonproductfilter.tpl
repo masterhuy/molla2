@@ -37,7 +37,7 @@
 	<div class="filter-products products row">
 		{foreach from = $products_slides item = product}
 			<div class="col-lg-{12/$cols_md} col-md-{12/$cols_sm} col-{12/$cols_xs}">
-					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+				{include file="catalog/_partials/miniatures/product.tpl" product=$product}
 			</div>
 		{/foreach}
 	</div>

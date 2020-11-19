@@ -1522,6 +1522,7 @@ a:focus {
     padding: .8rem 1.4rem;
     min-width: 126px;
     position: absolute;
+    left: 50%;
     -webkit-transform: translateY(-60px) translateX(-50%);
     -ms-transform: translateY(-60px) translateX(-50%);
     transform: translateY(-60px) translateX(-50%); }

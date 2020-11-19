@@ -239,7 +239,7 @@ input[type="text"]{
 	}
 }
 
-.email_subscription{
+.gdz-row .email_subscription{
 	input.form-control{
 		border-right: 0;
 	}
@@ -253,6 +253,7 @@ input[type="text"]{
 		}
 		i{
 			margin-left: 0;
+			margin-right: 0;
 		}
 		span{
 			display: none;

@@ -61,6 +61,7 @@
 }
 #checkout .tab-content > .tab-pane.active {
 	display: block;
+	padding: 0;
 }
 #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step{
 	margin-bottom:30px;

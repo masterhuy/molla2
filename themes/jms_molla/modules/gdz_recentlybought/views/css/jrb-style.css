@@ -30,8 +30,8 @@ body.toplevel_page_woo-notification {
 }
 
 #woorebought-popup.bottom_left {
-    left: auto !important;
-    right: 10px !important;
+    right: auto !important;
+    left: 10px !important;
 }
 
 #woorebought-popup.bottom_right {

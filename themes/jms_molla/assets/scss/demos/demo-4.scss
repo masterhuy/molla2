@@ -10,6 +10,19 @@ $secondary-color: #1d84ea;
 @import '../config/fonts.scss';
 @import '../config/variables.scss';
 
+.productbox-2 .wrapp-buttons .addToWishlist{
+	color: $primary-color;
+	background-color: #fff;
+	&:hover{
+		border-radius: 3rem;
+		span{
+			display: none;
+		}
+		&::before{
+			content: '\f233';
+		}
+	}
+}
 .gdz-slider-wrapper{
 	.intro-title {
 		letter-spacing: -.03em;
@@ -222,7 +235,7 @@ $secondary-color: #1d84ea;
 	}
 }
 
-.h3-product-carousel{
+.h4-product-carousel{
 	.product-miniature{
 		border: .1rem solid #ebebeb;
 	}
@@ -542,6 +555,11 @@ $secondary-color: #1d84ea;
 	}
 }
 @media (min-width: 992px){
+	.btn-lg-right{
+		.pb-button{
+			text-align: right;
+		}
+	}
 	.title-absolute{
 		position: absolute;
 		top: 1px;
@@ -550,6 +568,9 @@ $secondary-color: #1d84ea;
 	.h4-deals .container > .row > .layout-column{
 		max-width: 574px;
 		margin-bottom: 0;
+	}
+	.h4-product-carousel{
+		margin-top: -26px;
 	}
 }
 
