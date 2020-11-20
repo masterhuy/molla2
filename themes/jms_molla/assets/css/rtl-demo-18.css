@@ -1,0 +1,43 @@
+#addon-9n87hepll .pb-heading {
+	text-align: right !important;
+}
+#addon-8oi7o6f4w .pb-heading {
+	text-align: right !important;
+}
+#addon-hts4h8ihs .pb-heading {
+	text-align: right !important;
+}
+.productbox-3 .wrapp-buttons {
+	left: 2rem;
+	right: auto;
+}
+.productbox-3 .product-action .product-btn span{
+	margin-right: 0;
+	margin-left: 0;
+}
+.sidebar-home .email_subscription .widget-title {
+	padding-left: 3rem;
+	padding-right: 0;
+}
+.pb-blog .entry-body {
+	text-align: right;
+}
+.pb-blog .owl-dots {
+	text-align: right;
+}
+.pb-blog .owl-dots button span {
+	margin-left: 1.2rem;
+	margin-right: 0;
+}
+.post-readmore::after {
+	content: '\f273';
+	left: 0;
+	right: auto;
+}
+.post-readmore {
+	padding-left: 2.2rem;
+	padding-right: 0;
+}
+.pb-service-box .pb-service-content{
+	text-align: right;
+}

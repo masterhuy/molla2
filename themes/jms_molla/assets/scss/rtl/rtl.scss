@@ -61,7 +61,114 @@ body{
 	margin-left: 0;
 }
 
+/* Border text */
+.cross-txt::before {
+	margin-left: 2.5rem;
+	margin-right: 0;
+}
+.cross-txt::after {
+	margin-right: 2.5rem;
+	margin-left: 0;
+}
+.intro-content .intro-action.cross-txt::before {
+	margin-left: 3rem;
+	margin-right: 0;
+}
+.intro-content .intro-action.cross-txt::after {
+	margin-right: 3rem;
+	margin-left: 0;
+}
+
 /* Header */
+.header-18 .header-middle .header-right > .row{
+	justify-content: flex-end;
+}
+.header-18 #search-form {
+	margin-left: 0;
+}
+.header-18 #cart_block {
+	margin-right: 1rem;
+	margin-left: 0;
+}
+.header-18 .gdz-megamenu .nav > .menu-item.sub-home > .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+.header-17 #hor-menu .gdz-megamenu .nav.level0 > li > a {
+	padding-left: 3.6rem;
+	padding-right: 1.2rem;
+}
+.header-17 .sticky-wrapper .text i {
+	margin-left: 1.5rem;
+	margin-right: 0;
+}
+.header-17 .header-middle .wishlist a span {
+	margin-right: 1.5rem;
+	margin-left: 0;
+}
+.header-17 .header-middle .header-right .row{
+	margin-left: 0;
+	margin-right: auto;
+}
+.header-17 .header-middle #cart_block > a .cart_block_total {
+	margin-right: 1.9rem;
+	margin-left: 0;
+}
+.header-17 .header-middle #cart_block {
+	padding-right: 2.2rem;
+	padding-left: 0;
+}
+.header-17 .header-top .col-right .row > div {
+	margin-right: 2.2rem;
+	margin-left: 0;
+	&#wishlist_block{
+		padding-right: 2rem;
+		padding-left: 0;
+	}
+}
+.header-17 .header-top .col-left i {
+	margin-left: .5rem;
+	margin-right: 0;
+}
+.header-16 #hor-menu .gdz-megamenu .nav.level0 > li > a {
+	padding-left: 3.6rem;
+	padding-right: 1.2rem;
+}
+.header-16 .sticky-wrapper .text i {
+	margin-left: 1.5rem;
+	margin-right: 0;
+}
+.header-16 .header-middle .wishlist a span {
+	margin-right: 1.5rem;
+	margin-left: 0;
+}
+.header-16 .header-middle .header-right .row{
+	margin-left: 0;
+	margin-right: auto;
+}
+.header-16 .header-middle #cart_block > a .cart_block_total {
+	margin-right: 1.9rem;
+	margin-left: 0;
+}
+.header-16 .header-middle #cart_block {
+	padding-right: 2.2rem;
+	padding-left: 0;
+}
+.header-15 .gdz-megamenu .nav > .menu-item.sub-home > .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+.header-15 #hor-menu .gdz-megamenu .nav.level0 > li > a {
+	padding-left: 3.3rem;
+	padding-right: 1.2rem;
+}
+.header-15 .header-middle .header-right > .row{
+	justify-content: flex-end;
+}
+.header-15 .header-left {
+	margin-left: 2.8rem;
+	margin-right: 0;
+}
 .header-15 #cart_block {
 	margin-right: .5rem;
 	margin-left: 0;
@@ -404,6 +511,10 @@ body{
 .header-intro-clearance .header-bottom .container::after {
 	left: 28rem;
 	right: auto;
+}
+.header-intro-clearance .header-bottom .container::before {
+	right: 28.5rem;
+	left: auto;
 }
 .header-intro-clearance .header-middle .header-right, 
 .header-intro-clearance .header-bottom .header-right {

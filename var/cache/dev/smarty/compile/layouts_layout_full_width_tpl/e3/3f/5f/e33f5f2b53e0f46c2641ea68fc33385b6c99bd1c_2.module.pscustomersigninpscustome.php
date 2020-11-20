@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-09-09 17:28:46
+/* Smarty version 3.1.33, created on 2020-11-19 22:10:03
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f58ae5e22af61_38969306',
+  'unifunc' => 'content_5fb7338bdfd120_97772220',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e33f5f2b53e0f46c2641ea68fc33385b6c99bd1c' => 
     array (
       0 => 'module:pscustomersigninpscustome',
-      1 => 1596161921,
+      1 => 1603852462,
       2 => 'module',
     ),
   ),
@@ -20,16 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f58ae5e22af61_38969306 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_customersignin/ps_customersignin-dropdown.tpl --><div class="user-info btn-group">
+function content_5fb7338bdfd120_97772220 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin F:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_customersignin/ps_customersignin-dropdown.tpl --><div class="user-info btn-group">
 	<a href="#" class="login" data-toggle="dropdown" data-display="static">
 		<i class="icon-user"></i>
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?>
 			<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customerName']->value, ENT_QUOTES, 'UTF-8');?>
 
 		<?php } else { ?>
-			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
-
+			<span class="text"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+</span>
 		<?php }?>
 	</a>
 	<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?>
@@ -81,5 +81,5 @@ if ($_smarty_tpl->tpl_vars['gdzSetting']->value['customersignin_class']) {?> <?p
 		</div>
 	<?php }?>
 </div>
-<!-- end D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_customersignin/ps_customersignin-dropdown.tpl --><?php }
+<!-- end F:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_customersignin/ps_customersignin-dropdown.tpl --><?php }
 }

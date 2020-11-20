@@ -318,8 +318,8 @@ class FrontContainer extends Container
 
         $b = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
 
-        $c = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver(${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'}, [0 => 'D:\\xampp\\htdocs\\jms_molla\\modules\\productcomments\\src\\Entity']);
-        $c->addExcludePaths([0 => 'D:\\xampp\\htdocs\\jms_molla\\modules\\productcomments\\src\\Entity/index.php']);
+        $c = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver(${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'}, [0 => 'F:\\xampp\\htdocs\\jms_molla\\modules\\productcomments\\src\\Entity']);
+        $c->addExcludePaths([0 => 'F:\\xampp\\htdocs\\jms_molla\\modules\\productcomments\\src\\Entity/index.php']);
 
         $b->addDriver($c, 'PrestaShop\\Module\\ProductComment\\Entity');
 
@@ -328,7 +328,7 @@ class FrontContainer extends Container
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_result_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService()) && false ?: '_'});
         $a->setMetadataDriverImpl($b);
-        $a->setProxyDir('D:\\xampp\\htdocs\\jms_molla/var/cache/dev//doctrine/orm/Proxies');
+        $a->setProxyDir('F:\\xampp\\htdocs\\jms_molla/var/cache/dev//doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(true);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -356,7 +356,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_0b89364378ff6b7f6cb8fb8abe9a05bbdc4856cdd86d3abb221cc152dd3fd59b');
+        $instance->setNamespace('sf_orm_default_84c37fb111116f549b0ae2d76033d0c10e86f1e9f01cb7035b5f8efefb84ba84');
 
         return $instance;
     }
@@ -370,7 +370,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_0b89364378ff6b7f6cb8fb8abe9a05bbdc4856cdd86d3abb221cc152dd3fd59b');
+        $instance->setNamespace('sf_orm_default_84c37fb111116f549b0ae2d76033d0c10e86f1e9f01cb7035b5f8efefb84ba84');
 
         return $instance;
     }
@@ -384,7 +384,7 @@ class FrontContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_0b89364378ff6b7f6cb8fb8abe9a05bbdc4856cdd86d3abb221cc152dd3fd59b');
+        $instance->setNamespace('sf_orm_default_84c37fb111116f549b0ae2d76033d0c10e86f1e9f01cb7035b5f8efefb84ba84');
 
         return $instance;
     }
@@ -456,7 +456,7 @@ class FrontContainer extends Container
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
-        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'D:\\xampp\\htdocs\\jms_molla/var/cache/dev\\/localization');
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'F:\\xampp\\htdocs\\jms_molla/var/cache/dev\\/localization');
     }
 
     /**
@@ -466,7 +466,7 @@ class FrontContainer extends Container
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
-        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'D:\\xampp\\htdocs\\jms_molla/var/cache/dev\\/localization'))) && false ?: '_'});
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'F:\\xampp\\htdocs\\jms_molla/var/cache/dev\\/localization'))) && false ?: '_'});
 
         $instance->setLowerLayer(${($_ = isset($this->services['prestashop.core.localization.cldr.datalayer.locale_reference']) ? $this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] : $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()) && false ?: '_'});
 
@@ -1177,11 +1177,11 @@ class FrontContainer extends Container
             'kernel.bundles' => [
 
             ],
-            'kernel.root_dir' => 'D:\\xampp\\htdocs\\jms_molla/app/',
+            'kernel.root_dir' => 'F:\\xampp\\htdocs\\jms_molla/app/',
             'kernel.name' => 'app',
             'kernel.debug' => true,
             'kernel.environment' => 'dev',
-            'kernel.cache_dir' => 'D:\\xampp\\htdocs\\jms_molla/var/cache/dev/',
+            'kernel.cache_dir' => 'F:\\xampp\\htdocs\\jms_molla/var/cache/dev/',
             'kernel.active_modules' => [
                 0 => 'contactform',
                 1 => 'dashactivity',
@@ -1259,8 +1259,9 @@ class FrontContainer extends Container
                 73 => 'gdz_wishlist',
                 74 => 'ps_categoryproducts',
                 75 => 'productcomments',
+                76 => 'ps_bestsellers',
             ],
-            'ps_cache_dir' => 'D:\\xampp\\htdocs\\jms_molla/var/cache/dev\\',
+            'ps_cache_dir' => 'F:\\xampp\\htdocs\\jms_molla/var/cache/dev\\',
             'mail_themes_uri' => '/mails/themes',
             'doctrine_cache.apc.class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine_cache.apcu.class' => 'Doctrine\\Common\\Cache\\ApcuCache',
@@ -1371,7 +1372,7 @@ class FrontContainer extends Container
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => true,
-            'doctrine.orm.proxy_dir' => 'D:\\xampp\\htdocs\\jms_molla/var/cache/dev//doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => 'F:\\xampp\\htdocs\\jms_molla/var/cache/dev//doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
         ];
     }

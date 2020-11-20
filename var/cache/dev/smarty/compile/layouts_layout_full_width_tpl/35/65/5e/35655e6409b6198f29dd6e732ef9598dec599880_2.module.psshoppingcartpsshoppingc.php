@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-09-09 17:28:46
+/* Smarty version 3.1.33, created on 2020-11-19 22:01:55
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f58ae5e0a4565_46371334',
+  'unifunc' => 'content_5fb731a36d4eb3_77423451',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35655e6409b6198f29dd6e732ef9598dec599880' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1598004423,
+      1 => 1603357018,
       2 => 'module',
     ),
   ),
@@ -21,13 +21,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_5f58ae5e0a4565_46371334 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_shoppingcart/ps_shoppingcart.tpl --><div class="btn-group blockcart cart-preview dropdown col-auto<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['addtocart_type'] != '') {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['addtocart_type'], ENT_QUOTES, 'UTF-8');
+function content_5fb731a36d4eb3_77423451 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin F:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_shoppingcart/ps_shoppingcart.tpl --><div class="btn-group blockcart cart-preview dropdown col-auto<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['addtocart_type'] != '') {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['addtocart_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="cart_block" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		<i class="icon-shopping-cart"></i>
-		<span class="text-cart"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+		<span class="text"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </span>
 		<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['addtocart_type'] == 'circle-filled') {?>
 			<?php if ($_smarty_tpl->tpl_vars['cart']->value['products_count'] > 0) {?><span class="circle-notify"></span><?php }?>
@@ -112,5 +112,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<?php }?>
 	</div>
 </div>
-<!-- end D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_shoppingcart/ps_shoppingcart.tpl --><?php }
+<!-- end F:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_shoppingcart/ps_shoppingcart.tpl --><?php }
 }
