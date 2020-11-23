@@ -867,6 +867,9 @@ footer .row, header .row {
   margin-left: -10px;
   margin-right: -10px; }
 
+#desktop-header .header-sticky.sticky .gdz-megamenu .dropdown-menu {
+  top: 100%; }
+
 .header-1 .header-top {
   font-weight: 300;
   font-size: 1.4rem;

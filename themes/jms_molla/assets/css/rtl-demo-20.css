@@ -1,0 +1,21 @@
+.pb-service-box .pb-service-content{
+	text-align: right;
+}
+.pb-service-box .pb-service-icon {
+	text-align: right;
+}
+.pb-blog .entry-body {
+	text-align: right;
+}
+.h20-newsletter .email_subscription #newsletter-btn {
+	border-radius: .3rem 0 0 .3rem;
+}
+.h20-newsletter .email_subscription .form-control {
+	border-radius: 0 .3rem .3rem 0;
+}
+
+@media (min-width: 992px){
+	.pb-button.pb-button-right {
+		text-align: left;
+	}
+}

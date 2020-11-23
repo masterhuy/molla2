@@ -450,22 +450,25 @@ function imageThumbCarousel(){
     if($(".productModal-carousel").length) {
 		var productModalCarousel = $(".productModal-carousel");
 		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;
+		if ($("body").hasClass("rtl")){
+            rtl = true;
+            productModalCarousel.addClass('owl-carousel');
+        } 
 		    productModalCarousel.owlCarousel({
-                rtl: rtl,
-                margin: 0,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                nav: true,
-                dots: false,
-                autoplay: false,
-                loop: false,
-                lazyLoad:lazyload_pm,
-                responsive:{
-                    0: {
-                        items:1
-                    }
+            rtl: rtl,
+            margin: 0,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            nav: true,
+            dots: false,
+            autoplay: false,
+            loop: false,
+            lazyLoad:lazyload_pm,
+            responsive:{
+                0: {
+                    items:1
                 }
+            }
 		});
     }
 }
