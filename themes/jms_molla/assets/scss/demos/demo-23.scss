@@ -1,16 +1,15 @@
 /* Demo 23 Homepage 23 */
-@import '../skins/skin';
-@import '../mixins/clearfix';
-@import '../mixins/breakpoints';
-@import '../mixins/lazy';
-@import '../mixins/buttons';
-
-@import '../config/fonts';
-@import '../config/variables';
-
 $primary-color: #cc9966;
+$secondary-color: #cc9966;
 
-@import '../base/headers/header-23';
+@import '../skins/skin.scss';
+@import '../mixins/clearfix.scss';
+@import '../mixins/breakpoints.scss';
+@import '../mixins/lazy.scss';
+@import '../mixins/buttons.scss';
+@import '../config/variables.scss';
+
+
 
 .menu .megamenu.demo .demo-item {
 	&.hidden {

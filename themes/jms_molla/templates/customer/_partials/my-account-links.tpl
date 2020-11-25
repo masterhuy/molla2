@@ -26,5 +26,5 @@
   <span>{l s='Back to your account' d='Shop.Theme.CustomerAccount'}</span>
 </a>
 <a href="{$urls.pages.index}" class="account-link btn btn-default">
-  <span>{l s='Home' d='Shop.Theme'}</span>
+  <span>{l s='Home' d='Shop.Theme.Global'}</span>
 </a>

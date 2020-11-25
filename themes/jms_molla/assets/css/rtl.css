@@ -1128,6 +1128,10 @@ body#checkout #cart-summary-product-list .media-left {
   margin-left: 2rem;
   margin-right: 0; }
 
+.jms-popup-box .mfp-close {
+  right: auto;
+  left: -15px; }
+
 /* Footer */
 #scroll-top {
   left: 5rem;
@@ -1172,7 +1176,10 @@ body#checkout #cart-summary-product-list .media-left {
     text-align: right !important; }
   #products-top .inlude_sort_by {
     margin-left: 15px;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .jms-popup-box .mfp-close {
+    left: -25px;
+    right: auto; } }
 
 @media (min-width: 992px) {
   .offset-lg-1 {

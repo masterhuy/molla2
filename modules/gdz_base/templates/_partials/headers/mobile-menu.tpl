@@ -26,7 +26,7 @@
 		<i class="ptw-icon {$gdzSetting.menu_icon}"></i>
 </a>
 <div class="mobile-menu-wrap hidden-lg">
-    <button id="mobile-menu-close" class="close-button"><h3>{l s='Menu' d='Shop.Theme'}</h3> <i class="ptw-icon {$gdzSetting.close_icon}"></i></button>
+    <button id="mobile-menu-close" class="close-button"><h3>{l s='Menu' d='Shop.Theme.Global'}</h3> <i class="ptw-icon {$gdzSetting.close_icon}"></i></button>
     <nav id="off-canvas-menu">
       {widget name="gdz_megamenu" hook='MobiMenu'}
     </nav>

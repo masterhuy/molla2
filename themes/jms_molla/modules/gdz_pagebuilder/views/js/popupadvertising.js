@@ -62,24 +62,31 @@ $(window).load(function () {
 
 $(document).ready(function() {
 	var loadtime = $('#loadtime').val();
-	if(loadtime == 'firstload' && getCookie("showpopup") == "hide") return;
-	if(loadtime == 'firstload' && (getCookie("showpopup") == null || getCookie("showpopup") == ''))
-	{
-		$('.gdz-popup-overlay').show();
-		setCookie("showpopup", "hide", 365);
-	}
-	if(loadtime == 'alltime' && (getCookie("showpopup") == null || getCookie("showpopup") == ''))
-	{
-		$('.gdz-popup-overlay').show();
-		setCookie("showpopup", "show", 365);
-	}
-	if (loadtime == 'alltime' && getCookie("showpopup") == 'show')
-	{
-		$('.gdz-popup-overlay').show();
-		setCookie("showpopup", "show", 365);
-	}
+	setTimeout(() => {
+		if(loadtime == 'firstload' && getCookie("showpopup") == "hide") return;
+		if(loadtime == 'firstload' && (getCookie("showpopup") == null || getCookie("showpopup") == ''))
+		{
+			$('.gdz-popup-overlay').show();
+			$('body').addClass('overflow-y-hidden');
+			setCookie("showpopup", "hide", 365);
+		}
+		if(loadtime == 'alltime' && (getCookie("showpopup") == null || getCookie("showpopup") == ''))
+		{
+			$('.gdz-popup-overlay').show();
+			$('body').addClass('overflow-y-hidden');
+			setCookie("showpopup", "show", 365);
+		}
+		if (loadtime == 'alltime' && getCookie("showpopup") == 'show')
+		{
+			$('.gdz-popup-overlay').show();
+			$('body').addClass('overflow-y-hidden');
+			setCookie("showpopup", "show", 365);
+		}
+	}, 10000);
+	
 	$('.popup-close').on('click', function() {
 		$('.gdz-popup-overlay').hide();
+		$('body').removeClass('overflow-y-hidden');
 	});
 	$('#dontshowagain').click(function (e) {
 		setCookie("showpopup", "hide", 365);

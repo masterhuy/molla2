@@ -40,7 +40,7 @@
     </h1>
 
     <div class="content">
-      {block name='step_content'}DUMMY STEP CONTENT{/block}
+      {block name='step_content'}{l s='DUMMY STEP CONTENT' d='Shop.Theme.Actions'}{/block}
     </div>
   </section>
 {/block}

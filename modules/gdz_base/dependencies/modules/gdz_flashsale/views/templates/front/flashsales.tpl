@@ -28,7 +28,7 @@
 									<span class="label label-new">{$flag.label}</span>
 									{/if}
 									{if $flag.label == 'On sale!'}
-									<span class="label label-sale">{l s='Sale' d='Shop.Theme'}</span>
+									<span class="label label-sale">{l s='Sale' d='Shop.Theme.Global'}</span>
 									{/if}
 								{/foreach}
 							{/block}

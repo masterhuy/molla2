@@ -25,5 +25,7 @@
 *}
 
 <div class="btn-group gdz_ajax_search col-auto" id="gdz_ajax_search">
-	<a href="#" id="btn-search" class="btn-search btn-search-full" data-toggle="dropdown" data-display="static"><i class="ptw-icon {$gdzSetting.search_icon}"></i></a>
+	<a href="#" id="btn-search" class="btn-search btn-search-full" data-toggle="dropdown" data-display="static">
+		<i class="icon-search"></i>
+	</a>
 </div>

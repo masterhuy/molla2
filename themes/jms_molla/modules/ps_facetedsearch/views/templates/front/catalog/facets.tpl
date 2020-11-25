@@ -160,6 +160,7 @@
                             </ul>
                         </div>
                     {/block}
+                    {$facet.widgetType|print_r}
                 {elseif $facet.widgetType == 'slider'}
                     {block name='facet_item_slider'}
                         {foreach from=$facet.filters item="filter"}

@@ -48,7 +48,7 @@
 							</div>
 						{elseif $post.image && $gdz_blog_setting.GDZBLOG_SHOW_MEDIA}
 							<div class="post-thumb">
-								<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
+								<img class="img-responsive w-100" src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
 							</div>
 						{/if}
 						{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}

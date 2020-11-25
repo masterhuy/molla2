@@ -36,9 +36,9 @@
             {/block}
             <div class="layout-column block newsletter">
                 <h3 class="h3 block-title">
-                   Sign up to newsletter
+                   {l s='Sign up to newsletter' d='Shop.jmstheme'}
                 </h3>
-                <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan.</p>
+                <p>{l s='Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan.' d='Shop.jmstheme'}</p>
                 {block name='footer-newsletter'}
                     <div class="block block-footer block-newsletter">
                         {widget name="ps_emailsubscription" hook='displayFooter'}

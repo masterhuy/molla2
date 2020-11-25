@@ -43,5 +43,5 @@ function hide_product(){
 	{/foreach}	
 </div>
 {else}
-{l s="There is no product" d='Shop.Theme'}
+{l s="There is no product" d='Shop.Theme.Global'}
 {/if}

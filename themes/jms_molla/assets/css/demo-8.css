@@ -1,6 +1,6 @@
 /* Demo 8 Homepage 8 */
 /* Skin structure */
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700,700i,800");
 ::-moz-selection {
   background-color: #eea287; }
 
@@ -11,7 +11,7 @@
   background-color: #eea287 !important; }
 
 .bg-secondary {
-  background-color: #a6c76c !important; }
+  background-color: #eea287 !important; }
 
 a {
   color: #eea287; }
@@ -28,7 +28,7 @@ a:focus {
   color: #eea287 !important; }
 
 .text-secondary {
-  color: #a6c76c !important; }
+  color: #eea287 !important; }
 
 .color-dark:hover {
   color: #eea287; }
@@ -56,7 +56,7 @@ a:focus {
 .btn-video {
   color: #eea287; }
   .btn-video:hover, .btn-video:focus {
-    background-color: #a6c76c; }
+    background-color: #eea287; }
 
 .breadcrumb-item a:hover, .breadcrumb-item a:focus {
   color: #eea287; }
@@ -79,8 +79,8 @@ a:focus {
   .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #a6c76c;
-    border-color: #a6c76c;
+    background-color: #eea287;
+    border-color: #eea287;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-primary.disabled, .btn-primary:disabled {
@@ -90,8 +90,8 @@ a:focus {
 
 .btn-secondary {
   color: #fff;
-  background-color: #a6c76c;
-  border-color: #a6c76c;
+  background-color: #eea287;
+  border-color: #eea287;
   -webkit-box-shadow: none;
   box-shadow: none; }
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
@@ -103,8 +103,8 @@ a:focus {
     box-shadow: none; }
   .btn-secondary.disabled, .btn-secondary:disabled {
     color: #fff;
-    background-color: #a6c76c;
-    border-color: #a6c76c; }
+    background-color: #eea287;
+    border-color: #eea287; }
 
 .btn-white {
   color: #333333;
@@ -133,8 +133,8 @@ a:focus {
   .btn-white-2:hover, .btn-white-2:focus, .btn-white-2.focus, .btn-white-2:not(:disabled):not(.disabled):active, .btn-white-2:not(:disabled):not(.disabled).active,
   .show > .btn-white-2.dropdown-toggle {
     color: #fff;
-    background-color: #a6c76c;
-    border-color: #a6c76c;
+    background-color: #eea287;
+    border-color: #eea287;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-white-2.disabled, .btn-white-2:disabled {
@@ -404,8 +404,8 @@ a:focus {
   .btn-outline-white-2:hover, .btn-outline-white-2:focus, .btn-outline-white-2.focus, .btn-outline-white-2:not(:disabled):not(.disabled):active, .btn-outline-white-2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-white-2.dropdown-toggle {
     color: #fff;
-    background-color: #a6c76c;
-    border-color: #a6c76c;
+    background-color: #eea287;
+    border-color: #eea287;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-outline-white-2.disabled, .btn-outline-white-2:disabled {
@@ -534,7 +534,7 @@ a:focus {
   background-color: #eea287; }
 
 .product-label.label-secondary {
-  background-color: #a6c76c; }
+  background-color: #eea287; }
 
 .product-label-text {
   color: #eea287; }
@@ -724,7 +724,7 @@ a:focus {
 .header-13 .header-middle #search-form .button-search {
   background-color: #eea287; }
   .header-13 .header-middle #search-form .button-search:hover {
-    color: #a6c76c; }
+    color: #eea287; }
 
 .header-13 .header-bottom .vermenu-btn {
   background-color: #eea287; }
@@ -740,7 +740,7 @@ a:focus {
   .header-14 .search-box .button-search {
     background-color: #eea287; }
     .header-14 .search-box .button-search:hover {
-      background-color: #a6c76c; }
+      background-color: #eea287; }
 
 .header-14 .vermenu .vermenu-btn {
   background-color: #eea287; }
@@ -1368,10 +1368,10 @@ a:focus {
   color: #eea287; }
 
 .product-add-to-cart .addToWishlist:hover, .cart-overview .addToWishlist:hover {
-  color: #a6c76c; }
+  color: #eea287; }
   .product-add-to-cart .addToWishlist:hover span, .cart-overview .addToWishlist:hover span {
-    -webkit-box-shadow: 0 1px 0 0 #a6c76c;
-    box-shadow: 0 1px 0 0 #a6c76c; }
+    -webkit-box-shadow: 0 1px 0 0 #eea287;
+    box-shadow: 0 1px 0 0 #eea287; }
 
 .product-add-to-cart .addToWishlist::before, .cart-overview .addToWishlist::before {
   color: #eea287; }

@@ -30,7 +30,7 @@
         <i class="icon-close"></i>
     </button>
     {hook h='displayTopColumn'}
-    <h3 class="text-menu">{l s='Menu' d='Shop.Theme'}</h3>
+    <h3 class="text-menu">{l s='Menu' d='Shop.Theme.Global'}</h3>
     <nav id="off-canvas-menu">
         {widget name="gdz_megamenu" hook='MobiMenu'}
     </nav>

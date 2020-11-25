@@ -27,6 +27,9 @@ footer .row, header .row{
 					text-transform: capitalize;
 				}
 			}
+			.icon-user{
+				display: none;
+			}
 			.header-menu{
 				left: auto;
 				right: 0;
@@ -1061,9 +1064,30 @@ footer .row, header .row{
 }
 
 #cart_block{
+	&.open{
+		.dropdown-menu{
+			display: block;
+		}
+	}
 	&:hover{
 		.dropdown-menu{
 			display: block;
+		}
+	}
+	.shoppingcart-sidebar{
+		.cart-title{
+			font-size: 1.4rem;
+			border: none;
+		}
+		.cart_block_list .layout-column.product-info {
+			padding-left: 0;
+			padding-right: 1.5rem;
+		}
+		.billing-info{
+			width: 100%;
+		}
+		.cart-button{
+			width: 100%;
 		}
 	}
 	.remove-from-cart{

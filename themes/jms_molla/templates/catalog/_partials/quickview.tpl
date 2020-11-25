@@ -70,9 +70,9 @@
                                                                 <table class="table">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>Products</th>
-                                                                            <th>Price</th>
-                                                                            <th>Quantity</th>
+                                                                            <th>{l s='Products' d='Shop.Theme.Catalog'}</th>
+                                                                            <th>{l s='Price' d='Shop.Theme.Catalog'}</th>
+                                                                            <th>{l s='Quantity' d='Shop.Theme.Catalog'}</th>
                                                                         </tr>
                                                                     </thead>
                                                                     {foreach from=$packItems item="product_pack"}

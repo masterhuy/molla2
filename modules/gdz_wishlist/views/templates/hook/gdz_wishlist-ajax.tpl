@@ -33,7 +33,7 @@
 		</dt>
 		{if isset($product.attributes_small)}
 		<dd class="{if $smarty.foreach.i.first}first_item{elseif $smarty.foreach.i.last}last_item{else}item{/if}" style="font-style:italic;margin:0 0 0 10px;">
-			<a href="{$link->getProductLink($product.id_product, $product.link_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
+			<a href="{$link->getProductLink($product.id_product, $product.link_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme.Global'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
 		</dd>
 		{/if}
 	{/foreach}
@@ -41,9 +41,9 @@
 {else}
 	<dl class="products" style="font-size:10px;border-bottom:1px solid #fff;">
 	{if isset($error) && $error}
-		<dt>{l s='You must create a wishlist before adding products' d='Shop.Theme'}</dt>
+		<dt>{l s='You must create a wishlist before adding products' d='Shop.Theme.Global'}</dt>
 	{else}
-		<dt>{l s='No products' d='Shop.Theme'}</dt>
+		<dt>{l s='No products' d='Shop.Theme.Global'}</dt>
 	{/if}
 	</dl>
 {/if}

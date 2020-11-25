@@ -26,7 +26,7 @@
 {extends file='page.tpl'}
 {block name="page_content"}
 {capture name=path}{l s='All Deal' mod='gdz_hotdeal'}{/capture}
-<h3>{l s='All Deal Products' d='Shop.Theme'}</h3>
+<h3>{l s='All Deal Products' d='Shop.Theme.Global'}</h3>
 {if isset($products) && $products}
 	<!-- Products list -->
 	<div class="product_list row products">

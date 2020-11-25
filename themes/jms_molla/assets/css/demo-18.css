@@ -1,6 +1,5 @@
 /* Demo 18 Homepage 18 */
 /* Skin structure */
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800");
 ::-moz-selection {
   background-color: #c96; }
 
@@ -1431,8 +1430,6 @@ a:focus {
 #footer.footer-18 #footer-main .social-icon:hover {
   border-color: #c96; }
 
-/* Fonts */
-/* font-family: 'Poppins', sans-serif; */
 #mobile-header {
   background-color: #333; }
   #mobile-header #mobile-menu-toggle {

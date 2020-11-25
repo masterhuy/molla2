@@ -40,7 +40,7 @@
                             {/widget_block}
                             {if ($gdzSetting.customersignin == 1)}
                                 {widget_block name="ps_customersignin"}
-                                    {include 'module:ps_customersignin/ps_customersignin.tpl'}
+                                    {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
                                 {/widget_block}
                             {/if}
                         </div>

@@ -24,10 +24,10 @@
 *}
 
 <!-- MODULE WishList -->
-<a class="lnk_wishlist color-dark" href="{$link->getModuleLink('gdz_wishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">
+<a class="lnk_wishlist color-dark" href="{$link->getModuleLink('gdz_wishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme.Global'}">
   <span class="link-item">
 		<i class="icon icon-heart"></i>
-		{l s='My wishlists' d='Shop.Theme'}
+		{l s='My wishlists' d='Shop.Theme.Global'}
 	</span>
 </a>
 <!-- END : MODULE WishList -->

@@ -24,10 +24,10 @@
 *}
 
 <div id="view_wishlist">
-<h2>{l s='Wishlist' d='Shop.Theme'}</h2>
+<h2>{l s='Wishlist' d='Shop.Theme.Global'}</h2>
 {if $wishlists}
 <p>
-    {l s='Other wishlists of %1s %2s:' sprintf=[$current_wishlist.firstname, $current_wishlist.lastname] d='Shop.Theme'}
+    {l s='Other wishlists of %1s %2s:' sprintf=[$current_wishlist.firstname, $current_wishlist.lastname] d='Shop.Theme.Global'}
 	{foreach from=$wishlists item=wishlist name=i}
 		{if $wishlist.id_wishlist != $current_wishlist.id_wishlist}
 			<a href="{$link->getModuleLink('gdz_wishlist', 'view', ['token' => $wishlist.token])|escape:'html':'UTF-8'}" title="{$wishlist.name}" rel="nofollow">{$wishlist.name}</a>
@@ -45,7 +45,7 @@
             <li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="clearfix address {if $smarty.foreach.i.index % 2}alternate_{/if}item">
                 <div class="clearfix">
                     <div class="product_image">
-                        <a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">
+                        <a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme.Global'}">
                             <img src="{$link->getImageLink($product.link_rewrite, $product.cover, ImageType::getFormatedName('medium'))|escape:'html'}" alt="{$product.name|escape:'html':'UTF-8'}" />
                         </a>
                     </div>
@@ -53,16 +53,16 @@
                         <p id="s_title" class="product_name">{$product.name|truncate:30:'...'|escape:'html':'UTF-8'}</p>
                     <span class="wishlist_product_detail">
                     {if isset($product.attributes_small)}
-                        <a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
+                        <a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme.Global'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
                     {/if}
-                        <br />{l s='Quantity' d='Shop.Theme'}:<input type="text" id="quantity_{$product.id_product}_{$product.id_product_attribute}" value="{$product.quantity|intval}" size="3"  />
+                        <br />{l s='Quantity' d='Shop.Theme.Global'}:<input type="text" id="quantity_{$product.id_product}_{$product.id_product_attribute}" value="{$product.quantity|intval}" size="3"  />
                         <br /><br />
-                        <span><strong>{l s='Priority' d='Shop.Theme'}:</strong> {$product.priority_name}</span>
+                        <span><strong>{l s='Priority' d='Shop.Theme.Global'}:</strong> {$product.priority_name}</span>
                     </span>
                     </div>
                 </div>
                 <div class="btn_action">
-                    <a class="button_small clear" href="{$link->getProductLink($product.id_product,  $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='View' d='Shop.Theme'}" rel="nofollow">{l s='View' d='Shop.Theme'}</a>
+                    <a class="button_small clear" href="{$link->getProductLink($product.id_product,  $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='View' d='Shop.Theme.Global'}" rel="nofollow">{l s='View' d='Shop.Theme.Global'}</a>
                     {if (isset($product.attribute_quantity) && $product.attribute_quantity >= 1) || (!isset($product.attribute_quantity) && $product.product_quantity >= 1) || $product.allow_oosp}
                         {if !$ajax}
                             <form id="addtocart_{$product.id_product|intval}_{$product.id_product_attribute|intval}" action="{$link->getPageLink('cart')|escape:'html'}" method="post">
@@ -74,9 +74,9 @@
                                 </p>
                             </form>
                         {/if}
-                        <a href="javascript:;" class="exclusive" onclick="WishlistBuyProduct('{$token|escape:'html':'UTF-8'}', '{$product.id_product}', '{$product.id_product_attribute}', '{$product.id_product}_{$product.id_product_attribute}', this, {$ajax});" title="{l s='Add to cart' d='Shop.Theme'}" rel="nofollow">{l s='Add to cart' d='Shop.Theme'}</a>
+                        <a href="javascript:;" class="exclusive" onclick="WishlistBuyProduct('{$token|escape:'html':'UTF-8'}', '{$product.id_product}', '{$product.id_product_attribute}', '{$product.id_product}_{$product.id_product_attribute}', this, {$ajax});" title="{l s='Add to cart' d='Shop.Theme.Global'}" rel="nofollow">{l s='Add to cart' d='Shop.Theme.Global'}</a>
                     {else}
-                        <span class="exclusive">{l s='Add to cart' d='Shop.Theme'}</span>
+                        <span class="exclusive">{l s='Add to cart' d='Shop.Theme.Global'}</span>
                     {/if}
                 </div>
             </li>

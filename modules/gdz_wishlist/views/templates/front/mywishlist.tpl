@@ -26,9 +26,9 @@
 {block name='page_content_container'}
 <div id="mywishlist">
     {capture name=path}
-        <a href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='My account' d='Shop.Theme'}</a>
+        <a href="{$link->getPageLink('my-account', true)|escape:'html'}">{l s='My Account' d='Shop.Theme.Global'}</a>
         <span class="navigation-pipe">{$navigationPipe}</span>
-        <a href="{$link->getModuleLink('gdz_wishlist', 'mywishlist')|escape:'html'}">{l s='My wishlists' d='Shop.Theme'}</a>
+        <a href="{$link->getModuleLink('gdz_wishlist', 'mywishlist')|escape:'html'}">{l s='My wishlists' d='Shop.Theme.Global'}</a>
 		{if isset($current_wishlist)}
 	        <span class="navigation-pipe">{$navigationPipe}</span>
 	        {$current_wishlist.name}
@@ -36,7 +36,7 @@
     {/capture}
 
 	<div class="wishlist-header">
-    <h3>{l s='My wishlists' d='Shop.Theme'}</h3>
+    <h3>{l s='My wishlists' d='Shop.Theme.Global'}</h3>
     <a class="wishlist-add float-right" href="javascript:;" onclick="javascript:toggleAddForm();"><i class="fa fa-plus"></i>Add New WishList</a>
   </div>
 
@@ -45,24 +45,24 @@
 		<form method="post" class="std" id="form-wishlist-add">
       <h4>{l s='Add New Wishlist' mod='gdz_wishlist'}</h4>
       <div class="form-group">
-        <label for="exampleInputEmail1">{l s='Name' d='Shop.Theme'}</label>
+        <label for="exampleInputEmail1">{l s='Name' d='Shop.Theme.Global'}</label>
         <input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" />
         <input type="hidden" name="token" value="{$token|escape:'html':'UTF-8'}" />
       </div>
-      <button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default btn-primary" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Save' d='Shop.Theme'}</button>
+      <button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default btn-primary" value="{l s='Save' d='Shop.Theme.Global'}" class="exclusive" />{l s='Save' d='Shop.Theme.Global'}</button>
 		</form>
 		{if $wishlists}
 		<div id="block-history" class="block-center">
 			<table class="std table">
 				<thead>
 					<tr>
-						<th class="first_item">{l s='Name' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Qty' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Viewed' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Created' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Direct Link' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Default' d='Shop.Theme'}</th>
-						<th class="wishlist-align-center">{l s='Delete' d='Shop.Theme'}</th>
+						<th class="first_item">{l s='Name' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Qty' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Viewed' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Created' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Direct Link' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Default' d='Shop.Theme.Global'}</th>
+						<th class="wishlist-align-center">{l s='Delete' d='Shop.Theme.Global'}</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -86,7 +86,7 @@
 						</td>
 						<td class="wishlist-align-center">{$wishlists[i].counter|intval}</td>
 						<td class="wishlist-align-center">{$wishlists[i].date_add|date_format:"%Y-%m-%d"}</td>
-						<td class="wishlist-align-center"><a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{l s='View' d='Shop.Theme'}</a></td>
+						<td class="wishlist-align-center"><a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');">{l s='View' d='Shop.Theme.Global'}</a></td>
 						<td class="wishlist-align-center wishlist-default">
 							{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 								<p class="is_wish_list_default">
@@ -99,7 +99,7 @@
 							{/if}
 						</td>
 						<td class="wishlist-align-center">
-							<a href="javascript:;"onclick="return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' d='Shop.Theme' js=1}'));"><i class="fa fa-trash"></i></a>
+							<a href="javascript:;"onclick="return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' d='Shop.Theme.Global' js=1}'));"><i class="fa fa-trash"></i></a>
 						</td>
 					</tr>
 				{/section}
@@ -111,8 +111,8 @@
 	{/if}
 
 	<ul class="wishlist-footer-links">
-		<li><a href="{$link->getPageLink('my-account', true)}"></a><a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html'}"><i class="fa fa-user"></i>{l s='Back to Your Account' d='Shop.Theme'}</a></li>
-		<li class="f_right"><a href="#"></a><a href="{$urls.pages.index}" class="btn btn-default button button-small"><i class="fa fa-home"></i>{l s='Home' d='Shop.Theme'}</a></li>
+		<li><a href="{$link->getPageLink('my-account', true)}"></a><a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html'}"><i class="fa fa-user"></i>{l s='Back to Your Account' d='Shop.Theme.Global'}</a></li>
+		<li class="f_right"><a href="#"></a><a href="{$urls.pages.index}" class="btn btn-default button button-small"><i class="fa fa-home"></i>{l s='Home' d='Shop.Theme.Global'}</a></li>
 	</ul>
 </div>
 {/block}

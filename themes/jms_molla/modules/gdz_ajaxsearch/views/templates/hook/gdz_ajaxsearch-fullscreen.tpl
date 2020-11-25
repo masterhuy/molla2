@@ -26,21 +26,21 @@
 *}
 
 <div id="search-form-full" class="search-form search-overlay{if $gdzSetting.search_box_type} {$gdzSetting.search_box_type}{/if}">
-		<div class="search-box">
-			<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}">
-				<input type="hidden" name="controller" value="search" />
-				<input type="hidden" name="orderby" value="position" />
-				<input type="hidden" name="orderway" value="desc" />
-        <div class="input-group">
-    				<input type="text" name="search_query" placeholder="{l s='Search everything...' mod='gdz_ajaxsearch'}" class="gdz-search-input form-control search-input" />
-    				<button type="submit" name="submit_search" class="button-search">
-    					<i class="ptw-icon {$gdzSetting.search_icon}"></i>
-    				</button>
-        </div>
-			</form>
-			<div class="search-result-area"></div>
-      <a class="search-box-close">
-			     <i class="ptw-icon {$gdzSetting.close_icon}"></i>
-		  </a>
-		</div>
+	<div class="search-box">
+		<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}">
+			<input type="hidden" name="controller" value="search" />
+			<input type="hidden" name="orderby" value="position" />
+			<input type="hidden" name="orderway" value="desc" />
+        	<div class="input-group">
+    			<input type="text" name="search_query" placeholder="{l s='Search everything...' mod='gdz_ajaxsearch'}" class="gdz-search-input form-control search-input" />
+				<button type="submit" name="submit_search" class="button-search">
+					<i class="icon-search"></i>
+				</button>
+        	</div>
+		</form>
+		<div class="search-result-area"></div>
+      	<a class="search-box-close">
+			<i class="icon-close"></i>
+		</a>
+	</div>
 </div>

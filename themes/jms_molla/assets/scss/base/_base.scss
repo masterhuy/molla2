@@ -78,7 +78,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+.overflow-y-hidden{
+    overflow-y: hidden;
+}
 .bg-light {
     background-color: #f8f8f8 !important;
 }

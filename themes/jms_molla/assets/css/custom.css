@@ -57,7 +57,7 @@
 /*--------------------- END of TABLE OF CONTENTS  ---------- */
 /* Main CSS File */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700,700i,800");
 /* font-family: 'Poppins', sans-serif; */
 /*--------------------- 1.General Styles ---------- */
 html {
@@ -125,6 +125,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.overflow-y-hidden {
+  overflow-y: hidden; }
 
 .bg-light {
   background-color: #f8f8f8 !important; }
@@ -882,6 +885,8 @@ footer .row, header .row {
       padding-top: .95rem;
       padding-bottom: .95rem;
       text-transform: capitalize; }
+  .header-1 .header-top .col-right .icon-user {
+    display: none; }
   .header-1 .header-top .col-right .header-menu {
     left: auto;
     right: 0; }
@@ -1805,8 +1810,25 @@ footer .row, header .row {
   .header-intro-clearance .blockcart .dropdown-toggle, .header-intro-clearance .wishlist .dropdown-toggle, .header-intro-clearance .account .dropdown-toggle {
     color: #333; }
 
+#cart_block.open .dropdown-menu {
+  display: block; }
+
 #cart_block:hover .dropdown-menu {
   display: block; }
+
+#cart_block .shoppingcart-sidebar .cart-title {
+  font-size: 1.4rem;
+  border: none; }
+
+#cart_block .shoppingcart-sidebar .cart_block_list .layout-column.product-info {
+  padding-left: 0;
+  padding-right: 1.5rem; }
+
+#cart_block .shoppingcart-sidebar .billing-info {
+  width: 100%; }
+
+#cart_block .shoppingcart-sidebar .cart-button {
+  width: 100%; }
 
 #cart_block .remove-from-cart {
   margin-left: 1rem; }

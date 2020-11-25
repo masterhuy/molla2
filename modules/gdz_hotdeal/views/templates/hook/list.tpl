@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="panel"><h3><i class="icon-list-ul"></i> {l s='Deal list' d='Shop.Theme'}
+<div class="panel"><h3><i class="icon-list-ul"></i> {l s='Deal list' d='Shop.Theme.Global'}
 	<span class="panel-heading-action">
 		<a id="desc-product-new" class="list-toolbar-btn" href="{$link->getAdminLink('AdminModules')|escape:'html'}&configure=gdz_hotdeal&addDeal=1">
 			<span title="" data-toggle="tooltip" class="label-tooltip" data-original-title="Add new" data-html="true">
@@ -53,12 +53,12 @@
 								<a class="btn btn-default"
 									href="{$link->getAdminLink('AdminModules')|escape:'html'}&configure=gdz_hotdeal&id_deal={$hotdeal.id_deal|escape:'html'}">
 									<i class="icon-edit"></i>
-									{l s='Edit' d='Shop.Theme'}
+									{l s='Edit' d='Shop.Theme.Global'}
 								</a>
 								<a class="btn btn-default"
 									href="{$link->getAdminLink('AdminModules')|escape:'html'}&configure=gdz_hotdeal&delete_id_deal={$hotdeal.id_deal|escape:'html'}">
 									<i class="icon-trash"></i>
-									{l s='Delete' d='Shop.Theme'}
+									{l s='Delete' d='Shop.Theme.Global'}
 								</a>
 							</div>
 						</div>

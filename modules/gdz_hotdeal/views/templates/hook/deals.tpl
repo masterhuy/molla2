@@ -140,7 +140,7 @@ jQuery(function ($) {
 					{if ($viewsAll == 1)}
 					<div class="view_all">
 						<h6 class="view"><a href="{$link->getModuleLink('gdz_hotdeal','allproduct')}">
-							{l s='View all product sale' d='Shop.Theme'}
+							{l s='View all product sale' d='Shop.Theme.Global'}
 						</a></h6>
 					</div>
 

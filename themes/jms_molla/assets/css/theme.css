@@ -258,7 +258,7 @@ header .row .col-auto {
     display: flex;
     border-radius: 50%;
     top: 9px;
-    right: 3px;
+    left: 3px;
     overflow: hidden;
 }
 .dropdown-menu {
@@ -504,6 +504,7 @@ header .row .col-auto {
     z-index: 1001;
     top: 0;
     right: 0;
+    left: auto;
     overflow-x: hidden;
     transform: translate3d(115%,0,0);
     transition: transform .4s;
