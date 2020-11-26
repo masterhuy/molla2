@@ -26,7 +26,7 @@ $secondary-color: #6666ff;
 	letter-spacing: 0;
 	line-height: 1em;
 }
-.banner-1{
+.banner-type-1{
 	position: relative;
 	z-index: 999;
 	.container > .row{
@@ -115,6 +115,80 @@ $secondary-color: #6666ff;
 			right: -45px;
 		}
 	}
+}
+.owl-carousel.customs {
+	.owl-stage-outer {
+		padding-bottom: 105px;
+	}
+}
+.choose-style{
+	.banner-absolute{
+		position: absolute;
+		top: -6.28vw;
+		right: 5.65vw;
+		img{
+			max-width: initial;
+		}
+	}
+}
+.banner-type-2{
+	.pb-banner{
+		&:hover{
+			.pb-banner-text{
+				.btn{
+					color: $primary-color;
+					border-bottom-color: $primary-color;
+					i{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.pb-banner-text{
+		text-align: left;
+		top: 50%;
+		transform: translateY(-50%);
+		bottom: auto;
+		left: 5rem;
+		right: auto;
+		display: block;
+		.pb-banner-title{
+			font-size: 1.6rem;
+			font-weight: 700;
+			letter-spacing: -.01em;
+			margin-top: 0rem;
+			margin-bottom: .3rem;
+		}
+		.btn{
+			color: #777;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding: 0;
+			min-width: auto;
+			border: none;
+			position: relative;
+			padding-bottom: .3rem;
+			border-bottom: .1rem solid transparent;
+			i{
+				opacity: 0;
+				margin-left: 0;
+				transition: all .3s;
+			}
+		}
+	}
+}
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, 
+.pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
+	color: #fff;
+	background-color: $primary-color;
+	border-radius: 0;
+	&::before{
+		display: none;
+	}
+}
+.nav.nav-tabs .nav-item + .nav-item {
+	margin-left: .3rem;
 }
 
 @media (min-width: 1200px){

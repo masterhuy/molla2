@@ -1,6 +1,6 @@
 /* Demo 4 Homepage 4 */
 /* Skin structure */
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700,700i,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 ::-moz-selection {
   background-color: #3399ff; }
 
@@ -659,6 +659,10 @@ a:focus {
 .productbox-12 .ajax-add-to-cart {
   color: #3399ff;
   border: 0.1rem solid #3399ff; }
+
+.productbox-13 .product-info .product-footer .cart-button {
+  border-color: #3399ff;
+  color: #3399ff; }
 
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #3399ff; }

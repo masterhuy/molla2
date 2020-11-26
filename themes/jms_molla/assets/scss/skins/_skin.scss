@@ -645,6 +645,10 @@ a:focus {
         border: 0.1rem solid $primary-color;
     }
 }
+.productbox-13 .product-info .product-footer .cart-button{
+    border-color: $primary-color;
+    color: $primary-color;
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }

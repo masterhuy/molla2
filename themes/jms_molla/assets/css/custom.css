@@ -57,7 +57,7 @@
 /*--------------------- END of TABLE OF CONTENTS  ---------- */
 /* Main CSS File */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700,700i,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 /* font-family: 'Poppins', sans-serif; */
 /*--------------------- 1.General Styles ---------- */
 html {
@@ -9215,6 +9215,94 @@ footer .row, header .row {
   .productbox-12 .product-list-reviews.empty .grade-stars.small-stars span {
     display: inline-block; }
   .productbox-12.product-miniature .product-action {
+    position: static; }
+
+/* Product box 13 */
+.productbox-13 {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 2.7rem; }
+  .productbox-13:hover .product-info .product-footer {
+    display: block;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
+  .productbox-13:hover .product-action {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .productbox-13 .product-preview {
+    position: static; }
+  .productbox-13 .product-flags {
+    left: 1.8rem; }
+    .productbox-13 .product-flags .product-flag {
+      width: auto;
+      height: auto;
+      min-width: 45px;
+      border-radius: 0;
+      padding: .5rem .9rem;
+      line-height: 1.6rem;
+      letter-spacing: -.01em;
+      font-weight: 400;
+      font-size: 1.3rem; }
+  .productbox-13 .category-name {
+    text-transform: initial;
+    margin-bottom: .4rem; }
+    .productbox-13 .category-name span {
+      -webkit-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+    .productbox-13 .category-name:hover span {
+      color: #666; }
+  .productbox-13 .product-title {
+    margin-bottom: -.2rem; }
+    .productbox-13 .product-title a {
+      text-transform: initial; }
+  .productbox-13 .product-info {
+    padding: 0 0 1.4rem; }
+    .productbox-13 .product-info .product-footer {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      padding: 0 5.2rem 1.3rem;
+      border-radius: .4rem;
+      background-color: #fff;
+      border-top: none;
+      -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.01);
+      box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.01); }
+      .productbox-13 .product-info .product-footer #review {
+        margin-top: -.6rem;
+        margin-bottom: .5rem; }
+      .productbox-13 .product-info .product-footer .cart-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 0; }
+        .productbox-13 .product-info .product-footer .cart-button span {
+          font-size: 1.3rem; }
+        .productbox-13 .product-info .product-footer .cart-button:hover {
+          color: #fff; }
+      .productbox-13 .product-info .product-footer .addToWishlist {
+        margin-top: .3rem;
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #777;
+        letter-spacing: -.01em; }
+        .productbox-13 .product-info .product-footer .addToWishlist:hover::before {
+          content: '\f233'; }
+        .productbox-13 .product-info .product-footer .addToWishlist::before {
+          font-size: 1.6rem;
+          margin-right: .3rem; }
+  .productbox-13 .product-list-reviews {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .productbox-13 .product-list-reviews.empty .grade-stars.small-stars span {
+      display: inline-block;
+      font-size: 1.3rem; }
+  .productbox-13.product-miniature .product-action {
     position: static; }
 
 .product-miniature .product-action {

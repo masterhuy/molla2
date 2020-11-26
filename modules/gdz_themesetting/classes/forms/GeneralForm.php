@@ -805,6 +805,11 @@ class gdzGeneralForm
                                     'name' => $this->module->l('Box 12', 'GeneralForm'),
                                     'img' => 'productbox/box-12.jpg'
                                 ),
+                                array(
+                                    'id_option' => 'product-13',
+                                    'name' => $this->module->l('Box 13', 'GeneralForm'),
+                                    'img' => 'productbox/box-13.jpg'
+                                ),
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

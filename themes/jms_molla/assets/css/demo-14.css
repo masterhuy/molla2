@@ -660,6 +660,10 @@ a:focus {
   color: #fcb941;
   border: 0.1rem solid #fcb941; }
 
+.productbox-13 .product-info .product-footer .cart-button {
+  border-color: #fcb941;
+  color: #fcb941; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #fcb941; }
 

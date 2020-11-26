@@ -207,7 +207,7 @@ class gdzAddonProductFilter extends gdzAddonBase
             $cols_arr = explode("-", $cols);
         $category_ids = array();
         if ($fields[1]->value) {
-            $category_ids = explode(',', $fields[5]->value);
+            $category_ids = explode(',', $fields[1]->value);
         }
         //print_r($total_config); exit;
         $_products = array();
