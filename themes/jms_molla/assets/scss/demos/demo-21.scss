@@ -26,6 +26,41 @@ $secondary-color: #6666ff;
 	letter-spacing: 0;
 	line-height: 1em;
 }
+.sliders{
+	.text-1{
+		letter-spacing: -.025em;
+	}
+	.text-2{
+		letter-spacing: -.025em;
+	}
+	.text-3{
+		letter-spacing: -.025em;
+	}
+	.fs-pager-wrapper a{
+		&.active:hover{
+			background-color: #f8f8f8;
+			border-color: #f8f8f8;
+		}
+	}
+	.gdz-slide-content {
+		.btn-primary {
+			text-transform: uppercase;
+		    color: #fff;
+		    background-color: $primary-color;
+			padding: 1.2rem 4.5rem;
+			line-height: 1;
+		    &:hover,
+		    &:focus {
+		    	background-color: #a6c76c;
+		    	border-color: #a6c76c;
+		    }
+		    i{
+		    	display: none;
+		    }
+		}
+	}
+	
+}
 .banner-type-1{
 	position: relative;
 	z-index: 999;
@@ -190,9 +225,143 @@ $secondary-color: #6666ff;
 .nav.nav-tabs .nav-item + .nav-item {
 	margin-left: .3rem;
 }
+.btn-viewmore{
+	padding: 1.2rem 4.2rem;
+	border-color: #ccc;
+	&:hover{
+		border-color: $primary-color;
+		background-color: $primary-color;
+		color: #fff;
+	}
+}
+.h21-newsletter{
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	.gdz-icon-box{
+		margin-bottom: -.2rem;
+	}
+	.icon-envelope{
+		color: #fff;
+	}
+	.title{
+		margin-bottom: 1.1rem;
+	}
+	.desc{
+		font-weight: 300;
+		letter-spacing: -.01em;
+		margin-bottom: 3rem;
+	}
+	.email_subscription{
+		max-width: 557px;
+		input{
+			border: none;
+		}
+		#newsletter-btn{
+			color: #fff;
+			background-color: $primary-color;
+			text-transform: uppercase;
+			font-weight: 400;
+			min-width: 138px;
+			padding-left: 0;
+			&:hover{
+				background-color: #fff;
+				color: $primary-color;
+			}
+		}
+	}
+}
+.icon-box-side{
+	.container > .row{
+		margin-left: 0;
+		margin-right: 0;
+		.layout-column{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.pb-service-box .pb-service-content{
+	.pb-service-title{
+		font-weight: 700;
+	}
+	.pb-service-description p{
+		font-weight: 300;
+		letter-spacing: 0;
+	}
+}
+.instagram-store {
+	.row.row-custom {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	.banner-sm-div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.banner-sm, .banner-lg {
+		padding: .5rem;
+	}
+	.instagram-feed {
+		margin-bottom: 0;
+		background-color: transparent;
+		&:hover::after{
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.banner-lg {
+	    flex: 0 0 40%;
+	    max-width: 40%;
+	}
+	.banner-sm-div {
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	}
+
+	.banner-sm {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.banner-lg {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	}
+	.banner-sm-div {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+
+	.banner-sm {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	}
+}
+
+#footer{
+	.widget-about-title + a{
+		color: #777;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+}
 
 @media (min-width: 1200px){
-	.banner-1{
+	.banner-type-1{
 		margin-top: -10rem;
+	}
+	.col-2xl-5col {
+		flex: 0 0 40%;
+		max-width: 40%;
 	}
 }

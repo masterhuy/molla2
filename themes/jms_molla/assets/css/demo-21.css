@@ -768,6 +768,9 @@ a:focus {
 .header-20 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
   color: #6666ff; }
 
+.header-21 .header-middle #wishlist_block > a:hover {
+  color: #6666ff; }
+
 .header-intro-clearance .header-right .account a:hover .text,
 .header-intro-clearance .header-right .wishlist a:hover .text,
 .header-intro-clearance .header-right #cart_block a:hover .text {
@@ -1451,6 +1454,31 @@ a:focus {
   letter-spacing: 0;
   line-height: 1em; }
 
+.sliders .text-1 {
+  letter-spacing: -.025em; }
+
+.sliders .text-2 {
+  letter-spacing: -.025em; }
+
+.sliders .text-3 {
+  letter-spacing: -.025em; }
+
+.sliders .fs-pager-wrapper a.active:hover {
+  background-color: #f8f8f8;
+  border-color: #f8f8f8; }
+
+.sliders .gdz-slide-content .btn-primary {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6666ff;
+  padding: 1.2rem 4.5rem;
+  line-height: 1; }
+  .sliders .gdz-slide-content .btn-primary:hover, .sliders .gdz-slide-content .btn-primary:focus {
+    background-color: #a6c76c;
+    border-color: #a6c76c; }
+  .sliders .gdz-slide-content .btn-primary i {
+    display: none; }
+
 .banner-type-1 {
   position: relative;
   z-index: 999; }
@@ -1592,8 +1620,127 @@ a:focus {
 .nav.nav-tabs .nav-item + .nav-item {
   margin-left: .3rem; }
 
+.btn-viewmore {
+  padding: 1.2rem 4.2rem;
+  border-color: #ccc; }
+  .btn-viewmore:hover {
+    border-color: #6666ff;
+    background-color: #6666ff;
+    color: #fff; }
+
+.h21-newsletter {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .h21-newsletter .gdz-icon-box {
+    margin-bottom: -.2rem; }
+  .h21-newsletter .icon-envelope {
+    color: #fff; }
+  .h21-newsletter .title {
+    margin-bottom: 1.1rem; }
+  .h21-newsletter .desc {
+    font-weight: 300;
+    letter-spacing: -.01em;
+    margin-bottom: 3rem; }
+  .h21-newsletter .email_subscription {
+    max-width: 557px; }
+    .h21-newsletter .email_subscription input {
+      border: none; }
+    .h21-newsletter .email_subscription #newsletter-btn {
+      color: #fff;
+      background-color: #6666ff;
+      text-transform: uppercase;
+      font-weight: 400;
+      min-width: 138px;
+      padding-left: 0; }
+      .h21-newsletter .email_subscription #newsletter-btn:hover {
+        background-color: #fff;
+        color: #6666ff; }
+
+.icon-box-side .container > .row {
+  margin-left: 0;
+  margin-right: 0; }
+  .icon-box-side .container > .row .layout-column {
+    padding-left: 0;
+    padding-right: 0; }
+
+.pb-service-box .pb-service-content .pb-service-title {
+  font-weight: 700; }
+
+.pb-service-box .pb-service-content .pb-service-description p {
+  font-weight: 300;
+  letter-spacing: 0; }
+
+.instagram-store .row.row-custom {
+  padding-left: .5rem;
+  padding-right: .5rem; }
+
+.instagram-store .banner-sm-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0; }
+
+.instagram-store .banner-sm, .instagram-store .banner-lg {
+  padding: .5rem; }
+
+.instagram-store .instagram-feed {
+  margin-bottom: 0;
+  background-color: transparent; }
+  .instagram-store .instagram-feed:hover::after {
+    display: none; }
+
+@media screen and (min-width: 576px) {
+  .banner-lg {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%; }
+  .banner-sm-div {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; }
+  .banner-sm {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 575px) {
+  .banner-lg {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .banner-sm-div {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .banner-sm {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
+#footer .widget-about-title + a {
+  color: #777; }
+  #footer .widget-about-title + a:hover {
+    color: #6666ff; }
+
 @media (min-width: 1200px) {
-  .banner-1 {
-    margin-top: -10rem; } }
+  .banner-type-1 {
+    margin-top: -10rem; }
+  .col-2xl-5col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%; } }
 
 /*# sourceMappingURL=demo-21.css.map */

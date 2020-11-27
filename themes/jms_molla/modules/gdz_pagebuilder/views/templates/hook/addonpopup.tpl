@@ -47,3 +47,4 @@
 		<input type="hidden" name="loadtime" id="loadtime" value="{$loadtime|escape:'htmlall':'UTF-8'}" />
 	</div>
 </div>
+

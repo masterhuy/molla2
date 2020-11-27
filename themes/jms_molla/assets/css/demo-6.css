@@ -769,6 +769,9 @@ a:focus {
 .header-20 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
   color: #c96; }
 
+.header-21 .header-middle #wishlist_block > a:hover {
+  color: #c96; }
+
 .header-intro-clearance .header-right .account a:hover .text,
 .header-intro-clearance .header-right .wishlist a:hover .text,
 .header-intro-clearance .header-right #cart_block a:hover .text {

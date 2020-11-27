@@ -170,7 +170,27 @@ class gdzHeaderForm
                                     'id_option' => 20,
                                     'name' => $this->module->l('Layout 20', 'HeaderForm'),
                                     'img' => 'headers/20.jpg'
-                                )
+                                ),
+                                array(
+                                    'id_option' => 21,
+                                    'name' => $this->module->l('Layout 21', 'HeaderForm'),
+                                    'img' => 'headers/21.jpg'
+                                ),
+                                array(
+                                    'id_option' => 22,
+                                    'name' => $this->module->l('Layout 22', 'HeaderForm'),
+                                    'img' => 'headers/22.jpg'
+                                ),
+                                array(
+                                    'id_option' => 23,
+                                    'name' => $this->module->l('Layout 23', 'HeaderForm'),
+                                    'img' => 'headers/23.jpg'
+                                ),
+                                array(
+                                    'id_option' => 24,
+                                    'name' => $this->module->l('Layout 24', 'HeaderForm'),
+                                    'img' => 'headers/24.jpg'
+                                ),
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

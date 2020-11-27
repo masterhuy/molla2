@@ -808,6 +808,11 @@ a:focus {
         color: $primary-color;
     }
 }
+.header-21 .header-middle #wishlist_block > a{
+    &:hover{
+        color: $primary-color;
+    }
+}
 .header-intro-clearance{
     .header-right{
         .account a:hover .text,
