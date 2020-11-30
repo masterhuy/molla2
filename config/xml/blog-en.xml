@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>End-of-year sales... let&amp;#039;s go!</title>
+    <link>https://www.prestashop.com/en/blog/end-of-year-sales</link>
+    <description>Black Friday has become an essential business event in many countries, and usually marks the start of holiday sales.</description>
+     <pubDate>Thu, 26 Nov 2020 16:49:13 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/end-of-year-sales</guid>
+  </item>
+  <item>
     <title>Engagement, interactivity, conversion: How to enhance your product page with 3D content</title>
     <link>https://www.prestashop.com/en/blog/product-3d-content</link>
     <description>According to Baymard, an independent web usability research institute that conducted a 2 year-long in-depth study on product page UX, of the </description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 14 Oct 2020 16:44:51 +0200</pubDate>
  <dc:creator>NitinSrivastavaen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/animate-sales-all-year</guid>
-  </item>
-  <item>
-    <title>PrestaShop Metrics, the new analytics tool built to centralize all ecommerce data</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-metrics</link>
-    <description>In ecommerce, perhaps even more than any other sector, data and the information it provides are essential for managing businesses.</description>
-     <pubDate>Thu, 08 Oct 2020 12:12:06 +0200</pubDate>
- <dc:creator>Pierre-Olivier Calande</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-metrics</guid>
   </item>
   </channel>
 </rss>

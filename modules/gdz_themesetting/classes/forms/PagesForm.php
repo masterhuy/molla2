@@ -353,6 +353,11 @@ class gdzPagesForm
                                     'name' => $this->module->l('3 Columns', 'PagesForm'),
                                     'img' => 'product/3-columns.jpg'
                                 ),
+                                array(
+                                    'id_option' => 'sticky-info',
+                                    'name' => $this->module->l('Sticky info', 'PagesForm'),
+                                    'img' => 'product/sticky-info.jpg'
+                                ),
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

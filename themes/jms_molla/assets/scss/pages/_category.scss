@@ -172,6 +172,11 @@
 			margin: 0;
 		}
 	}
+	.productbox-13{
+		&:hover .product-info .product-footer{
+			display: none;
+		}
+	}
 }
 .col-product{
 	padding: 0 10px;

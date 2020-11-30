@@ -23,9 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if isset($smarty.get.product_content_layout) && $smarty.get.product_content_layout !=''}
-   {assign var='product_content_layout' value=$smarty.get.product_content_layout}
+    {assign var='product_content_layout' value=$smarty.get.product_content_layout}
 {else}
-   {assign var='product_content_layout' value=$gdzSetting.product_content_layout}
+    {assign var='product_content_layout' value=$gdzSetting.product_content_layout}
 {/if}
 {if $product_content_layout == 'thumbs-gallery'}
     {include file='catalog/_partials/product-cover-thumbnails-gallery.tpl'}
@@ -33,6 +33,8 @@
     {include file='catalog/_partials/product-cover-thumbnails-left.tpl'}
 {elseif $product_content_layout == 'thumbs-right'}
     {include file='catalog/_partials/product-cover-thumbnails-right.tpl'}
+{elseif $product_content_layout == '3-columns' || $product_content_layout == 'sticky-info'}
+    {include file='catalog/_partials/product-cover-thumbnails-vertical.tpl'}
 {else}
     {include file='catalog/_partials/product-cover-thumbnails-bottom.tpl'}
 {/if}

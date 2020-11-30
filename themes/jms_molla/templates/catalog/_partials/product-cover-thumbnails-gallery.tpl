@@ -22,14 +22,14 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="images-container thumbs-gallery grid">
+<div class="images-container thumbs-gallery">
     {block name='product_images'}
         <div class="js-qv-mask mask">
-            <div id="gal1" class="product-images js-qv-product-images row">
+            <div id="gal1" class="product-images js-qv-product-images">
                 {foreach from=$product.images item=image}
-                    <li class="thumb-container {if $image.id_image == $product.cover.id_image} selected {/if} col-6" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
+                    <div class="thumb-container {if $image.id_image == $product.cover.id_image} selected {/if}" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
                         <img
-                            class="thumb js-thumb {if $image.id_image == $product.cover.id_image} selected {/if}"
+                            class="thumb js-thumb  {if $image.id_image == $product.cover.id_image} selected {/if}"
                             data-image-medium-src="{$image.bySize.medium_default.url}"
                             data-image-large-src="{$image.bySize.large_default.url}"
                             src="{$image.bySize.large_default.url}"
@@ -38,10 +38,11 @@
                             width="100"
                             itemprop="image"
                         >
-                    </li>
+                    </div>
                 {/foreach}
             </div>
         </div>
     {/block}
 </div>
 {hook h='displayAfterProductThumbs'}
+{* {if $gdzSetting.product_image_zoom == 'elevatezoom'} product-image-zoom{/if} *}

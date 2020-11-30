@@ -530,6 +530,102 @@ img {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+@media (min-width: 1200px) {
+  .col-2xl-5col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%; } }
+
+/* Slick Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 /* Type */
 h1, .h1,
 h2, .h2,
@@ -13128,6 +13224,9 @@ button:focus {
   .products-list .productbox-12 .product-preview {
     margin: 0; }
 
+.products-list .productbox-13:hover .product-info .product-footer {
+  display: none; }
+
 .col-product {
   padding: 0 10px;
   -webkit-box-flex: 0;
@@ -13779,6 +13878,53 @@ button:focus {
 
 .productModal-carousel .owl-stage-outer {
   overflow: hidden; }
+
+.thumbs-gallery .product-images .thumb-container {
+  float: left; }
+  .thumbs-gallery .product-images .thumb-container::after {
+    display: none; }
+  .thumbs-gallery .product-images .thumb-container > .thumb.selected {
+    border-color: transparent; }
+
+.product-layout-sticky-info .product-images .thumb-container > .thumb.selected {
+  border-color: #ebebeb; }
+
+.product-layout-sticky-info #more_info_block .panel-default {
+  border: .1rem solid #ebebeb; }
+  .product-layout-sticky-info #more_info_block .panel-default + .panel-default {
+    border-top: 0; }
+  .product-layout-sticky-info #more_info_block .panel-default .panel-title > a {
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+    padding: 2.1rem 4rem 2.1rem 2rem;
+    line-height: 1.2;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+    .product-layout-sticky-info #more_info_block .panel-default .panel-title > a.collapsed {
+      background-color: #fafafa; }
+      .product-layout-sticky-info #more_info_block .panel-default .panel-title > a.collapsed::after {
+        content: '\f2c2';
+        color: #8c8c8c; }
+    .product-layout-sticky-info #more_info_block .panel-default .panel-title > a::after {
+      content: '\f28e';
+      font-size: 1.6rem;
+      display: inline-block;
+      position: absolute;
+      right: 1.2rem;
+      top: 50%;
+      font-family: "molla";
+      line-height: 1;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+.product-layout-sticky-info #more_info_block .panel-body {
+  padding: 1rem 2rem 2rem;
+  padding-top: 0; }
 
 .product-layout-3columns .product-quantity .product-btn.cart-button {
   margin-right: 0;
@@ -14772,6 +14918,16 @@ button:focus {
 
 .zoomContainer {
   display: none; }
+
+@media (max-width: 1199px) {
+  .inner-wrapper-sticky {
+    position: static !important;
+    top: auto !important;
+    width: auto !important;
+    bottom: auto !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; } }
 
 @media screen and (min-width: 992px) {
   .zoomContainer {

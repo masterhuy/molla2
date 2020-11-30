@@ -29,6 +29,13 @@
 {elseif $gdzSetting.product_page_layout == 'no-sidebar'}
     {assign var='layout' value='layouts/layout-full-width.tpl'}
 {/if}
+{if isset($smarty.get.product_page_layout) && $smarty.get.product_page_layout == 'right-sidebar'}
+    {assign var='layout' value='layouts/layout-right-column.tpl'}
+{elseif isset($smarty.get.product_page_layout) && $smarty.get.product_page_layout == 'left-sidebar'}
+    {assign var='layout' value='layouts/layout-left-column.tpl'}
+{elseif isset($smarty.get.product_page_layout) && $smarty.get.product_page_layout == 'no-sidebar'}
+    {assign var='layout' value='layouts/layout-full-width.tpl'}
+{/if}
 {extends file=$layout}
 {block name='head_seo' prepend}
     <link rel="canonical" href="{$product.canonical_url}">
@@ -54,11 +61,21 @@
 {block name='content'}
     <section id="main" itemscope itemtype="https://schema.org/Product">
         <meta itemprop="url" content="{$product.url}">
-        {if $gdzSetting.product_content_layout == '3-columns'}
-            {include file='catalog/product-content-3columns.tpl'}
+        {if isset($smarty.get.product_content_layout) && $smarty.get.product_content_layout !=''}
+            {assign var='product_content_layout' value=$smarty.get.product_content_layout}
+        {else}
+            {assign var='product_content_layout' value=$gdzSetting.product_content_layout}
+        {/if}
+        {if $product_content_layout == '3-columns'}
+           {include file='catalog/product-content-3columns.tpl'}
+        {elseif $product_content_layout == 'thumbs-gallery'}
+            {include file='catalog/product-thumbs-gallery.tpl'}
+        {elseif $product_content_layout == 'sticky-info'}
+            {include file='catalog/product-sticky-info.tpl'}
         {else}
             {include file='catalog/product-content.tpl'}
         {/if}
+        
         {if $gdzSetting.product_page_moreinfos_type == 'accordion'}
             {include file='catalog/more-infos-accordion.tpl'}
         {else}

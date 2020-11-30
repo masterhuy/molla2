@@ -29,7 +29,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#description">{l s='Description' d='Shop.Theme.Catalog'}</a>
+                    <a class="" data-toggle="collapse" data-parent="#accordion" href="#description">{l s='Description' d='Shop.Theme.Catalog'}</a>
                 </h4>
             </div>
             <div id="description" class="panel-collapse collapse show">

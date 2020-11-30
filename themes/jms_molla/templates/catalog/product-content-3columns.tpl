@@ -29,7 +29,7 @@
 				<section class="page-content" id="content">
 					{block name='page_content'}
 						{block name='product_cover_thumbnails'}                      
-							{include file='catalog/_partials/product-cover-thumbnails-vertical.tpl'}
+							{include file='catalog/_partials/product-cover-thumbnails.tpl'}
 						{/block}
 					{/block}
 				</section>

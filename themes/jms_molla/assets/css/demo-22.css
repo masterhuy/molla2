@@ -1,5 +1,6 @@
 /* Demo 22 Homepage 22 */
 /* Skin structure */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 ::-moz-selection {
   background-color: #fcb941; }
 
@@ -1436,6 +1437,9 @@ a:focus {
 
 #footer.footer-18 #footer-main .social-icon:hover {
   border-color: #fcb941; }
+
+a {
+  font-family: 'Roboto'; }
 
 .menu > li > a {
   color: #666666;

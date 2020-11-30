@@ -8,8 +8,11 @@ $secondary-color: #fcb941;
 @import '../mixins/lazy.scss';
 @import '../mixins/buttons.scss';
 @import '../config/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
+a {
+	font-family: 'Roboto';
+}
 .menu > li > a {
     color: $body-text;
     font-size: 1.4rem;
