@@ -49,7 +49,7 @@
 		</div>
 	{/if}
 	{if $showviewall}
-		<a class="pb-categoryproduct-viewall" href="{url entity='category' id=$category.id_category}" title="View all product in category">
+		<a class="pb-categoryproduct-viewall" href="{url entity='category' id=$category.id_category}" title="{l s='View all product in category' d='Shop.Theme.Actions'}">
 			{$viewall_text nofilter}
 			<i aria-hidden="true" class="fa fa-angle-right"></i>
 		</a>

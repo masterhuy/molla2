@@ -1356,6 +1356,12 @@ a:focus {
 .products-list .product-miniature.productbox-8 .ajax-add-to-cart:hover {
   background-color: #cc6666; }
 
+.product-layout-gallery .product-details-footer .addToWishlist::before {
+  color: #cc6666; }
+
+.product-layout-gallery .product-details-footer .addToWishlist:hover span {
+  border-bottom: 0.1rem solid #cc6666; }
+
 .product-images .thumb-container > .thumb.selected {
   border-color: #cc6666; }
 

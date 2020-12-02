@@ -14,12 +14,12 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/addonbase.php');
+include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/instagram.php');
 class gdzAddonInstagram extends gdzAddonBase
 {
     public static $index = 0;
     public function __construct()
     {
-        $this->modulename = _GDZ_PB_NAME_;
         $this->addonname = 'instagram';
         $this->addontitle = 'Instagram';
         $this->addondesc = 'Show latest instagram images';
@@ -56,30 +56,6 @@ class gdzAddonInstagram extends gdzAddonBase
                 'lang' => '0',
                 'label' => $this->l('Image Linked'),
                 'desc' => 'Images should be linked to their page on Instagram',
-                'default' => 0
-            ),
-            array(
-                'type' => 'checkbox2',
-                'name' => 'comments',
-                'lang' => '0',
-                'label' => $this->l('Show Comments'),
-                'desc' => 'Show Image Comments',
-                'default' => 0
-            ),
-            array(
-                'type' => 'checkbox2',
-                'name' => 'date',
-                'lang' => '0',
-                'label' => $this->l('Show Date'),
-                'desc' => 'Show Image Date',
-                'default' => 0
-            ),
-            array(
-                'type' => 'checkbox2',
-                'name' => 'likes',
-                'lang' => '0',
-                'label' => $this->l('Show Likes'),
-                'desc' => 'Show Image Likes',
                 'default' => 0
             ),
             array(
@@ -193,17 +169,23 @@ class gdzAddonInstagram extends gdzAddonBase
     }
     public function returnValue($addon)
     {
-        $this->context->controller->addJS('modules/'.$this->name.'/lib/instagram-lite-master/instagramLite.min.js', 'all');
-        $this->context->controller->addJS('modules/'.$this->name.'/views/js/instagram.js', 'all');
         if(empty($addon->fields[0]->value)) return;
         $access_token = $addon->fields[0]->value;
         $limit = $addon->fields[1]->value;
+        $instagram = new Instagram($access_token);
+        $images = $instagram->getImage($limit);
+        $profile = $instagram->getProfile();
+        if (isset($profile['error'])) {
+            print_r($profile);
+            return '';
+        }
+        $this->context->controller->addJS('modules/'.$this->name.'/views/js/instagram.js', 'all');
         $linked = $addon->fields[2]->value;
-        $comments = $addon->fields[3]->value;
-        $date = $addon->fields[4]->value;
-        $likes = $addon->fields[5]->value;
-        $view_type = $addon->fields[6]->value;
-        $element_class = $addon->fields[8]->value;
+        $comments = false;//$addon->fields[3]->value;
+        $date = false;//$addon->fields[4]->value;
+        $likes = false;//$addon->fields[5]->value;
+        $view_type = $addon->fields[3]->value;
+        $element_class = $addon->fields[5]->value;
         if($view_type == 'grid' && $element_class == '1') {
           $element_class ='col-6 col-md-6 col-lg-12';
         } elseif($view_type == 'grid' && $element_class == '2') {
@@ -219,7 +201,7 @@ class gdzAddonInstagram extends gdzAddonBase
         } else {
           $element_class = 'image-item';
         }
-        $cols= $addon->fields[9]->value;
+        $cols= $addon->fields[6]->value;
         $cols_arr = array();
         if($cols)
             $cols_arr = explode("-", $cols);
@@ -228,25 +210,26 @@ class gdzAddonInstagram extends gdzAddonBase
             'access_token' => $access_token,
             'limit' => $limit,
             'linked' => $linked,
-            'comments' => $comments,
-            'date' => $date,
-            'likes' => $likes,
             'element_class' => $element_class,
-            'gutter' => $addon->fields[7]->value
+            'gutter' => $addon->fields[4]->value
         );
         $this->context->smarty->assign(
             array(
+                'images' => $images,
+                'options' => $instagram_options,
                 'instagram_options' => str_replace('"', '&quot;', json_encode($instagram_options)),
                 'view_type' => $view_type,
-                'cols'  => $cols,
+                'cols'  => $cols_arr[0],
+                'cols_lg'  => $cols_arr[0],
                 'cols_md'   => $cols_arr[0],
                 'cols_sm'   => $cols_arr[1],
                 'cols_xs'   => $cols_arr[2],
-                'navigation' => $addon->fields[10]->value,
-                'pagination' => $addon->fields[11]->value,
-                'autoplay' => $addon->fields[12]->value,
-                'rewind' => $addon->fields[13]->value,
-                'slidebypage' => $addon->fields[14]->value
+                'navigation' => $addon->fields[7]->value,
+                'pagination' => $addon->fields[8]->value,
+                'autoplay' => $addon->fields[9]->value,
+                'rewind' => $addon->fields[10]->value,
+                'slidebypage' => $addon->fields[11]->value,
+                'profile' => $profile
 
             )
         );

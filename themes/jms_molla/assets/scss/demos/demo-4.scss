@@ -180,7 +180,6 @@ $secondary-color: #1d84ea;
 		position: static;
 		.pb-banner-title{
 			font-weight: 400;
-			font-size: 1.4rem;
 			letter-spacing: -.01em;
 			margin-top: 2rem;
 			margin-bottom: 0;
@@ -190,24 +189,13 @@ $secondary-color: #1d84ea;
 
 .banner-1{
 	.pb-banner-text{
-		top: 50%;
-		transform: translateY(-50%);
-		left: 3rem;
-		right: auto;
-		bottom: auto;
-		text-align: left;
-		display: block;
 		.pb-banner-title{
-			font-size: 1.4rem;
 			letter-spacing: -.01em;
 			margin-bottom: 1.3rem;
-			color: #777;
 			font-weight: 300;
 		}
 		.pb-banner-desc{
-			color: #999;
 			font-weight: 400;
-			font-size: 1.6rem;
 			line-height: 1.25;
 			letter-spacing: -.01em;
 			margin-bottom: 1.2rem;
@@ -227,6 +215,7 @@ $secondary-color: #1d84ea;
 			text-align: center;
 			min-width: 110px;
 			border: 0;
+			color: $primary-color;
 			&:hover{
 				color: #fff;
 				background-color: $primary-color;

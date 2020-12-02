@@ -32,15 +32,6 @@ jQuery(function ($) {
           comment: $(e).find('[name=comment]').val(),
         };
       }).get();
-      return this.find('.items-container').find('.form-group').map(function(i, e) {
-        return {
-          author: $(e).find('input[name=author]').val(),
-          position: $(e).find('[name=position]').val(),
-          rating: $(e).find('[name=rating]').val(),
-          comment: $(e).find('[name=comment]').val(),
-        };
-      }).get();
-
     } else if (this.attr('type') == 'checkbox') {
       if (this.attr("checked")) {
         return '1';

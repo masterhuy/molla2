@@ -26,21 +26,18 @@
 	{if $banner_link}
 		<a href="{$banner_link nofilter}" target="{$target nofilter}">
 	{/if}
-		{if $banner}
-			<div class="pb-banner-img">
-				<span>
-					<img src="{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" class="img-responsive" />
-				</span>
-			</div>
-			<div class="pb-banner-text">
-				{if $subtitle}<span class="pb-banner-subtitle">{$subtitle nofilter}</span>{/if}
-				{if $title}<{$title_tag} class="pb-banner-title">{$title nofilter}</{$title_tag}>{/if}
-				{if $description}<div class="pb-banner-desc">{$description nofilter}</div>{/if}
-				{if $button_text}<div class="pb-banner-button btn"><span>{$button_text nofilter}</span><i class="icon-long-arrow-right"></i></div>{/if}
-			</div>
+	{if $banner}
+		<div class="pb-banner-img">
+			<img src="{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" class="img-responsive" />
+		</div>
+		<div class="pb-banner-text pb-banner-{$position|escape:'html':'UTF-8'}">
+			{if $subtitle}<span class="pb-banner-subtitle">{$subtitle nofilter}</span>{/if}
+			{if $title}<{$title_tag} class="pb-banner-title">{$title nofilter}</{$title_tag}>{/if}
+			{if $description}<div class="pb-banner-desc">{$description nofilter}</div>{/if}
+			{if $button_text}<div><div class="pb-banner-button btn"><span>{$button_text nofilter}</span><i class="icon-long-arrow-right"></i></div></div>{/if}
+		</div>
 		{/if}
-	{if $banner_link}
-		</a>
+		{if $banner_link}
+	</a>
 	{/if}
 </div>
-

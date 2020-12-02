@@ -1356,6 +1356,12 @@ a:focus {
 .products-list .product-miniature.productbox-8 .ajax-add-to-cart:hover {
   background-color: #fcb941; }
 
+.product-layout-gallery .product-details-footer .addToWishlist::before {
+  color: #fcb941; }
+
+.product-layout-gallery .product-details-footer .addToWishlist:hover span {
+  border-bottom: 0.1rem solid #fcb941; }
+
 .product-images .thumb-container > .thumb.selected {
   border-color: #fcb941; }
 
@@ -1774,26 +1780,13 @@ a:focus {
     letter-spacing: -.01em; }
 
 .intro-banners .pb-banner-text {
-  display: block;
-  left: 3rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: auto;
-  text-align: left;
-  bottom: auto; }
+  overflow: visible; }
   .intro-banners .pb-banner-text .pb-banner-subtitle {
-    font-size: 1.4rem;
     letter-spacing: -.01em;
-    color: #777;
     display: block;
-    line-height: 1.2;
     margin-top: .8rem; }
   .intro-banners .pb-banner-text .pb-banner-title {
     font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 1.22;
     letter-spacing: -.01em;
     margin-bottom: .6rem;
     -webkit-transition: color 0.3s ease;
@@ -1803,9 +1796,6 @@ a:focus {
       color: #fcb941; }
   .intro-banners .pb-banner-text .pb-banner-desc {
     font-weight: 300;
-    color: #333;
-    font-size: 1.8rem;
-    line-height: 1.22;
     letter-spacing: -.01em;
     margin-bottom: .6rem;
     margin-top: -.5rem; }

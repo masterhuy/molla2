@@ -15,7 +15,7 @@ if (!defined('_PS_VERSION_')) {
 }
 require_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/gdzHelper.php');
 class AdminGdzpagebuilderSettingController extends ModuleAdminController
-{
+{    
     public function __construct()
     {
         $this->name = _GDZ_PB_NAME_;

@@ -49,6 +49,19 @@
     </div>
 </div>
 <div id="pagebuilder-panel">
+    <div class="vertical-panel">
+        <div class="logo">
+            <img src="../modules/gdz_pagebuilder/views/img/logo.png" />
+        </div>
+        <ul>
+          <li id="style-manager"><a><i class="feather feather-edit"></i><span class="drop-text">{l s='Style Manager' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="addons" class="active"><a><i class="feather feather-box"></i><span class="drop-text">{l s='Addons' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="section"><a href="#"><i class="feather feather-grid"></i><span class="drop-text">{l s='Sections' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="page"><a href="#"><i class="feather feather-file-text"></i><span class="drop-text">{l s='Pages' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="users-sections"><a id="template-library" class="dialog-open" data-dialog="template-library" data-form="library"><i class="feather feather-user"></i><span class="drop-text">{l s='Users Sections' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="theme-setting"><a class="btn" target="_blank" href="{$link->getAdminLink('AdminGdzThemeSetting') nofilter}&configure=gdz_themesetting" title="{l s='Theme Setting' mod='gdz_pagebuilder'}"><i class="feather feather-settings"></i>{l s='Setting' mod='gdz_pagebuilder'}</i></a></li>
+        </ul>
+    </div>
     <div id="pagebuilder-mode-switch">
         <div class="mode-switch-inner">
           <i></i>
@@ -78,14 +91,15 @@
         <div id="gdz-configuration" class="gdz-modal-body">
         </div>
     </div>
+    <div class="gdz-tools gdz-configuration bootstrap studio-list" data-studio="sections" id="section-list">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="gdz-tools gdz-configuration bootstrap page-list" data-studio="pages" id="page-list">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
 </div>
 <div id="pagebuilder-setting">
     <div class="setting-left">
-        <select id="select-page">
-          {foreach from=$pages key=i item=page}
-            <option value="{$page.id_page nofilter}"{if $page.id_page == $id_page} selected="selected"{/if}>{l s='Page' mod='gdz_pagebuilder'} : {$page.title nofilter}</option>
-          {/foreach}
-        </select>
         <select id="select-language">
           {foreach from=$languages key=i item=language}
             <option value="{$language.id_lang nofilter}"{if $language.id_lang == $id_lang} selected="selected"{/if}>{l s='Language' mod='gdz_pagebuilder'} : {$language.name nofilter}</option>
@@ -93,33 +107,37 @@
         </select>
     </div>
     <div class="setting-center">
-      <img src="../modules/gdz_pagebuilder/views/img/logo.png" />
+      <select id="select-page">
+        {foreach from=$pages key=i item=page}
+          <option value="{$page.id_page nofilter}"{if $page.id_page == $id_page} selected="selected"{/if}>{l s='Page' mod='gdz_pagebuilder'} : {$page.title nofilter}</option>
+        {/foreach}
+      </select>
+      <div id="tool-device">
+          <ul class="device-icons">
+            <li class="active li-md" data-device="md"><a class="md-device btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" title="{l s='Desktop Layout' mod='gdz_pagebuilder'}"><span class="icon"><i class="icon-desktop"></i></span></a></li>
+            <li class="li-sm" data-device="sm"><a class="sm-device btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" title="{l s='Tablet Layout' mod='gdz_pagebuilder'}"><span class="icon"><i class="icon-tablet"></i></span></a></li>
+            <li class="li-xs" data-device="xs"><a class="xs-device btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" title="{l s='Mobile Layout' mod='gdz_pagebuilder'}"><span class="icon"><i class="icon-mobile"></i></span></a></li>
+          </ul>
+      </div>
     </div>
     <div class="setting-right">
         {if $pro}
-        <div class="dropdown btn" id="template-tool">
-          <button class="dropbtn">{l s='Template Library' mod='gdz_pagebuilder'}</button><i class="arrow-down"></i>
+        <div class="dropdown btn-icon" id="template-tool">
+          <a class="dropbtn" title="{l s='Menu' mod='gdz_pagebuilder'}"><i class="feather feather-menu"></i></a>
           <div class="dropdown-content">
             <ul class="drop-list template-icons">
               <li><a id="template-library" class="dialog-open" data-dialog="template-library" data-form="library"><span class="drop-text">{l s='Template Library' mod='gdz_pagebuilder'}</span></a></li>
               <li><a class="dialog-open" data-dialog="template-library" data-form="save"><span class="drop-text">{l s='Save to Template' mod='gdz_pagebuilder'}</span></a></li>
               <li><a class="dialog-open" data-dialog="template-library" data-form="file"><span class="drop-text">{l s='Save as File' mod='gdz_pagebuilder'}</span></a></li>
+              <li><a id="theme-export"><span class="drop-text">{l s='Save Theme' mod='gdz_pagebuilder'}</span></a></li>
+              <li><a class="dialog-open" data-dialog="replace-url" data-form="replace"><span class="drop-text">{l s='Replace Url' mod='gdz_pagebuilder'}</span></a></li>
             </ul>
           </div>
         </div>
         {/if}
-        <a class="btn" target="_blank" href="{$link->getAdminLink('AdminGdzThemeSetting') nofilter}&configure=gdz_themesetting" title="{l s='Theme Setting' mod='gdz_pagebuilder'}">{l s='Setting' mod='gdz_pagebuilder'}</i></a>
-        <a class="btn" target="_blank" href="{$page_link}" title="{l s='Page Preview' mod='gdz_pagebuilder'}">{l s='Preview' mod='gdz_pagebuilder'}</a>
-        <div class="dropdown btn" id="tool-device">
-          <button class="dropbtn"><i class="gdz-icon-desktop"></i></button><i class="arrow-down"></i>
-          <div class="dropdown-content">
-            <ul class="drop-list device-icons">
-              <li class="active li-md" data-device="md"><a class="md-device"><span class="icon"><i class="gdz-icon-desktop"></i></span><span class="drop-text device">{l s='Desktop' mod='gdz_pagebuilder'}</span></a></li>
-              <li class="li-sm" data-device="sm"><a class="sm-device"><span class="icon"><i class="gdz-icon-tablet"></i></span><span class="drop-text device">{l s='Tablet' mod='gdz_pagebuilder'}</span></a></li>
-              <li class="li-xs" data-device="xs"><a class="xs-device"><span class="icon"><i class="gdz-icon-mobile"></i></span><span class="drop-text device">{l s='Mobile' mod='gdz_pagebuilder'}</span></a></li>
-            </ul>
-          </div>
-        </div>
+        <a class="btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" href="#" title="{l s='Full Screen' mod='gdz_pagebuilder'}" id="full-screen"><i class="feather feather-maximize-2"></i></a>
+        <a class="btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" href="{$page_link}" title="{l s='Page Preview' mod='gdz_pagebuilder'}" target="_blank"><i class="feather feather-eye"></i></a>
+
         <a class="btn btn-active" id="save" href="#">{l s='Save' mod='gdz_pagebuilder'}</a>
     </div>
 </div>
@@ -226,5 +244,6 @@
       {include file="./column_settings.tpl"}
 </div>
 {include file="module:gdz_pagebuilder/views/templates/admin/library.tpl"}
+{include file="module:gdz_pagebuilder/views/templates/admin/replace_url.tpl"}
 </body>
 </html>

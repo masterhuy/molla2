@@ -44,4 +44,24 @@ class gdzTemplate extends ObjectModel
         $res &= parent::delete();
         return $res;
     }
+    public static function getImages($json)
+    {
+        $img = array();
+        foreach ($json as $row) {
+            foreach ($row['cols'] as $col) {
+                foreach ($col['addons'] as $addon) {
+                    foreach ($addon['fields'] as $field) {
+                        if ($field['type'] == 'image') {
+                            $img[] = $field['value'];
+                        } elseif ($field['type'] == 'images') {
+                            foreach ($field['value'] as $value) {
+                                $img[] = $value['image'];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return $img;
+    }
 }

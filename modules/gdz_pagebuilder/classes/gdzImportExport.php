@@ -42,4 +42,73 @@ class gdzImportExport extends Module
         echo $_output;
         exit;
     }
+    public function import($json)
+    {
+        $rows = (array)Tools::jsonDecode($json);
+        $bresult = array();
+        $b_index = 0;
+        foreach ($rows as $key => $row) {
+            $row_css = '';
+            $row->id = 'row-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+            $row_css .= gdzPageBuilderHelper::parseStyleItem('row', $row);
+            $row->class = $row->settings->custom_class;
+            if($row->settings->animation) {
+                $row->class .= " animated ".$row->settings->animation;
+            }
+            if(isset($row->settings->content_align) && $row->settings->content_align != '') {
+                $row->class .= " ".$row->settings->content_align."-align";
+            }
+            if($row->settings->hidden_mobile) {
+                $row->class .= " pb-hidden-xs";
+            }
+            if($row->settings->hidden_tablet) {
+                $row->class .= " pb-hidden-sm";
+            }
+            if($row->settings->hidden_desktop) {
+                $row->class .= " pb-hidden-md";
+            }
+            $bresult[] = $row;
+            $columns = $rows[$key]->cols;
+            foreach ($columns as $ckey => $column) {
+                $column->id = 'col-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+                $row_css .= gdzPageBuilderHelper::parseStyleItem('column', $column);
+                $column->class = $column->settings->lg_col." ".$column->settings->sm_col." ".$column->settings->xs_col." ".$column->settings->custom_class;
+                if($column->settings->animation) {
+                    $column->class .= " animated ".$column->settings->animation;
+                }
+                if(isset($column->settings->content_align) && $column->settings->content_align != '') {
+                    $column->class .= " ".$column->settings->content_align."-align";
+                }
+                if($column->settings->hidden_mobile) {
+                    $column->class .= " pb-hidden-xs";
+                }
+                if($column->settings->hidden_tablet) {
+                    $column->class .= " pb-hidden-sm";
+                }
+                if($column->settings->hidden_desktop) {
+                    $column->class .= " pb-hidden-md";
+                }
+                $addons = $column->addons;
+                foreach ($addons as $akey => $addon) {
+                    $addon->id = 'addon-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+                    $row_css .= gdzPageBuilderHelper::parseStyleItem('addon', $addon);
+                    $bresult[$b_index]->cols[$ckey]->addons[$akey]->return_value = gdzPageBuilderHelper::loadAddon($addon);
+                }
+            }
+            $bresult[$b_index]->style = $row_css;
+            $b_index++;
+
+        }
+        $context->smarty->assign(
+            array(
+                'rows' => $bresult
+            )
+        );
+        $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/admin/preview_rows.tpl");
+        $rs = array(
+            'html' => $html,
+            'params' => $rows,
+        );
+        dump($rs);exit;
+    }
 }

@@ -30,6 +30,7 @@ class gdz_pagebuilderPreviewModuleFrontController extends ModuleFrontController
         $params = $_page['params'];
         $page_result = gdzPageBuilderHelper::genRows($params);
         $this->context->controller->registerStylesheet('gdzpb-awesome-icon', 'modules/'.$this->module->name.'/lib/awesome/font-awesome.min.css', ['media' => 'all', 'priority' => 1]);
+        $this->context->controller->registerStylesheet('gdzpb-awesome-icon', 'modules/'.$this->module->name.'/lib/feather/feather.css', ['media' => 'all', 'priority' => 2]);        
         $this->context->controller->registerStylesheet('modules-gdz_pagebuilder-editor-preview', 'modules/'.$this->module->name.'/views/css/preview.css', ['media' => 'all', 'priority' => 100]);
         if ($_page['css_file']) {
             $this->registerStylesheet('gdzpb-home-css', '/assets/css/'.$_page['css_file'], ['media' => 'all', 'priority' => 1000]);

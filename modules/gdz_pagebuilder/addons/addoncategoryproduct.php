@@ -295,9 +295,8 @@ class gdzAddonCategoryProduct extends gdzAddonBase
                 'category' => $category,
                 'cols'  => $cols,
                 'cols_md'   => $cols_arr[0],
-        		'cols_sm'   => $cols_arr[1],
-                'cols_xs'   => $cols_arr[2],
-                'rows'      => $addon->fields[11]->value,
+        				'cols_sm'   => $cols_arr[1],
+        				'cols_xs'   => $cols_arr[2],
                 'navigation' => $addon->fields[12]->value,
                 'pagination' => $addon->fields[13]->value,
                 'autoplay' => $addon->fields[14]->value,
@@ -308,7 +307,7 @@ class gdzAddonCategoryProduct extends gdzAddonBase
                 'showviewall' => $addon->fields[4]->value,
                 'viewall_text' => $addon->fields[5]->value->$id_lang,
                 'view_type' => $view_type,
-				'addon_tpl_dir' => $addon_tpl_dir
+				        'addon_tpl_dir' => $addon_tpl_dir
             )
         );
 		    $this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;

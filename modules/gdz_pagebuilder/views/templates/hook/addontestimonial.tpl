@@ -41,7 +41,7 @@
 			</div>
 			{/if}
 			<div class="pb-testimonial-comment" >
-				{$testimonial->comment|escape:'html':'UTF-8' nofilter}
+				{$testimonial->comment|escape:'html':'UTF-8'}
 			</div>
 		</div>
 		{/foreach}

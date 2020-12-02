@@ -82,10 +82,20 @@ class Instagram
                 }
             }
         } else {
-            print_r($result);
-            die();
         }
         return $images;
+    }
+    function getProfile()
+    {
+        $result = $this->call(
+            'GET',
+            'https://graph.instagram.com/me',
+            array(
+                'access_token' => $this->accessToken,
+                'fields' => 'id,username',
+            )
+        );
+        return $result;
     }
 }
 

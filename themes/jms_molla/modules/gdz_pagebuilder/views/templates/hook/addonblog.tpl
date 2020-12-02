@@ -59,7 +59,7 @@
 										<li class="post-views">{$post.views nofilter} View{if $post.views > 1}s{/if}</li>
 									{/if}
 									{if $show_ncomments == '1'}
-										<li class="post-comments">{$post.comment_count nofilter} Comment{if $post.comment_count > 1}s{/if}</li>
+										<li class="post-comments">{$post.comment_count nofilter} {l s='Comment' mod='gdz_blog'}{if $post.comment_count > 1}s{/if}</li>
 									{/if}
 								</ul>
 								<a class="post-title" href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.title nofilter}</a>

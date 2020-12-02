@@ -18,6 +18,7 @@ class gdzPageBuilderHelper extends Module
     {
         $this->name = _GDZ_PB_NAME_;
         parent::__construct();
+        $this->studio_url = 'http://localhost/prestashop17/befer2/index.php?fc=module&module=gdz_studio&controller=api';
     }
 
     public static function execModule($hook_name, $hook_args = array(), $id_module = null, $id_shop = null)
@@ -648,6 +649,87 @@ class gdzPageBuilderHelper extends Module
                   font-size: ".$fontsize_arr[2]."px;
               }
             }";
+        } elseif($item->type == 'banner') {
+            $item_css = '';
+            $v_offset_arr =  array(0,0,0);
+            if(isset($item->fields[19]->value) && $item->fields[19]->value)  $v_offset_arr = explode("-", $item->fields[19]->value);
+            $h_offset_arr =  array(0,0,0);
+            if(isset($item->fields[20]->value) && $item->fields[20]->value) $h_offset_arr = explode("-", $item->fields[20]->value);
+            $text_align = 'center';
+            if(isset($item->fields[21]->value) && $item->fields[18]->value) $text_align = $item->fields[21]->value;
+            $v_direct = 'top';
+            if (isset($item->fields[18]->value) && $item->fields[18]->value && strpos($item->fields[18]->value, 'bottom') !== false) {
+              $v_direct = 'bottom';
+            } else {
+              $v_direct = 'top';
+            }
+            if (isset($item->fields[18]->value) && $item->fields[18]->value && strpos($item->fields[18]->value, 'left') !== false)
+              $h_direct = 'left';
+            else
+              $h_direct = 'right';
+            if(isset($item->fields[3]->value) && $item->fields[3]->value)  $st_size = explode("-", $item->fields[3]->value);
+            if(isset($item->fields[4]->value) && $item->fields[4]->value)  $st_lineheight = explode("-", $item->fields[4]->value);
+            if(isset($item->fields[8]->value) && $item->fields[8]->value)  $t_size = explode("-", $item->fields[8]->value);
+            if(isset($item->fields[9]->value) && $item->fields[9]->value)  $t_lineheight = explode("-", $item->fields[9]->value);
+            if(isset($item->fields[12]->value) && $item->fields[12]->value)  $d_size = explode("-", $item->fields[12]->value);
+            if(isset($item->fields[13]->value) && $item->fields[13]->value)  $d_lineheight = explode("-", $item->fields[13]->value);
+            $item_css = "#$item->id .pb-banner-text {";
+            $item_css .= "$v_direct: ".$v_offset_arr[0]."px;";
+            $item_css .= "$h_direct: ".$h_offset_arr[0]."px;";
+            $item_css .= "text-align:".$text_align.";";
+            $item_css .= "}";
+            $item_css .= "#$item->id .pb-banner-subtitle {
+                font-size:".$st_size[0]."px;
+                line-height:".$st_lineheight[0]."px;
+                color:".$item->fields[5]->value."
+            }";
+            $item_css .= "#$item->id .pb-banner-title {
+                font-size:".$t_size[0]."px;
+                line-height:".$t_lineheight[0]."px;
+                color:".$item->fields[10]->value."
+            }";
+            $item_css .= "#$item->id .pb-banner-desc {
+                font-size:".$d_size[0]."px;
+                line-height:".$d_lineheight[0]."px;
+                color:".$item->fields[14]->value."
+            }";
+            $item_css .= "@media (max-width:991px) {
+              #$item->id .pb-banner-text {
+                ".$v_direct.": ".$v_offset_arr[1]."px;
+                ".$h_direct.": ".$h_offset_arr[1]."px;
+              }
+              #$item->id .pb-banner-subtitle {
+                  font-size:".$st_size[1]."px;
+                  line-height:".$st_lineheight[1]."px;
+              }
+              #$item->id .pb-banner-title {
+                  font-size:".$t_size[1]."px;
+                  line-height:".$t_lineheight[1]."px;
+              }
+              #$item->id .pb-banner-desc {
+                  font-size:".$d_size[1]."px;
+                  line-height:".$d_lineheight[1]."px;
+              }
+            }";
+            $item_css .= "@media (max-width:575px) {
+              #$item->id .pb-banner-text {
+                ".$v_direct.": ".$v_offset_arr[2]."px;
+                ".$h_direct.": ".$h_offset_arr[2]."px;
+              }
+              #$item->id .pb-banner-subtitle {
+                  font-size:".$st_size[2]."px;
+                  line-height:".$st_lineheight[2]."px;
+              }
+              #$item->id .pb-banner-title {
+                  font-size:".$t_size[2]."px;
+                  line-height:".$t_lineheight[2]."px;
+              }
+              #$item->id .pb-banner-desc {
+                  font-size:".$d_size[2]."px;
+                  line-height:".$d_lineheight[2]."px;
+              }
+            }";
+
         } else {
             return "";
         }
@@ -672,10 +754,9 @@ class gdzPageBuilderHelper extends Module
         $settings['footer_html'] = htmlspecialchars_decode(Configuration::get($sprefix . 'footer_html', $id_lang));
         $settings['vermenu_button_text'] = Configuration::get($sprefix . 'vermenu_button_text', $id_lang);
         $settings['login_page_signup_content'] = htmlspecialchars_decode(Configuration::get($sprefix . 'login_page_signup_content', $id_lang));
-        $body_google_font = json_decode(Configuration::get($sprefix . 'body_font_google'), true);
-        $settings['body_font_google_weightstyle'] = $body_google_font['weightstyle'] ? implode(",", $body_google_font['weightstyle']) : "";
-        $heading_google_font = json_decode(Configuration::get($sprefix . 'heading_font_google'), true);
-        $settings['heading_font_google_weightstyle'] = $heading_google_font['weightstyle'] ? implode(",", $heading_google_font['weightstyle']) : "";
+        //$body_google_font = json_decode(Configuration::get($sprefix . 'body_font_google'), true);
+        //$heading_google_font = json_decode(Configuration::get($sprefix . 'heading_font_google'), true);
+        //$settings['heading_font_google_weightstyle'] = $heading_google_font['weightstyle'] ? implode(",", $heading_google_font['weightstyle']) : "";
         foreach ($_settings as $key => $setting) {
             if($setting['type'] == 'icon') {
                 $str_at = strpos($settings[$key], "_");
@@ -747,6 +828,13 @@ class gdzPageBuilderHelper extends Module
                 foreach ($addons as $akey => $addon) {
                     $row_css .= gdzPageBuilderHelper::parseStyleItem('addon', $addon);
                     $bresult[$b_index]->cols[$ckey]->addons[$akey]->return_value = gdzPageBuilderHelper::loadAddon($addon);
+                    if (isset($addon->grid)) {
+                        foreach ($addon->grid as $col) {
+                            foreach ($col->addons as $subAddon) {
+                               $row_css .= gdzPageBuilderHelper::parseStyleItem('addon', $subAddon);
+                            }
+                        }
+                    }
                 }
             }
             $bresult[$b_index]->style = $row_css;
@@ -775,5 +863,15 @@ class gdzPageBuilderHelper extends Module
         }
         $addon_instance = new $addonclass();
         return $addon_instance->returnValue($addon);
+    }
+    public function request($params)
+    {
+        $curlSession = curl_init();
+        curl_setopt($curlSession, CURLOPT_URL, $this->studio_url);
+        curl_setopt($curlSession, CURLOPT_POSTFIELDS, $params);
+        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($curlSession);
+        curl_close($curlSession);
+        return Tools::jsonDecode($response, true);
     }
 }

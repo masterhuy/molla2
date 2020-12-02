@@ -2052,6 +2052,14 @@ a:focus {
     }
 }
 //product details
+.product-layout-gallery .product-details-footer .addToWishlist{
+    &::before{
+        color: $primary-color;
+    }
+    &:hover span{
+        border-bottom: .1rem solid $primary-color;
+    }
+}
 .product-images .thumb-container{
     > .thumb{
         &.selected{

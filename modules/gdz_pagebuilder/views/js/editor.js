@@ -1,1 +1,1739 @@
-var _0xd121=['.custom-layout','opacity','.reset-style-row','class','html','hidden_mobile','hidden','column-','pb-tmpl-addon-','\x22\x20data-name=\x22','url(ddddd)','.addon-box.active','match','checked','show','.gdz-configuration','Column\x20Setting','url(','&action=SavePage&ajax=1','data-align','nav','#pagebuilder-template-library','type','next','hide','gdz-row','settings','row-id','animation-delay','.addon-box','#pb-right-menu\x20.paste-style-row','style','#gdz-configuration','images','.dropbtn','change\x20input','.media-value','addons','&id_page=','image','update','.pb-addon-delete','data-url','animation-duration','.gdz-row','group-tab','testimonial','outerHeight','div[id^=\x22row\x22]','editor','.device-icons\x20li','pb-hidden-lg','.addon-input','name','.pb-screen-inputs','input[name=','tab-open','addon-sortable\x20layout-column\x20col-lg-','input[type=radio]','column','<div\x20class=\x27ui-state-highlight\x27></div>','.form-group','downloadurl','#row_style_template','sortable','pb-hidden-xs','onload','[name=icon_class]','hidden_desktop','fields','insertBefore','.color-picker-component','download','keys','top-align','col-lg-12','splice','under-tab','preventDefault','append','#pagebuilder-preview-wrapper','find','row','carousel','addon','#library-file-name','active','removeAttr','iframeDoc','input[name=alt]','.gdz-row:not(:last)','addon-cat-addons','&fid=','.pagebuilder-dialog-content','.pb-device-tabs','data-form','join','#save','removeClass','index','\x22\x20id=\x22column-','#pb-right-menu','click','removeChild','each','parse','toString','.pagebuilder-checkbox','col-lg-','.gdz-popup-overlay','.dropdown-menu','iframe','random','.pb-row-inner','dragging','#pagebuilder-preview-iframe','[data-field=\x27','content','col-sm-','gdz-editor-','ui-state-highlight','option','#col_style_template','.form-group.hidden','middle-align','activeColumn','#tool-addons','#pb-tmpl-addon-tools','comment','webkitURL','layout','.items-container','text/plain','loaded','_sm','.media-upload','radio','cols','<label\x20for=\x22field_use_link\x22><span><span></span><strong\x20class=\x22pagebuilder-checkbox-1\x22>YES</strong><strong\x20class=\x22pagebuilder-checkbox-2\x22>NO</strong></span></label>','.addon-body','drop','input[type=checkbox],\x20input[type=radio]','dragover','.addon-widget','media-preview-','[name=comment]','http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','Click\x20Ok\x20button\x20to\x20delete\x20this\x20Row,\x20Cancel\x20to\x20leave.','.icon','owlCarousel','#gdz-configuration\x20.gdz-editor','getInputValue','sm_col','empty','prev','forEach','findKey','data-id','.column-settings\x20input,\x20.column-settings\x20select','rating','change','value','row-layout-open','<div></div>','location','data-name','xs_col','[name=rating]','activeRow','push','row-','lg_col','-layout','.item-row-title','#pb-tmpl-row\x20.gdz-row','pb-config-addon-','indexOf','editor_link','.save-template-row','column_type','#library-save-template','.item-inner\x20>\x20.form-group','],\x20select[data-field=','.pagebuilder-preview-overlay','.row-sortable','jQuery','.pagebuilder-addons\x20li.addon-cat-addons','appendTo','input[name=title]','contextmenu','margin','custom','.pb-row-setting','Please\x20enter\x20template\x20name','ajax','body','filed','length','checkbox','.form-group.name','background-image','.gdz-modal-body','map','slidebypage','stopPropagation','row-add','\x22></div>','<div\x20class=\x22addon-box\x22\x20data-id=\x22','.media-image-preview','split','hasClass','col_id','complete','.addon-body\x20>\x20*','contentWindow','insertAfter','.tree-folder\x20input[type=radio]','container','innerHTML','.template-import','middle_align','mousedown','#column-settings','.copy-style-row','pagebuilder-editor-active','attrname','.ui-state-highlight',':checked','[name=image]','keyup','ajax_link','.pb-add-template','.row','querySelector','#select-language','setInputValue','target','ui-sortable','.template-row','addon-sortable','.pb-column-list\x20li\x20a','prop','.export-row','mouseenter\x20mouseleave','col-xs-','inArray','media-value-','.dropdown','\x27][data-lang=\x27','input[name=icon_class]','fancybox','custom_class','input[name=position]','pb-hidden-sm','destroy','.row-layout-setting','#library-template-name','Row\x20Setting','popup','Click\x20Ok\x20button\x20to\x20delete\x20this\x20Addon,\x20Cancel\x20to\x20leave.','toggleClass','document','#search-addon','component','createElement','_md','clone','parents','getContent','column-empty','categories','trigger','dataset','.addon-cat-addons','get','offset','secure_key','pb-device-md\x20pb-device-sm\x20pb-device-xs','val','.pb-row-duplicate','addon-','hidden_tablet','.layout-column','createObjectURL','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js','addonid','.paste-style-row:not(.disable)','readyState','layout-column','&action=SaveTemplate&ajax=1','#template-library','[name=position]','&id_lang=','script','.pb-column-setting','addon-empty','onreadystatechange','.cattree','alt','assign','rewind','media-empty',']:selected','#pagebuilder-','device','width','.eventInsForm','.gdz-switch','.json','position','clientX','#back','bottom-align','.pb-row-layout','author','.row-style','<style\x20type=\x22text/css\x22\x20class=\x22row-style\x22></style>','prepend','getElementById','animated','.pb-row-layout\x20.column-layout','bind','closest','.config-heading\x20.config-title','stringify','appendChild','background-repeat','#row-settings','row-style-copy','data-type','select','accordion','.row-settings\x20input,\x20.row-settings\x20select','social','URL','Please\x20enter\x20file\x20name','text','dragenter','top','.pb-add-row\x20.column-layout','.pb-addon-duplicate','tab','change\x20keyup','.disabled','remove','getElement','.addon-sortable','show-setting','pb-device-','#wrapper\x20.layout-column','content_align','<style\x20type=\x22text/css\x22\x20class=\x22col-style\x22></style>','auto','align','open','link','multilang','src','background-attachment','#pb-tmpl-column\x20.layout-column','POST','input[name=author]','parent','.row-add','disable','css','template','input[name=rating]','left','<div\x20class=\x22addon-body\x22></div>','[name=content]','.col-style','field-open','input[name=link]',']:checked','slideUp','replace','href','<div\x20class=\x22addon-sortable\x20layout-column\x20col-lg-','data','children','toUpperCase','data-layout','input[data-field=','addClass','.element-title','attr','setting','#select-page','icon_class','.condition-setting','input[name=image]','color','pro','dots','_xs','dragstart','#main','serializeArray','completed','load','.tree-folder\x20input[type=checkbox]','animation'];(function(_0x1d128b,_0xd12108){var _0x365c18=function(_0x1d67af){while(--_0x1d67af){_0x1d128b['push'](_0x1d128b['shift']());}};_0x365c18(++_0xd12108);}(_0xd121,0xde));var _0x365c=function(_0x1d128b,_0xd12108){_0x1d128b=_0x1d128b-0x0;var _0x365c18=_0xd121[_0x1d128b];return _0x365c18;};jQuery(function(_0x5d9701){_0x5d9701['fn'][_0x365c('0x14c')]=function(){if(this[_0x365c('0xa4')]('type')==_0x365c('0xd6'))return this[_0x365c('0x106')](_0x365c('0x138'))['find'](_0x365c('0xf2'))[_0x365c('0x17f')](function(_0x34baaf,_0x1f3206){return{'alt':_0x5d9701(_0x1f3206)[_0x365c('0x106')](_0x365c('0x10e'))['val'](),'link':_0x5d9701(_0x1f3206)[_0x365c('0x106')]('input[name=link]')[_0x365c('0x38')](),'image':_0x5d9701(_0x1f3206)[_0x365c('0x106')](_0x365c('0xa9'))['val']()};})['get']();else{if(this['attr'](_0x365c('0xcb'))==_0x365c('0x6d'))return this[_0x365c('0x106')](_0x365c('0x138'))[_0x365c('0x106')](_0x365c('0xf2'))[_0x365c('0x17f')](function(_0x11c349,_0x164523){return{'title':_0x5d9701(_0x164523)[_0x365c('0x106')](_0x365c('0x171'))[_0x365c('0x38')](),'content':_0x5d9701(_0x164523)['find'](_0x365c('0x94'))['val']()};})[_0x365c('0x34')]();else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0x6f'))return this[_0x365c('0x106')](_0x365c('0x138'))[_0x365c('0x106')](_0x365c('0xf2'))[_0x365c('0x17f')](function(_0xc140df,_0x4bd4b8){return{'link':_0x5d9701(_0x4bd4b8)[_0x365c('0x106')](_0x365c('0x97'))[_0x365c('0x38')](),'icon_class':_0x5d9701(_0x4bd4b8)[_0x365c('0x106')](_0x365c('0xf8'))[_0x365c('0x38')]()};})[_0x365c('0x34')]();else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0xe3'))return this[_0x365c('0x106')](_0x365c('0x138'))[_0x365c('0x106')](_0x365c('0xf2'))[_0x365c('0x17f')](function(_0x2fc594,_0x41e325){return{'image':_0x5d9701(_0x41e325)[_0x365c('0x106')](_0x365c('0x6'))[_0x365c('0x38')](),'author':_0x5d9701(_0x41e325)[_0x365c('0x106')](_0x365c('0x8b'))[_0x365c('0x38')](),'position':_0x5d9701(_0x41e325)[_0x365c('0x106')](_0x365c('0x45'))[_0x365c('0x38')](),'rating':_0x5d9701(_0x41e325)[_0x365c('0x106')](_0x365c('0x15c'))[_0x365c('0x38')](),'comment':_0x5d9701(_0x41e325)[_0x365c('0x106')](_0x365c('0x146'))[_0x365c('0x38')]()};})[_0x365c('0x34')]();else return this['attr'](_0x365c('0xcb'))==_0x365c('0x17b')?this['attr'](_0x365c('0xc2'))?'1':'0':this[_0x365c('0x38')]();}}}},_0x5d9701['fn'][_0x365c('0xd')]=function(_0x3e4a1a){if(this['attr'](_0x365c('0xcb'))==_0x365c('0xd6'))images_input=this,container=images_input[_0x365c('0x106')](_0x365c('0x138')),_0x3e4a1a[_0x365c('0x179')][_0x365c('0x150')](function(_0x3161d1){fid=genID(),form_group=images_input[_0x365c('0x106')](_0x365c('0x130'))[_0x365c('0x2c')]()['removeClass'](_0x365c('0xbb')),form_group[_0x365c('0x106')](_0x365c('0x10e'))[_0x365c('0x38')](_0x3161d1[_0x365c('0x4c')]),form_group[_0x365c('0x106')]('input[name=link]')[_0x365c('0x38')](_0x3161d1[_0x365c('0x85')]),form_group[_0x365c('0x106')](_0x365c('0x185'))[_0x365c('0xa4')]('id',_0x365c('0x145')+fid)[_0x365c('0x8f')](_0x365c('0x17d'),_0x365c('0xbf')),form_group['find'](_0x365c('0xd9'))[_0x365c('0xa4')]('id',_0x365c('0x18')+fid)[_0x365c('0x38')](_0x3161d1['image']),form_group[_0x365c('0x106')](_0x365c('0x162'))[_0x365c('0xb9')](_0x3161d1[_0x365c('0x4c')]),media_upload=form_group[_0x365c('0x106')](_0x365c('0x13c')),media_upload['attr'](_0x365c('0xdf'),media_upload[_0x365c('0xa4')](_0x365c('0xdf'))+_0x365c('0x111')+fid);if(!_0x3161d1[_0x365c('0xdc')])media_upload[_0x365c('0xa2')]('media-empty');container[_0x365c('0x104')](form_group);});else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))=='accordion')accordion=this,container=accordion['find'](_0x365c('0x138')),_0x3e4a1a[_0x365c('0x179')][_0x365c('0x150')](function(_0x1504e5){form_group=accordion[_0x365c('0x106')](_0x365c('0x130'))[_0x365c('0x2c')]()[_0x365c('0x117')]('hidden'),form_group[_0x365c('0x106')](_0x365c('0x171'))[_0x365c('0x38')](_0x1504e5['title']),form_group['find'](_0x365c('0x94'))['val'](_0x1504e5[_0x365c('0x12a')]),form_group[_0x365c('0x106')](_0x365c('0x162'))[_0x365c('0xb9')](_0x1504e5['title']),container[_0x365c('0x104')](form_group);});else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0x6f'))social=this,container=social[_0x365c('0x106')](_0x365c('0x138')),_0x3e4a1a[_0x365c('0x179')][_0x365c('0x150')](function(_0x4c904d){form_group=social[_0x365c('0x106')](_0x365c('0x130'))['clone']()[_0x365c('0x117')](_0x365c('0xbb')),form_group[_0x365c('0x106')](_0x365c('0x97'))['val'](_0x4c904d[_0x365c('0x85')]),form_group[_0x365c('0x106')](_0x365c('0xf8'))[_0x365c('0x38')](_0x4c904d[_0x365c('0xa7')]),form_group['find'](_0x365c('0x162'))[_0x365c('0xb9')](_0x4c904d[_0x365c('0xa7')]),container['append'](form_group);});else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))=='testimonial')fid=genID(),testimonial=this,container=testimonial[_0x365c('0x106')](_0x365c('0x138')),_0x3e4a1a['filed'][_0x365c('0x150')](function(_0x1b27b5){form_group=testimonial[_0x365c('0x106')](_0x365c('0x130'))[_0x365c('0x2c')]()[_0x365c('0x117')](_0x365c('0xbb')),form_group[_0x365c('0x106')]('.media-image-preview')[_0x365c('0xa4')]('id',_0x365c('0x145')+fid)[_0x365c('0x8f')]('background-image',_0x365c('0xc6')+_0x1b27b5[_0x365c('0xdc')]+')'),form_group['find']('.media-value')['attr']('id',_0x365c('0x18')+fid)[_0x365c('0x38')](_0x1b27b5[_0x365c('0xdc')]),media_upload=form_group[_0x365c('0x106')](_0x365c('0x13c')),media_upload[_0x365c('0xa4')](_0x365c('0xdf'),media_upload[_0x365c('0xa4')]('data-url')+_0x365c('0x111')+fid);if(!_0x1b27b5[_0x365c('0xdc')])media_upload[_0x365c('0xa2')](_0x365c('0x4f'));form_group[_0x365c('0x106')](_0x365c('0xa9'))[_0x365c('0x38')](_0x1b27b5[_0x365c('0xdc')]),form_group[_0x365c('0x106')](_0x365c('0x8b'))[_0x365c('0x38')](_0x1b27b5['author']),form_group[_0x365c('0x106')](_0x365c('0x1e'))['val'](_0x1b27b5[_0x365c('0x57')]),form_group[_0x365c('0x106')](_0x365c('0x91'))[_0x365c('0x38')](_0x1b27b5[_0x365c('0x154')]),form_group['find']('[name=comment]')['val'](_0x1b27b5[_0x365c('0x135')]),form_group[_0x365c('0x106')](_0x365c('0x162'))['html'](_0x1b27b5[_0x365c('0x5c')]),container[_0x365c('0x104')](form_group);});else{if(this[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0x17b'))_0x3e4a1a[_0x365c('0x179')]=='1'?this['attr'](_0x365c('0xc2'),'checked'):this[_0x365c('0x10c')](_0x365c('0xc2'));else{if(this['attr'](_0x365c('0x6b'))==_0x365c('0xdc')){fid=genID(),$imgParent=this[_0x365c('0x8c')](),$imgParent[_0x365c('0x106')](_0x365c('0x185'))['attr']('id',_0x365c('0x145')+fid)[_0x365c('0x8f')](_0x365c('0x17d'),_0x365c('0xc6')+_0x3e4a1a['filed']+')'),$imgParent[_0x365c('0x106')](_0x365c('0xd9'))[_0x365c('0xa4')]('id',_0x365c('0x18')+fid)['val'](_0x3e4a1a['filed']),media_upload=$imgParent[_0x365c('0x106')](_0x365c('0x13c')),media_upload[_0x365c('0xa4')](_0x365c('0xdf'),media_upload[_0x365c('0xa4')](_0x365c('0xdf'))+'&fid='+fid);if(!_0x3e4a1a[_0x365c('0x179')])media_upload[_0x365c('0xa2')](_0x365c('0x4f'));}else{if(this['attr'](_0x365c('0x6b'))==_0x365c('0x30')){var _0xc6c054=this[_0x365c('0x106')](_0x365c('0x142')),_0x336e9c=new Array();if(this[_0x365c('0xa4')]('data-usecheckbox')=='1'){var _0x53c46c=_0x3e4a1a[_0x365c('0x179')]['split'](',');_0xc6c054[_0x365c('0x11d')](function(_0xe1549f){jQuery['inArray'](_0x5d9701(this)['val'](),_0x53c46c)!=-0x1&&_0x5d9701(this)[_0x365c('0x13')](_0x365c('0xc2'),!![]);});}else _0xc6c054[_0x365c('0x11d')](function(_0x4f96a1){_0x5d9701(this)[_0x365c('0x38')]()==_0x3e4a1a[_0x365c('0x179')]&&_0x5d9701(this)[_0x365c('0x13')](_0x365c('0xc2'),!![]);});}else{if(this['attr'](_0x365c('0x6b'))==_0x365c('0x83')){var _0x45f4ce=this[_0x365c('0x8c')]()[_0x365c('0x106')]('li');_0x45f4ce['removeClass'](_0x365c('0x10b')),_0x45f4ce[_0x365c('0x11d')](function(){_0x5d9701(this)['attr'](_0x365c('0xc8'))==_0x3e4a1a[_0x365c('0x179')]&&_0x5d9701(this)[_0x365c('0xa2')]('active');});}else this[_0x365c('0x38')](_0x3e4a1a[_0x365c('0x179')]);}}}}}}}if(this[_0x365c('0xa4')](_0x365c('0x6b'))=='screen-range'){var _0x46554e=_0x5d9701(this)[_0x365c('0x38')](),_0x53c46c=_0x46554e[_0x365c('0x186')]('-');this[_0x365c('0x14f')]()[_0x365c('0x106')]('input[type=number]')['each'](function(_0x340d91){_0x5d9701(this)['val'](_0x53c46c[_0x340d91]);});}this[_0x365c('0x9d')]('attrname')==_0x365c('0x168')&&(this['val']()==_0x365c('0x29')&&_0x5d9701(_0x365c('0x17c'))[_0x365c('0xcd')]());if(this[_0x365c('0xa4')](_0x365c('0x6b'))==_0x365c('0xe6')){var _0x231454=genID();this[_0x365c('0xa4')]('id',_0x365c('0x12c')+_0x231454);}},_0x5d9701(document)['on'](_0x365c('0x11b'),'#pagebuilder-mode-switch',function(_0x3b5052){_0x5d9701('body')[_0x365c('0x26')](_0x365c('0x2'));}),_0x5d9701(document)['on'](_0x365c('0x155'),_0x365c('0xa6'),function(_0xda05e3){document[_0x365c('0x159')]=PagebuilderConfig[_0x365c('0x166')]+_0x365c('0xdb')+_0x5d9701(this)[_0x365c('0x38')]()+_0x365c('0x46')+_0x5d9701('#select-language')[_0x365c('0x38')]();}),_0x5d9701(document)['on']('change',_0x365c('0xc'),function(_0x102e47){document[_0x365c('0x159')]=PagebuilderConfig[_0x365c('0x166')]+_0x365c('0xdb')+_0x5d9701('#select-page')['val']()+'&id_lang='+_0x5d9701(this)['val']();}),_0x5d9701(document)['on'](_0x365c('0x11b'),_0x365c('0xd7'),function(_0x17f53c){_0x17f53c[_0x365c('0x181')](),_0x5d9701(this)[_0x365c('0x8c')]()['hasClass'](_0x365c('0x84'))?_0x5d9701(_0x365c('0x19'))[_0x365c('0x117')](_0x365c('0x84')):(_0x5d9701(_0x365c('0x19'))[_0x365c('0x117')]('open'),_0x5d9701(this)[_0x365c('0x8c')]()[_0x365c('0xa2')](_0x365c('0x84')));}),_0x5d9701(document)['on'](_0x365c('0x11b'),'#save-template-file',function(_0x1a391e){_0x1a391e[_0x365c('0x103')](),_0x1a391e[_0x365c('0x181')]();var _0x456d7b=getLayout(iframeDoc),_0x349d87=_0x5d9701(_0x365c('0x10a'))['val']();if(_0x349d87==''){alert(_0x365c('0x71'));return;}blob=new Blob([_0x456d7b],{'type':'text/plain'}),anchor=document['createElement']('a'),anchor[_0x365c('0xfd')]=_0x349d87+_0x365c('0x56'),anchor[_0x365c('0x9b')]=(window[_0x365c('0x136')]||window[_0x365c('0x70')])[_0x365c('0x3d')](blob),anchor[_0x365c('0x32')][_0x365c('0xf3')]=[_0x365c('0x139'),anchor[_0x365c('0xfd')],anchor[_0x365c('0x9b')]][_0x365c('0x115')](':'),anchor[_0x365c('0x11b')]();}),_0x5d9701(document)['on'](_0x365c('0x11b'),_0x365c('0x190'),function(_0x272802){_0x272802['preventDefault'](),_0x272802['stopPropagation']();var _0x5abc85=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x10'));_0x5d9701('.pagebuilder-dialog-close')['trigger'](_0x365c('0x11b')),_0x5d9701(_0x365c('0x16c'))[_0x365c('0xc3')](),_0x5d9701[_0x365c('0x177')]({'type':'POST','url':PagebuilderConfig[_0x365c('0x8')]+'action=importTemplate&secure_key='+PagebuilderConfig[_0x365c('0x36')],'data':{'id_template':_0x5abc85['attr'](_0x365c('0x152'))},'success':function(_0x4b627e){_0x4b627e=JSON[_0x365c('0x11e')](_0x4b627e),iframeDoc=window['iframeDoc'],template=_0x5d9701(_0x4b627e[_0x365c('0xb9')]),wrapper=_0x5d9701(_0x365c('0x158'))[_0x365c('0xb9')](template),assignData(_0x4b627e['params'],wrapper),template[_0x365c('0xfb')](_0x5d9701(iframeDoc)[_0x365c('0x106')](_0x365c('0x8d'))),_0x5d9701('.pagebuilder-preview-overlay')[_0x365c('0xcd')](),_0x5d9701(template)[_0x365c('0x106')](_0x365c('0x7c'))[_0x365c('0xf5')]({'scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd,'placeholder':'ui-state-highlight','connectWith':_0x365c('0x7c'),'update':function(_0x408d61,_0x35ca20){checkEmpty(iframeDoc);}});}});}),_0x5d9701(document)['on'](_0x365c('0x11b'),_0x365c('0x13c'),function(_0x2e100d){_0x5d9701[_0x365c('0x1c')]({'type':_0x365c('0x124'),'href':_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0xdf')),'autoDimensions':![],'autoSize':![],'arrows':![],'width':0x258,'height':0x1f4,'helpers':{'overlay':{'locked':![]}}});}),_0x5d9701(document)['on']('click',_0x365c('0xe7'),function(_0x5daf42){_0x5d9701(_0x365c('0x105'))[_0x365c('0x117')](),_0x5d9701('#pagebuilder-preview-wrapper')[_0x365c('0xa2')](_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0x52'))+_0x365c('0x161')),_0x5d9701(_0x365c('0xe7'))[_0x365c('0x117')](_0x365c('0x10b')),_0x5d9701('#tool-device\x20.dropbtn')[_0x365c('0xb9')](_0x5d9701(this)[_0x365c('0x106')](_0x365c('0x149'))[_0x365c('0xb9')]()),_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x10b'));var _0xc1c06e=_0x5d9701(this)['data'](_0x365c('0x52'));_0x5d9701(_0x365c('0x113'))[_0x365c('0x11d')](function(){_0x5d9701(this)[_0x365c('0x117')](_0x365c('0x37')),_0x5d9701(this)['addClass'](_0x365c('0x7e')+_0xc1c06e);}),_0x5d9701(_0x365c('0xeb'))[_0x365c('0x11d')](function(){_0x5d9701(this)[_0x365c('0x117')](_0x365c('0x37')),_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x7e')+_0xc1c06e);});}),_0x5d9701(document)[_0x365c('0x11b')](function(){_0x5d9701('.dropdown')[_0x365c('0x117')]('open');}),_0x5d9701(document)['on'](_0x365c('0x7'),_0x365c('0x28'),function(_0x3c4972){var _0x1925f2,_0x5056f6,_0x30ade0,_0x2b6915;_0x1925f2=_0x5d9701(this)[_0x365c('0x38')]()[_0x365c('0x9f')](),_0x30ade0=_0x5d9701(_0x365c('0x16f')),_0x30ade0['each'](function(){_0x2b6915=_0x5d9701(this)[_0x365c('0x106')](_0x365c('0xa3'))[_0x365c('0x72')](),_0x2b6915[_0x365c('0x9f')]()[_0x365c('0x165')](_0x1925f2)>-0x1?_0x5d9701(this)['show']():_0x5d9701(this)['hide']();});}),genID=function(){return Math[_0x365c('0x125')]()[_0x365c('0x11f')](0x24)['substr'](0x2,0x9);},customTemplateFn=function(_0x2910b6,_0x14da6a,_0x46f463){return obj={},obj[_0x365c('0x3f')]=_0x2910b6,Object['keys'](_0x46f463)[_0x365c('0x150')](function(_0xde3cab){config=_0x46f463[_0xde3cab];if(config[_0x365c('0x86')]=='1')obj[config[_0x365c('0xea')]]=config[_0x365c('0x156')][default_language];else{if(config[_0x365c('0xcb')]=='screen-range'){var _0x2bd6c2=config[_0x365c('0x156')][_0x365c('0x186')]('-');obj[config[_0x365c('0xea')]+_0x365c('0x2b')]=_0x2bd6c2[0x0],obj[config[_0x365c('0xea')]+_0x365c('0x13b')]=_0x2bd6c2[0x1],obj[config[_0x365c('0xea')]+_0x365c('0xad')]=_0x2bd6c2[0x2];}obj[config[_0x365c('0xea')]]=config[_0x365c('0x156')];}}),_0x14da6a(obj);},addAddon=function(_0x23d3d9){iframeDoc=window['iframeDoc'];var _0x560848=JSON[_0x365c('0x11e')](addonDefaults),_0x1629c1=iframeDoc['getElementById'](_0x365c('0xbd')+_0x23d3d9)[_0x365c('0x18f')],_0x2d496a=_[_0x365c('0x90')](_0x1629c1),_0x330836=_0x365c('0x3a')+genID(),_0x54b99b=_0x5d9701('#pb-tmpl-addon-tools')[_0x365c('0x2c')](!![]),_0x3c7a31=_0x5d9701(_0x365c('0x184')+_0x330836+_0x365c('0xbe')+_0x23d3d9+_0x365c('0x183'));return _0x3c7a31[_0x365c('0x104')](_0x5d9701(_0x365c('0x134'))[_0x365c('0xb9')]()),_0x3c7a31[_0x365c('0x104')](_0x5d9701(_0x365c('0x93'))),_0x3c7a31[_0x365c('0x9d')](_0x365c('0xa5'),_0x560848[_0x23d3d9]),_0x3c7a31[_0x365c('0x9d')](_0x365c('0xdd'),_0x2d496a),_0x3c7a31[_0x365c('0xa4')]('id',_0x330836),_0x3c7a31[_0x365c('0xa4')](_0x365c('0x15a'),_0x23d3d9),_0x3c7a31;},newColumnSetting=function(_0x24a174){return setting=JSON['parse'](colSettings),setting[_0x365c('0x160')]=_0x365c('0x121')+_0x24a174,setting['sm_col']=_0x365c('0x12b')+_0x24a174,setting[_0x365c('0x15b')]=_0x365c('0x16')+_0x24a174,setting;},copyAddonData=function(_0x1d5b74,_0x383f11){setting=JSON[_0x365c('0x11e')](JSON[_0x365c('0x66')](_0x1d5b74['data'](_0x365c('0xa5')))),update=_0x1d5b74[_0x365c('0x9d')](_0x365c('0xdd')),_0x383f11[_0x365c('0x9d')]('setting',setting),_0x383f11[_0x365c('0x9d')](_0x365c('0xdd'),update),_0x383f11['attr']('id',_0x365c('0x3a')+genID()),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x9d')](_0x365c('0x29'),_0x383f11),updateComponent(_0x383f11,_0x383f11[_0x365c('0x9d')](_0x365c('0xa5')));},copyColData=function(_0x249e77,_0x414787){setting=JSON[_0x365c('0x11e')](JSON[_0x365c('0x66')](_0x249e77[_0x365c('0x9d')](_0x365c('0xa5')))),_0x414787[_0x365c('0x9d')](_0x365c('0xa5'),setting),_0x414787[_0x365c('0xa4')]('id',_0x365c('0xbc')+genID()),updateColumn(_0x414787,_0x414787[_0x365c('0x9d')](_0x365c('0xa5')));},copyRowData=function(_0x50f40b,_0x5850d6){setting=JSON['parse'](JSON[_0x365c('0x66')](_0x50f40b[_0x365c('0x9d')](_0x365c('0xa5')))),_0x5850d6[_0x365c('0x9d')](_0x365c('0xa5'),setting),_0x50f40b[_0x365c('0x106')](_0x365c('0xd2'))['each'](function(_0x285204,_0x3e4743){addonID=_0x5d9701(_0x3e4743)[_0x365c('0xa4')]('id'),addonClone=_0x5850d6[_0x365c('0x106')]('#'+addonID),copyAddonData(_0x5d9701(_0x3e4743),addonClone);}),_0x50f40b['find'](_0x365c('0x3c'))[_0x365c('0x11d')](function(_0x35ac6d,_0x49e284){colID=_0x5d9701(_0x49e284)[_0x365c('0xa4')]('id'),colClone=_0x5850d6['find']('#'+colID),copyColData(_0x5d9701(_0x49e284),colClone);}),_0x5850d6[_0x365c('0xa4')]('id',_0x365c('0x15f')+genID()),updateRow(_0x5850d6,_0x5850d6[_0x365c('0x9d')](_0x365c('0xa5')));},sortableAddon=function(_0x18734e){_0x5d9701(_0x18734e)[_0x365c('0x106')](_0x365c('0x7c'))[_0x365c('0xf5')]({'placeholder':_0x365c('0x12d'),'connectWith':_0x365c('0x7c'),'scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd});},showRowSetting=function(){settingPanel=_0x5d9701(_0x365c('0x69')),activeRow=settingPanel[_0x365c('0x9d')](_0x365c('0x15d')),setting=activeRow['data'](_0x365c('0xa5')),_0x5d9701(_0x365c('0x65'))[_0x365c('0xb9')](_0x365c('0x23')),_0x5d9701(_0x365c('0xd5'))[_0x365c('0xb9')](settingPanel[_0x365c('0x9e')]()[_0x365c('0x2c')](!![])),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x106')](_0x365c('0xe9'))[_0x365c('0x11d')](function(){let _0x1f5819=_0x5d9701(this),_0x1d3317=_0x1f5819[_0x365c('0x9d')](_0x365c('0x3'));_0x1f5819[_0x365c('0xd')]({'filed':setting[_0x1d3317]});}),reLoadUI(),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x8c')]()['show']();},showColumnSetting=function(){settingPanel=_0x5d9701(_0x365c('0x0')),activeColumn=settingPanel[_0x365c('0x9d')](_0x365c('0x132')),setting=activeColumn[_0x365c('0x9d')](_0x365c('0xa5')),_0x5d9701(_0x365c('0x65'))['html'](_0x365c('0xc5')),_0x5d9701(_0x365c('0xd5'))[_0x365c('0xb9')](settingPanel['children']()[_0x365c('0x2c')](!![])),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x106')]('.addon-input')['each'](function(){let _0x18d759=_0x5d9701(this),_0x197b56=_0x18d759[_0x365c('0x9d')](_0x365c('0x3'));_0x18d759[_0x365c('0xd')]({'filed':setting[_0x197b56]});}),reLoadUI(),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x8c')]()[_0x365c('0xc3')]();},assignData=function(_0xdb51d0,_0x45ef54){_0xdb51d0['forEach'](function(_0x1a1ec3){rowId=_0x1a1ec3['id'];if(rowId)_0x5d9701(_0x45ef54)[_0x365c('0x106')]('#'+rowId)[_0x365c('0x9d')]('setting',_0x1a1ec3[_0x365c('0xcf')]);_0x1a1ec3[_0x365c('0x13e')][_0x365c('0x150')](function(_0x1a03f6){colId=_0x1a03f6['id'];if(colId)_0x5d9701(_0x45ef54)[_0x365c('0x106')]('#'+colId)[_0x365c('0x9d')](_0x365c('0xa5'),_0x1a03f6[_0x365c('0xcf')]);_0x1a03f6[_0x365c('0xda')][_0x365c('0x150')](function(_0xa19833){addonId=_0xa19833['id'],addonId&&(addonTemplate=window['iframeDoc']['getElementById']('pb-tmpl-addon-'+_0xa19833['type'])[_0x365c('0x18f')],templateFn=_[_0x365c('0x90')](addonTemplate),_0x5d9701(_0x45ef54)['find']('#'+addonId)[_0x365c('0x9d')](_0x365c('0xa5'),_0xa19833[_0x365c('0xfa')]),_0x5d9701(_0x45ef54)[_0x365c('0x106')]('#'+addonId)[_0x365c('0x9d')](_0x365c('0xdd'),templateFn));});});});},ConditionCheck=function(_0x48b8ca,_0x2e5d7f,_0x445158){switch(_0x445158){case'==':return _0x48b8ca==_0x2e5d7f;case'!=':return _0x48b8ca!=_0x2e5d7f;case'<=':return jQuery[_0x365c('0x17')](_0x48b8ca,_0x2e5d7f)==-0x1?![]:!![];default:return _0x48b8ca===_0x2e5d7f;}},reLoadUI=function(_0xf7747f){_0x5d9701(_0x365c('0x138'))[_0x365c('0xf5')]({'placeholder':_0x365c('0x12d'),'connectWith':_0x365c('0x138'),'update':function(_0x8c0200,_0x24a7f5){_0x5d9701(this)[_0x365c('0x64')]('.repeat-input')['trigger'](_0x365c('0x155'));}}),_0x5d9701('.pb-range')[_0x365c('0x11d')](function(){_0x5d9701(this)[_0x365c('0x38')](_0x5d9701(this)[_0x365c('0xcc')]()[_0x365c('0x38')]());}),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x106')](_0x365c('0x120'))['on'](_0x365c('0x11b'),function(_0x575cfd){var _0x4ab718=_0x5d9701(this)[_0x365c('0x106')]('.gdz-switch');if(_0x4ab718['is'](_0x365c('0x5')))_0x4ab718[_0x365c('0x13')](_0x365c('0xc2'),![]);else _0x4ab718[_0x365c('0x13')](_0x365c('0xc2'),!![]);_0x4ab718[_0x365c('0x31')](_0x365c('0x155'));}),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x106')](_0x365c('0x55'))[_0x365c('0x11d')](function(){_0x5d9701(this)[_0x365c('0x8c')]()[_0x365c('0x104')](_0x365c('0x13f'));}),_0x5d9701(_0x365c('0xd5'))['find'](_0x365c('0xfc'))['colorpicker'](),setTimeout(function(){tinySetup({'selector':_0x365c('0x14b'),'setup':function(_0x3c9bb9){_0x3c9bb9['on'](_0x365c('0x155'),function(_0x7b3bdc){textarea=tinyMCE[_0x365c('0x34')](_0x3c9bb9['id'])[_0x365c('0x7b')](),_0x5d9701(textarea)[_0x365c('0x38')](_0x3c9bb9[_0x365c('0x2e')]()),_0x5d9701(textarea)[_0x365c('0x31')](_0x365c('0x155'));}),_0x3c9bb9['on'](_0x365c('0x7'),function(_0x5c6f95){textarea=tinyMCE['get'](_0x3c9bb9['id'])[_0x365c('0x7b')](),_0x5d9701(textarea)[_0x365c('0x38')](_0x3c9bb9['getContent']()),_0x5d9701(textarea)[_0x365c('0x31')](_0x365c('0x7'));});}});},0x3e8),_0x5d9701(_0x365c('0x17e'))['find'](_0x365c('0xa8'))[_0x365c('0x11d')](function(){var _0x1531a7=_0x5d9701(this),_0x17c09c=JSON['parse'](_0x5d9701(this)[_0x365c('0xa4')]('data-condition'));_0x5d9701[_0x365c('0x11d')](_0x17c09c,function(_0x224739,_0x3c4f5e){var _0x216499=_0x3c4f5e[_0x365c('0xc1')](/(\w+)(?:\[(\w+)])?/gi),_0x23030a=undefined,_0x417c25=_0x3c4f5e[_0x365c('0xc1')](/(\!=|<=|==)(?:\[(\w+)])?/gi)[0x0],_0x1e75c5=_0x5d9701('.gdz-modal-body')['find'](_0x365c('0xa1')+_0x224739+_0x365c('0x16b')+_0x224739+']'),_0x3915d1=_0x1e75c5['val']();_0x1e75c5[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0x13d')&&(_0x3915d1=_0x5d9701(_0x365c('0xec')+_0x224739+_0x365c('0x98'))[_0x365c('0x38')]());_0x1e75c5[_0x365c('0xa4')](_0x365c('0xcb'))==_0x365c('0x6c')&&(_0x3915d1=_0x5d9701(_0x365c('0xec')+_0x224739+_0x365c('0x50'))[_0x365c('0x38')]());if(_0x1e75c5['attr'](_0x365c('0x6b'))=='checkbox2'){if(_0x5d9701('input[name='+_0x224739+']')['is'](_0x365c('0x5')))_0x3915d1=0x1;else _0x3915d1=0x0;}_0x216499?_0x23030a=_0x216499[0x0]:_0x23030a='',_0x417c25=='<='&&(_0x23030a=_0x216499),ConditionCheck(_0x3915d1,_0x23030a,_0x417c25)?_0x1531a7[_0x365c('0xa2')](_0x365c('0x7d')):_0x1531a7['removeClass'](_0x365c('0x7d')),_0x1e75c5['on'](_0x365c('0xd8'),function(){if(_0x5d9701(this)[_0x365c('0xa4')]('data-type')=='checkbox2'){if(_0x5d9701(this)['is'](_0x365c('0x5')))var _0x4027a5=0x1;else var _0x4027a5=0x0;}else var _0x4027a5=this[_0x365c('0x156')];ConditionCheck(_0x4027a5,_0x23030a,_0x417c25)?_0x1531a7['addClass']('show-setting'):_0x1531a7['removeClass'](_0x365c('0x7d'));});});});var _0x35443a=_0x5d9701(_0x365c('0x17e'))['find'](_0x365c('0x16a')),_0x1437dc=![],_0x582ef2=![];_0x35443a[_0x365c('0x11d')](function(){_0x5d9701(this)[_0x365c('0x187')](_0x365c('0xe2'))&&(_0x1437dc=!![],_0x5d9701(this)[_0x365c('0x187')](_0x365c('0xed'))?_0x582ef2=!![]:_0x582ef2=![]);if(_0x1437dc&&!_0x5d9701(this)[_0x365c('0x187')]('group-tab'))_0x5d9701(this)['addClass'](_0x365c('0x102'));if(_0x1437dc&&_0x582ef2&&!_0x5d9701(this)[_0x365c('0x187')](_0x365c('0xe2')))_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x96'));}),_0x35443a['on'](_0x365c('0x11b'),function(_0x15292f){if(_0x5d9701(this)[_0x365c('0x187')](_0x365c('0xe2'))){var _0x370b57=_0x35443a[_0x365c('0x118')](this),_0x34f91c=_0x35443a[_0x365c('0x17a')];for(i=_0x370b57+0x1;i<_0x35443a['length'];i++){if(_0x35443a['eq'](i)[_0x365c('0x187')]('group-tab'))_0x34f91c=i;}if(_0x5d9701(this)['hasClass'](_0x365c('0xed'))){_0x5d9701(this)[_0x365c('0x117')](_0x365c('0xed'));for(i=_0x370b57;i<_0x34f91c;i++){_0x35443a['eq'](i)['removeClass'](_0x365c('0x96'));}}else{_0x5d9701(this)[_0x365c('0xa2')]('tab-open');for(i=_0x370b57;i<_0x34f91c;i++){_0x35443a['eq'](i)[_0x365c('0xa2')](_0x365c('0x96'));}}}});var _0x497b63=JSON['parse'](awesomeIcons);_0x5d9701(_0x365c('0x17e'))[_0x365c('0x106')](_0x365c('0x1b'))['autocomplete']({'source':_0x497b63}),_0x5d9701(_0x365c('0x17e'))[_0x365c('0x106')](_0x365c('0x1b'))['autocomplete'](_0x365c('0x12e'),_0x365c('0x170'),_0x365c('0x54'));},showConfiguration=function(_0x357fc1){iframeDoc=window['iframeDoc'],componentID=_0x357fc1[_0x365c('0xa4')]('data-id'),addonName=_0x357fc1['attr'](_0x365c('0x15a')),setting=_0x357fc1[_0x365c('0x9d')](_0x365c('0xa5')),_0x5d9701(iframeDoc)[_0x365c('0x106')](_0x365c('0xc0'))[_0x365c('0x117')](_0x365c('0x10b')),_0x357fc1[_0x365c('0xa2')](_0x365c('0x10b')),_0x5d9701(_0x365c('0x65'))['html'](addonTitles[addonName]),panel=_0x5d9701(_0x365c('0xd5')),configuration=document[_0x365c('0x60')](_0x365c('0x164')+addonName)[_0x365c('0x18f')],panel[_0x365c('0xb9')](configuration),panel[_0x365c('0x9d')](_0x365c('0xa5'),setting),panel[_0x365c('0x9d')]('component',_0x357fc1),setting[_0x365c('0x150')](function(_0x9d382a){value=_0x9d382a[_0x365c('0x156')],_0x9d382a[_0x365c('0x86')]=='1'?Object[_0x365c('0xfe')](value)[_0x365c('0x150')](function(_0x5a5514){input=panel[_0x365c('0x106')]('[data-field=\x27'+_0x9d382a['name']+_0x365c('0x1a')+_0x5a5514+'\x27]'),input['setInputValue']({'filed':value[_0x5a5514]});}):(input=panel['find'](_0x365c('0x129')+_0x9d382a[_0x365c('0xea')]+'\x27]'),input['setInputValue']({'filed':value}));}),panel['parent']()[_0x365c('0xc3')](),reLoadUI();},updateComponent=function(_0x51eca1,_0x2fb6b2){update=_0x51eca1[_0x365c('0x9d')](_0x365c('0xdd')),_0x51eca1[_0x365c('0x106')](_0x365c('0x140'))['html'](customTemplateFn(_0x51eca1[_0x365c('0xa4')]('id'),update,_0x2fb6b2)),checkEmpty(iframeDoc);},updateColumn=function(_0x5d0f5c,_0xbe8086){colStyleTemplate=_0x5d9701(_0x365c('0x12f'))[_0x365c('0x72')](),templateFn=_[_0x365c('0x90')](colStyleTemplate),params=Object[_0x365c('0x4d')]({},_0xbe8086),params[_0x365c('0x188')]=_0x5d0f5c['attr']('id'),style=templateFn(params),colStyle=_0x5d0f5c['find'](_0x365c('0x95')),class_map={'middle_align':_0x365c('0x131'),'hidden_mobile':_0x365c('0xf6'),'hidden_tablet':_0x365c('0x1f'),'hidden_desktop':_0x365c('0xe8'),'top':'top-align','middle':'middle-align','bottom':_0x365c('0x5a')},style_map={'text_color':_0x365c('0xaa'),'background_color':'background-color','background_img':_0x365c('0x17d'),'background_size':'background-size','background_repeat':_0x365c('0x68'),'background_position':'background-position','background_attachment':_0x365c('0x88'),'animation_duration':_0x365c('0xe0'),'animation_delay':_0x365c('0xd1')},classname=[_0x365c('0x42'),_0x365c('0x11'),_0x365c('0xf')],Object['keys'](_0xbe8086)[_0x365c('0x150')](function(_0x465e39){value=_0xbe8086[_0x465e39];switch(_0x465e39){case _0x365c('0x1d'):case _0x365c('0x160'):case _0x365c('0x15b'):case _0x365c('0x14d'):if(value)classname[_0x365c('0x15e')](value);break;case'animation':value&&(classname[_0x365c('0x15e')](_0x365c('0x61')),classname[_0x365c('0x15e')](value));break;case _0x365c('0x191'):case _0x365c('0xba'):case _0x365c('0x3b'):case _0x365c('0xf9'):value=parseInt(value);if(value)classname[_0x365c('0x15e')](class_map[_0x465e39]);break;case'content_align':classname[_0x365c('0x15e')](class_map[value]);break;}}),_0x5d0f5c['attr'](_0x365c('0xb8'),classname['join']('\x20'));if(colStyle[_0x365c('0x17a')])colStyle[_0x365c('0xb9')](style);else _0x5d0f5c[_0x365c('0x5f')](_0x5d9701(_0x365c('0x81'))[_0x365c('0xb9')](style));},updateRow=function(_0x305da2,_0x1764e8){rowStyleTemplate=_0x5d9701(_0x365c('0xf4'))[_0x365c('0x72')](),templateFn=_[_0x365c('0x90')](rowStyleTemplate),params=Object[_0x365c('0x4d')]({},_0x1764e8),params['row_id']=_0x305da2[_0x365c('0xa4')]('id'),style=templateFn(params),rowStyle=_0x305da2[_0x365c('0x106')](_0x365c('0x5d')),classname=[_0x365c('0xce')],class_map={'middle_align':'middle-align','hidden_mobile':_0x365c('0xf6'),'hidden_tablet':_0x365c('0x1f'),'hidden_desktop':_0x365c('0xe8'),'top':_0x365c('0xff'),'middle':_0x365c('0x131'),'bottom':_0x365c('0x5a')},Object['keys'](_0x1764e8)[_0x365c('0x150')](function(_0x334810){value=_0x1764e8[_0x334810];switch(_0x334810){case'fluid':value=parseInt(value),array=[_0x365c('0x18e'),'container-fluid'],_0x305da2[_0x365c('0x106')](_0x365c('0x126'))[_0x365c('0x117')](array[value^0x1])[_0x365c('0xa2')](array[value]);break;case _0x365c('0x1d'):if(value)classname[_0x365c('0x15e')](value);break;case _0x365c('0xb4'):value&&(classname[_0x365c('0x15e')](_0x365c('0x61')),classname[_0x365c('0x15e')](value));break;case _0x365c('0x191'):case _0x365c('0xba'):case _0x365c('0x3b'):case _0x365c('0xf9'):value=parseInt(value);if(value)classname[_0x365c('0x15e')](class_map[_0x334810]);break;case _0x365c('0x80'):classname[_0x365c('0x15e')](class_map[value]);break;}}),_0x305da2[_0x365c('0xa4')](_0x365c('0xb8'),classname[_0x365c('0x115')]('\x20'));if(rowStyle['length'])rowStyle['html'](style);else _0x305da2[_0x365c('0x5f')](_0x5d9701(_0x365c('0x5e'))[_0x365c('0xb9')](style));},getLayout=function(_0x462eb6){return rows=_0x5d9701(_0x462eb6)[_0x365c('0x106')]('section#content')[_0x365c('0x106')](_0x365c('0xe5')),config=[],rows[_0x365c('0x11d')](function(_0x41c2a4,_0x9505b5){rowConfig={'type':_0x365c('0x107'),'id':_0x5d9701(this)[_0x365c('0xa4')]('id'),'name':'','layout':_0x5d9701(this)['data'](_0x365c('0x137')),'settings':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xa5')),'cols':[]},columns=_0x5d9701(this)[_0x365c('0x106')](_0x365c('0x3c')),columns[_0x365c('0x11d')](function(_0xf3ef2c){colConfig={'type':_0x365c('0xf0'),'className':_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0xb8')),'id':_0x5d9701(this)[_0x365c('0xa4')]('id'),'settings':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xa5')),'addons':[]};var _0x1b36ae=_0x5d9701(this)[_0x365c('0x106')](_0x365c('0xd2'));_0x1b36ae[_0x365c('0x11d')](function(_0x1a48e3){addonConfig={'id':_0x5d9701(this)[_0x365c('0xa4')]('id'),'type':_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0x15a')),'settings':{'active':0x1,'addon':_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0x15a'))},'fields':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xa5'))},colConfig['addons'][_0x365c('0x15e')](addonConfig);}),rowConfig[_0x365c('0x13e')]['push'](colConfig);}),config[_0x365c('0x15e')](rowConfig);}),config=JSON['stringify'](config),config;},getRowLayout=function(_0x176974,_0x208cf0){return config=[],rowConfig={'type':_0x365c('0x107'),'id':_0x208cf0['attr']('id'),'name':'','layout':_0x208cf0[_0x365c('0x9d')](_0x365c('0x137')),'settings':_0x208cf0[_0x365c('0x9d')]('setting'),'cols':[]},columns=_0x208cf0[_0x365c('0x106')](_0x365c('0x3c')),columns['each'](function(_0x151142){colConfig={'type':_0x365c('0xf0'),'className':_0x5d9701(this)['attr'](_0x365c('0xb8')),'id':_0x5d9701(this)[_0x365c('0xa4')]('id'),'settings':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xa5')),'addons':[]};var _0x3052a4=_0x5d9701(this)[_0x365c('0x106')](_0x365c('0xd2'));_0x3052a4[_0x365c('0x11d')](function(_0x42dd29){addonConfig={'id':_0x5d9701(this)[_0x365c('0xa4')]('id'),'type':_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0x15a')),'settings':{'active':0x1,'addon':_0x5d9701(this)[_0x365c('0xa4')]('data-name')},'fields':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xa5'))},colConfig[_0x365c('0xda')]['push'](addonConfig);}),rowConfig[_0x365c('0x13e')][_0x365c('0x15e')](colConfig);}),config[_0x365c('0x15e')](rowConfig),config=JSON[_0x365c('0x66')](config),config;},savePage=function(_0x159b73){_0x5d9701(_0x365c('0x16c'))[_0x365c('0xc3')](),config=getLayout(_0x159b73),_0x5d9701[_0x365c('0x177')]({'type':_0x365c('0x8a'),'url':PagebuilderConfig['editor_link']+_0x365c('0xc7'),'data':{'jsonparams':config,'page_id':_0x5d9701('#select-page')[_0x365c('0x38')]()},'success':function(_0x14fdac){setTimeout(function(){_0x5d9701('.pagebuilder-preview-overlay')[_0x365c('0xa2')](_0x365c('0xb1'));},0x7d0),setTimeout(function(){_0x5d9701(_0x365c('0x16c'))[_0x365c('0x117')](_0x365c('0xb1')),_0x5d9701(_0x365c('0x16c'))[_0x365c('0xcd')]();},0xbb8);}});},saveTemplate=function(_0x2f0ab3,_0x4c6ed7){if(_0x5d9701(_0x365c('0x22'))[_0x365c('0x38')]()==''){alert(_0x365c('0x176'));return;}_0x5d9701[_0x365c('0x177')]({'type':'POST','url':PagebuilderConfig[_0x365c('0x166')]+_0x365c('0x43'),'data':{'jsonparams':_0x4c6ed7,'templatename':_0x5d9701('#library-template-name')[_0x365c('0x38')]()},'success':function(_0x2b4e51){switchDialogForm('library');}});},checkEmpty=function(_0x3742b7){_0x5d9701(_0x3742b7)[_0x365c('0x106')](_0x365c('0xe1'))[_0x365c('0x11d')](function(_0x3be3ff){var _0x2f01c2=_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0xa0'));_0x5d9701(this)[_0x365c('0x106')](_0x365c('0x12'))[_0x365c('0x117')](_0x365c('0x10b')),_0x5d9701(this)[_0x365c('0x106')](_0x365c('0x12'))[_0x365c('0x11d')](function(_0x1538bd){if(_0x5d9701(this)[_0x365c('0xa4')]('data-layout')==_0x2f01c2)_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x10b'));});}),_0x5d9701(_0x3742b7)['find'](_0x365c('0x7f'))[_0x365c('0x11d')](function(_0x42914e){if(_0x5d9701(this)[_0x365c('0x106')]('.addon-box')[_0x365c('0x17a')]==0x0)_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x2f'));else _0x5d9701(this)[_0x365c('0x117')](_0x365c('0x2f'));}),_0x5d9701(_0x3742b7)[_0x365c('0x106')](_0x365c('0xd2'))[_0x365c('0x11d')](function(_0x46417c){if(_0x5d9701(this)[_0x365c('0x106')](_0x365c('0x18a'))[_0x365c('0x17a')]==0x0)_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x49'));else _0x5d9701(this)[_0x365c('0xa4')](_0x365c('0x15a'))==_0x365c('0x24')?_0x5d9701(this)[_0x365c('0xa2')]('addon-empty'):_0x5d9701(this)['removeClass']('addon-empty');});},rowLayoutOpen=function(_0x43511f){_0x5d9701(_0x43511f)[_0x365c('0x106')](_0x365c('0x21'))['on'](_0x365c('0x11b'),function(_0x47f431){!_0x5d9701(this)[_0x365c('0x8c')]()['hasClass'](_0x365c('0xc3'))?_0x5d9701(this)['closest'](_0x365c('0xe1'))[_0x365c('0xa2')](_0x365c('0x157')):_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'))['removeClass'](_0x365c('0x157'));});},rightMenuOpen=function(_0x26e172){_0x5d9701(_0x26e172)[_0x365c('0x106')](_0x365c('0x10f'))['bind'](_0x365c('0x172'),function(_0x3bad27){_0x3bad27[_0x365c('0x103')]();var _0x24872e=_0x5d9701('#pagebuilder-preview-iframe')[_0x365c('0x57')](),_0x5c044d=_0x5d9701('#pagebuilder-preview-iframe')['width'](),_0x4e81e3=_0x3bad27[_0x365c('0x58')]+_0x24872e[_0x365c('0x92')]-0x32;if(_0x5c044d-_0x4e81e3<0xc8)_0x4e81e3=_0x3bad27['clientX']+_0x24872e['left']-0x32-0xa0;var _0x3d4952=_0x3bad27['clientY']+_0x24872e['top']-0x46;_0x5d9701(_0x26e172)[_0x365c('0x106')](_0x365c('0x11a'))['show']()[_0x365c('0x8f')]({'top':_0x3d4952+'px','left':_0x4e81e3+'px'}),_0x5d9701(_0x26e172)[_0x365c('0x106')](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0xd0'),_0x5d9701(this)[_0x365c('0xa4')]('id'));var _0x463f1c=_0x5d9701(_0x26e172)[_0x365c('0x106')](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0x6a'));_0x463f1c!=null&&_0x463f1c!=''?_0x5d9701(_0x26e172)[_0x365c('0x106')](_0x365c('0xd3'))[_0x365c('0x117')]('disable'):_0x5d9701(_0x26e172)[_0x365c('0x106')]('#pb-right-menu\x20.paste-style-row')[_0x365c('0xa2')](_0x365c('0x8e'));}),_0x5d9701(_0x26e172)[_0x365c('0x63')](_0x365c('0x192'),function(_0x33937f){if(_0x33937f['which']!=0x3&&!_0x5d9701(_0x33937f[_0x365c('0xe')])[_0x365c('0x2d')](_0x365c('0x11a'))[_0x365c('0x17a')]>0x0)_0x5d9701(_0x26e172)[_0x365c('0x106')]('#pb-right-menu')[_0x365c('0xcd')](0x64);});},dragDropInit=function(_0x4fd9f8){var _0x4bfaaa;_0x5d9701(_0x365c('0x33'))['on'](_0x365c('0xae'),function(_0x4fd1a1){_0x4bfaaa=_0x4fd1a1['target'];}),_0x5d9701(_0x365c('0x59'))[_0x365c('0x11b')](function(_0x1caed8){_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xc4'))[_0x365c('0xcd')](),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x9d')](_0x365c('0x29'))[_0x365c('0x117')](_0x365c('0x10b'));}),_0x5d9701(_0x365c('0x116'))[_0x365c('0x11b')](function(_0x98dac6){savePage(_0x4fd9f8);}),_0x5d9701(_0x365c('0x169'))[_0x365c('0x11b')](function(_0x3e7bc6){event['preventDefault'](),event[_0x365c('0x181')]();var _0x2e9916=_0x5d9701(_0x365c('0xca'));if(_0x2e9916['data'](_0x365c('0xd0'))==null||_0x2e9916[_0x365c('0x9d')](_0x365c('0xd0'))=='')_0x5e8a76=getLayout(_0x4fd9f8);else var _0x2e399c=_0x5d9701(_0x4fd9f8)[_0x365c('0x106')]('#'+_0x2e9916[_0x365c('0x9d')](_0x365c('0xd0'))),_0x5e8a76=getRowLayout(_0x4fd9f8,_0x2e399c);saveTemplate(_0x4fd9f8,_0x5e8a76);}),_0x5d9701(_0x365c('0xd5'))['on'](_0x365c('0x155'),_0x365c('0xb3'),function(_0x36ae60){tree=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x4b')),arrayInput=tree['find'](':input')[_0x365c('0xb0')]()[_0x365c('0x17f')](function(_0x8f8f43){return _0x8f8f43[_0x365c('0x156')];}),field=_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0xea'))[_0x365c('0x9a')]('[]',''),setting=_0x5d9701('#gdz-configuration')[_0x365c('0x9d')](_0x365c('0xa5')),component=_0x5d9701(_0x365c('0xd5'))['data'](_0x365c('0x29')),index=_[_0x365c('0x151')](setting,{'name':field}),setting[index][_0x365c('0x156')]=arrayInput[_0x365c('0x115')](','),updateComponent(component,setting);}),_0x5d9701(_0x365c('0xd5'))['on'](_0x365c('0x155'),_0x365c('0x18d'),function(_0x48b56b){tree=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x4b'));var _0x325ade=tree[_0x365c('0x106')](_0x365c('0xef')),_0x22d43c=new Array(),_0x1f3d08='';_0x325ade[_0x365c('0x11d')](function(_0x1ed4f2){_0x5d9701(this)['is'](_0x365c('0x5'))&&(_0x1f3d08=_0x5d9701(this)[_0x365c('0x38')]());}),field=_0x5d9701(this)['attr'](_0x365c('0xea')),setting=_0x5d9701('#gdz-configuration')[_0x365c('0x9d')](_0x365c('0xa5')),component=_0x5d9701(_0x365c('0xd5'))[_0x365c('0x9d')](_0x365c('0x29')),index=_[_0x365c('0x151')](setting,{'name':field}),setting[index][_0x365c('0x156')]=_0x1f3d08,updateComponent(component,setting);}),_0x5d9701('#gdz-configuration')['on']('change\x20keyup',_0x365c('0x6e'),function(_0x317245){var _0x129504=_0x5d9701(this);$attrname=_0x129504[_0x365c('0x9d')](_0x365c('0x3')),settingPanel=_0x5d9701(_0x365c('0x69')),activeRow=settingPanel[_0x365c('0x9d')](_0x365c('0x15d')),config=activeRow[_0x365c('0x9d')](_0x365c('0xa5')),config[$attrname]=_0x129504['getInputValue'](),updateRow(activeRow,config);}),_0x5d9701(_0x365c('0xd5'))['on'](_0x365c('0x78'),_0x365c('0x153'),function(_0x481706){var _0x451ef6=_0x5d9701(this);$attrname=_0x451ef6[_0x365c('0x9d')]('attrname'),settingPanel=_0x5d9701(_0x365c('0x0')),activeColumn=settingPanel[_0x365c('0x9d')](_0x365c('0x132')),config=activeColumn[_0x365c('0x9d')](_0x365c('0xa5')),config[$attrname]=_0x451ef6[_0x365c('0x14c')](),updateColumn(activeColumn,config);}),_0x5d9701(_0x4fd9f8)['on'](_0x365c('0x73'),_0x365c('0x3c'),function(_0xeff22d){_0xeff22d[_0x365c('0x103')](),_0xeff22d[_0x365c('0x181')](),_0x5d9701(this)[_0x365c('0xa2')](_0x365c('0x127')),_0x5d9701(_0x4fd9f8)[_0x365c('0x106')](_0x365c('0x4'))[_0x365c('0x7a')]();if(_0x5d9701(_0x4bfaaa)[_0x365c('0x187')](_0x365c('0x110'))&&!_0x5d9701(_0x4bfaaa)['hasClass'](_0x365c('0xab'))&&_0x5d9701(_0x4bfaaa)[_0x365c('0x106')](_0x365c('0x79'))[_0x365c('0x17a')]==0x0){if(!_0x5d9701(_0xeff22d[_0x365c('0xe')])[_0x365c('0x187')](_0x365c('0x42'))){var _0x3c5016=_0x5d9701(_0xeff22d['target'])[_0x365c('0x35')](),_0x3b994b=_0x5d9701(_0xeff22d[_0x365c('0xe')])['closest'](_0x365c('0xd2'))[_0x365c('0x35')]();if(_0x3b994b){var _0x58d6f0=_0x5d9701(_0xeff22d[_0x365c('0xe')])[_0x365c('0x64')](_0x365c('0xd2'))[_0x365c('0xe4')](),_0x1808e=_0x3c5016[_0x365c('0x74')]-_0x3b994b[_0x365c('0x74')];_0x1808e>_0x58d6f0/0x2?_0x5d9701(_0x365c('0xf1'))[_0x365c('0x18c')](_0x5d9701(_0xeff22d[_0x365c('0xe')])[_0x365c('0x64')](_0x365c('0xd2'))):_0x5d9701('<div\x20class=\x27ui-state-highlight\x27></div>')[_0x365c('0xfb')](_0x5d9701(_0xeff22d['target'])[_0x365c('0x64')](_0x365c('0xd2')));}}else _0x5d9701(_0xeff22d[_0x365c('0xe')])['append'](_0x365c('0xf1'));}})['on'](_0x365c('0x143'),function(_0x479afa){_0x479afa[_0x365c('0x103')](),_0x479afa[_0x365c('0x181')]();}),_0x5d9701(_0x4fd9f8)['on'](_0x365c('0x141'),_0x365c('0x3c'),function(_0x1dae18){_0x1dae18['preventDefault'](),_0x1dae18[_0x365c('0x181')]();if(_0x5d9701(_0x4bfaaa)[_0x365c('0x187')](_0x365c('0x110'))&&!_0x5d9701(_0x4bfaaa)[_0x365c('0x187')](_0x365c('0xab'))&&_0x5d9701(_0x4bfaaa)['find'](_0x365c('0x79'))['length']==0x0){_0x4bfaaa[_0x365c('0xd4')][_0x365c('0xb6')]='';var _0xdd100=_0x5d9701(_0x4bfaaa)[_0x365c('0x106')](_0x365c('0x144')),_0x424129=_0x5d9701(_0xdd100)[_0x365c('0x9d')](_0x365c('0x109'));addonHtml=addAddon(_0x424129);if(!_0x5d9701(_0x1dae18[_0x365c('0xe')])[_0x365c('0x187')](_0x365c('0x42'))){var _0x12fa1d=_0x5d9701(_0x1dae18[_0x365c('0xe')])[_0x365c('0x35')](),_0x133437=_0x5d9701(_0x1dae18['target'])[_0x365c('0x64')](_0x365c('0xd2'))[_0x365c('0x35')]();if(_0x133437){var _0x22700a=_0x5d9701(_0x1dae18['target'])[_0x365c('0x64')](_0x365c('0xd2'))[_0x365c('0xe4')](),_0x3ec81e=_0x12fa1d['top']-_0x133437[_0x365c('0x74')];if(_0x3ec81e>_0x22700a/0x2)addonHtml[_0x365c('0x18c')](_0x5d9701(_0x1dae18[_0x365c('0xe')])[_0x365c('0x64')](_0x365c('0xd2')));else addonHtml[_0x365c('0xfb')](_0x5d9701(_0x1dae18['target'])['closest'](_0x365c('0xd2')));}}else addonHtml[_0x365c('0x170')](_0x1dae18[_0x365c('0xe')]);showConfiguration(addonHtml),setting=_0x5d9701('#gdz-configuration')[_0x365c('0x9d')]('setting');for(i=0x0;i<setting[_0x365c('0x17a')];i++){setting[i][_0x365c('0xcb')]==_0x365c('0x77')&&setting[_0x365c('0x101')](i,0x1);}component=_0x5d9701(_0x365c('0xd5'))[_0x365c('0x9d')](_0x365c('0x29')),updateComponent(component,setting),_0x5d9701(_0x4fd9f8)['find']('.ui-state-highlight')['remove'](),_0x4bfaaa=null,checkEmpty(_0x4fd9f8);}}),_0x5d9701(_0x4fd9f8)['on'](_0x365c('0x73'),_0x365c('0x8d'),function(_0x55d100){_0x55d100[_0x365c('0x103')](),_0x55d100[_0x365c('0x181')](),_0x5d9701(this)[_0x365c('0xa2')]('dragging'),_0x5d9701(_0x4fd9f8)[_0x365c('0x106')]('.ui-state-highlight')[_0x365c('0x7a')](),_0x5d9701(_0x4bfaaa)[_0x365c('0x187')](_0x365c('0x110'))&&!_0x5d9701(_0x4bfaaa)[_0x365c('0x187')]('pro')&&_0x5d9701(_0x4bfaaa)['find'](_0x365c('0x79'))[_0x365c('0x17a')]==0x0&&_0x5d9701(_0x55d100['target'])['append'](_0x365c('0xf1'));})['on'](_0x365c('0x143'),function(_0x3d5382){_0x3d5382[_0x365c('0x103')](),_0x3d5382[_0x365c('0x181')]();}),_0x5d9701(_0x4fd9f8)['on'](_0x365c('0x141'),_0x365c('0x8d'),function(_0x1d6380){_0x1d6380[_0x365c('0x103')](),_0x1d6380[_0x365c('0x181')]();if(_0x5d9701(_0x4bfaaa)[_0x365c('0x187')](_0x365c('0x110'))&&!_0x5d9701(_0x4bfaaa)[_0x365c('0x187')]('pro')&&_0x5d9701(_0x4bfaaa)[_0x365c('0x106')](_0x365c('0x79'))[_0x365c('0x17a')]==0x0){var _0x7d3f39=_0x5d9701(_0x365c('0x163'))['clone'](!![]);_0x7d3f39[_0x365c('0x9d')](_0x365c('0xa5'),JSON[_0x365c('0x11e')](rowSettings)),_0x5d9701(_0x7d3f39)['attr']('id','row-'+genID());var _0x59ff2e='12',_0x4431e7=['12'],_0xd3904a='';_0x5d9701(_0x7d3f39)[_0x365c('0xa4')](_0x365c('0xa0'),_0x59ff2e),_0x5d9701(_0x7d3f39)['data'](_0x365c('0x137'),_0x59ff2e);var _0x363623=_0x5d9701(_0x365c('0x89'))[_0x365c('0x2c')](!![]);_0x363623[_0x365c('0xa2')](_0x365c('0x100')),_0x363623['addClass'](_0x365c('0x2f')),_0x363623[_0x365c('0xa4')]('id','column-'+genID()),_0x363623[_0x365c('0x9d')](_0x365c('0xa5'),newColumnSetting(0xc)),_0x5d9701(_0x7d3f39)[_0x365c('0x106')](_0x365c('0xa'))[_0x365c('0x104')](_0x363623);var _0x232c48=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x8d'));_0x5d9701(_0x7d3f39)[_0x365c('0xfb')](_0x5d9701(_0x232c48)),_0x4bfaaa[_0x365c('0xd4')][_0x365c('0xb6')]='';var _0x2e3055=_0x5d9701(_0x4bfaaa)[_0x365c('0x106')](_0x365c('0x144')),_0x2891dd=_0x5d9701(_0x2e3055)[_0x365c('0x9d')](_0x365c('0x109'));addonHtml=addAddon(_0x2891dd),addonHtml[_0x365c('0x170')](_0x5d9701(_0x7d3f39)[_0x365c('0x106')](_0x365c('0x3c'))),showConfiguration(addonHtml),setting=_0x5d9701(_0x365c('0xd5'))['data'](_0x365c('0xa5'));for(i=0x0;i<setting[_0x365c('0x17a')];i++){setting[i][_0x365c('0xcb')]==_0x365c('0x77')&&setting['splice'](i,0x1);}component=_0x5d9701(_0x365c('0xd5'))[_0x365c('0x9d')]('component'),updateComponent(component,setting),_0x5d9701(_0x4fd9f8)['find'](_0x365c('0x4'))[_0x365c('0x7a')](),_0x5d9701(_0x365c('0x8d'))[_0x365c('0x117')](_0x365c('0x127')),_0x4bfaaa=null,checkEmpty(_0x4fd9f8);}_0x5d9701(_0x4fd9f8)[_0x365c('0x106')](_0x365c('0x7c'))[_0x365c('0xf5')]({'placeholder':_0x365c('0x12d'),'connectWith':'.addon-sortable','scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd,'update':function(_0x208f3c,_0x420557){checkEmpty(_0x4fd9f8);}}),rowLayoutOpen(_0x4fd9f8),checkEmpty(_0x4fd9f8);});},_0x5d9701(_0x365c('0x128'))['on'](_0x365c('0xb2'),function(){var _0x3d9381=this[_0x365c('0x18b')],_0x519fc0=_0x3d9381[_0x365c('0x27')];window[_0x365c('0x10d')]=_0x519fc0;var _0x4787a5=_0x519fc0[_0x365c('0x178')],_0x36b9a1=![],_0x440fee;checkEmpty(_0x519fc0),_0x5d9701(_0x519fc0)[_0x365c('0x106')](_0x365c('0xaf'))['on'](_0x365c('0x108'),'.carousel-tpl',function(){_0x5d9701(this)['owlCarousel'](_0x365c('0x20')),_0x5d9701(this)[_0x365c('0x14a')]({'loop':!0x0,'margin':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0x173')),'nav':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xc9')),'dots':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0xac')),'autoplay':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0x82')),'rewind':_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0x4e')),'slideBy':_0x5d9701(this)['data'](_0x365c('0x180')),'responsive':{0:{'items':_0x5d9701(this)[_0x365c('0x9d')]('xs')},576:{'items':_0x5d9701(this)[_0x365c('0x9d')]('sm')},992:{'items':_0x5d9701(this)['data']('md')}}});}),addonTitles=JSON[_0x365c('0x11e')](addonTitles),pageObj=JSON[_0x365c('0x11e')](pagejson?pagejson:'[]'),assignData(pageObj,_0x519fc0),_0x5d9701(_0x519fc0)[_0x365c('0x11b')](function(){_0x5d9701(_0x365c('0x19'))['removeClass'](_0x365c('0x84'));}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x75'),function(_0x354543){_0x354543[_0x365c('0x103')]();var _0x399b12=_0x5d9701('#pb-tmpl-row\x20.gdz-row')[_0x365c('0x2c')](!![]);_0x399b12[_0x365c('0x9d')](_0x365c('0xa5'),JSON[_0x365c('0x11e')](rowSettings)),_0x5d9701(_0x399b12)[_0x365c('0xa4')]('id',_0x365c('0x15f')+genID()),layoutType=_0x5d9701(this)[_0x365c('0x9d')]('layout');layoutType=='custom'&&(layoutType=_0x5d9701(this)[_0x365c('0x8c')]()['parent']()[_0x365c('0x106')](_0x365c('0xb5'))[_0x365c('0x38')]());if(layoutType=='12')var _0x5be4dc=['12'];else var _0x5be4dc=layoutType[_0x365c('0x186')](',');var _0x2fdfb5='';_0x5d9701(_0x399b12)[_0x365c('0xa4')](_0x365c('0xa0'),layoutType),_0x5d9701(_0x399b12)[_0x365c('0x9d')](_0x365c('0x137'),layoutType),_0x5d9701[_0x365c('0x11d')](_0x5be4dc,function(_0x3c394b,_0xc7b43c){var _0x51493e=_0x5d9701(_0x365c('0x89'))[_0x365c('0x2c')](!![]);_0x51493e[_0x365c('0xa2')](_0x365c('0x121')+_0xc7b43c),_0x51493e[_0x365c('0xa2')]('column-empty'),_0x51493e['attr']('id',_0x365c('0xbc')+genID()),_0x51493e[_0x365c('0x9d')](_0x365c('0xa5'),newColumnSetting(_0xc7b43c)),_0x5d9701(_0x399b12)[_0x365c('0x106')]('.row')[_0x365c('0x104')](_0x51493e);});var _0x61da29=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'));if(!_0x5d9701(_0x61da29)[_0x365c('0x187')](_0x365c('0x182')))_0x5d9701(_0x399b12)[_0x365c('0x18c')](_0x5d9701(_0x61da29));else _0x5d9701(_0x399b12)[_0x365c('0xfb')](_0x5d9701(_0x61da29));_0x5d9701(_0x519fc0)[_0x365c('0x106')](_0x365c('0x7c'))['sortable']({'placeholder':_0x365c('0x12d'),'connectWith':'.addon-sortable','scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd,'update':function(_0x584d36,_0x419bd1){checkEmpty(_0x519fc0);}}),_0x5d9701(this)['closest'](_0x365c('0x123'))['removeClass'](_0x365c('0xc3')),rowLayoutOpen(_0x519fc0),rightMenuOpen(_0x519fc0),checkEmpty(_0x519fc0);}),rowLayoutOpen(_0x519fc0),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x9'),function(_0x28d3f2){_0x5d9701(_0x365c('0x44'))['trigger'](_0x365c('0x11b'));}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x62'),function(_0x5ac772){_0x5ac772[_0x365c('0x103')](),layoutType=_0x5d9701(this)[_0x365c('0x9d')](_0x365c('0x137'));layoutType==_0x365c('0x174')&&(layoutType=_0x5d9701(this)[_0x365c('0x8c')]()['parent']()['find'](_0x365c('0xb5'))['val']());var _0x1856e4=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'))[_0x365c('0x106')](_0x365c('0xa'));_0x1856e4['addClass']('row-active'),_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'))[_0x365c('0xa4')](_0x365c('0xa0'),layoutType),_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'))[_0x365c('0x9d')](_0x365c('0x137'),layoutType);var _0x460317=_0x1856e4[_0x365c('0x106')]('.layout-column');if(layoutType=='12')var _0x39f736=['12'];else var _0x39f736=layoutType[_0x365c('0x186')](',');var _0x2dc2cd=_0x460317[_0x365c('0x17a')],_0x197b7c=_0x39f736[_0x365c('0x17a')];div=_0x5d9701(_0x365c('0x158')),_0x5d9701[_0x365c('0x11d')](_0x39f736,function(_0x31f18b,_0x26dc6f){old_col=_0x460317['eq'](_0x31f18b);var _0x5603c0=old_col[_0x365c('0x9d')]();old_col_id=old_col[_0x365c('0xa4')]('id');if(_0x31f18b<_0x2dc2cd){var _0x41858d=old_col;_0x41858d[_0x365c('0xa4')](_0x365c('0xb8'),_0x365c('0xee')+_0x26dc6f);}else{_0x41858d=_0x5d9701(_0x365c('0x9c')+_0x26dc6f+_0x365c('0x119')+genID()+'\x22></div>');var _0x42c6f2=_0x5d9701(_0x365c('0x89'))[_0x365c('0x2c')](!![]);_0x42c6f2[_0x365c('0xa2')]('col-lg-'+_0x26dc6f),_0x42c6f2['addClass'](_0x365c('0x2f')),_0x42c6f2[_0x365c('0xa4')]('id','column-'+genID()),_0x42c6f2[_0x365c('0x9d')](_0x365c('0xa5'),newColumnSetting(_0x26dc6f)),_0x41858d=_0x42c6f2;}_0x41858d[_0x365c('0x9d')]('setting',newColumnSetting(_0x26dc6f)),div[_0x365c('0x104')](_0x41858d);});if(_0x2dc2cd>_0x197b7c)for(i=_0x197b7c;i<_0x2dc2cd;i++)div[_0x365c('0x106')](_0x365c('0x3c'))['eq'](_0x197b7c-0x1)[_0x365c('0x104')](_0x460317['eq'](i)['children']());_0x1856e4['html'](div[_0x365c('0x9e')]()),_0x5d9701(_0x519fc0)['find'](_0x365c('0x7c'))[_0x365c('0xf5')]({'scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd,'placeholder':_0x365c('0x12d'),'connectWith':_0x365c('0x7c'),'update':function(_0x237606,_0x1b0c5a){checkEmpty(_0x519fc0);}}),_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x5b'))[_0x365c('0x31')](_0x365c('0x11b')),_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'))[_0x365c('0x117')]('row-layout-open'),checkEmpty(_0x519fc0);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x175'),function(_0x3c1160){_0x3c1160[_0x365c('0x103')](),row=_0x5d9701(this)['closest']('.gdz-row'),_0x5d9701(_0x365c('0xd5'))[_0x365c('0x14e')](),_0x5d9701(_0x365c('0x69'))[_0x365c('0x9d')](_0x365c('0x15d'),row),showRowSetting();}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),'.edit-row',function(_0x1b4fa4){_0x1b4fa4[_0x365c('0x103')]();var _0x403920=_0x5d9701(this)['closest']('#pb-right-menu')[_0x365c('0x9d')]('row-id'),_0x58068b=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0x403920);_0x5d9701(_0x365c('0xd5'))[_0x365c('0x14e')](),_0x5d9701(_0x365c('0x69'))[_0x365c('0x9d')](_0x365c('0x15d'),_0x58068b),showRowSetting();}),_0x5d9701(_0x519fc0)['on']('click','.pb-row-delete',function(_0x36e400){_0x36e400[_0x365c('0x103')](),confirm(_0x365c('0x148'))==!![]&&_0x5d9701(this)['closest'](_0x365c('0xe1'))[_0x365c('0x99')](0xc8,function(){_0x5d9701(this)[_0x365c('0x7a')](),_0x5d9701(_0x365c('0xc4'))[_0x365c('0xcd')]();});}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),'.delete-row',function(_0x4da415){_0x4da415[_0x365c('0x103')]();if(confirm(_0x365c('0x148'))==!![]){var _0xa784d7=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0xd0')),_0x57de38=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0xa784d7);_0x57de38[_0x365c('0x99')](0xc8,function(){_0x5d9701(this)[_0x365c('0x7a')](),_0x5d9701(_0x365c('0xc4'))[_0x365c('0xcd')]();});}}),_0x5d9701(_0x519fc0)['on']('click',_0x365c('0x39'),function(_0x2027a5){_0x2027a5[_0x365c('0x103')](),row=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xe1'));var _0xd37448=row[_0x365c('0x2c')]();copyRowData(row,_0xd37448),_0xd37448[_0x365c('0x18c')](row),sortableAddon(_0xd37448);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),'.duplicate-row',function(_0x25b0ee){_0x25b0ee['preventDefault']();var _0xcc2600=_0x5d9701(this)['closest'](_0x365c('0x11a'))[_0x365c('0x9d')]('row-id'),_0x1d0653=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0xcc2600),_0xf920c4=_0x1d0653[_0x365c('0x2c')]();copyRowData(_0x1d0653,_0xf920c4),_0xf920c4[_0x365c('0x18c')](_0x1d0653),sortableAddon(_0xf920c4);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x14'),function(_0x235afa){_0x235afa[_0x365c('0x103')](),_0x235afa[_0x365c('0x181')]();var _0x3e6502=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x11a'))[_0x365c('0x9d')]('row-id'),_0x6d533a=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0x3e6502),_0x562a8b=getRowLayout(_0x519fc0,_0x6d533a),_0x208d21=_0x3e6502;if(_0x208d21==''){alert(_0x365c('0x71'));return;}blob=new Blob([_0x562a8b],{'type':_0x365c('0x139')}),anchor=document[_0x365c('0x2a')]('a'),anchor[_0x365c('0xfd')]=_0x208d21+_0x365c('0x56'),anchor['href']=(window[_0x365c('0x136')]||window[_0x365c('0x70')])[_0x365c('0x3d')](blob),anchor[_0x365c('0x32')][_0x365c('0xf3')]=[_0x365c('0x139'),anchor[_0x365c('0xfd')],anchor[_0x365c('0x9b')]][_0x365c('0x115')](':'),anchor[_0x365c('0x11b')]();}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x167'),function(_0xed1660){_0xed1660[_0x365c('0x103')](),_0xed1660[_0x365c('0x181')]();var _0x4259ed=_0x5d9701(_0x365c('0x51')+_0x5d9701(this)[_0x365c('0xa4')]('data-dialog')),_0x8c691=(_0x5d9701(window)['width']()-_0x4259ed['find'](_0x365c('0x112'))[_0x365c('0x53')]())/0x2;_0x4259ed['find'](_0x365c('0x112'))[_0x365c('0x8f')](_0x365c('0x92'),_0x8c691+'px'),_0x4259ed[_0x365c('0xc3')](),switchDialogForm(_0x5d9701(this)[_0x365c('0xa4')](_0x365c('0x114')));var _0x37e639=_0x5d9701(this)['closest'](_0x365c('0x11a'))[_0x365c('0x9d')]('row-id');_0x4259ed[_0x365c('0x9d')]('row-id',_0x37e639);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x1'),function(_0x4fa15c){_0x4fa15c[_0x365c('0x103')](),_0x4fa15c[_0x365c('0x181')]();var _0x54edda=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0xd0')),_0x1b9e01=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0x54edda);setting=JSON[_0x365c('0x11e')](JSON[_0x365c('0x66')](_0x1b9e01[_0x365c('0x9d')](_0x365c('0xa5')))),_0x5d9701(this)['closest'](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0x6a'),setting);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x40'),function(_0x4b59aa){_0x4b59aa[_0x365c('0x103')](),_0x4b59aa[_0x365c('0x181')]();var _0x5f4d1d=_0x5d9701(this)['closest'](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0xd0')),_0x4ebe1e=_0x5d9701(_0x519fc0)[_0x365c('0x106')]('#'+_0x5f4d1d),_0x867054=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x11a'))[_0x365c('0x9d')](_0x365c('0x6a'));_0x867054!=null&&_0x867054!=''&&_0x4ebe1e[_0x365c('0x9d')](_0x365c('0xa5'),_0x867054),updateRow(_0x4ebe1e,_0x4ebe1e[_0x365c('0x9d')]('setting'));}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0xb7'),function(_0xe37bbe){_0xe37bbe['preventDefault'](),_0xe37bbe[_0x365c('0x181')](),row[_0x365c('0x9d')](_0x365c('0xa5'),JSON[_0x365c('0x11e')](rowSettings)),updateRow(row,row[_0x365c('0x9d')](_0x365c('0xa5')));}),_0x5d9701(_0x519fc0)['on']('click',_0x365c('0x48'),function(_0x13429f){_0x13429f[_0x365c('0x103')](),_0x13429f['stopPropagation'](),column=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0x3c')),_0x5d9701(_0x365c('0x0'))[_0x365c('0x9d')](_0x365c('0x132'),column),showColumnSetting();}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0xde'),function(_0x60a607){_0x60a607[_0x365c('0x103')](),confirm(_0x365c('0x25'))==!![]&&_0x5d9701(this)['closest']('.addon-box')[_0x365c('0x99')](0xc8,function(){_0x5d9701(_0x365c('0xc4'))[_0x365c('0xcd')](),_0x5d9701(this)[_0x365c('0x7a')](),checkEmpty(_0x519fc0);});}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),'.pb-addon-setting',function(_0x39cd38){_0x39cd38[_0x365c('0x103')](),component=_0x5d9701(this)['closest'](_0x365c('0xd2')),showConfiguration(component);}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0xd2'),function(_0x311911){_0x311911[_0x365c('0x103')](),_0x311911['stopPropagation'](),component=_0x5d9701(this),showConfiguration(component);}),_0x5d9701(_0x519fc0)['on']('click',_0x365c('0x76'),function(_0x20cd92){_0x20cd92[_0x365c('0x181')](),_0x20cd92[_0x365c('0x103')](),addon=_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xd2'));var _0x5c3bb6=addon['clone']();copyAddonData(addon,_0x5c3bb6),_0x5c3bb6[_0x365c('0x18c')](addon),showConfiguration(_0x5c3bb6);}),_0x5d9701(_0x519fc0)['on']('click',_0x365c('0x122'),function(_0x427303){_0x427303['stopPropagation'](),_0x427303[_0x365c('0x103')](),_0x5d9701(this)[_0x365c('0x64')](_0x365c('0xd2'))[_0x365c('0x117')](_0x365c('0x10b')),_0x5d9701(this)['closest'](_0x365c('0xd2'))['unbind'](_0x365c('0x15'));}),_0x5d9701(_0x519fc0)['on'](_0x365c('0x11b'),_0x365c('0x3c'),function(_0x218932){_0x218932[_0x365c('0x103')](),_0x218932[_0x365c('0x181')](),_0x5d9701(_0x365c('0xc4'))[_0x365c('0xcd')]();}),dragDropInit(_0x519fc0),rightMenuOpen(_0x519fc0);function _0xb84c6c(){_0x4787a5[_0x365c('0x11c')](_0x440fee),_0x440fee=null,_0x3d9381[_0x365c('0x16e')][_0x365c('0x177')]({'url':_0x365c('0x3e'),'dataType':'script','cache':!![],'success':function(){_0x5d9701(_0x519fc0)['find'](_0x365c('0x16d'))[_0x365c('0xf5')]({'items':'>\x20.gdz-row:not(:last)','placeholder':_0x365c('0x12d'),'connectWith':'.row-sortable'}),_0x5d9701(_0x519fc0)[_0x365c('0x106')]('.addon-sortable')['sortable']({'placeholder':_0x365c('0x12d'),'connectWith':_0x365c('0x7c'),'scroll':!![],'scrollSensitivity':0x64,'scrollSpeed':0xd,'update':function(_0x34e5fb,_0x6b3aab){checkEmpty(_0x519fc0);}});}});}_0x440fee=_0x519fc0[_0x365c('0x2a')](_0x365c('0x47')),_0x440fee[_0x365c('0xf7')]=_0x440fee[_0x365c('0x4a')]=function(){if(_0x440fee[_0x365c('0x41')]&&_0x440fee['readyState']!==_0x365c('0x189')&&_0x440fee[_0x365c('0x41')]!==_0x365c('0x13a')||_0x36b9a1)return![];_0x440fee['onload']=_0x440fee['onreadystatechange']=null,_0x36b9a1=!![],_0xb84c6c();},_0x440fee[_0x365c('0x87')]=_0x365c('0x147'),_0x4787a5[_0x365c('0x67')](_0x440fee);});}),jQuery(window)['on'](_0x365c('0xb2'),function(){const _0x4bdc90=document[_0x365c('0xb')](_0x365c('0x133')),_0x17f27f=new PerfectScrollbar(_0x4bdc90),_0x21fc55=document[_0x365c('0xb')](_0x365c('0xd5')),_0x5879af=new PerfectScrollbar(_0x21fc55);});
+jQuery(function ($) {
+  $.fn.getInputValue = function(){
+    if (this.attr('type') == 'images') {
+      return this.find('.items-container').find('.form-group').map(function(i, e) {
+        return {
+          alt: $(e).find('input[name=alt]').val(),
+          link: $(e).find('input[name=link]').val(),
+          image: $(e).find('input[name=image]').val(),
+        };
+      }).get();
+    } else if (this.attr('type') == 'accordion') {
+      return this.find('.items-container').find('.form-group').map(function(i, e) {
+        return {
+          title: $(e).find('input[name=title]').val(),
+          content: $(e).find('[name=content]').val(),
+        };
+      }).get();
+    } else if (this.attr('type') == 'social') {
+      return this.find('.items-container').find('.form-group').map(function(i, e) {
+        return {
+          link: $(e).find('input[name=link]').val(),
+          icon_class: $(e).find('[name=icon_class]').val(),
+        };
+      }).get();
+    } else if (this.attr('type') == 'testimonial') {
+      return this.find('.items-container').find('.form-group').map(function(i, e) {
+        return {
+          image: $(e).find('[name=image]').val(),
+          author: $(e).find('input[name=author]').val(),
+          position: $(e).find('[name=position]').val(),
+          rating: $(e).find('[name=rating]').val(),
+          comment: $(e).find('[name=comment]').val(),
+        };
+      }).get();
+    } else if (this.attr('type') == 'checkbox') {
+      if (this.attr("checked")) {
+        return '1';
+      }else{
+        return '0';
+      }
+    }else{
+      return this.val();
+    }
+  }
+  $.fn.setInputValue = function(options){
+    if (this.attr('type') == 'images') {
+        images_input = this;
+        container = images_input.find('.items-container');
+        options.filed.forEach(function(input) {
+          fid = genID();
+          form_group = images_input.find('.form-group.hidden').clone().removeClass('hidden');
+          form_group.find('input[name=alt]').val(input.alt);
+          form_group.find('input[name=link]').val(input.link);
+          form_group.find('.media-image-preview').attr('id', 'media-preview-'+fid).css('background-image','url(ddddd)');
+          form_group.find('.media-value').attr('id', 'media-value-'+fid).val(input.image);
+          form_group.find('.item-row-title').html(input.alt);
+          media_upload = form_group.find('.media-upload');
+          media_upload.attr('data-url', media_upload.attr('data-url')+'&fid='+fid);
+          if(!input.image) media_upload.addClass('media-empty');
+          container.append(form_group);
+        })
+    } else if (this.attr('type') == 'accordion') {
+      accordion = this;
+      container = accordion.find('.items-container');
+      options.filed.forEach(function(input) {
+        form_group = accordion.find('.form-group.hidden').clone().removeClass('hidden');
+        form_group.find('input[name=title]').val(input.title);
+        form_group.find('[name=content]').val(input.content);
+        form_group.find('.item-row-title').html(input.title);
+        container.append(form_group);
+      })
+    } else if (this.attr('type') == 'social') {
+      social = this;
+      container = social.find('.items-container');
+      options.filed.forEach(function(input) {
+        form_group = social.find('.form-group.hidden').clone().removeClass('hidden');
+        form_group.find('input[name=link]').val(input.link);
+        form_group.find('[name=icon_class]').val(input.icon_class);
+        form_group.find('.item-row-title').html(input.icon_class);
+        container.append(form_group);
+      })
+    } else if (this.attr('type') == 'testimonial') {
+      fid = genID();
+      testimonial = this;
+      container = testimonial.find('.items-container');
+      options.filed.forEach(function(input) {
+        form_group = testimonial.find('.form-group.hidden').clone().removeClass('hidden');
+        form_group.find('.media-image-preview').attr('id', 'media-preview-'+fid).css('background-image','url(' + input.image + ')');
+        form_group.find('.media-value').attr('id', 'media-value-'+fid).val(input.image);
+        media_upload = form_group.find('.media-upload');
+        media_upload.attr('data-url', media_upload.attr('data-url')+'&fid='+fid);
+        if(!input.image) media_upload.addClass('media-empty');
+        form_group.find('input[name=image]').val(input.image);
+        form_group.find('input[name=author]').val(input.author);
+        form_group.find('input[name=position]').val(input.position);
+        form_group.find('input[name=rating]').val(input.rating);
+        form_group.find('[name=comment]').val(input.comment);
+        form_group.find('.item-row-title').html(input.author);
+        container.append(form_group);
+      })
+    } else if (this.attr('type') == 'checkbox') {
+      if (options.filed == '1') {
+        this.attr('checked','checked');
+
+      } else {
+        this.removeAttr('checked');
+      }
+    } else if(this.attr('data-type') == 'image'){
+      fid = genID();
+      $imgParent = this.parent();
+      $imgParent.find('.media-image-preview').attr('id', 'media-preview-'+fid).css('background-image','url(' + options.filed + ')');
+      $imgParent.find('.media-value').attr('id', 'media-value-'+fid).val(options.filed);
+      media_upload = $imgParent.find('.media-upload');
+      media_upload.attr('data-url', media_upload.attr('data-url')+'&fid='+fid);
+      if(!options.filed) media_upload.addClass('media-empty');
+    } else if(this.attr('data-type') == 'categories'){
+      var categories = this.find('input[type=checkbox], input[type=radio]');
+      var categories_result = new Array();
+      if(this.attr('data-usecheckbox') == '1') {
+        var val_arr = options.filed.split(",");
+        categories.each(function(catindex) {
+            if(jQuery.inArray($(this).val(), val_arr) != -1) {
+              $(this).prop('checked', true);
+            }
+        });
+      } else {
+        categories.each(function(catindex) {
+          if ($(this).val() == options.filed) {
+            $(this).prop('checked', true);
+          }
+        });
+      }
+    } else if(this.attr('data-type') == 'align') {
+      var lis = this.parent().find('li');
+      lis.removeClass('active');
+      lis.each(function() {
+          if($(this).attr('data-align') == options.filed) {
+              $(this).addClass('active');
+          }
+      });
+    } else if(this.attr('data-type') == 'screen-grid') {
+      console.log(this, options.filed);
+      screen = options.filed.split('-');
+      wrap = this.closest('.form-group');
+      wrap.find('.md input').val(screen[0]);
+      wrap.find('.sm input').val(screen[1]);
+      wrap.find('.xs input').val(screen[2]);
+    } else {
+      this.val( options.filed );
+    }
+    if (this.attr('data-type') == 'screen-range') {
+      var val_str = $(this).val();
+      var val_arr = val_str.split("-");
+      this.prev().find('input[type=number]').each(function(index){
+          $(this).val(val_arr[index]);
+      })
+    }
+    if (this.attr('data-type') == 'screen-text') {
+      var val_str = $(this).val();
+      var val_arr = val_str.split("-");
+      this.prev().find('input[type=text]').each(function(index){
+          $(this).val(val_arr[index]);
+      })
+    }
+    if (this.data('attrname') == 'column_type'){
+      if (this.val() == 'component') {
+        $('.form-group.name').hide();
+      }
+    }
+    if (this.attr('data-type') == 'editor') {
+      var eid = genID();
+      this.attr('id', 'gdz-editor-' + eid);
+    }
+  }
+  $(document).on('click',"#pagebuilder-mode-switch",function(event) {
+      $('body').toggleClass('pagebuilder-editor-active');
+  })
+  $(document).on('change',"#select-page",function(event) {
+		  document.location = PagebuilderConfig.editor_link + '&id_page=' + $(this).val() + '&id_lang=' + $('#select-language').val();
+	})
+  $(document).on('change',"#select-language",function(event) {
+		  document.location = PagebuilderConfig.editor_link + '&id_page=' + $('#select-page').val() + '&id_lang=' + $(this).val();
+	})
+  $(document).on('click', '.dropbtn', function(event){
+      event.stopPropagation();
+      if($(this).parent().hasClass('open')) {
+        $('.dropdown').removeClass('open');
+      } else {
+        $('.dropdown').removeClass('open');
+        $(this).parent().addClass('open');
+      }
+  });
+  $('#theme-export').click(function(event){
+    let config = getLayout(iframeDoc);
+    let page_name = $('#select-page option:selected').text();
+    $.ajax({
+        type: 'POST',
+        url: PagebuilderConfig.editor_link + '&action=exportTheme&ajax=1&secure_key=' + PagebuilderConfig.secure_key,
+        data: {
+          json: config,
+          pagename: page_name,
+        },
+        success: function(data)
+        {
+            data = JSON.parse(data);
+            if (data.success) {
+                let a = document.createElement('A');
+                a.href = data.url;
+                a.click();
+            } else {
+                alert(data.err);
+            }
+        }
+    });
+  });
+  $(document).on('click', '#save-template-file', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      var config = getLayout(iframeDoc);
+      var filename = $('#library-file-name').val();
+      if(filename == '') {
+          alert('Please enter file name');
+          return;
+      }
+      blob = new Blob([config], { type: 'text/plain' }),
+      anchor = document.createElement('a');
+
+      anchor.download = filename + '.json';
+      anchor.href = (window.webkitURL || window.URL).createObjectURL(blob);
+      anchor.dataset.downloadurl = ['text/plain', anchor.download, anchor.href].join(':');
+      anchor.click();
+  });
+  $(document).on('click', '.template-import', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      var template_row = $(this).closest('.template-row');
+      $('.pagebuilder-dialog-close').trigger('click');
+      $('.pagebuilder-preview-overlay').show();
+      $.ajax({
+          type: 'POST',
+          url: PagebuilderConfig.ajax_link + 'action=importTemplate&secure_key=' + PagebuilderConfig.secure_key,
+          data: {
+              id_template: template_row.attr('data-id')
+          },
+          success: function(data)
+          {
+              data = JSON.parse(data);
+              iframeDoc = window.iframeDoc;
+              template = $(data.html);
+              wrapper = $('<div></div>').html(template);
+              assignData(data.params, wrapper);
+              template.insertBefore($(iframeDoc).find('.row-add'));
+              $('.pagebuilder-preview-overlay').hide();
+              $(template).find('.addon-sortable').sortable({
+                  scroll: true,
+                  scrollSensitivity: 100,
+                  scrollSpeed: 13,
+                  placeholder: "ui-state-highlight",
+                  connectWith: ".addon-sortable",
+                  update: function(event, ui) {
+                      checkEmpty(iframeDoc);
+                  }
+              });
+          }
+      });
+  });
+  $(document).on('click', '#replace-url-btn', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      var config = getLayout(iframeDoc);
+      var old_url = $('#replace-old-url').val();
+      var new_url = $('#replace-new-url').val();
+      var all_pages = 0;
+      if ($('#replace-all-pages').is(':checked'))
+          all_pages = 1;
+      if(old_url == '') {
+          alert('Please enter old url');
+          return;
+      } else if(new_url == '') {
+          alert('Please enter new url');
+          return;
+      }
+      $('.pagebuilder-dialog').hide();
+      $.ajax({
+          type: 'POST',
+          url: PagebuilderConfig.editor_link + '&action=replaceUrl&ajax=1&secure_key=' + PagebuilderConfig.secure_key,
+          data: {
+              old_url: old_url,
+              new_url: new_url,
+              all_pages: all_pages,
+              id_page: $('#select-page').val()
+          },
+          success: function(data)
+          {
+              data = JSON.parse(data);
+              if (data.success) {
+                  alert(data.message);
+              } else {
+                  alert(data.err_mes);
+              }
+          }
+      });
+  });
+  $(document).on('click','#full-screen',function(event) {
+
+      if(!$(this).hasClass('active')) {
+          var elem = document.documentElement;
+          if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) { /* Safari */
+              elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE11 */
+              elem.msRequestFullscreen();
+          }
+      } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+          }
+      }
+  });
+  document.addEventListener("fullscreenchange", function() {
+      $('#full-screen').toggleClass('active');
+  });
+  //fancybox
+  $(document).on('click','.media-upload',function(event) {
+      $.fancybox({
+          type: 'iframe',
+          href: $(this).attr('data-url'),
+          autoDimensions: false,
+          autoSize: false,
+          arrows : false,
+          width: 600,
+          height: 500,
+          helpers: {
+            overlay: {
+              locked: false
+            }
+          }
+      });
+  });
+  //click device icons
+  $(document).on('click','.device-icons li',function(event) {
+  		$('#pagebuilder-preview-wrapper').removeClass('md-layout sm-layout xs-layout');
+  		$('#pagebuilder-preview-wrapper').addClass($(this).data('device') + '-layout');
+  		$('.device-icons li').removeClass('active');
+  		$(this).addClass('active');
+
+      var device_class = $(this).data('device');
+      $('.pb-device-tabs').each(function(){
+          $(this).removeClass('pb-device-md pb-device-sm pb-device-xs');
+          $(this).addClass('pb-device-' + device_class);
+      });
+      $('.pb-screen-inputs').each(function(){
+        $(this).removeClass('pb-device-md pb-device-sm pb-device-xs');
+        $(this).addClass('pb-device-' + device_class);
+      });
+	});
+  //Click body to close dropdown
+  $(document).click(function(){
+      $(".dropdown").removeClass('open');
+  });
+
+  //search addon
+  $(document).on('keyup','#search-addon',function(event) {
+      var filter, ul, li, txtValue;
+      filter = $(this).val().toUpperCase();
+      li = $(".pagebuilder-addons li.addon-cat-addons");
+      li.each(function(){
+          txtValue = $(this).find('.element-title').text();
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              $(this).show();
+          } else {
+              $(this).hide();
+          }
+      });
+	});
+
+  genID = function() {
+      return Math.random().toString(36).substr(2, 9);
+  }
+  customTemplateFn = function(addonid, templatefn, data) {
+      obj = {};
+      obj['addonid'] = addonid;
+      Object.keys(data).forEach(function(key) {
+          config = data[key];
+          if (config.multilang == '1') {
+            obj[config.name] = config.value[default_language];
+          } else {
+            if(config.type == 'screen-range') {
+              var val_arr = config.value.split('-');
+              obj[config.name + '_md'] = val_arr[0];
+              obj[config.name + '_sm'] = val_arr[1];
+              obj[config.name + '_xs'] = val_arr[2];
+            }
+            obj[config.name] = config.value;
+          }
+      });
+      return templatefn(obj);
+  }
+  addAddon = function(addonName) {
+      iframeDoc = window.iframeDoc;
+      var arr_addondefaults = JSON.parse(addonDefaults);
+      var addonTemplate = iframeDoc.getElementById("pb-tmpl-addon-" + addonName).innerHTML;
+      var templateFn = _.template(addonTemplate);
+      var addonID = 'addon-' + genID();
+      // var addonTemplate = customTemplateFn(addonID, templateFn, arr_addondefaults[addonName]);
+      var addonToolsTemplate = $("#pb-tmpl-addon-tools").clone(true);
+      // addonToolsTemplate.appendTo($(addonTemplate));
+      var addonHtml = $(`<div class="addon-box" data-id="${addonID}" data-name="${addonName}"></div>`);
+      addonHtml.append($("#pb-tmpl-addon-tools").html());
+      addonHtml.append($('<div class="addon-body"></div>'));
+      addonHtml.data('setting', arr_addondefaults[addonName]);
+      addonHtml.data('update', templateFn);
+      addonHtml.attr('id', addonID);
+      addonHtml.attr('data-name', addonName);
+      return addonHtml;
+  }
+  /*
+  */
+  newColumnSetting = function(width) {
+    setting = JSON.parse(colSettings);
+    setting.lg_col = 'col-lg-'+width;
+    setting.sm_col = 'col-sm-'+width;
+    setting.xs_col = 'col-xs-'+width;
+    return setting;
+  }
+  /*
+    Copy data from addon1 to addon2
+  */
+  copyAddonData = function(addon1, addon2) {
+    setting = JSON.parse(JSON.stringify(addon1.data('setting')));
+    update = addon1.data('update');
+    addon2.data('setting', setting);
+    addon2.data('update', update);
+    addon2.attr('id', `addon-${genID()}`);
+    $('#gdz-configuration').data('component', addon2);
+    updateComponent(addon2, addon2.data('setting'));
+  }
+  /*
+    Copy data from column 1 to column 2
+  */
+  copyColData = function(col1, col2) {
+    setting = JSON.parse(JSON.stringify(col1.data('setting')));
+    col2.data('setting', setting);
+    col2.attr('id', `column-${genID()}`);
+    updateColumn(col2, col2.data('setting'));
+  }
+  /*
+  */
+  copyRowData = function(row1, row2) {
+    setting = JSON.parse(JSON.stringify(row1.data('setting')));
+    row2.data('setting', setting);
+    row1.find('.addon-box').each(function(i, e) {
+      addonID = $(e).attr('id');
+      addonClone = row2.find(`#${addonID}`);
+      copyAddonData($(e), addonClone);
+    });
+    row1.find('.layout-column').each(function(i, e) {
+      colID = $(e).attr('id');
+      colClone = row2.find(`#${colID}`);
+      copyColData($(e), colClone);
+    });
+    row2.attr('id', `row-${genID()}`);
+    updateRow(row2, row2.data('setting'));
+  }
+  sortableAddon = function(e) {
+    $(e).find('.addon-sortable').sortable({
+      placeholder: "ui-state-highlight",
+      connectWith: ".addon-sortable",
+      scroll: true,
+      scrollSensitivity: 100,
+      scrollSpeed: 13
+    });
+  }
+  /*
+  */
+  showRowSetting = function() {
+      settingPanel = $('#row-settings');
+      activeRow = settingPanel.data('activeRow');
+      setting = activeRow.data('setting');
+      $('.config-heading .config-title').html('Row Setting');
+      $('#gdz-configuration').html(settingPanel.children().clone(true));
+      $('#gdz-configuration').find('.addon-input').each(function(){
+        let $that = $(this);
+        let attrValue = $that.data('attrname');
+        $that.setInputValue({filed: setting[attrValue]});
+      });
+      reLoadUI();
+      $('.gdz-configuration').hide();
+      $('#gdz-configuration').parent().show();
+      switchTab('style-manager');
+  }
+  showColumnSetting = function() {
+      settingPanel = $('#column-settings');
+      activeColumn = settingPanel.data('activeColumn');
+      setting = activeColumn.data('setting');
+      $('.config-heading .config-title').html('Column Setting');
+      $('#gdz-configuration').html(settingPanel.children().clone(true));
+      $('#gdz-configuration').find('.addon-input').each(function(){
+        let $that = $(this);
+        let attrValue = $that.data('attrname');
+        $that.setInputValue({filed: setting[attrValue]});
+      });
+      reLoadUI();
+      $('.gdz-configuration').hide();
+      $('#gdz-configuration').parent().show();
+      switchTab('style-manager');
+  }
+  assignData = function(pageObj, dom) {
+      pageObj.forEach(function(row) {
+        rowId = row.id;
+        if (rowId)
+          $(dom).find(`#${rowId}`).data('setting', row.settings);
+        row.cols.forEach(function(col) {
+          colId = col.id;
+          if (colId)
+            $(dom).find(`#${colId}`).data('setting', col.settings);
+          col.addons.forEach(function(addon) {
+            addonId = addon.id;
+            if (addonId) {
+              addonTemplate = window.iframeDoc.getElementById("pb-tmpl-addon-" + addon.type).innerHTML;
+              templateFn = _.template(addonTemplate);
+              $(dom).find(`#${addonId}`).data('setting', addon.fields);
+              $(dom).find(`#${addonId}`).data('update', templateFn);
+            }
+            if (addon.grid) {
+                addon.grid.forEach(function(col) {
+                    col.addons.forEach(function(subaddon) {
+                        addonTemplate = window.iframeDoc.getElementById("pb-tmpl-addon-" + subaddon.type).innerHTML;
+                        templateFn = _.template(addonTemplate);
+                        $(dom).find(`#${subaddon.id}`).data('setting', subaddon.fields);
+                        $(dom).find(`#${subaddon.id}`).data('update', templateFn);
+                    });
+                });
+            }
+          })
+        })
+      })
+  }
+  ConditionCheck = function(leftValue, rightValue, operator) {
+      switch (operator) {
+          case '==':
+              return leftValue == rightValue;
+          case '!=':
+              return leftValue != rightValue;
+          case '<=':
+              if (jQuery.inArray(leftValue, rightValue) == -1) {
+                  return false;
+              } else {
+                  return true;
+              }
+          default:
+              return leftValue === rightValue;
+      }
+  }
+  reLoadUI = function(component) {
+      $('.items-container').sortable({
+          placeholder: "ui-state-highlight",
+          connectWith: ".items-container",
+          update: function( event, ui ) {$(this).closest('.repeat-input').trigger('change')},
+      });
+      $('.pb-range').each(function(){
+          $(this).val($(this).next().val());
+      })
+      $('#gdz-configuration').find('.pagebuilder-checkbox').on('click',function(event) {
+        var _cb = $(this).find('.gdz-switch');
+        if(_cb.is(':checked'))
+          _cb.prop('checked', false);
+        else
+          _cb.prop('checked', true);
+        _cb.trigger('change');
+      });
+      $('#gdz-configuration').find('.gdz-switch').each(function(){
+        $(this).parent().append('<label for="field_use_link"><span><span></span><strong class="pagebuilder-checkbox-1">YES</strong><strong class="pagebuilder-checkbox-2">NO</strong></span></label>');
+      });
+      $('#gdz-configuration').find('.color-picker-component').colorpicker();
+      setTimeout(function() {
+        tinySetup({
+          selector :"#gdz-configuration .gdz-editor",
+          setup:function(ed) {
+            ed.on('change', function(e) {
+              textarea = tinyMCE.get(ed.id).getElement();
+              $(textarea).val(ed.getContent());
+              $(textarea).trigger('change');
+            });
+            ed.on('keyup', function(e) {
+              textarea = tinyMCE.get(ed.id).getElement();
+              $(textarea).val(ed.getContent());
+              $(textarea).trigger('keyup');
+            });
+          }
+        });
+      }, 1000);
+      $('.gdz-modal-body').find('.condition-setting').each(function () {
+          var $field = $(this);
+          var condition = JSON.parse($(this).attr('data-condition'));
+          $.each(condition, function (input, value) {
+              var parsedValue = value.match(/(\w+)(?:\[(\w+)])?/gi),
+                  conditionValue = undefined;
+              var conditionOperator = value.match(/(\!=|<=|==)(?:\[(\w+)])?/gi)[0];
+
+              var $checker = $('.gdz-modal-body').find('input[data-field=' + input + '], select[data-field=' + input + ']');
+              var checkerVal = $checker.val();
+              if ($checker.attr('type') == 'radio') {
+                  checkerVal = $('input[name=' + input + ']:checked').val();
+              }
+              if ($checker.attr('type') == 'select') {
+                  checkerVal = $('input[name=' + input + ']:selected').val();
+              }
+              if($checker.attr('data-type') == 'checkbox2') {
+                  if($('input[name=' + input + ']').is(":checked"))
+                    checkerVal = 1;
+                  else
+                    checkerVal = 0;
+              }
+              if (parsedValue) {
+                  conditionValue = parsedValue[0];
+              } else {
+                  conditionValue = '';
+              }
+
+              if (conditionOperator == '<=') {
+                  conditionValue = parsedValue;
+              }
+              if (ConditionCheck(checkerVal, conditionValue, conditionOperator)) {
+                  $field.addClass('show-setting');
+              } else {
+                  $field.removeClass('show-setting');
+              }
+              $checker.on('change input', function () {
+                  if($(this).attr('data-type') == 'checkbox2') {
+                      if($(this).is(":checked"))
+                        var this_val = 1;
+                      else
+                        var this_val = 0;
+                  } else {
+                    var this_val = this.value;
+                  }
+                  if (ConditionCheck(this_val, conditionValue, conditionOperator)) {
+                      $field.addClass('show-setting');
+                  } else {
+                      $field.removeClass('show-setting');
+                  }
+              });
+          });
+      });
+      var form_group = $('.gdz-modal-body').find('.item-inner > .form-group');
+      var under_tab = false;
+      var tab_open = false;
+      form_group.each(function () {
+        if($(this).hasClass('group-tab')) {
+            under_tab = true;
+            if($(this).hasClass('tab-open')) {
+              tab_open = true;
+            } else {
+              tab_open = false;
+            }
+        }
+        if(under_tab && !$(this).hasClass('group-tab')) $(this).addClass('under-tab');
+        if(under_tab && tab_open && !$(this).hasClass('group-tab')) $(this).addClass('field-open');
+      });
+      form_group.on('click',function(event) {
+          if($(this).hasClass('group-tab')) {
+              var tab_start = form_group.index(this);
+              var tab_end = form_group.length;
+              for(i=tab_start+1; i < form_group.length; i++) {
+                  if(form_group.eq(i).hasClass('group-tab'))
+                      tab_end = i;
+              }
+              if($(this).hasClass('tab-open')) {
+                $(this).removeClass('tab-open');
+                for(i=tab_start; i < tab_end; i++) {
+                    form_group.eq(i).removeClass('field-open');
+                }
+              } else {
+                $(this).addClass('tab-open');
+                for(i=tab_start; i < tab_end; i++) {
+                    form_group.eq(i).addClass('field-open');
+                }
+              }
+          }
+      });
+      var icons = JSON.parse(awesomeIcons);
+      $('.gdz-modal-body').find('input[name=icon_class]').autocomplete({
+        source: icons
+      });
+      $('.gdz-modal-body').find('input[name=icon_class]').autocomplete( "option", "appendTo", ".eventInsForm" );
+  }
+  /*
+  show configuration panel on left
+  component: addon box corresponding to the configuration
+  */
+  showConfiguration = function(component) {
+      iframeDoc = window.iframeDoc;
+      componentID = component.attr('data-id');
+      addonName = component.attr('data-name');
+      setting = component.data('setting');
+      $(iframeDoc).find('.addon-box.active').removeClass('active');
+      component.addClass('active');
+      $('.config-heading .config-title').html(addonTitles[addonName]);
+      panel = $('#gdz-configuration');
+      configuration = document.getElementById("pb-config-addon-" + addonName).innerHTML;
+      panel.html(configuration);
+      panel.data('setting', setting);
+      panel.data('component', component);
+      setting.forEach(function(s) {
+          value = s.value;
+          if (s.multilang == '1') {
+            Object.keys(value).forEach(function(lang) {
+              input = panel.find(`[data-field='${s.name}'][data-lang='${lang}']`);
+              input.setInputValue({filed: value[lang]});
+            })
+          } else {
+            input = panel.find(`[data-field='${s.name}']`);
+            input.setInputValue({filed: value});
+          }
+      })
+      $('.gdz-configuration').hide();
+      panel.parent().show();
+      reLoadUI();
+      switchTab('style-manager');
+  }
+  /*
+      update addon box
+      component: addon box component
+      setting: configuration setting input
+  */
+  updateComponent = function(component, setting) {
+      update = component.data('update');
+      component.find('.addon-body').html(customTemplateFn(component.attr('id'), update, setting));
+      component.trigger('update');
+      checkEmpty(iframeDoc);
+  }
+  /*
+      update column
+      row: jquery row object
+      setting: object of field and value
+  */
+  updateColumn = function(column, setting) {
+      colStyleTemplate = $('#col_style_template').text();
+      templateFn = _.template(colStyleTemplate);
+      params = Object.assign({}, setting);
+      params.col_id = column.attr('id');
+      style = templateFn(params);
+      colStyle = column.find('.col-style');
+      class_map = {
+        middle_align: "middle-align",
+        hidden_mobile: "pb-hidden-xs",
+        hidden_tablet: "pb-hidden-sm",
+        hidden_desktop: "pb-hidden-lg",
+        top: "top-align",
+        middle: "middle-align",
+        bottom: "bottom-align",
+      };
+      style_map = {
+        text_color: 'color',
+        background_color: 'background-color',
+        background_img: 'background-image',
+        background_size: 'background-size',
+        background_repeat: 'background-repeat',
+        background_position: 'background-position',
+        background_attachment: 'background-attachment',
+        animation_duration: 'animation-duration',
+        animation_delay: 'animation-delay',
+
+      }
+      classname = ["layout-column", "addon-sortable", "ui-sortable"];
+      Object.keys(setting).forEach(function(field) {
+          value = setting[field];
+          switch (field) {
+              case 'custom_class':
+              case 'lg_col':
+              case 'xs_col':
+              case 'sm_col':
+                  if (value)
+                      classname.push(value);
+                  break;
+              case 'animation':
+                  if (value) {
+                      classname.push('animated');
+                      classname.push(value);
+                  }
+                  break;
+              case 'middle_align':
+              case 'hidden_mobile':
+              case 'hidden_tablet':
+              case 'hidden_desktop':
+                  value = parseInt(value);
+                  if (value)
+                      classname.push(class_map[field]);
+                  break;
+              case 'content_align':
+                  classname.push(class_map[value]);
+                  break;
+          }
+      });
+      column.attr('class', classname.join(' '));
+      if (colStyle.length)
+          colStyle.html(style);
+      else
+          column.prepend($('<style type="text/css" class="col-style"></style>').html(style));
+      /*column.addClass('infinite');
+      setTimeout(function(){
+        column.removeClass('infinite');
+      }, 3000);*/
+  }
+  /*
+      update row
+      row: jquery row object
+      setting: object of field and value
+  */
+  updateRow = function(row, setting) {
+      rowStyleTemplate = $('#row_style_template').text();
+      templateFn = _.template(rowStyleTemplate);
+      params = Object.assign({}, setting);
+      params.row_id = row.attr('id');
+      style = templateFn(params);
+      rowStyle = row.find('.row-style');
+      classname = ['gdz-row'];
+      class_map = {
+        middle_align: "middle-align",
+        hidden_mobile: "pb-hidden-xs",
+        hidden_tablet: "pb-hidden-sm",
+        hidden_desktop: "pb-hidden-lg",
+        top: "top-align",
+        middle: "middle-align",
+        bottom: "bottom-align"
+      };
+      Object.keys(setting).forEach(function(field) {
+          value = setting[field];
+          switch (field) {
+              case 'fluid':
+                  value = parseInt(value);
+                  array = ['container', 'container-fluid'];
+                  row.find('.pb-row-inner').removeClass(array[value^1]).addClass(array[value]);
+                  break;
+              case 'custom_class':
+                  if (value)
+                      classname.push(value);
+                  break;
+              case 'animation':
+                  if (value) {
+                      classname.push('animated');
+                      classname.push(value);
+                  }
+                  break;
+              case 'middle_align':
+              case 'hidden_mobile':
+              case 'hidden_tablet':
+              case 'hidden_desktop':
+                  value = parseInt(value);
+                  if (value)
+                      classname.push(class_map[field]);
+                  break;
+              case 'content_align':
+                  classname.push(class_map[value]);
+                  break;
+          }
+      })
+      row.attr('class', classname.join(' '));
+      if (rowStyle.length)
+          rowStyle.html(style);
+      else
+          row.prepend($('<style type="text/css" class="row-style"></style>').html(style));
+  }
+  /*
+  */
+    getLayout = function(iframeDoc) {
+        rows = $(iframeDoc).find('section#content').find('div[id^="row"]');
+        config = [];
+        rows.each(function(i, e) {
+            rowConfig = {
+                'type'    : 'row',
+                'id'      : $(this).attr('id'),
+                'name'    : '',
+                'layout'  : $(this).data('layout'),
+                'settings'  : $(this).data('setting'),
+                'cols'    : []
+            };
+            columns = $(this).find('.layout-column');
+
+            columns.each(function(cindex) {
+                colConfig = {
+                    'type'        : 'column',
+                    'className'     : $(this).attr('class'),
+                    'id'            : $(this).attr('id'),
+                    'settings'      : $(this).data('setting'),
+                    'addons'    : []
+                };
+                getAddonLayout(this, colConfig);
+                rowConfig.cols.push(colConfig);
+            });
+            config.push(rowConfig);
+        });
+        config = JSON.stringify(config);
+        return config;
+    },
+    getAddonLayout = function (column, columnConfig) {
+        var addons = $(column).children('.addon-box');
+        addons.each(function(aindex) {
+            type = $(this).attr('data-name');
+            let addonConfig = {
+                'id'          : $(this).attr('id'),
+                'type'        : type,
+                'settings'      : {
+                    'active' : 1,
+                    'addon'  : $(this).attr('data-name'),
+                },
+                'fields'      : $(this).data('setting'),
+            };
+            if (type == 'grid') {
+                addonConfig.grid = [];
+                let grid_column = $(this).find('.grid_row').children('.grid_column');
+                grid_column.each(function(gridindex) {
+                    let gridColConfig = {
+                        col: {
+                            lg: $(this).attr('lg'),
+                            sm: $(this).attr('sm'),
+                            xs: $(this).attr('xs'),
+                        },
+                        addons: [],
+                    }
+                    getAddonLayout(this, gridColConfig);
+                    addonConfig.grid.push(gridColConfig);
+                });
+            }
+            columnConfig.addons.push(addonConfig);
+        });
+    },
+  getRowLayout = function(iframeDoc, row) {
+      config = [];
+      rowConfig = {
+          'type'    : 'row',
+          'id'      : row.attr('id'),
+          'name'    : '',
+          'layout'  : row.data('layout'),
+          'settings'  : row.data('setting'),
+          'cols'    : []
+      };
+      columns = row.find('.layout-column');
+
+      columns.each(function(cindex) {
+          colConfig = {
+              'type'        : 'column',
+              'className'     : $(this).attr('class'),
+              'id'            : $(this).attr('id'),
+              'settings'      : $(this).data('setting'),
+              'addons'    : []
+          };
+          var addons = $(this).find('.addon-box');
+          addons.each(function(aindex) {
+              addonConfig = {
+                  'id'          : $(this).attr('id'),
+                  'type'        : $(this).attr('data-name'),
+                  'settings'      : {
+                    'active' : 1,
+                    'addon'  : $(this).attr('data-name'),
+                  },
+                  'fields'      : $(this).data('setting'),
+              };
+              colConfig.addons.push(addonConfig);
+          });
+          rowConfig.cols.push(colConfig);
+      })
+      config.push(rowConfig);
+      config = JSON.stringify(config);
+      return config;
+  }
+  savePage = function(iframeDoc) {
+      $('.pagebuilder-preview-overlay').show();
+      config = getLayout(iframeDoc);
+      $.ajax({
+          type: 'POST',
+          url: PagebuilderConfig.editor_link + '&action=SavePage&ajax=1',
+          data: {
+              jsonparams: config,
+              page_id: $('#select-page').val(),
+          },
+          success: function(data)
+          {
+              setTimeout(function(){
+                  $('.pagebuilder-preview-overlay').addClass('completed');
+              }, 2000);
+              setTimeout(function(){
+                  $('.pagebuilder-preview-overlay').removeClass('completed');
+                  $('.pagebuilder-preview-overlay').hide();
+              }, 3000);
+          }
+      });
+  }
+  saveTemplate = function(iframeDoc, config) {
+      if($('#library-template-name').val() == '') {
+          alert('Please enter template name');
+          return;
+      }
+      $.ajax({
+          type: 'POST',
+          url: PagebuilderConfig.editor_link + '&action=SaveTemplate&ajax=1',
+          data: {
+              jsonparams: config,
+              templatename: $('#library-template-name').val(),
+          },
+          success: function(data)
+          {
+              switchDialogForm('library');
+          }
+      });
+  }
+  checkEmpty = function(iframeDoc) {
+      $(iframeDoc).find('.gdz-row').each(function(event) {
+          var row_layout = $(this).attr('data-layout');
+          $(this).find('.pb-column-list li a').removeClass('active');
+          $(this).find('.pb-column-list li a').each(function(event) {
+              if($(this).attr('data-layout') == row_layout) $(this).addClass('active');
+          });
+      });
+      $(iframeDoc).find('#wrapper .layout-column').each(function(event) {
+          if($(this).find('.addon-box').length == 0)
+            $(this).addClass('column-empty');
+          else
+            $(this).removeClass('column-empty');
+      });
+      $(iframeDoc).find('.addon-box').each(function(event) {
+          if($(this).find('.addon-body > *').length == 0) {
+              $(this).addClass('addon-empty');
+          } else if($(this).attr('data-name') == 'popup') {
+            $(this).addClass('addon-empty');
+          } else {
+            $(this).removeClass('addon-empty');
+          }
+      });
+  }
+  rowLayoutOpen = function(iframeDoc) {
+      $(iframeDoc).find('.row-layout-setting').on('click', function(event) {
+          if(!$(this).parent().hasClass('show')) {
+            $(this).closest('.gdz-row').addClass('row-layout-open');
+          } else {
+            $(this).closest('.gdz-row').removeClass('row-layout-open');
+          }
+      });
+  }
+  rightMenuOpen = function(iframeDoc) {
+      //Right Menu
+      $(iframeDoc).find('.gdz-row:not(:last)').bind("contextmenu", function(event) {
+          event.preventDefault();
+          var iframepos = $("#pagebuilder-preview-iframe").position();
+          var iframewidth = $("#pagebuilder-preview-iframe").width();
+          var x = event.clientX + iframepos.left - 50;
+          if(iframewidth - x < 200)
+            x = event.clientX + iframepos.left - 50 - 160;
+            var y = event.clientY + iframepos.top - 70;
+          $(iframeDoc).find("#pb-right-menu")
+              .show()
+              .css({top: y + "px", left: x + "px"});
+          $(iframeDoc).find("#pb-right-menu").data('row-id', $(this).attr('id'));
+          var settings = $(iframeDoc).find("#pb-right-menu").data('row-style-copy');
+          if(settings != null && settings != '') {
+              $(iframeDoc).find("#pb-right-menu .paste-style-row").removeClass('disable');
+          } else {
+              $(iframeDoc).find("#pb-right-menu .paste-style-row").addClass('disable');
+
+          }
+      });
+      $(iframeDoc).bind("mousedown", function (e) {
+          if(e.which != 3 && !$(e.target).parents("#pb-right-menu").length > 0)
+            $(iframeDoc).find("#pb-right-menu").hide(100);
+      });
+  }
+  switchTab = function(tabid) {
+      $('.vertical-panel li').removeClass('active');
+      if(!$('body').hasClass('pagebuilder-editor-active'))
+          $('body').addClass('pagebuilder-editor-active');
+      $('#' + tabid).addClass('active');
+  }
+  //Drag & Drop Init Function
+  dragDropInit = function(iframeDoc) {
+      var dragged;
+      $(".addon-cat-addons").on('dragstart',function(event) {
+          dragged = event.target;
+      });
+      $("#addons").click(function(e) {
+          $('.gdz-configuration').hide();
+          switchTab('addons');
+      });
+      $("#section, #page").click(function(e) {
+          let type = $(this).attr('id');
+          $('.gdz-configuration').hide();
+          $(`#${type}-list`).show();
+          if (!$(`#${type}-list`).data('loaded')) {
+              $(`#${type}-list`).css('display', 'flex');
+              $.ajax({
+                  type: 'GET',
+                  url: PagebuilderConfig.editor_link + `&action=get${type}List&ajax=1&secure_key=` + PagebuilderConfig.secure_key,
+                  success: function(data)
+                  {
+                      $(`#${type}-list`).html(data);
+                      $(`#${type}-list`).data('loaded', true);
+                      $(`#${type}-list`).css('display', 'block');
+                      $(`#${type}-list`).find(".studio-category").click(function(e) {
+                        var open = true;
+                        if($(this).parent().hasClass('active'))
+                          open = false;
+                        $('.category-box').removeClass('active');
+                        if(open)
+                          $(this).parent().addClass('active');
+                      });
+                  }
+              });
+          }
+          switchTab(type);
+      });
+      $('#section-list, #page-list').on('click', '.import-studio', function(e) {
+        let studio = $(this).closest('.gdz-configuration').attr('data-studio');
+        let name = $(this).attr('data-name');
+        $('.pagebuilder-preview-overlay').show();
+        $.ajax({
+          type: 'POST',
+          url: PagebuilderConfig.ajax_link + `&action=import&ajax=1&secure_key=` + PagebuilderConfig.secure_key,
+          data: {
+            studio: studio,
+            name: name
+          },
+          success: function(response)
+          {
+              response = JSON.parse(response);
+              if (response.success) {
+                data = response.data;
+                iframeDoc = window.iframeDoc;
+                template = $(data.html);
+                wrapper = $('<div></div>').html(template);
+                assignData(data.params, wrapper);
+                template.insertBefore($(iframeDoc).find('.row-add'));
+                $(template).find('.addon-sortable').sortable({
+                    scroll: true,
+                    scrollSensitivity: 100,
+                    scrollSpeed: 13,
+                    placeholder: "ui-state-highlight",
+                    connectWith: ".addon-sortable",
+                    update: function(event, ui) {
+                        checkEmpty(iframeDoc);
+                    }
+                });
+              } else {
+                alert(response.err);
+              }
+              $('.pagebuilder-preview-overlay').hide();
+          }
+        });
+      })
+
+      // back to addon list
+      $("#back").click(function(e) {
+          $(this).closest('.gdz-configuration').hide();
+          $('#gdz-configuration').data('component').removeClass('active');
+          switchTab('addons');
+      })
+      // save
+      $('#save').click(function(e) {
+          savePage(iframeDoc);
+      })
+      // save template
+      $('#library-save-template').click(function(e) {
+          event.preventDefault();
+          event.stopPropagation();
+          var _dialog = $('#pagebuilder-template-library');
+          if(_dialog.data('row-id') == null || _dialog.data('row-id') == '') {
+              config = getLayout(iframeDoc);
+          } else {
+              var row = $(iframeDoc).find('#' + _dialog.data('row-id'));
+              var config = getRowLayout(iframeDoc, row);
+          }
+          saveTemplate(iframeDoc, config);
+      })
+      // on config field change
+      $('#gdz-configuration').on('change', '.tree-folder input[type=checkbox]', function(e) {
+          tree = $(this).closest('.cattree');
+          arrayInput = tree.find(':input').serializeArray().map(function(e) {
+              return e.value;
+          });
+          field = $(this).attr('name').replace('[]', '');
+          setting = $('#gdz-configuration').data('setting');
+          component = $('#gdz-configuration').data('component');
+          index = _.findKey(setting, {'name': field});
+          setting[index]['value'] = arrayInput.join(',');
+          updateComponent(component, setting);
+      })
+      $('#gdz-configuration').on('change', '.tree-folder input[type=radio]', function(e) {
+          tree = $(this).closest('.cattree');
+          var categories = tree.find('input[type=radio]');
+          var categories_result = new Array();
+          var result = '';
+          categories.each(function(catindex) {
+            if ($(this).is(":checked")) {
+              result =  $(this).val();
+            }
+          });
+          field = $(this).attr('name');
+          setting = $('#gdz-configuration').data('setting');
+          component = $('#gdz-configuration').data('component');
+          index = _.findKey(setting, {'name': field});
+          setting[index]['value'] = result;
+          updateComponent(component, setting);
+      })
+      //on row setting change
+      $('#gdz-configuration').on('change keyup', '.row-settings input, .row-settings select', function(e) {
+        var $this = $(this);
+        $attrname = $this.data('attrname');
+        settingPanel = $('#row-settings');
+        activeRow = settingPanel.data('activeRow');
+        config = activeRow.data('setting');
+        config[$attrname] = $this.getInputValue();
+        updateRow(activeRow, config);
+      })
+      //on column setting change
+      $('#gdz-configuration').on('change keyup', '.column-settings input, .column-settings select', function(e) {
+        var $this = $(this);
+        $attrname = $this.data('attrname');
+        settingPanel = $('#column-settings');
+        activeColumn = settingPanel.data('activeColumn');
+        config = activeColumn.data('setting');
+        config[$attrname] = $this.getInputValue();
+        updateColumn(activeColumn, config);
+      })
+      $(iframeDoc).on('dragenter', '.layout-column', function(event)
+      {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).addClass('dragging');
+          $(iframeDoc).find('.ui-state-highlight').remove();
+          if($(dragged).hasClass('addon-cat-addons') && !$(dragged).hasClass('pro') && ($(dragged).find('.disabled').length == 0)) {
+              if(!$(event.target).hasClass('layout-column') && !$(event.target).hasClass('dragenterable')) {
+                  var target = $(event.target).offset();
+                  var des_box = $(event.target).closest('.addon-box').offset();
+                  if(des_box) {
+                      var des_h = $(event.target).closest('.addon-box').outerHeight();
+                      var dy = target.top - des_box.top;
+                      if(dy > des_h/2) {
+                        $("<div class='ui-state-highlight'></div>").insertAfter($(event.target).closest('.addon-box'));
+                      } else {
+                        $("<div class='ui-state-highlight'></div>").insertBefore($(event.target).closest('.addon-box'));
+                      }
+                  }
+              } else {
+                  $(event.target).append("<div class='ui-state-highlight'></div>");
+              }
+          }
+      }).on('dragover',function(event)
+      {
+          event.preventDefault();
+          event.stopPropagation();
+      });
+      $(iframeDoc).on('drop', '.layout-column',function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          if($(dragged).hasClass('addon-cat-addons') && !$(dragged).hasClass('pro') && ($(dragged).find('.disabled').length == 0)) {
+              dragged.style.opacity = '';
+              var addonWidget = $(dragged).find('.addon-widget');
+              var addonName = $(addonWidget).data('addon');
+              addonHtml = addAddon(addonName);
+              if(!$(event.target).hasClass('layout-column') && !$(event.target).hasClass('dragenterable')) {
+                  var target = $(event.target).offset();
+                  var des_box = $(event.target).closest('.addon-box').offset();
+                  if(des_box) {
+                    var des_h = $(event.target).closest('.addon-box').outerHeight();
+                    var dy = target.top - des_box.top;
+                    if(dy > des_h/2)
+                      addonHtml.insertAfter($(event.target).closest('.addon-box'));
+                    else
+                      addonHtml.insertBefore($(event.target).closest('.addon-box'));
+                  }
+              } else {
+                  addonHtml.appendTo(event.target);
+              }
+              // show config and update
+              showConfiguration(addonHtml);
+              setting = $('#gdz-configuration').data('setting');
+              //remove tab in setting
+              for(i = 0; i < setting.length; i++) {
+                  if(setting[i]['type'] == 'tab') {
+                    setting.splice(i, 1);
+                  }
+              }
+              component = $('#gdz-configuration').data('component');
+              updateComponent(component, setting);
+              $(iframeDoc).find('.ui-state-highlight').remove();
+              dragged = null;
+              checkEmpty(iframeDoc);
+          }
+      });
+      $(iframeDoc).on('dragenter', '.row-add', function(event)
+      {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).addClass('dragging');
+          $(iframeDoc).find('.ui-state-highlight').remove();
+          if($(dragged).hasClass('addon-cat-addons') && !$(dragged).hasClass('pro') && ($(dragged).find('.disabled').length == 0)) {
+              $(event.target).append("<div class='ui-state-highlight'></div>");
+          }
+      }).on('dragover',function(event)
+      {
+          event.preventDefault();
+          event.stopPropagation();
+      });
+      $(iframeDoc).on('drop', '.row-add',function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          if($(dragged).hasClass('addon-cat-addons') && !$(dragged).hasClass('pro') && ($(dragged).find('.disabled').length == 0)) {
+              var rowClone = $('#pb-tmpl-row .gdz-row').clone(true);
+              rowClone.data('setting', JSON.parse(rowSettings));
+              $(rowClone).attr("id", 'row-' + genID());
+              var layoutType = '12';
+              var newColumns = ['12'];
+              var colHtml = '';
+              $(rowClone).attr('data-layout', layoutType);
+              $(rowClone).data('layout', layoutType);
+              var colClone = $('#pb-tmpl-column .layout-column').clone(true);
+              colClone.addClass('col-lg-12');
+              colClone.addClass('column-empty');
+              colClone.attr('id', "column-" + genID());
+              colClone.data('setting', newColumnSetting(12));
+              $(rowClone).find('.row').append(colClone);
+              var currentRow = $(this).closest('.row-add');
+              $(rowClone).insertBefore($(currentRow));
+              dragged.style.opacity = '';
+              var addonWidget = $(dragged).find('.addon-widget');
+              var addonName = $(addonWidget).data('addon');
+              addonHtml = addAddon(addonName);
+              addonHtml.appendTo($(rowClone).find('.layout-column'));
+              // show config and update
+              showConfiguration(addonHtml);
+              setting = $('#gdz-configuration').data('setting');
+              //remove tab in setting
+              for(i = 0; i < setting.length; i++) {
+                  if(setting[i]['type'] == 'tab') {
+                    setting.splice(i, 1);
+                  }
+              }
+              component = $('#gdz-configuration').data('component');
+              updateComponent(component, setting);
+              $(iframeDoc).find('.ui-state-highlight').remove();
+              $('.row-add').removeClass('dragging');
+              dragged = null;
+              checkEmpty(iframeDoc);
+          }
+          $(iframeDoc).find('.addon-sortable').sortable({
+              placeholder: "ui-state-highlight",
+              connectWith: ".addon-sortable",
+              scroll: true,
+              scrollSensitivity: 100,
+              scrollSpeed: 13,
+              update: function(event, ui) {
+                checkEmpty(iframeDoc);
+              }
+          });
+          rowLayoutOpen(iframeDoc);
+          checkEmpty(iframeDoc);
+      });
+  }
+  //Iframe on load
+  $('#pagebuilder-preview-iframe').on('load',function () {
+      var iframeWin = this.contentWindow;
+      var iframeDoc = iframeWin.document;
+      window.iframeDoc = iframeDoc;
+      var iframeBody = iframeDoc.body,
+            jQueryLoaded = false,
+            jQuery;
+      checkEmpty(iframeDoc);
+      $(iframeDoc).find('#main').on('carousel', ".carousel-tpl", function() {
+          $(this).owlCarousel('destroy');
+          $(this).owlCarousel({
+              loop:!0,
+              margin:$(this).data("margin"),
+              nav:$(this).data("nav"),
+              dots:$(this).data("dots"),
+              autoplay:$(this).data("auto"),
+              rewind:$(this).data("rewind"),
+              slideBy:$(this).data("slidebypage"),
+              responsive: {
+                  0:{
+                      items:$(this).data("xs")
+                  },
+                  576:{
+                      items:$(this).data("sm")
+                  },
+                  992:{
+                      items:$(this).data("md")
+                  }
+              }
+          })
+      })
+      //assign json to elements
+      addonTitles = JSON.parse(addonTitles);
+      pageObj = JSON.parse(pagejson?pagejson:'[]');
+      assignData(pageObj, iframeDoc);
+      //Click Iframe to close dropdown
+      $(iframeDoc).click(function(){
+          $(".dropdown").removeClass('open');
+      });
+      //Add New Row
+      $(iframeDoc).on('click', '.pb-add-row .column-layout', function(event) {
+          event.preventDefault();
+          var rowClone = $('#pb-tmpl-row .gdz-row').clone(true);
+          rowClone.data('setting', JSON.parse(rowSettings));
+          $(rowClone).attr("id", 'row-' + genID());
+          layoutType = $(this).data('layout');
+          if(layoutType == 'custom') {
+              layoutType = $(this).parent().parent().find('.custom-layout').val();
+          }
+          if(layoutType == '12')
+      			var newColumns = ['12'];
+          else
+            var newColumns = layoutType.split(',');
+          var colHtml = '';
+          $(rowClone).attr('data-layout', layoutType);
+          $(rowClone).data('layout', layoutType);
+          $.each(newColumns, function(index, value){
+              var colClone = $('#pb-tmpl-column .layout-column').clone(true);
+              colClone.addClass('col-lg-' + value);
+              colClone.addClass('column-empty');
+              colClone.attr('id', "column-" + genID());
+              colClone.data('setting', newColumnSetting(value));
+              $(rowClone).find('.row').append(colClone);
+          });
+      		var currentRow = $(this).closest('.gdz-row');
+          if(!$(currentRow).hasClass('row-add'))
+              $(rowClone).insertAfter($(currentRow));
+          else
+              $(rowClone).insertBefore($(currentRow));
+          $(iframeDoc).find('.addon-sortable').sortable({
+              placeholder: "ui-state-highlight",
+              connectWith: ".addon-sortable",
+              scroll: true,
+              scrollSensitivity: 100,
+              scrollSpeed: 13,
+              update: function(event, ui) {
+                checkEmpty(iframeDoc);
+              }
+          });
+          $(this).closest('.dropdown-menu').removeClass('show');
+          rowLayoutOpen(iframeDoc);
+          rightMenuOpen(iframeDoc);
+          checkEmpty(iframeDoc);
+
+      });
+      rowLayoutOpen(iframeDoc);
+      //Add New Template
+      $(iframeDoc).on('click', '.pb-add-template', function(event) {
+        $('#template-library').trigger('click');
+      });
+      //Edit Row Layout
+      $(iframeDoc).on('click', '.pb-row-layout .column-layout', function(event) {
+          event.preventDefault();
+          layoutType = $(this).data('layout');
+          if(layoutType == 'custom') {
+              layoutType = $(this).parent().parent().find('.custom-layout').val();
+          }
+          var rowBox = $(this).closest('.gdz-row').find('.row');
+          rowBox.addClass('row-active');
+          $(this).closest('.gdz-row').attr('data-layout', layoutType);
+          $(this).closest('.gdz-row').data('layout', layoutType);
+          var oldColumns = rowBox.find('.layout-column');
+          if(layoutType == '12')
+              var newColumns = ['12'];
+          else
+              var newColumns = layoutType.split(',');
+          var n_oldColumns = oldColumns.length;   //2
+          var n_newColumns = newColumns.length;//1
+          div = $('<div></div>');
+          $.each(newColumns, function(index, value){
+              old_col = oldColumns.eq(index);
+              var old_col_datas = old_col.data();
+              old_col_id = old_col.attr('id');
+              if(index < n_oldColumns) {
+                var html = old_col;
+                html.attr('class', 'addon-sortable layout-column col-lg-' + value);
+              } else {
+                html = $('<div class="addon-sortable layout-column col-lg-' + value + '" id="column-'+ genID() + '"></div>');
+                var colClone = $('#pb-tmpl-column .layout-column').clone(true);
+                colClone.addClass('col-lg-' + value);
+                colClone.addClass('column-empty');
+                colClone.attr('id', "column-" + genID());
+                colClone.data('setting', newColumnSetting(value));
+                html = colClone;
+              }
+              html.data('setting', newColumnSetting(value));
+              div.append(html);
+          });
+          if(n_oldColumns > n_newColumns)
+            for(i = n_newColumns; i < n_oldColumns; i++)
+              div.find('.layout-column').eq(n_newColumns - 1).append(oldColumns.eq(i).children());
+          rowBox.html(div.children());
+          $(iframeDoc).find('.addon-sortable').sortable({
+              scroll: true,
+              scrollSensitivity: 100,
+              scrollSpeed: 13,
+              placeholder: "ui-state-highlight",
+              connectWith: ".addon-sortable",
+              update: function(event, ui) {
+                checkEmpty(iframeDoc);
+              }
+          });
+          $(this).closest('.pb-row-layout').trigger('click');
+          $(this).closest('.gdz-row').removeClass('row-layout-open');
+          checkEmpty(iframeDoc);
+      });
+      //setting Row
+      $(iframeDoc).on('click', '.pb-row-setting', function(event) {
+          event.preventDefault();
+          row = $(this).closest('.gdz-row');
+          $('#gdz-configuration').empty();
+          $('#row-settings').data('activeRow', row);
+          showRowSetting();
+      });
+      $(iframeDoc).on('click', '.edit-row', function(event) {
+          event.preventDefault();
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          var row = $(iframeDoc).find('#' + row_id);
+          $('#gdz-configuration').empty();
+          $('#row-settings').data('activeRow', row);
+          showRowSetting();
+      });
+      //Remove Row
+      $(iframeDoc).on('click', '.pb-row-delete', function(event) {
+      		event.preventDefault();
+      		if ( confirm("Click Ok button to delete this Row, Cancel to leave.") == true ) {
+        			$(this).closest('.gdz-row').slideUp(200, function(){
+        				$(this).remove();
+                $('.gdz-configuration').hide();
+        			});
+      		}
+    	});
+      $(iframeDoc).on('click', '.delete-row', function(event) {
+      		event.preventDefault();
+      		if ( confirm("Click Ok button to delete this Row, Cancel to leave.") == true ) {
+              var row_id = $(this).closest('#pb-right-menu').data('row-id');
+              var row = $(iframeDoc).find('#' + row_id);
+        			row.slideUp(200, function(){
+          				$(this).remove();
+                  $('.gdz-configuration').hide();
+        			});
+      		}
+    	});
+      //Duplicate Row
+      $(iframeDoc).on('click', '.pb-row-duplicate', function(event) {
+      		event.preventDefault();
+          row = $(this).closest('.gdz-row');
+      		var rowClone = row.clone();
+          copyRowData(row, rowClone);
+          rowClone.insertAfter(row);
+          sortableAddon(rowClone);
+    	});
+      $(iframeDoc).on('click', '.duplicate-row', function(event) {
+          event.preventDefault();
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          var row = $(iframeDoc).find('#' + row_id);
+          var rowClone = row.clone();
+          copyRowData(row, rowClone);
+          rowClone.insertAfter(row);
+          sortableAddon(rowClone);
+      });
+      //Export Row
+      $(iframeDoc).on('click', '.export-row', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          var row = $(iframeDoc).find('#' + row_id);
+          var config = getRowLayout(iframeDoc, row);
+          var filename = row_id;
+          if(filename == '') {
+              alert('Please enter file name');
+              return;
+          }
+          blob = new Blob([config], { type: 'text/plain' }),
+          anchor = document.createElement('a');
+
+          anchor.download = filename + '.json';
+          anchor.href = (window.webkitURL || window.URL).createObjectURL(blob);
+          anchor.dataset.downloadurl = ['text/plain', anchor.download, anchor.href].join(':');
+          anchor.click();
+      });
+      //Save as Template - Row
+      $(iframeDoc).on('click', '.save-template-row', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var _dialog = $('#pagebuilder-' + $(this).attr('data-dialog'));
+          var _left = ($(window).width() - _dialog.find('.pagebuilder-dialog-content').width())/2;
+          _dialog.find('.pagebuilder-dialog-content').css('left', _left + 'px');
+          _dialog.show();
+          switchDialogForm($(this).attr('data-form'));
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          _dialog.data('row-id', row_id);
+
+      });
+      $(iframeDoc).on('click', '.copy-style-row', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          var row = $(iframeDoc).find('#' + row_id);
+          setting = JSON.parse(JSON.stringify(row.data('setting')));
+          $(this).closest('#pb-right-menu').data('row-style-copy', setting);
+      });
+      $(iframeDoc).on('click', '.paste-style-row:not(.disable)', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var row_id = $(this).closest('#pb-right-menu').data('row-id');
+          var row = $(iframeDoc).find('#' + row_id);
+          var setting = $(this).closest('#pb-right-menu').data('row-style-copy');
+          if(setting != null && setting != '') {
+              row.data('setting', setting);
+          }
+          updateRow(row, row.data('setting'));
+      });
+      $(iframeDoc).on('click', '.reset-style-row', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          row.data('setting', JSON.parse(rowSettings));
+          updateRow(row, row.data('setting'));
+      });
+      //setting Column
+      $(iframeDoc).on('click', '.pb-column-setting', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          column = $(this).closest('.layout-column');
+          $('#column-settings').data('activeColumn', column);
+          showColumnSetting();
+      });
+      //Remove Addon
+      $(iframeDoc).on('click', '.pb-addon-delete', function(event) {
+          event.preventDefault();
+          if ( confirm("Click Ok button to delete this Addon, Cancel to leave.") == true ) {
+              $(this).closest('.addon-box').slideUp(200, function(){
+                  $('.gdz-configuration').hide();
+                  $(this).remove();
+                  checkEmpty(iframeDoc);
+              });
+
+          }
+      });
+      //edit addon
+      $(iframeDoc).on('click', '.pb-addon-setting', function(event) {
+          event.preventDefault();
+          component = $(this).closest('.addon-box');
+          showConfiguration(component);
+      });
+      //click to addon box
+      $(iframeDoc).on('click', '.addon-box', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          component = $(this);
+          showConfiguration(component);
+      });
+      $(iframeDoc).on('click', '.pb-addon-duplicate', function(event) {
+          event.stopPropagation();
+          event.preventDefault();
+          addon = $(this).closest('.addon-box');
+          var addonClone = addon.clone();
+          copyAddonData(addon, addonClone);
+          addonClone.insertAfter(addon);
+          showConfiguration(addonClone);
+      });
+      //click to column box
+      $(iframeDoc).on('click', '.gdz-popup-overlay', function(event) {
+          event.stopPropagation();
+          event.preventDefault();
+          $(this).closest('.addon-box').removeClass('active');
+          $(this).closest('.addon-box').unbind('mouseenter mouseleave')
+
+
+          //$('.gdz-configuration').hide();
+      });
+      $(iframeDoc).on('click', '.layout-column', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $('.gdz-configuration').hide();
+      });
+      //Drag Drop Addons
+      dragDropInit(iframeDoc);
+      rightMenuOpen(iframeDoc);
+      //Sortable
+      function loadJQueryUI() {
+            iframeBody.removeChild(jQuery);
+            jQuery = null;
+
+            iframeWin.jQuery.ajax({
+                url: 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js',
+                dataType: 'script',
+                cache: true,
+                success: function () {
+                    $(iframeDoc).find('.row-sortable').sortable({
+                      items : '> .gdz-row:not(:last)',
+                      placeholder: "ui-state-highlight",
+                      connectWith: ".row-sortable"
+                  	});
+                    $(iframeDoc).find('.addon-sortable').sortable({
+                      placeholder: "ui-state-highlight",
+                      connectWith: ".addon-sortable",
+                      scroll: true,
+                      scrollSensitivity: 100,
+                      scrollSpeed: 13,
+                      update: function(event, ui) {
+                          checkEmpty(iframeDoc);
+                      }
+                  	});
+                }
+            });
+        }
+        jQuery = iframeDoc.createElement('script');
+
+        // based on https://gist.github.com/getify/603980
+        jQuery.onload = jQuery.onreadystatechange = function () {
+            if ((jQuery.readyState && jQuery.readyState !== 'complete' && jQuery.readyState !== 'loaded') || jQueryLoaded) {
+                return false;
+            }
+            jQuery.onload = jQuery.onreadystatechange = null;
+            jQueryLoaded = true;
+            loadJQueryUI();
+        };
+
+        jQuery.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js';
+        iframeBody.appendChild(jQuery);
+  });
+
+  //end Iframe Load
+
+});
+jQuery(window).on("load",function(){
+    const toolAddons = document.querySelector('#tool-addons');
+    const ps1 = new PerfectScrollbar(toolAddons);
+    const toolAddons2 = document.querySelector('#gdz-configuration');
+    const ps2 = new PerfectScrollbar(toolAddons2);
+    //$('.tooltip').tooltip();
+});
+$(document).ready(function(){
+    $('.gdz-tooltip').tooltip();
+});

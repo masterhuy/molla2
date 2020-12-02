@@ -391,25 +391,14 @@ $secondary-color: #bf913d;
 }
 .intro-banners{
 	.pb-banner-text{
-		display: block;
-		left: 3rem;
-		top: 50%;
-		transform: translateY(-50%);
-		right: auto;
-		text-align: left;
-		bottom: auto;
+		overflow: visible;
 		.pb-banner-subtitle{
-			font-size: 1.4rem;
 			letter-spacing: -.01em;
-			color: #777;
 			display: block;
-			line-height: 1.2;
 			margin-top: .8rem;
 		}
 		.pb-banner-title{
 			font-weight: 600;
-			font-size: 1.8rem;
-			line-height: 1.22;
 			letter-spacing: -.01em;
 			margin-bottom: .6rem;
 			transition: color 0.3s ease;
@@ -419,9 +408,6 @@ $secondary-color: #bf913d;
 		}
 		.pb-banner-desc{
 			font-weight: 300;
-			color: #333;
-			font-size: 1.8rem;
-			line-height: 1.22;
 			letter-spacing: -.01em;
 			margin-bottom: .6rem;
 			margin-top: -.5rem;

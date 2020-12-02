@@ -45,7 +45,7 @@
         margin: <%= obj['sm_margin_top']?obj['sm_margin_top']:0 %>px <%= obj['sm_margin_right']?obj['sm_margin_right']:0 %>px <%= obj['sm_margin_bottom']?obj['sm_margin_bottom']:0 %>px <%= obj['sm_margin_left']?obj['sm_margin_left']:0 %>px!important;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
     #<%= row_id %> {
         padding: <%= obj['xs_padding_top']?obj['xs_padding_top']:0 %>px <%= obj['xs_padding_right']?obj['xs_padding_right']:0 %>px <%= obj['xs_padding_bottom']?obj['xs_padding_bottom']:0 %>px <%= obj['xs_padding_left']?obj['xs_padding_left']:0 %>px!important;
         margin: <%= obj['xs_margin_top']?obj['xs_margin_top']:0 %>px <%= obj['xs_margin_right']?obj['xs_margin_right']:0 %>px <%= obj['xs_margin_bottom']?obj['xs_margin_bottom']:0 %>px <%= obj['xs_margin_left']?obj['xs_margin_left']:0 %>px!important;

@@ -329,6 +329,156 @@ class gdz_pagebuilderAjaxModuleFrontController extends ModuleFrontController
                 'params' => $rows,
             );
             die(Tools::jsonEncode($rs));
+        } elseif ($action == 'import') {
+            $this->ajaxProcessImport();
         }
+    }
+    public function ajaxProcessImport()
+    {
+        $rs = array('success' => true);
+        $name = Tools::getValue('name');
+        $studio = Tools::getValue('studio');
+        $dest = _PS_MODULE_DIR_._GDZ_PB_NAME_."/studio/{$studio}/{$name}/";
+        $params = [
+            'type' => 'import',
+            'studio' => $studio,
+            'name' =>   $name,
+        ];
+        if (!file_exists($dest."{$name}.xml")) {
+            include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/controllers/admin/GdzPagebuilderEditor.php');
+            $studio = new gdzPageBuilderHelper();
+            $request = $studio->request($params);
+            if ($request['success']) {
+                if (!file_exists($dest)) {
+                    mkdir($dest, 0777, true);
+                }
+                if (copy($request['url'], $dest.'tmp.zip')) {
+                    $zip = new ZipArchive();
+
+                    if ($zip->open($dest.'tmp.zip') !== true) {
+                        $rs['success'] = false;
+                        $rs['err'] = $this->module->l("cannot open zip");
+                    } else {
+                        if ($zip->extractTo($dest)) {
+                            $zip->close();
+                            unlink($dest.'tmp.zip');
+                        }
+                        if (file_exists($dest."{$name}.xml") && file_exists($dest."template.json")) {
+                            $xml = simplexml_load_file($dest."{$name}.xml");
+                            $base_url = (string)$xml->base_url;
+                            $json = file_get_contents($dest."template.json");
+                            $json = str_replace($base_url, __PS_BASE_URI__, $json);
+                            file_put_contents($dest."template.json", $json);
+                        }
+                    }
+                } else {
+                    $errors= error_get_last();
+                    $rs['success'] = false;
+                    $rs['err'] = "fail to copy: {$errors['message']}";
+                }
+            }
+        }
+
+        if (!file_exists($dest."template.json")) {
+            $rs['success'] = false;
+            $rs['err'] = "template file not found in {$dest}";
+        } else {
+            $json = file_get_contents($dest."template.json");
+            if (file_exists($dest."images")) {
+                $this->copyImages($dest."images/");
+            }
+            $rs['data'] = $this->import($json);
+        }
+        die(Tools::jsonEncode($rs));
+    }
+    public function copyImages($folder)
+    {
+        $files = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($folder.'/'),
+            RecursiveIteratorIterator::LEAVES_ONLY
+        );
+
+        foreach ($files as $name => $file)
+        {
+            if (!$file->isDir())
+            {
+                $filePath = $file->getRealPath();
+                $dest = _PS_ROOT_DIR_.DIRECTORY_SEPARATOR.substr($filePath, strlen($folder));
+                if(!file_exists(dirname($dest))) {
+                    mkdir(dirname($dest), 0777, true);
+                }
+                copy($filePath, $dest);
+            }
+        }
+    }
+    public function import($json)
+    {
+        $context = Context::getContext();
+        $rows = (array)Tools::jsonDecode($json);
+        $bresult = array();
+        $b_index = 0;
+        foreach ($rows as $key => $row) {
+            $row_css = '';
+            $row->id = 'row-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+            $row_css .= gdzPageBuilderHelper::parseStyleItem('row', $row);
+            $row->class = $row->settings->custom_class;
+            if($row->settings->animation) {
+                $row->class .= " animated ".$row->settings->animation;
+            }
+            if(isset($row->settings->content_align) && $row->settings->content_align != '') {
+                $row->class .= " ".$row->settings->content_align."-align";
+            }
+            if($row->settings->hidden_mobile) {
+                $row->class .= " pb-hidden-xs";
+            }
+            if($row->settings->hidden_tablet) {
+                $row->class .= " pb-hidden-sm";
+            }
+            if($row->settings->hidden_desktop) {
+                $row->class .= " pb-hidden-md";
+            }
+            $bresult[] = $row;
+            $columns = $rows[$key]->cols;
+            foreach ($columns as $ckey => $column) {
+                $column->id = 'col-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+                $row_css .= gdzPageBuilderHelper::parseStyleItem('column', $column);
+                $column->class = $column->settings->lg_col." ".$column->settings->sm_col." ".$column->settings->xs_col." ".$column->settings->custom_class;
+                if($column->settings->animation) {
+                    $column->class .= " animated ".$column->settings->animation;
+                }
+                if(isset($column->settings->content_align) && $column->settings->content_align != '') {
+                    $column->class .= " ".$column->settings->content_align."-align";
+                }
+                if($column->settings->hidden_mobile) {
+                    $column->class .= " pb-hidden-xs";
+                }
+                if($column->settings->hidden_tablet) {
+                    $column->class .= " pb-hidden-sm";
+                }
+                if($column->settings->hidden_desktop) {
+                    $column->class .= " pb-hidden-md";
+                }
+                $addons = $column->addons;
+                foreach ($addons as $akey => $addon) {
+                    $addon->id = 'addon-'.Tools::substr(md5(uniqid(mt_rand(), true)), 0, 9);
+                    $row_css .= gdzPageBuilderHelper::parseStyleItem('addon', $addon);
+                    $bresult[$b_index]->cols[$ckey]->addons[$akey]->return_value = gdzPageBuilderHelper::loadAddon($addon);
+                }
+            }
+            $bresult[$b_index]->style = $row_css;
+            $b_index++;
+
+        }
+        $context->smarty->assign(
+            array(
+                'rows' => $bresult
+            )
+        );
+        $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/admin/preview_rows.tpl");
+        $rs = array(
+            'html' => $html,
+            'params' => $rows,
+        );
+        return $rs;
     }
 }

@@ -138,6 +138,7 @@ class gdzAddonIcon extends gdzAddonBase
                 'icon_class' => $addon->fields[1]->value,
                 'icon_fontsize' => $addon->fields[2]->value,
                 'image' => $addon->fields[3]->value,
+                'alt_text' => $addon->fields[4]->value,
                 'image_width'  => $addon->fields[5]->value,
                 'text_align' => $addon->fields[6]->value
             )

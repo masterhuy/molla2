@@ -214,7 +214,7 @@ class gdzAddonProductFilter extends gdzAddonBase
         if ($producttype == 'onsale') {
             $_products = gdzProductHelper::getonSaleProducts($category_ids, $total_config);
         } elseif ($producttype == 'topseller') {
-            $_products = gdzProductHelper::getTopSellerProducts($category_ids, $total_config);            
+            $_products = gdzProductHelper::getTopSellerProducts($category_ids, $total_config);
         } elseif ($producttype == 'new') {
             $_products = gdzProductHelper::getNewProducts($category_ids, $total_config);
         } elseif ($producttype == 'special') {

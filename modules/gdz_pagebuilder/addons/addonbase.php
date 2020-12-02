@@ -447,6 +447,14 @@ class gdzAddonBase extends Module
                     $html .= ' />';
                 } elseif($field['type'] == 'checkbox2') {
                     $html .= ' /></div>';
+                } elseif($field['type'] == 'screen-grid') {
+                    $values = explode("-", $field['default']);
+                    $tpl = $this->context->smarty->createTemplate(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/hook/ui/{$field['type']}.tpl");
+                    $tpl->assign(array(
+                        'values' => $values,
+                        'field' => $field,
+                    ));
+                    $html.= $tpl->fetch();
                 }
             }
             if (isset($field['desc']) && $field['desc']) {

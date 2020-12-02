@@ -139,13 +139,6 @@ $secondary-color: #92b25a;
 	}
 	.col-banner{
 		.pb-banner-text{
-			top: 3.7rem;
-			bottom: auto;
-			left: 50%;
-			transform: translateX(-50%);
-			right: auto;
-			line-height: 1;
-			padding: .8rem 1.4rem;
 			.btn{
 				min-width: auto;
 				background: transparent;
@@ -160,112 +153,67 @@ $secondary-color: #92b25a;
 				}
 			}
 			.pb-banner-subtitle{
-				color: #666;
-				margin-bottom: .9rem;
+				margin-bottom: 1.1rem;
 				font-weight: 400;
-				font-size: 1.4rem;
 				letter-spacing: -.01em;
-				line-height: 1.2;
 			}
 			.pb-banner-title{
-				color: #333;
 				font-weight: 600;
-				font-size: 2.4rem;
 				letter-spacing: -.025em;
-				margin-bottom: 1.4rem;
-				line-height: 1.3;
+				margin-bottom: .8rem;
 			}
 			.pb-banner-desc{
-				font-size: 2.4rem;
-				line-height: 1.25;
 				letter-spacing: -.01em;
-				margin-bottom: 1.3rem;
+				margin-bottom: 1.7rem;
 				font-weight: 600;
-				margin-top: -1.4rem;
 			}
 		}
 	}
 }
 .h1-banner{
-	.text-white{
-		.pb-banner-text{
-			.pb-banner-subtitle,
-			.pb-banner-title,
-			.pb-banner-desc{
-				color: #fff;
-			}
-			.pb-banner-button{
-				border-color: #fff;
-				color: #fff;
-			}
-		}
-	}
-	.banner-1 .pb-banner-text{
-		left: 7rem;
-	}
 	.banner-2{
 		&.pb-banner > a::after{
 			background-color: rgba(51,51,51,0.25);
 		}
-		.pb-banner-text{
-			left: 4rem;
-			bottom: 4rem;
-			top: auto;
-		}
 	}
 	.banner-3{
-		margin-bottom: 2rem;
 		&.pb-banner > a::after{
 			background-color: rgba(51,51,51,0.25);
 		}
-		.pb-banner-text{
-			.pb-banner-button{
-				margin-top: 1.4rem;
-			}
-		}
 	}
 	.pb-banner-text{
-		display: block;
-		top: 4.1rem;
-		bottom: auto;
-		left: 4rem;
-		right: auto;
-		text-align: left;
 		.pb-banner-subtitle{
-			display: block;
-			color: #666666;
 			font-weight: 300;
-			font-size: 1.4rem;
 			letter-spacing: -.01em;
-			margin-bottom: .5rem;
-			line-height: 1.2;
 		}
 		.pb-banner-title{
-			color: #333;
 			font-weight: 600;
-			font-size: 2.4rem;
 			letter-spacing: -.025em;
-			margin-bottom: 0;
-			line-height: 1.3;
 		}
 		.pb-banner-desc{
-			color: #666666;
 			font-weight: 300;
-			font-size: 2.4rem;
-			line-height: 1.25;
 			letter-spacing: -.01em;
-			margin-bottom: 1.3rem;
 		}
 		.pb-banner-button{
 			background: transparent;
 			border: .1rem solid #959595;
 			color: #333;
 			min-width: auto;
-			padding: .5rem 1.5rem;
+			padding: .5rem 1.4rem;
+			margin-top: 1.4rem;
 			&:hover{
 				color: #fff;
 				border-color: $primary-color;
 				background-color: $primary-color;
+			}
+		}
+	}
+	.button-white{
+		.pb-banner-text .pb-banner-button{
+			border-color: #fff;
+			color: #fff;
+			&:hover{
+				border-color: $primary-color;
 			}
 		}
 	}
