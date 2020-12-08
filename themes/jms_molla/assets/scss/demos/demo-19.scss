@@ -149,10 +149,18 @@ body {
 	}
 }
 .pb-banner{
+	&.button-right{
+		.pb-banner-text .btn{
+			margin-left: auto;
+		}
+	}
+	&.button-left{
+		.pb-banner-text .btn{
+			margin-right: auto;
+		}
+	}
 	&.big-btn{
 		.pb-banner-text{
-			top: 60%;
-			padding-left: .2rem;
 			.btn{
 				padding: .75rem 2rem;
 				i{
@@ -163,8 +171,6 @@ body {
 	}
 	&.content-right{
 		.pb-banner-text{
-			right: 3rem;
-			left: auto;
 			.pb-banner-subtitle{
 				margin-bottom: .3rem;
 			}
@@ -175,12 +181,6 @@ body {
 	}
 	&.content-right-bottom{
 		.pb-banner-text{
-			transform: none;
-			right: 2rem;
-			left: auto;
-			bottom: 2rem;
-			text-align: right;
-			top: auto;
 			.banner-title-img{
 				margin-left: auto;
 			}
@@ -193,18 +193,9 @@ body {
 		}
 	}
 	.pb-banner-text{
-		text-align: left;
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
-		left: 4rem;
-		right: auto;
-		display: block;
 		.pb-banner-subtitle{
 			display: block;
-			font-size: 1.4rem;
 			font-weight: 400;
-			color: $primary-color;
 			text-transform: uppercase;
 			margin-top: 0;
 			margin-bottom: -.3rem;
@@ -337,11 +328,6 @@ body {
 }
 
 .pb-banner{
-	&.banner-6, &.banner-7, &.banner-8{
-		.pb-banner-text{
-			left: 3rem;
-		}
-	}
 	&.banner-7{
 		.pb-banner-text{
 			.pb-banner-subtitle{
@@ -352,7 +338,6 @@ body {
 	&.banner-8{
 		.pb-banner-text{
 			.pb-banner-subtitle{
-				color: #fff;
 				letter-spacing: 0.1em;
 				margin-bottom: .6rem;
 			}

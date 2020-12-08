@@ -63,7 +63,7 @@
                             data-id-product="{$product.id_product|escape:'html'}" 
                             title="{l s='Add to Wishlist'}"
                         >
-                            <span>Add to Wishlist</span>
+                            <span>{l s='Add to Wishlist' d='Shop.Theme.Actions'}</span>
                         </a>
                     {/if}
                 </div>

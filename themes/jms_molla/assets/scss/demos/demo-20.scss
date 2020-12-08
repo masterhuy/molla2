@@ -28,28 +28,16 @@ $secondary-color: #15a78a;
 }
 .pb-banner{
 	.pb-banner-text{
-		text-align: left;
-		display: block;
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
-		left: 4rem;
-		right: auto;
 		.pb-banner-subtitle{
 			display: block;
 			font-weight: 300;
-			font-size: 1.4rem;
 			letter-spacing: 0;
 			margin-bottom: .5rem;
-			color: #fff;
 		}
 		.pb-banner-title{
-			font-size: 2.4rem;
 			font-weight: 600;
 			letter-spacing: -.025em;
 			margin-bottom: 1.4rem;
-			color: #fff;
-			line-height: 1.3;
 			span{
 				font-weight: 300;
 			}
@@ -62,6 +50,7 @@ $secondary-color: #15a78a;
 			line-height: 1;
 			color: #fff;
 			text-transform: uppercase;
+			margin-right: auto;
 			&:hover{
 				color: #333;
 				background-color: #fff;
@@ -71,26 +60,15 @@ $secondary-color: #15a78a;
 }
 .banner-big{
 	.pb-banner-text{
-		.pb-banner-title{
-			font-size: 3rem;
-			line-height: 1.15;
-		}
 		.btn{
 			margin-top: .7rem;
 			padding: 1.2rem 1.8rem;
 		}
 	}
 }
-.banner-small{
-	.pb-banner-text{
-		left: 3rem;
-	}
-}
 .banner-content-stretch{
 	.pb-banner-text{
-		top: 2.5rem;
 		bottom: 5rem;
-		transform: translateY(0);
 		padding-bottom: 4rem;
 		.btn{
 			position: absolute;
@@ -136,7 +114,7 @@ $secondary-color: #15a78a;
 		}
 	}
 }
-.pb-categoryproduct{
+.pb-filter-products{
 	padding-bottom: 10rem;
 	margin-bottom: -10rem;
 	overflow: hidden;

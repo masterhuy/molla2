@@ -51,26 +51,12 @@ $secondary-color: #55739d;
 	}
 	.banner-1{
 		margin-bottom: 2rem;
-		.pb-banner-text{
-			right: 2.5rem;
-			left: auto;
-		}
 	}
 	.banner-2{
 		&.pb-banner > a::after{
 			background-color: rgba(255, 255, 255, 0.3);
 		}
 		.pb-banner-text{
-			left: 2.5rem;
-			.pb-banner-subtitle{
-				color: #666;
-			}
-			.pb-banner-title{
-				color: #333;
-			}
-			.pb-banner-desc{
-				color: #333;
-			}
 			.btn{
 				color: #333;
 				border-color: #959595;
@@ -82,45 +68,20 @@ $secondary-color: #55739d;
 	}
 	.banner-3{
 		display: none;
-		.pb-banner-text{
-			left: 7rem;
-		}
-	}
-	.banner-4{
-		.pb-banner-text{
-			top: auto;
-			bottom: 4rem;
-		}
 	}
 	.pb-banner-text{
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
-		text-align: left;
-		left: 50px;
-		display: block;
-		right: auto;
 		.pb-banner-subtitle{
-			font-size: 1.6rem;
-			line-height: 1.2;
 			font-weight: 300;
 			letter-spacing: -.01em;
 			margin-bottom: .6rem;
-			color: #ebebeb;
 		}
 		.pb-banner-title{
 			font-weight: 600;
-			font-size: 2.4rem;
-			line-height: 1.25;
 			margin-bottom: .1rem;
 			letter-spacing: -.01em;
-			color: #fff;
 		}
 		.pb-banner-desc{
-			color: #fff;
 			font-weight: 300;
-			font-size: 2.4rem;
-			line-height: 1.25;
 			letter-spacing: -0.025em;
 		}
 		.btn{

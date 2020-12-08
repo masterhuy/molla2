@@ -243,26 +243,23 @@ $secondary-color: #bf8040;
 		&:hover{
 			.pb-banner-text{
 				opacity: 1;
-				top: 50%;
+				top: 50% !important;
 			}
 		}
 	}
 	.pb-banner-text{
-		top: calc(50% + 5rem);
-		left: 50%;
-		bottom: auto;
-		right: auto;
+		top: calc(50% + 5rem) !important;
+		left: 50% !important;
+		bottom: auto !important;
+		right: auto !important;
 		display: block;
 		transform: translate(-50%, -50%);
 		opacity: 0;
 		transition: all .35s ease;
 		.pb-banner-title{
 			font-weight: 600;
-			font-size: 2rem;
-			line-height: 1.25;
 			margin-bottom: .6rem;
 			letter-spacing: -.025em;
-			color: #fff;
 		}
 		.btn{
 			font-weight: 300;
@@ -280,34 +277,24 @@ $secondary-color: #bf8040;
 		}
 	}
 }
+.banner-overlay-dark .pb-banner > a::after {
+	background-color: rgba(51, 51, 51, 0.25);
+}
 .widget-banner{
 	max-width: 277px;
 	margin: 0 auto;
 	.pb-banner-text{
-		top: 50%;
-		left: 3rem;
-		bottom: auto;
-		right: auto;
-		display: block;
-		transform: translateY(-50%);
-		text-align: left;
-		padding-bottom: 1.9rem;
 		.pb-banner-subtitle{
 			font-weight: 300;
-			font-size: 1.6rem;
 			margin-bottom: .7rem;
 			letter-spacing: -.025em;
-			color: #fff;
 			display: block;
 		}
 		.pb-banner-title{
 			font-weight: 600;
-			font-size: 2rem;
-			line-height: 1.2;
 			text-transform: uppercase;
 			margin-bottom: .8rem;
 			letter-spacing: -.025em;
-			color: #fff;
 		}
 		.btn{
 			font-weight: 300;
@@ -319,6 +306,7 @@ $secondary-color: #bf8040;
 			border: 0;
 			min-width: auto;
 			text-transform: uppercase;
+			margin-right: auto;
 			i{
 				display: none;
 			}

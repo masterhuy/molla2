@@ -158,15 +158,6 @@ $secondary-color: #278bf0;
 				background-color: rgba(255,255,255,0.3);
 			}
 			.pb-banner-text{
-				.pb-banner-subtitle{
-					color: #777;
-				}
-				.pb-banner-title{
-					color: #333;
-				}
-				.pb-banner-desc{
-					color: $primary-color;
-				}
 				.btn{
 					color: #fff;
 					background-color: rgba(51,51,51,0.2);
@@ -179,35 +170,21 @@ $secondary-color: #278bf0;
 		}
 	}
 	.pb-banner-text{
-		display: block;
-		top: 2.5rem;
-		bottom: auto;
-		left: 3.1rem;
-		right: auto;
-		text-align: left;
 		.pb-banner-subtitle{
-			color: #fff;
 			font-weight: 300;
-			font-size: 1.4rem;
 			letter-spacing: -.01em;
 			margin-bottom: .8rem;
 			display: block;
 		}
 		.pb-banner-title{
-			color: #fff;
 			font-weight: 600;
-			font-size: 1.4rem;
 			letter-spacing: -.025em;
 			margin-bottom: 0;
-			line-height: 1.25;
 		}
 		.pb-banner-desc{
-			color: #fff;
 			font-weight: 300;
-			font-size: 1.4rem;
 			letter-spacing: -.025em;
 			margin-bottom: 0;
-			line-height: 1.25;
 		}
 		.pb-banner-button{
 			background-color: rgba(255,255,255,0.2);

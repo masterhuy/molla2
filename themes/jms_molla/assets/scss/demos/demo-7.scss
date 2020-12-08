@@ -29,14 +29,8 @@ $secondary-color: #fcb941;
 
 .pb-banner{
 	.pb-banner-text{
-		display: block;
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
 		.pb-banner-subtitle{
-			font-size: 1.4rem;
 			font-weight: 400;
-			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: .1em;
 			margin-bottom: .1rem;
@@ -44,12 +38,10 @@ $secondary-color: #fcb941;
 		}
 		.pb-banner-title{
 			font-weight: 400;
-			font-size: 3rem;
 			line-height: 1.13;
 			margin-bottom: 2.4rem;
 			letter-spacing: .1em;
 			text-transform: uppercase;
-			color: #fff;
 		}
 		.btn{
 			padding-top: 1.45rem;
@@ -74,15 +66,8 @@ $secondary-color: #fcb941;
 
 .banner-type-2{
 	.pb-banner{
-		&.text-dark{
+		&.button-dark{
 			.pb-banner-text{
-				left: 5rem;
-				.pb-banner-subtitle{
-					color: #777;
-				}
-				.pb-banner-title{
-					color: #333;
-				}
 				.btn{
 					color: #777;
 					border-color: #777;
@@ -95,9 +80,6 @@ $secondary-color: #fcb941;
 			}
 		}
 		.pb-banner-text{
-			right: 3rem;
-			left: auto;
-			text-align: left;
 			.pb-banner-subtitle{
 				font-weight: 300;
 				margin-bottom: .9rem;
@@ -107,7 +89,6 @@ $secondary-color: #fcb941;
 				}
 			}
 			.pb-banner-title{
-				font-size: 2rem;
 				line-height: 1.2;
 				margin-bottom: 1.1rem;
 				transition: .3s all;

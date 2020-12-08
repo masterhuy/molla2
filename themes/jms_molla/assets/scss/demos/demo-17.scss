@@ -102,31 +102,22 @@ $secondary-color: #19b395;
 }
 
 .pb-banner{
-	&.banner-big{
-		.pb-banner-text{
-			display: block;
-			text-align: left;
-			.pb-banner-subtitle, .pb-banner-title{
-				color: #fff;
-			}
+	&.button-right{
+		.pb-banner-text .btn{
+			margin-left: auto;
+			margin-right: 0;
 		}
 	}
 	&.banner-1{
 		.pb-banner-text{
-			bottom: 10rem;
-			left: 5rem;
-			top: auto;
-			right: auto;
 			.pb-banner-subtitle{
 				font-weight: 400;
-				font-size: 1.3rem;
 				letter-spacing: 0;
 				margin-bottom: .5rem;
 				text-transform: uppercase;
 				display: block;
 			}
 			.pb-banner-title{
-				font-size: 3rem;
 				margin-bottom: .3rem;
 				line-height: 1.2em;
 				font-weight: 600;
@@ -135,23 +126,15 @@ $secondary-color: #19b395;
 	}
 	&.banner-2{
 		.pb-banner-text{
-			top: 50%;
-			bottom: auto;
-			left: auto;
-			right: 9rem;
-			transform: translateY(-50%);
 			.pb-banner-subtitle{
 				font-weight: 400;
-				font-size: 1.3rem;
 				letter-spacing: 0;
 				margin-bottom: .5rem;
 				text-transform: uppercase;
 				display: block;
 			}
 			.pb-banner-title{
-				font-size: 2.2rem;
 				margin-bottom: .3rem;
-				line-height: 1.2em;
 				font-weight: 600;
 			}
 		}
@@ -166,6 +149,7 @@ $secondary-color: #19b395;
 			padding: 0;
 			border: 0;
 			min-width: auto;
+			margin-right: auto;
 			&:hover{
 				box-shadow: 0 1px 0 0 #fff;
 			}

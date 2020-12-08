@@ -1528,64 +1528,41 @@ input[type="text"] {
 .banner-overlay-dark .pb-banner > a::after {
   background-color: rgba(51, 51, 51, 0.25); }
 
-.banner-1 .content-bottom .pb-banner-text {
-  top: auto;
-  bottom: 7rem; }
+.banner-1 .pb-banner-text .pb-banner-subtitle {
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-bottom: .7rem;
+  text-transform: uppercase;
+  display: block; }
 
-.banner-1 .content-top .pb-banner-text {
-  top: 5.3rem; }
+.banner-1 .pb-banner-text .pb-banner-title {
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  margin-bottom: .1rem; }
+  .banner-1 .pb-banner-text .pb-banner-title + .btn {
+    margin-top: 1.3rem; }
 
-.banner-1 .content-center .pb-banner-text {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  bottom: .5rem; }
+.banner-1 .pb-banner-text .pb-banner-desc {
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: .01em;
+  text-transform: uppercase; }
 
-.banner-1 .pb-banner-text {
-  top: 0;
-  bottom: auto;
-  display: block;
-  text-align: left;
-  left: 4rem;
-  right: auto;
+.banner-1 .pb-banner-text .btn {
+  min-width: 150px;
+  border-width: 2px;
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  padding: .8rem 2.7rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
   color: #fff; }
-  .banner-1 .pb-banner-text .pb-banner-subtitle {
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: .1em;
-    margin-bottom: .7rem;
-    text-transform: uppercase;
-    display: block; }
-  .banner-1 .pb-banner-text .pb-banner-title {
-    color: #fff;
-    font-weight: 600;
-    font-size: 2.2rem;
-    line-height: 1.15;
-    letter-spacing: -.01em;
-    margin-bottom: .1rem; }
-    .banner-1 .pb-banner-text .pb-banner-title + .btn {
-      margin-top: 1.3rem; }
-  .banner-1 .pb-banner-text .pb-banner-desc {
-    font-weight: 300;
-    font-size: 2.2rem;
-    line-height: 1.25;
-    letter-spacing: .01em;
-    text-transform: uppercase; }
-  .banner-1 .pb-banner-text .btn {
-    min-width: 150px;
-    border-width: 2px;
-    font-size: 1.3rem;
-    letter-spacing: .1em;
-    padding: .8rem 2.7rem;
-    text-transform: uppercase;
-    margin-top: 2.5rem;
-    color: #fff; }
-    .banner-1 .pb-banner-text .btn:hover {
-      border-color: #1cc0a0;
-      background-color: #1cc0a0; }
-    .banner-1 .pb-banner-text .btn i {
-      display: none; }
+  .banner-1 .pb-banner-text .btn:hover {
+    border-color: #1cc0a0;
+    background-color: #1cc0a0; }
+  .banner-1 .pb-banner-text .btn i {
+    display: none; }
 
 .pb-service-box {
   padding: 1.7rem 0; }

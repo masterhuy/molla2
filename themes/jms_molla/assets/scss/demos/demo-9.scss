@@ -95,34 +95,8 @@ input[type="text"]{
 	background-color: rgba(51, 51, 51, 0.25);
 }
 .banner-1{
-	.content-bottom{
-		.pb-banner-text{
-			top: auto;
-			bottom: 7rem;
-		}
-	}
-	.content-top{
-		.pb-banner-text{
-			top: 5.3rem;
-		}
-	}
-	.content-center{
-		.pb-banner-text{
-			top: 50%;
-			transform: translateY(-50%);
-			bottom: .5rem;
-		}
-	}
 	.pb-banner-text{
-		top: 0;
-		bottom: auto;
-		display: block;
-		text-align: left;
-		left: 4rem;
-		right: auto;
-		color: #fff;
 		.pb-banner-subtitle{
-			font-size: 1.4rem;
 			font-weight: 300;
 			letter-spacing: .1em;
 			margin-bottom: .7rem;
@@ -130,9 +104,7 @@ input[type="text"]{
 			display: block;
 		}
 		.pb-banner-title{
-			color: #fff;
 			font-weight: 600;
-			font-size: 2.2rem;
 			line-height: 1.15;
 			letter-spacing: -.01em;
 			margin-bottom: .1rem;
@@ -142,7 +114,6 @@ input[type="text"]{
 		}
 		.pb-banner-desc{
 			font-weight: 300;
-			font-size: 2.2rem;
 			line-height: 1.25;
 			letter-spacing: .01em;
 			text-transform: uppercase;

@@ -8454,6 +8454,11 @@ footer .row, header .row {
 .productbox-3 .product-info {
   padding: 1.6rem 0 0 0; }
 
+.productbox-3 .variant-links {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
 .productbox-3 .product-action {
   top: auto;
   bottom: -4rem;
@@ -9488,8 +9493,6 @@ footer .row, header .row {
           margin-right: .3rem; }
   .productbox-12 .content_price .price {
     font-size: 1.4rem; }
-  .productbox-12 .product-list-reviews.empty .grade-stars.small-stars span {
-    display: inline-block; }
   .productbox-12.product-miniature .product-action {
     position: static; }
 
@@ -9500,8 +9503,8 @@ footer .row, header .row {
   padding-bottom: 2.7rem; }
   .productbox-13:hover .product-info .product-footer {
     display: block;
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); }
   .productbox-13:hover .product-action {
     -webkit-transform: none;
     -ms-transform: none;
@@ -9541,7 +9544,7 @@ footer .row, header .row {
       left: 0;
       right: 0;
       top: 100%;
-      padding: 15.7% 1.3rem;
+      padding: 1.3rem 15.7%;
       border-radius: .4rem;
       background-color: #fff;
       border-top: none;
@@ -9576,7 +9579,6 @@ footer .row, header .row {
     -ms-flex-pack: center;
     justify-content: center; }
     .productbox-13 .product-list-reviews.empty .grade-stars.small-stars span {
-      display: inline-block;
       font-size: 1.3rem; }
   .productbox-13.product-miniature .product-action {
     position: static; }
@@ -10555,7 +10557,11 @@ footer .row, header .row {
   .product-actions {
     padding: 0 2.8rem; }
   .specific_prices {
-    display: block; } }
+    display: block; }
+  .productbox-12 .product-list-reviews.empty .grade-stars.small-stars span {
+    display: inline-block; }
+  .productbox-13 .product-list-reviews.empty .grade-stars.small-stars span {
+    display: inline-block; } }
 
 /*--------------------- 4.9.Banners -------------------- */
 /* Banners */

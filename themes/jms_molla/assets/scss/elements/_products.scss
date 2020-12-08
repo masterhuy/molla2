@@ -141,6 +141,9 @@
 	.product-info{
 		padding: 1.6rem 0 0 0;
 	}
+	.variant-links{
+		justify-content: flex-start;
+	}
 	.product-action{
 		top: auto;
 		bottom: -4rem;
@@ -1269,9 +1272,6 @@
 	.content_price .price{
 		font-size: 1.4rem;
 	}
-	.product-list-reviews.empty .grade-stars.small-stars span{
-		display: inline-block;
-	}
 	&.product-miniature .product-action{
 		position: static;
 	}
@@ -1285,7 +1285,7 @@
 	&:hover{
 		.product-info .product-footer{
 			display: block;
-			box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 		}
 		.product-action{
 			transform: none;
@@ -1332,7 +1332,7 @@
 			left: 0;
 			right: 0;
 			top: 100%;
-			padding: 15.7% 1.3rem;
+			padding: 1.3rem 15.7%;
 			border-radius: .4rem;
 			background-color: #fff;
 			border-top: none;
@@ -1373,7 +1373,6 @@
 	.product-list-reviews{
 		justify-content: center;
 		&.empty .grade-stars.small-stars span{
-			display: inline-block;
 			font-size: 1.3rem;
 		}
 	}
@@ -2493,5 +2492,11 @@
 	}
 	.specific_prices{
 		display: block;
+	}
+	.productbox-12 .product-list-reviews.empty .grade-stars.small-stars span {
+		display: inline-block;
+	}
+	.productbox-13 .product-list-reviews.empty .grade-stars.small-stars span {
+		display: inline-block;
 	}
 }

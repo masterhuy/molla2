@@ -1505,8 +1505,9 @@ a:focus {
     transform: translateY(0) translateX(-50%); }
 
 .banner-text-hidden .pb-banner-text {
-  top: 50%;
-  left: 50%;
+  top: 50% !important;
+  left: 50% !important;
+  bottom: auto !important;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1517,11 +1518,10 @@ a:focus {
   -o-transition: all .3s ease;
   transition: all .3s ease; }
   .banner-text-hidden .pb-banner-text .pb-banner-title {
-    color: #fff;
     font-weight: 600;
-    font-size: 1.6rem;
     letter-spacing: -.025em;
     visibility: hidden;
+    margin-bottom: 1.4rem;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }

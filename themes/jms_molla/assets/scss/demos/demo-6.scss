@@ -67,14 +67,8 @@ $secondary-color: #c96;
 
 .pb-banner{
 	.pb-banner-text{
-		display: block;
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
 		.pb-banner-subtitle{
-			font-size: 1.3rem;
 			font-weight: 400;
-			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: .05em;
 			margin-bottom: .9rem;
@@ -82,12 +76,9 @@ $secondary-color: #c96;
 		}
 		.pb-banner-title{
 			font-weight: 600;
-			font-size: 2.4rem;
-			line-height: 1.13;
 			margin-bottom: 2.6rem;
 			letter-spacing: -.025em;
 			text-transform: uppercase;
-			color: #fff;
 		}
 		.btn{
 			padding-top: 1.45rem;

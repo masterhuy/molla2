@@ -67,6 +67,7 @@ $secondary-color: #6666ff;
 	.container > .row{
 		margin-left: 0;
 		margin-right: 0;
+		justify-content: center;
 		.layout-column{
 			padding-left: 0;
 			padding-right: 0;
@@ -103,35 +104,24 @@ $secondary-color: #6666ff;
 		}
 	}
 	.pb-banner-text{
-		display: block;
-		left: 5rem;
-		text-align: left;
-		bottom: auto;
-		right: auto;
-		top: 50%;
-		transform: translateY(-50%);
 		.pb-banner-subtitle{
-			color: #ebebeb;
-			font-size: 1.6rem;
 			font-weight: 400;
 			letter-spacing: -.01em;
 			margin-bottom: .6rem;
 			display: block;
 		}
 		.pb-banner-title{
-			font-size: 3.4rem;
 			font-weight: 700;
 			letter-spacing: -.025em;
-			line-height: 1.1;
 			margin-bottom: 1.4rem;
 			text-transform: uppercase;
-			color: #fff;
 		}
 		.btn{
 			padding: .5rem 1.8rem;
 			min-width: unset;
 			text-transform: uppercase;
 			color: #fff;
+			margin-right: auto;
 		}
 	}
 }
@@ -156,16 +146,6 @@ $secondary-color: #6666ff;
 		padding-bottom: 105px;
 	}
 }
-.choose-style{
-	.banner-absolute{
-		position: absolute;
-		top: -6.28vw;
-		right: 5.65vw;
-		img{
-			max-width: initial;
-		}
-	}
-}
 .banner-type-2{
 	.pb-banner{
 		&:hover{
@@ -181,15 +161,7 @@ $secondary-color: #6666ff;
 		}
 	}
 	.pb-banner-text{
-		text-align: left;
-		top: 50%;
-		transform: translateY(-50%);
-		bottom: auto;
-		left: 5rem;
-		right: auto;
-		display: block;
 		.pb-banner-title{
-			font-size: 1.6rem;
 			font-weight: 700;
 			letter-spacing: -.01em;
 			margin-top: 0rem;
@@ -204,6 +176,7 @@ $secondary-color: #6666ff;
 			border: none;
 			position: relative;
 			padding-bottom: .3rem;
+			margin-right: auto;
 			border-bottom: .1rem solid transparent;
 			i{
 				opacity: 0;
@@ -307,6 +280,7 @@ $secondary-color: #6666ff;
 		padding: .5rem;
 	}
 	.instagram-feed {
+		order: 1;
 		margin-bottom: 0;
 		background-color: transparent;
 		&:hover::after{
@@ -359,5 +333,16 @@ $secondary-color: #6666ff;
 @media (min-width: 1200px){
 	.banner-type-1{
 		margin-top: -10rem;
+	}
+	.choose-style .banner-xl-absolute {
+		position: absolute;
+		top: -6.28vw;
+		right: 5.65vw;
+		img{
+			max-width: initial;
+		}
+	}
+	.instagram-store .instagram-feed{
+		order: initial;
 	}
 }

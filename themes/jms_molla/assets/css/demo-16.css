@@ -1494,7 +1494,6 @@ a:focus {
   text-align: left;
   margin-top: 1.9rem; }
   .pb-banner.banner-product .pb-banner-text .pb-banner-title {
-    font-size: 1.4rem;
     letter-spacing: 0;
     font-weight: 300;
     margin-bottom: -.1rem;
@@ -1504,23 +1503,22 @@ a:focus {
     .pb-banner.banner-product .pb-banner-text .pb-banner-title:hover {
       color: #c96; }
   .pb-banner.banner-product .pb-banner-text .pb-banner-desc {
-    font-weight: 400;
-    color: #333; }
+    font-weight: 400; }
 
 .pb-banner.banner-main {
   margin-top: 2rem;
   overflow: visible; }
   .pb-banner.banner-main.content-right .pb-banner-text {
     right: 0;
-    left: auto; }
+    left: auto !important; }
   .pb-banner.banner-main .pb-banner-text {
     text-align: left;
     padding: 0;
     width: 100%;
     background: #fff;
-    bottom: -170px;
     top: auto;
     left: 0;
+    bottom: -170px !important;
     margin: 0;
     margin-top: 2rem;
     display: block;

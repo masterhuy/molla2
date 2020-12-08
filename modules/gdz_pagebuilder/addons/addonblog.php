@@ -273,7 +273,7 @@ class gdzAddonBlog extends gdzAddonBase
                 'label' => $this->l('ReWind Navigation'),
                 'lang' => '0',
                 'desc' => 'Enable/Disable ReWind Navigation',
-                'default' => '1'
+                'default' => '0'
             ),
             array(
                 'type' => 'checkbox2',

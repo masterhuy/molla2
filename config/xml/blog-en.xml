@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Essential tips for successful holiday deliveries</title>
+    <link>https://www.prestashop.com/en/blog/tips-holiday-deliveries</link>
+    <description>The Holiday season is certainly the busiest time of the year for e-merchants. Which is why it is important to prepare for it as early and effectively as possible.</description>
+     <pubDate>Mon, 07 Dec 2020 15:24:08 +0100</pubDate>
+ <dc:creator>Lucie Gimon EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-holiday-deliveries</guid>
+  </item>
+  <item>
+    <title>E-commerce and environmental sustainability: from logistics to sustainable packaging</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-environmental-sustainability</link>
+    <description>Each e-commerce project has something unique and different to offer the world.</description>
+     <pubDate>Tue, 01 Dec 2020 11:22:59 +0100</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-environmental-sustainability</guid>
+  </item>
+  <item>
     <title>Effective supply chain strategies for ecommerce business</title>
     <link>https://www.prestashop.com/en/blog/effective-supply-chain</link>
     <description>Ecommerce: An ever-expanding domain having innumerous opportunity and scope for development.</description>
@@ -68,22 +84,6 @@
      <pubDate>Mon, 02 Nov 2020 12:16:49 +0100</pubDate>
  <dc:creator>Francesca Biglio</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/fast-shipments-e-commerce</guid>
-  </item>
-  <item>
-    <title>A list of PrestaShop modules to consider for a successful Black Friday and Holiday season</title>
-    <link>https://www.prestashop.com/en/blog/modules-black-friday-2020</link>
-    <description>In addition to holiday sales, the Black Friday phenomenon, about a month before Christmas, continues to grow each year.</description>
-     <pubDate>Sun, 25 Oct 2020 15:37:51 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/modules-black-friday-2020</guid>
-  </item>
-  <item>
-    <title>Six tips to handle multiple-language and different currencies </title>
-    <link>https://www.prestashop.com/en/blog/multiple-language-currencies</link>
-    <description>Having a multi-lingual or multi-currency website is very useful for ecommerce businesses who are willing to expand their reach cross borders.</description>
-     <pubDate>Fri, 23 Oct 2020 17:59:57 +0200</pubDate>
- <dc:creator>NitinSrivastavaen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/multiple-language-currencies</guid>
   </item>
   </channel>
 </rss>

@@ -1512,50 +1512,32 @@ a:focus {
     -webkit-box-shadow: 0 1px 0 0 #fff;
     box-shadow: 0 1px 0 0 #fff; }
 
-.pb-banner.banner-big .pb-banner-text {
-  display: block;
-  text-align: left; }
-  .pb-banner.banner-big .pb-banner-text .pb-banner-subtitle, .pb-banner.banner-big .pb-banner-text .pb-banner-title {
-    color: #fff; }
+.pb-banner.button-right .pb-banner-text .btn {
+  margin-left: auto;
+  margin-right: 0; }
 
-.pb-banner.banner-1 .pb-banner-text {
-  bottom: 10rem;
-  left: 5rem;
-  top: auto;
-  right: auto; }
-  .pb-banner.banner-1 .pb-banner-text .pb-banner-subtitle {
-    font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
-    display: block; }
-  .pb-banner.banner-1 .pb-banner-text .pb-banner-title {
-    font-size: 3rem;
-    margin-bottom: .3rem;
-    line-height: 1.2em;
-    font-weight: 600; }
+.pb-banner.banner-1 .pb-banner-text .pb-banner-subtitle {
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  display: block; }
 
-.pb-banner.banner-2 .pb-banner-text {
-  top: 50%;
-  bottom: auto;
-  left: auto;
-  right: 9rem;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-  .pb-banner.banner-2 .pb-banner-text .pb-banner-subtitle {
-    font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
-    display: block; }
-  .pb-banner.banner-2 .pb-banner-text .pb-banner-title {
-    font-size: 2.2rem;
-    margin-bottom: .3rem;
-    line-height: 1.2em;
-    font-weight: 600; }
+.pb-banner.banner-1 .pb-banner-text .pb-banner-title {
+  margin-bottom: .3rem;
+  line-height: 1.2em;
+  font-weight: 600; }
+
+.pb-banner.banner-2 .pb-banner-text .pb-banner-subtitle {
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  display: block; }
+
+.pb-banner.banner-2 .pb-banner-text .pb-banner-title {
+  margin-bottom: .3rem;
+  font-weight: 600; }
 
 .pb-banner .pb-banner-text .btn {
   color: #fff;
@@ -1565,7 +1547,8 @@ a:focus {
   letter-spacing: -.01em;
   padding: 0;
   border: 0;
-  min-width: auto; }
+  min-width: auto;
+  margin-right: auto; }
   .pb-banner .pb-banner-text .btn:hover {
     -webkit-box-shadow: 0 1px 0 0 #fff;
     box-shadow: 0 1px 0 0 #fff; }

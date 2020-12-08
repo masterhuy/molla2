@@ -1490,7 +1490,10 @@ a:focus {
   z-index: 999; }
   .banner-type-1 .container > .row {
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .banner-type-1 .container > .row .layout-column {
       padding-left: 0;
       padding-right: 0; }
@@ -1517,36 +1520,22 @@ a:focus {
   .banner-type-1 .pb-banner:hover .pb-banner-text .btn {
     color: #6666ff;
     background-color: #fff; }
-  .banner-type-1 .pb-banner-text {
-    display: block;
-    left: 5rem;
-    text-align: left;
-    bottom: auto;
-    right: auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    .banner-type-1 .pb-banner-text .pb-banner-subtitle {
-      color: #ebebeb;
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: -.01em;
-      margin-bottom: .6rem;
-      display: block; }
-    .banner-type-1 .pb-banner-text .pb-banner-title {
-      font-size: 3.4rem;
-      font-weight: 700;
-      letter-spacing: -.025em;
-      line-height: 1.1;
-      margin-bottom: 1.4rem;
-      text-transform: uppercase;
-      color: #fff; }
-    .banner-type-1 .pb-banner-text .btn {
-      padding: .5rem 1.8rem;
-      min-width: unset;
-      text-transform: uppercase;
-      color: #fff; }
+  .banner-type-1 .pb-banner-text .pb-banner-subtitle {
+    font-weight: 400;
+    letter-spacing: -.01em;
+    margin-bottom: .6rem;
+    display: block; }
+  .banner-type-1 .pb-banner-text .pb-banner-title {
+    font-weight: 700;
+    letter-spacing: -.025em;
+    margin-bottom: 1.4rem;
+    text-transform: uppercase; }
+  .banner-type-1 .pb-banner-text .btn {
+    padding: .5rem 1.8rem;
+    min-width: unset;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: auto; }
 
 .brand-carousel.owl-carousel .owl-nav button {
   display: -webkit-box;
@@ -1568,51 +1557,35 @@ a:focus {
 .owl-carousel.customs .owl-stage-outer {
   padding-bottom: 105px; }
 
-.choose-style .banner-absolute {
-  position: absolute;
-  top: -6.28vw;
-  right: 5.65vw; }
-  .choose-style .banner-absolute img {
-    max-width: initial; }
-
 .banner-type-2 .pb-banner:hover .pb-banner-text .btn {
   color: #6666ff;
   border-bottom-color: #6666ff; }
   .banner-type-2 .pb-banner:hover .pb-banner-text .btn i {
     opacity: 1; }
 
-.banner-type-2 .pb-banner-text {
-  text-align: left;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  bottom: auto;
-  left: 5rem;
-  right: auto;
-  display: block; }
-  .banner-type-2 .pb-banner-text .pb-banner-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    margin-top: 0rem;
-    margin-bottom: .3rem; }
-  .banner-type-2 .pb-banner-text .btn {
-    color: #777;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0;
-    min-width: auto;
-    border: none;
-    position: relative;
-    padding-bottom: .3rem;
-    border-bottom: .1rem solid transparent; }
-    .banner-type-2 .pb-banner-text .btn i {
-      opacity: 0;
-      margin-left: 0;
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
-      transition: all .3s; }
+.banner-type-2 .pb-banner-text .pb-banner-title {
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-top: 0rem;
+  margin-bottom: .3rem; }
+
+.banner-type-2 .pb-banner-text .btn {
+  color: #777;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0;
+  min-width: auto;
+  border: none;
+  position: relative;
+  padding-bottom: .3rem;
+  margin-right: auto;
+  border-bottom: .1rem solid transparent; }
+  .banner-type-2 .pb-banner-text .btn i {
+    opacity: 0;
+    margin-left: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
 
 .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active,
 .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
@@ -1696,6 +1669,9 @@ a:focus {
   padding: .5rem; }
 
 .instagram-store .instagram-feed {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
   margin-bottom: 0;
   background-color: transparent; }
   .instagram-store .instagram-feed:hover::after {
@@ -1742,6 +1718,16 @@ a:focus {
 
 @media (min-width: 1200px) {
   .banner-type-1 {
-    margin-top: -10rem; } }
+    margin-top: -10rem; }
+  .choose-style .banner-xl-absolute {
+    position: absolute;
+    top: -6.28vw;
+    right: 5.65vw; }
+    .choose-style .banner-xl-absolute img {
+      max-width: initial; }
+  .instagram-store .instagram-feed {
+    -webkit-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    order: initial; } }
 
 /*# sourceMappingURL=demo-21.css.map */

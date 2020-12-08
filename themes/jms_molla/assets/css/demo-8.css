@@ -1495,50 +1495,37 @@ a:focus {
   text-transform: uppercase;
   letter-spacing: .01em; }
 
-.pb-banner .pb-banner-text {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  bottom: auto;
-  right: auto;
-  text-align: left;
-  display: block;
-  left: 4rem;
-  padding-top: 3rem; }
-  .pb-banner .pb-banner-text .pb-banner-subtitle {
-    font-weight: 300;
-    font-size: 1.3rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
-    color: #777;
-    display: block; }
-  .pb-banner .pb-banner-text .pb-banner-title {
-    font-weight: 700;
-    font-size: 2.2rem;
-    line-height: 1.4em;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-  .pb-banner .pb-banner-text .pb-banner-desc {
-    font-weight: 300;
-    font-size: 2.2rem;
-    line-height: 1.4em;
-    margin-bottom: 1.8rem;
-    text-transform: uppercase;
-    color: #333;
-    letter-spacing: -.03em; }
-  .pb-banner .pb-banner-text .btn {
-    line-height: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    min-width: 140px;
-    color: #eea287;
-    border: 0.2rem solid #eea287;
-    text-transform: uppercase; }
-    .pb-banner .pb-banner-text .btn:hover {
-      color: #fff;
-      background-color: #eea287; }
+.pb-banner .pb-banner-text .pb-banner-subtitle {
+  font-weight: 300;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  display: block; }
+
+.pb-banner .pb-banner-text .pb-banner-title {
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+.pb-banner .pb-banner-text .pb-banner-desc {
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: -.03em; }
+
+.pb-banner .pb-banner-text .btn {
+  line-height: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: 140px;
+  color: #eea287;
+  border: 0.2rem solid #eea287;
+  text-transform: uppercase; }
+  .pb-banner .pb-banner-text .btn:hover {
+    color: #fff;
+    background-color: #eea287; }
 
 .brand-item {
   display: -webkit-box;
