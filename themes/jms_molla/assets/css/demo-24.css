@@ -52,6 +52,18 @@ a:focus {
 .header-5 .search-form i:hover {
   color: #fcb941; }
 
+.header-22 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #fcb941; }
+
+.header-22 .header-middle #search-form .button-search {
+  background-color: #fcb941; }
+
+.header-22 .vermenu .vermenu-btn::before {
+  color: #fcb941; }
+
+.header-22 .sticky-wrapper .login a i {
+  color: #fcb941; }
+
 .btn-video {
   color: #fcb941; }
   .btn-video:hover, .btn-video:focus {
@@ -1441,6 +1453,9 @@ a:focus {
   background-color: #fcb941; }
 
 #footer.footer-18 #footer-main .social-icon:hover {
+  border-color: #fcb941; }
+
+#footer.footer-22 .social-icon:hover {
   border-color: #fcb941; }
 
 .page-wrapper {

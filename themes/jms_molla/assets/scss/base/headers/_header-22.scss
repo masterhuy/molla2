@@ -1,0 +1,144 @@
+/* Header 22 */
+.header-22{
+	font-family: 'Roboto';
+	background-color: #333;
+	.header-intro-clearance{
+		.wishlist a{
+			color: #fff;
+			.text{
+				display: none;
+			}
+		}
+		#cart_block > a{
+			color: #fff;
+			flex-direction: row;
+			.text{
+				display: none;
+			}
+			.ajax_cart_quantity{
+				position: static;
+				min-width: 2rem;
+				height: 2rem;
+				color: #000;
+			}
+		}
+	}
+	.header-intro-clearance .header-bottom .container{
+		&::before, &::after{
+			height: 100%;
+			background-color: #444;
+		}
+		&::after{
+			right: 25rem;
+		}
+	}
+	#hor-menu{
+		margin-left: 2rem;
+		.gdz-megamenu .nav.level0 > li{
+			&.open > a::before{
+				display: none;
+			}
+			> a{
+				text-transform: uppercase;
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+	}
+	.vermenu{
+		&:hover{
+			.vermenu-btn{
+				background-color: transparent;
+			}
+		}
+		.vermenu-btn{
+			font-weight: 700;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 15.5px 19px;
+			&::after{
+				content: '\f110';
+				font-family: 'molla';
+				border: none;
+				font-size: 1rem;
+				line-height: 1;
+				margin-left: 3.8rem;
+				margin-bottom: .2rem;
+				font-weight: 300;
+			}
+		}
+	}
+	.sticky-wrapper{
+		.container{
+			position: relative;
+		}
+		.login{
+			a{
+				i{
+					font-size: 1.8rem;
+					margin-right: 1.2rem;
+				}
+			}
+		}
+	}
+	.header-middle {
+		border-bottom: .1rem solid #444;
+		.container{
+	    	position: relative;
+			> .row{
+				margin: 0;
+				.layout-column{
+					padding: 0;
+				}
+			}
+		}
+		.search-box{
+			border: none;
+		}
+		#search-form{
+			font-family: 'Roboto';
+			max-width: 100%;
+			width: 100%;
+			.gdz-search-input{
+				background: #fff;
+				height: 46px;
+				border-radius: .3rem 0 0 .3rem;
+				padding: 1.2rem 2.4rem 1.2rem 2rem;
+			}
+			.button-search{
+				height: 46px;
+				border-radius: 0 .3rem .3rem 0;
+				min-width: 8rem;
+				&:hover{
+					background-color: #a6c76c;
+				}
+				i{
+					color: #333;
+					margin: auto;
+				}
+			}
+		}
+		.header-right .row{
+			padding-top: 1px;
+			margin-left: 0;
+			margin-right: 0;
+			> div{
+				padding-right: 0;
+				padding-top: 28px;
+				padding-bottom: 27px;
+			}
+		}
+		.menu > li > a {
+			letter-spacing: .01em;
+		}
+		.menu.sf-arrows > li > .sf-with-ul {
+		    padding-right: 1.5rem;
+		}
+	}
+}
+.page-index .header-22 #hor-menu .gdz-megamenu .nav.level0 > li.sub-home > a::before{
+	display: none;
+}
+.white{
+	color: #fff;
+}

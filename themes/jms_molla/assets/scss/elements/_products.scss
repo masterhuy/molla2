@@ -811,6 +811,9 @@
 			padding-top: 1.4rem;
 			padding-bottom: 1.4rem;
 			line-height: 1;
+			span{
+				display: none;
+			}
 			&:not(:last-child)::after{
 				content: "";
 				width: .1rem;
@@ -2498,5 +2501,10 @@
 	}
 	.productbox-13 .product-list-reviews.empty .grade-stars.small-stars span {
 		display: inline-block;
+	}
+}
+@media (min-width: 1200px){
+	.productbox-8 div.product-action .btn-icon span{
+		display: block;
 	}
 }

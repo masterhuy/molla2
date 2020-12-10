@@ -37,7 +37,7 @@
 			display: none;
 		}
 	}
-	&.footer-2, &.footer-3, &.footer-10, &.footer-18, &.footer-19{
+	&.footer-2, &.footer-3, &.footer-10, &.footer-18, &.footer-19, &.footer-22{
 		background-color: #333;
 		#footer-main{
 			padding: 6rem 0 3.7rem;
@@ -422,6 +422,18 @@
 			}
 		}
 	}
+	&.footer-22{
+		font-family: 'Roboto';
+		#footer-copyright .container{
+			padding-bottom: 1.9rem;
+		}
+		.social-icon{
+			border-color: #999;
+		}
+		#footer-main .block .block-title{
+			text-transform: uppercase;
+		}
+	}
 }
 #footer {
 	width: 100%;
@@ -696,7 +708,7 @@
 }
 @media (min-width: 992px){
 	#footer{
-		&.footer-2, &.footer-3, &.footer-10, &.footer-18, &.footer-19{
+		&.footer-2, &.footer-3, &.footer-10, &.footer-18, &.footer-19, &.footer-22{
 			#footer-copyright .col-payments img{
 				margin-right: 0;
 			}

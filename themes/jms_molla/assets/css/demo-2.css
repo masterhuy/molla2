@@ -52,6 +52,18 @@ a:focus {
 .header-5 .search-form i:hover {
   color: #c96; }
 
+.header-22 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #c96; }
+
+.header-22 .header-middle #search-form .button-search {
+  background-color: #c96; }
+
+.header-22 .vermenu .vermenu-btn::before {
+  color: #c96; }
+
+.header-22 .sticky-wrapper .login a i {
+  color: #c96; }
+
 .btn-video {
   color: #c96; }
   .btn-video:hover, .btn-video:focus {
@@ -1441,6 +1453,9 @@ a:focus {
   background-color: #c96; }
 
 #footer.footer-18 #footer-main .social-icon:hover {
+  border-color: #c96; }
+
+#footer.footer-22 .social-icon:hover {
   border-color: #c96; }
 
 .fraction-slider a.prev, .fraction-slider a.next {

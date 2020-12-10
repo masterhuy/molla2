@@ -80,6 +80,20 @@ a:focus {
         color: $primary-color;
     }
 }
+.header-22{
+    #hor-menu .gdz-megamenu .nav.level0 > li.open > a{
+        color: $primary-color;
+    }
+    .header-middle #search-form .button-search{
+        background-color: $primary-color;
+    }
+    .vermenu .vermenu-btn::before{
+        color: $primary-color;
+    }
+    .sticky-wrapper .login a i{
+        color: $primary-color;
+    }
+}
 
 .btn-video {
     color: $primary-color;
@@ -2183,6 +2197,9 @@ a:focus {
         }
     }
     &.footer-18 #footer-main .social-icon:hover {
+        border-color: $primary-color;
+    }
+    &.footer-22 .social-icon:hover {
         border-color: $primary-color;
     }
 }

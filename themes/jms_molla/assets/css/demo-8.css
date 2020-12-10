@@ -1,6 +1,7 @@
 /* Demo 8 Homepage 8 */
 /* Skin structure */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 ::-moz-selection {
   background-color: #eea287; }
 
@@ -51,6 +52,18 @@ a:focus {
     color: #eea287; }
 
 .header-5 .search-form i:hover {
+  color: #eea287; }
+
+.header-22 #hor-menu .gdz-megamenu .nav.level0 > li.open > a {
+  color: #eea287; }
+
+.header-22 .header-middle #search-form .button-search {
+  background-color: #eea287; }
+
+.header-22 .vermenu .vermenu-btn::before {
+  color: #eea287; }
+
+.header-22 .sticky-wrapper .login a i {
   color: #eea287; }
 
 .btn-video {
@@ -1442,6 +1455,9 @@ a:focus {
   background-color: #eea287; }
 
 #footer.footer-18 #footer-main .social-icon:hover {
+  border-color: #eea287; }
+
+#footer.footer-22 .social-icon:hover {
   border-color: #eea287; }
 
 /* Fonts */
