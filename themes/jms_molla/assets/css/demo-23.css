@@ -675,6 +675,21 @@ a:focus {
   border-color: #cc9966;
   color: #cc9966; }
 
+.productbox-14 .product-info .product-action .ajax-add-to-cart::before {
+  color: #cc9966; }
+
+.productbox-14 .product-info .product-action .ajax-add-to-cart:hover {
+  color: #cc9966; }
+  .productbox-14 .product-info .product-action .ajax-add-to-cart:hover span {
+    -webkit-box-shadow: 0 1px 0 0 #cc9966;
+    box-shadow: 0 1px 0 0 #cc9966; }
+
+.productbox-14 .product-buttons .btn-icon {
+  color: #cc9966; }
+  .productbox-14 .product-buttons .btn-icon:hover {
+    border-color: #cc9966;
+    background-color: #cc9966; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc9966; }
 
@@ -782,6 +797,9 @@ a:focus {
 
 .header-21 .header-middle #wishlist_block > a:hover {
   color: #cc9966; }
+
+.header-23 .header-intro-clearance #cart_block .ajax_cart_quantity {
+  background-color: #cc9966; }
 
 .header-intro-clearance .header-right .account a:hover .text,
 .header-intro-clearance .header-right .wishlist a:hover .text,
@@ -1468,6 +1486,46 @@ a:focus {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+.gdz-slider-wrapper .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4.2rem 3.5rem 4rem 3.5rem;
+  border: .1rem solid #fff; }
+  .gdz-slider-wrapper .intro .title h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1em;
+    margin-bottom: 3rem; }
+  .gdz-slider-wrapper .intro .content h4 {
+    font-size: 8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    letter-spacing: .01em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3.7rem; }
+  .gdz-slider-wrapper .intro .action a {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .gdz-slider-wrapper .intro .action a:hover {
+      color: #cc9966; }
+
 .icon-box-side .pb-service-box {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1618,21 +1676,52 @@ a:focus {
   .banner-type-3 .pb-banner-text .btn i {
     display: none; }
 
+.pb-filter-products .owl-dots {
+  margin-top: 3.8rem; }
+
 .heading-cat {
   font-weight: 300;
-  letter-spacing: .1em;
-  text-transform: uppercase; }
+  letter-spacing: .1em; }
 
 .heading-title {
   font-weight: 700;
   font-family: 'Playfair Display';
-  letter-spacing: .01em;
-  text-transform: uppercase; }
+  letter-spacing: .01em; }
 
-.brand-grid .heading-cat {
-  font-weight: 400; }
+.brand-grid {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .brand-grid .heading-cat {
+    font-weight: 400; }
+  .brand-grid .heading-title {
+    text-transform: capitalize; }
+  .brand-grid .pb-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .brand-grid .pb-image img {
+      padding: 2rem 0; }
 
-.brand-grid .heading-title {
-  text-transform: capitalize; }
+.instagram-images .row {
+  margin-left: 0;
+  margin-right: 0; }
+  .instagram-images .row .instagram-feed {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0; }
+
+.h23-newsletter .heading-cat {
+  font-weight: 300;
+  letter-spacing: .01em; }
+
+.h23-newsletter .email_subscription .form-control {
+  background-color: transparent; }
 
 /*# sourceMappingURL=demo-23.css.map */

@@ -663,6 +663,26 @@ a:focus {
     border-color: $primary-color;
     color: $primary-color;
 }
+.productbox-14{
+    .product-info .product-action .ajax-add-to-cart{
+        &::before{
+            color: $primary-color;
+        }
+        &:hover{
+            color: $primary-color;
+            span{
+                box-shadow: 0 1px 0 0 $primary-color;
+            }
+        }
+    }
+    .product-buttons .btn-icon {
+        color: $primary-color;
+        &:hover{
+            border-color: $primary-color;
+            background-color: $primary-color;
+        }
+    }
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }
@@ -826,6 +846,9 @@ a:focus {
     &:hover{
         color: $primary-color;
     }
+}
+.header-23 .header-intro-clearance #cart_block .ajax_cart_quantity{
+    background-color: $primary-color;
 }
 .header-intro-clearance{
     .header-right{
