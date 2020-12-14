@@ -1393,9 +1393,14 @@
 			transform: translateX(0);
 		}
 		.product-info{
-			transform: translateY(-100%);
+			transform: translateY(-30%);
+			&.has-variants{
+				.product-intro {
+				    padding-bottom: 9rem;
+				}
+			}
 			.product-intro {
-			    padding-bottom: 9rem;
+			    padding-bottom: 3rem;
 			}
 			.product-detail {
 			    bottom: 1rem;
@@ -2682,5 +2687,8 @@
 @media (min-width: 1200px){
 	.productbox-8 div.product-action .btn-icon span{
 		display: block;
+	}
+	.productbox-14:hover .product-info {
+		transform: translateY(-100%);
 	}
 }

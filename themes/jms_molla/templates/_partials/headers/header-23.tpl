@@ -23,34 +23,25 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="header-intro-clearance">
-    {* <div class="header-side">
+    <div class="header-side">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="layout-column col-auto header-left">
+            <div class="row">
+                <div class="layout-column col-auto header-top">
                     {include file='_partials/headers/logo.tpl'}
                 </div>
                 <div class="layout-column header-center">
-                    {if $gdzSetting.search}
-                        {widget_block name="gdz_ajaxsearch"}
-                            {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch.tpl'}
-                        {/widget_block}
-                    {/if}
-                </div>
-                <div class="layout-column col-auto header-right">
-                    <div class="row">
-                        {if ($gdzSetting.wishlist == 1)}
-                            {include file='_partials/headers/wishlist.tpl'}
-                        {/if}
-                        {if ($gdzSetting.cart == 1)}
-                            {widget_block name="ps_shoppingcart"}
-                                {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
-                            {/widget_block}
-                        {/if}
+                    <div id="hor-menu" class="{if $gdzSetting.hormenu_class} {$gdzSetting.hormenu_class}{/if} {if $gdzSetting.hormenu_align} align-{$gdzSetting.hormenu_align}{/if}">
+                        {widget name="gdz_megamenu" hook='HorMenu'}
                     </div>
+                </div>
+                <div class="layout-column col-auto header-bottom">
+                    {include file='_partials/socials.tpl'}
+                    <p>{l s='Copyright © 2020 Molla Store.' d='Shop.jmstheme'}</p>
+                    <p>{l s='All Rights Reserved.' d='Shop.jmstheme'}</p>
                 </div>
             </div>
         </div>
-    </div> *}
+    </div>
     <div class="sticky-wrapper {if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
         <div class="container">
             <div class="row align-items-center">
@@ -62,7 +53,7 @@
                     {/if}
                 </div>
                 <div class="layout-column col-4">
-                    <p clas="text-center mb-0">{l s='Free Delivery For Members' d='Shop.Theme.Actions'}</p>
+                    <p class="text-center mb-0">{l s='Free Delivery For Members' d='Shop.Theme.Actions'}</p>
                 </div>
                 <div class="layout-column header-right col-4">
                     {widget_block name="ps_customersignin"}

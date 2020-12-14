@@ -65,7 +65,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="product-info">
+	<div class="product-info {if $product.main_variants}has-variants{/if}">
 		<div class="product-action">
 			{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
 				{if $product.quantity >= 1}
