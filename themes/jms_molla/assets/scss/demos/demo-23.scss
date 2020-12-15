@@ -337,7 +337,7 @@ $secondary-color: #cc9966;
 			margin-bottom: 3rem;
 		}
 	}
-	#main{
+	#wrapper, #category #wrapper{
 		margin-left: 300px;
 	}
 	.gdz-slider-wrapper{
@@ -380,7 +380,7 @@ $secondary-color: #cc9966;
 }
 
 @media (min-width: 1821px){
-	#main{
+	#wrapper, #category #wrapper{
 		margin-left: calc((100% - 1800px) / 2 + 300px);
 		margin-right: calc((100% - 1800px) / 2);
 	}

@@ -1758,7 +1758,7 @@ a:focus {
   .banner-type-2 .pb-banner-text .btn {
     margin-top: 3.2rem;
     margin-bottom: 3rem; }
-  #main {
+  #wrapper, #category #wrapper {
     margin-left: 300px; }
   .gdz-slider-wrapper .intro {
     padding: 2.1875vw 1.823vw 2.083vw 1.823vw; }
@@ -1782,7 +1782,7 @@ a:focus {
     padding-right: 4rem; } }
 
 @media (min-width: 1821px) {
-  #main {
+  #wrapper, #category #wrapper {
     margin-left: calc((100% - 1800px) / 2 + 300px);
     margin-right: calc((100% - 1800px) / 2); } }
 

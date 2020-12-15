@@ -438,8 +438,6 @@
 		background-color: transparent;
 		.footer-main{
 			background-color: #222;
-			margin-left: calc((100% - 1780px) / 2 + 300px);
-			margin-right: calc((100% - 1780px) / 2);
 			.container{
 				width: 1240px;
 			}
@@ -774,5 +772,15 @@
 				}
 			}
 		}
+	}
+	#footer.footer-23 #footer-main{
+		margin-left: 300px;
+	}
+}
+
+@media (min-width: 1821px){
+	#footer.footer-23 .footer-main {
+		margin-left: calc((100% - 1780px) / 2 + 300px);
+		margin-right: calc((100% - 1780px) / 2);
 	}
 }

@@ -1565,6 +1565,111 @@
 	}
 }
 
+/* Product box 15 */
+.productbox-15{
+	padding: 3rem 2rem 1rem;
+	border-radius: .4rem;
+	background-color: #fff;
+	border: .1rem solid #ebebeb;
+	&:hover{
+		box-shadow: none;
+		.product-info .product-footer{
+			display: block;
+		}
+		.product-action{
+			transform: none;
+		}
+	}
+	.product-preview{
+		position: static;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.product-flags{
+		left: 1.8rem;
+		.product-flag{
+			width: auto;
+			height: auto;
+			min-width: 45px;
+			border-radius: .3rem;
+			padding: .5rem .9rem;
+			line-height: 1.6rem;
+			letter-spacing: -.01em;
+			font-weight: 400;
+			font-size: 1.3rem;
+		}
+	}
+	.category-name{
+		color: #ccc;
+		text-transform: initial;
+		margin-bottom: .1rem;
+		span{
+			transition: color 0.3s ease;
+		}
+		&:hover span{
+			color: #666;
+		}
+	}
+	.product-title{
+		font-size: 1.4rem;
+		line-height: 1.43;
+		margin-bottom: -.2rem;
+		a{
+			text-transform: initial;
+		}
+	}
+	.product-info{
+		padding: 1.7rem 0 1.3rem;
+		.product-footer{
+			display: none;
+			position: absolute;
+			left: -21px;
+			right: -21px;
+			top: 100%;
+			padding: 0 2rem 1.3rem;
+			border-radius: .4rem;
+			background-color: #fff;
+			border: .1rem solid #ebebeb;
+			border-top: none;
+			box-shadow: 1px 3px 5px rgba(0,0,0,0.01);
+			#review{
+				margin-top: -.6rem;
+				margin-bottom: .5rem;
+			}
+			.cart-button{
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				border-radius: .3rem;
+				&:hover{
+					color: #fff;
+				}
+			}
+			.addToWishlist{
+				margin-top: .3rem;
+				display: block;
+				text-align: center;
+				font-size: 1.4rem;
+				font-weight: 400;
+				color: #777;
+				letter-spacing: -.01em;
+				&:hover::before{
+					content: '\f233';
+				}
+				&::before{
+					font-size: 1.6rem;
+					margin-right: .3rem;
+				}
+			}
+		}
+	}
+	.content_price .price{
+		font-size: 1.4rem;
+	}
+	&.product-miniature .product-action{
+		position: static;
+	}
+}
+
 .product-miniature .product-action{
 	position: absolute;
 	left: 0;

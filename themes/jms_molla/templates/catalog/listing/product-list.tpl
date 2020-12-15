@@ -67,7 +67,7 @@
                     {/block}
                 {/if}
                 <div id="product_list" class="product_list {if $shop_list == 'grid'}products-grid grid-{$shop_grid_column}{else}products-list{/if}">
-                    {if $gdzSetting.shop_grid_column == '1-2-1-2' || $shop_grid_column == '1-3-1-3' || $shop_grid_column == '2-1-2-1' || $shop_grid_column == '3-1-3-1'}
+                    {if $shop_grid_column == '1-2-1-2' || $shop_grid_column == '1-3-1-3' || $shop_grid_column == '2-1-2-1' || $shop_grid_column == '3-1-3-1'}
                         {block name='product_list'}
                             {include file='catalog/_partials/products-big.tpl' listing=$listing}
                         {/block}

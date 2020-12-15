@@ -5553,9 +5553,10 @@ footer .row, header .row {
 
 /* Header 8 */
 .header-23 .header-side {
-  top: 6.7rem;
+  top: 0;
+  padding-top: 6.7rem;
   position: fixed;
-  width: 320px;
+  width: 290px;
   height: 100%;
   background-color: #fff;
   z-index: 1000; }
@@ -5630,7 +5631,9 @@ footer .row, header .row {
 
 .header-23 .sticky-wrapper {
   padding: .75rem 0;
-  border-bottom: none; }
+  border-bottom: none;
+  position: relative;
+  z-index: 1001; }
   .header-23 .sticky-wrapper .header-right {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -7108,9 +7111,7 @@ footer .row, header .row {
   #footer.footer-23 {
     background-color: transparent; }
     #footer.footer-23 .footer-main {
-      background-color: #222;
-      margin-left: calc((100% - 1780px) / 2 + 300px);
-      margin-right: calc((100% - 1780px) / 2); }
+      background-color: #222; }
       #footer.footer-23 .footer-main .container {
         width: 1240px; }
       #footer.footer-23 .footer-main .block .block-title {
@@ -7369,7 +7370,14 @@ footer .row, header .row {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 12.5%;
     flex: 0 0 12.5%;
-    max-width: 12.5%; } }
+    max-width: 12.5%; }
+  #footer.footer-23 #footer-main {
+    margin-left: 300px; } }
+
+@media (min-width: 1821px) {
+  #footer.footer-23 .footer-main {
+    margin-left: calc((100% - 1780px) / 2 + 300px);
+    margin-right: calc((100% - 1780px) / 2); } }
 
 /*--------------------- 4.Elements -------------------- */
 /*--------------------- 4.1.Page Header -------------------- */
@@ -10029,6 +10037,95 @@ footer .row, header .row {
   .productbox-14 #review {
     margin-top: -.2rem;
     margin-bottom: -.8rem; }
+
+/* Product box 15 */
+.productbox-15 {
+  padding: 3rem 2rem 1rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  border: .1rem solid #ebebeb; }
+  .productbox-15:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .productbox-15:hover .product-info .product-footer {
+      display: block; }
+    .productbox-15:hover .product-action {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+  .productbox-15 .product-preview {
+    position: static;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .productbox-15 .product-flags {
+    left: 1.8rem; }
+    .productbox-15 .product-flags .product-flag {
+      width: auto;
+      height: auto;
+      min-width: 45px;
+      border-radius: .3rem;
+      padding: .5rem .9rem;
+      line-height: 1.6rem;
+      letter-spacing: -.01em;
+      font-weight: 400;
+      font-size: 1.3rem; }
+  .productbox-15 .category-name {
+    color: #ccc;
+    text-transform: initial;
+    margin-bottom: .1rem; }
+    .productbox-15 .category-name span {
+      -webkit-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+    .productbox-15 .category-name:hover span {
+      color: #666; }
+  .productbox-15 .product-title {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin-bottom: -.2rem; }
+    .productbox-15 .product-title a {
+      text-transform: initial; }
+  .productbox-15 .product-info {
+    padding: 1.7rem 0 1.3rem; }
+    .productbox-15 .product-info .product-footer {
+      display: none;
+      position: absolute;
+      left: -21px;
+      right: -21px;
+      top: 100%;
+      padding: 0 2rem 1.3rem;
+      border-radius: .4rem;
+      background-color: #fff;
+      border: .1rem solid #ebebeb;
+      border-top: none;
+      -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.01);
+      box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.01); }
+      .productbox-15 .product-info .product-footer #review {
+        margin-top: -.6rem;
+        margin-bottom: .5rem; }
+      .productbox-15 .product-info .product-footer .cart-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .3rem; }
+        .productbox-15 .product-info .product-footer .cart-button:hover {
+          color: #fff; }
+      .productbox-15 .product-info .product-footer .addToWishlist {
+        margin-top: .3rem;
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #777;
+        letter-spacing: -.01em; }
+        .productbox-15 .product-info .product-footer .addToWishlist:hover::before {
+          content: '\f233'; }
+        .productbox-15 .product-info .product-footer .addToWishlist::before {
+          font-size: 1.6rem;
+          margin-right: .3rem; }
+  .productbox-15 .content_price .price {
+    font-size: 1.4rem; }
+  .productbox-15.product-miniature .product-action {
+    position: static; }
 
 .product-miniature .product-action {
   position: absolute;
