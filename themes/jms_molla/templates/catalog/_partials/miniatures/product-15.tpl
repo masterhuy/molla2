@@ -43,6 +43,13 @@
 				{/if}
 		  	</a>
 		{/block}
+		<div class="wrapp-buttons">
+			<div class="product-buttons">
+				{if $gdzSetting.productbox_quickview}
+					<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view"></a>
+				{/if}
+			</div>
+		</div>
         {block name='product_flags'}
 			<ul class="product-flags">
 				{foreach from=$product.flags item=flag}
@@ -90,10 +97,10 @@
                 {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
+		{block name='product_reviews'}
+			{hook h='displayProductListReviews' product=$product}
+		{/block}
 		<div class="product-footer">
-			{block name='product_reviews'}
-				{hook h='displayProductListReviews' product=$product}
-			{/block}
 			<div class="product-action">
 				{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
 					{if $product.quantity >= 1}

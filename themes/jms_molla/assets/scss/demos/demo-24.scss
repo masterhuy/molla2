@@ -20,7 +20,6 @@ $secondary-color: #fcb941;
 	font-weight: 500;
 	letter-spacing: .1em;
 	text-transform: uppercase;
-	margin-bottom: .5rem;
 }
 .title {
 	font-weight: 700;
@@ -116,6 +115,34 @@ $secondary-color: #fcb941;
 		}
 	}
 }
+.pb-filter-products{
+	.owl-carousel .owl-nav button{
+		top: 35%;
+		font-size: 2.4rem;
+		color: #333;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		box-shadow: 0 5px 20px rgba(34,34,34,0.3);
+		&::before{
+			font-size: 2.4rem;
+			color: #333;
+		}
+		&.owl-prev{
+			left: 4rem;
+		}
+		&.owl-next{
+			right: 4rem;
+		}
+		&.disabled{
+			opacity: .7;
+			cursor: default;
+		}
+	}
+}
 
 .banner-type-2{
 	.container > .row, .grid_row{
@@ -158,7 +185,7 @@ $secondary-color: #fcb941;
 		.pb-banner-subtitle{
 			font-weight: 300;
 			letter-spacing: .1em;
-			margin-bottom: .4rem;
+			margin-bottom: 1rem;
 			text-transform: uppercase;
 		}
 		.pb-banner-title{
@@ -166,7 +193,7 @@ $secondary-color: #fcb941;
 			font-weight: 700;
 			letter-spacing: -.01em;
 			text-transform: uppercase;
-			margin-bottom: .8rem;
+			margin-bottom: 1.4rem;
 		}
 		.pb-banner-desc{
 			margin-bottom: 3rem;
@@ -180,6 +207,139 @@ $secondary-color: #fcb941;
 		}
 	}
 }
+.h24-featured-products{
+	.filter-products.products.row > div{
+		margin-bottom: 2rem;
+		.product-miniature{
+			height: 100%;
+		}
+	}
+}
+.pb-video .pb-video-open-modal {
+	color: #fff;
+	background-color: $primary-color;
+	box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.3);
+	&:hover{
+		background-color: #a6c76c;
+		box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.3);
+	}
+}
+.video-banner{
+	.intro-title{
+		font-weight: 700;
+		font-family: 'Playfair Display';
+		letter-spacing: -.03em;
+		font-style: italic;
+	}
+	.content{
+		font-weight: 700;
+		letter-spacing: -.025em;
+		text-transform: uppercase;
+		font-family: 'Playfair Display';
+	}
+}
+.h24-newsletter{
+	.heading-cat{
+		font-weight: 400;
+	}
+	.title{
+		letter-spacing: -.01em;
+	}
+	.email_subscription{
+		max-width: 564px;
+		.newsletter-input-group{
+			border-bottom: .1rem solid #222;
+		}
+		.form-control{
+			font-weight: 300;
+			letter-spacing: 0;
+			color: #999;
+			padding: .6rem .5rem;
+			font-size: 1.3rem;
+			border: none;
+		}
+		#newsletter-btn{
+			min-width: 10rem;
+			color: #fcb941;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			padding: .85rem .5rem;
+			font-weight: 400;
+			&:hover{
+				background-color: transparent;
+				color: #212529;
+			}
+			i{
+				display: none;
+			}
+		}
+	}
+}
+.pb-blog{
+	.blog-item:hover{
+		box-shadow: none;
+	}
+	.post-meta{
+		color: #777;
+		font-weight: 300;
+		margin-top: 2rem;
+		margin-bottom: -.4rem;
+		li{
+			font-size: 1.3rem;
+		}
+	}
+	.post-title {
+	    font-weight: 700;
+	    font-size: 1.6rem;
+	    margin-bottom: .8rem;
+	}
+	.post-readmore{
+		font-size: 1.3rem;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: #222;
+		&:hover{
+			color: $primary-color;
+			span{
+				box-shadow: none;
+			}
+		}
+	}
+}
+.instagram-feed{
+	background-color: transparent;
+	&::after{
+		left: 1rem;
+		right: 1rem;
+	}
+}
+span.highlight {
+	letter-spacing: .1em;
+	color: #222;
+}
+.icon-box-side{
+	.pb-service-box{
+		.pb-service-icon{
+			color: #fff;
+		}
+		.pb-service-content{
+			.pb-service-title{
+				font-size: 1.3rem;
+				font-weight: 400;
+				letter-spacing: .1em;
+				color: #fff;
+				margin-bottom: .3rem;
+				text-transform: uppercase;
+			}
+			.pb-service-description p{
+				font-size: 1.3rem;
+				letter-spacing: .01em;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
 
 @media (min-width: 1200px){
 	.banner-1, .banner-3 {

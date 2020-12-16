@@ -32,7 +32,7 @@
 				<img src="{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" class="img-responsive" />
 			</span>
 		</div>
-		<div class="pb-banner-text pb-banner-{$position|escape:'html':'UTF-8'}">
+		<div class="pb-banner-text pb-banner-{$position|escape:'html':'UTF-8'} {$text_align}">
 			{if $subtitle}<span class="pb-banner-subtitle">{$subtitle nofilter}</span>{/if}
 			{if $title}<{$title_tag} class="pb-banner-title">{$title nofilter}</{$title_tag}>{/if}
 			{if $description}<div class="pb-banner-desc">{$description nofilter}</div>{/if}
@@ -43,3 +43,4 @@
 	</a>
 	{/if}
 </div>
+

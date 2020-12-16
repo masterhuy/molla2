@@ -169,6 +169,16 @@
     right: 0px!important;
     text-align: center!important;
 }
+.pb-banner-text.left .btn{
+    margin-right: auto;
+}
+.pb-banner-text.right .btn{
+    margin-left: auto;
+}
+.pb-banner-text.center .btn{
+    margin-left: auto;
+    margin-right: auto;
+}
 .pb-image img {
     max-width: 100%;
 }

@@ -690,6 +690,15 @@ a:focus {
     border-color: #fcb941;
     background-color: #fcb941; }
 
+.productbox-15 .product-buttons .btn-icon {
+  color: #fcb941; }
+  .productbox-15 .product-buttons .btn-icon:hover {
+    background-color: #fcb941; }
+
+.productbox-15 .product-info .product-footer .cart-button {
+  border-color: #fcb941;
+  color: #fcb941; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #fcb941; }
 
@@ -1485,8 +1494,7 @@ a:focus {
 .heading-cat {
   font-weight: 500;
   letter-spacing: .1em;
-  text-transform: uppercase;
-  margin-bottom: .5rem; }
+  text-transform: uppercase; }
 
 .title {
   font-weight: 700;
@@ -1572,6 +1580,33 @@ a:focus {
 .banner-2 .pb-banner-text .btn {
   padding: .75rem 2rem; }
 
+.pb-filter-products .owl-carousel .owl-nav button {
+  top: 35%;
+  font-size: 2.4rem;
+  color: #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3);
+  box-shadow: 0 5px 20px rgba(34, 34, 34, 0.3); }
+  .pb-filter-products .owl-carousel .owl-nav button::before {
+    font-size: 2.4rem;
+    color: #333; }
+  .pb-filter-products .owl-carousel .owl-nav button.owl-prev {
+    left: 4rem; }
+  .pb-filter-products .owl-carousel .owl-nav button.owl-next {
+    right: 4rem; }
+  .pb-filter-products .owl-carousel .owl-nav button.disabled {
+    opacity: .7;
+    cursor: default; }
+
 .banner-type-2 .container > .row, .banner-type-2 .grid_row {
   margin-left: 0;
   margin-right: 0; }
@@ -1605,7 +1640,7 @@ a:focus {
 .banner-stretch .pb-banner-text .pb-banner-subtitle {
   font-weight: 300;
   letter-spacing: .1em;
-  margin-bottom: .4rem;
+  margin-bottom: 1rem;
   text-transform: uppercase; }
 
 .banner-stretch .pb-banner-text .pb-banner-title {
@@ -1613,7 +1648,7 @@ a:focus {
   font-weight: 700;
   letter-spacing: -.01em;
   text-transform: uppercase;
-  margin-bottom: .8rem; }
+  margin-bottom: 1.4rem; }
 
 .banner-stretch .pb-banner-text .pb-banner-desc {
   margin-bottom: 3rem; }
@@ -1624,6 +1659,117 @@ a:focus {
   margin-bottom: 2.3rem;
   margin-left: auto;
   margin-right: auto; }
+
+.h24-featured-products .filter-products.products.row > div {
+  margin-bottom: 2rem; }
+  .h24-featured-products .filter-products.products.row > div .product-miniature {
+    height: 100%; }
+
+.pb-video .pb-video-open-modal {
+  color: #fff;
+  background-color: #fcb941;
+  -webkit-box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.3); }
+  .pb-video .pb-video-open-modal:hover {
+    background-color: #a6c76c;
+    -webkit-box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.3); }
+
+.video-banner .intro-title {
+  font-weight: 700;
+  font-family: 'Playfair Display';
+  letter-spacing: -.03em;
+  font-style: italic; }
+
+.video-banner .content {
+  font-weight: 700;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  font-family: 'Playfair Display'; }
+
+.h24-newsletter .heading-cat {
+  font-weight: 400; }
+
+.h24-newsletter .title {
+  letter-spacing: -.01em; }
+
+.h24-newsletter .email_subscription {
+  max-width: 564px; }
+  .h24-newsletter .email_subscription .newsletter-input-group {
+    border-bottom: .1rem solid #222; }
+  .h24-newsletter .email_subscription .form-control {
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #999;
+    padding: .6rem .5rem;
+    font-size: 1.3rem;
+    border: none; }
+  .h24-newsletter .email_subscription #newsletter-btn {
+    min-width: 10rem;
+    color: #fcb941;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: .85rem .5rem;
+    font-weight: 400; }
+    .h24-newsletter .email_subscription #newsletter-btn:hover {
+      background-color: transparent;
+      color: #212529; }
+    .h24-newsletter .email_subscription #newsletter-btn i {
+      display: none; }
+
+.pb-blog .blog-item:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.pb-blog .post-meta {
+  color: #777;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: -.4rem; }
+  .pb-blog .post-meta li {
+    font-size: 1.3rem; }
+
+.pb-blog .post-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: .8rem; }
+
+.pb-blog .post-readmore {
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #222; }
+  .pb-blog .post-readmore:hover {
+    color: #fcb941; }
+    .pb-blog .post-readmore:hover span {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+
+.instagram-feed {
+  background-color: transparent; }
+  .instagram-feed::after {
+    left: 1rem;
+    right: 1rem; }
+
+span.highlight {
+  letter-spacing: .1em;
+  color: #222; }
+
+.icon-box-side .pb-service-box .pb-service-icon {
+  color: #fff; }
+
+.icon-box-side .pb-service-box .pb-service-content .pb-service-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: #fff;
+  margin-bottom: .3rem;
+  text-transform: uppercase; }
+
+.icon-box-side .pb-service-box .pb-service-content .pb-service-description p {
+  font-size: 1.3rem;
+  letter-spacing: .01em;
+  font-weight: 300; }
 
 @media (min-width: 1200px) {
   .banner-1, .banner-3 {

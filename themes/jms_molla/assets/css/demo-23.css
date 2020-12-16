@@ -690,6 +690,15 @@ a:focus {
     border-color: #cc9966;
     background-color: #cc9966; }
 
+.productbox-15 .product-buttons .btn-icon {
+  color: #cc9966; }
+  .productbox-15 .product-buttons .btn-icon:hover {
+    background-color: #cc9966; }
+
+.productbox-15 .product-info .product-footer .cart-button {
+  border-color: #cc9966;
+  color: #cc9966; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc9966; }
 

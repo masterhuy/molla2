@@ -683,6 +683,18 @@ a:focus {
         }
     }
 }
+.productbox-15{
+    .product-buttons .btn-icon{
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+    .product-info .product-footer .cart-button{
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }
