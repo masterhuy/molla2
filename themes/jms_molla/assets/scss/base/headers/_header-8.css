@@ -90,30 +90,6 @@
         .header-8 #hor-menu .gdz-megamenu .nav.level0 > li > a .caret {
           right: -1.6rem; }
 
-.btn-search {
-  position: relative;
-  display: block;
-  font-size: 2.4rem;
-  line-height: 1;
-  min-width: 2.5rem;
-  padding: .3rem .2rem;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-  z-index: 11; }
-
-.cart-icon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-decoration: none !important;
-  line-height: 1;
-  color: #333; }
-
 @media (min-width: 1200px) {
   .header-8 #hor-menu .gdz-megamenu .nav.level0 > li > a {
     padding-right: 2.8rem; } }

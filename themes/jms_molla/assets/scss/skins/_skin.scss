@@ -862,6 +862,9 @@ a:focus {
 .header-23 .header-intro-clearance #cart_block .ajax_cart_quantity{
     background-color: $primary-color;
 }
+.header-24 .btn-group > a:hover{
+    color: $primary-color;
+}
 .header-intro-clearance{
     .header-right{
         .account a:hover .text,

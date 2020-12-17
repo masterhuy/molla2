@@ -44,16 +44,6 @@
 		}
 
 	}
-	.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, 
-	.show > .btn-primary.dropdown-toggle {
-	    color: $primary-color;
-	    background-color: transparent;
-	}
-
-	.header-search .search-wrapper-wide {
-		width: unset;	
-	}
-
 	.header-top {
 		.header-left {
 			display: flex;
@@ -235,17 +225,6 @@
 	text-decoration: none !important;
 	line-height: 1;
 	color: #333;
-}
-@include mq('lg', 'max') {
-	.header-2 {
-		.header-search-visible {
-			.header-search-wrapper {
-				&:before {
-					border-bottom-color: #dadada;
-				}
-			}
-		}
-	}
 }
 
 @media screen and (max-width: 991px) {

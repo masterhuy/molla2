@@ -149,30 +149,6 @@
       .header-7 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
         display: none; }
 
-.btn-search {
-  position: relative;
-  display: block;
-  font-size: 2.4rem;
-  line-height: 1;
-  min-width: 2.5rem;
-  padding: .3rem .2rem;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-  z-index: 11; }
-
-.cart-icon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-decoration: none !important;
-  line-height: 1;
-  color: #333; }
-
 @media (min-width: 992px) {
   .header-7 .gdz-megamenu .nav > .menu-item.sub-home > .dropdown-menu {
     max-width: 750px; } }

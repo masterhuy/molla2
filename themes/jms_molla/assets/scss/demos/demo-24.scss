@@ -10,6 +10,20 @@ $secondary-color: #fcb941;
 @import '../config/variables.scss';
 
 
+#mobile-header{
+	background-color: #333;
+	#mobile-menu-toggle{
+		color: #fff;
+	}
+	.mobile-menu-light{
+		background-color: transparent;
+	}
+	.user-info > a i, 
+	#wishlist_block > a i, 
+	#cart_block > a i {
+		color: #fff;
+	}
+}
 .container {
 	width: 1188px;
 	max-width: 100%;
@@ -25,6 +39,36 @@ $secondary-color: #fcb941;
 	font-weight: 700;
 	letter-spacing: -.025em;
 }
+.gdz-slider-wrapper{
+	.text-1{
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+	.text-2{
+		font-family: 'Playfair Display';
+		letter-spacing: -.025em;
+	}
+	.text-3{
+		letter-spacing: -.05em;
+		text-transform: uppercase;
+	}
+	.btn{
+		font-size: 1.3rem;
+		font-weight: 400;
+		letter-spacing: .1em;
+		color: #222;
+		background-color: #fcb941;
+		text-transform: uppercase;
+		border-radius: .5rem;
+		transition: all .3s;
+		padding: 1.4rem 2.8rem;
+		&:hover{
+			background-color: #fff;
+			border-color: #fff;
+		}
+	}
+}
+
 .pb-banner-button{
 	font-size: 1.3rem;
 	font-weight: 400;
@@ -87,7 +131,7 @@ $secondary-color: #fcb941;
 			right: auto !important;
 			transform: translate(-50%, -50%);
 			background: #fff;
-			padding: 8.1rem 0;
+			padding: 3.1rem 0;
 			align-items: center;
 		}
 		.pb-banner-subtitle{
@@ -172,6 +216,7 @@ $secondary-color: #fcb941;
 		}
 		.pb-banner-desc{
 			margin-bottom: 3rem;
+			display: none;
 		}
 		.btn{
 			border-width: .2rem;
@@ -319,6 +364,7 @@ span.highlight {
 }
 .icon-box-side{
 	.pb-service-box{
+		margin-left: -2rem;
 		.pb-service-icon{
 			color: #fff;
 		}
@@ -340,8 +386,22 @@ span.highlight {
 	}
 }
 
-
+@media (min-width: 992px){
+	#header{
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+	}
+	.banner-4 .pb-banner-text .pb-banner-desc{
+		display: block;
+	}
+}
 @media (min-width: 1200px){
+	
+	.banner-2 .pb-banner-text.pb-banner-center-center{
+		padding: 8.1rem 0;
+	}
 	.banner-1, .banner-3 {
 		flex: 0 0 31.3%;
 		max-width: 31.3%;
@@ -349,5 +409,14 @@ span.highlight {
 	.banner-2 {
 		flex: 0 0 37.4%;
 		max-width: 37.4%;
+	}
+}
+@media (min-width: 1367px){
+	.h24-line{
+		margin-top: -307px;
+	}
+	.h24-line, .h24-title, .h24-brand, .banner-type-1{
+		position: relative;
+		z-index: 1000;
 	}
 }

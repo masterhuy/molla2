@@ -812,6 +812,9 @@ a:focus {
 .header-23 .header-intro-clearance #cart_block .ajax_cart_quantity {
   background-color: #3399ff; }
 
+.header-24 .btn-group > a:hover {
+  color: #3399ff; }
+
 .header-intro-clearance .header-right .account a:hover .text,
 .header-intro-clearance .header-right .wishlist a:hover .text,
 .header-intro-clearance .header-right #cart_block a:hover .text {

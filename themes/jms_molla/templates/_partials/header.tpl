@@ -30,7 +30,6 @@
     {assign var='header_layout_link' value="_partials/headers/header-`$gdzSetting.header_layout`.tpl"}
 {/if}
 
-
 <div id="desktop-header" class="header-{$header_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">
     {include file=$header_layout_link}
 </div>

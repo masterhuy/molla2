@@ -810,6 +810,9 @@ a:focus {
 .header-23 .header-intro-clearance #cart_block .ajax_cart_quantity {
   background-color: #fcb941; }
 
+.header-24 .btn-group > a:hover {
+  color: #fcb941; }
+
 .header-intro-clearance .header-right .account a:hover .text,
 .header-intro-clearance .header-right .wishlist a:hover .text,
 .header-intro-clearance .header-right #cart_block a:hover .text {
@@ -1485,6 +1488,17 @@ a:focus {
 #footer.footer-22 .social-icon:hover {
   border-color: #fcb941; }
 
+#mobile-header {
+  background-color: #333; }
+  #mobile-header #mobile-menu-toggle {
+    color: #fff; }
+  #mobile-header .mobile-menu-light {
+    background-color: transparent; }
+  #mobile-header .user-info > a i,
+  #mobile-header #wishlist_block > a i,
+  #mobile-header #cart_block > a i {
+    color: #fff; }
+
 .container {
   width: 1188px;
   max-width: 100%;
@@ -1499,6 +1513,34 @@ a:focus {
 .title {
   font-weight: 700;
   letter-spacing: -.025em; }
+
+.gdz-slider-wrapper .text-1 {
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+.gdz-slider-wrapper .text-2 {
+  font-family: 'Playfair Display';
+  letter-spacing: -.025em; }
+
+.gdz-slider-wrapper .text-3 {
+  letter-spacing: -.05em;
+  text-transform: uppercase; }
+
+.gdz-slider-wrapper .btn {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: #222;
+  background-color: #fcb941;
+  text-transform: uppercase;
+  border-radius: .5rem;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  padding: 1.4rem 2.8rem; }
+  .gdz-slider-wrapper .btn:hover {
+    background-color: #fff;
+    border-color: #fff; }
 
 .pb-banner-button {
   font-size: 1.3rem;
@@ -1553,7 +1595,7 @@ a:focus {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #fff;
-  padding: 8.1rem 0;
+  padding: 3.1rem 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -1630,7 +1672,8 @@ a:focus {
   margin-bottom: .8rem; }
 
 .banner-4 .pb-banner-text .pb-banner-desc {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: none; }
 
 .banner-4 .pb-banner-text .btn {
   border-width: .2rem;
@@ -1755,23 +1798,34 @@ span.highlight {
   letter-spacing: .1em;
   color: #222; }
 
-.icon-box-side .pb-service-box .pb-service-icon {
-  color: #fff; }
+.icon-box-side .pb-service-box {
+  margin-left: -2rem; }
+  .icon-box-side .pb-service-box .pb-service-icon {
+    color: #fff; }
+  .icon-box-side .pb-service-box .pb-service-content .pb-service-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #fff;
+    margin-bottom: .3rem;
+    text-transform: uppercase; }
+  .icon-box-side .pb-service-box .pb-service-content .pb-service-description p {
+    font-size: 1.3rem;
+    letter-spacing: .01em;
+    font-weight: 300; }
 
-.icon-box-side .pb-service-box .pb-service-content .pb-service-title {
-  font-size: 1.3rem;
-  font-weight: 400;
-  letter-spacing: .1em;
-  color: #fff;
-  margin-bottom: .3rem;
-  text-transform: uppercase; }
-
-.icon-box-side .pb-service-box .pb-service-content .pb-service-description p {
-  font-size: 1.3rem;
-  letter-spacing: .01em;
-  font-weight: 300; }
+@media (min-width: 992px) {
+  #header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000; }
+  .banner-4 .pb-banner-text .pb-banner-desc {
+    display: block; } }
 
 @media (min-width: 1200px) {
+  .banner-2 .pb-banner-text.pb-banner-center-center {
+    padding: 8.1rem 0; }
   .banner-1, .banner-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 31.3%;
@@ -1782,5 +1836,12 @@ span.highlight {
     -ms-flex: 0 0 37.4%;
     flex: 0 0 37.4%;
     max-width: 37.4%; } }
+
+@media (min-width: 1367px) {
+  .h24-line {
+    margin-top: -307px; }
+  .h24-line, .h24-title, .h24-brand, .banner-type-1 {
+    position: relative;
+    z-index: 1000; } }
 
 /*# sourceMappingURL=demo-24.css.map */
