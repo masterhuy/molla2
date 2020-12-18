@@ -1,0 +1,11 @@
+.pb-service-content {
+	text-align: right;
+}
+
+
+@media (min-width: 1200px){
+	.choose-style .banner-xl-absolute {
+		left: 5.65vw;
+		right: auto;
+	}
+}

@@ -177,6 +177,25 @@
 			display: none;
 		}
 	}
+	.productbox-14{
+		&:hover{
+			margin-bottom: 2rem !important;
+			.product-info{
+				transform: none;
+			}
+		}
+		.product-info{
+			.product-detail{
+				display: none;
+			}
+			.product-action{
+				display: none;
+			}
+		}
+	}
+	.productbox-15:hover .product-info{
+		transform: none;
+	}
 }
 .col-product{
 	padding: 0 10px;

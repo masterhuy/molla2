@@ -43,6 +43,15 @@
 				{/if}
 		  	</a>
 		{/block}
+		<div class="wrapp-buttons">
+			<div class="product-buttons">
+				{if $gdzSetting.productbox_quickview}
+					<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
+						<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
+					</a>
+				{/if}
+			</div>
+		</div>
         {block name='product_flags'}
 			<ul class="product-flags">
 				{foreach from=$product.flags item=flag}

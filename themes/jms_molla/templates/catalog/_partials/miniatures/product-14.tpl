@@ -88,6 +88,9 @@
 			{block name='product_name'}
 				<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>
 			{/block}
+			<div class="product-short-desc">
+				{$product.description_short|truncate:300:'...' nofilter}
+			</div>
 			{if $gdzSetting.productbox_price}
 				{block name='product_price_and_shipping'}
 					{if $product.show_price}

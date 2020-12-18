@@ -1,0 +1,50 @@
+.featured-back .pb-producttab .nav.nav-tabs a.link {
+	margin-right: auto;
+	margin-left: 0;
+}
+.h22-newsletter #newsletter-btn {
+	border-radius: .3rem 0 0 .3rem;
+}
+.h22-newsletter .email_subscription .form-control {
+	border-radius: 0 .3rem .3rem 0;
+}
+.icon-box-side .layout-column + .layout-column::before {
+	right: -1rem;
+	left: auto;
+}
+.icon-box-side .pb-service-content {
+	text-align: right;
+}
+.section-title {
+	margin-right: 2rem;
+	margin-left: 0;
+}
+.section-title .title {
+	margin-right: -1.4rem;
+	margin-left: 0;
+}
+.filter-products > div + div {
+	border-right: .1rem solid #eee;
+	border-left: 0;
+}
+.filter-products > div:nth-child(6n) {
+	border-right: 0;
+}
+.bannerad .banner-lg {
+	justify-content: flex-end;
+}
+
+@media (min-width: 1200px){
+	.featured-back .pb-producttab .nav.nav-tabs {
+		left: 0;
+		right: auto;
+	}
+	.featured-back .pb-producttab .nav.nav-tabs .nav-item {
+		margin-right: -1rem;
+		margin-left: 0;
+	}
+	.featured-back .pb-producttab .nav.nav-tabs .nav-item .nav-link {
+		padding-left: 5rem;
+		padding-right: 4rem;
+	}
+}

@@ -3,7 +3,7 @@
         <h3 class="h3 block-title">
             {$linkBlock.title}
         </h3>
-        <div class="block-content d-block">
+        <div class="block-content">
             <ul>
                 {foreach $linkBlock.links as $link}
                     <li>

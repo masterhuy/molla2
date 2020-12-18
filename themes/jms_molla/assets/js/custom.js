@@ -431,7 +431,8 @@ $(document).on('click', '.dropdown-menu', function (e) {
 });
 
 function footerCollapse() {
-    if ((jQuery(window).width() < 480) && gdzSetting.footer_block_collapse) {
+    console.log(gdzSetting.footer_block_collapse);
+    if ((jQuery(window).width() < 480) && (gdzSetting.footer_block_collapse == 1)) {
         $('#footer-main').addClass('collapsed');
         $('#footer-main').find('.block-content').addClass('collapse');
     } else {

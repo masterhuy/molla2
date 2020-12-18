@@ -498,9 +498,6 @@
 		margin-bottom: 1.9rem;
 	}
 	.block-content{
-		&.collapse{
-			display: block;
-		}
 		ul{
 			li{
 				&:not(:last-child){
@@ -560,6 +557,21 @@
 
 .footer-main{
 	padding: 3.9rem 0 1.6rem;
+	&.collapsed{
+		 .block{
+		 	&.collapsed .block-title::after{
+		 		content: '\e802';
+		 	}
+		 	.block-title{
+			 	&::after{
+			 		content: '\f110';
+			 		font-family: "molla";
+					line-height: 1;
+					float: right;
+			 	}
+			 }
+		 }
+	}
 }
 .cms-page-link,
 .custom-page-link{
