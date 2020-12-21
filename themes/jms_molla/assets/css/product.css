@@ -3,7 +3,7 @@
 	max-width:none;
 }
 #product .block-categories {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
     padding-bottom: 0;
     margin-top: -10px;
 }
@@ -330,7 +330,7 @@
 			display:block;
 	}
 }
-#product-availability i {
+#product-availability .la-ban {
     color: red;
     font-size: 12px;
 }
@@ -609,7 +609,7 @@
 #product-details > div {
     line-height: 25px;
 }
-.same-category{
+.same-category, .product-accessories{
     margin-top: 51px;
 }
 .product-description ul li {

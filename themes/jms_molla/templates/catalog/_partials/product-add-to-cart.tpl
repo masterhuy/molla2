@@ -71,6 +71,22 @@
             </div>
             <div class="clearfix"></div>
         {/block}
+
+        {block name='product_availability'}
+            <span id="product-availability">
+                {if $product.show_availability && $product.availability_message}
+                    {if $product.availability == 'available'}
+                        <i class="la la-check"></i>
+                    {elseif $product.availability == 'last_remaining_items'}
+                        <i class="la la-exclamation-triangle"></i>
+                    {else}
+                        <i class="la la-ban"></i>
+                    {/if}
+                    {$product.availability_message}
+                {/if}
+            </span>
+        {/block}
+
         {block name='product_minimal_quantity'}
             <p class="product-minimal-quantity">
                 {if $product.minimal_quantity > 1}

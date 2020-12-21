@@ -1025,7 +1025,14 @@ footer .row, header .row {
     font-size: 1.3rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
-    min-width: 110px; }
+    min-width: 110px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block; }
+    #cart_block .cart-button .btn + .btn {
+      margin-left: 1rem; }
     #cart_block .cart-button .btn i {
       margin-right: 0; }
 

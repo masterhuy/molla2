@@ -1781,7 +1781,8 @@ a:focus {
   .h1-newsletter .email_subscription .form-control {
     width: auto; }
   .h1-newsletter .email_subscription #newsletter-btn {
-    height: 46px; }
+    height: 46px;
+    margin-left: -.1rem; }
   .h1-newsletter .email_subscription .newsletter-input-group {
     display: -webkit-box;
     display: -ms-flexbox;

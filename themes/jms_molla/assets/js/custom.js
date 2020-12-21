@@ -90,7 +90,7 @@ jQuery(function ($) {
         $(this).owlCarousel({
             loop: false,
             rtl:rtl,
-            margin: 0,
+            margin: 20,
             nav: false,
             dots: false,
             autoplay: false,
@@ -122,7 +122,7 @@ jQuery(function ($) {
         $(this).owlCarousel({
             loop: false,
             rtl:rtl,
-            margin: 0,
+            margin: 20,
             nav: true,
             dots: false,
             autoplay: false,
@@ -431,7 +431,6 @@ $(document).on('click', '.dropdown-menu', function (e) {
 });
 
 function footerCollapse() {
-    console.log(gdzSetting.footer_block_collapse);
     if ((jQuery(window).width() < 480) && (gdzSetting.footer_block_collapse == 1)) {
         $('#footer-main').addClass('collapsed');
         $('#footer-main').find('.block-content').addClass('collapse');

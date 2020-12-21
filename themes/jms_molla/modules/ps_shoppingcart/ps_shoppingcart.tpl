@@ -70,7 +70,7 @@
 					</a>
 				{/if}
 				{if $gdzSetting.cart_links && 'checkout'|in_array:$gdzSetting.cart_links}
-					<a href="{url entity=order}" class="btn btn-outline-primary-2">
+					<a href="{url entity=order}" class="btn btn-outline-primary-2" title="{l s='Checkout' d='Shop.Theme.Actions'}">
 						{l s='Checkout' d='Shop.Theme.Actions'}
 						<i class="icon-long-arrow-right"></i>
 					</a>

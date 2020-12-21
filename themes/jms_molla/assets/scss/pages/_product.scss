@@ -18,8 +18,15 @@
 }
 .images-container{
 	&.grid, &.thumbs-vertical{
+		.product-images{
+			margin-left: -10px;
+			margin-right: -10px;
+		}
 		.thumb-container{
 			margin-bottom: 2rem;
+			width: 50%;
+			float: left;
+			padding: 0 10px;
 			&::after{
 				display: none;
 			}
@@ -1470,6 +1477,7 @@
 	}
 	#quantity_wanted{
 		max-width: 4.8rem;
+		padding: 0 1rem;
 	}
 	.product-quantity{
 		display: flex;
@@ -1507,6 +1515,13 @@
 		width: auto !important;
 		bottom: auto !important;
 		transform: none !important;
+	}
+}
+
+@media (min-width: 768px){
+	.images-container.grid .thumb-container, 
+	.images-container.thumbs-vertical .thumb-container {
+		width: 100%;
 	}
 }
 

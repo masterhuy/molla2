@@ -22,15 +22,15 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="best-sellers_block_right">
-	<div class="title-block">
-		<h3>
-			{l s='Best Sellers' d='Modules.Bestsellers.Shop'}
-		</h3>
-	</div>
+<section class="block-bestseller">
+  	<h3 class="title">{l s='Best Sellers' d='Modules.Bestsellers.Shop'}</h3>
 	<div class="products">
 		{foreach from=$products item="product"}
-			{include file="catalog/_partials/miniatures/product2.tpl" product=$product}
+			{include file="catalog/_partials/miniatures/product-flex.tpl" product=$product}
 		{/foreach}
 	</div>
-</div>
+	<a class="btn-link" href="{$allBestSellers}">
+		{l s='All best sellers' d='Modules.Bestsellers.Shop'}
+		<i class="icon-long-arrow-right"></i>
+	</a>
+</section>

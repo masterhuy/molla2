@@ -25,7 +25,7 @@
 <div class="images-container thumbs-vertical">
     {block name='product_images'}
         <div class="js-qv-mask mask">
-            <div id="gal1" class="product-images js-qv-product-images">
+            <div id="gal1" class="product-images js-qv-product-imagess">
                 {foreach from=$product.images item=image}
                     <li class="thumb-container {if $image.id_image == $product.cover.id_image} selected {/if}" data-image="{$image.bySize.large_default.url}" data-zoom-image="{$image.bySize.large_default.url}">
                         <img

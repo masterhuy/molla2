@@ -50,7 +50,7 @@
     <ul class="nav nav-inline my-2" role="tablist">
       <li class="nav-item">
         <a
-          class="nav-link {if !$show_login_form}active{/if}"
+          class="color-dark nav-link {if !$show_login_form}active{/if}"
           data-toggle="tab"
           href="#checkout-guest-form"
           role="tab"
@@ -71,7 +71,7 @@
 
       <li class="nav-item">
         <a
-          class="nav-link {if $show_login_form}active{/if}"
+          class="color-dark nav-link {if $show_login_form}active{/if}"
           data-link-action="show-login-form"
           data-toggle="tab"
           href="#checkout-login-form"

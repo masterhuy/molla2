@@ -154,6 +154,7 @@ body#checkout #cart-summary-product-list .media-left img {
 .js-cart-line-product-quantity.form-control {
 	text-align: center;
 	height: auto;
+	padding: 0;
 }
 .product-line-grid-right {
 	text-align: center;

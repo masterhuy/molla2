@@ -23,10 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if isset($notifications)}
-    <aside id="notifications">
+    <aside id="notifications" class="container">
         {if $notifications.error}
             {block name='notifications_error'}
-                <article class="alert alert-danger" role="alert" data-alert="danger">
+                <article class="alert alert-danger mb-2" role="alert" data-alert="danger">
                     <ul>
                         {foreach $notifications.error as $notif}
                             <li>{$notif nofilter}</li>
@@ -38,7 +38,7 @@
 
         {if $notifications.warning}
             {block name='notifications_warning'}
-                <article class="alert alert-warning" role="alert" data-alert="warning">
+                <article class="alert alert-warning mb-2" role="alert" data-alert="warning">
                     <ul>
                         {foreach $notifications.warning as $notif}
                             <li>{$notif nofilter}</li>

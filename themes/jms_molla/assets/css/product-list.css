@@ -640,7 +640,7 @@
 	display: inline-flex;
 	position: absolute;
 	height: 30px;
-	right: 100%;
+	right: calc(100% - 1px);
 	top: -1px;
 	bottom: 0;
 	-webkit-box-align: center;
@@ -676,7 +676,6 @@
 .product-buttons .btn-icon::before{
 	display: block;
 	position: relative;
-	transition: all .35s ease;
 	z-index: 10;
 }
 .item .js-product-miniature {
