@@ -166,7 +166,7 @@ class gdzAddonProductFilter extends gdzAddonBase
                 'label' => $this->l('ReWind Navigation'),
                 'lang' => '0',
                 'desc' => 'Enable/Disable ReWind Navigation',
-                'default' => '1',
+                'default' => '0',
                 'condition' => array(
                     'view_type' => '==carousel'
                 )
@@ -214,7 +214,7 @@ class gdzAddonProductFilter extends gdzAddonBase
         if ($producttype == 'onsale') {
             $_products = gdzProductHelper::getonSaleProducts($category_ids, $total_config);
         } elseif ($producttype == 'topseller') {
-            $_products = gdzProductHelper::getTopSellerProducts($category_ids, $total_config);            
+            $_products = gdzProductHelper::getTopSellerProducts($category_ids, $total_config);
         } elseif ($producttype == 'new') {
             $_products = gdzProductHelper::getNewProducts($category_ids, $total_config);
         } elseif ($producttype == 'special') {
@@ -232,7 +232,7 @@ class gdzAddonProductFilter extends gdzAddonBase
     public function returnValue($addon)
     {
         $this->context = Context::getContext();
-    		$fields = $addon->fields;
+    	$fields = $addon->fields;
         $view_type = $addon->fields[2]->value;
         if($view_type == 'carousel')
             $cols = $addon->fields[6]->value;
@@ -245,25 +245,25 @@ class gdzAddonProductFilter extends gdzAddonBase
     		$products = $this->getProducts($fields);
         if(!isset($products) || count($products) == 0) return;
         $this->context->smarty->assign(
-      			array(
-      				'link' => $this->context->link,
-      				'products_slides' => $products,
-      				'producttype' => $fields[0]->value,
-      				'cols'  => $cols,
-      				'cols_md'   => $cols_arr[0],
-      				'cols_sm'   => $cols_arr[1],
-      				'cols_xs'   => $cols_arr[2],
-      				'navigation' => $fields[8]->value,
-      				'pagination' => $fields[9]->value,
-      				'autoplay' => $fields[10]->value,
-      				'rewind' => $fields[11]->value,
-      				'slidebypage' => $fields[12]->value,
-              'gutter'   => $addon->fields[4]->value,
-              'view_type' => $view_type,
-      				'addon_tpl_dir' => $addon_tpl_dir
-      			)
-  		  );
-		    $this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;
+            array(
+                'link' => $this->context->link,
+                'products_slides' => $products,
+                'producttype' => $fields[0]->value,
+                'cols'  => $cols,
+                'cols_md'   => $cols_arr[0],
+                'cols_sm'   => $cols_arr[1],
+                'cols_xs'   => $cols_arr[2],
+                'navigation' => $fields[8]->value,
+                'pagination' => $fields[9]->value,
+                'autoplay' => $fields[10]->value,
+                'rewind' => $fields[11]->value,
+                'slidebypage' => $fields[12]->value,
+                'gutter'   => $addon->fields[4]->value,
+                'view_type' => $view_type,
+                'addon_tpl_dir' => $addon_tpl_dir
+            )
+  		);
+		$this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;
         $template_path = $this->loadTplPath();
         return $this->context->smarty->fetch($template_path);
     }

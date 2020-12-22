@@ -14,6 +14,7 @@ function popup_resize_box() {
 	var width_default  = $('#width-default').val();
 	var height_default  = $('#height-default').val();
 	if(window_w > width_default) {
+		console.log(width_default);
 		$('.gdz-popup').css('width', width_default);
 		$('.gdz-popup').css('left',(window_w - width_default)/2);
 	} else {

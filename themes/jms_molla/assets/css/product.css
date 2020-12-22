@@ -752,3 +752,10 @@
 #thumbnails ul li {
     margin-bottom: 10px;
 }
+
+#blockcart-modal .modal-body{
+    border-radius: 0;
+}
+#blockcart-modal .modal-header{
+    border-radius: 0;
+}

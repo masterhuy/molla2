@@ -28,23 +28,23 @@
         <div class="pagebuilder-dialog-content-wrapper">
             <div class="pagebuilder-dialog-header">
                 <div class="pagebuilder-dialog-header-left pull-left">
-                    <h3>{l s='Template Library' mod='gdz_pagebuilder'}</h3>
+                    <h3>{l s='Users Templates' mod='gdz_pagebuilder'}</h3>
                 </div>
                 <div class="pagebuilder-dialog-header-right pull-right">
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-library" data-form="library">
-                        <i class="gdz-icon-library"></i>
+                        <i class="feather feather-file"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-load" data-form="load">
-                        <i class="gdz-icon-import"></i>
+                        <i class="feather feather-upload"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-file" data-form="file">
-                        <i class="gdz-icon-export"></i>
+                        <i class="feather feather-download"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-save" data-form="save">
-                        <i class="gdz-icon-save"></i>
+                        <i class="feather feather-save"></i>
                     </div>
                     <div class="pagebuilder-dialog-close pagebuilder-dialog-element">
-                        <i class="gdz-icon-close-2_light"></i>
+                        <i class="feather feather-x"></i>
                     </div>
                 </div>
             </div>

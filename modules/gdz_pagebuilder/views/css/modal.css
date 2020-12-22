@@ -6,7 +6,7 @@
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 .gdz-modal-open {
@@ -754,6 +754,10 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+.form-content label {
+  margin-right: 20px;
+  font-size: 20px;
+}
 .pagebuilder-dialog-input {
     width: 450px;
     background-color: #fff;
@@ -775,6 +779,7 @@
 }
 #replace-new-url,
 #replace-old-url,
+#source-lang,
 #library-load-template-name {
     width:200px;
     margin-right: 20px;

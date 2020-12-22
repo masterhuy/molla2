@@ -35,9 +35,9 @@
 </a>
 <% } %>
 <div class="pb-banner-countdown-text">
-	<% if (subtitle) { %><span class="pb-banner-countdown-subtitle"><%= subtitle %></span><% } %>
-	<% if (title) { %><<%= title_tag %> class="pb-banner-countdown-title"><%= title %></<%= title_tag %>><% } %>
-	<% if (description) { %><div class="pb-banner-countdown-desc"><%= description %></div><% } %>
+	<% if (subtitle) { %><span class="pb-banner-countdown-subtitle"><span><%= subtitle %></span></span><% } %>
+	<% if (title) { %><<%= title_tag %> class="pb-banner-countdown-title"><span><%= title %></span></<%= title_tag %>><% } %>
+	<% if (description) { %><div class="pb-banner-countdown-desc"><span><%= description %></span></div><% } %>
 	<% if (button_text) { %><div><div class="pb-banner-countdown-button btn"><span><%= button_text %></span></div></div><% } %>
 </div>
 <div class="pb-banner-countdown-time countdown">

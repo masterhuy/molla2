@@ -75,14 +75,14 @@
 
 <div id="pb-right-menu" style="display:none;">
     <ul>
-    <li class="edit-row"><a href="#"><i class="gdz-icon-edit-row"></i>{l s='Edit Row' mod='gdz_pagebuilder'}</a></li>
-    <li class="duplicate-row seperator"><a href="#"><i class="gdz-icon-duplicate"></i>{l s='Duplicate' mod='gdz_pagebuilder'}</a></li>
-    <li class="copy-style-row"><a href="#"><i class="gdz-icon-copy-design"></i>{l s='Copy Style' mod='gdz_pagebuilder'}</a></li>
-    <li class="paste-style-row"><a href="#"><i class="gdz-icon-paste-design"></i>{l s='Paste Style' mod='gdz_pagebuilder'}</a></li>
-    <li class="reset-style-row seperator"><a href="#"><i class="gdz-icon-reset-design"></i>{l s='Reset Style' mod='gdz_pagebuilder'}</a></li>
-    <li class="save-template-row" data-dialog="template-library" data-form="save"><a href="#"><i class="gdz-icon-save"></i>{l s='Save as Template' mod='gdz_pagebuilder'}</a></li>
-    <li class="export-row seperator"><a href="#"><i class="gdz-icon-export-row"></i>{l s='Export to File' mod='gdz_pagebuilder'}</a></li>
-    <li class="delete-row"><a href="#"><i class="gdz-icon-delete-1_light"></i>{l s='Delete' mod='gdz_pagebuilder'}</a></li>
+    <li class="edit-row"><a href="#"><i class="feather feather-edit"></i>{l s='Edit Row' mod='gdz_pagebuilder'}</a></li>
+    <li class="duplicate-row seperator"><a href="#"><i class="feather feather-copy"></i>{l s='Duplicate' mod='gdz_pagebuilder'}</a></li>
+    <li class="copy-style-row"><a href="#"><i class="feather feather-clipboard"></i>{l s='Copy Style' mod='gdz_pagebuilder'}</a></li>
+    <li class="paste-style-row"><a href="#"><i class="feather feather-corner-up-right"></i>{l s='Paste Style' mod='gdz_pagebuilder'}</a></li>
+    <li class="reset-style-row seperator"><a href="#"><i class="feather feather-corner-up-left"></i>{l s='Reset Style' mod='gdz_pagebuilder'}</a></li>
+    <li class="save-template-row" data-dialog="template-library" data-form="save"><a href="#"><i class="feather feather-save"></i>{l s='Save as Template' mod='gdz_pagebuilder'}</a></li>
+    <li class="export-row seperator"><a href="#"><i class="feather feather-download"></i>{l s='Export to File' mod='gdz_pagebuilder'}</a></li>
+    <li class="delete-row"><a href="#"><i class="feather feather-trash"></i>{l s='Delete' mod='gdz_pagebuilder'}</a></li>
     </ul>
 </div>
 {foreach from=$addonstemplate key=i item=addontpl}

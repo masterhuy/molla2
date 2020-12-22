@@ -44,11 +44,12 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         $this->addJqueryPlugin('autocomplete');
         $this->addJS(_PS_JS_DIR_.'admin.js');
         $this->addJS(_PS_BO_ALL_THEMES_DIR_.'default/js/tree.js');
-
+        $this->addJqueryUI('ui.tooltip');
 
         $this->addCSS(array(
             __PS_BASE_URI__.$this->admin_webpath.'/themes/'.$this->bo_theme.'/css/admin-theme.css',
             __PS_BASE_URI__.$this->admin_webpath.'/themes/'.$this->bo_theme.'/public/theme.css',
+            _MODULE_DIR_._GDZ_PB_NAME_.'/lib/feather/feather.css',
             _MODULE_DIR_._GDZ_PB_NAME_.'/lib/awesome/font-awesome.min.css',
             _MODULE_DIR_._GDZ_PB_NAME_.'/lib/icon/style.css',
             _MODULE_DIR_._GDZ_PB_NAME_.'/lib/bootstrap-colorpicker/bootstrap-colorpicker.min.css',
@@ -231,6 +232,104 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         $res = $page->update();
         die;
     }
+    public function ajaxProcessDownloadThemeZip()
+    {
+        $filename = "themeSetting.zip";
+        $zipname = "studio";
+        if (file_exists($filename)) {
+            header("Content-type: application/zip");
+            header("Content-Disposition: attachment; filename=".$zipname.".zip");
+            header("Content-length: " . filesize($filename));
+            header("Pragma: no-cache");
+            header("Expires: 0");
+            readfile($filename);
+            exit;
+        } else {
+            die('file not exists');
+        }
+    }
+    function zip($zip, $rootPath, $folder)
+    {
+        $files = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($rootPath.$folder.'/'),
+            RecursiveIteratorIterator::LEAVES_ONLY
+        );
+
+        foreach ($files as $name => $file)
+        {
+            if (!$file->isDir())
+            {
+                $filePath = $file->getRealPath();
+                $relativePath = substr($filePath, strlen($rootPath));
+                $zip->addFile($filePath, $relativePath);
+            }
+        }
+
+    }
+    public function ajaxProcessExportTheme() {
+        $rs = array('success' => true);
+        if (!Module::isInstalled('gdz_themesetting')) {
+            $rs['success'] = false;
+            $rs['err'] = $this->module->l('Module gdz_themesetting is not installed');
+        } else {
+            try {
+                $json = Tools::jsonDecode(Tools::getValue('json'), true);
+                $pagename = Tools::getValue('pagename', 'new page');
+                if (!$pagename) {
+                    $pagename = 'New page';
+                }
+                $images = gdzTemplate::getImages($json);
+                include_once _PS_MODULE_DIR_ . 'gdz_themesetting/controllers/admin/AdminGdzThemeSetting.php';
+                $themeCtl = Controller::getController('AdminGdzThemeSettingController');
+                $themeSetting = $themeCtl->getThemeSetting();
+                $zip = new ZipArchive();
+                $filename = "themeSetting.zip";
+                if (file_exists($filename)) {
+                    unlink($filename);
+                }
+                if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
+                    $rs['success'] = false;
+                    $rs['err'] = $this->module->l("cannot open zip");
+                } else {
+                    $zip->addFromString("themeSetting.json", $themeSetting);
+                    $zip->addFromString("template.json", Tools::getValue('json'));
+                    foreach ($images as $image) {
+                        if ($image && is_file($_SERVER['DOCUMENT_ROOT'].$image)) {
+                            $zip->addFile($_SERVER['DOCUMENT_ROOT'].$image, 'images/'.substr($image, strlen(__PS_BASE_URI__)));
+                        }
+                    }
+                    // $this->zip($zip, _PS_THEME_DIR_, 'assets');
+                    $xml = array(
+                        'name' => $pagename,
+                        'base_url' => __PS_BASE_URI__,
+                    );
+                    if (count($images)) {
+                        $preview = 'preview.'.pathinfo($images[0], PATHINFO_EXTENSION);
+                        $zip->addFile($_SERVER['DOCUMENT_ROOT'].$images[0], $preview);
+                        $xml['preview'] = $preview;
+                    }
+                    $zip->addFromString("studio.xml", $this->createThemeXml($xml));
+                    $zip->close();
+                    $rs['url'] = $this->context->link->getAdminLink('gdzPagebuilderEditor').'&ajax=1&action=DownloadThemeZip';
+                }
+            } catch (Exception $e) {
+                $rs['success'] = false;
+                $rs['err'] = $e->getMessage();
+            }
+        }
+        die(Tools::jsonEncode($rs));
+    }
+    public function createThemeXml($arr)
+    {
+        $xml = new DOMDocument('1.0', 'utf-8');
+        $root = $xml->createElement('section');
+        $xml->appendChild($root);
+        foreach ($arr as $key => $value) {
+            $e = $xml->createElement($key, $value);
+            $root->appendChild($e);
+        }
+        return $xml->saveXML();
+    }
     public function ajaxProcessSaveTemplate() {
         $template = new gdzTemplate();
         $template->name = Tools::getValue('templatename');
@@ -265,6 +364,43 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/admin/templates.tpl");
         echo $html;
         exit;
+    }
+    public function ajaxProcessReplaceUrl() {
+        try {
+            $rs = array('success' => true);
+            $context = Context::getContext();
+            $old_url = Tools::getValue('old_url');
+            $new_url = Tools::getValue('new_url');
+            $id_page = (int)Tools::getValue('id_page');
+            $all_pages = (int)Tools::getValue('all_pages');
+            if($all_pages == 1) {
+                $pages = gdzPageBuilderHelper::getPages();
+                foreach ($pages as $_page) {
+                  $page = new gdzPage($_page['id_page']);
+                  $page->params = str_replace($old_url, $new_url, $page->params);
+                  if (!$page->update()) {
+                      $rs['success'] = false;
+                      $rs['err_mes'] = $this->l('Error in Replace Url in page '.$_page['title']);
+                      die(Tools::jsonEncode($rs));
+                  }
+                }
+                $rs['message'] = $this->l('all urls replaced success.');
+            } else {
+                $page = new gdzPage($id_page);
+                $page->params = str_replace($old_url, $new_url, $page->params);
+                if (!$page->update()) {
+                    $rs['success'] = false;
+                    $rs['err_mes'] = $this->l('Error in Replace Url.');
+                } else {
+                    $rs['message'] = $this->l('all urls replaced success.');
+                }
+            }
+
+        } catch (Exception $e) {
+            $rs['success'] = false;
+            $rs['err_mes'] = $e->getMessage();
+        }
+        die(Tools::jsonEncode($rs));
     }
     public function ajaxProcessGetBlog() {
         include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/addonblog.php');
@@ -342,6 +478,40 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         echo $html;
         exit;
     }
+    public function ajaxProcessGetReel() {
+        $addonclass = 'gdzAddonReel';
+        $setting = array(
+            'fields' => Tools::getValue('setting')
+        );
+        $setting = Tools::jsonDecode(Tools::jsonEncode($setting));
+        $addonfile = 'addonreel.php';
+        if (file_exists(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/'.$addonfile)) {
+            require_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/'.$addonfile);
+        } else {
+            die('Addon not found');
+        }
+        $addon_instance = new $addonclass();
+        $html = $addon_instance->returnValue($setting);
+        echo $html;
+        exit;
+    }
+    public function ajaxProcessGetInstagram() {
+        $addonclass = 'gdzAddonInstagram';
+        $setting = array(
+            'fields' => Tools::getValue('setting')
+        );
+        $setting = Tools::jsonDecode(Tools::jsonEncode($setting));
+        $addonfile = 'addoninstagram.php';
+        if (file_exists(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/'.$addonfile)) {
+            require_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/'.$addonfile);
+        } else {
+            die('Addon not found');
+        }
+        $addon_instance = new $addonclass();
+        $html = $addon_instance->returnValue($setting);
+        echo $html;
+        exit;
+    }
     public function ajaxProcessGetDeals() {
         include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/addonhotdeal.php');
         $gdzSetting = gdzPageBuilderHelper::genGdzSetting();
@@ -379,5 +549,37 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/hook/addonhotdeal.tpl");
         echo $html;
         exit;
+    }
+    public function ajaxProcessGetSectionList()
+    {
+        $context = Context::getContext();
+        $params = [
+            'type' => 'section',
+        ];
+        $studio = new gdzPageBuilderHelper();
+        $sections = $studio->request($params);
+        $context->smarty->assign(
+            array(
+                'sections' => $sections
+            )
+        );
+        $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/admin/section-list.tpl");
+        echo $html;
+    }
+    public function ajaxProcessGetPageList()
+    {
+        $context = Context::getContext();
+        $params = [
+            'type' => 'page',
+        ];
+        $studio = new gdzPageBuilderHelper();
+        $pages = $studio->request($params);
+        $context->smarty->assign(
+            array(
+                'pages' => $pages
+            )
+        );
+        $html = $context->smarty->fetch(_PS_MODULE_DIR_._GDZ_PB_NAME_."/views/templates/admin/page-list.tpl");
+        echo $html;
     }
 }

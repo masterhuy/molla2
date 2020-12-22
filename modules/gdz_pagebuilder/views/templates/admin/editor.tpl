@@ -56,8 +56,8 @@
         <ul>
           <li id="style-manager"><a><i class="feather feather-edit"></i><span class="drop-text">{l s='Style Manager' mod='gdz_pagebuilder'}</span></a></li>
           <li id="addons" class="active"><a><i class="feather feather-box"></i><span class="drop-text">{l s='Addons' mod='gdz_pagebuilder'}</span></a></li>
-          <li id="section"><a href="#"><i class="feather feather-grid"></i><span class="drop-text">{l s='Sections' mod='gdz_pagebuilder'}</span></a></li>
-          <li id="page"><a href="#"><i class="feather feather-file-text"></i><span class="drop-text">{l s='Pages' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="section"{if !$pro} class="pro"{/if}><a href="#"><i class="feather feather-grid"></i><span class="drop-text">{l s='Sections' mod='gdz_pagebuilder'}</span></a></li>
+          <li id="page"{if !$pro} class="pro"{/if}><a href="#"><i class="feather feather-file-text"></i><span class="drop-text">{l s='Pages' mod='gdz_pagebuilder'}</span></a></li>
           <li id="users-sections"><a id="template-library" class="dialog-open" data-dialog="template-library" data-form="library"><i class="feather feather-user"></i><span class="drop-text">{l s='Users Sections' mod='gdz_pagebuilder'}</span></a></li>
           <li id="theme-setting"><a class="btn" target="_blank" href="{$link->getAdminLink('AdminGdzThemeSetting') nofilter}&configure=gdz_themesetting" title="{l s='Theme Setting' mod='gdz_pagebuilder'}"><i class="feather feather-settings"></i>{l s='Setting' mod='gdz_pagebuilder'}</i></a></li>
         </ul>
@@ -121,7 +121,6 @@
       </div>
     </div>
     <div class="setting-right">
-        {if $pro}
         <div class="dropdown btn-icon" id="template-tool">
           <a class="dropbtn" title="{l s='Menu' mod='gdz_pagebuilder'}"><i class="feather feather-menu"></i></a>
           <div class="dropdown-content">
@@ -129,12 +128,12 @@
               <li><a id="template-library" class="dialog-open" data-dialog="template-library" data-form="library"><span class="drop-text">{l s='Template Library' mod='gdz_pagebuilder'}</span></a></li>
               <li><a class="dialog-open" data-dialog="template-library" data-form="save"><span class="drop-text">{l s='Save to Template' mod='gdz_pagebuilder'}</span></a></li>
               <li><a class="dialog-open" data-dialog="template-library" data-form="file"><span class="drop-text">{l s='Save as File' mod='gdz_pagebuilder'}</span></a></li>
-              <li><a id="theme-export"><span class="drop-text">{l s='Save Theme' mod='gdz_pagebuilder'}</span></a></li>
+              <!--<li><a id="theme-export"><span class="drop-text">{l s='Save Theme' mod='gdz_pagebuilder'}</span></a></li>-->
+              <li><a class="dialog-open" data-dialog="copy-lang" data-form="copy"><span class="drop-text">{l s='Copy Language' mod='gdz_pagebuilder'}</span></a></li>
               <li><a class="dialog-open" data-dialog="replace-url" data-form="replace"><span class="drop-text">{l s='Replace Url' mod='gdz_pagebuilder'}</span></a></li>
             </ul>
           </div>
         </div>
-        {/if}
         <a class="btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" href="#" title="{l s='Full Screen' mod='gdz_pagebuilder'}" id="full-screen"><i class="feather feather-maximize-2"></i></a>
         <a class="btn-icon gdz-tooltip" data-toggle="tooltip" data-placement="bottom" href="{$page_link}" title="{l s='Page Preview' mod='gdz_pagebuilder'}" target="_blank"><i class="feather feather-eye"></i></a>
 
@@ -245,5 +244,6 @@
 </div>
 {include file="module:gdz_pagebuilder/views/templates/admin/library.tpl"}
 {include file="module:gdz_pagebuilder/views/templates/admin/replace_url.tpl"}
+{include file="module:gdz_pagebuilder/views/templates/admin/copy_lang.tpl"}
 </body>
 </html>

@@ -647,3 +647,4 @@ jQuery(function ($) {
         return false;
     })
 });
+

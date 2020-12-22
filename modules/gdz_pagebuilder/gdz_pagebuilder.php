@@ -7,14 +7,14 @@ Godzilla PageBuilder
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 if (!defined('_PS_VERSION_')) {
     exit;
 }
 define('_GDZ_PB_NAME_', 'gdz_pagebuilder');
-// define('_GDZ_PB_PROADDONS_', array('banner', 'service', 'video', 'sliderlayer', 'blog' ,'testimonial', 'popup', 'map', 'menu', 'producttab', 'categoryproduct', 'categorytab', 'countdown', 'bannercountdown', 'instagram', 'hotdeal', 'flashsale'));
+//define('_GDZ_PB_PROADDONS_', array('banner', 'service', 'video', 'sliderlayer', 'blog' ,'testimonial', 'popup', 'map', 'menu', 'producttab', 'categoryproduct', 'categorytab', 'countdown', 'bannercountdown', 'instagram', 'hotdeal', 'flashsale'));
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/gdzHelper.php');
 if (Module::isInstalled('gdz_themesetting')) {
   include_once(_PS_MODULE_DIR_.'gdz_themesetting/gdz_themesetting.php');
@@ -26,7 +26,7 @@ class gdz_pagebuilder extends Module
         $this->name = _GDZ_PB_NAME_;
         $this->tab = 'front_office_features';
         $this->version = '1.0.0';
-        $this->author = 'prestawork';
+        $this->author = 'GodZilla';
         $this->need_instance = 0;
         $this->bootstrap = true;
         $this->id_homepage = Configuration::get('JPB_HOMEPAGE');
@@ -39,24 +39,27 @@ class gdz_pagebuilder extends Module
 
     public function install()
     {
-        if (parent::install() && $this->registerHook('moduleRoutes') && $this->registerHook('header') && $this->registerHook('displayBackOfficeHeader') && $this->registerHook('displayHome') && $this->registerHook('displayTop') && $this->registerHook('filterCmsContent') && $this->installSamples()) {
+        if (parent::install() && $this->registerHook('moduleRoutes') && $this->registerHook('header') && $this->registerHook('displayBackOfficeHeader') && $this->registerHook('displayHome') && $this->registerHook('displayTop') && $this->registerHook('filterCmsContent')) {
             $res = true;
             $res &= Configuration::updateValue('JPB_RTL', '0');
             $res &= Configuration::updateValue('JPB_CONVERTURL', 0);
-
-            $tab_parent_id = (int)Tab::getIdFromClassName('PRESTAWORK');
+            include(dirname(__FILE__).'/install/gdzinstall.php');
+            $install_class = new gdzPageBuilderInstall();
+            $install_class->createTable();
+            $install_class->installDemo();
+            $tab_parent_id = (int)Tab::getIdFromClassName('GODZILLA');
             if($tab_parent_id <= 0) {
                 $tab = new Tab();
                 $tab->id_parent = 0;
                 $tab->active = 1;
-                $tab->class_name = "PRESTAWORK";
+                $tab->class_name = "GODZILLA";
                 $tab->name = array();
                 foreach (Language::getLanguages(true) as $lang) {
-                    $tab->name[$lang['id_lang']] = 'PRESTAWORK';
+                    $tab->name[$lang['id_lang']] = 'GODZILLA';
                 }
                 if(!$tab->add()) return false;
             }
-            if(((int)Tab::getIdFromClassName('PRESTAWORK') > 0) && ((int)Tab::getIdFromClassName('AdminGdzpagebuilderDashboard') <= 0)) {
+            if(((int)Tab::getIdFromClassName('GODZILLA') > 0) && ((int)Tab::getIdFromClassName('AdminGdzpagebuilderDashboard') <= 0)) {
                 $tab = new Tab();
                 $tab->active = 1;
                 $tab->class_name = "AdminGdzpagebuilderDashboard";
@@ -66,7 +69,7 @@ class gdz_pagebuilder extends Module
                 foreach (Language::getLanguages(true) as $lang) {
                     $tab->name[$lang['id_lang']] = 'Page Builder';
                 }
-                $tab->id_parent = (int)Tab::getIdFromClassName('PRESTAWORK');
+                $tab->id_parent = (int)Tab::getIdFromClassName('GODZILLA');
                 $tab->module = $this->name;
                 if(!$tab->add()) return false;
                 //add pages menu
@@ -122,30 +125,6 @@ class gdz_pagebuilder extends Module
             return $res;
         }
         return false;
-    }
-    public function installSamples()
-    {
-        $query = '';
-        require_once( dirname(__FILE__).'/install/install.sql.php' );
-        $return = true;
-        if (isset($query) && !empty($query)) {
-            if (!(Db::getInstance()->ExecuteS("SHOW TABLES LIKE '"._DB_PREFIX_."gdz_pagebuilder'"))) {
-                $query = str_replace('_DB_PREFIX_', _DB_PREFIX_, $query);
-                $query = str_replace('_MYSQL_ENGINE_', _MYSQL_ENGINE_, $query);
-                $db_data_settings = preg_split("/;\s*[\r\n]+/", $query);
-                foreach ($db_data_settings as $query) {
-                    $query = trim($query);
-                    if (!empty($query)) {
-                        if (!Db::getInstance()->Execute($query)) {
-                            $return = false;
-                        }
-                    }
-                }
-            }
-        } else {
-            $return = false;
-        }
-        return $return;
     }
     public function uninstall()
     {

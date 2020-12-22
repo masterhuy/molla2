@@ -765,10 +765,21 @@
     font-size: 18px;
     padding:0px 10px;
 }
+.pagebuilder-dialog-checkbox {
+    text-align:center;
+    margin: 30px 0px 0px 10px;
+    font-size: 14px;
+}
+.pagebuilder-dialog-checkbox input {
+    margin-right: 10px;
+}
+#replace-new-url,
+#replace-old-url,
 #library-load-template-name {
     width:200px;
     margin-right: 20px;
 }
+
 #library-template-file {
     width:230px;
     margin-right: 20px;

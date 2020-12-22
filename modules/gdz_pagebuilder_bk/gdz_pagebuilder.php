@@ -14,7 +14,7 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 define('_GDZ_PB_NAME_', 'gdz_pagebuilder');
-//define('_GDZ_PB_PROADDONS_', array('banner', 'service', 'video', 'sliderlayer', 'blog' ,'testimonial', 'popup', 'map', 'menu', 'producttab', 'categoryproduct', 'categorytab', 'countdown', 'bannercountdown', 'instagram', 'hotdeal', 'flashsale'));
+// define('_GDZ_PB_PROADDONS_', array('banner', 'service', 'video', 'sliderlayer', 'blog' ,'testimonial', 'popup', 'map', 'menu', 'producttab', 'categoryproduct', 'categorytab', 'countdown', 'bannercountdown', 'instagram', 'hotdeal', 'flashsale'));
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/gdzHelper.php');
 if (Module::isInstalled('gdz_themesetting')) {
   include_once(_PS_MODULE_DIR_.'gdz_themesetting/gdz_themesetting.php');

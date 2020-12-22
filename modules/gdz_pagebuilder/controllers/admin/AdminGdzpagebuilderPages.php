@@ -7,7 +7,7 @@ Godzilla PageBuilder
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 if (!defined('_PS_VERSION_')) {
@@ -140,7 +140,7 @@ class AdminGdzpagebuilderPagesController extends ModuleAdminControllerCore
             } else {
                 $page = new gdzPage();
             }
-            $page->title = Tools::getValue('title');
+            //$page->title = Tools::getValue('title');
             $page->css_file = Tools::getValue('css_file');
             $page->js_file = Tools::getValue('js_file');
             $page->page_class = Tools::getValue('page_class');
@@ -234,7 +234,7 @@ class AdminGdzpagebuilderPagesController extends ModuleAdminControllerCore
         } elseif (Tools::isSubmit('lang_id_page')) {
             $page_id = (int)Tools::getValue('lang_id_page');
             $src_lang_id = (int)Tools::getValue('src_lang_id');
-            $res = $this->cloneLangData($page_id, $src_lang_id);
+            $res = gdzPageBuilderHelper::cloneLangData($page_id, $src_lang_id);
             if (!$res) {
                 $this->_html .= Tools::displayError('The clone data havent finished.');
             } else {
@@ -252,34 +252,6 @@ class AdminGdzpagebuilderPagesController extends ModuleAdminControllerCore
         } elseif (Tools::getValue('duplicate_id_page')) {
             Tools::redirectAdmin($this->context->link->getAdminLink('AdminGdzpagebuilderPages', true).'&conf=3&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name);
         }
-    }
-    public function cloneLangData($id_page, $src_lang_id)
-    {
-        $langids = Language::getIDs();
-        $id_page = Tools::getValue('lang_id_page');
-        $page = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow('SELECT * FROM '._DB_PREFIX_.'gdz_pagebuilder_pages '.($id_page ? ' WHERE `id_page` = '.$id_page : ''));
-        $params = $page['params'];
-        $rows = (array)Tools::jsonDecode($params);
-        foreach ($rows as $key => $row) {
-            $columns = $rows[$key]->cols;
-            foreach ($columns as $ckey => $column) {
-                $addons = $column->addons;
-                foreach ($addons as $akey => $addon) {
-                    $fields = $addon->fields;
-                    foreach ($fields as $fkey => $field) {
-                        if ($field->multilang == '1') {
-                            foreach ($langids as $lang_id) {
-                                $rows[$key]->cols[$ckey]->addons[$akey]->fields[$fkey]->value->$lang_id = $field->value->$src_lang_id;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        $new_params = Tools::jsonEncode($rows);
-        $page = new gdzPage($id_page);
-        $page->params = $new_params;
-        return $page->update();
     }
     public function genAddonsList()
     {

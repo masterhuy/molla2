@@ -35,9 +35,9 @@
 </a>
 {/if}
 <div class="pb-banner-countdown-text">
-	{if $subtitle}<span class="pb-banner-countdown-subtitle">{$subtitle nofilter}</span>{/if}
-	{if $title}<{$title_tag} class="pb-banner-countdown-desc">{$title nofilter}</{$title_tag}>{/if}
-	{if $description}<div class="pb-banner-countdown-desc">{$description nofilter}</div>{/if}
+	{if $subtitle}<span class="pb-banner-countdown-subtitle"><span>{$subtitle nofilter}</span></span>{/if}
+	{if $title}<{$title_tag} class="pb-banner-countdown-title"><span>{$title nofilter}</span></{$title_tag}>{/if}
+	{if $description}<div class="pb-banner-countdown-desc"><span>{$description nofilter}</span></div>{/if}
 	{if $button_text}<div><div class="pb-banner-countdown-button btn"><span>{$button_text nofilter}</span></div></div>{/if}
 </div>
 <div class="pb-banner-countdown-time countdown">

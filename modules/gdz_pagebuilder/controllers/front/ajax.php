@@ -7,7 +7,7 @@
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/gdzPage.php');
 require_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/gdzTemplate.php');

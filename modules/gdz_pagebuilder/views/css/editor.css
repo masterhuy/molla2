@@ -6,7 +6,7 @@
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 #pagebuilder-panel {
@@ -58,6 +58,7 @@
     padding: 20px 10px;
     border-bottom: 1px solid #dedede;
     cursor: pointer;
+    list-style: none;
 }
 .vertical-panel ul li a {
     font-size: 12px;
@@ -105,9 +106,11 @@ ul.pagebuilder-addons > li {
 ul.pagebuilder-addons > li:hover {
     box-shadow: 0px 8px 10px #ccc;
 }
+.vertical-panel ul li.pro,
 ul.pagebuilder-addons > li.pro {
     position: relative;
 }
+.vertical-panel ul li.pro::before,
 ul.pagebuilder-addons > li.pro::before {
     content:'pro';
     position: absolute;
@@ -121,9 +124,11 @@ ul.pagebuilder-addons > li.pro::before {
 .addon-widget.disabled {
     position: relative;
 }
+.vertical-panel ul li.pro a,
+.vertical-panel ul li.pro a i,
 .addon-widget.disabled .addon-title,
 .addon-widget.disabled .element-title {
-      opacity: 0.4;
+    opacity: 0.4;
 }
 .hover-text {
     display:none;
@@ -776,6 +781,9 @@ ul.template-icons {
   padding:10px 0px;
   background: #f4f4f4;
 }
+.studio-list h3,.page-list h3 {
+  padding:0px 15px;
+}
 .category-box {
   padding: 10px 15px;
 }
@@ -795,12 +803,12 @@ ul.template-icons {
   margin: 12px 0px;
   transition: all 0.3s;
   position: relative;
+  border: 1px solid #e5e5e5;
 }
 .studio-box img {
   width: 100%;
 }
 .studio-box:hover {
-  box-shadow: 0px 3px 4px #333;
 }
 .studio-box::after {
   content: ' ';

@@ -213,6 +213,9 @@
     display:none;
 }
 /*.addon-box.active .pb-addon-tools,*/
+.addon-box[data-name="grid"] > .pb-addon-tools {
+    top: 0!important;
+}
 .addon-box:hover .pb-addon-tools {
     display:block;
     cursor: pointer;
@@ -472,4 +475,51 @@
 }
 #pb-right-menu li a i {
     margin-right: 6px;
+}
+
+.grid_row {
+    display: flex;
+}
+.grid_column {
+    min-height: 50px;
+    flex: 1;
+    text-align: center;
+    border: 1px dashed #888;
+    margin: 5px;
+}
+/***** Loading *****/
+.lds-ring {
+    margin: auto;
+    padding: 15px;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #4aa1ea transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

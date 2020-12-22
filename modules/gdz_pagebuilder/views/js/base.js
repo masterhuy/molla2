@@ -1,30 +1,35 @@
+function triggerCarousel(carousel) {
+  var c_lazyload = false;
+  // console.log(typeof gdzSetting);
+  if(typeof gdzSetting !== 'undefined') {
+    var c_lazyload = gdzSetting.carousel_lazyload;
+  }
+  carousel.owlCarousel({
+    loop:true,
+    margin:carousel.data("margin"),
+    nav:carousel.data("nav"),
+    dots:carousel.data("dots"),
+    autoplay:carousel.data("auto"),
+    rewind:carousel.data("rewind"),
+    slideBy:carousel.data("slidebypage"),
+    lazyLoad:c_lazyload,
+    responsive: {
+      0:{
+        items:carousel.data("xs")
+      },
+      576:{
+        items:carousel.data("sm")
+      },
+      992:{
+        items:carousel.data("md")
+      }
+    }
+  });
+}
 jQuery(function ($) {
-    var c_lazyload = false;
-    if(gdzSetting.carousel_lazyload)
-      var c_lazyload = true;
     $.each( $('.owl-carousel'), function( key, value ) {
         carousel = $(this);
-        carousel.owlCarousel({
-            loop:true,
-            margin:carousel.data("margin"),
-            nav:carousel.data("nav"),
-            dots:carousel.data("dots"),
-            autoplay:carousel.data("auto"),
-            rewind:carousel.data("rewind"),
-            slideBy:carousel.data("slidebypage"),
-            lazyLoad:c_lazyload,
-            responsive: {
-                0:{
-                    items:carousel.data("xs")
-                },
-                576:{
-                    items:carousel.data("sm")
-                },
-                992:{
-                    items:carousel.data("md")
-                }
-            }
-        });
+        triggerCarousel(carousel);
     });
 
     $.each( $('.countdown'), function( key, value ) {

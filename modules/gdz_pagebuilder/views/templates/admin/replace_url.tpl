@@ -46,7 +46,7 @@
                         <button id="replace-url-btn" class="pagebuilder-dialog-btn"><span class="elementor-state-icon"></span>{l s='Replace' mod='gdz_pagebuilder'}</button>
                     </div>
                     <div class="pagebuilder-dialog-checkbox">
-                        <input type="checkbox" name="all_pages" id="replace-all-pages" value="1" />Replace in all pages
+                        <input type="checkbox" name="all_pages" id="replace-all-pages" value="1" />{l s='Replace in all pages' mod='gdz_pagebuilder'}
                     </div>
               	</form>
             </div>

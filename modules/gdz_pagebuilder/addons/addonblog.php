@@ -7,7 +7,7 @@ Godzilla PageBuilder
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 if (!defined('_PS_VERSION_')) {
@@ -273,7 +273,7 @@ class gdzAddonBlog extends gdzAddonBase
                 'label' => $this->l('ReWind Navigation'),
                 'lang' => '0',
                 'desc' => 'Enable/Disable ReWind Navigation',
-                'default' => '0'
+                'default' => '1'
             ),
             array(
                 'type' => 'checkbox2',

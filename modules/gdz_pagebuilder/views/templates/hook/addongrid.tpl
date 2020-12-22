@@ -1,4 +1,4 @@
-{if $page.page_name|strpos:'preview'}
+{if $page.page_name|strpos:'preview' ||  $page.page_name|strpos:'gdz_pagebuilder'}
 <div class="grid">
     <div class="grid_row row">
         {foreach $grid as $g}

@@ -7,7 +7,7 @@
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 use PrestaShop\PrestaShop\Adapter\Image\ImageRetriever;
@@ -71,7 +71,7 @@ class gdzProductHelper extends Module
         LIMIT 0,'.$total_config;
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql, true, false);
-
+        //print_r($result); exit;
         // Modify SQL result
         $result = Product::getProductsProperties($id_lang, $result);
 

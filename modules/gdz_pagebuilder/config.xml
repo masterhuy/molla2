@@ -4,7 +4,7 @@
     <displayName><![CDATA[Godzilla Pagebuilder]]></displayName>
     <version><![CDATA[1.0.0]]></version>
     <description><![CDATA[Page Builder For Prestashop.]]></description>
-    <author><![CDATA[prestawork]]></author>
+    <author><![CDATA[GodZilla]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>
     <need_instance>0</need_instance>

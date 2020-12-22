@@ -16,7 +16,7 @@ if (!defined('_PS_VERSION_')) {
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/addons/addonbase.php');
 include_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/productHelper.php');
 if (Module::isInstalled('gdz_blog')) {
-    include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzBlogHelper.php');
+    include_once(_PS_MODULE_DIR_.'gdz_blog/classes/gdzblogHelper.php');
     include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
 }
 class gdzAddonBlog extends gdzAddonBase
@@ -273,7 +273,7 @@ class gdzAddonBlog extends gdzAddonBase
                 'label' => $this->l('ReWind Navigation'),
                 'lang' => '0',
                 'desc' => 'Enable/Disable ReWind Navigation',
-                'default' => '1'
+                'default' => '0'
             ),
             array(
                 'type' => 'checkbox2',
@@ -338,7 +338,7 @@ class gdzAddonBlog extends gdzAddonBase
         $cols = $addon->fields[16]->value;
         $cols_arr = array();
         if($cols)
-            $cols_arr = explode("-", $cols);        
+            $cols_arr = explode("-", $cols);
         $posts = $this->getPost($addon->fields);
         if(!isset($posts) || count($posts) == 0) return;
         $this->context->smarty->assign(

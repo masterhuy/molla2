@@ -7,7 +7,7 @@ Godzilla PageBuilder
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-*  @Website: https://www.prestawork.com
+*  @Website: https://www.godzillabuilder.com
 */
 
 use PageBuilder\Editor;
@@ -24,7 +24,7 @@ class gdzPagebuilderEditorController extends ModuleAdminController
     public function __construct()
     {
         $this->bootstrap = true;
-        $this->display_header = false;
+        $this->display_header = true;
         parent::__construct();
         if (!$this->module->active) {
             Tools::redirectAdmin($this->context->link->getAdminLink('AdminHome'));
@@ -37,8 +37,11 @@ class gdzPagebuilderEditorController extends ModuleAdminController
         $this->initHeader();
     }
     public function setMedia($isNewTheme = false){
-
-        $this->addJquery();
+        if (version_compare(_PS_VERSION_, '1.7.7.0', '>=')) {
+            parent::setMedia();
+        } else {
+            $this->addJquery();
+        }
         $this->addJqueryPlugin('fancybox');
         $this->addJqueryPlugin('chosen');
         $this->addJqueryPlugin('autocomplete');
@@ -81,6 +84,7 @@ class gdzPagebuilderEditorController extends ModuleAdminController
             _MODULE_DIR_._GDZ_PB_NAME_.'/lib/jquery.countdown.js',
             _MODULE_DIR_._GDZ_PB_NAME_.'/lib/bootstrap-colorpicker/bootstrap-colorpicker.js',
             _MODULE_DIR_._GDZ_PB_NAME_.'/views/js/lodash.js',
+            _MODULE_DIR_._GDZ_PB_NAME_.'/views/js/base.js',
             _MODULE_DIR_._GDZ_PB_NAME_.'/views/js/editor.js',
             _MODULE_DIR_._GDZ_PB_NAME_.'/views/js/configuration.js',
             _MODULE_DIR_._GDZ_PB_NAME_.'/views/js/input.js',
@@ -235,7 +239,9 @@ class gdzPagebuilderEditorController extends ModuleAdminController
     public function ajaxProcessDownloadThemeZip()
     {
         $filename = "themeSetting.zip";
-        $zipname = "studio";
+        $template = file_get_contents('zip://test.zip#template.xml');
+        $template = simplexml_load_string($template);
+        $zipname = (string)$template->section->name;
         if (file_exists($filename)) {
             header("Content-type: application/zip");
             header("Content-Disposition: attachment; filename=".$zipname.".zip");
@@ -308,7 +314,7 @@ class gdzPagebuilderEditorController extends ModuleAdminController
                         $zip->addFile($_SERVER['DOCUMENT_ROOT'].$images[0], $preview);
                         $xml['preview'] = $preview;
                     }
-                    $zip->addFromString("studio.xml", $this->createThemeXml($xml));
+                    $zip->addFromString("template.xml", $this->createThemeXml($xml));
                     $zip->close();
                     $rs['url'] = $this->context->link->getAdminLink('gdzPagebuilderEditor').'&ajax=1&action=DownloadThemeZip';
                 }
@@ -393,6 +399,40 @@ class gdzPagebuilderEditorController extends ModuleAdminController
                     $rs['err_mes'] = $this->l('Error in Replace Url.');
                 } else {
                     $rs['message'] = $this->l('all urls replaced success.');
+                }
+            }
+
+        } catch (Exception $e) {
+            $rs['success'] = false;
+            $rs['err_mes'] = $e->getMessage();
+        }
+        die(Tools::jsonEncode($rs));
+    }
+    public function ajaxProcessCopyLang() {
+        try {
+            $rs = array('success' => true);
+            $context = Context::getContext();
+            $src_lang_id = (int)Tools::getValue('source_lang');
+            $id_page = (int)Tools::getValue('id_page');
+            $all_pages = (int)Tools::getValue('copy_all_pages');
+            if($all_pages == 1) {
+                $pages = gdzPageBuilderHelper::getPages();
+                foreach ($pages as $_page) {
+                  $res = gdzPageBuilderHelper::cloneLangData($_page['id_page'], $src_lang_id);
+                  if (!$res) {
+                      $rs['success'] = false;
+                      $rs['err_mes'] = $this->l('Error in Copy Language in page '.$_page['title']);
+                      die(Tools::jsonEncode($rs));
+                  }
+                }
+                $rs['message'] = $this->l('all pages copied language success.');
+            } else {
+                $res = gdzPageBuilderHelper::cloneLangData($id_page, $src_lang_id);
+                if (!$res) {
+                    $rs['success'] = false;
+                    $rs['err_mes'] = $this->l('Error in Copy Language.');
+                } else {
+                    $rs['message'] = $this->l('The Page copied language success.');
                 }
             }
 

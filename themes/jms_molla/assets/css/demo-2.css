@@ -1671,7 +1671,8 @@ a:focus {
 
 .post-readmore {
   font-size: 1.5rem;
-  color: #c96; }
+  color: #c96;
+  text-transform: uppercase; }
 
 .pb-blog .post-title {
   font-weight: 500; }

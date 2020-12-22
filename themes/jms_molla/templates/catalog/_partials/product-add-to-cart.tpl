@@ -46,6 +46,7 @@
                         class="btn-default add-to-cart product-btn cart-button
                         {if $product.quantity < 1}disabled{/if}"
                         data-button-action="add-to-cart"
+                        data-dismiss="modal"
                         type="submit"
                         {if !$product.add_to_cart_url}disabled{/if}
                     >
