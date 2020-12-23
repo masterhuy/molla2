@@ -219,6 +219,9 @@ $secondary-color: #19b395;
 		margin-bottom: 2.4rem;
 	}
 	.email_subscription{
+		form{
+			background-color: #fff;
+		}
 		.form-control{
 			border: .1rem solid #dadada;
 			&::placeholder{

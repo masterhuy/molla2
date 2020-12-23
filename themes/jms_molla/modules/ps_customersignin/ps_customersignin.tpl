@@ -25,19 +25,19 @@
 <div class="header-dropdown user-info">
 	{if $logged}
 		<div class="header-dropdown">
-			<a href="#" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}">
+			<a href="#" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}">
 				{$customerName}
 			</a>
 			<div class="header-menu">
 				<ul>
-					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>
-					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
+					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='My Account' d='Shop.Theme.Customeraccount'} </a></li>
+					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
 					<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 				</ul>
 			</div>
 		</div>
 	{else}
-		<a href="{$link->getPageLink('my-account', true)}" title="{l s='Sign in' d='Shop.Theme.CustomerAccount'}">
+		<a href="{$link->getPageLink('my-account', true)}" title="{l s='Sign in' d='Shop.Theme.Customeraccount'}">
 			{l s='Sign in / Sign up' d='Shop.Theme.Actions'}
 		</a>
 	{/if}

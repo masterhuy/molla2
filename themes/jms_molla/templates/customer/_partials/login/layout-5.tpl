@@ -28,12 +28,12 @@
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#tab-login">
-                        {l s='Sign In' d='Shop.Theme.CustomerAccount'}
+                        {l s='Sign In' d='Shop.Theme.Customeraccount'}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#tab-register">
-                        {l s='Register' d='Shop.Theme.CustomerAccount'}
+                        {l s='Register' d='Shop.Theme.Customeraccount'}
                     </a>
                 </li>
             </ul>

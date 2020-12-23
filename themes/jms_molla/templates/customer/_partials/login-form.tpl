@@ -16,14 +16,14 @@
         <input type="hidden" name="submitLogin" value="1">
         {block name='form_buttons'}
         <button class="btn btn-outline-primary-2 btn-minwidth-sm text-uppercase" data-link-action="sign-in" type="submit" class="form-control-submit">
-            {l s='Log in' d='Shop.Theme.Actions'}
+            {l s='Log in' d='Shop.Theme.Customeraccount'}
             <i class="icon-long-arrow-right"></i>
         </button>
         {/block}
         <div class="authentication-links">
             <div class="forgot-password">
                 <a href="{$urls.pages.password}" rel="nofollow">
-                    {l s='Forgot Your Password?' d='Shop.Theme.CustomerAccount'}
+                    {l s='Forgot your password?' d='Shop.Theme.Customeraccount'}
                 </a>
             </div>
         </div>

@@ -41,11 +41,7 @@
         if (jsonData) {
             if (jsonData.id_product && jsonData.comments_nb) {
                 $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
-                if (jsonData.comments_nb > 1){
-                    $('.comments-nb', productReview).html('<span class="ratings-text">( '+jsonData.comments_nb+' Reviews )</span>');
-                }else{
-                    $('.comments-nb', productReview).html('<span class="ratings-text">( '+jsonData.comments_nb+' Review )</span>');
-                }
+                $('.comments-nb', productReview).html('<span class="ratings-text">( '+jsonData.comments_nb+' {l s='Reviews' d='Modules.Productcomments.Shop'} )</span>');
                 productReview.closest('.thumbnail-container').addClass('has-reviews');
                 productReview.removeClass('empty');
             }
@@ -55,7 +51,7 @@
 </script>
 <div id="review">
     <div id="product-list-reviews-{$product.id}" class="product-list-reviews-{$product.id} product-list-reviews empty">
-        <div class="grade-stars small-stars"><span class="ratings-text">( 0 Review )</span></div>
+        <div class="grade-stars small-stars"><span class="ratings-text">( 0 {l s='Review' d='Modules.Productcomments.Shop'} )</span></div>
         <div class="comments-nb"></div>
     </div>
 </div>

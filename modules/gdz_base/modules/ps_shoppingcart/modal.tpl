@@ -45,7 +45,7 @@
               {/if}
               <p>{l s='Total:' d='Shop.Theme.Checkout'}{$cart.totals.total.value} {$cart.labels.tax_short}</p>
               <a class="btn-default" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</a>
-              <a href="{$cart_url}" class="btn-default">{l s='proceed to checkout' d='Shop.Theme.Actions'}</a>
+              <a href="{$cart_url}" class="btn-default">{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
             </div>
           </div>
         </div>

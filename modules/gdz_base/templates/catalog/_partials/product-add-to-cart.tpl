@@ -44,7 +44,7 @@
                 </div>
       		    <div class="add">
                     <button
-                        title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}"
+                        title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}"
                         class="btn-default add-to-cart product-btn cart-button
                         {if $product.quantity < 1}disabled{/if}"
                         data-button-action="add-to-cart"

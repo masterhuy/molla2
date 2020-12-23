@@ -29,7 +29,7 @@
 		<input type="hidden" name="orderby" value="position" />
 		<input type="hidden" name="orderway" value="desc" />
 		<div class="input-group">
-			<input type="text" name="search_query" placeholder="{l s='Search product ...' mod='gdz_ajaxsearch'}" class="gdz-search-input form-control search-input" />
+			<input type="text" name="search_query" placeholder="{l s='Search product ...' d='Shop.Theme.Catalog'}" class="gdz-search-input form-control search-input" />
 			<button type="submit" name="submit_search" class="button-search">
 				<i class="icon-search"></i>
 			</button>

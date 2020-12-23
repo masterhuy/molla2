@@ -99,7 +99,7 @@
             {block name="footer"}
                 {include file="_partials/footer.tpl"}
             {/block}
-            <button id="scroll-top" title="Back to Top" class="show">
+            <button id="scroll-top" title="{l s='Back to top' d='Shop.Theme.Actions'}" class="show">
                 <i class="icon-arrow-up"></i>
             </button>
         </div>

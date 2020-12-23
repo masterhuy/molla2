@@ -157,7 +157,7 @@
 			padding-bottom: 1rem;
 			span{
 				margin-left: -1.35rem;
-				transition: all .35s ease;
+				transition: margin .35s ease;
 			}
 			&:hover{
 				span{
@@ -1694,8 +1694,13 @@
 		position: static;
 		margin-top: 2.7rem;
 	}
+	.ajax-add-to-cart span{
+		width: 100%;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	}
 }
-
 .product-miniature .product-action{
 	position: absolute;
 	left: 0;

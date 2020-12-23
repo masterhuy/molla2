@@ -1103,6 +1103,19 @@
 		}
 	}
 }
+#review-nav{
+	#product-comments > .row{
+		margin-left: 0;
+		margin-right: 0;
+		> div{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.comments-note{
+		display: none;
+	}
+}
 
 .reviews {
 	h3 {

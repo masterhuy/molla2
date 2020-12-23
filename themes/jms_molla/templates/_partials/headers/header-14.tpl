@@ -65,7 +65,7 @@
                 <div class="layout-column col-xl-2 col-lg-3 col-right">
                     <div class="row">
                         <div class="account">
-                            <a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}">
+                            <a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.Customeraccount'}">
                                 <i class="icon-user"></i>
                                 <span class="text">{l s='Account' d='Shop.Theme.Actions'}</span>
                             </a>

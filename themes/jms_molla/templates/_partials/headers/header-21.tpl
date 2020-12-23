@@ -52,7 +52,7 @@
                         {if ($gdzSetting.wishlist == 1)}
                         {/if}
                         <li>
-                            <a href="index.php?id_cms=4&controller=cms">{l s='About Us' d='Shop.jmstheme'}</a>
+                            <a href="index.php?id_cms=4&controller=cms">{l s='About us' d='Shop.jmstheme'}</a>
                         </li>
                         <li>
                             <a href="index.php?controller=contact">{l s='Contact Us' d='Shop.jmstheme'}</a>

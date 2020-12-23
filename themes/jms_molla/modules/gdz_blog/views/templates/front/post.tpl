@@ -56,19 +56,19 @@
 						<ul class="post-meta">
 							<li class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</li>
 							{if $gdz_blog_setting.GDZBLOG_SHOW_VIEWS}
-								<li class="post-views">{$post.views nofilter} <span>{l s='Views' mod='gdz_blog'}</span></li>		
+								<li class="post-views">{$post.views nofilter} <span>{l s='Views' d='Modules.Gdzblog.Post'}</span></li>		
 							{/if}
 							{if $gdz_blog_setting.GDZBLOG_SHOW_COMMENTS}
 								<li class="post-comment-count">
 									{$comments|@count nofilter}
-									<span> {l s='Comments' mod='gdz_blog'}</span>
+									<span> {l s='Comments' d='Modules.Gdzblog.Post'}</span>
 								</li>
 							{/if}
 						</ul>
 						<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
 						{if $gdz_blog_setting.GDZBLOG_SHOW_CATEGORY}
 							<div class="post-category">
-								<span>{l s='Category' mod='gdz_blog'} :</span> 
+								<span>{l s='Category' d='Modules.Gdzblog.Post'} :</span> 
 								<a href="{gdz_blog::getPageLink('gdz_blog-category', $catparams) nofilter}">{$post.category_name nofilter}</a>
 							</div>
 						{/if}
@@ -110,7 +110,7 @@
 							{if $gdz_blog_setting.GDZBLOG_FACEBOOK_COMMENT == 0}
 								{if $msg == 1}
 									<div class="success">
-										{l s='Your comment submited' d='Modules.JmsBlog'} ! {if $gdz_blog_setting.GDZBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' d='Modules.JmsBlog'}.{/if}
+										{l s='Your comment submited' d='Modules.Gdzblog.Post'} ! {if $gdz_blog_setting.GDZBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' d='Modules.Gdzblog.Post'}.{/if}
 									</div>
 								{/if}
 								{if $cerrors|@count gt 0}
@@ -124,7 +124,7 @@
 									<div id="accordion" class="panel-group">
 										<div class="panels">
 											<div class="comment-heading">
-												<h3>{l s='Comments' d='Modules.JmsBlog'}</h3>
+												<h3>{l s='Comments' d='Modules.Gdzblog.Post'}</h3>
 											</div>
 											<div id="post-comments">
 												{foreach from=$comments item=comment key = k}
@@ -149,27 +149,27 @@
 									<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=gdz_blog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">
 										<div class="row">
 											<div class="col-sm-12">
-												<h4 class="heading">{l s='Leave A Reply' mod='gdz_blog'}</h4>
-												<p class="h-info">{l s='Your email address will not be published. Required fields are marked' mod='gdz_blog'} *</p>
+												<h4 class="heading">{l s='Leave A Reply' d='Modules.Gdzblog.Post'}</h4>
+												<p class="h-info">{l s='Your email address will not be published. Required fields are marked' d='Modules.Gdzblog.Post'} *</p>
 											</div>
 										</div>
 										<div class="form-group">
-											<textarea id="comment" placeholder="Your message" class="form-control" name="comment" rows="3" required></textarea>
+											<textarea id="comment" placeholder="{l s='Your message' d='Modules.Gdzblog.Post'}" class="form-control" name="comment" rows="3" required></textarea>
 										</div>
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-sm-12">
 												<div class="form-group">
-													<input id="customer_name" placeholder="Name *" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
+													<input id="customer_name" placeholder="{l s='Name' d='Modules.Gdzblog.Post'} *" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
 												</div>
 											</div>
 											<div class="col-lg-6 col-md-6 col-sm-12">
 												<div class="form-group">
-													<input id="comment_title" placeholder="Email *" class="form-control" name="email" type="text" value="{$customer.email}" required />
+													<input id="comment_title" placeholder="{l s='Email' d='Modules.Gdzblog.Post'} *" class="form-control" name="email" type="text" value="{$customer.email}" required />
 												</div>
 											</div>
 											<div class="col-lg-12 col-md-12 col-sm-12">
 												<div class="form-group">
-													<input id="customer_site" placeholder="Website" class="form-control" name="customer_site" type="text" value=""/>
+													<input id="customer_site" placeholder="{l s='Website' d='Modules.Gdzblog.Post'}" class="form-control" name="customer_site" type="text" value=""/>
 												</div>
 											</div>
 										</div>
@@ -177,7 +177,7 @@
 											<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 											<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 											<button id="submitComment" class="btn btn-outline-primary-2 text-uppercase" name="submitComment" type="submit">
-												{l s='Post Comment' mod='gdz_blog'}
+												{l s='Post Comment' d='Modules.Gdzblog.Post'}
 												<i class="icon-long-arrow-right"></i>
 											</button>
 										</div>
@@ -185,7 +185,7 @@
 								</div>
 								{/if}
 								{if !$gdz_blog_setting.GDZBLOG_ALLOW_GUEST_COMMENT && !$logged}
-									{l s='Please Login to comment' d='Modules.JmsBlog'}
+									{l s='Please Login to comment' d='Modules.Gdzblog.Post'}
 								{/if}
 							{else}
 								{include file="modules/gdz_blog/views/templates/front/comment_facebook.tpl"}

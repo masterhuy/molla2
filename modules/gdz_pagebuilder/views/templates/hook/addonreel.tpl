@@ -54,7 +54,7 @@
                                     <input type="hidden" name="qty" value="1" min="{$product->minimal_quantity}">
                                     <input type="hidden" name="add" value="1">
                                     <input type="hidden" name="action" value="update">
-                                    <input type="submit" class="btn btn-default" value="{l s='Add to Cart' mod='gdz_reels'}">
+                                    <input type="submit" class="btn btn-default" value="{l s='Add to cart' mod='gdz_reels'}">
                                 </div>
                             </div>
                         </form>

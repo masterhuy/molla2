@@ -33,12 +33,12 @@
         <div class="row">
             <div class="col-md-8 col-sm-12" id="product-comments-list-header">
                 <div class="comments-nb">
-                    <span>Based on {$nb_comments} reviews</span>
+                    <span>{l s='Based on' d='Modules.Productcomments.Shop'} {$nb_comments} {l s='Reviews' d='Modules.Productcomments.Shop'}</span>
                 </div>
                 {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
             </div>
             <div class="col-md-4 col-sm-12">
-                <button class="btn-default post-product-comment write-review">
+                <button class="btn btn-outline-dark post-product-comment write-review">
                     {l s='Write a review' d='Modules.Productcomments.Shop'}
                 </button>
             </div>

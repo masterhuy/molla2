@@ -142,7 +142,7 @@
                 var data_address = product.address;
                 var data_product = product.title;
                 var data_product_link = '<a target="_blank" href="' + product.product_link + '">' + product.title + '</a>';
-                var data_time = '<small>About ' + product.time + ' ago </small>';
+                var data_time = '<small>{l s='About' d='Shop.Theme.Actions'} ' + product.time + ' {l s='ago' d='Shop.Theme.Actions'}</small>';
                 var image_html = '';
                 var img = $('<img src="' + product.image_link + '">');
                 var image_html = $('<div>').append($(img).clone()).html();

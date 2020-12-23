@@ -69,7 +69,7 @@
 					    {if isset($configuration.is_catalog) && !$configuration.is_catalog}
 							<button {if $product.quantity < 1 && !$product.add_to_cart_url}disabled{/if} data-button-action="add-to-cart" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 								<span class="icon-basket"></span>
-								{l s='Add To Cart' mod='gdz_flashsale'}
+								{l s='Add to cart' mod='gdz_flashsale'}
 							</button>
 						{/if}
 				    </div>

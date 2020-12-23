@@ -25,13 +25,13 @@
 *}
 {if $widget_setting.GBW_SB_SHOW_CATEGORYMENU}
 	<aside class="blog-widget widget-categories">
-		<h3 class="widget-title"><span>{l s='Categories' mod='gdz_blog'}</span></h3>
+		<h3 class="widget-title"><span>{l s='Categories' d='Modules.Gdzblog.Sidebar-widget'}</span></h3>
 		<ul>{$category_menu nofilter}</ul>
 	</aside>
 {/if}
 {if $widget_setting.GBW_SB_SHOW_POPULAR}
 	<aside class="blog-widget widget-popular">
-		<h3 class="widget-title"><span>{l s='Popular Posts' mod='gdz_blog'}</span></h3>
+		<h3 class="widget-title"><span>{l s='Popular Posts' d='Modules.Gdzblog.Sidebar-widget'}</span></h3>
 		{foreach from=$popularpost key=k item=post}
 			{assign var="show_view" value=$post.views + 1}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
@@ -57,7 +57,7 @@
 {/if}
 {if $widget_setting.GBW_SB_SHOW_RECENT}
 	<aside class="blog-widget widget-recent">
-		<h3 class="widget-title"><span>{l s='Recent' mod='gdz_blog'}</span></h3>
+		<h3 class="widget-title"><span>{l s='Recent' d='Modules.Gdzblog.Sidebar-widget'}</span></h3>
 		{foreach from=$latestpost key=k item=post}
 			{assign var="show_view" value=$post.views + 1}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
@@ -77,7 +77,7 @@
 {/if}
 {if $widget_setting.GBW_SB_SHOW_LATESTCOMMENT}
 	<aside class="blog-widget widget-recent">
-		<h3 class="widget-title"><span>{l s='Comments' mod='gdz_blog'}</span></h3>
+		<h3 class="widget-title"><span>{l s='Comments' d='Modules.Gdzblog.Sidebar-widget'}</span></h3>
 		{foreach from=$latestcomment key=k item=comment}
 			<article class="comment-item">
 				<img src="{$image_baseurl nofilter}user.png" class="img-responsive">
@@ -89,7 +89,7 @@
 {/if}
 {if $widget_setting.GBW_SB_SHOW_ARCHIVES}
 	<aside class="blog-widget widget-archives">
-		<h3 class="widget-title"><span>{l s='Archives' mod='gdz_blog'}</span></h3>
+		<h3 class="widget-title"><span>{l s='Archives' d='Modules.Gdzblog.Sidebar-widget'}</span></h3>
 		<ul>
 			{foreach from=$archives item=archive}
 				{assign var=aparams value=['archive' => $archive.postmonth]}

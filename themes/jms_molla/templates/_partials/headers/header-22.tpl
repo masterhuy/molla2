@@ -71,7 +71,7 @@
                 </div>
                 <div class="layout-column col-auto">
                     <div class="login">
-                        <a class="white" href="{$link->getPageLink('my-account', true)}" title="{l s='Login / Registration' d='Shop.Theme.CustomerAccount'}">
+                        <a class="white" href="{$link->getPageLink('my-account', true)}" title="{l s='Login / Registration' d='Shop.Theme.Customeraccount'}">
                             <i class="icon-user"></i>
                             <span class="text">{l s='Login / Registration' d='Shop.Theme.Actions'}</span>
                         </a>
