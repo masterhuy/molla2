@@ -1206,6 +1206,9 @@ body#checkout #cart-summary-product-list .media-left {
   left: 1.6rem;
   right: auto; }
 
+#search_filters .ui-slider-horizontal {
+  margin-right: auto; }
+
 /* Product page */
 .product-cover .zoom-icon {
   left: 2rem;

@@ -194,6 +194,7 @@
     padding: .2rem 0 2.9rem;
     margin-bottom: 0;
     max-height: 250px;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 .facet ul li {
@@ -567,6 +568,7 @@
 	left:2rem;
 	list-style: none;
 	padding: 0px;
+	text-align: center;
 }
 .product-flags .product-flag {
 	display: flex;

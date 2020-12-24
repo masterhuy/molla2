@@ -276,8 +276,8 @@
 .product-variants-item input:checked ~ .color::after{
     display: block;
 }
-.product-variants-item.color input:checked ~ .color,
-.product-variants-item.color input:checked ~ .color:hover{
+.product-variants-item input:checked ~ .color,
+.product-variants-item input:checked ~ .color:hover{
     box-shadow: 0 0 0 .1rem #cccccc;
 }
 

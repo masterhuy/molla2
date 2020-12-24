@@ -8788,86 +8788,78 @@ footer .row, header .row {
       transition: all .1s; }
 
 /* Product box 4 */
-.productbox-4:hover .product-action {
-  bottom: 0; }
-
-.productbox-4:hover .wrapp-buttons {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0); }
-
-.productbox-4 .product-flags .product-flag {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
-  letter-spacing: -.01em;
-  padding: .5rem .9rem;
-  min-width: 45px;
-  text-transform: uppercase;
-  width: auto;
-  height: auto;
-  border-radius: 0; }
-
-.productbox-4 .product-flags .on-sale {
-  background-color: #333; }
-
-.productbox-4 .wrapp-buttons {
-  right: 2rem;
-  -webkit-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  transform: translateY(-15px); }
-
-.productbox-4 .category-name {
-  font-weight: 400;
-  color: #ccc;
-  margin-bottom: .2rem;
-  letter-spacing: 0; }
-  .productbox-4 .category-name:hover {
-    color: #666; }
-
-.productbox-4 .product-preview {
-  overflow: hidden; }
-
-.productbox-4 .product-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  margin-bottom: -.4rem; }
-
-.productbox-4 .content_price span.price {
-  font-size: 1.4rem;
-  margin-bottom: .3rem; }
-  .productbox-4 .content_price span.price.new {
-    font-weight: 500; }
-    .productbox-4 .content_price span.price.new.has-discount {
-      font-weight: 400; }
-
-.productbox-4 .product-info {
-  text-align: center;
-  padding-bottom: 1rem; }
-
-.productbox-4 .product-action {
-  top: auto;
-  bottom: -4rem;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  padding: 0;
-  background-color: #fff; }
-  .productbox-4 .product-action .product-btn {
-    border: 0;
-    padding-top: 1.2rem;
-    padding-bottom: 1rem;
-    text-transform: lowercase;
-    border-bottom: .1rem solid #ebebeb; }
-    .productbox-4 .product-action .product-btn:hover {
-      color: #fff; }
-    .productbox-4 .product-action .product-btn span {
-      font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: -.01em; }
+.productbox-4 {
+  margin-bottom: 2rem; }
+  .productbox-4:hover .product-action {
+    bottom: 0; }
+  .productbox-4:hover .wrapp-buttons {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  .productbox-4 .product-flags .product-flag {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    letter-spacing: -.01em;
+    padding: .5rem .9rem;
+    min-width: 45px;
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    border-radius: 0; }
+  .productbox-4 .product-flags .on-sale {
+    background-color: #333; }
+  .productbox-4 .wrapp-buttons {
+    right: 2rem;
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  .productbox-4 .category-name {
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: .2rem;
+    letter-spacing: 0; }
+    .productbox-4 .category-name:hover {
+      color: #666; }
+  .productbox-4 .product-preview {
+    overflow: hidden; }
+  .productbox-4 .product-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: -.4rem; }
+  .productbox-4 .content_price span.price {
+    font-size: 1.4rem;
+    margin-bottom: .3rem; }
+    .productbox-4 .content_price span.price.new {
+      font-weight: 500; }
+      .productbox-4 .content_price span.price.new.has-discount {
+        font-weight: 400; }
+  .productbox-4 .product-info {
+    text-align: center;
+    padding-bottom: 1rem; }
+  .productbox-4 .product-action {
+    top: auto;
+    bottom: -4rem;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 0;
+    background-color: #fff; }
+    .productbox-4 .product-action .product-btn {
+      border: 0;
+      padding-top: 1.2rem;
+      padding-bottom: 1rem;
+      text-transform: lowercase;
+      border-bottom: .1rem solid #ebebeb; }
+      .productbox-4 .product-action .product-btn:hover {
+        color: #fff; }
+      .productbox-4 .product-action .product-btn span {
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: -.01em; }
 
 /* Product box 5 */
 .productbox-5:hover .product-action {
@@ -13841,6 +13833,9 @@ button:focus {
 #category #footer {
   margin-top: 7rem; }
 
+#search #footer {
+  margin-top: 7rem; }
+
 #js-product-list-top .sidebar-toggler {
   display: none; }
 
@@ -15953,6 +15948,8 @@ button:focus {
 
 .blog-widget {
   margin-bottom: 4.6rem; }
+  .blog-widget ~ .block-bestseller {
+    display: none; }
   .blog-widget .item-post:not(:last-child) {
     margin-bottom: 2rem; }
   .blog-widget .item-post .post-created {

@@ -29,7 +29,7 @@
 			{include file="catalog/_partials/miniatures/product-flex.tpl" product=$product}
 		{/foreach}
 	</div>
-	<a class="btn-link" href="{$allBestSellers}">
+	<a class="btn btn-outline-dark" href="{$allBestSellers}">
 		{l s='All best sellers' d='Modules.Bestsellers.Shop'}
 		<i class="icon-long-arrow-right"></i>
 	</a>

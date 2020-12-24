@@ -177,6 +177,9 @@
 }
 .blog-widget{
 	margin-bottom: 4.6rem;
+	~ .block-bestseller{
+		display: none;
+	}
 	.item-post{
 		&:not(:last-child){
 			margin-bottom: 2rem;

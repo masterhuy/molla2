@@ -35,7 +35,7 @@
 			</div>
 			<ul class="clearfix display_list">
 				<li>
-					<a href="#" id="hideBoughtProducts" class="button_account"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Hide products' d='Shop.Theme.Global'}">{l s='Hide Products' d='Shop.Theme.Global'}</a>
+					<a href="#" id="hideBoughtProducts" class="button_account"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Hide products' d='Shop.Theme.Global'}">{l s='Hide products' d='Shop.Theme.Global'}</a>
 					<a href="#" id="showBoughtProducts" class="button_account"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Show products' d='Shop.Theme.Global'}" style="display:none;">{l s='Show products' d='Shop.Theme.Global'}</a>
 				</li>
 				{if count($productsBoughts)}
