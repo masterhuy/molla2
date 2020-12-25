@@ -94,6 +94,9 @@
 				padding: 0;
 			}
 		}
+		.header-right{
+			justify-content: flex-end;
+		}
 		.header-center{
 			justify-content: center;
 		}
@@ -104,9 +107,6 @@
 			font-size: 2.6rem;
 			color: #666;
 			margin-left: -.3rem;
-			&:hover{
-				color: $primary-color;
-			}
 		}
 		#search-form{
 			max-width: 570px;

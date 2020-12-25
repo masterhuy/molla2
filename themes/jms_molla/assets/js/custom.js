@@ -546,6 +546,18 @@ function slickImage(){
     });
 }
 
+
+function paginationToTop(){
+    var $paginationBtn = $('.js-search-link');
+    $paginationBtn.on('click', function (e) {
+        $('html, body').animate({
+            'scrollTop': 0
+        }, 0);
+        e.preventDefault();
+    });
+}
+
+
 jQuery(document).ready(function(){
     $('#hor-menu .gdz-megamenu').jmsMegaMenu({
         event: 'hover',
@@ -563,6 +575,10 @@ jQuery(document).ready(function(){
         event: 'click',
         duration: 100
     });
+    prestashop.on('updateProductList', function (event) {
+        paginationToTop();
+    });
+   
     prestashop.on('clickQuickView', function (e) {
 		setTimeout(function(){ slickImage(); }, 2000);
 	});
@@ -575,6 +591,7 @@ jQuery(document).ready(function(){
         $('#product-modal .owl-stage .owl-item:first-child').addClass('active');
     }, 1000);
 
+    paginationToTop();
     stickyRightColumn();
     stickyRightColumn2();
     imageThumbCarousel();

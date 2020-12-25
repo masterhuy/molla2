@@ -30,6 +30,9 @@
 	&:hover .product-action{
 		top: calc(100% - 4rem);
 	}
+	.product-buttons .btn-icon span{
+		display: inline-flex;
+	}
 	.product-preview{
 		overflow: hidden;
 	}

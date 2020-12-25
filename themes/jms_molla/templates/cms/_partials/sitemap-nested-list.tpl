@@ -26,7 +26,7 @@
   <ul{if isset($is_nested)} class="nested"{/if}>
     {foreach $links as $link}
       <li>
-        <a id="{$link.id}" href="{$link.url}" title="{$link.label}">
+        <a class="color-dark" id="{$link.id}" href="{$link.url}" title="{$link.label}">
           {$link.label}
         </a>
         {if isset($link.children) && $link.children|@count > 0}

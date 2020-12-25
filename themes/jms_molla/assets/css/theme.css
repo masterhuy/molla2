@@ -1012,6 +1012,7 @@ header .row .col-auto {
   float:left;
   min-width: 50px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .store-date-hour .value {
   float:left;

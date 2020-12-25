@@ -278,7 +278,9 @@
   top: 6px;
   left: 0 !important;
 }
-#post-product-comment-modal .modal-dialog{
+
+#post-product-comment-modal .modal-dialog,
+#product-comment-posted-modal .modal-dialog{
   background-color: #fff;
 }
 #post-product-comment-modal .star-content div.star a {

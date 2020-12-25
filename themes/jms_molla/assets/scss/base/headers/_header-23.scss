@@ -139,8 +139,10 @@
 		}
 		.user-info{
 			> a{
-				font-size: 3rem;
 				color: #333;
+				i{
+					font-size: 3rem;
+				}
 			}
 			.text{
 				display: none;
