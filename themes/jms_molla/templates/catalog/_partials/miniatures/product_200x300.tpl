@@ -22,28 +22,28 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="product-miniature js-product-miniature productbox-11 customs" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+<div class="product-miniature js-product-miniature thumbnail-container productbox-11 customs" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="product-preview">
 		{block name='product_thumbnail'}
-		  	<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
+			<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
 				<img class="img-responsive product-img1{if $gdzSetting.carousel_lazyload} owl-lazy{/if}"
-            	    data-src="{$product.cover.bySize.home_default_200x300.url}"
-				    src = "{$product.cover.bySize.home_default_200x300.url}"
-				    alt = "{$product.cover.legend}"
+					data-src="{$product.cover.bySize.home_default_200x300.url}"
+					src = "{$product.cover.bySize.home_default_200x300.url}"
+					alt = "{$product.cover.legend}"
 					title = "{$product.name|escape:'html':'UTF-8'}"
-				    data-full-size-image-url = "{$product.cover.large.url}"
+					data-full-size-image-url = "{$product.cover.large.url}"
 				/>
 				{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1}
 					<img class="img-responsive product-img2"
-					    src = "{$product.images.1.bySize.home_default_200x300.url}"
-					    alt = "{$product.images.1.legend}"
+						src = "{$product.images.1.bySize.home_default_200x300.url}"
+						alt = "{$product.images.1.legend}"
 						title = "{$product.name|escape:'html':'UTF-8'}"
-					    data-full-size-image-url = "{$product.images.1.large.url}"
+						data-full-size-image-url = "{$product.images.1.large.url}"
 					/>
 				{/if}
-		  	</a>
+			</a>
 		{/block}
-        {block name='product_flags'}
+		{block name='product_flags'}
 			<ul class="product-flags">
 				{foreach from=$product.flags item=flag}
 					<li class="product-flag {$flag.type}">{$flag.label}</li>
@@ -64,19 +64,19 @@
 				{/if}
 			</div>
 		</div>
-        <div class="product-action">
-            {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
-                {if $product.quantity >= 1}
-                    <a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                        <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
-                    </a>
-                {else}
-                    <a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
-                        <span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
-                    </a>
-                {/if}
-            {/if}
-        </div>
+		<div class="product-action">
+			{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
+				{if $product.quantity >= 1}
+					<a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+						<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+					</a>
+				{else}
+					<a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+						<span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
+					</a>
+				{/if}
+			{/if}
+		</div>
 		{if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
 			<div class="specific_prices">
 				<div class="countdown-box">
@@ -93,13 +93,13 @@
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
 				{$product.category_name|escape:'html':'UTF-8'}
 			</a>
-	    {/if}
+		{/if}
 		{block name='product_name'}
-        	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>
-        {/block}
-        {if $gdzSetting.productbox_price}
-    		{block name='product_price_and_shipping'}
-    			{if $product.show_price}
+			<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>
+		{/block}
+		{if $gdzSetting.productbox_price}
+			{block name='product_price_and_shipping'}
+				{if $product.show_price}
 					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">
@@ -112,23 +112,23 @@
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
 					</div>
-    			{/if}
-    		{/block}
-        {/if}
-    	<div class="product-short-desc">
-    		{$product.description_short|truncate:300:'...' nofilter}
-    	</div>
+				{/if}
+			{/block}
+		{/if}
+		<div class="product-short-desc">
+			{$product.description_short|truncate:300:'...' nofilter}
+		</div>
 		{if $product.main_variants && $gdzSetting.productbox_variant}
-            {block name='product_variants'}
-                {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-            {/block}
-        {/if}
+			{block name='product_variants'}
+				{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+			{/block}
+		{/if}
 	</div>
 	<div class="product-actions">
-        {if $gdzSetting.productbox_price}
-            {block name='product_price_and_shipping'}
-                {if $product.show_price}
-                    <div class="content_price">
+		{if $gdzSetting.productbox_price}
+			{block name='product_price_and_shipping'}
+				{if $product.show_price}
+					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
 						{if $product.has_discount}
@@ -138,10 +138,10 @@
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
 					</div>
-                {/if}
-            {/block}
-        {/if}
-        {if $gdzSetting.productbox_quickview}
+				{/if}
+			{/block}
+		{/if}
+		{if $gdzSetting.productbox_quickview}
 			<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
 				<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
 			</a>
@@ -157,6 +157,6 @@
 				</a>
 			{/if}
 		{/if}
-    </div>
+	</div>
 </div>
 

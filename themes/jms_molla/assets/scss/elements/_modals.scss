@@ -1,15 +1,24 @@
 /* Modals */
+.quickview-modal{
+	.modal-dialog{
+		max-width: 800px;
+	}
+}
 #blockcart-modal{
 	&.modal{
 		&.fade .modal-dialog{
-			transform: translate(0, 0);
+			top: 40%;
+			transform: translate(0, -50%);
 		}
 		&.show .modal-dialog{
-			transform: translate(0, 20%);
+			top: 50%;
+			transform: translate(0, -50%);
 		}
 	}
 	.modal-dialog{
 		padding: 0 1rem;
+		max-width: 800px;
+		transition: .3s all;
 	}
 	.modal-title{
 		font-weight: 400;

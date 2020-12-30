@@ -30,12 +30,12 @@
                     <i class="mfp-close"></i>
                 </button>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 left">
+                    <div class="col-lg-7 col-md-6 col-sm-12 left">
                         {block name='product_cover_thumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
                         {/block}
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right">
+                    <div class="col-lg-5 col-md-6 col-sm-12 right">
                         {block name='page_header_container'}
                             {block name='page_header'}
                                 <h2 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h2>
@@ -60,34 +60,6 @@
                                         <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                                         <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
 
-                                        {block name='product_pack'}
-                                            {if $packItems}
-                                                <section class="product-pack">
-                                                    <h3 class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</h3>
-                                                    <article>
-                                                        <div class="card">
-                                                            <div class="pack-product-container">
-                                                                <table class="table">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>{l s='Products' d='Shop.Theme.Catalog'}</th>
-                                                                            <th>{l s='Price' d='Shop.Theme.Catalog'}</th>
-                                                                            <th>{l s='Quantity' d='Shop.Theme.Catalog'}</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    {foreach from=$packItems item="product_pack"}
-                                                                        {block name='product_miniature'}
-                                                                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
-                                                                        {/block}
-                                                                    {/foreach}
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                            {/if}
-                                        {/block}
-
                                         {block name='product_discounts'}
                                             {include file='catalog/_partials/product-discounts.tpl'}
                                         {/block}
@@ -103,41 +75,9 @@
                                     </form>
                                 {/block}
                             </div>
-
-                            <ul class="other-info">
-                                {if $product.reference}
-                                    <!-- number of item in stock -->
-                                    <li id="product_reference">
-                                        <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
-                                        <span class="editable">{$product.reference}</span>
-                                    </li>
-                                {/if}
-                                <!-- availability or doesntExist -->
-                                <li id="availability_statut">
-                                    <label id="availability_label">
-                                        {l s='Availability:' d='Shop.Theme.Catalog'}
-                                    </label>
-                                    <span id="availability_value" class="label-availability">
-                                        {if $product.quantity|intval <= 0}
-                                            {l s='Out stock' d='Shop.Theme.Catalog'}
-                                        {else}
-                                            {l s='In stock' d='Shop.Theme.Catalog'}
-                                        {/if}
-                                    </span>
-                                </li>
-                                <li>
-                                    {if $product.additional_shipping_cost > 0}
-                                        <label>{l s='Shipping tax: '}</label>
-                                        <span class="shipping_cost">{$product.additional_shipping_cost}</span>
-                                    {else}
-                                        <label>{l s='Shipping tax:'}</label>
-                                        <span class="shipping_cost">{l s=' Free'}</span>
-                                    {/if}
-                                </li>
-                            </ul>
                         </div>
                         {if $gdzSetting.quickview_sharing}
-                        {hook h='displayProductButtons' product=$product}
+                            {hook h='displayProductButtons' product=$product}
                         {/if}
                     </div>
                 </div>

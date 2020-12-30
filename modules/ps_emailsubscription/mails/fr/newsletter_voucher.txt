@@ -1,11 +1,11 @@
+{shop_url}
 
-[{shop_url}] 
+Bonjour,
 
-Hi, 
+S'abonner à la newsletter
 
-Regarding your newsletter subscription, we are pleased to offer
-you the following voucher: {discount} 
+Merci de vous êtes abonné à notre newsletter. Nous avons le plaisir de vous offrir le bon de réduction suivant : {discount}
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
+[{shop_name}]({shop_url})
 
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

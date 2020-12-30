@@ -39,10 +39,16 @@
 .product-images .thumb-container{
     position: relative;
     list-style-type: none;
-    &.selected::after, &:hover::after{
+    &:hover::after{
         visibility: hidden;
         opacity: 0;
     }
+    &.selected, &.slick-current{
+    	&::after, &:hover::after{
+	        visibility: hidden;
+	        opacity: 0;
+	    }
+	}
     &::after{
         content: '';
         display: block;

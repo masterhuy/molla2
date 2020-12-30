@@ -38,7 +38,7 @@
         {block name='page_content_container'}
             <section id="content" class="page-content">
 				{block name="page_content"}
-					{capture name=path}{l s='Categories' d='Modules.gdz_blog'}{/capture}
+					{capture name=path}{l s='Categories' d='Modules.Gdzblog.Post'}{/capture}
 					{if isset($categories) AND $categories}
 						<div class="cat-post-list more-columns row">
 							{foreach from=$categories item=category}
@@ -58,14 +58,14 @@
 											<div class="cat-intro">{$category.introtext|truncate:120:'...' nofilter}</div>
 										</div>
 										<a class="read-more" href="{gdz_blog::getPageLink('gdz_blog-category', $catparams)}">
-											{l s='Read more' d='Modules.gdz_blog'}
+											{l s='Read more' d='Modules.Gdzblog.Post'}
 										</a>
 									</div>
 								</div>
 							{/foreach}
 						</div>
 					{else}
-						{l s='Sorry, dont have any category in this section' d='Modules.gdz_blog'}
+						{l s='Sorry, dont have any category in this section' d='Modules.Gdzblog.Post'}
 					{/if}
 				{/block}
             </section>

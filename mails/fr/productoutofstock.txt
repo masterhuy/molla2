@@ -2,7 +2,7 @@
 
 Bonjour {firstname} {lastname},
 
-Il y a maintenant moins de {last_qty} articles en stock.
+Il y a maintenant moins de {last_qty} {product} en stock.
 
 Stock restant : {qty}
 
@@ -10,4 +10,4 @@ Renouvelez vos stocks, rendez-vous dans la section Catalogue > Stocks de votre b
 
 [{shop_name}]({shop_url})
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

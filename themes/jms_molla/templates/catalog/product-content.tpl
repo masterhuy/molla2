@@ -42,11 +42,11 @@
                 <h1 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
         {/block}
+
         <div class="rating">
-            {block name='product_reviews'}
-                {hook h='displayProductListReviews' product=$product}
-            {/block}
+            {hook h='displayProductAdditionalInfo' product=$product}
         </div>
+
         {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
         {/block}

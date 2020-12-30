@@ -26,7 +26,7 @@
 /**
  *  Product comments CSS
  */
-.btn-comment-big {
+ .btn-comment-big {
   padding: 13px 16px;
   height: 45px;
 }
@@ -85,7 +85,7 @@
 }
 
 .product-comments-additional-info {
-  margin: 15px 0 4px;
+  margin: 15px 0 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -101,7 +101,7 @@
   align-items: center;
   font-size: 14px;
   color: #f63622;
-  font-weight: 500;
+  font-weight: 300;
   position: relative;
 }
 .product-comments-additional-info .comments-note .grade-stars {
@@ -111,7 +111,7 @@
   overflow: hidden;
 }
 .product-comments-additional-info .comments-note .grade-stars .star-content{
-  top: 7px;
+  top: 6px;
 }
 
 /**
@@ -226,7 +226,7 @@
 .star-content div.star-on,
 .star-content div.star-hover {
   display: block;
-  width: 14px;
+  width: 15.5px;
   height: 14px;
   background: url(../img/small_stars.png) no-repeat 0 0 transparent;
   flex: auto;
@@ -239,7 +239,7 @@
 .small-stars .star-content div.star,
 .small-stars .star-content div.star-on,
 .small-stars .star-content div.star-hover {
-  background: url(../img/small_stars.png) no-repeat 0 0 transparent;
+  background: url(../img/small_stars.png) no-repeat 1px 0 transparent;
   width: 15.5px;
   height: 14px;
 }
@@ -261,17 +261,16 @@
   min-width: 77px;
   display: inline-block;
 }
-
+.product-list-reviews.no-review .grade-stars.small-stars *{
+  display: none;
+}
 .product-list-reviews .grade-stars.small-stars {
   min-width: 77px;
   overflow: hidden;
-}
-
-.product-list-reviews.empty .grade-stars.small-stars {
   background: url(../img/star-empty-full.png) no-repeat 0 0 transparent;
-  padding-left: 77px;
-  height: 23px;
-  background-position: center left;
+}
+.has-reviews .product-list-reviews .grade-stars.small-stars{
+  background: transparent;
 }
 
 .criterion-rating .grade-stars .star-content {

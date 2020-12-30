@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_blog\views\templates\front\post.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="ed4832a84ee072b00a6740f657183598">
+        <source>Views</source>
+        <target>Views</target>
+        <note>Line: 59</note>
+      </trans-unit>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Line: 127</note>
+      </trans-unit>
+      <trans-unit id="3adbdb3ac060038aa0e6e6c138ef9873">
+        <source>Category</source>
+        <target>Category</target>
+        <note>Line: 71</note>
+      </trans-unit>
+      <trans-unit id="1768a313b237a2edc2c4c0fbee60edcb">
+        <source>Your comment submited</source>
+        <target>Your comment submited</target>
+        <note>Line: 113</note>
+      </trans-unit>
+      <trans-unit id="9031a28ed1c50f2485bb0fa4b299ffab">
+        <source>Please waiting approve from Admin</source>
+        <target>Please waiting approve from Admin</target>
+        <note>Line: 113</note>
+      </trans-unit>
+      <trans-unit id="81ff08aa8eb7841d9904efdc6700c566">
+        <source>Leave A Reply</source>
+        <target>Leave A Reply</target>
+        <note>Line: 152</note>
+      </trans-unit>
+      <trans-unit id="69e61e61cc5ef6ee1a283fa69f749350">
+        <source>Your email address will not be published. Required fields are marked</source>
+        <target>Your email address will not be published. Required fields are marked</target>
+        <note>Line: 153</note>
+      </trans-unit>
+      <trans-unit id="cfe1b4b75fb8dc152b124f9305835a11">
+        <source>Your message</source>
+        <target>Your message</target>
+        <note>Line: 157</note>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Line: 162</note>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Line: 167</note>
+      </trans-unit>
+      <trans-unit id="15bbb9d0bbf25e8d2978de1168c749dc">
+        <source>Website</source>
+        <target>Website</target>
+        <note>Line: 172</note>
+      </trans-unit>
+      <trans-unit id="55db28530640e9fb41ebf71ea8afce72">
+        <source>Post Comment</source>
+        <target>Post Comment</target>
+        <note>Line: 180</note>
+      </trans-unit>
+      <trans-unit id="5f632aa17759e66788e5eddffc496db7">
+        <source>Please Login to comment</source>
+        <target>Please Login to comment</target>
+        <note>Line: 188</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_blog\views\templates\front\archive.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="e727b00944f81e1d0a95c12886ac4641">
+        <source>Archive</source>
+        <target>Archive</target>
+        <note>Line: 29</note>
+      </trans-unit>
+      <trans-unit id="ed4832a84ee072b00a6740f657183598">
+        <source>Views</source>
+        <target>Views</target>
+        <note>Line: 48</note>
+      </trans-unit>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Line: 51</note>
+      </trans-unit>
+      <trans-unit id="13b5bfe96f3e2fe411c9f66f4a582adf">
+        <source>in</source>
+        <target>in</target>
+        <note>Line: 57</note>
+      </trans-unit>
+      <trans-unit id="8f25a8a29f4eaeafcaf475c388eee4ef">
+        <source>Continue reading</source>
+        <target>Continue reading</target>
+        <note>Line: 62</note>
+      </trans-unit>
+      <trans-unit id="12d0a49580e2aae93bf1e3c50ac75dda">
+        <source>Sorry, dont have any post in this category</source>
+        <target>Sorry, dont have any post in this category</target>
+        <note>Line: 67</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

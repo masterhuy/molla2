@@ -63,16 +63,16 @@
 												<ul class="post-meta">
 													<li class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</li>
 													{if $gdz_blog_setting.GDZBLOG_SHOW_VIEWS}
-														<li class="post-views">{$post.views nofilter} <span>{l s='Views' mod='gdz_blog'}</span></li>		
+														<li class="post-views">{$post.views nofilter} <span>{l s='Views' d='Modules.Gdzblog.Post'}</span></li>		
 													{/if}
 													{if $gdz_blog_setting.GDZBLOG_SHOW_COMMENTS}
 														<li>
 															<span>
 																{$post.comment_count|escape:'html':'UTF-8'}
 																{if $post.comment_count > 0}
-																	{l s='Comments' d='Modules.JmsPagebuilder'}
+																	{l s='Comments' d='Modules.Gdzblog.Post'}
 																{else}
-																	{l s='Comment' d='Modules.JmsPagebuilder'}
+																	{l s='Comment' d='Modules.Gdzblog.Post'}
 																{/if}
 															</span>
 														</li>
@@ -80,11 +80,11 @@
 												</ul>
 												<div class="post-info">
 													<h4 class="post-title">
-														<a class="blog-list-title" href="{gdz_blog::getPageLink('gdz_blog-post', $params)}" alt="{l s='Blog Images' d='Modules.gdz_blog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+														<a class="blog-list-title" href="{gdz_blog::getPageLink('gdz_blog-post', $params)}" alt="{l s='Blog Images' d='Modules.Gdzblog.Post'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
 													</h4>
 													{if $gdz_blog_setting.GDZBLOG_SHOW_CATEGORY}
 														<div class="post-category">
-															<span>{l s='in' mod='gdz_blog'} </span> 
+															<span>{l s='in' d='Modules.Gdzblog.Post'} </span> 
 															<a href="{gdz_blog::getPageLink('gdz_blog-category', $catparams) nofilter}">{$post.category_name nofilter}</a>
 														</div>
 													{/if}
@@ -93,7 +93,7 @@
 													</div>
 												</div>
 												<a class="read-more" href="{gdz_blog::getPageLink('gdz_blog-post', $params)}">
-													{l s='Continue Reading' d='Modules.gdz_blog'}
+													{l s='Continue Reading' d='Modules.Gdzblog.Post'}
 												</a>
 											</div>
 										</div>

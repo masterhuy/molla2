@@ -29,7 +29,7 @@
             <div class="row contact-row">
                 <div class="col-md-5 mb-2 mb-md-0">
                     <div id="contact-info">
-                        {widget name="ps_contactinfo" hook='displayRightColumn'}
+                        {widget name="ps_contactinfo"}
                     </div>
                     <div class="contact-map contact-row" id="contact-map">
                         <iframe width="100%" height="300" style="border:0" src="{$gdzSetting.contact_page_map_src}" allowfullscreen=""></iframe>

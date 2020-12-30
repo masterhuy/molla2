@@ -23,84 +23,84 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-<div class="product-miniature js-product-miniature productbox-2" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+<div class="product-miniature js-product-miniature thumbnail-container productbox-2" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="product-preview">
 		{block name='product_thumbnail'}
-		  	<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
+			<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
 				<img class="img-responsive product-img1{if $gdzSetting.carousel_lazyload} owl-lazy{/if}"
-                    data-src="{$product.cover.bySize.home_default.url}"
-                    src = "{$product.cover.bySize.home_default.url}"
-                    alt = "{$product.cover.legend}"
-                    title="{$product.name|escape:'html':'UTF-8'}"
-                    data-full-size-image-url = "{$product.cover.large.url}"
+					data-src="{$product.cover.bySize.home_default.url}"
+					src = "{$product.cover.bySize.home_default.url}"
+					alt = "{$product.cover.legend}"
+					title="{$product.name|escape:'html':'UTF-8'}"
+					data-full-size-image-url = "{$product.cover.large.url}"
 				/>
 				{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1}
 					<img class="img-responsive product-img2"
-					    src = "{$product.images.1.bySize.home_default.url}"
-					    alt = "{$product.images.1.legend}"
+						src = "{$product.images.1.bySize.home_default.url}"
+						alt = "{$product.images.1.legend}"
 						title="{$product.name|escape:'html':'UTF-8'}"
-					    data-full-size-image-url = "{$product.images.1.large.url}"
+						data-full-size-image-url = "{$product.images.1.large.url}"
 					/>
 				{/if}
-		  	</a>
+			</a>
 		{/block}
-        {block name='product_flags'}
+		{block name='product_flags'}
 			<ul class="product-flags">
 				{foreach from=$product.flags item=flag}
 					<li class="product-flag {$flag.type}">{$flag.label}</li>
 				{/foreach}
 			</ul>
 		{/block}
-        <div class="wrapp-buttons">
+		<div class="wrapp-buttons">
 			<div class="product-buttons">
 				{if $gdzSetting.productbox_wishlist}            
 					<a 
-                        href="#" 
-                        class="addToWishlist btn-icon" 
-                        title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" 
-                        onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" 
-                        data-id-product="{$product.id_product|escape:'html'}"
-                    >
+						href="#" 
+						class="addToWishlist btn-icon" 
+						title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" 
+						onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" 
+						data-id-product="{$product.id_product|escape:'html'}"
+					>
 						<span>{l s='Add to Wishlist' d='Shop.Theme.Actions'}</span>
 					</a>
 				{/if}
 			</div>
 		</div>
-        <div class="product-action">     
-            <div class="product-cart">
-                {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
-                    <button class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                        <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
-                    </button>
-                {/if}
-                {if $gdzSetting.productbox_quickview}
-                    <button data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
-                        <span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
-                    </button>
-                {/if}
-            </div>
-        </div>
+		<div class="product-action">     
+			<div class="product-cart">
+				{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
+					<button class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+						<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+					</button>
+				{/if}
+				{if $gdzSetting.productbox_quickview}
+					<button data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
+						<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
+					</button>
+				{/if}
+			</div>
+		</div>
 	</div>
 	<div class="product-info">
-        {if $gdzSetting.productbox_wishlist}            
+		{if $gdzSetting.productbox_wishlist}            
 			<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Wishlist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
 		{/if}
-        {if $gdzSetting.productbox_category}
+		{if $gdzSetting.productbox_category}
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
 				{$product.category_name|escape:'html':'UTF-8'}
 			</a>
-	    {/if}
-        <div class="title-price align-items-center">
-    		{block name='product_name'}
-                <h3 class="product-title text-left" itemprop="name">
-                    <a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:40:'...'}</a>
-                </h3>
-            {/block}
-        </div>
-        {if $gdzSetting.productbox_price}
-            {block name='product_price_and_shipping'}
-                {if $product.show_price}
-                    <div class="content_price">
+		{/if}
+		<div class="title-price align-items-center">
+			{block name='product_name'}
+				<h3 class="product-title text-left" itemprop="name">
+					<a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:40:'...'}</a>
+				</h3>
+			{/block}
+		</div>
+		{if $gdzSetting.productbox_price}
+			{block name='product_price_and_shipping'}
+				{if $product.show_price}
+					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
 						{if $product.has_discount}
@@ -110,29 +110,29 @@
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
 					</div>
-                {/if}
-            {/block}
-        {/if}
-        {if $product.quantity < 1}
-            <span class="out-text">{l s='Out of Stock' d='Shop.Theme.Actions'}</span>
-        {/if}
-        {block name='product_reviews'}
-            {hook h='displayProductListReviews' product=$product}
-        {/block}
-        <div class="product-short-desc">
-    		{$product.description_short|truncate:300:'...' nofilter}
-    	</div>
-        {if $product.main_variants && $gdzSetting.productbox_variant}
-            {block name='product_variants'}
-                {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-            {/block}
-        {/if}
+				{/if}
+			{/block}
+		{/if}
+		{if $product.quantity < 1}
+			<span class="out-text">{l s='Out of Stock' d='Shop.Theme.Actions'}</span>
+		{/if}
+		{block name='product_reviews'}
+			{hook h='displayProductListReviews' product=$product}
+		{/block}
+		<div class="product-short-desc">
+			{$product.description_short|truncate:300:'...' nofilter}
+		</div>
+		{if $product.main_variants && $gdzSetting.productbox_variant}
+			{block name='product_variants'}
+				{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+			{/block}
+		{/if}
 	</div>
-    <div class="product-actions">
-        {if $gdzSetting.productbox_price}
-            {block name='product_price_and_shipping'}
-                {if $product.show_price}
-                    <div class="content_price">
+	<div class="product-actions">
+		{if $gdzSetting.productbox_price}
+			{block name='product_price_and_shipping'}
+				{if $product.show_price}
+					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
 						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
 						{if $product.has_discount}
@@ -142,13 +142,13 @@
 						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 						{hook h='displayProductPriceBlock' product=$product type='weight'}
 					</div>
-                {/if}
-            {/block}
-        {/if}
-        {block name='product_reviews'}
-            {hook h='displayProductListReviews' product=$product}
-        {/block}
-        {if $gdzSetting.productbox_quickview}
+				{/if}
+			{/block}
+		{/if}
+		{block name='product_reviews'}
+			{hook h='displayProductListReviews' product=$product}
+		{/block}
+		{if $gdzSetting.productbox_quickview}
 			<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
 				<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
 			</a>
@@ -164,7 +164,7 @@
 				</a>
 			{/if}
 		{/if}
-    </div>
+	</div>
 </div>
 {/block}
 

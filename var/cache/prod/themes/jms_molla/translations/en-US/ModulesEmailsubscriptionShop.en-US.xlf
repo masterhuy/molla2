@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\jms_molla\themes\jms_molla\modules\ps_emailsubscription\views\templates\hook\ps_emailsubscription.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="b46ee982d7b9e5221ef1b57e634cceb5">
+        <source><![CDATA[Sign up for email & get 25% off]]></source>
+        <target><![CDATA[Sign up for email & get 25% off]]></target>
+        <note>Line: 26</note>
+      </trans-unit>
+      <trans-unit id="2b04745e93c6882897e6e6b617cfc3c4">
+        <source>Subcribe to get information about products and coupons</source>
+        <target>Subcribe to get information about products and coupons</target>
+        <note>Line: 27</note>
+      </trans-unit>
+      <trans-unit id="f775ad1fbb08939178d4df9c457601f2">
+        <source>Your Email Address</source>
+        <target>Your Email Address</target>
+        <note>Line: 34</note>
+      </trans-unit>
+      <trans-unit id="5f075ae3e1f9d0382bb8c4632991f96f">
+        <source>Go</source>
+        <target>Go</target>
+        <note>Line: 36</note>
+      </trans-unit>
+      <trans-unit id="b26917587d98330d93f87808fc9d7267">
+        <source>Subscribe</source>
+        <target>Subscribe</target>
+        <note>Line: 39</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

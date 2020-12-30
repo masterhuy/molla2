@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-7">
                     <div id="contact-info">
-                        {widget name="ps_contactinfo" hook='displayRightColumn'}
+                        {widget name="ps_contactinfo"}
                     </div>
                     <div id="contact-form" class="contact-row">
                         {widget name="contactform"}

@@ -5,4 +5,6 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  * @Website: https://www.prestawork.com
 *}
-{$customhtml nofilter}
+<div class="block-custom-html">
+    {$customhtml nofilter}
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_ajaxsearch\views\templates\hook\gdz_ajaxsearch-fullscreen.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d5f66ab852c4c3c24b2c3880a3e0d616">
+        <source>Search everything...</source>
+        <target>Search everything...</target>
+        <note>Line: 35</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

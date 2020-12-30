@@ -372,6 +372,9 @@ header .row .col-auto {
   padding:0px;
   line-height: 30px;
 }
+.user-info-content > ul > li > a{
+  white-space: nowrap;
+}
 /***** Sidebar *****/
 #header-sidebar {
   width: 343px!important;

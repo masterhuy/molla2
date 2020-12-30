@@ -35,13 +35,13 @@
 						</h2>
 					{/if}
 					<h2 class="banner-title">get <span>25<span class="light">%</span></span> off</h2>
-					<p>{l s='Subscribe to the Molla eCommerce newsletter to receive timely updates from your favorite products' mod='gdz_pagebuilder'}.</p>
+					<p>{l s='Subscribe to the Molla eCommerce newsletter to receive timely updates from your favorite products' d='Shop.Theme.Actions'}.</p>
 					<div class="gdz-popup-content">
 						{$popup_content nofilter}
 					</div>
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" class="custom-control-input">
-						<label class="custom-control-label">{l s='Do not show this popup again' mod='gdz_pagebuilder'}</label>
+						<label class="custom-control-label">{l s='Do not show this popup again' d='Shop.Theme.Actions'}</label>
 					</div>
 				</div>
 				<input type="hidden" name="width_default" id="width-default" value="{$popup_width|escape:'htmlall':'UTF-8'}" />

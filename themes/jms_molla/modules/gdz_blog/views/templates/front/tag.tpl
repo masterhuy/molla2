@@ -26,7 +26,7 @@
 {block name="page_content"}
 	{capture name=path}{$tag nofilter}{/capture}
 
-		<h4 class="title-blog">{l s='Tag' mod='gdz_blog'} : {$tag nofilter}</h4>
+		<h4 class="title-blog">{l s='Tag' d='Modules.Gdzblog.Post'} : {$tag nofilter}</h4>
 		{if isset($posts) AND $posts}
 			<div class="post-list row">
 				{foreach from=$posts item=post}
@@ -45,26 +45,26 @@
 						<ul class="post-meta">
 							<li class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</li>
 							{if $gdz_blog_setting.GDZBLOG_SHOW_VIEWS}
-								<li class="post-views"><span>{l s='Views' mod='gdz_blog'} :</span> {$post.views nofilter}</li>
+								<li class="post-views"><span>{l s='Views' d='Modules.Gdzblog.Post'} :</span> {$post.views nofilter}</li>
 							{/if}
 							{if $gdz_blog_setting.GDZBLOG_SHOW_COMMENTS}
-								<li class="post-comments"><span>{l s='Comments' mod='gdz_blog'} :</span> {$post.comment_count nofilter}</li>
+								<li class="post-comments"><span>{l s='Comments' d='Modules.Gdzblog.Post'} :</span> {$post.comment_count nofilter}</li>
 							{/if}
 						</ul>
 						<h5 class="post-title"><a class="blog-list-title" href="{gdz_blog::getPageLink('gdz_blog-post', $params) nofilter}">{$post.title nofilter}</a></h5>
 						{if $gdz_blog_setting.GDZBLOG_SHOW_CATEGORY}
 							<div class="post-category">
-								<span>{l s='in' mod='gdz_blog'} :</span> 
+								<span>{l s='in' d='Modules.Gdzblog.Post'} :</span> 
 								<a href="{gdz_blog::getPageLink('gdz_blog-category', $catparams) nofilter}">{$post.category_name nofilter}</a>
 							</div>
 						{/if}
-						<div class="blog-intro">{$post.introtext|truncate:120:'...' nofilter}</div>
-						<a class="read-more" href="#">{l s='Continue reading' mod='gdz_blog'}</a>
+						<div class="blog-intro">{$post.introtext|truncate:100:'...' nofilter}</div>
+						<a class="read-more" href="#">{l s='Continue reading' d='Modules.Gdzblog.Post'}</a>
 					</article>
 				{/foreach}
 			</div>
 		{else}
-			{l s='Sorry, dont have any post in this category' mod='gdz_blog'}
+			{l s='Sorry, dont have any post in this category' d='Modules.Gdzblog.Post'}
 		{/if}
 
 {/block}

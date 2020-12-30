@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonproducttab-nav-left.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="a40de094ebb292b72fa2a4f3a1cf1209">
+        <source>All Products</source>
+        <target>All Products</target>
+        <note>Line: 50</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

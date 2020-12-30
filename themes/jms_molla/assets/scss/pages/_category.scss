@@ -1,4 +1,11 @@
 /* Category */
+#category{
+	.sidebar-column{
+		.block-custom-html, .block-bestseller{
+			display: none;
+		}
+	}
+}
 #product_list{
 	margin-top: 2rem;
 	.productbox-12{
@@ -113,10 +120,18 @@
 					margin-left: .5rem;
 				}
 			}
+
 			.product-btn{
 				line-height: 1;
 				padding-top: 1rem;
 				padding-bottom: 1rem;
+				border: .1rem solid;
+				display: flex;
+				justify-content: center;
+				text-transform: uppercase;
+				&.disabled{
+					cursor: not-allowed;
+				}
 			}
 		}
 		.product-list-reviews{
@@ -826,6 +841,13 @@
 		}
 	}
 }
-@media (min-width: 1200px){
-	
+
+@media (min-width: 992px){
+	#category{
+		.sidebar-column{
+			.block-custom-html, .block-bestseller{
+				display: block;
+			}
+		}
+	}
 }

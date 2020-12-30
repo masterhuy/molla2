@@ -123,21 +123,22 @@
         "keywords": [
             "Guzzle",
             "cache"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "guzzlehttp/guzzle",
-        "version": "5.3.3",
-        "version_normalized": "5.3.3.0",
+        "version": "5.3.4",
+        "version_normalized": "5.3.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/guzzle/guzzle.git",
-            "reference": "93bbdb30d59be6cd9839495306c65f2907370eb9"
+            "reference": "b87eda7a7162f95574032da17e9323c9899cb6b2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/93bbdb30d59be6cd9839495306c65f2907370eb9",
-            "reference": "93bbdb30d59be6cd9839495306c65f2907370eb9",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b87eda7a7162f95574032da17e9323c9899cb6b2",
+            "reference": "b87eda7a7162f95574032da17e9323c9899cb6b2",
             "shasum": ""
         },
         "require": {
@@ -149,7 +150,7 @@
             "ext-curl": "*",
             "phpunit/phpunit": "^4.0"
         },
-        "time": "2018-07-31T13:33:10+00:00",
+        "time": "2019-10-30T09:32:00+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -231,7 +232,8 @@
                 "homepage": "https://github.com/mtdowling"
             }
         ],
-        "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function."
+        "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+        "abandoned": true
     },
     {
         "name": "guzzlehttp/streams",
@@ -283,7 +285,8 @@
         "keywords": [
             "Guzzle",
             "stream"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "prestashop/circuit-breaker",
@@ -345,26 +348,26 @@
     },
     {
         "name": "react/promise",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
+        "version": "v2.8.0",
+        "version_normalized": "2.8.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/reactphp/promise.git",
-            "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d"
+            "reference": "f3cff96a19736714524ca0dd1d4130de73dbbbc4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/reactphp/promise/zipball/31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
-            "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
+            "url": "https://api.github.com/repos/reactphp/promise/zipball/f3cff96a19736714524ca0dd1d4130de73dbbbc4",
+            "reference": "f3cff96a19736714524ca0dd1d4130de73dbbbc4",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4.0"
         },
         "require-dev": {
-            "phpunit/phpunit": "~4.8"
+            "phpunit/phpunit": "^7.0 || ^6.5 || ^5.7 || ^4.8.36"
         },
-        "time": "2019-01-07T21:25:54+00:00",
+        "time": "2020-05-12T15:16:56+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -393,29 +396,24 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v3.4.28",
-        "version_normalized": "3.4.28.0",
+        "version": "v3.4.47",
+        "version_normalized": "3.4.47.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "8ca29297c29b64fb3a1a135e71cb25f67f9fdccf"
+            "reference": "da3d9da2ce0026771f5fe64cb332158f1bd2bc33"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/8ca29297c29b64fb3a1a135e71cb25f67f9fdccf",
-            "reference": "8ca29297c29b64fb3a1a135e71cb25f67f9fdccf",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/da3d9da2ce0026771f5fe64cb332158f1bd2bc33",
+            "reference": "da3d9da2ce0026771f5fe64cb332158f1bd2bc33",
             "shasum": ""
         },
         "require": {
             "php": "^5.5.9|>=7.0.8"
         },
-        "time": "2019-01-16T09:39:14+00:00",
+        "time": "2020-10-24T10:57:07+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
@@ -431,12 +429,12 @@
         ],
         "authors": [
             {
-                "name": "Jean-François Simon",
-                "email": "jeanfrancois.simon@sensiolabs.com"
-            },
-            {
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
             },
             {
                 "name": "Symfony Community",

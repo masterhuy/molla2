@@ -45,7 +45,7 @@
 	{include file='_partials/form-errors.tpl' errors=$errors}
 	{if $id_customer|intval neq 0}
 		<form method="post" class="std" id="form-wishlist-add">
-      <h4>{l s='Add New Wishlist' mod='gdz_wishlist'}</h4>
+      <h4>{l s='Add New WishList' d='Shop.Theme.Global'}</h4>
       <div class="form-group">
         <label for="exampleInputEmail1">{l s='Name' d='Shop.Theme.Global'}</label>
         <input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" />

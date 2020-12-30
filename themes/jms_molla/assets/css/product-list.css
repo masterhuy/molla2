@@ -197,6 +197,9 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
+.facet ul.faceted-slider{
+	overflow: visible;
+}
 .facet ul li {
     list-style: none;
 }

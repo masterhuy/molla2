@@ -1,10 +1,11 @@
 {**
- * 2007-2019 PrestaShop and Contributors
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
  *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
+ * that is bundled with this package in the file LICENSE.md.
  * It is also available through the world-wide-web at this URL:
  * https://opensource.org/licenses/AFL-3.0
  * If you did not receive a copy of the license and are unable to
@@ -15,44 +16,18 @@
  *
  * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
  * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://www.prestashop.com for more information.
+ * needs please refer to https://devdocs.prestashop.com/ for more information.
  *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2019 PrestaShop SA and Contributors
+ * @author    PrestaShop SA and Contributors <contact@prestashop.com>
+ * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
  *}
 
 {* Javascript is used to display each product grade, this allows every rating to be udpated as soon as they change *}
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-        const $ = jQuery;
-        const productId = {$product.id};
-        const productReview = $('.product-list-reviews-{$product.id}');
-        const productCommentGradeUrl = '{$product_comment_grade_url nofilter}';
-
-        $.get(productCommentGradeUrl, { id_product: productId }, function(jsonResponse) {
-            var jsonData = false;
-            try {
-                jsonData = JSON.parse(jsonResponse);
-            } catch (e) {
-        }
-
-        if (jsonData) {
-            if (jsonData.id_product && jsonData.comments_nb) {
-                $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
-                $('.comments-nb', productReview).html('<span class="ratings-text">( '+jsonData.comments_nb+' {l s='Reviews' d='Modules.Productcomments.Shop'} )</span>');
-                productReview.closest('.thumbnail-container').addClass('has-reviews');
-                productReview.removeClass('empty');
-            }
-        }
-    });
-  });
-</script>
 <div id="review">
-    <div id="product-list-reviews-{$product.id}" class="product-list-reviews-{$product.id} product-list-reviews empty">
-        <div class="grade-stars small-stars"><span class="ratings-text">( 0 {l s='Review' d='Modules.Productcomments.Shop'} )</span></div>
-        <div class="comments-nb"></div>
+    <div class="product-list-reviews no-review" data-id="{$product.id}" data-url="{$product_comment_grade_url nofilter}">
+        <div class="grade-stars small-stars"></div>
+        <div class="comments-nb ratings-text"></div>
     </div>
 </div>
 
